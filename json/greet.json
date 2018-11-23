@@ -4,6 +4,10 @@
       "title": "Greetings",
       "actions": {
         "$load": {
+          "type": "$set",
+          "options": {
+            "name": "{{$params.name}}"
+          },
           "success": {
             "type": "$render"
           }
@@ -19,7 +23,7 @@
             "items": [
               {
                 "type": "label",
-                "text": "Hiy13232...{{$params.name}} get name {{$get.name}}"
+                "text": "Hi...{{$params.name}} get name {{$get.name}}"
               }
             ]
           }
