@@ -4,9 +4,8 @@
       "title": "Greetings",
       "actions": {
         "$load": {
-          "type": "$set",
-          "options": {
-            "name": "{{$params.name}}"
+          "success": {
+            "type": "$render"
           }
         }
     },
