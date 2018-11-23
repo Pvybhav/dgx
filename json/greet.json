@@ -2,6 +2,23 @@
   "$jason": {
     "head": {
       "title": "Greetings",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "name": "{{$params.name}}"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        }
+    },
     "templates": {
       "body": {
         "header": {
@@ -12,7 +29,7 @@
             "items": [
               {
                 "type": "label",
-                "text": "Hi123...{{$params.name}}"
+                "text": "Hi5656...{{$params.name}}"
               }
             ]
           }
