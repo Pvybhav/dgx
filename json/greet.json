@@ -5,9 +5,6 @@
       "actions": {
         "$load": {
           "type": "$set",
-          "options": {
-            "name123": "{{$params.name}}"
-          },
           "success": {
             "type": "$render"
           }
@@ -23,7 +20,7 @@
             "items": [
               {
                 "type": "label",
-                "text": "Hiyuuiui...{{$params.name123}}"
+                "text": "Hiyuuiui...{{$params.name}} get name {{$get.name}}"
               }
             ]
           }
