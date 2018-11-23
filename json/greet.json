@@ -6,7 +6,7 @@
         "$load": {
           "type": "$set",
           "options": {
-            "blank": "{{$params.name}}"
+            "name": "{{$params.name}}"
           },
           "success": {
             "type": "$render"
@@ -37,4 +37,5 @@
       }
     }
   }
+}
 }
