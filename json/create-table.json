@@ -4,7 +4,7 @@
       "title": "Table",
       "description": "Creating a table",
       "data": {
-        "items": [
+        "rows": [
           {
             "name": "2nd Ave Deli",
             "description": "Keeping Tradition Alive.",
@@ -106,180 +106,23 @@
         }
       },
       "templates": {
-        "sections": [
-          {
-            "header": {
-              "type": "vertical",
-              "style": {
-                "background": "https://img.trycaviar.com/bqtIdTg6Yj5uLsH_2ubAeAkRNMM=/1680x1120/https://s3.amazonaws.com/trycaviar.com/images/home/landing3.jpg",
-                "padding": "20",
-                "spacing": "10",
-                "height": "200"
+        "body": {
+          "sections": [
+            {
+              "items": {
+                "{{#each rows}}": {
+                  "type": "vertical"
+                }
               },
               "components": [
                 {
                   "type": "label",
-                  "text": "Caviar",
-                  "style": {
-                    "color": "#ffffff",
-                    "font": "HelveticaNeue-Bold",
-                    "size": "40",
-                    "align": "center"
-                  }
-                },
-                {
-                  "type": "label",
-                  "text": "Get delivery from your favorite restaurants.",
-                  "style": {
-                    "font": "HelveticaNeue-Bold",
-                    "color": "#ffffff",
-                    "size": "14",
-                    "align": "center"
-                  }
+                  "text": "{{name}}"
                 }
               ]
             }
-          },
-          {
-            "header": {
-              "type": "label",
-              "text": " ",
-              "style": {
-                "size": "6",
-                "padding": "0",
-                "background": "#cacaca"
-              }
-            }
-          },
-          {
-            "type": "horizontal",
-            "header": {
-              "type": "label",
-              "text": "Recommended for You",
-              "style": {
-                "font": "AvenirNext-Bold",
-                "padding": "10",
-                "size": "20"
-              }
-            },
-            "items": {
-              "{{#each items}}": {
-                "type": "vertical",
-                "action": {
-                  "trigger": "alert",
-                  "options": {
-                    "title": "{{name}}",
-                    "description": "{{description}}"
-                  }
-                },
-                "style": {
-                  "width": "200",
-                  "height": "350",
-                  "padding": "0",
-                  "spacing": "10",
-                  "align": "top"
-                },
-                "components": [
-                  {
-                    "type": "label",
-                    "style": {
-                      "padding": "10",
-                      "font": "HelveticaNeue-Bold",
-                      "align": "top",
-                      "size": "17"
-                    },
-                    "text": "{{name}}"
-                  },
-                  {
-                    "type": "label",
-                    "style": {
-                      "padding": "10",
-                      "font": "HelveticaNeue",
-                      "size": "12",
-                      "align": "top",
-                      "color": "#bababa"
-                    },
-                    "text": "{{description}}"
-                  },
-                  {
-                    "type": "label",
-                    "text": "{{meta}}",
-                    "style": {
-                      "padding": "10",
-                      "font": "HelveticaNeue",
-                      "size": "12",
-                      "align": "top",
-                      "color": "#39ab34"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          {
-            "header": {
-              "type": "label",
-              "text": " ",
-              "style": {
-                "size": "6",
-                "padding": "0",
-                "background": "#cacaca"
-              }
-            },
-            "items": {
-              "{{#each items}}": {
-                "type": "vertical",
-                "action": {
-                  "trigger": "banner",
-                  "options": {
-                    "title": "{{name}}",
-                    "description": "{{description}}"
-                  }
-                },
-                "components": [
-                  {
-                    "type": "vertical",
-                    "style": {
-                      "padding": "10",
-                      "spacing": "5"
-                    },
-                    "components": [
-                      {
-                        "type": "label",
-                        "style": {
-                          "padding": "10",
-                          "font": "HelveticaNeue-Bold",
-                          "size": "17"
-                        },
-                        "text": "{{name}}"
-                      },
-                      {
-                        "type": "label",
-                        "style": {
-                          "padding": "10",
-                          "font": "HelveticaNeue",
-                          "size": "12",
-                          "color": "#cacaca"
-                        },
-                        "text": "{{description}}"
-                      },
-                      {
-                        "type": "label",
-                        "text": "{{meta}}",
-                        "style": {
-                          "padding": "10",
-                          "font": "HelveticaNeue",
-                          "size": "12",
-                          "color": "#39ab34"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            }
-          }
-        ]
+          ]
+        }
       }
     }
   }
