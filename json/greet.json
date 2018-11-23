@@ -11,12 +11,6 @@
           "success": {
             "type": "$render"
           }
-        },
-        "$pull": {
-          "type": "$flush",
-          "success": {
-            "type": "$reload"
-          }
         }
     },
     "templates": {
@@ -29,7 +23,7 @@
             "items": [
               {
                 "type": "label",
-                "text": "Hi5656...{{$params.name}}"
+                "text": "Hi56...{{$params.name}}"
               }
             ]
           }
