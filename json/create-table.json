@@ -1,129 +1,474 @@
 {
   "$jason": {
     "head": {
-      "title": "Table",
-      "description": "Creating a table",
-      "data": {
-        "rows": [
-          {
-            "name": "2nd Ave Deli",
-            "description": "Keeping Tradition Alive.",
-            "meta": "40-60 min * $$"
-          },
-          {
-            "name": "Almond - Flatiron",
-            "description": "An American Bistro with Rustic French Cuisine",
-            "meta": "40-60 min * $$"
-          },
-          {
-            "name": "Anthi's Greek Food",
-            "description": "Greek Prepared Foods.",
-            "meta": "40-60 min * $"
-          },
-          {
-            "name": "Au Za'atar",
-            "description": "Arabian French Bistro",
-            "meta": "40-60 min * $$"
-          },
-          {
-            "name": "Babu Ji",
-            "description": "Street Food and Indian Favorites.",
-            "meta": "40-60 min * $$$"
-          },
-          {
-            "name": "Bangkok B.A.R. - Urbanspace Vanderbilt",
-            "description": "Best Thai Food Since Thailand",
-            "meta": "40-60 min * $"
-          },
-          {
-            "name": "Baohaus",
-            "description": "Taiwanese-Style Steamed Buns.",
-            "meta": "40-60 min * $"
-          },
-          {
-            "name": "Barn Joo",
-            "description": "Modern Korean Gastropub",
-            "meta": "40-60 min * $$"
-          },
-          {
-            "name": "Bar Primi",
-            "description": "Pasta-focused Italian. A Scula Past!",
-            "meta": "40-60 min * $$$"
-          },
-          {
-            "name": "Beecher's Handmade Cheese",
-            "description": "For the Cheese Connoisseur",
-            "meta": "40-60 min * $$"
-          },
-          {
-            "name": "Benoit",
-            "description": "There is no restaurant more bistro-like and more Parisian than Benoit.",
-            "meta": "40-60 min * $$$"
-          },
-          {
-            "name": "Black Tap Craft Burgers & Beer",
-            "description": "Burgers, With Style.",
-            "meta": "40-60 min * $$"
-          },
-          {
-            "name": "Bleecker Street Pizza",
-            "description": "Tuscan Style Thin-Crust Pizza",
-            "meta": "40-60 min * $"
-          },
-          {
-            "name": "Blue Ribbon Bakery Kitchen",
-            "description": "Restaurant & Brick Oven Bakery",
-            "meta": "40-60 min * $$$"
-          },
-          {
-            "name": "Blue Ribbon Fried Chickent",
-            "description": "World Famous Chickent",
-            "meta": "40-60 min * $$"
-          }
-        ]
-      },
+      "title": "Jasonette Actions",
       "styles": {
-        "bold_red": {
-          "font": "HelveticaNeue-BoldItalic",
-          "color": "#fa4b2a",
-          "width": "40%",
-          "size": "30"
+        "bold": {
+          "font": "HelveticaNeue-Bold",
+          "align": "center",
+          "background": "#ffffff",
+          "corner_radius": "3",
+          "size": "12",
+          "padding": "10"
         },
-        "img": {
-          "align": "top",
-          "width": "300"
-        },
-        "text": {
-          "font": "TimesNewRomanPSMT",
-          "size": "16",
-          "color": "#000000"
-        },
-        "transparent": {
-          "opacity": "0"
-        },
-        "center": {
-          "align": "center"
+        "padded": {
+          "width": "150",
+          "align": "center",
+          "background": "#ffffff",
+          "font": "HelveticaNeue-Bold",
+          "height": "150"
         }
       },
-      "templates": {
-        "body": {
-          "sections": [
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        },
+        "form_alert": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Demo alert with input",
+            "description": "Try entering values and press OK",
+            "form": [
+              {
+                "name": "username",
+                "placeholder": "Enter username"
+              },
+              {
+                "name": "password",
+                "placeholder": "Enter password",
+                "type": "secure"
+              }
+            ]
+          },
+          "success": {
+            "type": "$util.alert",
+            "options": {
+              "title": "You have entered:",
+              "description": "{{$jason.username}} and {{$jason.password}}"
+            }
+          }
+        }
+      }
+    },
+    "body": {
+      "style": {
+        "background": "#8bb92d",
+        "color": "#ffffff"
+      },
+      "header": {
+        "style": {
+          "background": "#8bb92d",
+          "color": "#ffffff"
+        },
+        "menu": {
+          "text": "View JSON",
+          "href": {
+            "url": "https://github.com/Jasonette/Jasonpedia/blob/gh-pages/action/index.json",
+            "view": "web"
+          }
+        },
+        "search": {
+          "name": "query",
+          "placeholder": "search actions",
+          "style": {
+            "dark": "true",
+            "color": "#ffffff",
+            "background": "#8bb92d"
+          }
+        }
+      },
+      "sections": [
+        {
+          "type": "horizontal",
+          "style": {
+            "background": "#ffffff"
+          },
+          "header": {
+            "type": "label",
+            "text": "$util",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
             {
-              "items": {
-                "{{#each rows}}": {
-                  "type": "vertical"
+              "class": "padded",
+              "action": {
+                "type": "$util.banner",
+                "options": {
+                  "title": "Hello world",
+                  "description": "I'm a banner. I display a title and a description."
                 }
               },
-              "components": [
-                {
-                  "type": "label",
-                  "text": "{{name}}"
+              "type": "label",
+              "text": "$util.banner"
+            },
+            {
+              "class": "padded",
+              "action": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "I'm a toast. I display a simple text."
                 }
-              ]
+              },
+              "type": "label",
+              "text": "$util.toast"
+            },
+            {
+              "class": "padded",
+              "action": {
+                "type": "$util.alert",
+                "options": {
+                  "title": "Basic Alert",
+                  "description": "I'm a basic alert. I simply display an alert that needs to be dismissed before moving forward"
+                }
+              },
+              "type": "label",
+              "text": "$util.alert (basic)"
+            },
+            {
+              "class": "padded",
+              "action": {
+                "trigger": "form_alert"
+              },
+              "type": "label",
+              "text": "$util.alert (with input fields)"
+            },
+            {
+              "class": "padded",
+              "action": {
+                "type": "$util.picker",
+                "options": {
+                  "items": [
+                    {
+                      "text": "Trigger $util.banner",
+                      "action": {
+                        "type": "$util.banner",
+                        "options": {
+                          "title": "Hi I'm a banner",
+                          "description": "I'm triggered by a picker"
+                        }
+                      }
+                    },
+                    {
+                      "text": "Trigger $util.alert",
+                      "action": {
+                        "type": "$util.alert",
+                        "options": {
+                          "title": "Hi I'm an alert",
+                          "description": "I'm triggerred by an alert"
+                        }
+                      }
+                    },
+                    {
+                      "text": "Trigger $audio.play",
+                      "action": {
+                        "type": "$audio.play",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/www.textcast.co/icons/yo.mp3"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "type": "label",
+              "text": "$util.picker"
+            },
+            {
+              "class": "padded",
+              "action": {
+                "type": "$util.datepicker",
+                "success": {
+                  "type": "$util.banner",
+                  "options": {
+                    "title": "Selected time is",
+                    "description": "{{(new Date(parseInt($jason.value) * 1000)).toString()}}"
+                  }
+                }
+              },
+              "type": "label",
+              "text": "$util.datepicker"
+            },
+            {
+              "class": "padded",
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/addressbook.json"
+              },
+              "type": "label",
+              "text": "$util.addressbook"
+            }
+          ]
+        },
+        {
+          "type": "horizontal",
+          "style": {
+            "background": "#ffffff"
+          },
+          "header": {
+            "type": "label",
+            "text": "$media",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "$media.play",
+              "class": "padded",
+              "action": {
+                "type": "$media.play",
+                "options": {
+                  "url": "https://vo.fod4.com/v/25c17d6eb2/v600.mp4"
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "$media.picker + $util.share (photo)",
+              "class": "padded",
+              "action": {
+                "type": "$media.picker",
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [
+                      {
+                        "type": "image",
+                        "data": "{{$jason.data}}"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "label",
+              "class": "padded",
+              "text": "$media.camera + $util.share (photo)",
+              "action": {
+                "type": "$media.camera",
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [
+                      {
+                        "type": "image",
+                        "data": "{{$jason.data}}"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "$media.camera + $util.share (photo with editing)",
+              "class": "padded",
+              "action": {
+                "type": "$media.camera",
+                "options": {
+                  "edit": "true"
+                },
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [
+                      {
+                        "type": "image",
+                        "data": "{{$jason.data}}"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "label",
+              "text": "$media.camera + $util.share (video)",
+              "class": "padded",
+              "action": {
+                "type": "$media.camera",
+                "options": {
+                  "type": "video"
+                },
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [
+                      {
+                        "type": "video",
+                        "file_url": "{{$jason.file_url}}"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "Barcode & QRCode scanning",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "$vision",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/vision/index.json"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "$network & $session",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "$network",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/network/index.json"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "Local variables",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "Variable",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/variable/index.json"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "$lambda",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "Triggering a action by name and utilizing its return values",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/lambda/index.json"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "Geo",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "$geo.get",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/geo/index.json"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "JavaScript",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "$script.include",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/script/index.json"
+              }
+            }
+          ]
+        },
+        {
+          "header": {
+            "type": "label",
+            "text": "Timer",
+            "style": {
+              "background": "#ebebeb"
+            }
+          },
+          "items": [
+            {
+              "type": "label",
+              "text": "$timer",
+              "class": "bold",
+              "style": {
+                "align": "left"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/action/timer/index.json"
+              }
             }
           ]
         }
-      }
+      ]
     }
   }
 }
