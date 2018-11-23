@@ -7,9 +7,6 @@
           "type": "$set",
           "options": {
             "name": "{{$params.name}}"
-          },
-          "success": {
-            "type": "$render"
           }
         }
     },
@@ -23,7 +20,7 @@
             "items": [
               {
                 "type": "label",
-                "text": "Hi56...{{$params.name}}"
+                "text": "Hi...{{$params.name}}"
               }
             ]
           }
