@@ -38,7 +38,7 @@
                     "border_color": "#000000"
                   },
                   "placeholder": "Enter your name",
-                  "name": "name12"
+                  "name": "name"
                 }
               ]
             },
@@ -56,24 +56,13 @@
                 "url": "https://pvybhav.github.io/json/greet.json",
                 "view": "jason",
                 "options": {
-                  "name": "{{$get.name12}}"
-                },
-                "success": {
-                  "type": "$util.alert",
-                  "text":"success"
-                },
-                "error": {
-                  "type": "$util.banner",
-                  "options": {
-                    "title": "Error",
-                    "description": "Something went wrong."
-                  }
+                  "name": "{{$get.name}}"
                 }
               }
             },
             {
               "type": "button",
-              "text": "Open Tutorialll",
+              "text": "Open Tutorial",
               "style": {
                 "align": "center",
                 "width": "100%",
