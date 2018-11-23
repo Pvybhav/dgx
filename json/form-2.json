@@ -1,12 +1,23 @@
 {
   "$jason": {
     "head": {
-      "title": "Form-1",
+      "title": "Form-2",
       "styles": {
         "padded": {
           "padding": "20",
           "font": "HelveticaNeue-Bold",
           "size": "20"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "username": "{{$params.username}}"
+          },
+          "success": {
+            "type": "$render"
+          }
         }
       }
     },
@@ -18,7 +29,7 @@
         {
           "header": {
             "type": "label",
-            "text": "User Name",
+            "text": "Password",
             "style": {
               "background": "#f5f5f5",
               "align": "center"
@@ -35,16 +46,17 @@
                 {
                   "type": "textfield",
                   "style": {
-                    "border_color": "#000000"
+                    "border_color": "#000000",
+                    "secure": true
                   },
-                  "placeholder": "Enter your name",
-                  "name": "username"
+                  "placeholder": "Enter your Password",
+                  "name": "password"
                 }
               ]
             },
             {
               "type": "button",
-              "text": "Next",
+              "text": "Submit",
               "style": {
                 "align": "center",
                 "width": "100%",
@@ -53,10 +65,11 @@
                 "background": "#0000ff"
               },
               "href": {
-                "url": "https://pvybhav.github.io/json/form-2.json",
+                "url": "https://pvybhav.github.io/json/display-details.json",
                 "view": "jason",
                 "options": {
-                  "username": "{{$get.username}}"
+                  "username": "{{$get.username}}",
+                  "password": "{{$get.password}}"
                 }
               }
             }

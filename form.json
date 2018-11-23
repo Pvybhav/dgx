@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Form-1",
+      "title": "TextField",
       "styles": {
         "padded": {
           "padding": "20",
@@ -18,7 +18,7 @@
         {
           "header": {
             "type": "label",
-            "text": "User Name",
+            "text": "textfield",
             "style": {
               "background": "#f5f5f5",
               "align": "center"
@@ -38,13 +38,13 @@
                     "border_color": "#000000"
                   },
                   "placeholder": "Enter your name",
-                  "name": "username"
+                  "name": "name"
                 }
               ]
             },
             {
               "type": "button",
-              "text": "Next",
+              "text": "Submit",
               "style": {
                 "align": "center",
                 "width": "100%",
@@ -53,11 +53,25 @@
                 "background": "#0000ff"
               },
               "href": {
-                "url": "https://pvybhav.github.io/json/form-2.json",
+                "url": "https://pvybhav.github.io/json/greet.json",
                 "view": "jason",
                 "options": {
-                  "username": "{{$get.username}}"
+                  "name": "{{$get.name}}"
                 }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Open Tutorial",
+              "style": {
+                "align": "center",
+                "width": "100%",
+                "height": 50,
+                "color": "#00ff00",
+                "background": "#ff00ff"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/hello.json"
               }
             }
           ]

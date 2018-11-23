@@ -1,0 +1,36 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Greetings",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "username": "{{$params.username}}",
+            "password": "{{$params.password}}"
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "Greetings"
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "label",
+                  "text": "Hi : {{$params.username}}!!! && Your Password is : {{$get.name}}"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
