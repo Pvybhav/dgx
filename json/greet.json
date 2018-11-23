@@ -1,16 +1,35 @@
 {
   "$jason": {
     "head": {
-      "title": "Greetings"
+      "title": "Greetings",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "blank": "{{$params.name}}"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        }
     },
     "templates": {
       "body": {
+        "header": {
+          "title": "Greetings"
+        },
         "sections": [
           {
             "items": [
               {
                 "type": "label",
-                "text": "Hi"
+                "text": "{{$get.name}}"
               }
             ]
           }
