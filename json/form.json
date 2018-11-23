@@ -52,6 +52,15 @@
                 "color": "#ffffff",
                 "background": "#0000ff"
               },
+              "action": {
+                "type": "$network.request",
+                "options": {
+                  "url": "https://pvybhav.github.io/json/greet.json"
+                },
+                "success":{
+                  "type": "$render"
+                }
+              },
               "href": {
                 "url": "https://pvybhav.github.io/json/greet.json",
                 "view": "jason",
@@ -60,6 +69,13 @@
                 },
                 "success": {
                   "type": "$render"
+                },
+                "error": {
+                  "type": "$util.banner",
+                  "options": {
+                    "title": "Error",
+                    "description": "Something went wrong."
+                  }
                 }
               }
             },
