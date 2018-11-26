@@ -8,6 +8,19 @@
           "font": "HelveticaNeue-Bold",
           "size": "20"
         }
+      },
+      "save": {
+        "type": "$global.set",
+        "options": {
+          "something": "{{$get.textField}}"
+        },
+        "success": {
+          "type": "$util.banner",
+          "options": {
+            "title": "Success",
+            "description": "Global values set successfully"
+          }
+        }
       }
     },
     "body": {
@@ -101,19 +114,7 @@
                 "background": "#0000ff"
               },
               "action": {
-                "type": "$global.set",
-                "options": {
-                  "EF_S1": "{{$get.something}}"
-                },
-                "success": {
-                  "action": {
-                    "type": "$util.banner",
-                    "options": {
-                      "title": "Success",
-                      "description": "Global values set successfully"
-                    }
-                  }
-                }
+                "trigger": "save"
               }
             },
             {
