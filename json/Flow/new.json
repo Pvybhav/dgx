@@ -2,12 +2,6 @@
   "$jason": {
     "head": {
       "title": "Display location",
-      "actions": {
-        "type": "$geo.get",
-        "success": {
-          "type": "$render"
-        }
-      },
       "templates": {
         "body": {
           "sections": [
@@ -15,11 +9,11 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Latitude: {{ $jason.coord.split(',')[0] }}"
+                  "text": "Latitude: {{ return 'vybhav' }}"
                 },
                 {
                   "type": "label",
-                  "text": "Longitude: {{ $jason.coord.split(',')[1] }}"
+                  "text": "Longitude: {{ var x=2; return x; }}"
                 }
               ]
             }
