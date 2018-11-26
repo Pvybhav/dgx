@@ -10,16 +10,10 @@
         }
       },
       "save": {
-        "type": "$global.set",
+        "type": "$util.alert",
         "options": {
-          "field-1": "{{$get.textField}}"
-        },
-        "success": {
-          "type": "$util.banner",
-          "options": {
-            "title": "Success",
-            "description": "Global values set successfully"
-          }
+          "title": "success",
+          "description": "success"
         }
       }
     },
@@ -116,7 +110,7 @@
               "action": {
                 "trigger": "save",
                 "type": "$util.alert",
-                "options":{
+                "options": {
                   "title": "clicked save",
                   "description": "success"
                 },
