@@ -38,7 +38,7 @@
                     "border_color": "#000000"
                   },
                   "placeholder": "Text Field",
-                  "name": "name",
+                  "name": "textField",
                   "contentDescription": "field1"
                 }
               ]
@@ -52,7 +52,7 @@
               "components": [
                 {
                   "type": "textarea",
-                  "name": "status",
+                  "name": "textArea",
                   "placeholder": "Text Area",
                   "value": "",
                   "style": {
@@ -77,13 +77,13 @@
               "components": [
                 {
                   "type": "switch",
-                  "name": "light",
+                  "name": "switch",
                   "value": "true",
                   "action": {
                     "type": "$util.banner",
                     "options": {
                       "title": "Is true?",
-                      "description": "{{$get.light}}"
+                      "description": "{{$get.switch}}"
                     },
                     "contentDescription": "field3"
                   }
@@ -100,8 +100,20 @@
                 "color": "#ffffff",
                 "background": "#0000ff"
               },
-              "href": {
-                "url": "https://pvybhav.github.io/json/Global_Variables/screen-1.json"
+              "action": {
+                "type": "$global.set",
+                "options": {
+                  "EF_S1": "{{$get.something}}"
+                },
+                "success": {
+                  "action": {
+                    "type": "$util.banner",
+                    "options": {
+                      "title": "Success",
+                      "description": "Global values set successfully"
+                    }
+                  }
+                }
               }
             },
             {
