@@ -2,24 +2,22 @@
   "$jason": {
     "head": {
       "title": "Display location",
-      "templates": {
-        "body": {
-          "sections": [
+    },
+    "body": {
+      "sections": [
+        {
+          "items": [
             {
-              "items": [
-                {
-                  "type": "label",
-                  "text": "Latitude: {{ return 'vybhav' }}"
-                },
-                {
-                  "type": "label",
-                  "text": "Longitude: {{ var x=2; return x; }}"
-                }
-              ]
+              "type": "label",
+              "text": "Latitude: {{ return 'vybhav' }}"
+            },
+            {
+              "type": "label",
+              "text": "Longitude: {{ var x=2; return x; }}"
             }
           ]
         }
-      }
+      ]
     }
   }
 }
