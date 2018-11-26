@@ -37,7 +37,7 @@
                   "style": {
                     "border_color": "#000000"
                   },
-                  "placeholder": "Enter your name",
+                  "placeholder": "Text Field",
                   "name": "name"
                 }
               ]
@@ -52,7 +52,7 @@
                 {
                   "type": "textarea",
                   "name": "status",
-                  "placeholder": "Status update",
+                  "placeholder": "Text Area",
                   "value": "",
                   "style": {
                     "background": "rgba(0,0,0,0)",
@@ -78,9 +78,10 @@
                   "name": "light",
                   "value": "true",
                   "action": {
-                    "trigger": "banner",
+                    "type": "$util.banner",
                     "options": {
-                      "item": "Light is On?"
+                      "title": "Light is On?",
+                      "description": "{{$get.light}}"
                     }
                   }
                 }
