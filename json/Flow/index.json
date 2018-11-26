@@ -19,7 +19,7 @@
         {
           "header": {
             "type": "label",
-            "text": "User Name {{ myfun() myfun(){return 'vybhav' }; }}",
+            "text": "User Name {{ 'vybhav' }}",
             "style": {
               "background": "#f5f5f5",
               "align": "center"
@@ -32,7 +32,7 @@
                 "background": "#ffffff",
                 "align": "center"
               },
-              "components": [
+               "components": [
                 {
                   "type": "textfield",
                   "style": {
@@ -40,6 +40,10 @@
                   },
                   "placeholder": "Enter your name",
                   "name": "username"
+                },
+                {
+                  "type": "label",
+                  "text": "User Name {{ return 'vybhav' }}"
                 }
               ]
             },
