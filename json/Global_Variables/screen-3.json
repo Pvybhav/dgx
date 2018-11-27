@@ -9,9 +9,9 @@
         "save": {
           "type": "$global.set",
           "options": {
-            "ef_s3_textField": "{{$get.textFieldName}}",
-            "ef_s3_TextArea": "{{$get.textAreaName}}",
-            "ef_s3_Switch": "{{$get.switchName}}"
+            "ef_s3_textField": "{{$get.textFieldName}} || {{$global.ef_s3_Switch}}",
+            "ef_s3_TextArea": "{{$get.textAreaName}} || {{$global.ef_s3_Switch}}",
+            "ef_s3_Switch": "{{$get.switchName}} || {{$global.ef_s3_Switch}}"
           },
           "success": {
             "type": "$href",
