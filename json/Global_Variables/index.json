@@ -1,16 +1,17 @@
 {
   "$jason": {
     "head": {
-      "title": "Global Test 1",
+      "title": "Screen-1",
         "actions": {
         "$show": {
           "type": "$render"
-        },
-        "$pull": {
-          "type": "$reload"
         }
       },
       "templates": {
+        "header": {
+          "type": "label",
+          "text": "Global Variables"
+        },
         "body": {
           "sections": [
             {
@@ -22,7 +23,7 @@
                   "action": {
                     "type": "$href",
                     "options": {
-                      "url": "https://pvybhav.github.io/json/Global_Variables/2.json",
+                      "url": "https://pvybhav.github.io/json/Global_Variables/screen-1.json",
                       "transition": "modal"
                     }
                   }
