@@ -55,7 +55,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.ef_s1_textField}}"
+                  "text": "Global value is: {{$global.ef_s1_textField || ' '}}"
                 },
                 {
                   "type": "vertical",
@@ -66,7 +66,7 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$global.ef_s1_textField}}",
+                      "value": "{{$global.ef_s1_textField || ' '}}",
                       "placeholder": "Add textFieldValue here",
                       "contentDescription": "field1"
                     },
@@ -74,7 +74,7 @@
                       "type": "textarea",
                       "name": "textAreaName",
                       "placeholder": "Text Area",
-                      "value": "{{$global.ef_s1_TextArea}}",
+                      "value": "{{$global.ef_s1_TextArea || ' '}}",
                       "style": {
                         "background": "rgba(0,0,0,0)",
                         "placeholder_color": "#cecece",
@@ -103,7 +103,7 @@
                 },
                 {
                   "type": "button",
-                  "text": "Save Global Variables22",
+                  "text": "Save Global Variables",
                   "action": {
                     "trigger": "save"
                   }
