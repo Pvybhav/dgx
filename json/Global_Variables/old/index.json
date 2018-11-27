@@ -1,0 +1,140 @@
+{
+  "$jason": {
+    "head": {
+      "title": "TextField",
+      "styles": {
+        "padded": {
+          "padding": "20",
+          "font": "HelveticaNeue-Bold",
+          "size": "20"
+        }
+      },
+      "save": {
+        "type": "$util.alert",
+        "options": {
+          "title": "success",
+          "description": "success"
+        }
+      }
+    },
+    "body": {
+      "style": {
+        "background": "#b6dce6"
+      },
+      "sections": [
+        {
+          "header": {
+            "type": "label",
+            "text": "Home",
+            "style": {
+              "background": "#f5f5f5",
+              "align": "center"
+            }
+          },
+          "items": [
+            {
+              "type": "horizontal",
+              "style": {
+                "background": "#ffffff",
+                "align": "center"
+              },
+              "components": [
+                {
+                  "type": "textfield",
+                  "style": {
+                    "border_color": "#000000"
+                  },
+                  "placeholder": "Text Field",
+                  "name": "textField",
+                  "contentDescription": "field1"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "style": {
+                "background": "#ffffff",
+                "align": "center"
+              },
+              "components": [
+                {
+                  "type": "textarea",
+                  "name": "textArea",
+                  "placeholder": "Text Area",
+                  "value": "",
+                  "style": {
+                    "background": "rgba(0,0,0,0)",
+                    "placeholder_color": "#cecece",
+                    "font": "HelveticaNeue",
+                    "align": "center",
+                    "width": "100%",
+                    "height": "100",
+                    "size": "12"
+                  },
+                  "contentDescription": "field2"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "style": {
+                "background": "#ffffff",
+                "align": "center"
+              },
+              "components": [
+                {
+                  "type": "switch",
+                  "name": "switch",
+                  "value": "true",
+                  "action": {
+                    "type": "$util.banner",
+                    "options": {
+                      "title": "Is true?",
+                      "description": "{{$get.switch}}"
+                    },
+                    "contentDescription": "field3"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "text": "Go to Screen-1(save-7)",
+              "style": {
+                "align": "center",
+                "width": "100%",
+                "height": 50,
+                "color": "#ffffff",
+                "background": "#0000ff"
+              },
+              "action": {
+                "type": "$util.alert",
+                "options": {
+                  "title": "clicked save",
+                  "description": "success"
+                },
+                "success": {
+                  "trigger": "save"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Open Tutorial",
+              "style": {
+                "align": "center",
+                "width": "100%",
+                "height": 50,
+                "color": "#ffffff",
+                "background": "#00ffff"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/hello.json"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
