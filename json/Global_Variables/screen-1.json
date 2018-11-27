@@ -55,7 +55,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.ef_s1_textField || ' '}}"
+                  "text": "Global value is: {{$global.ef_s1_textField || return 'no value from js'}}"
                 },
                 {
                   "type": "vertical",
