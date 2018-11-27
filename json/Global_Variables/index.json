@@ -2,7 +2,7 @@
   "$jason": {
     "head": {
       "title": "Screen-1",
-        "actions": {
+      "actions": {
         "$show": {
           "type": "$render"
         }
@@ -15,7 +15,7 @@
               "items": [
                 {
                   "type": "button",
-                  "text": "{{Set Global Variable}}",
+                  "text": "Set Global Variable",
                   "style": {
                     "align": "center",
                     "width": "100%",
@@ -31,69 +31,40 @@
                   }
                 },
                 {
-                  "type": "horizontal",
-                  "style": {
-                    "background": "#ffffff",
-                    "align": "center"
-                  },
-                  "components": [
-                    {
-                      "type": "textfield",
-                      "style": {
-                        "border_color": "#000000"
-                      },
-                      "placeholder": "Text Field",
-                      "name": "name",
-                      "contentDescription": "field1"
-                    }
-                  ]
+                  "type": "label",
+                  "text": "EF-Screen-1-TextField --> $global.ef_s1_textField"
                 },
                 {
-                  "type": "horizontal",
-                  "style": {
-                    "background": "#ffffff",
-                    "align": "center"
-                  },
-                  "components": [
-                    {
-                      "type": "textarea",
-                      "name": "status",
-                      "placeholder": "Text Area",
-                      "value": "",
-                      "style": {
-                        "background": "rgba(0,0,0,0)",
-                        "placeholder_color": "#cecece",
-                        "font": "HelveticaNeue",
-                        "align": "center",
-                        "width": "100%",
-                        "height": "100",
-                        "size": "12"
-                      },
-                      "contentDescription": "field2"
-                    }
-                  ]
+                  "type": "label",
+                  "text": "EF-Screen-2-TextArea --> $global.ef_s2_TextArea"
                 },
                 {
-                  "type": "horizontal",
-                  "style": {
-                    "background": "#ffffff",
-                    "align": "center"
-                  },
-                  "components": [
-                    {
-                      "type": "switch",
-                      "name": "light",
-                      "value": "true",
-                      "action": {
-                        "type": "$util.banner",
-                        "options": {
-                          "title": "Is true?",
-                          "description": "{{$get.light}}"
-                        },
-                        "contentDescription": "field3"
-                      }
-                    }
-                  ]
+                  "type": "label",
+                  "text": "EF-Screen-3-Switch --> $global.ef_s3_Switch"
+                },
+                {
+                  "type": "label",
+                  "text": "EF-Screen-1-TextField --> $global.ef_s1_textField"
+                },
+                {
+                  "type": "label",
+                  "text": "EF-Screen-2-TextArea --> $global.ef_s2_TextArea"
+                },
+                {
+                  "type": "label",
+                  "text": "EF-Screen-3-Switch --> $global.ef_s3_Switch"
+                },
+                {
+                  "type": "label",
+                  "text": "EF-Screen-1-TextField --> $global.ef_s1_textField"
+                },
+                {
+                  "type": "label",
+                  "text": "EF-Screen-2-TextArea --> $global.ef_s2_TextArea"
+                },
+                {
+                  "type": "label",
+                  "text": "EF-Screen-3-Switch --> $global.ef_s3_Switch"
                 }
               ]
             }

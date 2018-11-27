@@ -1,0 +1,81 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Screen-2",
+      "actions": {
+        "$show": {
+          "type": "$render"
+        },
+        "save": {
+          "type": "$global.set",
+          "options": {
+            "textFieldValue": "{{$get.textFieldName}}"
+          },
+          "success": {
+            "type": "href",
+            "options": {
+              "url": "https://pvybhav.github.io/json/Global_Variables/screen-1.json"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "menu": {
+              "text": "Reset",
+              "style": {
+                "size": "15",
+                "font": "Helvetica",
+                "color": "#4f8ff7"
+              },
+              "action": {
+                "type": "$global.reset",
+                "options": {
+                  "items": [
+                    "textFieldValue"
+                  ]
+                },
+                "success": {
+                  "type": "$close"
+                }
+              }
+            }
+          },
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "Global value is: {{$global.textFieldValue || ''}}"
+                },
+                {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "10"
+                  },
+                  "components": [
+                    {
+                      "type": "textfield",
+                      "name": "textFieldName",
+                      "value": "{{$global.textFieldValue || ''}}",
+                      "placeholder": "Add textFieldValue here"
+                    }
+                  ]
+                },
+                {
+                  "type": "button",
+                  "text": "Save Global Variable",
+                  "action": {
+                    "trigger": "save"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
