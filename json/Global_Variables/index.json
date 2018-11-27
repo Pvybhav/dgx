@@ -8,19 +8,14 @@
         }
       },
       "templates": {
-        
         "body": {
-          "header": {
-            "type": "label",
-            "text": "Global Variables"
-          },
           "sections": [
             {
               "type": "vertical",
               "items": [
                 {
                   "type": "button",
-                  "text": "{{$global.something || 'Set Global2'}}",
+                  "text": "{{$global.textFieldValue || 'Set Global Variable123'}}",
                   "action": {
                     "type": "$href",
                     "options": {
