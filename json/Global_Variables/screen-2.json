@@ -8,6 +8,20 @@
         },
         "$pull": {
           "type": "$reload"
+        },
+        "save": {
+          "type": "$global.set",
+          "options": {
+            "ef_s1_textField": "{{$get.textFieldName || ' '}}",
+            "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
+            "ef_s1_Switch": "{{$get.switchName || ' '}}"
+          },
+          "success": {
+            "type": "$href",
+            "options": {
+              "url": "https://pvybhav.github.io/json/Global_Variables/screen-3.json"
+            }
+          }
         }
       },
       "templates": {
@@ -94,18 +108,7 @@
                   "type": "button",
                   "text": "Save Global Variables",
                   "action": {
-                    "type": "$global.set",
-                    "options": {
-                      "ef_s2_textField": "{{$get.textFieldName || ' '}}",
-                      "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
-                      "ef_s2_Switch": "{{$get.switchName || ' '}}"
-                    },
-                    "success": {
-                      "type": "$href",
-                      "options": {
-                        "url": "https://pvybhav.github.io/json/Global_Variables/screen-3.json"
-                      }
-                    }
+                    "trigger": "save"
                   }
                 }
               ]
