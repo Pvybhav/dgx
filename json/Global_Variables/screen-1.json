@@ -30,7 +30,7 @@
                 "type": "$global.reset",
                 "options": {
                   "items": [
-                    "textFieldName"
+                    "textFieldValue"
                   ]
                 },
                 "success": {
@@ -45,7 +45,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.textFieldName || ''}}"
+                  "text": "Global value is: {{$global.textFieldValue || ''}}"
                 },
                 {
                   "type": "vertical",
@@ -56,8 +56,8 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$global.textFieldName || ''}}",
-                      "placeholder": "Add textFieldName here"
+                      "value": "{{$global.textFieldValue || ''}}",
+                      "placeholder": "Add textFieldValue here"
                     }
                   ]
                 },
