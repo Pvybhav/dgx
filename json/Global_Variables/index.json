@@ -1,13 +1,10 @@
 {
   "$jason": {
     "head": {
-      "title": "Global Test 1",
+      "title": "Screen-1",
       "actions": {
         "$show": {
           "type": "$render"
-        },
-        "$pull": {
-          "type": "$reload"
         }
       },
       "templates": {
@@ -18,12 +15,18 @@
               "items": [
                 {
                   "type": "button",
-                  "text": "{{$global.something || 'Set Global'}}",
+                  "text": "Set Global Variable",
+                  "style": {
+                    "align": "center",
+                    "width": "100%",
+                    "height": 50,
+                    "color": "#ffffff",
+                    "background": "#0000ff"
+                  },
                   "action": {
                     "type": "$href",
                     "options": {
-                      "url": "https://pvybhav.github.io/json/Global_Variables/2.json",
-                      "transition": "modal"
+                      "url": "https://pvybhav.github.io/json/Global_Variables/screen-1.json"
                     }
                   }
                 }
