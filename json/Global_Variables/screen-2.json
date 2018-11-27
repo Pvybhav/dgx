@@ -52,7 +52,7 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$global.ef_s2_textField || $get.textFieldName}}",
+                      "value": "{{$global.ef_s2_textField}}",
                       "placeholder": "Add textFieldValue here",
                       "contentDescription": "field1"
                     },
@@ -60,7 +60,7 @@
                       "type": "textarea",
                       "name": "textAreaName",
                       "placeholder": "Text Area",
-                      "value": "{{$global.ef_s2_TextArea || $get.textAreaName}}",
+                      "value": "{{$global.ef_s2_TextArea}}",
                       "style": {
                         "background": "rgba(0,0,0,0)",
                         "placeholder_color": "#cecece",
@@ -80,7 +80,7 @@
                         "type": "$util.banner",
                         "options": {
                           "title": "Is true?",
-                          "description": "{{$get.switchName}}"
+                          "description": "{{$get.switchName}} || 'false'"
                         },
                         "contentDescription": "field3"
                       }

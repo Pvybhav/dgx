@@ -66,7 +66,7 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$get.textFieldName || $global.ef_s3_textField}}",
+                      "value": "{{$global.ef_s3_textField}}",
                       "placeholder": "Add textFieldValue here",
                       "contentDescription": "field1"
                     },
@@ -74,7 +74,7 @@
                       "type": "textarea",
                       "name": "textAreaName",
                       "placeholder": "Text Area",
-                      "value": "{{$get.textAreaName || $global.ef_s3_TextArea}}",
+                      "value": "{{$global.ef_s3_TextArea}}",
                       "style": {
                         "background": "rgba(0,0,0,0)",
                         "placeholder_color": "#cecece",
@@ -94,7 +94,7 @@
                         "type": "$util.banner",
                         "options": {
                           "title": "Is true?",
-                          "description": "{{$get.switchName}}"
+                          "description": "{{$get.switchName || 'false'}}"
                         },
                         "contentDescription": "field3"
                       }
