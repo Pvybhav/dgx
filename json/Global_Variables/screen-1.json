@@ -12,9 +12,9 @@
         "save": {
           "type": "$global.set",
           "options": {
-            "ef_s1_textField": "{{$get.textFieldName}}",
-            "ef_s1_TextArea": "{{$get.textAreaName}}",
-            "ef_s1_Switch": "{{$get.switchName}}"
+            "ef_s1_textField": "{{$get.textFieldName || ' '}}",
+            "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
+            "ef_s1_Switch": "{{$get.switchName || ' '}}"
           },
           "success": {
             "type": "$href",
