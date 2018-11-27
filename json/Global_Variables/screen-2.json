@@ -41,7 +41,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.ef_s2_textField}}"
+                  "text": "Screen-2"
                 },
                 {
                   "type": "vertical",
@@ -52,7 +52,7 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$global.ef_s2_textField}}",
+                      "value": "{{$global.ef_s2_textField}} || ' '",
                       "placeholder": "Add textFieldValue here",
                       "contentDescription": "field1"
                     },
@@ -60,7 +60,7 @@
                       "type": "textarea",
                       "name": "textAreaName",
                       "placeholder": "Text Area",
-                      "value": "{{$global.ef_s2_TextArea}}",
+                      "value": "{{$global.ef_s2_TextArea}} || ' '",
                       "style": {
                         "background": "rgba(0,0,0,0)",
                         "placeholder_color": "#cecece",
@@ -75,7 +75,7 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{$global.ef_s2_Switch}}",
+                      "value": "{{$global.ef_s2_Switch}} || ' '",
                       "action": {
                         "type": "$util.banner",
                         "options": {
