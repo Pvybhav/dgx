@@ -9,7 +9,7 @@
         "save": {
           "type": "$global.set",
           "options": {
-            "ef_s1_textField": "{{$get.textFieldName || $global.ef_s1_textField}}",
+            "ef_s1_textField": "{{$get.textFieldName}}",
             "ef_s1_TextArea": "{{$get.textAreaName}}",
             "ef_s1_Switch": "{{$get.switchName}}"
           },
@@ -50,7 +50,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.ef_s1_textField || ''}}"
+                  "text": "Global value is: {{$global.ef_s1_textField}}"
                 },
                 {
                   "type": "vertical",
@@ -61,7 +61,7 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$global.ef_s1_textField || ''}}",
+                      "value": "{{$global.ef_s1_textField}}",
                       "placeholder": "Add textFieldValue here",
                       "contentDescription": "field1"
                     },
@@ -69,7 +69,7 @@
                       "type": "textarea",
                       "name": "textAreaName",
                       "placeholder": "Text Area",
-                      "value": "{{$global.ef_s1_TextArea || ''}}",
+                      "value": "{{$global.ef_s1_TextArea}}",
                       "style": {
                         "background": "rgba(0,0,0,0)",
                         "placeholder_color": "#cecece",
@@ -84,7 +84,7 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{$global.ef_s1_Switch || 'false'}}",
+                      "value": "{{$global.ef_s1_Switch}}",
                       "action": {
                         "type": "$util.banner",
                         "options": {
