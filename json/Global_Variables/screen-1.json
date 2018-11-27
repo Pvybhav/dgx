@@ -89,7 +89,7 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{$global.ef_s1_Switch || 'false'}}",
+                      "value": "{{$global.ef_s1_Switch}} || 'false'",
                       "action": {
                         "type": "$util.banner",
                         "options": {
