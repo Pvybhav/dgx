@@ -6,19 +6,8 @@
         "$show": {
           "type": "$render"
         },
-        "save": {
-          "type": "$global.set",
-          "options": {
-            "ef_s2_textField": "{{$get.textFieldName}}",
-            "ef_s2_TextArea": "{{$get.textAreaName}}",
-            "ef_s2_Switch": "{{$get.switchName}}"
-          },
-          "success": {
-            "type": "$href",
-            "options": {
-              "url": "https://pvybhav.github.io/json/Global_Variables/screen-3.json"
-            }
-          }
+        "$pull": {
+          "type": "$reload"
         }
       },
       "templates": {
@@ -35,11 +24,13 @@
                 "type": "$global.reset",
                 "options": {
                   "items": [
-                    "ef_s2_textField"
+                    "ef_s2_textField",
+                    "ef_s2_TextArea",
+                    "ef_s2_Switch"
                   ]
                 },
                 "success": {
-                  "type": "$close"
+                  "type": "$render"
                 }
               }
             }
@@ -50,7 +41,10 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.ef_s2_textField}}"
+                  "text": "Screen-2",
+                  "style": {
+                    "align": "center"
+                  }
                 },
                 {
                   "type": "vertical",
@@ -61,7 +55,7 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$global.ef_s2_textField}}",
+                      "value": "{{$global.ef_s2_textField || ' '}}",
                       "placeholder": "Add textFieldValue here",
                       "contentDescription": "field1"
                     },
@@ -69,7 +63,7 @@
                       "type": "textarea",
                       "name": "textAreaName",
                       "placeholder": "Text Area",
-                      "value": "{{$global.ef_s2_TextArea}}",
+                      "value": "{{$global.ef_s2_TextArea || ' '}}",
                       "style": {
                         "background": "rgba(0,0,0,0)",
                         "placeholder_color": "#cecece",
@@ -84,12 +78,12 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{$global.ef_s2_Switch}}",
+                      "value": "{{$global.ef_s2_Switch || 'false'}}",
                       "action": {
                         "type": "$util.banner",
                         "options": {
                           "title": "Is true?",
-                          "description": "{{$get.switchName}}"
+                          "description": "{{$get.switchName || 'false'}}"
                         },
                         "contentDescription": "field3"
                       }
@@ -100,7 +94,18 @@
                   "type": "button",
                   "text": "Save Global Variables",
                   "action": {
-                    "trigger": "save"
+                    "type": "$global.set",
+                    "options": {
+                      "ef_s2_textField": "{{$get.textFieldName || ' '}}",
+                      "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
+                      "ef_s2_Switch": "{{$get.switchName || ' '}}"
+                    },
+                    "success": {
+                      "type": "$href",
+                      "options": {
+                        "url": "https://pvybhav.github.io/json/Global_Variables/screen-3.json"
+                      }
+                    }
                   }
                 }
               ]

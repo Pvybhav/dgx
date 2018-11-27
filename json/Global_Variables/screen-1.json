@@ -1,17 +1,20 @@
 {
   "$jason": {
     "head": {
-      "title": "Screen-1",
+      "title": "Screen-2",
       "actions": {
         "$show": {
           "type": "$render"
         },
+        "$pull": {
+          "type": "$reload"
+        },
         "save": {
           "type": "$global.set",
           "options": {
-            "ef_s1_textField": "{{$get.textFieldName}}",
-            "ef_s1_TextArea": "{{$get.textAreaName}}",
-            "ef_s1_Switch": "{{$get.switchName}}"
+            "ef_s1_textField": "{{$get.textFieldName || ' '}}",
+            "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
+            "ef_s1_Switch": "{{$get.switchName || ' '}}"
           },
           "success": {
             "type": "$href",
@@ -35,11 +38,13 @@
                 "type": "$global.reset",
                 "options": {
                   "items": [
-                    "ef_s1_textField"
+                    "ef_s1_textField",
+                    "ef_s1_TextArea",
+                    "ef_s1_Switch"
                   ]
                 },
                 "success": {
-                  "type": "$close"
+                  "type": "$render"
                 }
               }
             }
@@ -50,7 +55,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.ef_s1_textField}}"
+                  "text": "Global value is: {{$global.ef_s1_textField || ' '}}"
                 },
                 {
                   "type": "vertical",
@@ -61,7 +66,7 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$global.ef_s1_textField}}",
+                      "value": "{{$global.ef_s1_textField || ' '}}",
                       "placeholder": "Add textFieldValue here",
                       "contentDescription": "field1"
                     },
@@ -69,7 +74,7 @@
                       "type": "textarea",
                       "name": "textAreaName",
                       "placeholder": "Text Area",
-                      "value": "{{$global.ef_s1_TextArea}}",
+                      "value": "{{$global.ef_s1_TextArea || ' '}}",
                       "style": {
                         "background": "rgba(0,0,0,0)",
                         "placeholder_color": "#cecece",
@@ -84,12 +89,12 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{$global.ef_s1_Switch}}",
+                      "value": "{{$global.ef_s1_Switch || 'false'}}",
                       "action": {
                         "type": "$util.banner",
                         "options": {
                           "title": "Is true?",
-                          "description": "{{$get.switchName}}"
+                          "description": "{{$get.switchName || ' '}}"
                         },
                         "contentDescription": "field3"
                       }

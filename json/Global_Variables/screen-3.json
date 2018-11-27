@@ -6,12 +6,15 @@
         "$show": {
           "type": "$render"
         },
+        "$pull": {
+          "type": "$reload"
+        },
         "save": {
           "type": "$global.set",
           "options": {
-            "ef_s3_textField": "{{$get.textFieldName}} || {{$global.ef_s3_Switch}}",
-            "ef_s3_TextArea": "{{$get.textAreaName}} || {{$global.ef_s3_Switch}}",
-            "ef_s3_Switch": "{{$get.switchName}} || {{$global.ef_s3_Switch}}"
+            "ef_s3_textField": "{{$get.textFieldName || ' '}}",
+            "ef_s3_TextArea": "{{$get.textAreaName || ' '}}",
+            "ef_s3_Switch": "{{$get.switchName || ' '}}"
           },
           "success": {
             "type": "$href",
@@ -35,11 +38,13 @@
                 "type": "$global.reset",
                 "options": {
                   "items": [
-                    "ef_s3_textField"
+                    "ef_s3_textField",
+                    "ef_s3_TextArea",
+                    "ef_s3_Switch"
                   ]
                 },
                 "success": {
-                  "type": "$close"
+                  "type": "$render"
                 }
               }
             }
@@ -50,7 +55,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.ef_s3_textField || ''}}"
+                  "text": "Global value is: {{$global.ef_s3_textField || ' '}}"
                 },
                 {
                   "type": "vertical",
@@ -61,7 +66,7 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$global.ef_s3_textField}}",
+                      "value": "{{$global.ef_s3_textField || ' '}}",
                       "placeholder": "Add textFieldValue here",
                       "contentDescription": "field1"
                     },
@@ -69,7 +74,7 @@
                       "type": "textarea",
                       "name": "textAreaName",
                       "placeholder": "Text Area",
-                      "value": "{{$global.ef_s3_TextArea}}",
+                      "value": "{{$global.ef_s3_TextArea || ' '}}",
                       "style": {
                         "background": "rgba(0,0,0,0)",
                         "placeholder_color": "#cecece",
@@ -84,17 +89,27 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{$global.ef_s3_Switch}}",
+                      "value": "{{$global.ef_s3_Switch || ' '}}",
                       "action": {
                         "type": "$util.banner",
                         "options": {
                           "title": "Is true?",
-                          "description": "{{$get.switchName}}"
+                          "description": "{{$get.switchName || 'false'}}"
                         },
                         "contentDescription": "field3"
                       }
                     }
                   ]
+                },
+                {
+                  "type": "button",
+                  "text": "Display All Values -->",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://pvybhav.github.io/json/Global_Variables/display-global-values.json"
+                    }
+                  }
                 },
                 {
                   "type": "button",
