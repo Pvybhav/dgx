@@ -12,7 +12,11 @@
             "textFieldValue": "{{$get.textFieldName}}"
           },
           "success": {
-            "type": "$close"
+            "type": "$util.alert",
+            "options": {
+              "title": "success",
+              "description": "success"
+            }
           }
         }
       },

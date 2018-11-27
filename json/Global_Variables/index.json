@@ -15,7 +15,7 @@
               "items": [
                 {
                   "type": "button",
-                  "text": "{{$global.textFieldValue || 'Set Global Variable123'}}",
+                  "text": "{{Set Global Variable}}",
                   "style": {
                     "align": "center",
                     "width": "100%",
@@ -26,10 +26,74 @@
                   "action": {
                     "type": "$href",
                     "options": {
-                      "url": "https://pvybhav.github.io/json/Global_Variables/screen-1.json",
-                      "transition": "modal"
+                      "url": "https://pvybhav.github.io/json/Global_Variables/screen-1.json"
                     }
                   }
+                },
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "background": "#ffffff",
+                    "align": "center"
+                  },
+                  "components": [
+                    {
+                      "type": "textfield",
+                      "style": {
+                        "border_color": "#000000"
+                      },
+                      "placeholder": "Text Field",
+                      "name": "name",
+                      "contentDescription": "field1"
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "background": "#ffffff",
+                    "align": "center"
+                  },
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "status",
+                      "placeholder": "Text Area",
+                      "value": "",
+                      "style": {
+                        "background": "rgba(0,0,0,0)",
+                        "placeholder_color": "#cecece",
+                        "font": "HelveticaNeue",
+                        "align": "center",
+                        "width": "100%",
+                        "height": "100",
+                        "size": "12"
+                      },
+                      "contentDescription": "field2"
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "background": "#ffffff",
+                    "align": "center"
+                  },
+                  "components": [
+                    {
+                      "type": "switch",
+                      "name": "light",
+                      "value": "true",
+                      "action": {
+                        "type": "$util.banner",
+                        "options": {
+                          "title": "Is true?",
+                          "description": "{{$get.light}}"
+                        },
+                        "contentDescription": "field3"
+                      }
+                    }
+                  ]
                 }
               ]
             }
