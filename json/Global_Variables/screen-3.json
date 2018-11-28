@@ -23,16 +23,6 @@
               "options": {
                 "url": "https://pvybhav.github.io/json/Global_Variables/display-global-values.json"
               }
-            },
-            "banner": {
-              "type": "$util.banner",
-              "options": {
-                "title": "{{$get[$jason.item].toString()}}",
-                "description": "{{$jason.item}}"
-              },
-              "success": {
-                "type": "$render"
-              }
             }
           }
         }
@@ -110,16 +100,6 @@
                           "description": "{{$get.switchName}}"
                         },
                         "contentDescription": "field3"
-                      }
-                    },
-                    {
-                      "name": "light",
-                      "value": "true",
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Light is On?"
-                        }
                       }
                     }
                   ]
