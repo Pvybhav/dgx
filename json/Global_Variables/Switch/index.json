@@ -1,14 +1,16 @@
 {
   "$jason": {
     "head": {
-      "banner": {
-        "type": "$util.banner",
-        "options": {
-          "title": "{{$get[$jason.item].toString()}}",
-          "description": "{{$jason.item}}"
-        },
-        "success": {
-          "type": "$render"
+      "actions": {
+        "banner": {
+          "type": "$util.banner",
+          "options": {
+            "title": "{{$get[$jason.item].toString()}}",
+            "description": "{{$jason.item}}"
+          },
+          "success": {
+            "type": "$render"
+          }
         }
       }
     }
