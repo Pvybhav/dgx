@@ -10,19 +10,16 @@
           "type": "$reload"
         },
         "save": {
-          "type": "$render",
+          "type": "$global.set",
+          "options": {
+            "ef_s1_textField": "{{$get.textFieldName || ' '}}",
+            "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
+            "ef_s1_Switch": "{{$get.switchName || ' '}}"
+          },
           "success": {
-            "type": "$global.set",
+            "type": "$href",
             "options": {
-              "ef_s1_textField": "{{$get.textFieldName || ' '}}",
-              "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s1_Switch": "{{$get.switchName || ' '}}"
-            },
-            "success": {
-              "type": "$href",
-              "options": {
-                "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
-              }
+              "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
             }
           }
         }
@@ -109,7 +106,7 @@
                   "text": "Save Global Variables",
                   "action": {
                     "type": "$render",
-                    "success":{
+                    "success": {
                       "trigger": "save"
                     }
                   }
