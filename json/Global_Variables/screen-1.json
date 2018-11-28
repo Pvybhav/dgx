@@ -19,7 +19,9 @@
             "options": {
               "ef_s1_textField": "{{$get.textFieldName || ' '}}",
               "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s1_Switch": "{{$get.switchName || 'false'}}"
+              "ef_s1_Switch": "{{$get.switchName || 'false'}}",
+              "ef_s1_Dropdown": "{{$get.dropdownName}}"
+              
             },
             "success": {
               "type": "$href",
@@ -106,15 +108,15 @@
                       "options": [
                         {
                           "value": "Value 1",
-                          "defaultSelected": "ef_s1_Dropdown in $global ? $global.ef_s1_Dropdown'Value 1' ? true : false"
+                          "defaultSelected": "$global.ef_s1_Dropdown=='Value 1' ? true : false"
                         },
                         {
                           "value": "Value 2",
-                          "defaultSelected": "ef_s1_Dropdown in $global ? $global.ef_s1_Dropdown'Value 2' ? true : false"
+                          "defaultSelected": "$global.ef_s1_Dropdown=='Value 2' ? true : false"
                         },
                         {
                           "value": "Value 3",
-                          "defaultSelected": "ef_s1_Dropdown in $global ? $global.ef_s1_Dropdown'Value 3' ? true : false"
+                          "defaultSelected": "$global.ef_s1_Dropdown=='Value 3' ? true : false"
                         }
                       ],
                       "style": {
@@ -125,7 +127,7 @@
                       "action": {
                         "type": "$global.set",
                         "options": {
-                          "ef_s1_Dropdown": "{{$get.dropdownName}} || 'Value 3'"
+                          "ef_s1_Dropdown": "{{$get.dropdownName}}"
                         }
                       }
                       }
