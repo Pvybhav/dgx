@@ -104,6 +104,30 @@
                         },
                         "contentDescription": "field3"
                       }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "contentDescription": "shift",
+                      "options": [
+                        {
+                          "value": "Value 1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Value 2",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Value 3",
+                          "defaultSelected": "true"
+                        }
+                      ],
+                      "style": {
+                        "size": "10",
+                        "color": "rgb(200,130,0)",
+                        "padding": "5"
+                      }
                     }
                   ]
                 },
@@ -112,7 +136,7 @@
                   "text": "Save Global Variables",
                   "action": {
                     "type": "$render",
-                    "success":{
+                    "success": {
                       "trigger": "save"
                     }
                   }
