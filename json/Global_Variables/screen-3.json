@@ -92,7 +92,7 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{$global.ef_s3_Switch}}",
+                      "value": "{{'false' || $global.ef_s3_Switch}}",
                       "action": {
                         "type": "$util.banner",
                         "options": {
