@@ -15,7 +15,8 @@
         "do": {
           "type": "$global.set",
           "options": {
-            "todos": "{{ var todos = $global.todos; var selected_index = 0; for(var index=0; index<todos.length; index++) { var todo = todos[index]; if(todo.key.toString() == $jason.key.toString()) todo.done = !todo.done; } return todos; }}"
+            "todos": "{{ var todos = $global.todos; var selected_index = 0; for(var index=0; index<todos.length; index++) { var todo = todos[index]; if(todo.key.toString() == $jason.key.toString()) todo.done = !todo.done; } return todos; }}",
+            "mykey": "{{var mykey= 'vybhav'; return mykey}}"
           },
           "success": {
             "type": "$render"
@@ -86,6 +87,18 @@
                           "url": "{{ done ? 'https://png.icons8.com/ok/ios7/100' : 'https://png.icons8.com/unchecked-circle/ios7/100'}}"
                         }
                       ]
+                    }
+                  },
+                  "{{#if 'mykey' in $global}}": {
+                    "type": "label",
+                    "text": "{{$global.mykey}}",
+                    "style": {
+                      "font": "AcademyEngravedLetPlain",
+                      "size": "30",
+                      "color": "rgb(0,0,0)",
+                      "padding": "10",
+                      "background": "rgb(0,0,0)",
+                      "corner_radius": "0"
                     }
                   }
                 },
