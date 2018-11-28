@@ -19,7 +19,9 @@
             "options": {
               "ef_s1_textField": "{{$get.textFieldName || ' '}}",
               "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s1_Switch": "{{$get.switchName || 'false'}}"
+              "ef_s1_Switch": "{{$get.switchName || 'false'}}",
+              "ef_s1_Dropdown": "{{$get.dropdownName}}"
+              
             },
             "success": {
               "type": "$href",
@@ -96,19 +98,12 @@
                       "type": "switch",
                       "name": "switchName",
                       "value": "{{$global.ef_s1_Switch || 'false'}}",
-                      "action": {
-                        "type": "$util.banner",
-                        "options": {
-                          "title": "Is true?",
-                          "description": "{{$get.switchName || ' '}}"
-                        },
                         "contentDescription": "field3"
-                      }
                     },
                     {
                       "type": "dropdown",
-                      "name": "shift",
-                      "contentDescription": "shift",
+                      "name": "dropdownName",
+                      "contentDescription": "field4",
                       "options": [
                         {
                           "value": "Value 1",
@@ -127,8 +122,15 @@
                         "size": "10",
                         "color": "rgb(200,130,0)",
                         "padding": "5"
+                      },
+                      "action":{
+                          "type": "$util.banner",
+                          "options": {
+                            "title": "Hello",
+                            "description": "This is a message --> {{$get.dropdownName}}"
+                          }
+                        }
                       }
-                    }
                   ]
                 },
                 {
