@@ -1,0 +1,27 @@
+{
+  "$jason": {
+    "head": {
+      "banner": {
+        "type": "$util.banner",
+        "options": {
+          "title": "{{$get[$jason.item].toString()}}",
+          "description": "{{$jason.item}}"
+        },
+        "success": {
+          "type": "$render"
+        }
+      }
+    }
+  },
+  "body": {
+    "type": "switch",
+    "name": "light",
+    "value": "true",
+    "action": {
+      "trigger": "banner",
+      "options": {
+        "item": "Light is On?"
+      }
+    }
+  }
+}
