@@ -16,7 +16,7 @@
             "options": {
               "ef_s3_textField": "{{$get.textFieldName || ' '}}",
               "ef_s3_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s3_Switch": "{{$get.switchName}} || 'false'"
+              "ef_s3_Switch": "{{$get.switchName || 'false'}}"
             },
             "success": {
               "type": "$href",
@@ -25,7 +25,18 @@
               }
             }
           }
+        },
+        "banner": {
+          "type": "$util.banner",
+          "options": {
+            "title": "{{$get[$jason.item].toString()}}",
+            "description": "{{$jason.item}}"
+          },
+          "success": {
+            "type": "$render"
+          }
         }
+      }
       },
       "templates": {
         "body": {
@@ -101,7 +112,17 @@
                         },
                         "contentDescription": "field3"
                       }
+                    },
+                    {
+                    "name": "light",
+                    "value": "true",
+                    "action": {
+                      "trigger": "banner",
+                      "options": {
+                        "item": "Light is On?"
+                      }
                     }
+                  }
                   ]
                 },
                 {
