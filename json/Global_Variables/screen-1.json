@@ -90,16 +90,19 @@
                       "contentDescription": "field2"
                     },
                     {
-                      "type": "switch",
-                      "name": "switchName",
-                      "value": "{{$global.ef_s1_Switch || 'false'}}",
-                      "action": {
-                        "type": "$util.banner",
-                        "options": {
-                          "title": "Is true?",
-                          "description": "{{$get.switchName || ' '}}"
-                        },
-                        "contentDescription": "field3"
+                      "type": "$render",
+                      "success":{
+                        "type": "switch",
+                        "name": "switchName",
+                        "value": "{{$global.ef_s1_Switch || 'false'}}",
+                        "action": {
+                          "type": "$util.banner",
+                          "options": {
+                            "title": "Is true?",
+                            "description": "{{$get.switchName || ' '}}"
+                          },
+                          "contentDescription": "field3"
+                        }
                       }
                     }
                   ]
