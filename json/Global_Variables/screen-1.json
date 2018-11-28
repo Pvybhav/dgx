@@ -19,7 +19,9 @@
             "options": {
               "ef_s1_textField": "{{$get.textFieldName || ' '}}",
               "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s1_Switch": "{{$get.switchName || 'false'}}"
+              "ef_s1_Switch": "{{$get.switchName || 'false'}}",
+              "ef_s1_Dropdown": "{{$get.dropdownName}}"
+              
             },
             "success": {
               "type": "$href",
@@ -124,8 +126,7 @@
                       "action":{
                         "type":"$global.set",
                         "options":{
-                          "ef_s1_Dropdown": "{{$get.dropdownName}}"
-                        }
+                          "ef_s1_Dropdown": "{{$get.dropdownName}}"}
                       }
                       }
                   ]
