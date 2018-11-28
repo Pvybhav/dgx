@@ -10,16 +10,19 @@
           "type": "$reload"
         },
         "save": {
-          "type": "$global.set",
-          "options": {
-            "ef_s3_textField": "{{$get.textFieldName || ' '}}",
-            "ef_s3_TextArea": "{{$get.textAreaName || ' '}}",
-            "ef_s3_Switch": "{{$get.switchName || ' '}}"
-          },
+          "type": "$render",
           "success": {
-            "type": "$href",
+            "type": "$global.set",
             "options": {
-              "url": "https://pvybhav.github.io/json/Global_Variables/display-global-values.json"
+              "ef_s3_textField": "{{$get.textFieldName || ' '}}",
+              "ef_s3_TextArea": "{{$get.textAreaName || ' '}}",
+              "ef_s3_Switch": "{{$get.switchName || ' '}}"
+            },
+            "success": {
+              "type": "$href",
+              "options": {
+                "url": "https://pvybhav.github.io/json/Global_Variables/display-global-values.json"
+              }
             }
           }
         }
