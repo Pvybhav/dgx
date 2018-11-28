@@ -16,7 +16,7 @@
             "options": {
               "ef_s3_textField": "{{$get.textFieldName || ' '}}",
               "ef_s3_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s3_Switch": "{{$get.switchName || 'false'}}"
+              "ef_s3_Switch": "{{$get.switchName || false}}"
             },
             "success": {
               "type": "$href",
@@ -92,7 +92,7 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{'false' || $global.ef_s3_Switch}}",
+                      "value": "{{$global.ef_s3_Switch || false}}",
                       "action": {
                         "type": "$util.banner",
                         "options": {
