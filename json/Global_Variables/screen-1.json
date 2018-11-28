@@ -49,6 +49,7 @@
                     "ef_s1_textField",
                     "ef_s1_TextArea",
                     "ef_s1_Switch"
+                    "ef_s1_Dropdown"
                   ]
                 },
                 "success": {
@@ -124,10 +125,9 @@
                         "padding": "5"
                       },
                       "action": {
-                        "type": "$util.banner",
+                        "type": "$global.set",
                         "options": {
-                          "title": "Hello",
-                          "description": "This is a message --> {{$get.dropdownName}}"
+                          "ef_s1_Dropdown": "{{$get.dropdownName}}"
                         }
                       }
                       }
