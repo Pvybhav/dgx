@@ -16,6 +16,7 @@
             "options": {
               "ef_s3_textField": "{{$get.textFieldName || ' '}}",
               "ef_s3_TextArea": "{{$get.textAreaName || ' '}}",
+              "ef_s3_Switch": "{{$get.switchName || 'false'}}"
             },
             "success": {
               "type": "$href",
@@ -33,10 +34,10 @@
               "ef_s3_Switch": "{{$get.switchName || 'false'}}"
             },
             "success": {
-              "type": "$util.banner",
-              "options": {
-                "title": "SAVED TO GLOBAL VARIABLES",
-                "description": "done"
+              "type": "$util.alert",
+              "success":{
+                "titile": "Success",
+                "description": "Switch value updated successfully"
               }
             }
           }
@@ -115,8 +116,11 @@
                           "title": "Is true?",
                           "description": "{{$get.switchName}}"
                         },
-                        "success": {
-                          "trigger": "saveSwitchValue"
+                        "success":{
+                          "type": "$render",
+                          "success":{
+                            "trigger": "saveSwitchValue"
+                          }
                         }
                       }
                     }
