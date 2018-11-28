@@ -48,8 +48,7 @@
                   "items": [
                     "ef_s1_textField",
                     "ef_s1_TextArea",
-                    "ef_s1_Switch",
-                    "ef_s1_Dropdown"
+                    "ef_s1_Switch"
                   ]
                 },
                 "success": {
@@ -108,15 +107,15 @@
                       "options": [
                         {
                           "value": "Value 1",
-                          "defaultSelected": "$global.ef_s1_Dropdown=='Value 1' ? true : false"
+                          "defaultSelected": "false"
                         },
                         {
                           "value": "Value 2",
-                          "defaultSelected": "$global.ef_s1_Dropdown=='Value 2' ? true : false"
+                          "defaultSelected": "true"
                         },
                         {
                           "value": "Value 3",
-                          "defaultSelected": "$global.ef_s1_Dropdown=='Value 3' ? true : false"
+                          "defaultSelected": "true"
                         }
                       ],
                       "style": {
@@ -124,12 +123,13 @@
                         "color": "rgb(200,130,0)",
                         "padding": "5"
                       },
-                      "action": {
-                        "type": "$global.set",
-                        "options": {
-                          "ef_s1_Dropdown": "{{$get.dropdownName}}"
+                      "action":{
+                          "type": "$util.banner",
+                          "options": {
+                            "title": "Hello",
+                            "description": "This is a message --> {{$get.dropdownName}}"
+                          }
                         }
-                      }
                       }
                   ]
                 },
