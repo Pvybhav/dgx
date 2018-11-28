@@ -16,15 +16,28 @@
       }
     },
     "body": {
-      "type": "switch",
-      "name": "light",
-      "value": "true",
-      "action": {
-        "trigger": "banner",
-        "options": {
-          "item": "Light is On?"
+      "sections": [
+        {
+          "type": "vertical",
+          "items": [
+            {
+              "componenets": [
+                {
+                  "type": "switch",
+                  "name": "light",
+                  "value": "true",
+                  "action": {
+                    "trigger": "banner",
+                    "options": {
+                      "item": "Light is On?"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
         }
-      }
+      ]
     }
   }
 }
