@@ -16,28 +16,12 @@
             "options": {
               "ef_s3_textField": "{{$get.textFieldName || ' '}}",
               "ef_s3_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s3_Switch": "{{$get.switchName || 'false'}}"
+              "ef_s3_Switch": "{{$get.switchName}}"
             },
             "success": {
               "type": "$href",
               "options": {
                 "url": "https://pvybhav.github.io/json/Global_Variables/display-global-values.json"
-              }
-            }
-          }
-        },
-        "saveSwitchValue": {
-          "type": "$render",
-          "success": {
-            "type": "$global.set",
-            "options": {
-              "ef_s3_Switch": "{{$get.switchName || 'false'}}"
-            },
-            "success": {
-              "type": "$util.alert",
-              "options":{
-                "titile": "Success",
-                "description": "Switch value updated successfully"
               }
             }
           }
@@ -108,20 +92,14 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{$global.ef_s3_Switch || false}}",
-                      "contentDescription": "field3",
+                      "value": "{{$global.ef_s3_Switch || 'false'}}",
                       "action": {
                         "type": "$util.banner",
                         "options": {
                           "title": "Is true?",
                           "description": "{{$get.switchName}}"
                         },
-                        "success":{
-                          "type": "$render",
-                          "success":{
-                            "trigger": "saveSwitchValue"
-                          }
-                        }
+                        "contentDescription": "field3"
                       }
                     }
                   ]
