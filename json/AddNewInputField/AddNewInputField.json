@@ -1,0 +1,79 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Add new inputfield",
+      "actions": {
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload"
+        },
+        "addNewInputField": {
+          "type": "$global.set",
+          "options": {
+            "ef_s1_textField": "{{$get.textFieldName || ' '}}",
+            "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
+            "ef_s1_Switch": "{{$get.switchName || ' '}}"
+          },
+          "success": {
+            "type": "$href",
+            "options": {
+              "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "Global value is: {{$global.ef_s1_textField || return 'no value from js'}}"
+                },
+                {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "10"
+                  },
+                  "components": [
+                    {
+                      "type": "textfield",
+                      "name": "textFieldName",
+                      "value": "{{$global.ef_s1_textField || ' '}}",
+                      "placeholder": "Add textFieldValue here",
+                      "contentDescription": "field1"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "switchName",
+                      "value": "{{$global.ef_s1_Switch || 'false'}}",
+                      "action": {
+                        "type": "$util.banner",
+                        "options": {
+                          "title": "Is true?",
+                          "description": "{{$get.switchName || ' '}}"
+                        },
+                        "contentDescription": "field3"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "button",
+                  "text": "Add new input field",
+                  "action": {
+                    "trigger": "addNewInputField"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
