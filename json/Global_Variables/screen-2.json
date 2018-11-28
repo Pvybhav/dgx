@@ -94,13 +94,21 @@
                       "name": "switchName",
                       "value": "{{$global.ef_s2_Switch || 'false'}}",
                       "action": {
-                        "type": "$util.banner",
+                        "type": "$global.set",
                         "options": {
-                          "title": "Is true?",
-                          "description": "{{$get.switchName || ' '}}"
+                          "ef_s2_textField": "{{$get.textFieldName || ' '}}",
+                          "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
+                          "ef_s2_Switch": "{{$get.switchName || 'false'}}"
                         },
-                        "contentDescription": "field3"
-                      }
+                        "success": {
+                          "type": "$util.alert",
+                          "options": {
+                            "title":"success",
+                            "description": "Global value set successfully"
+                          }
+                        }
+                      },
+                      "contentDescription": "field3"
                     }
                   ]
                 },
