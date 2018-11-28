@@ -16,7 +16,6 @@
             "options": {
               "ef_s2_textField": "{{$get.textFieldName || ' '}}",
               "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s2_Switch": "{{$get.switchName || 'false'}}"
             },
             "success": {
               "type": "$href",
@@ -92,13 +91,13 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{$global.ef_s2_Switch || return 'false'}}",
+                      "value": "{{$global.ef_s2_Switch}}",
                       "action": {
                         "type": "$global.set",
                         "options": {
                           "ef_s2_textField": "{{$get.textFieldName || ' '}}",
                           "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
-                          "ef_s2_Switch": "{{$get.switchName || 'false'}}"
+                          "ef_s2_Switch": "{{$get.switchName || return 'false'}}"
                         },
                         "success": {
                           "type": "$util.alert",
