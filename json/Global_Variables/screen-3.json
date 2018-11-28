@@ -23,132 +23,131 @@
               "options": {
                 "url": "https://pvybhav.github.io/json/Global_Variables/display-global-values.json"
               }
-            }
-          }
-        },
-        "banner": {
-          "type": "$util.banner",
-          "options": {
-            "title": "{{$get[$jason.item].toString()}}",
-            "description": "{{$jason.item}}"
-          },
-          "success": {
-            "type": "$render"
-          }
-        }
-      }
-    },
-    "templates": {
-      "body": {
-        "header": {
-          "menu": {
-            "text": "Reset",
-            "style": {
-              "size": "15",
-              "font": "Helvetica",
-              "color": "#4f8ff7"
             },
-            "action": {
-              "type": "$global.reset",
+            "banner": {
+              "type": "$util.banner",
               "options": {
-                "items": [
-                  "ef_s3_textField",
-                  "ef_s3_TextArea",
-                  "ef_s3_Switch"
-                ]
+                "title": "{{$get[$jason.item].toString()}}",
+                "description": "{{$jason.item}}"
               },
               "success": {
                 "type": "$render"
               }
             }
           }
-        },
-        "sections": [
-          {
-            "type": "vertical",
-            "items": [
-              {
-                "type": "label",
-                "text": "Global value is: {{$global.ef_s3_textField || ' '}}"
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "menu": {
+              "text": "Reset",
+              "style": {
+                "size": "15",
+                "font": "Helvetica",
+                "color": "#4f8ff7"
               },
-              {
-                "type": "vertical",
-                "style": {
-                  "padding": "10"
+              "action": {
+                "type": "$global.reset",
+                "options": {
+                  "items": [
+                    "ef_s3_textField",
+                    "ef_s3_TextArea",
+                    "ef_s3_Switch"
+                  ]
                 },
-                "components": [
-                  {
-                    "type": "textfield",
-                    "name": "textFieldName",
-                    "value": "{{$global.ef_s3_textField || ' '}}",
-                    "placeholder": "Add textFieldValue here",
-                    "contentDescription": "field1"
-                  },
-                  {
-                    "type": "textarea",
-                    "name": "textAreaName",
-                    "placeholder": "Text Area",
-                    "value": "{{$global.ef_s3_TextArea || ' '}}",
-                    "style": {
-                      "background": "rgba(0,0,0,0)",
-                      "placeholder_color": "#cecece",
-                      "font": "HelveticaNeue",
-                      "align": "center",
-                      "width": "100%",
-                      "height": "100",
-                      "size": "12"
-                    },
-                    "contentDescription": "field2"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "switchName",
-                    "value": "{{$global.ef_s3_Switch}} || false",
-                    "action": {
-                      "type": "$util.banner",
-                      "options": {
-                        "title": "Is true?",
-                        "description": "{{$get.switchName}}"
-                      },
-                      "contentDescription": "field3"
-                    }
-                  },
-                  {
-                    "type": "switch",
-                    "name": "light",
-                    "value": "true",
-                    "action": {
-                      "trigger": "banner",
-                      "options": {
-                        "item": "Light is On?"
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "button",
-                "text": "Display All Values -->",
-                "action": {
-                  "type": "$href",
-                  "options": {
-                    "url": "https://pvybhav.github.io/json/Global_Variables/display-global-values.json"
-                  }
-                }
-              },
-              {
-                "type": "button",
-                "text": "Save Global Variables",
-                "action": {
-                  "type": "$render",
-                  "success": {
-                    "trigger": "save"
-                  }
+                "success": {
+                  "type": "$render"
                 }
               }
-            ]
-          }
-        ]
+            }
+          },
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "Global value is: {{$global.ef_s3_textField || ' '}}"
+                },
+                {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "10"
+                  },
+                  "components": [
+                    {
+                      "type": "textfield",
+                      "name": "textFieldName",
+                      "value": "{{$global.ef_s3_textField || ' '}}",
+                      "placeholder": "Add textFieldValue here",
+                      "contentDescription": "field1"
+                    },
+                    {
+                      "type": "textarea",
+                      "name": "textAreaName",
+                      "placeholder": "Text Area",
+                      "value": "{{$global.ef_s3_TextArea || ' '}}",
+                      "style": {
+                        "background": "rgba(0,0,0,0)",
+                        "placeholder_color": "#cecece",
+                        "font": "HelveticaNeue",
+                        "align": "center",
+                        "width": "100%",
+                        "height": "100",
+                        "size": "12"
+                      },
+                      "contentDescription": "field2"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "switchName",
+                      "value": "{{$global.ef_s3_Switch}} || false",
+                      "action": {
+                        "type": "$util.banner",
+                        "options": {
+                          "title": "Is true?",
+                          "description": "{{$get.switchName}}"
+                        },
+                        "contentDescription": "field3"
+                      }
+                    },
+                    {
+                      "name": "light",
+                      "value": "true",
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Light is On?"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "button",
+                  "text": "Display All Values -->",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://pvybhav.github.io/json/Global_Variables/display-global-values.json"
+                    }
+                  }
+                },
+                {
+                  "type": "button",
+                  "text": "Save Global Variables",
+                  "action": {
+                    "type": "$render",
+                    "success": {
+                      "trigger": "save"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
       }
     }
   }
