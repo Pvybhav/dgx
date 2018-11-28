@@ -108,7 +108,10 @@
                   "type": "button",
                   "text": "Save Global Variables",
                   "action": {
-                    "trigger": "save"
+                    "type": "$render",
+                    "success":{
+                      "trigger": "save"
+                    }
                   }
                 }
               ]
