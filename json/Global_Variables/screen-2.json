@@ -16,6 +16,7 @@
             "options": {
               "ef_s2_textField": "{{$get.textFieldName || ' '}}",
               "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
+              "ef_s2_Switch": "{{$get.switchName || ' '}}"
             },
             "success": {
               "type": "$href",
@@ -91,23 +92,15 @@
                     {
                       "type": "switch",
                       "name": "switchName",
-                      "value": "{{$global.ef_s2_Switch}}",
+                      "value": "{{$global.ef_s2_Switch || 'false'}}",
                       "action": {
-                        "type": "$global.set",
+                        "type": "$util.banner",
                         "options": {
-                          "ef_s2_textField": "{{$get.textFieldName || ' '}}",
-                          "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
-                          "ef_s2_Switch": "{{$get.switchName || return 'false'}}"
+                          "title": "Is true?",
+                          "description": "{{$get.switchName || ' '}}"
                         },
-                        "success": {
-                          "type": "$util.alert",
-                          "options": {
-                            "title":"success",
-                            "description": "Global value set successfully"
-                          }
-                        }
-                      },
-                      "contentDescription": "field3"
+                        "contentDescription": "field3"
+                      }
                     }
                   ]
                 },
