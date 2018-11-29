@@ -10,21 +10,17 @@
           "type": "$reload"
         },
         "save": {
-          "type": "$render",
+          "type": "$global.set",
+          "options": {
+            "ef_s1_textField": "{{$get.textFieldName || ' '}}",
+            "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
+            "ef_s1_Switch": "{{$get.switchName || 'false'}}",
+            "ef_s1_Dropdown": "{{$get.dropdownName}}"
+          },
           "success": {
-            "type": "$global.set",
+            "type": "$href",
             "options": {
-              "ef_s1_textField": "{{$get.textFieldName || ' '}}",
-              "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s1_Switch": "{{$get.switchName || 'false'}}",
-              "ef_s1_Dropdown": "{{$get.dropdownName}}"
-              
-            },
-            "success": {
-              "type": "$href",
-              "options": {
-                "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
-              }
+              "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
             }
           }
         }
@@ -95,7 +91,7 @@
                       "type": "switch",
                       "name": "switchName",
                       "value": "{{$global.ef_s1_Switch || 'false'}}",
-                        "contentDescription": "field3"
+                      "contentDescription": "field3"
                     }
                   ]
                 },
