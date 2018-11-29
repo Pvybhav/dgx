@@ -16,7 +16,7 @@
             "options": {
               "ef_s2_textField": "{{$get.textFieldName || ' '}}",
               "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s2_Switch": "{{$get.switchName || 'false'}}"
+              "ef_s2_Switch": "{{$get.switchName || ' '}}"
             },
             "success": {
               "type": "$href",
@@ -93,7 +93,14 @@
                       "type": "switch",
                       "name": "switchName",
                       "value": "{{$global.ef_s2_Switch || 'false'}}",
-                      "contentDescription": "field3"
+                      "action": {
+                        "type": "$util.banner",
+                        "options": {
+                          "title": "Is true?",
+                          "description": "{{$get.switchName || ' '}}"
+                        },
+                        "contentDescription": "field3"
+                      }
                     }
                   ]
                 },
