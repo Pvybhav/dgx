@@ -10,7 +10,7 @@
           "type": "$render"
         },
         "save": {
-            "type": "$global.set",
+            "type": "$cache.set",
             "options": {
               "ef_s1_textField": "{{$get.textFieldName || ' '}}",
               "ef_s1_TextArea": "{{$get.textAreaName || ' '}}"
@@ -34,7 +34,7 @@
                 "color": "#4f8ff7"
               },
               "action": {
-                "type": "$global.reset",
+                "type": "$cache.reset",
                 "options": {
                   "items": [
                     "ef_s1_textField",
@@ -53,7 +53,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.ef_s1_textField || ' '}}"
+                  "text": "cache value is: {{$cache.ef_s1_textField || ' '}}"
                 },
                 {
                   "type": "vertical",
@@ -64,7 +64,7 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$global.ef_s1_textField || ' '}}",
+                      "value": "{{$cache.ef_s1_textField || ' '}}",
                       "placeholder": "Add textFieldValue here",
                       "contentDescription": "field1"
                     },
@@ -72,7 +72,7 @@
                       "type": "textarea",
                       "name": "textAreaName",
                       "placeholder": "Text Area",
-                      "value": "{{$global.ef_s1_TextArea || ' '}}",
+                      "value": "{{$cache.ef_s1_TextArea || ' '}}",
                       "style": {
                         "background": "rgba(0,0,0,0)",
                         "placeholder_color": "#cecece",
