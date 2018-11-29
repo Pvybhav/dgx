@@ -92,7 +92,11 @@
                   "action": {
                     "type": "$render",
                     "success": {
-                      "trigger": "save"
+                      "type": "$util.alert",
+                      "options":{
+                        "title": "success",
+                        "description": "button clicked"
+                      }
                     }
                   }
                 }
