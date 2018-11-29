@@ -69,7 +69,10 @@
                       "name": "textFieldName",
                       "value": "{{$global.ef_s3_textField || ' '}}",
                       "placeholder": "Add textFieldValue here",
-                      "contentDescription": "field1"
+                      "contentDescription": "field1",
+                      "action": {
+                        "type": "$render"
+                      }
                     },
                     {
                       "type": "textarea",
@@ -83,7 +86,10 @@
                         "align": "center",
                         "width": "100%",
                         "height": "100",
-                        "size": "12"
+                        "size": "12",
+                        "action": {
+                          "type": "$render"
+                        }
                       },
                       "contentDescription": "field2"
                     }
