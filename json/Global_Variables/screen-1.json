@@ -3,9 +3,6 @@
     "head": {
       "title": "Screen-1",
       "actions": {
-        "$foreground": {
-          "type": "$reload"
-        },
         "$show": {
           "type": "$render"
         },
@@ -63,7 +60,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.ef_s1_Dropdown}}"
+                  "text": "Global value is: {{$global.ef_s1_textField || ' '}}"
                 },
                 {
                   "type": "vertical",
@@ -111,7 +108,7 @@
                         },
                         {
                           "value": "Value 2",
-                          "defaultSelected": "false"
+                          "defaultSelected": "true"
                         },
                         {
                           "value": "Value 3",
@@ -123,12 +120,6 @@
                         "color": "rgb(200,130,0)",
                         "padding": "5"
                       }
-                      },
-                      {
-                        "type":"label",
-                        "name":"mylabel",
-                        "contentDescription":"field5",
-                        "value": "{{$global}}"
                       }
                   ]
                 },
