@@ -3,14 +3,13 @@
     "head": {
       "title": "Screen-1",
       "actions": {
-        "$foreground": {
-          "type": "$render"
-        },
         "$show": {
           "type": "$render"
         },
         "save": {
-            "type": "$cache.set",
+          "type": "$render",
+          "success": {
+            "type": "$global.set",
             "options": {
               "ef_s1_textField": "{{$get.textFieldName || ' '}}",
               "ef_s1_TextArea": "{{$get.textAreaName || ' '}}"
@@ -21,6 +20,7 @@
                 "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
               }
             }
+          }
         }
       },
       "templates": {
@@ -34,7 +34,7 @@
                 "color": "#4f8ff7"
               },
               "action": {
-                "type": "$cache.reset",
+                "type": "$global.reset",
                 "options": {
                   "items": [
                     "ef_s1_textField",
@@ -53,7 +53,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "cache value is: {{$cache.ef_s1_textField || ' '}}"
+                  "text": "Global value is: {{$global.ef_s1_textField || ' '}}"
                 },
                 {
                   "type": "vertical",
@@ -64,7 +64,7 @@
                     {
                       "type": "textfield",
                       "name": "textFieldName",
-                      "value": "{{$cache.ef_s1_textField || ' '}}",
+                      "value": "{{$global.ef_s1_textField || ' '}}",
                       "placeholder": "Add textFieldValue here",
                       "contentDescription": "field1"
                     },
@@ -72,7 +72,7 @@
                       "type": "textarea",
                       "name": "textAreaName",
                       "placeholder": "Text Area",
-                      "value": "{{$cache.ef_s1_TextArea || ' '}}",
+                      "value": "{{$global.ef_s1_TextArea || ' '}}",
                       "style": {
                         "background": "rgba(0,0,0,0)",
                         "placeholder_color": "#cecece",
@@ -91,7 +91,7 @@
                   "text": "Save Global Variables",
                   "action": {
                     "type": "$render",
-                    "success":{
+                    "success": {
                       "trigger": "save"
                     }
                   }
