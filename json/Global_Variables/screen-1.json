@@ -11,8 +11,8 @@
           "success": {
             "type": "$global.set",
             "options": {
-              "ef_s1_textField": "{{$get.textFieldName || ' '}}",
-              "ef_s1_TextArea": "{{$get.textAreaName || ' '}}"
+              "ef_s1_textField": "{{#if $get.textFieldName }} : {{$get.textFieldName}}",
+              "ef_s1_TextArea": "{{#if $get.textAreaName}} : {{$get.textAreaName}}"
             },
             "success": {
               "type": "$href",
