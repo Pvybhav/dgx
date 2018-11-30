@@ -12,9 +12,9 @@
           "align": "center",
           "top": "5"
         },
-        "horizontal_label":{
+        "horizontal_label": {
           "size": 15,
-          "font":"ArialBlack"
+          "font": "ArialBlack"
         },
         "horizontal_image_section": {
           "width": 100,
@@ -68,8 +68,8 @@
             "title": {
               "type": "label",
               "text": "DEMO APP",
-              "style":{
-                "align":"center"
+              "style": {
+                "align": "center"
               }
             },
             "menu": {
@@ -95,15 +95,20 @@
           },
           "sections": [
             {
-              "type": "button",
-              "text": "Refresh App",
-              "action": {
-                "type": "$util.toast",
-                "options": {
-                  "text": "Page refreshed",
-                  "type": "warning"
+              "type": "horizontal",
+              "components": [
+                {
+                  "type": "button",
+                  "text": "Refresh App",
+                  "action": {
+                    "type": "$util.toast",
+                    "options": {
+                      "text": "Page refreshed",
+                      "type": "warning"
+                    }
+                  }
                 }
-              }
+              ]
             },
             {
               "type": "horizontal",
