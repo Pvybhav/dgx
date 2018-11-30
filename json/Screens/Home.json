@@ -1,25 +1,27 @@
 {
   "$jason": {
     "head": {
-      "title": "title",
-      "description": "description",
-      "offline": "true",
-      "styles": {
-        "text_field":{
-          "font": "HelveticaNeue",
-          "size": "15",
-          "color": "#ff0000",
-          "padding": "10"
-        }
-      },
+      "title": "Screen-1",
       "actions": {
-        "refresh_view": {
-          "type": "$refresh",
+        "$show": {
+          "type": "$render"
+        },
+        "$load": {
+          "type": "$render"
+        },
+        "save": {
+          "type": "$render",
           "success": {
-            "type": "$util.toast",
+            "type": "$global.set",
             "options": {
-              "text": "Page refreshed successfully",
-              "type": "warning"
+              "ef_s1_textField": "{{$get.textFieldName || ' '}}",
+              "ef_s1_TextArea": "{{$get.textAreaName || ' '}}"
+            },
+            "success": {
+              "type": "$href",
+              "options": {
+                "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
+              }
             }
           }
         }
@@ -27,13 +29,85 @@
       "templates": {
         "body": {
           "header": {
-            "type": "label",
-            "label": "my APP HEADER",
-            "style": {
-              "align": "center",
-              "top": "5"
+            "menu": {
+              "text": "Reset",
+              "style": {
+                "size": "15",
+                "font": "Helvetica",
+                "color": "#4f8ff7"
+              },
+              "action": {
+                "type": "$global.reset",
+                "options": {
+                  "items": [
+                    "ef_s1_textField",
+                    "ef_s1_TextArea"
+                  ]
+                },
+                "success": {
+                  "type": "$render"
+                }
+              }
             }
-          }
+          },
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "Global value is: {{$global.ef_s1_textField || ' '}}"
+                },
+                {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "10"
+                  },
+                  "components": [
+                    {
+                      "type": "textfield",
+                      "name": "textFieldName",
+                      "value": "{{$global.ef_s1_textField || ' '}}",
+                      "placeholder": "Add textFieldValue here",
+                      "contentDescription": "field1",
+                      "action": {
+                        "type": "$render"
+                      }
+                    },
+                    {
+                      "type": "textarea",
+                      "name": "textAreaName",
+                      "placeholder": "Text Area",
+                      "value": "{{$global.ef_s1_TextArea || ' '}}",
+                      "style": {
+                        "background": "rgba(0,0,0,0)",
+                        "placeholder_color": "#cecece",
+                        "font": "HelveticaNeue",
+                        "align": "center",
+                        "width": "100%",
+                        "height": "100",
+                        "size": "12"
+                      },
+                      "contentDescription": "field2",
+                      "action": {
+                        "type": "$render"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "button",
+                  "text": "Save Global Variables",
+                  "action": {
+                    "type": "$render",
+                    "success": {
+                      "trigger": "save"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
         }
       }
     }
