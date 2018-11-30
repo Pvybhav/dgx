@@ -4,12 +4,30 @@
       "title": "TITLE",
       "description": "DESCRIPTION",
       "offline": "true",
+      "styles": {
+        "text_field": {
+          "font": "HelveticaNeue",
+          "size": "15",
+          "color": "#ff0000",
+          "padding": "10"
+        }
+      },
       "actions": {
         "$show": {
           "type": "$render"
         },
         "$load": {
           "type": "$render"
+        },
+        "refresh_page": {
+          "type": "$refresh",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page refreshed successfully",
+              "type": "warning"
+            }
+          }
         },
         "save": {
           "type": "$render",
@@ -53,6 +71,43 @@
             }
           },
           "sections": [
+            {
+              "type":"horizontal",
+              "items":[
+                {
+                  "type": "label",
+                  "text": "horizontal label-1"
+                },
+                {
+                  "type": "label",
+                  "text": "horizontal label-1"
+                },
+                {
+                  "type": "label",
+                  "text": "horizontal label-1"
+                },
+                {
+                  "type": "label",
+                  "text": "horizontal label-1"
+                },
+                {
+                  "type": "label",
+                  "text": "horizontal label-1"
+                },
+                {
+                  "type": "label",
+                  "text": "horizontal label-1"
+                },
+                {
+                  "type": "label",
+                  "text": "horizontal label-1"
+                },
+                {
+                  "type": "label",
+                  "text": "horizontal label-1"
+                }
+              ]
+            },
             {
               "type": "vertical",
               "items": [
