@@ -1,0 +1,29 @@
+{
+  "$jason": {
+    "head": {
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "http://web.jasonette.com/items/1045/"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "items": {
+                "{{#each $jason.result}}": {
+                  "type": "textfield",
+                  "name": "{{id}}",
+                  "value": "{{value}}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
