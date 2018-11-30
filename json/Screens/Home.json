@@ -1,0 +1,41 @@
+{
+  "$jason": {
+    "head": {
+      "title": "title",
+      "description": "description",
+      "offline": "true",
+      "styles": {
+        "text_field":{
+          "font": "HelveticaNeue",
+          "size": "15",
+          "color": "#ff0000",
+          "padding": "10"
+        }
+      },
+      "actions": {
+        "refresh_view": {
+          "type": "$refresh",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page refreshed successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "type": "label",
+            "label": "my APP HEADER",
+            "style": {
+              "align": "center",
+              "top": "5"
+            }
+          }
+        }
+      }
+    }
+  }
+}
