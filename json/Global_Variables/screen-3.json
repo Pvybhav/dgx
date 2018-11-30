@@ -9,6 +9,9 @@
         "$pull": {
           "type": "$reload"
         },
+        "$load": {
+          "type": "$render"
+        },
         "save": {
           "type": "$render",
           "success": {
