@@ -1,8 +1,6 @@
 {
   "$jason": {
     "head": {
-      "title": "Dynamic Data Rendering from URL",
-      "description": "Fetching data from remote json and displaying values",
       "actions": {
         "$load": {
           "type": "$network.request",
@@ -20,7 +18,7 @@
             {
               "items": {
                 "{{#each $jason.members}}": {
-                  "type": "label",
+                  "type": "{textfield}",
                   "name": "{{id}}",
                   "value": "{{value}}"
                 }
