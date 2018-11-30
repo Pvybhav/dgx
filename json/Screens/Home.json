@@ -5,14 +5,14 @@
       "description": "DESCRIPTION",
       "offline": "true",
       "styles": {
-        "section_header":{
+        "section_header": {
           "size": 20,
           "color": "#00b8e6",
-          "font":"LucidaSansUnicode",
+          "font": "LucidaSansUnicode",
           "align": "center",
           "top": "5"
         },
-        "horizontal_image_section":{
+        "horizontal_image_section": {
           "width": 100,
           "height": 100,
           "corner_radius": 50
@@ -84,13 +84,24 @@
           },
           "sections": [
             {
-              "type":"horizontal",
+              "type": "button",
+              "text": "Refresh App",
+              "action": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "Page refreshed",
+                  "type": "warning"
+                }
+              }
+            },
+            {
+              "type": "horizontal",
               "header": {
-                "type":"label",
+                "type": "label",
                 "text": "Horizontal section with labels",
                 "class": "section_header"
               },
-              "items":[
+              "items": [
                 {
                   "type": "label",
                   "text": "horizontal label-1"
