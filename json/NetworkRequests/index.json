@@ -1,40 +1,83 @@
 {
   "$jason": {
     "head": {
-      "title": "Network Request"
-    },
-    "templates": {
-      "header": {
-        "menu":{
-          "text": "menu text",
-          "style": {
-            "size": 17,
-            "color": "#ffffff",
-            "font": "Helvetica"
-          }
+      "title": "TextField",
+      "styles": {
+        "padded": {
+          "padding": "20",
+          "font": "HelveticaNeue-Bold",
+          "size": "20"
         }
-      },
-      "body": {
-        "sections": [
-          {
-            "items": [
-              {
-                "type": "vertical",
-                "components": [
-                  {
-                    "type": "label",
-                    "value": "value-1"
-                  },
-                  {
-                    "type": "label",
-                    "value": "value-2"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
       }
+    },
+    "body": {
+      "style": {
+        "background": "#b6dce6",
+        "color": "#ffffff"
+      },
+      "sections": [
+        {
+          "header": {
+            "type": "label",
+            "text": "textfield",
+            "style": {
+              "background": "#f5f5f5",
+              "align": "center"
+            }
+          },
+          "items": [
+            {
+              "type": "horizontal",
+              "style": {
+                "background": "#ffffff",
+                "align": "center"
+              },
+              "components": [
+                {
+                  "type": "textfield",
+                  "style": {
+                    "border_color": "#000000"
+                  },
+                  "placeholder": "Enter your name",
+                  "name": "name"
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "text": "Submit",
+              "style": {
+                "align": "center",
+                "width": "100%",
+                "height": 50,
+                "color": "#ffffff",
+                "background": "#0000ff"
+              },
+              "href": {
+                "url": "file://greet.json",
+                "view": "jason",
+                "options": {
+                  "name": "{{$get.name}}"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Open Tutorial",
+              "style": {
+                "align": "center",
+                "width": "100%",
+                "height": 50,
+                "color": "#00ff00",
+                "background": "#ff00ff"
+              },
+              "href": {
+                "url": "https://jasonette.github.io/Jasonpedia/hello.json"
+              }
+            }
+          ]
+        }
+      ]
     }
   }
 }
