@@ -1,0 +1,39 @@
+{
+  "$jason": {
+    "head": {
+      "data": {
+        "members": [
+          {
+            "name": "Homer"
+          },
+          {
+            "name": "Marge"
+          },
+          {
+            "name": "Lisa"
+          },
+          {
+            "name": "Bart"
+          },
+          {
+            "name": "Maggie"
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "items": {
+                "{{#each members}}": {
+                  "type": "label",
+                  "text": "{{name}}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
