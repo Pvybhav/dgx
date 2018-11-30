@@ -4,19 +4,24 @@
       "data": {
         "members": [
           {
-            "name": "Homer"
+            "value": "Homer",
+            "id":"20"
           },
           {
-            "name": "Marge"
+            "value": "Marge",
+            "id": "21"
           },
           {
-            "name": "Lisa"
+            "value": "Lisa",
+            "id": "22"
           },
           {
-            "name": "Bart"
+            "value": "Bart",
+            "id": "23"
           },
           {
-            "name": "Maggie"
+            "value": "Maggie",
+            "id": "24"
           }
         ]
       },
@@ -27,7 +32,8 @@
               "items": {
                 "{{#each members}}": {
                   "type": "textfield",
-                  "value": "{{name}}"
+                  "name": "{{id}}",
+                  "value": "{{value}}"
                 }
               }
             }
