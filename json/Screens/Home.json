@@ -72,6 +72,21 @@
                 "align": "center"
               }
             },
+            "search": {
+              "name": "search_value",
+              "placeholder": "Search here",
+              "style": {
+                "background": "#66ccff",
+                "color": "#000033"
+              },
+              "action":{
+                "type":"$util.alert",
+                "options":{
+                  "title": "You've entered",
+                  "description": "{{$get.search_value}}"
+                }
+              }
+            },
             "menu": {
               "text": "Reset",
               "style": {
