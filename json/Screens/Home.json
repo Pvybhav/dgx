@@ -74,7 +74,7 @@
             },
             "search": {
               "name": "search_value",
-              "placeholder": "Search here",
+              "placeholder": "Search anything here........",
               "style": {
                 "background": "#66ccff",
                 "color": "#000033"
@@ -82,7 +82,7 @@
               "action":{
                 "type":"$util.alert",
                 "options":{
-                  "title": "You've entered",
+                  "title": "You've searched for.....",
                   "description": "{{$get.search_value}}"
                 }
               }
@@ -106,6 +106,12 @@
                   "type": "$render"
                 }
               }
+            },
+            "style":{
+              "font": "ArialBlack",
+              "size":20,
+              "background": "#ffffff",
+              "color": "#b300b3"
             }
           },
           "sections": [
