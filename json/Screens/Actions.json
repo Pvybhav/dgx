@@ -1,6 +1,9 @@
 {
   "$jason": {
     "head": {
+      "title": "Actions",
+      "description": "Actions Practise",
+      "offline": "true",
       "actions": {
         "$load": {
           "type": "$render",
@@ -33,7 +36,7 @@
           }
         },
         "$pull": {
-          "type": "$render",
+          "type": "$reload",
           "success": {
             "type": "$util.toast",
             "options": {
@@ -42,27 +45,33 @@
             }
           }
         }
-      }
-    },
-    "templates": {
-      "body":{
-        "sections":[{
-          "type": "vertical",
-          "items": [{
-            "type": "vertical",
-            "components": [{
-              "type": "button",
-              "text": "click here",
-              "action": {
-                "type": "$util.toast",
-                "options": {
-                  "text": "Clicked button",
-                  "type": "warning"
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "click here",
+                      "action": {
+                        "type": "$util.toast",
+                        "options": {
+                          "text": "Clicked button",
+                          "type": "warning"
+                        }
+                      }
+                    }
+                  ]
                 }
-              }
-            }]
-          }]
-        }]
+              ]
+            }
+          ]
+        }
       }
     }
   }
