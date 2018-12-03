@@ -83,6 +83,12 @@
                 "align": "center"
               }
             },
+            "style": {
+              "font": "ArialBlack",
+              "size": 20,
+              "background": "#ffffff",
+              "color": "#b300b3"
+            },
             "search": {
               "name": "search_value",
               "placeholder": "Search anything here........",
@@ -117,12 +123,6 @@
                   "type": "$render"
                 }
               }
-            },
-            "style": {
-              "font": "ArialBlack",
-              "size": 20,
-              "background": "#ffffff",
-              "color": "#b300b3"
             }
           },
           "sections": [
@@ -133,10 +133,13 @@
                   "type": "label",
                   "text": "Refresh App",
                   "action": {
-                    "type": "$util.toast",
-                    "options": {
-                      "text": "Page refreshed successfully",
-                      "type": "warning"
+                    "type": "$reload",
+                    "success": {
+                      "type": "$util.toast",
+                      "options": {
+                        "text": "Page refreshed successfully",
+                        "type": "warning"
+                      }
                     }
                   },
                   "style": {
