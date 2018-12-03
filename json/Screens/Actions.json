@@ -44,6 +44,13 @@
               "type": "warning"
             }
           }
+        },
+        "user_defined_action": {
+          "type": "$util.toast",
+          "options": {
+            "text": "user_definded_action --> success",
+            "type": "warning"
+          }
         }
       },
       "templates": {
@@ -57,7 +64,7 @@
                   "components": [
                     {
                       "type": "button",
-                      "text": "click here",
+                      "text": "inline action",
                       "action": {
                         "type": "$util.toast",
                         "options": {
@@ -66,6 +73,19 @@
                         }
                       },
                       "styles": {
+                        "align": "center",
+                        "color": "#3d4f5a",
+                        "border": "#ff0201"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "text": "user defined action",
+                      "action": {
+                        "trigger": "user_defined_action"
+                      },
+                      "styles": {
+                        "padding": "20",
                         "align": "center",
                         "color": "#3d4f5a",
                         "border": "#ff0201"
