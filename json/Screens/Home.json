@@ -90,9 +90,9 @@
                 "background": "#66ccff",
                 "color": "#000033"
               },
-              "action":{
-                "type":"$util.alert",
-                "options":{
+              "action": {
+                "type": "$util.alert",
+                "options": {
                   "title": "You've searched for.....",
                   "description": "{{$get.search_value}}"
                 }
@@ -118,9 +118,9 @@
                 }
               }
             },
-            "style":{
+            "style": {
               "font": "ArialBlack",
-              "size":20,
+              "size": 20,
               "background": "#ffffff",
               "color": "#b300b3"
             }
@@ -143,7 +143,7 @@
                     "align": "center",
                     "color": "#008000",
                     "background": "#000000",
-                    "size":"30"
+                    "size": "30"
                   }
                 }
               ]
@@ -207,7 +207,8 @@
                   "class": "horizontal_label"
                 }
               ]
-            }, {
+            },
+            {
               "type": "horizontal",
               "header": {
                 "type": "label",
@@ -276,12 +277,12 @@
               },
               "items": [
                 {
-                  "type":"vertical",
-                  "header":{
-                    "type":"label",
-                    "text":"verical labels"
+                  "type": "vertical",
+                  "header": {
+                    "type": "label",
+                    "text": "verical labels"
                   },
-                  "components":[
+                  "components": [
                     {
                       "type": "label",
                       "text": "vertical label-1",
@@ -328,9 +329,39 @@
                       "class": "vertical_label"
                     },
                     {
-                      "type": "label",
-                      "text": "vertical label-10",
-                      "class": "vertical_label"
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "image",
+                          "url": "https://image.flaticon.com/sprites/new_packs/1239031-tropical.png",
+                          "class": "horizontal_image_section"
+                        },
+                        {
+                          "type": "image",
+                          "url": "https://image.flaticon.com/sprites/new_packs/1239031-tropical.png",
+                          "class": "horizontal_image_section"
+                        },
+                        {
+                          "type": "image",
+                          "url": "https://image.flaticon.com/sprites/new_packs/1239031-tropical.png",
+                          "class": "horizontal_image_section"
+                        },
+                        {
+                          "type": "image",
+                          "url": "https://image.flaticon.com/sprites/new_packs/1239031-tropical.png",
+                          "class": "horizontal_image_section"
+                        },
+                        {
+                          "type": "image",
+                          "url": "https://image.flaticon.com/sprites/new_packs/1239031-tropical.png",
+                          "class": "horizontal_image_section"
+                        },
+                        {
+                          "type": "image",
+                          "url": "https://image.flaticon.com/sprites/new_packs/1239031-tropical.png",
+                          "class": "horizontal_image_section"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -448,7 +479,6 @@
                     }
                   ]
                 }
-                
               ]
             },
             {
@@ -506,7 +536,8 @@
                   }
                 }
               ]
-            }]
+            }
+          ]
         }
       }
     }
