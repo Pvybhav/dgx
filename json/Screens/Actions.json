@@ -1,0 +1,69 @@
+{
+  "$jason": {
+    "head": {
+      "actions": {
+        "$load": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "$load --> SUCCESS",
+              "type": "warning"
+            }
+          }
+        },
+        "$show": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "$show --> SUCCESS",
+              "type": "warning"
+            }
+          }
+        },
+        "$foreground": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "$render --> SUCCESS",
+              "type": "warning"
+            }
+          }
+        },
+        "$pull": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "$pull --> SUCCESS",
+              "type": "warning"
+            }
+          }
+        }
+      }
+    },
+    "templates": {
+      "body":{
+        "sections":[{
+          "type": "vertical",
+          "items": [{
+            "type": "vertical",
+            "components": [{
+              "type": "button",
+              "text": "click here",
+              "action": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "Clicked button",
+                  "type": "warning"
+                }
+              }
+            }]
+          }]
+        }]
+      }
+    }
+  }
+}
