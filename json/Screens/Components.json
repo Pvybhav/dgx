@@ -38,7 +38,7 @@
           "type": "$util.banner",
           "options": {
             "title": "{{$get[$jason.item].toString()}}",
-            "description": "{{$jason.item}}"
+            "description": "{{$jason.item}} {{$jason.value}}"
           },
           "success": {
             "type": "$render"
@@ -185,7 +185,11 @@
                   "name": "light",
                   "value": "true",
                   "action": {
-                    "trigger": "banner"
+                    "trigger": "banner",
+                    "options": {
+                      "item": "Light is On?",
+                      "value":"{{$get.light}}"
+                    }
                   }
                 },
                 {
