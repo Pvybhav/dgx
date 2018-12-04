@@ -14,9 +14,9 @@
           "success": {
             "type": "$global.set",
             "options": {
-              "ef_s3_textField": "{{$get.textFieldName || ' '}}",
-              "ef_s3_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s3_Switch": "{{$get.switchName || 'false'}}"
+              "ef_s3_textField": "{{$get.textFieldName || $global.ef_s3_textField || ' '}}",
+              "ef_s3_TextArea": "{{$get.textAreaName || $global.ef_s3_TextArea || ' '}}",
+              "ef_s3_Switch": "{{$get.switchName || $global.ef_s3_Switch || false}}"
             },
             "success": {
               "type": "$href",
@@ -129,7 +129,7 @@
                   "text": "Go to screen-1",
                   "action": {
                     "type": "$href",
-                    "options":{
+                    "options": {
                       "url": "https://pvybhav.github.io/json/Global_Variables/screen-1.json"
                     }
                   }
@@ -139,7 +139,7 @@
                   "text": "Go to screen-2",
                   "action": {
                     "type": "$href",
-                    "options":{
+                    "options": {
                       "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
                     }
                   }

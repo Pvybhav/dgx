@@ -6,7 +6,7 @@
         "$show": {
           "type": "$render"
         },
-        "$pull":{
+        "$pull": {
           "type": "$reload"
         },
         "save": {
@@ -14,7 +14,7 @@
           "options": {
             "ef_s2_textField": "{{$get.textFieldName || $global.ef_s2_textField || ' '}}",
             "ef_s2_TextArea": "{{$get.textAreaName || $global.ef_s2_TextArea || ' '}}",
-            "ef_s2_Switch": "{{$get.switchName || ' '}}"
+            "ef_s2_Switch": "{{$get.switchName || $global.ef_s2_Switch || false}}"
           },
           "success": {
             "type": "$href",
