@@ -11,6 +11,9 @@
         "$pull": {
           "type": "$reload"
         },
+        "reload": {
+          "type": "$reload"
+        },
         "submit": {
           "type": "$network.request",
           "options": {
@@ -35,7 +38,7 @@
           "type": "$util.banner",
           "options": {
             "title": "{{$get[$jason.item].toString()}}",
-            "description": "{{$jason.item}}"
+            "description": "{{$jason.light}}"
           },
           "success": {
             "type": "$render"
@@ -64,6 +67,7 @@
                     "auth_token": "3nfdss3fNdlenghs_dnekgldnvq334hd"
                   },
                   "style": {
+                    "align": "center",
                     "width": "50",
                     "height": "50",
                     "corner_radius": "25"
@@ -73,6 +77,7 @@
                   "type": "button",
                   "text": "Tap Me!",
                   "style": {
+                    "align": "center",
                     "width": "50",
                     "height": "50",
                     "background": "#00ff00",
@@ -92,6 +97,7 @@
                     "auth_token": "3nfdss3fNdlenghs_dnekgldnvq334hd"
                   },
                   "style": {
+                    "align": "center",
                     "width": "50",
                     "height": "50",
                     "background": "#00ff00",
@@ -102,6 +108,20 @@
                   },
                   "action": {
                     "trigger": "reload"
+                  }
+                },
+                {
+                  "type": "textfield",
+                  "name": "username",
+                  "value": "dhenf93f!",
+                  "placeholder": "Enter username",
+                  "style": {
+                    "placeholder_color": "#cecece",
+                    "font": "HelveticaNeue",
+                    "align": "center",
+                    "width": "200",
+                    "height": "60",
+                    "size": "12"
                   }
                 },
                 {
