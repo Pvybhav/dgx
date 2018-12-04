@@ -30,7 +30,7 @@
           "options": {
             "ef_s1_textField": "{{$get.textFieldName || $global.ef_s1_textField || ' '}}",
             "ef_s1_TextArea": "{{$get.textAreaName || $global.ef_s1_TextArea || ' '}}",
-            "ef_s1_Switch": "{{if($get.switchName == '') return false; else return $global.ef_s1_Switch}}",
+            "ef_s1_Switch": "{{if(!$get.switchName) return false; else return $global.ef_s1_Switch}}",
             "ef_s1_Dropdown": "{{$get.dropdownName || $global.ef_s1_Dropdown}}"
           },
           "success": {
