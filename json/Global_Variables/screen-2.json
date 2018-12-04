@@ -6,24 +6,19 @@
         "$show": {
           "type": "$render"
         },
-        "$load": {
-          "type": "$render"
-        },
-        "$pull": {
-          "type": "$reload"
-        },
         "save": {
           "type": "$render",
           "success": {
             "type": "$global.set",
             "options": {
               "ef_s2_textField": "{{$get.textFieldName || ' '}}",
-              "ef_s2_TextArea": "{{$get.textAreaName || ' '}}"
+              "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
+              "ef_s2_Switch": "{{$get.switchName || ' '}}"
             },
             "success": {
               "type": "$href",
               "options": {
-                "url": "https://pvybhav.github.io/json/Global_Variables/screen-3.json"
+                "url": "https://pvybhav.github.io/json/Global_Variables/backup/screen-3.json"
               }
             }
           }
@@ -44,7 +39,8 @@
                 "options": {
                   "items": [
                     "ef_s2_textField",
-                    "ef_s2_TextArea"
+                    "ef_s2_TextArea",
+                    "ef_s2_Switch"
                   ]
                 },
                 "success": {
@@ -72,10 +68,7 @@
                       "name": "textFieldName",
                       "value": "{{$global.ef_s2_textField || ' '}}",
                       "placeholder": "Add textFieldValue here",
-                      "contentDescription": "field1",
-                      "action": {
-                        "type": "$render"
-                      }
+                      "contentDescription": "field1"
                     },
                     {
                       "type": "textarea",
@@ -91,9 +84,19 @@
                         "height": "100",
                         "size": "12"
                       },
-                      "contentDescription": "field2",
+                      "contentDescription": "field2"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "switchName",
+                      "value": "{{$global.ef_s2_Switch || 'false'}}",
                       "action": {
-                        "type": "$render"
+                        "type": "$util.banner",
+                        "options": {
+                          "title": "Is true?",
+                          "description": "{{$get.switchName || ' '}}"
+                        },
+                        "contentDescription": "field3"
                       }
                     }
                   ]

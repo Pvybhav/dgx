@@ -3,11 +3,14 @@
     "head": {
       "title": "Screen-1",
       "actions": {
+        "$foreground": {
+          "type": "$reload"
+        },
         "$show": {
           "type": "$render"
         },
-        "$load": {
-          "type": "$render"
+        "$pull": {
+          "type": "$reload"
         },
         "save": {
           "type": "$render",
@@ -15,12 +18,14 @@
             "type": "$global.set",
             "options": {
               "ef_s1_textField": "{{$get.textFieldName || ' '}}",
-              "ef_s1_TextArea": "{{$get.textAreaName || ' '}}"
+              "ef_s1_TextArea": "{{$get.textAreaName || ' '}}",
+              "ef_s1_Switch": "{{$get.switchName || 'false'}}",
+              "ef_s1_Dropdown": "{{$get.dropdownName}}"
             },
             "success": {
               "type": "$href",
               "options": {
-                "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
+                "url": "https://pvybhav.github.io/json/Global_Variables/backup/screen-2.json"
               }
             }
           }
@@ -41,7 +46,8 @@
                 "options": {
                   "items": [
                     "ef_s1_textField",
-                    "ef_s1_TextArea"
+                    "ef_s1_TextArea",
+                    "ef_s1_Switch"
                   ]
                 },
                 "success": {
@@ -69,10 +75,7 @@
                       "name": "textFieldName",
                       "value": "{{$global.ef_s1_textField || ' '}}",
                       "placeholder": "Add textFieldValue here",
-                      "contentDescription": "field1",
-                      "action": {
-                        "type": "$render"
-                      }
+                      "contentDescription": "field1"
                     },
                     {
                       "type": "textarea",
@@ -88,9 +91,36 @@
                         "height": "100",
                         "size": "12"
                       },
-                      "contentDescription": "field2",
-                      "action": {
-                        "type": "$render"
+                      "contentDescription": "field2"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "switchName",
+                      "value": "{{$global.ef_s1_Switch || 'false'}}",
+                      "contentDescription": "field3"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "dropdownName",
+                      "contentDescription": "field4",
+                      "options": [
+                        {
+                          "value": "Value 1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Value 2",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Value 3",
+                          "defaultSelected": "false"
+                        }
+                      ],
+                      "style": {
+                        "size": "10",
+                        "color": "rgb(200,130,0)",
+                        "padding": "5"
                       }
                     }
                   ]
