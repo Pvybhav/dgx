@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Screen-2",
+      "title": "Screen-3",
       "actions": {
         "$show": {
           "type": "$render"
@@ -10,19 +10,16 @@
           "type": "$reload"
         },
         "save": {
-          "type": "$render",
+          "type": "$global.set",
+          "options": {
+            "ef_s3_textField": "{{$get.textFieldName || $global.ef_s3_textField || ' '}}",
+            "ef_s3_TextArea": "{{$get.textAreaName || $global.ef_s3_TextArea || ' '}}",
+            "ef_s3_Switch": "{{$get.switchName || $global.ef_s3_Switch || false}}"
+          },
           "success": {
-            "type": "$global.set",
+            "type": "$href",
             "options": {
-              "ef_s3_textField": "{{$get.textFieldName || $global.ef_s3_textField || ' '}}",
-              "ef_s3_TextArea": "{{$get.textAreaName || $global.ef_s3_TextArea || ' '}}",
-              "ef_s3_Switch": "{{$get.switchName || $global.ef_s3_Switch || false}}"
-            },
-            "success": {
-              "type": "$href",
-              "options": {
-                "url": "https://pvybhav.github.io/json/Global_Variables/display-global-values.json"
-              }
+              "url": "https://pvybhav.github.io/json/Global_Variables/display-global-values.json"
             }
           }
         }
@@ -118,10 +115,7 @@
                   "type": "button",
                   "text": "Save Global Variables",
                   "action": {
-                    "type": "$render",
-                    "success": {
-                      "trigger": "save"
-                    }
+                    "trigger": "save"
                   }
                 },
                 {
