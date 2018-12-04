@@ -6,20 +6,20 @@
         "$show": {
           "type": "$render"
         },
+        "$pull":{
+          "type": "$reload"
+        },
         "save": {
-          "type": "$render",
+          "type": "$global.set",
+          "options": {
+            "ef_s2_textField": "{{$get.textFieldName || ' '}}",
+            "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
+            "ef_s2_Switch": "{{$get.switchName || ' '}}"
+          },
           "success": {
-            "type": "$global.set",
+            "type": "$href",
             "options": {
-              "ef_s2_textField": "{{$get.textFieldName || ' '}}",
-              "ef_s2_TextArea": "{{$get.textAreaName || ' '}}",
-              "ef_s2_Switch": "{{$get.switchName || ' '}}"
-            },
-            "success": {
-              "type": "$href",
-              "options": {
-                "url": "https://pvybhav.github.io/json/Global_Variables/screen-3.json"
-              }
+              "url": "https://pvybhav.github.io/json/Global_Variables/screen-3.json"
             }
           }
         }
@@ -105,10 +105,7 @@
                   "type": "button",
                   "text": "Save Global Variables",
                   "action": {
-                    "type": "$render",
-                    "success": {
-                      "trigger": "save"
-                    }
+                    "trigger": "save"
                   }
                 },
                 {
@@ -116,7 +113,7 @@
                   "text": "Go to screen-1",
                   "action": {
                     "type": "$href",
-                    "options":{
+                    "options": {
                       "url": "https://pvybhav.github.io/json/Global_Variables/screen-1.json"
                     }
                   }
@@ -126,7 +123,7 @@
                   "text": "Go to screen-3",
                   "action": {
                     "type": "$href",
-                    "options":{
+                    "options": {
                       "url": "https://pvybhav.github.io/json/Global_Variables/screen-3.json"
                     }
                   }

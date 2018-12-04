@@ -24,134 +24,134 @@
             }
           }
         }
-        },
-        "templates": {
-          "body": {
-            "header": {
-              "menu": {
-                "text": "Reset",
-                "style": {
-                  "size": "15",
-                  "font": "Helvetica",
-                  "color": "#4f8ff7"
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "menu": {
+              "text": "Reset",
+              "style": {
+                "size": "15",
+                "font": "Helvetica",
+                "color": "#4f8ff7"
+              },
+              "action": {
+                "type": "$global.reset",
+                "options": {
+                  "items": [
+                    "ef_s1_textField",
+                    "ef_s1_TextArea",
+                    "ef_s1_Switch",
+                    "ef_s1_Dropdown"
+                  ]
                 },
-                "action": {
-                  "type": "$global.reset",
-                  "options": {
-                    "items": [
-                      "ef_s1_textField",
-                      "ef_s1_TextArea",
-                      "ef_s1_Switch",
-                      "ef_s1_Dropdown"
-                    ]
-                  },
-                  "success": {
-                    "type": "$render"
-                  }
+                "success": {
+                  "type": "$render"
                 }
               }
-            },
-            "sections": [
-              {
-                "type": "vertical",
-                "items": [
-                  {
-                    "type": "label",
-                    "text": "Global values TF : {{$global.ef_s1_textField || ' '}} TA : {{$global.ef_s1_TextArea || ' '}} SW : {{$global.ef_s1_Switch || ' '}} DD : {{$global.ef_s1_DropDown}}"
+            }
+          },
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "Global values TF : {{$global.ef_s1_textField || ' '}} TA : {{$global.ef_s1_TextArea || ' '}} SW : {{$global.ef_s1_Switch || ' '}} DD : {{$global.ef_s1_DropDown}}"
+                },
+                {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "10"
                   },
-                  {
-                    "type": "vertical",
-                    "style": {
-                      "padding": "10"
+                  "components": [
+                    {
+                      "type": "textfield",
+                      "name": "textFieldName",
+                      "value": "{{$global.ef_s1_textField || ' '}}",
+                      "placeholder": "Add textFieldValue here",
+                      "contentDescription": "field1"
                     },
-                    "components": [
-                      {
-                        "type": "textfield",
-                        "name": "textFieldName",
-                        "value": "{{$global.ef_s1_textField || ' '}}",
-                        "placeholder": "Add textFieldValue here",
-                        "contentDescription": "field1"
+                    {
+                      "type": "textarea",
+                      "name": "textAreaName",
+                      "placeholder": "Text Area",
+                      "value": "{{$global.ef_s1_TextArea || ' '}}",
+                      "style": {
+                        "background": "rgba(0,0,0,0)",
+                        "placeholder_color": "#cecece",
+                        "font": "HelveticaNeue",
+                        "align": "center",
+                        "width": "100%",
+                        "height": "100",
+                        "size": "12"
                       },
-                      {
-                        "type": "textarea",
-                        "name": "textAreaName",
-                        "placeholder": "Text Area",
-                        "value": "{{$global.ef_s1_TextArea || ' '}}",
-                        "style": {
-                          "background": "rgba(0,0,0,0)",
-                          "placeholder_color": "#cecece",
-                          "font": "HelveticaNeue",
-                          "align": "center",
-                          "width": "100%",
-                          "height": "100",
-                          "size": "12"
+                      "contentDescription": "field2"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "switchName",
+                      "value": "{{$global.ef_s1_Switch || 'false'}}",
+                      "contentDescription": "field3"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "dropdownName",
+                      "contentDescription": "field4",
+                      "options": [
+                        {
+                          "value": "Value 1 {{if($global.ef_s1_Dropdown == 'Value 1') return true; else return false}}",
+                          "defaultSelected": "{{if($global.ef_s1_Dropdown == 'Value 1') return true; else return false}}"
                         },
-                        "contentDescription": "field2"
-                      },
-                      {
-                        "type": "switch",
-                        "name": "switchName",
-                        "value": "{{$global.ef_s1_Switch || 'false'}}",
-                        "contentDescription": "field3"
-                      },
-                      {
-                        "type": "dropdown",
-                        "name": "dropdownName",
-                        "contentDescription": "field4",
-                        "options": [
-                          {
-                            "value": "Value 1 {{if($global.ef_s1_Dropdown == 'Value 1') return true; else return false}}",
-                            "defaultSelected": "{{if($global.ef_s1_Dropdown == 'Value 1') return true; else return false}}"
-                          },
-                          {
-                            "value": "Value 2 {{if($global.ef_s1_Dropdown == 'Value 2') return true; else return false}}",
-                            "defaultSelected": "true"
-                          },
-                          {
-                            "value": "Value 3 {{if($global.ef_s1_Dropdown == 'Value 3') return true; else return false}}",
-                            "defaultSelected": "false"
-                          }
-                        ],
-                        "style": {
-                          "size": "10",
-                          "color": "rgb(200,130,0)",
-                          "padding": "5"
+                        {
+                          "value": "Value 2 {{if($global.ef_s1_Dropdown == 'Value 2') return true; else return false}}",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Value 3 {{if($global.ef_s1_Dropdown == 'Value 3') return true; else return false}}",
+                          "defaultSelected": "false"
                         }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "button",
-                    "text": "Save Global Variables",
-                    "action": {
-                      "trigger": "save"
-                    }
-                  },
-                  {
-                    "type": "button",
-                    "text": "Go to screen-2",
-                    "action": {
-                      "type": "$href",
-                      "options": {
-                        "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
+                      ],
+                      "style": {
+                        "size": "10",
+                        "color": "rgb(200,130,0)",
+                        "padding": "5"
                       }
                     }
-                  },
-                  {
-                    "type": "button",
-                    "text": "Go to screen-3",
-                    "action": {
-                      "type": "$href",
-                      "options": {
-                        "url": "https://pvybhav.github.io/json/Global_Variables/screen-3.json"
-                      }
+                  ]
+                },
+                {
+                  "type": "button",
+                  "text": "Save Global Variables",
+                  "action": {
+                    "trigger": "save"
+                  }
+                },
+                {
+                  "type": "button",
+                  "text": "Go to screen-2",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://pvybhav.github.io/json/Global_Variables/screen-2.json"
                     }
                   }
-                ]
-              }
-            ]
-          }
+                },
+                {
+                  "type": "button",
+                  "text": "Go to screen-3",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://pvybhav.github.io/json/Global_Variables/screen-3.json"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
         }
       }
     }
   }
+}
