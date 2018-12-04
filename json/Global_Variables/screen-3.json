@@ -14,7 +14,7 @@
           "options": {
             "ef_s3_textField": "{{$get.textFieldName || $global.ef_s3_textField || ' '}}",
             "ef_s3_TextArea": "{{$get.textAreaName || $global.ef_s3_TextArea || ' '}}",
-            "ef_s3_Switch": "{{$get.switchName || $global.ef_s3_Switch || false}}"
+            "ef_s3_Switch": "{{$get.switchName || false}}"
           },
           "success": {
             "type": "$href",
