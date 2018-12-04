@@ -1,0 +1,219 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Components",
+      "description": "Components Practise",
+      "offline": "true",
+      "actions": {
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload"
+        },
+        "reload": {
+          "type": "$reload"
+        }
+      },
+      "styles": {
+        "label_class": {
+          "background": "#ff0000",
+          "padding": "10",
+          "color": "#ffffff"
+        }
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "background": "#00ff00",
+            "border": "#000000"
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "John Doe"
+                    },
+                    {
+                      "type": "label",
+                      "text": "33"
+                    },
+                    {
+                      "type": "label",
+                      "text": "A normal guy with a normal name"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "image",
+                      "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
+                      "style": {
+                        "width": "80"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "Ethan",
+                      "style": {
+                        "font": "HelveticaNeue-Bold"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "image",
+                      "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
+                      "style": {
+                        "width": "80"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Ethan",
+                          "style": {
+                            "font": "HelveticaNeue-Bold"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "text": "Gliechtenstein"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "vertical",
+                  "style": {
+                    "align": "center"
+                  },
+                  "components": [
+                    {
+                      "type": "image",
+                      "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
+                      "style": {
+                        "width": "100"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "style": {
+                        "color": "#000000",
+                        "background": "#ff0000"
+                      },
+                      "text": "John Doe"
+                    },
+                    {
+                      "type": "button",
+                      "text": "Follow",
+                      "style": {
+                        "color": "#ff0000",
+                        "background": "#000000"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "First row"
+                    },
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "Second row"
+                    },
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "Third row"
+                    }
+                  ]
+                },
+                {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "50"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "First row"
+                    },
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "Second row"
+                    },
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "Third row"
+                    }
+                  ]
+                },
+                {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "50",
+                    "spacing": "10"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "First row"
+                    },
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "Second row"
+                    },
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "Third row"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
