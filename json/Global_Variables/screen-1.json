@@ -44,7 +44,8 @@
                   "items": [
                     "ef_s1_textField",
                     "ef_s1_TextArea",
-                    "ef_s1_Switch"
+                    "ef_s1_Switch",
+                    "ef_s1_Dropdown"
                   ]
                 },
                 "success": {
@@ -59,7 +60,7 @@
               "items": [
                 {
                   "type": "label",
-                  "text": "Global value is: {{$global.ef_s1_textField || ' '}}"
+                  "text": "Global value is: {{$global.ef_s1_textField || ' '}} {{$global.ef_s1_TextArea || ' '}} {{$global.ef_s1_Switch || ' '}}"
                 },
                 {
                   "type": "vertical",
