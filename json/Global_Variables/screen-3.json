@@ -90,15 +90,14 @@
                       "type": "switch",
                       "name": "switchName",
                       "value": "{{$global.ef_s3_Switch}}",
+                      "contentDescription": "field3",
                       "action": {
-                        "type": "$util.banner",
+                        "type": "$global.set",
                         "options": {
-                          "title": "Is true?",
-                          "description": "{{$get.switchName}}"
-                        },
-                        "contentDescription": "field3"
+                          "ef_s2_Switch": "{{$get.switchName}}"
+                        }
                       }
-                    }
+                      }
                   ]
                 },
                 {
