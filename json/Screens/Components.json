@@ -37,8 +37,8 @@
         "banner": {
           "type": "$util.banner",
           "options": {
-            "title": "{{$get[$jason.item].toString()}}",
-            "description": "{{$jason.item}} $get[$jason.item] {{$jason.value}}"
+            "title": "{{$jason.item.toString()}}",
+            "description": "{{$jason.item}} {{$jason.value}}"
           },
           "success": {
             "type": "$render"
