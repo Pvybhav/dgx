@@ -3,9 +3,6 @@
     "head": {
       "title": "Screen-1",
       "actions": {
-        "$foreground": {
-          "type": "$reload"
-        },
         "$show": {
           "type": "$render"
         },
@@ -133,6 +130,22 @@
                     "success": {
                       "trigger": "save"
                     }
+                  }
+                },
+                {
+                  "type": "button",
+                  "text": "Go to screen-2",
+                  "action": {
+                    "type": "$href",
+                    "url": "https://pvybhav.github.io/json/Global_Variables/backup/screen-2.json"
+                  }
+                },
+                {
+                  "type": "button",
+                  "text": "Go to screen-3",
+                  "action": {
+                    "type": "$href",
+                    "url": "https://pvybhav.github.io/json/Global_Variables/backup/screen-3.json"
                   }
                 }
               ]
