@@ -2,6 +2,22 @@
   "$jason": {
     "head": {
       "title": "Screen-1",
+      "data": {
+        "dropdownOptions": [
+          {
+            "value": "Value 1",
+            "defaultSelected": false
+          },
+          {
+            "value": "Value 2",
+            "defaultSelected": false
+          },
+          {
+            "value": "Value 3",
+            "defaultSelected": true
+          }
+        ]
+      },
       "actions": {
         "$show": {
           "type": "$render"
@@ -99,6 +115,12 @@
                       "name": "dropdownName",
                       "contentDescription": "field4",
                       "options": [
+                        {
+                          "{{#each dropdownOptions}}": {
+                            "value": "{{value}}",
+                            "defaultSelected": "{{defaultSelected}}"
+                          }
+                        },
                         {
                           "value": "Value 1",
                           "defaultSelected": "{{if($global.ef_s1_Dropdown == 'Value 1') return true; else return false}}"
