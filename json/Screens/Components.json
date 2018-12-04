@@ -7,7 +7,38 @@
       "actions": {
         "$show": {
           "type": "$render"
+        },
+        "submit": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://stts.jasonclient.org/status.json",
+            "method": "post",
+            "data": {
+              "content": "{{$get.status}}"
+            }
+          },
+          "success": {
+            "type": "$reload"
+          }
+        },
+        "notice": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Volume changed",
+            "description": "{{parseFloat($get.gauge)*100}}%"
+          }
+        },
+        "banner": {
+          "type": "$util.banner",
+          "options": {
+            "title": "{{$get[$jason.item].toString()}}",
+            "description": "{{$jason.item}}"
+          },
+          "success": {
+            "type": "$render"
+          }
         }
+      }
       },
       "templates": {
         "body": {
@@ -22,6 +53,120 @@
                     "size": "30",
                     "color": "rgb(200,0,0)",
                     "padding": "10"
+                  }
+                },
+                {
+                  "type": "image",
+                  "url": "http://i.imgur.com/KUJPgGV.png",
+                  "header": {
+                    "auth_token": "3nfdss3fNdlenghs_dnekgldnvq334hd"
+                  },
+                  "style": {
+                    "width": "50",
+                    "height": "50",
+                    "corner_radius": "25"
+                  }
+                },
+                {
+                  "type": "button",
+                  "text": "Tap Me!",
+                  "style": {
+                    "width": "50",
+                    "height": "50",
+                    "background": "#00ff00",
+                    "color": "#ffffff",
+                    "font": "HelveticaNeue",
+                    "size": "12",
+                    "corner_radius": "25"
+                  },
+                  "action": {
+                    "trigger": "reload"
+                  }
+                },
+                {
+                  "type": "button",
+                  "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/gh-pages/assets/krusty.png",
+                  "header": {
+                    "auth_token": "3nfdss3fNdlenghs_dnekgldnvq334hd"
+                  },
+                  "style": {
+                    "width": "50",
+                    "height": "50",
+                    "background": "#00ff00",
+                    "color": "#ffffff",
+                    "font": "HelveticaNeue",
+                    "size": "12",
+                    "corner_radius": "25"
+                  },
+                  "action": {
+                    "trigger": "reload"
+                  }
+                },
+                {
+                  "type": "textfield",
+                  "name": "password",
+                  "value": "dhenf93f!",
+                  "placeholder": "Enter password",
+                  "style": {
+                    "placeholder_color": "#cecece",
+                    "font": "HelveticaNeue",
+                    "align": "center",
+                    "width": "200",
+                    "height": "60",
+                    "secure": "true",
+                    "size": "12"
+                  }
+                },
+                {
+                  "type": "textfield",
+                  "name": "status",
+                  "placeholder": "Status update",
+                  "style": {
+                    "placeholder_color": "#cecece",
+                    "font": "HelveticaNeue",
+                    "align": "center",
+                    "width": "200",
+                    "height": "60",
+                    "autocorrect": "true",
+                    "autocapitalize": "true",
+                    "spellcheck": "true",
+                    "size": "12"
+                  }
+                },
+                {
+                  "type": "textarea",
+                  "name": "status",
+                  "placeholder": "Status update",
+                  "value": "Eating lunch..",
+                  "style": {
+                    "background": "rgba(0,0,0,0)",
+                    "placeholder_color": "#cecece",
+                    "font": "HelveticaNeue",
+                    "align": "center",
+                    "width": "100%",
+                    "height": "300",
+                    "autocorrect": "true",
+                    "autocapitalize": "true",
+                    "spellcheck": "true",
+                    "size": "12"
+                  }
+                },
+                {
+                  "type": "slider",
+                  "name": "gauge",
+                  "action": {
+                    "trigger": "notice"
+                  }
+                },
+                {
+                  "type": "switch",
+                  "name": "light",
+                  "value": "true",
+                  "action": {
+                    "trigger": "banner",
+                    "options": {
+                      "item": "Light is On?"
+                    }
                   }
                 }
               ]
