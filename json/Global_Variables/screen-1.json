@@ -115,12 +115,7 @@
                       "name": "dropdownName",
                       "contentDescription": "field4",
                       "options": [
-                        {
-                          "{{#each dropdownOptions}}": {
-                            "value": "{{value}}",
-                            "defaultSelected": "{{defaultSelected}}"
-                          }
-                        }
+                        "{{}}"
                       ],
                       "style": {
                         "size": "10",
@@ -131,10 +126,8 @@
                   ]
                 },
                 {
-                  "{{#each dropdownOptions}}": {
-                    "type": "button",
-                    "text": "{{this}} {{value}}"
-                  }
+                  "type": "label",
+                  "text": "JSON.stringify($jason)"
                 },
                 {
                   "type": "button",
