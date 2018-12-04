@@ -114,9 +114,12 @@
                       "type": "dropdown",
                       "name": "dropdownName",
                       "contentDescription": "field4",
-                      "options": [
-                        "{{}}"
-                      ],
+                      "options": {
+                        "{{#each dropdownOptions}}": {
+                          "value": "{{value}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      },
                       "style": {
                         "size": "10",
                         "color": "rgb(200,130,0)",
