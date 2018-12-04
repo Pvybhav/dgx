@@ -15,6 +15,25 @@
           "type": "$reload"
         }
       },
+      "data": {
+        "members": [
+          {
+            "name": "Homer"
+          },
+          {
+            "name": "Marge"
+          },
+          {
+            "name": "Lisa"
+          },
+          {
+            "name": "Bart"
+          },
+          {
+            "name": "Maggie"
+          }
+        ]
+      },
       "templates": {
         "body": {
           "sections": [
@@ -53,6 +72,14 @@
                   "text": "{{var sorted_posts = $jason.posts.sort(function(a,b){ return new Date(b.created_at) - new Date(a.created_at); }); return sorted_posts[0];}}"
                 }
               ]
+            },
+            {
+              "items": {
+                "{{#each members}}": {
+                  "type": "label",
+                  "text": "{{name}}"
+                }
+              }
             }
           ]
         }
