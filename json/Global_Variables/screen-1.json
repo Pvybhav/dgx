@@ -128,7 +128,7 @@
                       "contentDescription": "field4",
                       "options": {
                         "{{#each dropdownOptions}}": {
-                          "value": "{{value}}",
+                          "value": "{{value}} {{$global.ef_s1_Dropdown_DefaultSelected}} {{$global.ef_s1_Dropdown_DefaultSelected == value}}",
                           "defaultSelected": "{{if($global.ef_s1_Dropdown_DefaultSelected == value) return true;}}"
                         }
                       },
