@@ -127,13 +127,13 @@
                           "value": "{{value}}",
                           "defaultSelected": [
                             {
-                              "{{#if defaultSelectedValue=='Value 3'}}": "Value 2"
+                              "{{#if defaultSelectedValue=='Value 3'}}": "Value 3"
                             },
                             {
-                              "{{#elseif defaultSelectedValue=='Value 2'}}": "Value 1"
+                              "{{#elseif defaultSelectedValue=='Value 2'}}": "Value 2"
                             },
                             {
-                              "{{#elseif defaultSelectedValue=='Value 1'}}": "Value 3"
+                              "{{#elseif defaultSelectedValue=='Value 1'}}": "Value 1"
                             },
                             {
                               "{{#else defaultSelectedValue!=$global.ef_s1_Dropdown}}": "No Match {{defaultSelectedValue}}"
