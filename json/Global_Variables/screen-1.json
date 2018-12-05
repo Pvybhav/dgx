@@ -3,6 +3,7 @@
     "head": {
       "title": "Screen-1",
       "data": {
+        "name": "Bart",
         "dropdownOptions": [
           {
             "value": "Value 1",
@@ -128,7 +129,7 @@
                       "contentDescription": "field4",
                       "options": {
                         "{{#each dropdownOptions}}": {
-                          "value": "{{($global.ef_s1_Dropdown_DefaultSelected == value) || 'false'}}",
+                          "value": "{{($global.ef_s1_Dropdown_DefaultSelected == value)  || 'false'}}",
                           "defaultSelected": {
                             "{{#if $global.ef_s1_Dropdown == value}}": "true"
                           }
@@ -151,6 +152,17 @@
                 {
                   "type": "label",
                   "text": "{{JSON.stringify($jason)}}"
+                },
+                {
+                  "type": "label",
+                  "text": [
+                    {
+                      "{{#if $jason.data.name=='Bart'}}": "Ay Caramba!"
+                    },
+                    {
+                      "{{#elseif $jason.data.name=='Homer'}}": "Donuts..."
+                    }
+                  ]
                 },
                 {
                   "type": "button",
