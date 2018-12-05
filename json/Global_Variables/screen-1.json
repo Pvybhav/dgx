@@ -25,6 +25,12 @@
         "$pull": {
           "type": "$reload"
         },
+        "$load": {
+          "type": "$global.set",
+          "options":{
+            "ef_s1_Dropdown_DefaultSelected": "Value 2"
+          }
+        },
         "save": {
           "type": "$global.set",
           "options": {
@@ -123,13 +129,19 @@
                       "options": {
                         "{{#each dropdownOptions}}": {
                           "value": "{{value}}",
-                          "defaultSelected": "{{defaultSelected}}"
+                          "defaultSelected": "{{if($global.ef_s1_Dropdown_DefaultSelected == value) return true;}}"
                         }
                       },
                       "style": {
                         "size": "10",
                         "color": "rgb(200,130,0)",
                         "padding": "5"
+                      },
+                      "action":{
+                        "type": "$global.set",
+                        "options":{
+                          "ef_s2_Dropdown": "{{$get.dropdownName}}"
+                        }
                       }
                     }
                   ]
