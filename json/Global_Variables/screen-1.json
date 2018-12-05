@@ -127,7 +127,13 @@
                           "value": "{{value}}",
                           "defaultSelected": [
                             {
-                              "{{#if defaultSelectedValue==value}}": "true"
+                              "{{#if defaultSelectedValue=='Value 2'}}": "true"
+                            },
+                            {
+                              "{{#if defaultSelectedValue=='Value 3'}}": "true"
+                            },
+                            {
+                              "{{#if defaultSelectedValue=='Value 1'}}": "true"
                             }
                           ]
                         }
