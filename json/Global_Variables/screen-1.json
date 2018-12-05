@@ -131,7 +131,11 @@
                       "options": {
                         "{{#each dropdownOptions}}": {
                           "value": "{{value}}",
-                          "defaultSelected": "{{if($global.ef_s1_Dropdown == value) return true}}"
+                          "defaultSelected": [
+                            {
+                              "{{#if defaultSelectedValue==$global.ef_s1_Dropdown}}": "true"
+                            }
+                          ]
                         }
                       },
                       "style": {
@@ -160,13 +164,13 @@
                   "type": "label",
                   "text": [
                     {
-                      "{{#if defaultSelectedValue=={{$global.ef_s1_Dropdown}} }}": "true {{defaultSelectedValue}}"
+                      "{{#if defaultSelectedValue==$global.ef_s1_Dropdown}}": "Value 2"
                     },
                     {
-                      "{{#elseif defaultSelectedValue=={{$global.ef_s1_Dropdown}} }}": "true {{defaultSelectedValue}}"
+                      "{{#elseif defaultSelectedValue==$global.ef_s1_Dropdown}}": "Value 1"
                     },
                     {
-                      "{{#elseif defaultSelectedValue=={{$global.ef_s1_Dropdown}} }}": "true {{defaultSelectedValue}}"
+                      "{{#elseif defaultSelectedValue==$global.ef_s1_Dropdown}}": "Value 3"
                     }
                   ]
                 },
