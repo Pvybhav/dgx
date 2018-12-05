@@ -4,7 +4,7 @@
       "title": "Screen-1",
       "data": {
         "name": "Homer",
-        "defaultSelectedValue": "Value 2",
+        "defaultSelectedValue": "Value 1",
         "dropdownOptions": [
           {
             "value": "Value 1",
@@ -12,7 +12,7 @@
           },
           {
             "value": "Value 2",
-            "defaultSelected": true
+            "defaultSelected": false
           },
           {
             "value": "Value 3",
@@ -127,13 +127,13 @@
                           "value": "{{value}}",
                           "defaultSelected": [
                             {
-                              "{{#if defaultSelectedValue=='Value 2'}}": "Value 2"
+                              "{{#if defaultSelectedValue=='Value 3'}}": "Value 2"
                             },
                             {
-                              "{{#elseif defaultSelectedValue=='Value 1'}}": "Value 1"
+                              "{{#elseif defaultSelectedValue=='Value 2'}}": "Value 1"
                             },
                             {
-                              "{{#elseif defaultSelectedValue=='Value 3'}}": "Value 3"
+                              "{{#elseif defaultSelectedValue=='Value 1'}}": "Value 3"
                             },
                             {
                               "{{#else defaultSelectedValue!=$global.ef_s1_Dropdown}}": "No Match {{defaultSelectedValue}}"
