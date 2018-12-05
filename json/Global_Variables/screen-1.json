@@ -123,7 +123,7 @@
                       "options": {
                         "{{#each dropdownOptions}}": {
                           "value": "{{value}}",
-                          "defaultSelected": "{{if(value == $global.ef_s1_Dropdown) return 'true'; else return 'false'}}"
+                          "defaultSelected": "{{defaultSelected}}"
                         }
                       },
                       "style": {
