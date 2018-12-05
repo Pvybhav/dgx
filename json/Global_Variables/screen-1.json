@@ -128,8 +128,8 @@
                       "contentDescription": "field4",
                       "options": {
                         "{{#each dropdownOptions}}": {
-                          "value": "{{value}} {{$global.ef_s1_Dropdown_DefaultSelected}} {{if($global.ef_s1_Dropdown_DefaultSelected == value) return '$global.ef_s1_Dropdown_DefaultSelected == value';}} {{if(value == $global.ef_s1_Dropdown) return 'value == $global.ef_s1_Dropdown'}}",
-                          "defaultSelected": "{{if($global.ef_s1_Dropdown_DefaultSelected == value) return true;}}"
+                          "value": "{{value}} {{$global.ef_s1_Dropdown_DefaultSelected}} {{#if($global.ef_s1_Dropdown_DefaultSelected == value) return '$global.ef_s1_Dropdown_DefaultSelected == value';}} {{#if(value == $global.ef_s1_Dropdown) return 'value == $global.ef_s1_Dropdown'}}",
+                          "defaultSelected": "{{#if($global.ef_s1_Dropdown_DefaultSelected == value) return true;}}"
                         }
                       },
                       "style": {
