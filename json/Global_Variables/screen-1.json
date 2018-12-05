@@ -124,11 +124,7 @@
                       "contentDescription": "field4",
                       "options": {
                         "{{#each dropdownOptions}}": {
-                          "value": [
-                            {
-                              "{{#if defaultSelectedValue==value}}": "true"
-                            }
-                          ],
+                          "value": "{{value}}",
                           "defaultSelected": [
                             {
                               "{{#if defaultSelectedValue=='Value 2'}}": "Value 2"
