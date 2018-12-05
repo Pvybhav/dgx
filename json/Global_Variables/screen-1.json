@@ -4,6 +4,7 @@
       "title": "Screen-1",
       "data": {
         "name": "Homer",
+        "defaultSelectedValue": "Value 2",
         "dropdownOptions": [
           {
             "value": "Value 1",
@@ -155,14 +156,7 @@
                 },
                 {
                   "type": "label",
-                  "text": [
-                    {
-                      "{{#if $jason.data.name=='Bart'}}": "Ay Caramba!"
-                    },
-                    {
-                      "{{#elseif $jason.data.name=='Homer'}}": "Donuts..."
-                    }
-                  ]
+                  "text": "{{var lable = $jason.defaultSelectedValue; return lable;}}"
                 },
                 {
                   "type": "button",
