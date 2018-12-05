@@ -27,7 +27,7 @@
         },
         "$load": {
           "type": "$global.set",
-          "options":{
+          "options": {
             "ef_s1_Dropdown_DefaultSelected": "Value 2"
           }
         },
@@ -115,7 +115,7 @@
                       "name": "switchName",
                       "value": "{{$global.ef_s1_Switch}}",
                       "contentDescription": "field3",
-                      "action":{
+                      "action": {
                         "type": "$global.set",
                         "options": {
                           "ef_s2_Switch": "{{$get.switchName}}"
@@ -129,7 +129,9 @@
                       "options": {
                         "{{#each dropdownOptions}}": {
                           "value": "{{value}} {{$global.ef_s1_Dropdown_DefaultSelected}} {{#if($global.ef_s1_Dropdown_DefaultSelected == value) return '$global.ef_s1_Dropdown_DefaultSelected == value';}} {{#if(value == $global.ef_s1_Dropdown) return 'value == $global.ef_s1_Dropdown'}}",
-                          "defaultSelected": "{{#if($global.ef_s1_Dropdown_DefaultSelected == value) return true;}}"
+                          "defaultSelected": {
+                            "{{#if $global.ef_s1_Dropdown_DefaultSelected == value}}": true
+                          }
                         }
                       },
                       "style": {
@@ -137,9 +139,9 @@
                         "color": "rgb(200,130,0)",
                         "padding": "5"
                       },
-                      "action":{
+                      "action": {
                         "type": "$global.set",
-                        "options":{
+                        "options": {
                           "ef_s1_Dropdown": "{{$get.dropdownName}}"
                         }
                       }
