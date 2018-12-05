@@ -160,13 +160,13 @@
                   "type": "label",
                   "text": [
                     {
-                      "{{#if defaultSelectedValue==$global.ef_s1_Dropdown}}": "true {{defaultSelectedValue}}"
+                      "{{#if defaultSelectedValue=={{$global.ef_s1_Dropdown}} }}": "true {{defaultSelectedValue}}"
                     },
                     {
-                      "{{#elseif defaultSelectedValue==$global.ef_s1_Dropdown}}": "true {{defaultSelectedValue}}"
+                      "{{#elseif defaultSelectedValue=={{$global.ef_s1_Dropdown}} }}": "true {{defaultSelectedValue}}"
                     },
                     {
-                      "{{#elseif defaultSelectedValue==$global.ef_s1_Dropdown}}": "true {{defaultSelectedValue}}"
+                      "{{#elseif defaultSelectedValue=={{$global.ef_s1_Dropdown}} }}": "true {{defaultSelectedValue}}"
                     }
                   ]
                 },
