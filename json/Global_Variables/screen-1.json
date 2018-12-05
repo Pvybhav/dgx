@@ -12,11 +12,11 @@
           },
           {
             "value": "Value 2",
-            "defaultSelected": false
+            "defaultSelected": true
           },
           {
             "value": "Value 3",
-            "defaultSelected": true
+            "defaultSelected": false
           }
         ]
       },
@@ -26,12 +26,6 @@
         },
         "$pull": {
           "type": "$reload"
-        },
-        "$load": {
-          "type": "$global.set",
-          "options": {
-            "ef_s1_Dropdown_DefaultSelected": "Value 2"
-          }
         },
         "save": {
           "type": "$global.set",
@@ -133,7 +127,7 @@
                           "value": "{{value}}",
                           "defaultSelected": [
                             {
-                              "{{#if defaultSelectedValue==$global.ef_s1_Dropdown}}": "true"
+                              "{{#if defaultSelectedValue==value}}": "true"
                             }
                           ]
                         }
