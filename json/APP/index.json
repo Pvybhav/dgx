@@ -63,20 +63,10 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "Pick a date",
-                      "action": {
-                        "type": "$util.datepicker",
-                        "options": {
-                          "title": "Pick a date",
-                          "description": "Just pick one"
-                        },
-                        "success": {
-                          "type": "$util.alert",
-                          "options": {
-                            "title": "Selected date",
-                            "description": "{{(new Date(parseInt(<span style='color:#ff0000;'>$jason</span>) * 1000)).toString()}}"
-                          }
-                        }
+                      "text": "Date",
+                      "style": {
+                        "width": "20%",
+                        "border": "rgb(0,200,100)"
                       }
                     },
                     {
