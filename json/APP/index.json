@@ -13,7 +13,7 @@
           "background": "rgb(14,53,112)",
           "color": "rgb(255,255,255)"
         },
-        "header_2":{
+        "header_2": {
           "width": "20%",
           "border": "rgb(0,200,100)",
           "align": "center",
@@ -72,7 +72,7 @@
                     {
                       "type": "label",
                       "text": "Date",
-                      "class":"header_2"
+                      "class": "header_2"
                     },
                     {
                       "type": "label",
@@ -109,6 +109,74 @@
                       "text": "Line 1",
                       "class": "table_header"
                     },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "table_header"
+                    },
+                    {
+                      "type": "label",
+                      "text": "101",
+                      "class": "table_header"
+                    },
+                    {
+                      "type": "label",
+                      "text": "102",
+                      "class": "table_header"
+                    },
+                    {
+                      "type": "label",
+                      "text": "103",
+                      "class": "table_header"
+                    },
+                    {
+                      "type": "label",
+                      "text": "104",
+                      "class": "table_header"
+                    },
+                    {
+                      "type": "label",
+                      "text": "105",
+                      "class": "table_header"
+                    },
+                    {
+                      "type": "label",
+                      "text": "111",
+                      "class": "table_header"
+                    },
+                    {
+                      "type": "label",
+                      "text": "112",
+                      "class": "table_header"
+                    },
+                    {
+                      "type": "label",
+                      "text": "113",
+                      "class": "table_header"
+                    },
+                    {
+                      "type": "label",
+                      "text": "114",
+                      "class": "table_header"
+                    },
+                    {
+                      "type": "label",
+                      "text": "115",
+                      "class": "table_header"
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "width": "100%"
+              }
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
                     {
                       "type": "label",
                       "text": "Agitator Shaft",
@@ -158,10 +226,121 @@
                   "type": "vertical",
                   "components": [
                     {
-                      "type": "label",
-                      "text": "",
-                      "class": "table_header"
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
                     },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    }
+                  ],
+                  "style": {
+                    "padding": "0"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "components": [
                     {
                       "type": "switch",
                       "name": "shift",
@@ -279,10 +458,121 @@
                   "type": "vertical",
                   "components": [
                     {
-                      "type": "label",
-                      "text": "101",
-                      "class": "table_header"
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
                     },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    }
+                  ],
+                  "style": {
+                    "padding": "0"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "components": [
                     {
                       "type": "switch",
                       "name": "shift",
@@ -400,10 +690,121 @@
                   "type": "vertical",
                   "components": [
                     {
-                      "type": "label",
-                      "text": "102",
-                      "class": "table_header"
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
                     },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    }
+                  ],
+                  "style": {
+                    "padding": "0"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "components": [
                     {
                       "type": "switch",
                       "name": "shift",
@@ -521,10 +922,121 @@
                   "type": "vertical",
                   "components": [
                     {
-                      "type": "label",
-                      "text": "103",
-                      "class": "table_header"
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
                     },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "style": {
+                        "color": "#00ff00",
+                        "color:disabled": "#ff0000",
+                        "width": "44",
+                        "align": "center"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Shift",
+                          "value": "{{$get.shift}}"
+                        }
+                      }
+                    }
+                  ],
+                  "style": {
+                    "padding": "0"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "components": [
                     {
                       "type": "switch",
                       "name": "shift",
@@ -642,11 +1154,6 @@
                   "type": "vertical",
                   "components": [
                     {
-                      "type": "label",
-                      "text": "104",
-                      "class": "table_header"
-                    },
-                    {
                       "type": "switch",
                       "name": "shift",
                       "value": "true",
@@ -763,11 +1270,6 @@
                   "type": "vertical",
                   "components": [
                     {
-                      "type": "label",
-                      "text": "105",
-                      "class": "table_header"
-                    },
-                    {
                       "type": "switch",
                       "name": "shift",
                       "value": "true",
@@ -883,495 +1385,6 @@
                 {
                   "type": "vertical",
                   "components": [
-                    {
-                      "type": "label",
-                      "text": "111",
-                      "class": "table_header"
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    }
-                  ],
-                  "style": {
-                    "padding": "0"
-                  }
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "112",
-                      "class": "table_header"
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    }
-                  ],
-                  "style": {
-                    "padding": "0"
-                  }
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "113",
-                      "class": "table_header"
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    }
-                  ],
-                  "style": {
-                    "padding": "0"
-                  }
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "114",
-                      "class": "table_header"
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "style": {
-                        "color": "#00ff00",
-                        "color:disabled": "#ff0000",
-                        "width": "44",
-                        "align": "center"
-                      },
-                      "action": {
-                        "trigger": "banner",
-                        "options": {
-                          "item": "Shift",
-                          "value": "{{$get.shift}}"
-                        }
-                      }
-                    }
-                  ],
-                  "style": {
-                    "padding": "0"
-                  }
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "115",
-                      "class": "table_header"
-                    },
                     {
                       "type": "switch",
                       "name": "shift",
