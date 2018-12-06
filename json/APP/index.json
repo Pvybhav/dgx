@@ -21,6 +21,24 @@
           "type": "$reload"
         }
       },
+      "data": {
+        "rows": [
+          {
+            "agitator Shaft": [
+              "true",
+              "false",
+              "true",
+              "false",
+              "true",
+              "false",
+              "true",
+              "false",
+              "true",
+              "false"
+            ]
+          }
+        ]
+      },
       "templates": {
         "body": {
           "header": {
@@ -34,6 +52,12 @@
             {
               "type": "horizontal",
               "items": [
+                {
+                  "{{#each rows}}": {
+                    "type": "switch",
+                    "value": "true"
+                  }
+                },
                 {
                   "type": "vertical",
                   "components": [
