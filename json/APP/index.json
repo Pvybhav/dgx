@@ -10,15 +10,15 @@
       "data": {}
     },
     "body": {
-      "header": {},
+      "header": {
+        "text": "APP"
+      },
       "sections": [
         {
           "items": [
             {
               "type": "button",
               "text": "Screen-1",
-              "url": "http://i.imgur.com/KUJPgGV.png",
-              "header": { },
               "style": {
                 "width": "30",
                 "height": "10",
@@ -28,13 +28,20 @@
                 "padding": "10",
                 "align": "left"
               },
-              "action": { }
+              "action": {
+                "href": {
+                  "url": "https://pvybhav.github.io/json/APP/Screen-1.json",
+                  "view": "jason",
+                  "transition": "push",
+                  "loading": "true"
+                }
+              }
             },
             {
               "type": "button",
               "text": "Screen-2",
               "url": "http://i.imgur.com/KUJPgGV.png",
-              "header": { },
+              "header": {},
               "style": {
                 "width": "30",
                 "height": "10",
@@ -44,7 +51,7 @@
                 "padding": "10",
                 "align": "left"
               },
-              "action": { }
+              "action": {}
             }
           ]
         }
