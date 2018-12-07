@@ -74,21 +74,19 @@
       },
       "templates": {
         "body": {
-          "header":{
-            "title":{
-              "text":"Loops"
+          "header": {
+            "title": {
+              "text": "Loops"
             }
           },
           "sections": [
             {
-              "items": [
-                {
-                  "#each Table_Headers": {
-                    "type": "label",
-                    "text": "{{field_name}}"
-                  }
+              "items": {
+                "#each Table_Headers": {
+                  "type": "label",
+                  "text": "{{field_name}}"
                 }
-              ]
+              }
             }
           ]
         }
