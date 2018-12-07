@@ -32,7 +32,7 @@
         }
       },
       "data": {
-        "Page_Heading": "LEACH AREA SHIFT REPORT",
+        "Page_Heading": "Loops",
         "Table_Headers": [
           {
             "field_name": "Line-1"
@@ -99,7 +99,7 @@
           "header": {
             "title": {
               "type": "label",
-              "text": "Loops"
+              "text": "{{Page_Heading}}"
             },
             "style": {
               "align": "center",
@@ -112,10 +112,10 @@
           "sections": [
             {
               "items": {
-                "{{#each Table_Headers}}": {
+                "{{#each members}}": {
                   "type": "label",
-                  "name": "{{field_name}}",
-                  "value": "{{field_name}}"
+                  "name": "{{id}}",
+                  "value": "{{value}}"
                 }
               }
             }
