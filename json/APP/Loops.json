@@ -12,6 +12,9 @@
           "color": "rgb(255,255,255)",
           "background": "rgb(0,162,224)"
         },
+        "no_padding": {
+          "padding": "0"
+        },
         "center_align": {
           "align": "center"
         },
@@ -43,40 +46,52 @@
         "Page_Heading": "Loops",
         "Table_Headers": [
           {
-            "text": "Line-1"
+            "text": "Line-1",
+            "width": "20%"
           },
           {
-            "text": ""
+            "text": "",
+            "width": "20%"
           },
           {
-            "text": "101"
+            "text": "101",
+            "width": "6%"
           },
           {
-            "text": "102"
+            "text": "102",
+            "width": "6%"
           },
           {
-            "text": "103"
+            "text": "103",
+            "width": "6%"
           },
           {
-            "text": "104"
+            "text": "104",
+            "width": "6%"
           },
           {
-            "text": "105"
+            "text": "105",
+            "width": "6%"
           },
           {
-            "text": "111"
+            "text": "111",
+            "width": "6%"
           },
           {
-            "text": "112"
+            "text": "112",
+            "width": "6%"
           },
           {
-            "text": "113"
+            "text": "113",
+            "width": "6%"
           },
           {
-            "text": "114"
+            "text": "114",
+            "width": "6%"
           },
           {
-            "text": "115"
+            "text": "115",
+            "width": "6%"
           }
         ]
       },
@@ -101,6 +116,7 @@
               "items": [
                 {
                   "type": "horizontal",
+                  "class": "no_padding",
                   "components": {
                     "{{#each Table_Headers}}": {
                       "type": "label",
