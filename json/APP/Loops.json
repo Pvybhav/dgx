@@ -1,0 +1,89 @@
+{
+  "$jason": {
+    "head": {
+      "title": "APP",
+      "description": "A jasonette app",
+      "offline": "true",
+      "styles": {
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,162,224)"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": 50,
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        }
+      },
+      "actions": {
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "data": {
+        "Page_Heading": "LEACH AREA SHIFT REPORT",
+        "Table_Headers": [
+          {
+            "field_name": "Line-1"
+          },
+          {
+            "field_name": ""
+          },
+          {
+            "field_name": "101"
+          },
+          {
+            "field_name": "102"
+          },
+          {
+            "field_name": "103"
+          },
+          {
+            "field_name": "104"
+          },
+          {
+            "field_name": "105"
+          },
+          {
+            "field_name": "111"
+          },
+          {
+            "field_name": "112"
+          },
+          {
+            "field_name": "113"
+          },
+          {
+            "field_name": "114"
+          },
+          {
+            "field_name": "115"
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "#each Table_Headers": {
+                "type": "label",
+                "text": "{{field_name}}"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
