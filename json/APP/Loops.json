@@ -87,6 +87,23 @@
           {
             "name": "Maggie"
           }
+        ],
+        "members2": [
+          {
+            "name": "Homer"
+          },
+          {
+            "name": "Marge"
+          },
+          {
+            "name": "Lisa"
+          },
+          {
+            "name": "Bart"
+          },
+          {
+            "name": "Maggie"
+          }
         ]
       },
       "templates": {
@@ -108,6 +125,13 @@
             {
               "items": {
                 "{{#each members}}": {
+                  "type": "label",
+                  "text": "{{name}}",
+                  "style": {
+                    "align": "center"
+                  }
+                },
+                "{{#each members2}}": {
                   "type": "label",
                   "text": "{{name}}",
                   "style": {
