@@ -71,7 +71,21 @@
           "type": "$render"
         },
         "$pull": {
-          "type": "$reload"
+          "type": "$reload",
+          "success": {
+            "type": "$util.alert",
+            "options": {
+              "title": "Success",
+              "text": "Page refreshed successfully"
+            }
+          },
+          "error": {
+            "type": "$util.alert",
+            "options": {
+              "title": "Error",
+              "text": "Something went wrong"
+            }
+          }
         }
       },
       "templates": {
