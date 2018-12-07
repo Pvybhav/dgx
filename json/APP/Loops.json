@@ -98,16 +98,23 @@
           "sections": [
             {
               "type": "horizontal",
-              "items": {
-                "{{#each Table_Headers}}": {
-                  "type": "label",
-                  "text": "{{text}}",
-                  "class": "table_header center_align",
-                  "style": {
-                    "width": "20%"
-                  }
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "{{#each Table_Headers}}": {
+                        "type": "label",
+                        "text": "{{text}}",
+                        "class": "table_header center_align",
+                        "style": {
+                          "width": "20%"
+                        }
+                      }
+                    }
+                  ]
                 }
-              }
+              ]
             }
           ]
         }
