@@ -49,21 +49,21 @@
           "height": "7%",
           "color": "rgb(255,255,255)",
           "background": "rgb(83,176,46)",
-          "corner-radius": "1%"
+          "corner_radius": "1%"
         },
         "update_button": {
           "width": "20%",
           "height": "7%",
           "color": "rgb(255,255,255)",
           "background": "rgb(243,216,7)",
-          "corner-radius": "1%"
+          "corner_radius": "1%"
         },
         "submit_button": {
           "width": "20%",
           "height": "7%",
           "color": "rgb(255,255,255)",
           "background": "rgb(0,147,215)",
-          "corner-radius": "1%"
+          "corner_radius": "1%"
         }
       },
       "actions": {
@@ -678,6 +678,10 @@
               "items": [
                 {
                   "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "border": "none"
+                  },
                   "components": [
                     {
                       "type": "label",
@@ -718,8 +722,7 @@
                       "text": "submit",
                       "class": "center_align submit_button"
                     }
-                  ],
-                  "class": "no_padding center_align"
+                  ]
                 }
               ]
             }
