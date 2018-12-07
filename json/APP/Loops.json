@@ -73,24 +73,19 @@
         ],
         "members": [
           {
-            "value": "Homer",
-            "id": "20"
+            "name": "Homer"
           },
           {
-            "value": "Marge",
-            "id": "21"
+            "name": "Marge"
           },
           {
-            "value": "Lisa",
-            "id": "22"
+            "name": "Lisa"
           },
           {
-            "value": "Bart",
-            "id": "23"
+            "name": "Bart"
           },
           {
-            "value": "Maggie",
-            "id": "24"
+            "name": "Maggie"
           }
         ]
       },
@@ -113,9 +108,11 @@
             {
               "items": {
                 "{{#each members}}": {
-                  "type": "textfield",
-                  "name": "{{id}}",
-                  "value": "{{value}}"
+                  "type": "label",
+                  "text": "{{name}}",
+                  "style": {
+                    "align": "center"
+                  }
                 }
               }
             }
