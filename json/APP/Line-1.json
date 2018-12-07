@@ -1,0 +1,635 @@
+{
+  "$jason": {
+    "head": {
+      "title": "APP",
+      "description": "A jasonette app",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "switch_styles": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000",
+          "width": "6%"
+        },
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "background": "rgb(0,162,224)",
+          "color": "rgb(255,255,255)"
+        },
+        "table_header": {
+          "size": 18,
+          "font": "HelveticaHeader",
+          "border": "rgb(255,255,255)",
+          "background": "rgb(14,53,112)",
+          "color": "rgb(255,255,255)",
+          "width": "6%"
+        },
+        "table_row_odd": {
+          "background": "rgb(204,206,213)",
+          "color": "rgb(0,0,0)"
+        },
+        "table_row_even": {
+          "background": "rgb(231,232,235)",
+          "color": "rgb(0,0,0)"
+        },
+        "header_2": {
+          "width": "20%",
+          "border": "rgb(0,200,100)",
+          "background": "rgb(14,53,112)",
+          "color": "rgb(255,255,255)"
+        }
+      },
+      "actions": {
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "LEACH AREA SHIFT REPORT"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaHeader",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Date",
+                      "class": "header_2 center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Shift",
+                      "class": "header_2 center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Operator",
+                      "class": "header_2 center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Signed",
+                      "class": "header_2 center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Jean Pronovost",
+                      "class": "header_2 center_align"
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line 1",
+                      "class": "table_header no_padding center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "table_header center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "101",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "102",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "103",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "104",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "105",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "111",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "112",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "113",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "114",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "115",
+                      "class": "table_header center_align"
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Agitator Shaft",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Filter Bypass Indicator",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Gearbox Oil Sight Glass",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Gearbox Vibration",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Cyanide Lines",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd center_align"
+                }
+              ],
+              "class": "center_align"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
