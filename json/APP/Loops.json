@@ -15,6 +15,14 @@
         "center_align": {
           "align": "center"
         },
+        "table_header": {
+          "size": 18,
+          "font": "HelveticaHeader",
+          "border": "rgb(255,255,255)",
+          "background": "rgb(14,53,112)",
+          "color": "rgb(255,255,255)",
+          "width": "6%"
+        },
         "button_styles": {
           "width": "40%",
           "height": 50,
@@ -94,9 +102,7 @@
                 "{{#each Table_Headers}}": {
                   "type": "label",
                   "text": "{{name}}",
-                  "style": {
-                    "align": "center"
-                  }
+                  "class": "table_header center_align"
                 }
               }
             }
