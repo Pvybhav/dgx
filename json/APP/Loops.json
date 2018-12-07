@@ -70,21 +70,52 @@
           {
             "field_name": "115"
           }
+        ],
+        "members": [
+          {
+            "value": "Homer",
+            "id": "20"
+          },
+          {
+            "value": "Marge",
+            "id": "21"
+          },
+          {
+            "value": "Lisa",
+            "id": "22"
+          },
+          {
+            "value": "Bart",
+            "id": "23"
+          },
+          {
+            "value": "Maggie",
+            "id": "24"
+          }
         ]
       },
       "templates": {
         "body": {
           "header": {
             "title": {
+              "type": "label",
               "text": "Loops"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaHeader",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
             }
           },
           "sections": [
             {
               "items": {
-                "#each Table_Headers": {
-                  "type": "label",
-                  "text": "{{field_name}}"
+                "{{#each members}}": {
+                  "type": "textfield",
+                  "name": "{{id}}",
+                  "value": "{{value}}"
                 }
               }
             }
