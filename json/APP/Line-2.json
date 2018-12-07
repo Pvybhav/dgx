@@ -185,10 +185,21 @@
                       }
                     },
                     {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "class": "switch_styles center_align",
+                      "type":"vertical",
+                      "components":[
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles center_align"
+                        },
+                        {
+                          "type": "label",
+                          "name": "legend_true",
+                          "value": "true",
+                          "class": "switch_styles center_align",
+                        }
+                      ],
                       "style": {
                         "width": "20%"
                       }
