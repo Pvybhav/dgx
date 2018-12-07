@@ -76,10 +76,14 @@
         "body": {
           "sections": [
             {
-              "#each Table_Headers": {
-                "type": "label",
-                "text": "{{field_name}}"
-              }
+              "items": [
+                {
+                  "#each Table_Headers": {
+                    "type": "label",
+                    "text": "{{field_name}}"
+                  }
+                }
+              ]
             }
           ]
         }
