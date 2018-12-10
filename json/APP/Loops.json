@@ -50,52 +50,42 @@
         "Page_Heading": "Loops",
         "Table_Headers": [
           {
-            "text": "Line-1",
+            "col": "Line-1",
             "width": "20%"
           },
           {
-            "text": "",
+            "col": "",
             "width": "20%"
           },
           {
-            "text": "101",
-            "width": "6%"
+            "col": "101"
           },
           {
-            "text": "102",
-            "width": "6%"
+            "col": "102"
           },
           {
-            "text": "103",
-            "width": "6%"
+            "col": "103"
           },
           {
-            "text": "104",
-            "width": "6%"
+            "col": "104"
           },
           {
-            "text": "105",
-            "width": "6%"
+            "col": "105"
           },
           {
-            "text": "111",
-            "width": "6%"
+            "col": "111"
           },
           {
-            "text": "112",
-            "width": "6%"
+            "col": "112"
           },
           {
-            "text": "113",
-            "width": "6%"
+            "col": "113"
           },
           {
-            "text": "114",
-            "width": "6%"
+            "col": "114"
           },
           {
-            "text": "115",
-            "width": "6%"
+            "col": "115"
           }
         ],
         "Table_Body": [
@@ -421,10 +411,10 @@
                   "components": {
                     "{{#each Table_Headers}}": {
                       "type": "label",
-                      "text": "{{text}}",
+                      "text": "{{col}}",
                       "class": "table_header center_align",
                       "style": {
-                        "width": "{{width}}"
+                        "width": "{{width || 6%}}"
                       }
                     }
                   }
