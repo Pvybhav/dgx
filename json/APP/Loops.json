@@ -537,20 +537,14 @@
               "items": {
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
-                  "components": [
-                    {
+                  "components": {
+                    "{{#each this[0].values}}": {
                       "type": "label",
-                      "text": "{{this[0].fieldName}}"
+                      "text": "{{value}}",
+                      "class": "center_align {{col_type}}"
                     },
-                    {
-                      "{{#each this[0].values}}": {
-                        "type": "label",
-                        "text": "{{value}}",
-                        "class": "center_align {{col_type}}"
-                      },
-                      "class": "no_padding"
-                    }
-                  ]
+                    "class": "no_padding"
+                  }
                 }
               }
             }
