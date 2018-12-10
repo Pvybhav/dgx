@@ -289,6 +289,16 @@
               "false_legend_value": "Stopped",
               "values": [
                 {
+                  "key": "Gearbox Vibration",
+                  "value": "Gearbox Vibration"
+                },
+                {
+                  "key": "legend",
+                  "value": "",
+                  "checked": "Turning",
+                  "unchecked": "Stopped"
+                },
+                {
                   "key": "101",
                   "value": "true",
                   "contentDescription": "31"
@@ -350,52 +360,52 @@
                 {
                   "key": "101",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "41"
                 },
                 {
                   "key": "102",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "42"
                 },
                 {
                   "key": "103",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "43"
                 },
                 {
                   "key": "104",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "44"
                 },
                 {
                   "key": "105",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "45"
                 },
                 {
                   "key": "111",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "46"
                 },
                 {
                   "key": "112",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "47"
                 },
                 {
                   "key": "113",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "48"
                 },
                 {
                   "key": "114",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "49"
                 },
                 {
                   "key": "115",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "50"
                 }
               ]
             }
@@ -439,14 +449,10 @@
               "items": {
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "{{fieldName}}",
-                      "class": "center_align"
-                    },
-                    {
-                      "{{#each this[0].values}}": {
+                  "components": {
+                    "{{#each this[0].values}}": {
+                      "type": "horizontal",
+                      "components": {
                         "type": "text",
                         "text": "{{value}}",
                         "class": "table_header center_align",
@@ -455,7 +461,7 @@
                         }
                       }
                     }
-                  ],
+                  },
                   "class": "no_padding"
                 }
               }
