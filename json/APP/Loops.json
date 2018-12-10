@@ -702,14 +702,28 @@
                   "components": {
                     "{{#each this[0].rowValues}}": {
                       "type": "{{type}}",
-                      "components": {
-                        "type": "label",
-                        "text": "{{value}}"
-                      },
                       "text": "{{value}}",
                       "name": "{{key}}",
                       "value": "{{value}}",
                       "class": "{{styles}}"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "vertical",
+              "items": {
+                "{{#each Table_Body}}": {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": {
+                    "{{#each this[0].rowValues}}": {
+                      "type": "horizontal",
+                      "components": {
+                        "type": "horizontal",
+                        "text": "{{value}}"
+                      }
                     }
                   }
                 }
