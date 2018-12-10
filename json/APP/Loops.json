@@ -617,13 +617,23 @@
               "items": {
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
-                  "components": {
-                    "{{#each this[0].rowKeys}}": {
-                      "type": "label",
-                      "text": "{{value}}",
-                      "class": "center_align {{col_type}}"
+                  "components": [
+                    {
+                      "{{#each this[0].rowKeys}}": {
+                        "type": "label",
+                        "text": "{{value}}",
+                        "class": "center_align {{col_type}}"
+                      }
+                    },
+                    {
+                      "{{#each this[0].rowValues}}": {
+                        "type": "switch",
+                        "name": "{{key}}",
+                        "value": "{{value}}",
+                        "class": "center_align {{col_type}} switch_styles"
+                      }
                     }
-                  }
+                  ]
                 }
               }
             },
