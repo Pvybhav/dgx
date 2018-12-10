@@ -784,27 +784,13 @@
                     },
                     {
                       "type": "vertical",
-                      "components": [
-                        {
+                      "components": {
+                        "{{#each Table_Body}}": {
                           "type": "label",
-                          "text": "1",
-                          "class": "center_align"
-                        },
-                        {
-                          "type": "switch",
-                          "name": "shift",
-                          "value": "true",
-                          "class": "switch_styles",
-                          "contentDescription": "1"
-                        },
-                        {
-                          "{{#each Table_Body}}": {
-                            "type": "label",
-                            "text": "{{JSON.stringify('Agitator Shaft')}}",
-                            "class": "table_header center_align"
-                          }
+                          "text": "{{JSON.stringify('Agitator Shaft')}}",
+                          "class": "table_header center_align"
                         }
-                      ]
+                      }
                     }
                   ],
                   "class": "no_padding table_row_odd center_align"
