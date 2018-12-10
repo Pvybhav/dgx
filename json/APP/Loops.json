@@ -414,7 +414,7 @@
                       "text": "{{col_name}}",
                       "class": "table_header center_align",
                       "style": {
-                        "width": "{{width}} || 6%"
+                        "width": "{{width}}"
                       }
                     }
                   }
@@ -425,7 +425,7 @@
               "type": "horizontal",
               "items": {
                 "{{#each Table_Body}}": {
-                  "type": "vertical",
+                  "type": "horizontal",
                   "components": {
                     "{{#each this[0].values}}": {
                       "type": "label",
