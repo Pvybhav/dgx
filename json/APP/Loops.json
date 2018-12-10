@@ -607,21 +607,23 @@
               "items": {
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
-                  "components": {
-                    "{{#each this[0].rowValues}}": {
-                      "{{#if col_type=='col_name'}}": {
-                        "type": "label",
-                        "text": "{{value}}",
-                        "class": "center_align {{col_type}}"
-                      },
-                      "{{#if col_type=='col_value'}}": {
-                        "type": "switch",
-                        "name": "{{key}}",
-                        "value": "{{value}}",
-                        "class": "center_align {{col_type}} switch_styles"
+                  "components": [
+                    {
+                      "{{#each this[0].rowValues}}": {
+                        "{{#if col_type=='col_name'}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "center_align {{col_type}}"
+                        },
+                        "{{#if col_type=='col_value'}}": {
+                          "type": "switch",
+                          "name": "{{key}}",
+                          "value": "{{value}}",
+                          "class": "center_align {{col_type}} switch_styles"
+                        }
                       }
                     }
-                  }
+                  ]
                 }
               }
             }
