@@ -683,32 +683,21 @@
                 {
                   "type": "horizontal",
                   "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "1"
-                        },
-                        {
-                          "{{#each Table_Headers}}": {
-                            "type": "label",
-                            "text": "{{value}}",
-                            "class": "{{styles}}"
-                          }
-                        }
-                      ]
+                  "components": {
+                    "{{#each Table_Headers}}": {
+                      "type": "label",
+                      "text": "{{value}}",
+                      "class": "{{styles}}"
                     }
-                  ]
+                  }
                 }
               ]
             },
             {
               "type": "vertical",
               "class": "no_padding",
-              "{{#each Table_Body}}": {
-                "items": {
+              "items": {
+                "{{#each Table_Body}}": {
                   "type": "horizontal",
                   "components": [
                     {
