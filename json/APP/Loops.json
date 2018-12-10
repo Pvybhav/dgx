@@ -116,7 +116,7 @@
           [
             {
               "fieldName": "Agitator Shaft",
-              "rowValues": [
+              "rowKeys": [
                 {
                   "key": "Agitator Shaft",
                   "value": "Agitator Shaft",
@@ -130,7 +130,9 @@
                   "checked": "Turning",
                   "unchecked": "Stopped",
                   "classes": "table_row_odd no_padding"
-                },
+                }
+              ],
+              "rowValues": [
                 {
                   "key": "101",
                   "value": "true",
@@ -207,7 +209,7 @@
           [
             {
               "fieldName": "Filter Bypass Indicator",
-              "rowValues": [
+              "rowKeys": [
                 {
                   "key": "Filter Bypass Indicator",
                   "value": "Filter Bypass Indicator",
@@ -221,7 +223,9 @@
                   "checked": "Good",
                   "unchecked": "Popped",
                   "classes": "table_row_even no_padding"
-                },
+                }
+              ],
+              "rowValues": [
                 {
                   "key": "101",
                   "value": "true",
@@ -298,7 +302,7 @@
           [
             {
               "fieldName": "Gearbox Oil Sight Glass",
-              "rowValues": [
+              "rowKeys": [
                 {
                   "key": "Gearbox Oil Sight Glass",
                   "value": "Gearbox Oil Sight Glass",
@@ -312,7 +316,9 @@
                   "checked": "Between Lines",
                   "unchecked": "High/Low",
                   "classes": "table_row_odd no_padding"
-                },
+                }
+              ],
+              "rowValues": [
                 {
                   "key": "101",
                   "value": "true",
@@ -389,7 +395,7 @@
           [
             {
               "fieldName": "Gearbox Vibration",
-              "rowValues": [
+              "rowKeys": [
                 {
                   "key": "Gearbox Vibration",
                   "value": "Gearbox Vibration",
@@ -403,7 +409,9 @@
                   "checked": "Good",
                   "unchecked": "Excess Vibration",
                   "classes": "table_row_even no_padding"
-                },
+                }
+              ],
+              "rowValues": [
                 {
                   "key": "101",
                   "value": "true",
@@ -480,7 +488,7 @@
           [
             {
               "fieldName": "Cyanide Lines",
-              "rowValues": [
+              "rowKeys": [
                 {
                   "key": "Cyanide Lines",
                   "value": "Cyanide Lines",
@@ -494,7 +502,9 @@
                   "checked": "Turning",
                   "unchecked": "Stopped",
                   "classes": "table_row_odd no_padding"
-                },
+                }
+              ],
+              "rowValues": [
                 {
                   "key": "101",
                   "value": "true",
@@ -607,8 +617,34 @@
               "items": {
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
-                  "components": [{
-                    "type":"vertical",
+                  "components": [
+                    {
+                      "type":"horizontal",
+                      "{{#each this[0].rowKeys}}": {
+                        "type": "label",
+                        "text": "{{value}}",
+                        "class": "center_align {{col_type}}"
+                      }
+                    },
+                    {
+                      "type":"horizontal",
+                      "{{#each this[0].rowValues}}": {
+                        "type": "switch",
+                        "name": "{{key}}",
+                        "value": "{{value}}",
+                        "class": "center_align {{col_type}} switch_styles"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "vertical",
+              "items": {
+                "{{#each Table_Body}}": {
+                  "type": "horizontal",
+                  "components": {
                     "{{#each this[0].rowValues}}": {
                       "{{#if col_type=='col_name'}}": {
                         "type": "label",
@@ -622,7 +658,7 @@
                         "class": "center_align {{col_type}} switch_styles"
                       }
                     }
-                  }]
+                  }
                 }
               }
             }
