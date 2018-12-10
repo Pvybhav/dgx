@@ -441,23 +441,21 @@
                   "type": "horizontal",
                   "components": [
                     {
+                      "type": "label",
+                      "text": "{{fieldName}}",
+                      "class": "center_align"
+                    },
+                    {
                       "{{#each this[0].values}}": {
                         "type": "horizontal",
-                        "components": [
-                          {
-                            "type": "label",
-                            "text": "{{fieldName}}",
-                            "class": "center_align"
-                          },
-                          {
-                            "type": "text",
-                            "text": "{{value}}",
-                            "class": "table_header center_align",
-                            "style": {
-                              "width": "6%"
-                            }
+                        "components": {
+                          "type": "text",
+                          "text": "{{value}}",
+                          "class": "table_header center_align",
+                          "style": {
+                            "width": "6%"
                           }
-                        ]
+                        }
                       }
                     }
                   ],
