@@ -689,8 +689,9 @@
             {
               "type": "vertical",
               "items": {
+                "type": "horizontal",
+                "class": "no_padding",
                 "{{#each Table_Body}}": {
-                  "type": "horizontal",
                   "components": {
                     "{{#each this[0].rowValues}}": {
                       "type": "{{type}}",
