@@ -698,27 +698,32 @@
               "class": "no_padding",
               "items": {
                 "{{#each Table_Body}}": {
-                  "type": "horizontal",
+                  "type": "vertical",
                   "components": [
+                    {
+                      "type": "label",
+                      "text": "label",
+                      "style": {
+                        "background": "rgb(255,0,0)"
+                      }
+                    },
                     {
                       "type": "horizontal",
                       "components": [
                         {
+                          "type": "label",
+                          "text": "label",
+                          "style": {
+                            "background": "rgb(0,0,255)"
+                          }
+                        },
+                        {
                           "{{#each this[0].rowValues}}": {
-                            "type": "vertical",
-                            "components": [
-                              {
-                                "type": "label",
-                                "text": "1"
-                              },
-                              {
-                                "type": "{{type}}",
-                                "text": "{{value}}",
-                                "name": "{{key}}",
-                                "value": "{{value}}",
-                                "class": "{{styles}}"
-                              }
-                            ]
+                            "type": "{{type}}",
+                            "text": "{{value}}",
+                            "name": "{{key}}",
+                            "value": "{{value}}",
+                            "class": "{{styles}}"
                           }
                         }
                       ]
