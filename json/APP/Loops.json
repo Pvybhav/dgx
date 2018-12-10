@@ -801,6 +801,16 @@
                           "class": "table_header center_align"
                         }
                       }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table_Body}}": {
+                          "type": "label",
+                          "text": "{{this}}",
+                          "class": "table_header center_align"
+                        }
+                      }
                     }
                   ],
                   "class": "no_padding table_row_odd center_align"
