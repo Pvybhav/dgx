@@ -694,14 +694,14 @@
               ]
             },
             {
-              "type": "horizontal",
+              "type": "vertical",
               "items": [
                 {
                   "type": "horizontal",
                   "class": "no_padding",
                   "components": {
                     "{{#each Table_Body}}": {
-                      "type": "vertical",
+                      "type": "horizontal",
                       "components": {
                         "{{#each this[0].rowValues}}": {
                           "type": "{{type}}",
