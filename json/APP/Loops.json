@@ -215,7 +215,7 @@
                 {
                   "type": "switch",
                   "key": "112",
-                  "value": "true",
+                  "value": "false",
                   "col_type": "col_value",
                   "contentDescription": "7",
                   "styles": "table_row_odd no_padding col_value_styles switch_styles"
@@ -705,24 +705,10 @@
                       "text": "{{value}}",
                       "name": "{{key}}",
                       "value": "{{value}}",
-                      "class": "{{styles}}"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "type": "vertical",
-              "items": {
-                "{{#each Table_Body}}": {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": {
-                    "{{#each this[0].rowValues}}": {
-                      "type": "horizontal",
+                      "class": "{{styles}}",
                       "components": {
-                        "type": "horizontal",
-                        "text": "{{value}}"
+                        "type": "label",
+                        "text": "one"
                       }
                     }
                   }
