@@ -692,7 +692,7 @@
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
                   "class": "no_padding",
-                  "components": {
+                  "components": [{
                     "{{#each this[0].rowValues}}": {
                       "type": "{{type}}",
                       "text": "{{value}}",
@@ -700,7 +700,7 @@
                       "value": "{{value}}",
                       "class": "{{styles}}"
                     }
-                  }
+                  }]
                 }
               }
             }
