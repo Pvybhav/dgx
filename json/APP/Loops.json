@@ -710,19 +710,21 @@
                               "type": "vertical",
                               "components": [
                                 {
-                                  "type": "label",
-                                  "text": "label",
-                                  "style": {
-                                    "background": "rgb(255,0,0)"
-                                  }
-                                },
-                                {
                                   "{{#each this[0].rowValues}}": {
-                                    "type": "{{type}}",
-                                    "text": "{{value}}",
-                                    "name": "{{key}}",
-                                    "value": "{{value}}",
-                                    "class": "{{styles}}"
+                                    "type": "vertical",
+                                    "components": [
+                                      {
+                                        "type": "label",
+                                        "text": "1"
+                                      },
+                                      {
+                                        "type": "{{type}}",
+                                        "text": "{{value}}",
+                                        "name": "{{key}}",
+                                        "value": "{{value}}",
+                                        "class": "{{styles}}"
+                                      }
+                                    ]
                                   }
                                 }
                               ]
