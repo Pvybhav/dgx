@@ -614,7 +614,7 @@
             },
             {
               "type": "vertical",
-              "items": {
+              "items": [{
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
                   "components": {
@@ -625,7 +625,19 @@
                     }
                   }
                 }
-              }
+              },
+              {
+                "{{#each Table_Body}}": {
+                  "type": "horizontal",
+                  "components": {
+                    "{{#each this[0].rowKeys}}": {
+                      "type": "label",
+                      "text": "{{value}}",
+                      "class": "center_align {{col_type}}"
+                    }
+                  }
+                }
+              }]
             },
             {
               "type": "vertical",
