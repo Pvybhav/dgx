@@ -116,19 +116,23 @@
           [
             {
               "fieldName": "Agitator Shaft",
-              "values": [
+              "rowKeys": [
                 {
                   "key": "Agitator Shaft",
                   "value": "Agitator Shaft",
+                  "col_type": "col_name",
                   "classes": "table_row_odd no_padding"
                 },
                 {
                   "key": "legend",
                   "value": "",
+                  "col_type": "col_name",
                   "checked": "Turning",
                   "unchecked": "Stopped",
                   "classes": "table_row_odd no_padding"
-                },
+                }
+              ],
+              "rowValues": [
                 {
                   "key": "101",
                   "value": "true",
@@ -205,7 +209,7 @@
           [
             {
               "fieldName": "Filter Bypass Indicator",
-              "values": [
+              "rowKeys": [
                 {
                   "key": "Filter Bypass Indicator",
                   "value": "Filter Bypass Indicator",
@@ -217,7 +221,9 @@
                   "checked": "Good",
                   "unchecked": "Popped",
                   "classes": "table_row_even no_padding"
-                },
+                }
+              ],
+              "rowValues": [
                 {
                   "key": "101",
                   "value": "true",
@@ -294,7 +300,7 @@
           [
             {
               "fieldName": "Gearbox Oil Sight Glass",
-              "values": [
+              "rowKeys": [
                 {
                   "key": "Gearbox Oil Sight Glass",
                   "value": "Gearbox Oil Sight Glass",
@@ -306,7 +312,9 @@
                   "checked": "Between Lines",
                   "unchecked": "High/Low",
                   "classes": "table_row_odd no_padding"
-                },
+                }
+              ],
+              "rowValues": [
                 {
                   "key": "101",
                   "value": "true",
@@ -383,7 +391,7 @@
           [
             {
               "fieldName": "Gearbox Vibration",
-              "values": [
+              "rowKeys": [
                 {
                   "key": "Gearbox Vibration",
                   "value": "Gearbox Vibration",
@@ -395,7 +403,9 @@
                   "checked": "Good",
                   "unchecked": "Excess Vibration",
                   "classes": "table_row_even no_padding"
-                },
+                }
+              ],
+              "rowValues": [
                 {
                   "key": "101",
                   "value": "true",
@@ -472,7 +482,7 @@
           [
             {
               "fieldName": "Cyanide Lines",
-              "values": [
+              "rowKeys": [
                 {
                   "key": "Cyanide Lines",
                   "value": "Cyanide Lines",
@@ -484,7 +494,9 @@
                   "checked": "Turning",
                   "unchecked": "Stopped",
                   "classes": "table_row_odd no_padding"
-                },
+                }
+              ],
+              "rowValues": [
                 {
                   "key": "101",
                   "value": "true",
@@ -598,12 +610,11 @@
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
                   "components": {
-                    "{{#each this[0].values}}": {
+                    "{{#each this[0].rowKeys}}": {
                       "type": "label",
                       "text": "{{value}}",
-                      "class": "center_align {{col_type}} switch_styles"
-                    },
-                    "class": "{{this[0].classes}}"
+                      "class": "center_align {{col_type}}"
+                    }
                   }
                 }
               }
@@ -614,7 +625,7 @@
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
                   "components": {
-                    "{{#each this[0].values}}": {
+                    "{{#each this[0].rowValues}}": {
                       "type": "switch",
                       "name": "{{key}}",
                       "value": "{{value}}",
