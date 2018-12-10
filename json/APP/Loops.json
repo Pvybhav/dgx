@@ -681,7 +681,8 @@
                   "type": "horizontal",
                   "components": {
                     "{{#each this[0].rowValues}}": {
-                      "type": "label",
+                      "type": "{{type}}",
+                      "text": "{{value}}",
                       "name": "{{key}}",
                       "value": "{{value}}",
                       "class": "center_align {{col_type}} switch_styles"
