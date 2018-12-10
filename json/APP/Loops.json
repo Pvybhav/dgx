@@ -715,6 +715,7 @@
                           "text": "{{value}}",
                           "name": "{{key}}",
                           "value": "{{value}}",
+                          "contentDescription": "{{contentDescription}}",
                           "class": "{{styles}}"
                         }
                       }
@@ -723,11 +724,9 @@
                       "type": "horizontal",
                       "components": {
                         "{{#each this[0].rowValues}}": {
-                          "type": "{{type}}",
-                          "text": "{{value}}",
+                          "type": "label",
                           "name": "{{key}}",
-                          "value": "{{value}}",
-                          "class": "{{styles}}"
+                          "text": "{{contentDescription}}"
                         }
                       }
                     }
