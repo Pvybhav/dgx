@@ -99,6 +99,101 @@
           }
         ],
         "Table_Body": [
+          [
+            {
+              "fieldName": "Agitator Shaft",
+              "true_legend_value": "Turning",
+              "false_legend_value": "Stopped",
+              "values": [
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true"
+              ]
+            }
+          ],
+          [
+            {
+              "fieldName": "Filter Bypass Indicator",
+              "true_legend_value": "Turning",
+              "false_legend_value": "Stopped",
+              "values": [
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true"
+              ]
+            }
+          ],
+          [
+            {
+              "fieldName": "Gearbox Oil Sight Glass",
+              "true_legend_value": "Turning",
+              "false_legend_value": "Stopped",
+              "values": [
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true"
+              ]
+            }
+          ],
+          [
+            {
+              "fieldName": "Gearbox Vibration",
+              "true_legend_value": "Turning",
+              "false_legend_value": "Stopped",
+              "values": [
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true"
+              ]
+            }
+          ],
+          [
+            {
+              "fieldName": "Cyanide Lines",
+              "true_legend_value": "Turning",
+              "false_legend_value": "Stopped",
+              "values": [
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true",
+                "true"
+              ]
+            }
+          ],
           {
             "Agitator Shaft": [
               {
@@ -780,7 +875,17 @@
               "items": {
                 "{{#each Table_Body}}": {
                   "type": "label",
-                  "text": "{{this['Agitator Shaft'][0].text == '101'}}",
+                  "text": "{{this}}",
+                  "class": "table_header center_align"
+                }
+              }
+            },
+            {
+              "type": "vertical",
+              "items": {
+                "{{#each Table_Body}}": {
+                  "type": "label",
+                  "text": "{{this[0].values}}",
                   "class": "table_header center_align"
                 }
               }
