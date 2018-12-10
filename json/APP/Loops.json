@@ -698,16 +698,18 @@
               "items": [
                 {
                   "type": "horizontal",
-                  "{{#each Table_Body}}": {
-                    "type": "horizontal",
-                    "class": "no_padding",
-                    "components": {
-                      "{{#each this[0].rowValues}}": {
-                        "type": "{{type}}",
-                        "text": "{{value}}",
-                        "name": "{{key}}",
-                        "value": "{{value}}",
-                        "class": "{{styles}}"
+                  "class": "no_padding",
+                  "components": {
+                    "{{#each Table_Body}}": {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each this[0].rowValues}}": {
+                          "type": "{{type}}",
+                          "text": "{{value}}",
+                          "name": "{{key}}",
+                          "value": "{{value}}",
+                          "class": "{{styles}}"
+                        }
                       }
                     }
                   }
