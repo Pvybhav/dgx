@@ -746,38 +746,38 @@
                               "text": "= Turning"
                             }
                           ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "center_align",
-                          "components": [
-                            {
-                              "type": "switch",
-                              "name": "shift",
-                              "value": "false",
-                              "class": "switch_legend"
-                            },
-                            {
-                              "type": "label",
-                              "name": "AgitatorShaft_false",
-                              "text": "= Stopped"
-                            },
-                            {
-                              "type": "horizontal",
-                              "components": {
-                                "{{#each Table_Body}}": {
-                                  "type": "label",
-                                  "text": "{{return 'success'}}",
-                                  "class": "table_header center_align"
-                                }
-                              }
-                            }
-                          ]
                         }
                       ],
                       "style": {
                         "width": "20%"
                       }
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "center_align",
+                      "components": [
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "false",
+                          "class": "switch_legend"
+                        },
+                        {
+                          "type": "label",
+                          "name": "AgitatorShaft_false",
+                          "text": "= Stopped"
+                        },
+                        {
+                          "type": "horizontal",
+                          "components": {
+                            "{{#each Table_Body}}": {
+                              "type": "label",
+                              "text": "{{return 'success'}}",
+                              "class": "table_header center_align"
+                            }
+                          }
+                        }
+                      ]
                     }
                   ],
                   "class": "no_padding table_row_odd center_align"
