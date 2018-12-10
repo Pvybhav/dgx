@@ -93,7 +93,78 @@
             "width": "6%"
           }
         ],
-        "Table_Rows": []
+        "Table_Body": {
+          "101": {
+            "Agitator Shaft": "true",
+            "Filter Bypass Indicator": "true",
+            "Gearbox Oil Sight Glass": "true",
+            "Gearbox Vibration": "true",
+            "Cyanide Lines": "true"
+          },
+          "102": {
+            "Agitator Shaft": "true",
+            "Filter Bypass Indicator": "true",
+            "Gearbox Oil Sight Glass": "true",
+            "Gearbox Vibration": "true",
+            "Cyanide Lines": "true"
+          },
+          "103": {
+            "Agitator Shaft": "true",
+            "Filter Bypass Indicator": "true",
+            "Gearbox Oil Sight Glass": "true",
+            "Gearbox Vibration": "true",
+            "Cyanide Lines": "true"
+          },
+          "104": {
+            "Agitator Shaft": "true",
+            "Filter Bypass Indicator": "true",
+            "Gearbox Oil Sight Glass": "true",
+            "Gearbox Vibration": "true",
+            "Cyanide Lines": "true"
+          },
+          "105": {
+            "Agitator Shaft": "true",
+            "Filter Bypass Indicator": "true",
+            "Gearbox Oil Sight Glass": "true",
+            "Gearbox Vibration": "true",
+            "Cyanide Lines": "true"
+          },
+          "111": {
+            "Agitator Shaft": "true",
+            "Filter Bypass Indicator": "true",
+            "Gearbox Oil Sight Glass": "true",
+            "Gearbox Vibration": "true",
+            "Cyanide Lines": "true"
+          },
+          "112": {
+            "Agitator Shaft": "true",
+            "Filter Bypass Indicator": "true",
+            "Gearbox Oil Sight Glass": "true",
+            "Gearbox Vibration": "true",
+            "Cyanide Lines": "true"
+          },
+          "113": {
+            "Agitator Shaft": "true",
+            "Filter Bypass Indicator": "true",
+            "Gearbox Oil Sight Glass": "true",
+            "Gearbox Vibration": "true",
+            "Cyanide Lines": "true"
+          },
+          "114": {
+            "Agitator Shaft": "true",
+            "Filter Bypass Indicator": "true",
+            "Gearbox Oil Sight Glass": "true",
+            "Gearbox Vibration": "true",
+            "Cyanide Lines": "true"
+          },
+          "115": {
+            "Agitator Shaft": "true",
+            "Filter Bypass Indicator": "true",
+            "Gearbox Oil Sight Glass": "true",
+            "Gearbox Vibration": "true",
+            "Cyanide Lines": "true"
+          }
+        }
       },
       "templates": {
         "body": {
@@ -129,6 +200,48 @@
                   }
                 }
               ]
+            },
+            {
+              "type": "vertical",
+              "components": [
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "true",
+                      "class": "switch_legend"
+                    },
+                    {
+                      "type": "label",
+                      "name": "AgitatorShaft_true",
+                      "text": "= Turning"
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "switch",
+                      "name": "shift",
+                      "value": "false",
+                      "class": "switch_legend"
+                    },
+                    {
+                      "type": "label",
+                      "name": "AgitatorShaft_false",
+                      "text": "= Stopped"
+                    }
+                  ]
+                }
+              ],
+              "style": {
+                "width": "20%"
+              }
             }
           ]
         }
