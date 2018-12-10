@@ -692,15 +692,19 @@
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
                   "class": "no_padding",
-                  "components": [{
+                  "components": {
                     "{{#each this[0].rowValues}}": {
                       "type": "{{type}}",
+                      "components": {
+                        "type": "label",
+                        "text": "1"
+                      },
                       "text": "{{value}}",
                       "name": "{{key}}",
                       "value": "{{value}}",
                       "class": "{{styles}}"
                     }
-                  }]
+                  }
                 }
               }
             }
