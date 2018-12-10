@@ -116,6 +116,7 @@
           [
             {
               "fieldName": "Agitator Shaft",
+              "classes": "table_row_odd",
               "values": [
                 {
                   "key": "Agitator Shaft",
@@ -193,6 +194,7 @@
           [
             {
               "fieldName": "Filter Bypass Indicator",
+              "classes": "table_row_even",
               "values": [
                 {
                   "key": "Filter Bypass Indicator",
@@ -270,6 +272,7 @@
           [
             {
               "fieldName": "Gearbox Oil Sight Glass",
+              "classes": "table_row_odd",
               "values": [
                 {
                   "key": "Gearbox Oil Sight Glass",
@@ -347,6 +350,7 @@
           [
             {
               "fieldName": "Gearbox Vibration",
+              "classes": "table_row_even",
               "values": [
                 {
                   "key": "Gearbox Vibration",
@@ -424,6 +428,7 @@
           [
             {
               "fieldName": "Cyanide Lines",
+              "classes": "table_row_odd",
               "values": [
                 {
                   "key": "Cyanide Lines",
@@ -541,7 +546,7 @@
                     "{{#each this[0].values}}": {
                       "type": "label",
                       "text": "{{value}}",
-                      "class": "center_align {{col_type}}"
+                      "class": "center_align {{col_type}} {{this[0].classes}}"
                     },
                     "class": "no_padding"
                   }
