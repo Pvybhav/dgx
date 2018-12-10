@@ -704,30 +704,30 @@
                       "type": "vertical",
                       "components": [
                         {
+                          "type":"label",
+                          "text":"label",
+                          "style":{
+                            "background":"rgb(255,0,0)"
+                          }
+                        },
+                        {
                           "type": "horizontal",
-                          "components": [
-                            {
-                              "type": "vertical",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "label",
-                                  "style": {
-                                    "background": "rgb(255,0,0)"
-                                  }
-                                },
-                                {
-                                  "{{#each this[0].rowValues}}": {
-                                    "type": "{{type}}",
-                                    "text": "{{value}}",
-                                    "name": "{{key}}",
-                                    "value": "{{value}}",
-                                    "class": "{{styles}}"
-                                  }
-                                }
-                              ]
-                            }
-                          ]
+                          "components": [{
+                            "type":"vertical",
+                            "components":[{
+                              "type":"label",
+                              "text":"label",
+                              "style": {
+                                "background": "rgb(255,0,0)"
+                              }
+                            }, {"{{#each this[0].rowValues}}": {
+                              "type": "{{type}}",
+                              "text": "{{value}}",
+                              "name": "{{key}}",
+                              "value": "{{value}}",
+                              "class": "{{styles}}"
+                            }}]
+                          }]
                         }
                       ]
                     }
