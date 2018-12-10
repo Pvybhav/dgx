@@ -796,11 +796,9 @@
                       "type": "vertical",
                       "components": {
                         "{{#each Table_Body}}": {
-                          "{{#each Table_Body[0]['Agitator Shaft']}}": {
-                            "type": "label",
-                            "text": "{{return 'success'}}",
-                            "class": "table_header center_align"
-                          }
+                          "type": "label",
+                          "text": "{{this}}",
+                          "class": "table_header center_align"
                         }
                       }
                     }
