@@ -114,52 +114,52 @@
                 {
                   "key": "101",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "1"
                 },
                 {
                   "key": "102",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "2"
                 },
                 {
                   "key": "103",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "3"
                 },
                 {
                   "key": "104",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "4"
                 },
                 {
                   "key": "105",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "5"
                 },
                 {
                   "key": "111",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "6"
                 },
                 {
                   "key": "112",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "7"
                 },
                 {
                   "key": "113",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "8"
                 },
                 {
                   "key": "114",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "9"
                 },
                 {
                   "key": "115",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "10"
                 }
               ]
             }
@@ -173,52 +173,52 @@
                 {
                   "key": "101",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "11"
                 },
                 {
                   "key": "102",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "12"
                 },
                 {
                   "key": "103",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "13"
                 },
                 {
                   "key": "104",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "14"
                 },
                 {
                   "key": "105",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "15"
                 },
                 {
                   "key": "111",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "16"
                 },
                 {
                   "key": "112",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "17"
                 },
                 {
                   "key": "113",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "18"
                 },
                 {
                   "key": "114",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "19"
                 },
                 {
                   "key": "115",
                   "value": "true",
-                  "contentDescription": ""
+                  "contentDescription": "20"
                 }
               ]
             }
@@ -441,18 +441,23 @@
                   "type": "horizontal",
                   "components": [
                     {
-                      "type":"label",
-                      "text": "{{fieldName}}",
-                      "class": "center_align"
-                    },
-                    {
                       "{{#each this[0].values}}": {
-                        "type": "label",
-                        "text": "{{value}}",
-                        "class": "table_header center_align",
-                        "style": {
-                          "width": "6%"
-                        }
+                        "type": "horizontal",
+                        "components": [
+                          {
+                            "type": "label",
+                            "text": "{{fieldName}}",
+                            "class": "center_align"
+                          },
+                          {
+                            "type": "text",
+                            "text": "{{value}}",
+                            "class": "table_header center_align",
+                            "style": {
+                              "width": "6%"
+                            }
+                          }
+                        ]
                       }
                     }
                   ],
