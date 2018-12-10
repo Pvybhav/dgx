@@ -31,6 +31,11 @@
           "space": "15",
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0, 102, 204)"
+        },
+        "switch_styles": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000",
+          "width": "6%"
         }
       },
       "actions": {
@@ -202,46 +207,236 @@
               ]
             },
             {
-              "type": "vertical",
-              "components": [
+              "type": "horizontal",
+              "items": [
                 {
                   "type": "horizontal",
-                  "class": "center_align",
                   "components": [
                     {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "true",
-                      "class": "switch_legend"
+                      "type": "label",
+                      "text": "Agitator Shaft",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
                     },
                     {
-                      "type": "label",
-                      "name": "AgitatorShaft_true",
-                      "text": "= Turning"
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "class": "center_align",
-                  "components": [
-                    {
-                      "type": "switch",
-                      "name": "shift",
-                      "value": "false",
-                      "class": "switch_legend"
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "AgitatorShaft_true",
+                              "text": "= Turning"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "AgitatorShaft_false",
+                              "text": "= Stopped"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
                     },
                     {
-                      "type": "label",
-                      "name": "AgitatorShaft_false",
-                      "text": "= Stopped"
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "1"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "2",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "2"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "3",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "3"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "4",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "4"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "5",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "5"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "6",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "6"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "7",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "7"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "8",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "8"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "9",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "9"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "10",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "10"
+                        }
+                      ]
                     }
-                  ]
+                  ],
+                  "class": "no_padding table_row_odd center_align"
                 }
               ],
-              "style": {
-                "width": "20%"
-              }
+              "class": "center_align"
             }
           ]
         }
