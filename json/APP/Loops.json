@@ -448,18 +448,18 @@
               "type": "vertical",
               "items": {
                 "{{#each Table_Body}}": {
-                  "{{#each this[0].values}}": {
-                    "type": "horizontal",
-                    "components": {
+                  "type": "horizontal",
+                  "components": {
+                    "{{#each this[0].values}}": {
                       "type": "text",
                       "text": "{{value}}",
                       "class": "table_header center_align",
                       "style": {
                         "width": "6%"
                       }
-                    }
-                  },
-                  "class": "no_padding"
+                    },
+                    "class": "no_padding"
+                  }
                 }
               }
             }
