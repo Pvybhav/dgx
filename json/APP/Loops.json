@@ -719,7 +719,7 @@
                         "{{#each this[0].rowValues}}": {
                           "type": "label",
                           "name": "{{key}}",
-                          "text": "{{contentDescription}} || ' '",
+                          "text": "{{contentDescription || ' '}}",
                           "class": "{{styles}}"
                         }
                       }
