@@ -768,45 +768,42 @@
                       "style": {
                         "width": "20%"
                       }
-                    },
-                    {
-                      "type": "vertical",
-                      "components": {
-                        "{{#each Table_Body}}": {
-                          "type": "label",
-                          "text": "{{JSON.stringify('Agitator Shaft')}}",
-                          "class": "table_header center_align",
-                          "style": {
-                            "width": "{{width}}"
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": {
-                        "{{#each Table_Body}}": {
-                          "type": "label",
-                          "text": "{{return 'success'}}",
-                          "class": "table_header center_align"
-                        }
-                      }
-                    },
-                    {
-                      "type": "vertical",
-                      "components": {
-                        "{{#each Table_Body}}": {
-                          "type": "label",
-                          "text": "{{return 'success'}}",
-                          "class": "table_header center_align"
-                        }
-                      }
                     }
                   ],
                   "class": "no_padding table_row_odd center_align"
                 }
               ],
               "class": "center_align"
+            },
+            {
+              "type": "vertical",
+              "components": {
+                "{{#each Table_Body}}": {
+                  "type": "label",
+                  "text": "{{JSON.stringify('Agitator Shaft')}}",
+                  "class": "table_header center_align"
+                }
+              }
+            },
+            {
+              "type": "horizontal",
+              "components": {
+                "{{#each Table_Body}}": {
+                  "type": "label",
+                  "text": "{{return 'success'}}",
+                  "class": "table_header center_align"
+                }
+              }
+            },
+            {
+              "type": "vertical",
+              "components": {
+                "{{#each Table_Body}}": {
+                  "type": "label",
+                  "text": "{{return 'success'}}",
+                  "class": "table_header center_align"
+                }
+              }
             }
           ]
         }
