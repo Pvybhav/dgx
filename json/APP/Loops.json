@@ -619,7 +619,7 @@
                   "type": "horizontal",
                   "components": [
                     {
-                      "type":"horizontal",
+                      "type":"vertical",
                       "{{#each this[0].rowKeys}}": {
                         "type": "label",
                         "text": "{{value}}",
@@ -627,7 +627,7 @@
                       }
                     },
                     {
-                      "type":"horizontal",
+                      "type":"vertical",
                       "{{#each this[0].rowValues}}": {
                         "type": "switch",
                         "name": "{{key}}",
