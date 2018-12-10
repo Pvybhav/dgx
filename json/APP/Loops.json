@@ -50,42 +50,42 @@
         "Page_Heading": "Loops",
         "Table_Headers": [
           {
-            "col": "Line-1",
+            "col_name": "Line-1",
             "width": "20%"
           },
           {
-            "col": "",
+            "col_name": "",
             "width": "20%"
           },
           {
-            "col": "101"
+            "col_name": "101"
           },
           {
-            "col": "102"
+            "col_name": "102"
           },
           {
-            "col": "103"
+            "col_name": "103"
           },
           {
-            "col": "104"
+            "col_name": "104"
           },
           {
-            "col": "105"
+            "col_name": "105"
           },
           {
-            "col": "111"
+            "col_name": "111"
           },
           {
-            "col": "112"
+            "col_name": "112"
           },
           {
-            "col": "113"
+            "col_name": "113"
           },
           {
-            "col": "114"
+            "col_name": "114"
           },
           {
-            "col": "115"
+            "col_name": "115"
           }
         ],
         "Table_Body": [
@@ -411,10 +411,10 @@
                   "components": {
                     "{{#each Table_Headers}}": {
                       "type": "label",
-                      "text": "{{col}}",
+                      "text": "{{col_name}}",
                       "class": "table_header center_align",
                       "style": {
-                        "width": "{{width || 6%}}"
+                        "width": "{{width}} || 6%"
                       }
                     }
                   }
@@ -422,7 +422,7 @@
               ]
             },
             {
-              "type": "vertical",
+              "type": "horizontal",
               "items": {
                 "{{#each Table_Body}}": {
                   "type": "vertical",
@@ -431,6 +431,9 @@
                       "type": "label",
                       "text": "{{value}}",
                       "class": "table_header center_align"
+                    },
+                    "style":{
+                      "width":"10%"
                     }
                   }
                 }
