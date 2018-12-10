@@ -36,6 +36,12 @@
           "color": "#00ff00",
           "color:disabled": "#ff0000",
           "width": "6%"
+        },
+        "col_name": {
+          "width":"20%"
+        },
+        "col_value": {
+          "width": "6%"
         }
       },
       "actions": {
@@ -440,10 +446,10 @@
                     "{{#each this[0].values}}": {
                       "type": "label",
                       "text": "{{value}}",
-                      "class": "table_header center_align"
-                    },
-                    "style":{
-                      "width":"10%"
+                      "class": "table_header center_align",
+                      "style": {
+                        "width": "6%"
+                      }
                     }
                   },
                   "class": "no_padding"
