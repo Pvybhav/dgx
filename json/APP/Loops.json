@@ -67,73 +67,73 @@
             "type": "label",
             "value": "Line-1",
             "col_type": "col_name",
-            "styles": "col_name_styles"
+            "styles": "table_header center_align col_name_styles"
           },
           {
             "type": "label",
             "value": "",
             "col_type": "col_name",
-            "styles": "col_name_styles"
+            "styles": "table_header center_align col_name_styles"
           },
           {
             "type": "label",
             "value": "101",
             "col_type": "col_value",
-            "styles": "col_value_styles"
+            "styles": "table_header center_align col_value_styles"
           },
           {
             "type": "label",
             "value": "102",
             "col_type": "col_value",
-            "styles": "col_value_styles"
+            "styles": "table_header center_align col_value_styles"
           },
           {
             "type": "label",
             "value": "103",
             "col_type": "col_value",
-            "styles": "col_value_styles"
+            "styles": "table_header center_align col_value_styles"
           },
           {
             "type": "label",
             "value": "104",
             "col_type": "col_value",
-            "styles": "col_value_styles"
+            "styles": "table_header center_align col_value_styles"
           },
           {
             "type": "label",
             "value": "105",
             "col_type": "col_value",
-            "styles": "col_value_styles"
+            "styles": "table_header center_align col_value_styles"
           },
           {
             "type": "label",
             "value": "111",
             "col_type": "col_value",
-            "styles": "col_value_styles"
+            "styles": "table_header center_align col_value_styles"
           },
           {
             "type": "label",
             "value": "112",
             "col_type": "col_value",
-            "styles": "col_value_styles"
+            "styles": "table_header center_align col_value_styles"
           },
           {
             "type": "label",
             "value": "113",
             "col_type": "col_value",
-            "styles": "col_value_styles"
+            "styles": "table_header center_align col_value_styles"
           },
           {
             "type": "label",
             "value": "114",
             "col_type": "col_value",
-            "styles": "col_value_styles"
+            "styles": "table_header center_align col_value_styles"
           },
           {
             "type": "label",
             "value": "115",
             "col_type": "col_value",
-            "styles": "col_value_styles"
+            "styles": "table_header center_align col_value_styles"
           }
         ],
         "Table_Body": [
@@ -680,7 +680,7 @@
                     "{{#each Table_Headers}}": {
                       "type": "label",
                       "text": "{{value}}",
-                      "class": "table_header center_align {{styles}}"
+                      "class": "{{styles}}"
                     }
                   }
                 }
@@ -700,6 +700,9 @@
                       "value": "{{value}}",
                       "class": "{{styles}}"
                     }
+                  },
+                  "sytle": {
+                    "background": "rgb(111,111,111)"
                   }
                 }
               }
