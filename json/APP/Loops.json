@@ -712,8 +712,7 @@
                         },
                         {
                           "type": "horizontal",
-                          "components": [{
-                            "type":"vertical",
+                          "components": {
                             "{{#each this[0].rowValues}}": {
                               "type": "{{type}}",
                               "text": "{{value}}",
@@ -721,7 +720,7 @@
                               "value": "{{value}}",
                               "class": "{{styles}}"
                             }
-                          }]
+                          }
                         }
                       ]
                     }
