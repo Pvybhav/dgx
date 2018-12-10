@@ -42,6 +42,14 @@
         },
         "col_value": {
           "width": "6%"
+        },
+        "table_row_odd": {
+          "background": "rgb(204,206,213)",
+          "color": "rgb(0,0,0)"
+        },
+        "table_row_even": {
+          "background": "rgb(231,232,235)",
+          "color": "rgb(0,0,0)"
         }
       },
       "actions": {
@@ -529,14 +537,20 @@
               "items": {
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
-                  "components": {
-                    "{{#each this[0].values}}": {
+                  "components": [
+                    {
                       "type": "label",
-                      "text": "{{value}}",
-                      "class": "center_align {{col_type}}"
+                      "text": "{{this[0].fieldName}}"
                     },
-                    "class": "no_padding"
-                  }
+                    {
+                      "{{#each this[0].values}}": {
+                        "type": "label",
+                        "text": "{{value}}",
+                        "class": "center_align {{col_type}}"
+                      },
+                      "class": "no_padding"
+                    }
+                  ]
                 }
               }
             }
