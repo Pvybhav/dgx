@@ -683,13 +683,24 @@
                 {
                   "type": "horizontal",
                   "class": "no_padding",
-                  "components": [{
-                    "{{#each Table_Headers}}": {
-                      "type": "label",
-                      "text": "{{value}}",
-                      "class": "{{styles}}"
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1"
+                        },
+                        {
+                          "{{#each Table_Headers}}": {
+                            "type": "label",
+                            "text": "{{value}}",
+                            "class": "{{styles}}"
+                          }
+                        }
+                      ]
                     }
-                  }]
+                  ]
                 }
               ]
             },
