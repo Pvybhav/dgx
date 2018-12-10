@@ -614,36 +614,18 @@
             },
             {
               "type": "vertical",
-              "items": [
-                {
-                  "{{#each Table_Body}}": {
-                    "type": "horizontal",
-                    "components": {
-                      "{{#each this[0].rowKeys}}": {
-                        "type": "label",
-                        "text": "{{value}}",
-                        "class": "center_align {{col_type}}"
-                      }
-                    }
-                  }
-                },
-                {
-                  "type": "vertical",
-                  "items": {
-                    "{{#each Table_Body}}": {
-                      "type": "horizontal",
-                      "components": {
-                        "{{#each this[0].rowValues}}": {
-                          "type": "switch",
-                          "name": "{{key}}",
-                          "value": "{{value}}",
-                          "class": "center_align {{col_type}} switch_styles"
-                        }
-                      }
+              "items": {
+                "{{#each Table_Body}}": {
+                  "type": "horizontal",
+                  "components": {
+                    "{{#each this[0].rowKeys}}": {
+                      "type": "label",
+                      "text": "{{value}}",
+                      "class": "center_align {{col_type}}"
                     }
                   }
                 }
-              ]
+              }
             },
             {
               "type": "vertical",
