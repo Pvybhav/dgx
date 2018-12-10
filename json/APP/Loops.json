@@ -530,11 +530,11 @@
                 "{{#each Table_Body}}": {
                   "type": "horizontal",
                   "components": {
-                    "{{#each this[0].values}}": {
+                    "{{#each this[0].values}}": [{
                       "type": "label",
                       "text": "{{value}}",
-                      "class": "table_header center_align {{col_type}}"
-                    },
+                      "class": "center_align {{col_type}}"
+                    }],
                     "class":"no_padding"
                   }
                 }
