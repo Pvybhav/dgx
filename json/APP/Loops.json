@@ -713,21 +713,26 @@
                       }
                     },
                     {
-                      "type": "horizontal",
+                      "type": "vertical",
                       "components": [
                         {
-                          "type": "label",
-                          "text": "1"
-                        },
-                        {
                           "type": "horizontal",
-                          "components": {
-                            "{{#each Table_Headers}}": {
-                              "type": "switch",
-                              "value": "true",
-                              "class": "{{styles}}"
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "1"
+                            },
+                            {
+                              "type": "horizontal",
+                              "components": {
+                                "{{#each Table_Headers}}": {
+                                  "type": "switch",
+                                  "value": "true",
+                                  "class": "center_align col_value_styles"
+                                }
+                              }
                             }
-                          }
+                          ]
                         }
                       ]
                     }
@@ -765,7 +770,7 @@
                           "name": "{{key}}",
                           "value": "{{value}}",
                           "contentDescription": "{{contentDescription}}",
-                          "class": "center_align col_value_styles"
+                          "class": "{{styles}} center_align"
                         }
                       }
                     }
