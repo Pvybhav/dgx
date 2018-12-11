@@ -166,20 +166,18 @@
                                                     },
                                                     {
                                                       "type": "horizontal",
-                                                      "components": [
-                                                        {
-                                                          "{{#if key=='legend'}}": {
-                                                            "{{#each this[0].rowValues}}": {
-                                                              "type": "{{type}}",
-                                                              "text": "{{value}}",
-                                                              "name": "{{key}}",
-                                                              "value": "{{value}}",
-                                                              "contentDescription": "{{contentDescription}}",
-                                                              "class": "{{styles}} center_align"
-                                                            }
+                                                      "components": {
+                                                        "{{#if key=='legend'}}": {
+                                                          "{{#each this[0].rowValues}}": {
+                                                            "type": "{{type}}",
+                                                            "text": "{{value}}",
+                                                            "name": "{{key}}",
+                                                            "value": "{{value}}",
+                                                            "contentDescription": "{{contentDescription}}",
+                                                            "class": "{{styles}} center_align"
                                                           }
                                                         }
-                                                      ],
+                                                      },
                                                       "style": {
                                                         "height": "10%"
                                                       }
