@@ -748,6 +748,43 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "1"
+                                },
+                                {
+                                  "type": "label",
+                                  "text": "2"
+                                },
+                                {
+                                  "type": "label",
+                                  "text": "3"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": {
+                                "{{#each Table_Body}}": {
+                                  "type": "switch",
+                                  "value": "true",
+                                  "class": "center_align col_value_styles"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
