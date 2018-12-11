@@ -714,13 +714,22 @@
                     },
                     {
                       "type": "horizontal",
-                      "components": {
-                        "{{#each Table_Headers}}": {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "{{styles}}"
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1"
+                        },
+                        {
+                          "type": "horizontal",
+                          "components": {
+                            "{{#each Table_Headers}}": {
+                              "type": "switch",
+                              "value": "true",
+                              "class": "{{styles}}"
+                            }
+                          }
                         }
-                      }
+                      ]
                     }
                   ]
                 }
