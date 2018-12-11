@@ -742,7 +742,10 @@
                             {
                               "type": "label",
                               "text": "1",
-                              "class": "no_padding center_align col_name_styles"
+                              "class": "no_padding center_align col_name_styles",
+                              "style":{
+                                "background":"rgb(255,0,0)"
+                              }
                             },
                             {
                               "type": "horizontal",
@@ -753,6 +756,7 @@
                                   "class": "no_padding center_align"
                                 },
                                 {
+                                  "type":"horizontal",
                                   "components": {
                                     "{{#each this[0].rowValues}}": {
                                       "type": "label",
