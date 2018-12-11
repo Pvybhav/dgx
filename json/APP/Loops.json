@@ -749,11 +749,11 @@
                                                           "text": "{{contentDescription || ' '}}",
                                                           "class": "center_align no_padding {{col_type}}_styles",
                                                           "style": {
-                                                            "color": "rgb(100,200,250)",
-                                                            "background": "rgb(0, 102, 204)"
+                                                            "color": "rgb(100,200,250)"
                                                           }
                                                         }
-                                                      }
+                                                      },
+                                                      "class": "{{this[0].styles}}"
                                                     },
                                                     {
                                                       "type": "horizontal",
@@ -777,7 +777,7 @@
                                       ]
                                     }
                                   ],
-                                  "class": "{{this.styles}}"
+                                  "class": "{{this[0].styles}}"
                                 }
                               ]
                             }
