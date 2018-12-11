@@ -145,10 +145,10 @@
                                                         "{{#each this[0].rowValues}}": {
                                                           "type": [
                                                             {
-                                                              "{{#if key=='legend'}}": "switch"
+                                                              "{{#if type=='legend'}}": "switch"
                                                             },
                                                             {
-                                                              "{{#else key!='legend'}}": "label"
+                                                              "{{#else type!='legend'}}": "label"
                                                             }
                                                           ],
                                                           "name": "{{key}}",
@@ -170,16 +170,16 @@
                                                           "name": "{{key}}",
                                                           "value": "{{value}}",
                                                           "contentDescription": "{{contentDescription}}",
-                                                          "class": "{{styles}} center_align",
-                                                          "style": {
-                                                            "height": "10%"
-                                                          }
+                                                          "class": "{{styles}} center_align"
                                                         }
                                                       }
                                                     }
                                                   ]
                                                 }
-                                              ]
+                                              ],
+                                              "style": {
+                                                "height": "10%"
+                                              }
                                             }
                                           ]
                                         }
