@@ -152,7 +152,14 @@
                                                             }
                                                           ],
                                                           "name": "{{key}}",
-                                                          "text": "{{contentDescription || ' '}}",
+                                                          "text": [
+                                                            {
+                                                              "{{#if key=='legend'}}": " = {{unchecked}}"
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": "{{contentDescription || ' '}}"
+                                                            }
+                                                          ],
                                                           "class": "center_align no_padding {{col_type}}_styles",
                                                           "style": {
                                                             "color": "rgb(14,53,112)"
@@ -160,8 +167,8 @@
                                                         }
                                                       },
                                                       "class": "{{this[0].styles}}",
-                                                      "style":{
-                                                        "height":"7%"
+                                                      "style": {
+                                                        "height": "7%"
                                                       }
                                                     },
                                                     {
