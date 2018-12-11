@@ -729,6 +729,48 @@
                           "class": "{{styles}} center_align"
                         }
                       }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxVibration_true",
+                              "text": "= Good"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxVibration_false",
+                              "text": "= Excess Vibration"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
                     }
                   ]
                 }
