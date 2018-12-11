@@ -721,114 +721,70 @@
                           "class": "{{styles}}"
                         }
                       }
-                    },
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding center_align",
+                  "components": [
                     {
                       "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "components": [
-                            {
-                              "type": "horizontal",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "1"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "2"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "3"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "4"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "5"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "6"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "7"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "8"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "9"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "10"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "horizontal",
-                              "components": {
-                                "{{#each Table_Body}}": {
-                                  "type": "switch",
-                                  "value": "true",
-                                  "class": "center_align col_value_styles"
-                                }
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "{{#each Table_Body}}": {
-                        "type": "vertical",
-                        "class": "no_padding",
-                        "components": {
-                          "type": "vertical",
-                          "components": [
-                            {
-                              "type": "horizontal",
-                              "components": {
-                                "{{#each this[0].rowValues}}": {
-                                  "type": "label",
-                                  "name": "{{key}}",
-                                  "text": "{{contentDescription || ' '}}",
-                                  "class": "center_align no_padding {{col_type}}_styles",
-                                  "style": {
-                                    "color": "rgb(100,200,250)"
-                                  }
-                                }
-                              }
-                            },
-                            {
-                              "type": "horizontal",
-                              "components": {
-                                "{{#each this[0].rowValues}}": {
-                                  "type": "{{type}}",
-                                  "text": "{{value}}",
-                                  "name": "{{key}}",
-                                  "value": "{{value}}",
-                                  "contentDescription": "{{contentDescription}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              }
-                            }
-                          ]
+                      "components": {
+                        "{{#each Table_Body}}": {
+                          "type": "label",
+                          "text": "1",
+                          "class": "no_padding center_align"
                         }
                       }
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "horizontal",
+              "{{#each Table_Body}}": {
+                "type": "vertical",
+                "class": "no_padding",
+                "components": {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each this[0].rowValues}}": {
+                          "type": "label",
+                          "name": "{{key}}",
+                          "text": "{{contentDescription || ' '}}",
+                          "class": "center_align no_padding {{col_type}}_styles",
+                          "style": {
+                            "color": "rgb(100,200,250)"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each this[0].rowValues}}": {
+                          "type": "{{type}}",
+                          "text": "{{value}}",
+                          "name": "{{key}}",
+                          "value": "{{value}}",
+                          "contentDescription": "{{contentDescription}}",
+                          "class": "{{styles}} center_align"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
             }
           ]
         }
