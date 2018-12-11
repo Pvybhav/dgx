@@ -746,17 +746,26 @@
                             },
                             {
                               "type": "horizontal",
-                              "components": {
-                                "{{#each this[0].rowValues}}": {
+                              "components": [
+                                {
                                   "type": "label",
-                                  "name": "{{key}}",
-                                  "text": "{{contentDescription || ' '}}",
-                                  "class": "center_align no_padding {{col_type}}_styles",
-                                  "style": {
-                                    "color": "rgb(100,200,250)"
+                                  "text": "2",
+                                  "class": "no_padding center_align"
+                                },
+                                {
+                                  "components": {
+                                    "{{#each this[0].rowValues}}": {
+                                      "type": "label",
+                                      "name": "{{key}}",
+                                      "text": "{{contentDescription || ' '}}",
+                                      "class": "center_align no_padding {{col_type}}_styles",
+                                      "style": {
+                                        "color": "rgb(100,200,250)"
+                                      }
+                                    }
                                   }
                                 }
-                              }
+                              ]
                             }
                           ]
                         }
@@ -776,7 +785,7 @@
                       "{{#each Table_Body}}": {
                         "components": {
                           "type": "vertical",
-                          "class":"no_padding center_align",
+                          "class": "no_padding center_align",
                           "components": [
                             {
                               "type": "horizontal",
