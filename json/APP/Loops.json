@@ -757,6 +757,42 @@
                                   }
                                 }
                               }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding center_align",
+                  "components": [
+                    {
+                      "{{#each Table_Body}}": {
+                        "type": "vertical",
+                        "class": "no_padding",
+                        "components": {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "components": {
+                                "{{#each this[0].rowValues}}": {
+                                  "type": "label",
+                                  "name": "{{key}}",
+                                  "text": "{{contentDescription || ' '}}",
+                                  "class": "center_align no_padding {{col_type}}_styles",
+                                  "style": {
+                                    "color": "rgb(100,200,250)"
+                                  }
+                                }
+                              }
                             },
                             {
                               "type": "horizontal",
@@ -778,45 +814,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "horizontal",
-              "{{#each Table_Body}}": {
-                "type": "vertical",
-                "class": "no_padding",
-                "components": {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "horizontal",
-                      "components": {
-                        "{{#each this[0].rowValues}}": {
-                          "type": "label",
-                          "name": "{{key}}",
-                          "text": "{{contentDescription || ' '}}",
-                          "class": "center_align no_padding {{col_type}}_styles",
-                          "style": {
-                            "color": "rgb(100,200,250)"
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": {
-                        "{{#each this[0].rowValues}}": {
-                          "type": "{{type}}",
-                          "text": "{{value}}",
-                          "name": "{{key}}",
-                          "value": "{{value}}",
-                          "contentDescription": "{{contentDescription}}",
-                          "class": "{{styles}} center_align"
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
             }
           ]
         }
