@@ -145,19 +145,25 @@
                                                         "{{#each this[0].rowValues}}": {
                                                           "type": [
                                                             {
-                                                              "{{#if key=='legend'}}": "switch"
+                                                              "{{#if key=='legend'}}": "horizontal"
                                                             },
                                                             {
                                                               "{{#else key!='legend'}}": "label"
                                                             }
                                                           ],
                                                           "name": "{{key}}",
-                                                          "text": [
+                                                          "text": "{{contentDescription || ' '}}",
+                                                          "components": [
                                                             {
-                                                              "{{#if key=='legend'}}": " = {{unchecked}}"
+                                                              "type": "switch",
+                                                              "name": "shift",
+                                                              "value": "true",
+                                                              "class": "switch_legend"
                                                             },
                                                             {
-                                                              "{{#else key!='legend'}}": "{{contentDescription || ' '}}"
+                                                              "type": "label",
+                                                              "name": "AgitatorShaft_true",
+                                                              "text": "= Turning"
                                                             }
                                                           ],
                                                           "class": "center_align no_padding {{col_type}}_styles",
