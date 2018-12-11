@@ -143,7 +143,14 @@
                                                       "type": "horizontal",
                                                       "components": {
                                                         "{{#each this[0].rowValues}}": {
-                                                          "type": "label",
+                                                          "type": [
+                                                            {
+                                                              "{{#if key=='legend'}}": "switch"
+                                                            },
+                                                            {
+                                                              "{{#elseif key=='label'}}": "label"
+                                                            }
+                                                          ],
                                                           "name": "{{key}}",
                                                           "text": "{{contentDescription || ' '}}",
                                                           "class": "center_align no_padding {{col_type}}_styles",
