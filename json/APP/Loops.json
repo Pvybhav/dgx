@@ -160,36 +160,24 @@
                                                         }
                                                       },
                                                       "class": "{{this[0].styles}}",
-                                                      "style": {
-                                                        "height": "7%"
+                                                      "style":{
+                                                        "height":"7%"
                                                       }
                                                     },
                                                     {
                                                       "type": "horizontal",
                                                       "components": {
-                                                        "{{#if key=='legend'}}": {
-                                                          "{{#each this[0].rowValues}}": {
-                                                            "type": "{{type}}",
-                                                            "text": "{{value}}",
-                                                            "name": "{{key}}",
-                                                            "value": "{{value}}",
-                                                            "contentDescription": "{{contentDescription}}",
-                                                            "class": "{{styles}} center_align"
-                                                          }
-                                                        },
-                                                        "{{#if key!='legend'}}": {
-                                                          "{{#each this[0].rowValues}}": {
-                                                            "type": "{{type}}",
-                                                            "text": "{{value}}",
-                                                            "name": "{{key}}",
-                                                            "value": "{{value}}",
-                                                            "contentDescription": "{{contentDescription}}",
-                                                            "class": "{{styles}} center_align"
-                                                          }
+                                                        "{{#each this[0].rowValues}}": {
+                                                          "type": "{{type}}",
+                                                          "text": "{{value}}",
+                                                          "name": "{{key}}",
+                                                          "value": "{{value}}",
+                                                          "contentDescription": "{{contentDescription}}",
+                                                          "class": "{{styles}} center_align"
                                                         }
                                                       },
                                                       "style": {
-                                                        "height": "10%"
+                                                        "height": "11%"
                                                       }
                                                     }
                                                   ]
