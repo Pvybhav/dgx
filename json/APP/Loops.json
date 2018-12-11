@@ -746,23 +746,17 @@
                             },
                             {
                               "type": "horizontal",
-                              "components": [
-                                {
+                              "components": {
+                                "{{#each this[0].rowValues}}": {
                                   "type": "label",
-                                  "text": "switch1",
-                                  "class": "no_padding center_align"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "switch2",
-                                  "class": "no_padding center_align"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "switch3",
-                                  "class": "no_padding center_align"
+                                  "name": "{{key}}",
+                                  "text": "{{contentDescription || ' '}}",
+                                  "class": "center_align no_padding {{col_type}}_styles",
+                                  "style": {
+                                    "color": "rgb(100,200,250)"
+                                  }
                                 }
-                              ]
+                              }
                             }
                           ]
                         }
