@@ -143,14 +143,12 @@
                                                       "type": "horizontal",
                                                       "components": {
                                                         "{{#each this[0].rowValues}}": {
-                                                          "type": "switch",
-                                                          "value": "false",
+                                                          "type": "label",
                                                           "name": "{{key}}",
                                                           "text": "{{contentDescription || ' '}}",
                                                           "class": "center_align no_padding {{col_type}}_styles",
                                                           "style": {
-                                                            "color": "rgb(14,53,112)",
-                                                            "align":"center"
+                                                            "color": "rgb(14,53,112)"
                                                           }
                                                         }
                                                       },
