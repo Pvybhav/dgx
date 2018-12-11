@@ -57,7 +57,10 @@
           "type": "$render"
         },
         "$pull": {
-          "type": "$reload"
+          "type": "$reload",
+          "success": {
+            "type": "$render"
+          }
         }
       },
       "data": {
