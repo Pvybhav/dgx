@@ -67,7 +67,21 @@
         "$pull": {
           "type": "$reload",
           "success": {
-            "type": "$render"
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page reloaded successfully...",
+                "type": "warning"
+              }
+            },
+            "error": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Unable to reload....Please try again....",
+                "type": "warning"
+              }
+            }
           }
         }
       },
