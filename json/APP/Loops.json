@@ -701,13 +701,18 @@
                 {
                   "type": "horizontal",
                   "class": "no_padding",
-                  "components": {
-                    "{{#each Table_Headers}}": {
-                      "type": "label",
-                      "text": "{{value}}",
-                      "class": "{{styles}}"
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
                     }
-                  }
+                  ]
                 }
               ]
             },
