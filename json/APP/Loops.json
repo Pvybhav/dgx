@@ -737,9 +737,14 @@
                       "type": "horizontal",
                       "components": {
                         "{{#each Table_Body}}": {
-                          "type": "label",
-                          "text": "1",
-                          "class": "no_padding center_align"
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "1",
+                              "class": "no_padding center_align"
+                            }
+                          ]
                         }
                       }
                     }
