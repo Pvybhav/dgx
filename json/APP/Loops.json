@@ -187,8 +187,28 @@
                                                       "type": "horizontal",
                                                       "components": {
                                                         "{{#each this[0].rowValues}}": {
-                                                          "type": "{{type}}",
+                                                          "type": [
+                                                            {
+                                                              "{{#if key=='legend'}}": "horizontal"
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": "{{type}}"
+                                                            }
+                                                          ],
                                                           "text": "{{value}}",
+                                                          "components": [
+                                                            {
+                                                              "type": "switch",
+                                                              "name": "{{key}}",
+                                                              "value": "false",
+                                                              "class": "switch_legend_styles"
+                                                            },
+                                                            {
+                                                              "type": "label",
+                                                              "name": "{{key}}",
+                                                              "text": "= {{unchecked}}"
+                                                            }
+                                                          ],
                                                           "name": "{{key}}",
                                                           "value": "{{value}}",
                                                           "contentDescription": "{{contentDescription}}",
