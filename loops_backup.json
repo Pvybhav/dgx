@@ -712,10 +712,10 @@
               ]
             },
             {
-              "{{#each Table_Body}}": {
-                "type": "vertical",
-                "class": "no_padding",
-                "components": {
+              "type": "vertical",
+              "class": "no_padding",
+              "items": {
+                "{{#each Table_Body}}": {
                   "type": "vertical",
                   "components": [
                     {
@@ -748,6 +748,87 @@
                   ]
                 }
               }
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Gearbox Vibration",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxVibration_true",
+                              "text": "= Good"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxVibration_false",
+                              "text": "= Excess Vibration"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1",
+                          "class": "center_align"
+                        },
+                        {
+                          "{{#each Table_Row}}": {
+                            "type": "switch",
+                            "name": "shift",
+                            "value": "true",
+                            "class": "switch_styles center_align",
+                            "contentDescription": "1"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_even center_align"
+                }
+              ],
+              "class": "center_align"
             }
           ]
         }
