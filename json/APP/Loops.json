@@ -145,10 +145,10 @@
                                                         "{{#each this[0].rowValues}}": {
                                                           "type": [
                                                             {
-                                                              "{{#if type=='legend'}}": "switch"
+                                                              "{{#if key=='legend'}}": "switch"
                                                             },
                                                             {
-                                                              "{{#else type!='legend'}}": "label"
+                                                              "{{#else key!='legend'}}": "label"
                                                             }
                                                           ],
                                                           "name": "{{key}}",
@@ -178,7 +178,7 @@
                                                 }
                                               ],
                                               "style": {
-                                                "height": "10%"
+                                                "height": "20%"
                                               }
                                             }
                                           ]
