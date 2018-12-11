@@ -54,9 +54,12 @@
       },
       "actions": {
         "$load": {
-          "type": "network.request",
+          "type": "$network.request",
           "options": {
             "url": "https://pvybhav.github.io/json/APP/data/Loops.json"
+          },
+          "success": {
+            "type": "$render"
           }
         },
         "$show": {
