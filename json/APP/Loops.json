@@ -43,11 +43,11 @@
         "col_value_styles": {
           "width": "6%"
         },
-        "table_row_odd": {
+        "table_row_odd_styles": {
           "background": "rgb(204,206,213)",
           "color": "rgb(0,0,0)"
         },
-        "table_row_even": {
+        "table_row_even_styles": {
           "background": "rgb(231,232,235)",
           "color": "rgb(0,0,0)"
         }
@@ -143,6 +143,7 @@
           [
             {
               "fieldName": "Agitator Shaft",
+              "styles": "table_row_odd_styles",
               "rowValues": [
                 {
                   "type": "label",
@@ -248,6 +249,7 @@
           [
             {
               "fieldName": "Filter Bypass Indicator",
+              "styles": "table_row_even_styles",
               "rowValues": [
                 {
                   "type": "label",
@@ -353,6 +355,7 @@
           [
             {
               "fieldName": "Gearbox Oil Sight Glass",
+              "styles": "table_row_odd_styles",
               "rowValues": [
                 {
                   "type": "label",
@@ -458,6 +461,7 @@
           [
             {
               "fieldName": "Gearbox Vibration",
+              "styles": "table_row_even_styles",
               "rowValues": [
                 {
                   "type": "label",
@@ -563,6 +567,7 @@
           [
             {
               "fieldName": "Cyanide Lines",
+              "styles": "table_row_odd_styles",
               "rowValues": [
                 {
                   "type": "label",
@@ -772,9 +777,7 @@
                                       ]
                                     }
                                   ],
-                                  "style": {
-                                    "background": "rgb(255,153,51)"
-                                  }
+                                  "class": "{{this.styles}}"
                                 }
                               ]
                             }
