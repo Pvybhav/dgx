@@ -770,17 +770,31 @@
                                             },
                                             {
                                               "type": "horizontal",
-                                              "components": {
-                                                "{{#each this[0].rowValues}}": {
-                                                  "type": "label",
-                                                  "name": "{{key}}",
-                                                  "text": "{{contentDescription || ' '}}",
-                                                  "class": "center_align no_padding {{col_type}}_styles",
-                                                  "style": {
-                                                    "color": "rgb(100,200,250)"
-                                                  }
+                                              "components": [
+                                                {
+                                                  "type": "vertical",
+                                                  "components": [
+                                                    {
+                                                      "type": "label",
+                                                      "text": "123"
+                                                    },
+                                                    {
+                                                      "type": "horizontal",
+                                                      "components": {
+                                                        "{{#each this[0].rowValues}}": {
+                                                          "type": "label",
+                                                          "name": "{{key}}",
+                                                          "text": "{{contentDescription || ' '}}",
+                                                          "class": "center_align no_padding {{col_type}}_styles",
+                                                          "style": {
+                                                            "color": "rgb(100,200,250)"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
                                                 }
-                                              }
+                                              ]
                                             }
                                           ]
                                         }
