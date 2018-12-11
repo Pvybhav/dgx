@@ -148,7 +148,7 @@
                                                               "{{#if key=='legend'}}": "switch"
                                                             },
                                                             {
-                                                              "{{#if key=='label'}}": "label"
+                                                              "{{#else key!='legend'}}": "label"
                                                             }
                                                           ],
                                                           "name": "{{key}}",
