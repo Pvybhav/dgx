@@ -71,13 +71,15 @@
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0, 102, 255)",
           "width": "30%",
-          "height": "10%"
+          "height": "10%",
+          "corner_radius": "1%"
         },
         "home_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(51, 102, 153)",
           "width": "30%",
-          "height": "10%"
+          "height": "10%",
+          "corner_radius": "1%"
         }
       },
       "actions": {
@@ -306,15 +308,10 @@
               "type": "horizontal",
               "items": [
                 {
-                  "type": "button",
-                  "name": "next",
-                  "text": "Next",
-                  "class": "next_button_styles",
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "https://pvybhav.github.io/json/APP/E-Forms/LeachAreaShiftReport/Line-2.json"
-                    }
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "width": "35%"
                   }
                 },
                 {
@@ -326,6 +323,25 @@
                     "type": "$href",
                     "options": {
                       "url": "https://pvybhav.github.io/json/APP/Home.json"
+                    }
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "width": "5%"
+                  }
+                },
+                {
+                  "type": "button",
+                  "name": "next",
+                  "text": "Next",
+                  "class": "next_button_styles",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://pvybhav.github.io/json/APP/E-Forms/LeachAreaShiftReport/Line-2.json"
                     }
                   }
                 }

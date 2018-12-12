@@ -76,6 +76,20 @@
           "color": "rgb(255,255,255)",
           "background": "rgb(0,147,215)",
           "corner_radius": "1%"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "30%",
+          "height": "10%",
+          "corner_radius": "1%"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "30%",
+          "height": "10%",
+          "corner_radius": "1%"
         }
       },
       "actions": {
@@ -359,6 +373,35 @@
                     }
                   ],
                   "class": "no_padding center_align"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "button",
+                  "name": "previous",
+                  "text": "Previous",
+                  "class": "previous_button_styles",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Line-1.json"
+                    }
+                  }
+                },
+                {
+                  "type": "button",
+                  "name": "home",
+                  "text": "Home",
+                  "class": "home_button_styles",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://pvybhav.github.io/json/APP/Home.json"
+                    }
+                  }
                 }
               ]
             }
