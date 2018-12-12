@@ -140,6 +140,9 @@
                 {
                   "type": "vertical",
                   "class": "no_padding",
+                  "style":{
+                    "height":"25%"
+                  },
                   "components": [
                     {
                       "type": "horizontal",
@@ -147,19 +150,13 @@
                         "{{#each $jason.Table_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
-                          "class": "{{styles}}",
-                          "style": {
-                            "height": "13%"
-                          }
+                          "class": "{{styles}}"
                         }
                       }
                     }
                   ]
                 }
-              ],
-              "style": {
-                "height": "20%"
-              }
+              ]
             },
             {
               "type": "horizontal",
