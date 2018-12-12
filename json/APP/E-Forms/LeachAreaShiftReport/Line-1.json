@@ -46,12 +46,12 @@
           "background": "rgb(0, 102, 204)"
         },
         "switch_styles": {
-          "color": "#00ff00",
-          "color:disabled": "#ff0000"
+          "color": "rgb(0, 255, 0)",
+          "color:disabled": "rgb(255, 0, 0)"
         },
         "switch_legend_styles": {
-          "color": "#00ff00",
-          "color:disabled": "#ff0000",
+          "color": "rgb(0, 255, 0)",
+          "color:disabled": "rgb(255, 0, 0)",
           "height": "4%",
           "width": "7%"
         },
@@ -62,10 +62,22 @@
           "width": "6%"
         },
         "table_row_odd_styles": {
-          "background": "rgb(204,206,213)"
+          "background": "rgb(204, 206, 213)"
         },
         "table_row_even_styles": {
-          "background": "rgb(231,232,235)"
+          "background": "rgb(231, 232, 235)"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "30%",
+          "height": "10%"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "30%",
+          "height": "10%"
         }
       },
       "actions": {
@@ -250,7 +262,7 @@
                                                               "name": "{{key}}",
                                                               "value": "false",
                                                               "class": "switch_legend_styles",
-                                                              "text":"1"
+                                                              "text": "1"
                                                             },
                                                             {
                                                               "type": "label",
@@ -260,7 +272,7 @@
                                                           ],
                                                           "name": "{{key}}",
                                                           "value": "{{value}}",
-                                                          "switch_text":"{{contentDescription}}",
+                                                          "switch_text": "{{contentDescription}}",
                                                           "contentDescription": "{{contentDescription}}",
                                                           "class": "{{styles}} center_align"
                                                         }
@@ -287,6 +299,23 @@
                       ]
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "components": [
+                {
+                  "type": "button",
+                  "name": "next",
+                  "text": "Next",
+                  "class": "next_button_styles"
+                },
+                {
+                  "type": "button",
+                  "name": "home",
+                  "text": "Home",
+                  "class": "home_button_styles"
                 }
               ]
             }
