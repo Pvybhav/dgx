@@ -1,0 +1,364 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Line-1",
+      "description": "Line-2 by using Loops",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "black": {
+          "color": "rgb(0,0,0)"
+        },
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,162,224)"
+        },
+        "table_header_styles": {
+          "size": 18,
+          "font": "HelveticaHeader",
+          "background": "rgb(14,53,112)",
+          "color": "rgb(255,255,255)"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": 50,
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "switch_styles": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000"
+        },
+        "switch_legend_styles": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000",
+          "height": "4%",
+          "width": "7%"
+        },
+        "col_name_styles": {
+          "width": "20%"
+        },
+        "col_value_styles": {
+          "width": "6%"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "save_button_styles": {
+          "width": "20%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(83,176,46)",
+          "corner_radius": "1%"
+        },
+        "update_button_styles": {
+          "width": "20%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(243,216,7)",
+          "corner_radius": "1%"
+        },
+        "submit_button_styles": {
+          "width": "20%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://pvybhav.github.io/json/APP/data/Data_LeachAreaShiftReport-Line-2.json"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload",
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{$jason.Page_Heading}}"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaHeader",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each $jason.Table_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding center_align",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "components": {
+                            "{{#each $jason.Table_Body}}": {
+                              "type": "horizontal",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "horizontal",
+                                          "components": [
+                                            {
+                                              "type": "horizontal",
+                                              "components": [
+                                                {
+                                                  "type": "vertical",
+                                                  "components": [
+                                                    {
+                                                      "type": "horizontal",
+                                                      "components": {
+                                                        "{{#each this[0].rowValues}}": {
+                                                          "type": [
+                                                            {
+                                                              "{{#if key=='legend'}}": "horizontal"
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": "label"
+                                                            }
+                                                          ],
+                                                          "name": "{{key}}",
+                                                          "text": "{{contentDescription || ' '}}",
+                                                          "components": [
+                                                            {
+                                                              "type": "switch",
+                                                              "name": "{{key}}",
+                                                              "value": "true",
+                                                              "class": "switch_legend_styles"
+                                                            },
+                                                            {
+                                                              "type": "label",
+                                                              "name": "{{key}}",
+                                                              "text": "= {{checked}}"
+                                                            }
+                                                          ],
+                                                          "class": "center_align no_padding {{col_type}}_styles",
+                                                          "style": {
+                                                            "color": "rgb(14,53,112)"
+                                                          }
+                                                        }
+                                                      },
+                                                      "class": "{{this[0].styles}}",
+                                                      "style": {
+                                                        "height": "10%"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "horizontal",
+                                                      "components": {
+                                                        "{{#each this[0].rowValues}}": {
+                                                          "type": [
+                                                            {
+                                                              "{{#if key=='legend'}}": "horizontal"
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": "{{type}}"
+                                                            }
+                                                          ],
+                                                          "text": "{{value}}",
+                                                          "components": [
+                                                            {
+                                                              "type": "switch",
+                                                              "name": "{{key}}",
+                                                              "value": "false",
+                                                              "class": "switch_legend_styles"
+                                                            },
+                                                            {
+                                                              "type": "label",
+                                                              "name": "{{key}}",
+                                                              "text": "= {{unchecked}}"
+                                                            }
+                                                          ],
+                                                          "name": "{{key}}",
+                                                          "value": "{{value}}",
+                                                          "contentDescription": "{{contentDescription}}",
+                                                          "class": "{{styles}} center_align"
+                                                        }
+                                                      },
+                                                      "style": {
+                                                        "height": "11%"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "class": "{{this[0].styles}} no_padding"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Description",
+                      "class": "table_header_styles center_align",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "description",
+                      "placeholder": "Enter description",
+                      "class": "center_align",
+                      "contentDescription": "description",
+                      "style": {
+                        "width": "100%",
+                        "height": "15%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "30%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "save",
+                      "class": "center_align save_button_styles",
+                      "contentDescription": "save"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "update",
+                      "text": "update",
+                      "class": "center_align update_button_styles",
+                      "contentDescription": "update"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "submit",
+                      "text": "submit",
+                      "class": "center_align submit_button_styles",
+                      "contentDescription": "submit"
+                    }
+                  ],
+                  "class": "no_padding center_align"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
