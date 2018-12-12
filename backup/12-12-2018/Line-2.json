@@ -1,0 +1,1449 @@
+{
+  "$jason": {
+    "head": {
+      "title": "APP",
+      "description": "A jasonette app",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "switch_styles": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000",
+          "width": "6%"
+        },
+        "switch_legend": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000",
+          "height": "4%",
+          "width": "7%"
+        },
+        "table_header": {
+          "size": 18,
+          "font": "HelveticaHeader",
+          "border": "rgb(255,255,255)",
+          "background": "rgb(14,53,112)",
+          "color": "rgb(255,255,255)",
+          "width": "6%"
+        },
+        "table_row_odd": {
+          "background": "rgb(204,206,213)",
+          "color": "rgb(0,0,0)"
+        },
+        "table_row_even": {
+          "background": "rgb(231,232,235)",
+          "color": "rgb(0,0,0)"
+        },
+        "header_2": {
+          "width": "20%",
+          "border": "rgb(0,200,100)",
+          "background": "rgb(14,53,112)",
+          "color": "rgb(255,255,255)"
+        },
+        "save_button": {
+          "width": "20%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(83,176,46)",
+          "corner_radius": "1%"
+        },
+        "update_button": {
+          "width": "20%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(243,216,7)",
+          "corner_radius": "1%"
+        },
+        "submit_button": {
+          "width": "20%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        }
+      },
+      "actions": {
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "border": "0"
+          },
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "LEACH AREA SHIFT REPORT"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaHeader",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line 2",
+                      "class": "table_header no_padding center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "table_header center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "101",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "102",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "103",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "104",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "105",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "111",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "112",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "113",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "114",
+                      "class": "table_header center_align"
+                    },
+                    {
+                      "type": "label",
+                      "text": "115",
+                      "class": "table_header center_align"
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Agitator Shaft",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "AgitatorShaft_true",
+                              "text": "= Turning"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "AgitatorShaft_false",
+                              "text": "= Stopped"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "1"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "2",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "2"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "3",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "3"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "4",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "4"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "5",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "5"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "6",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "6"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "7",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "7"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "8",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "8"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "9",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "9"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "10",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "10"
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_odd center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Filter Bypass Indicator",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "FilterBypassIndicator_true",
+                              "text": "= Good"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "FilterBypassIndicator_false",
+                              "text": "= Popped"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "11",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "11"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "12",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "12"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "13",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "13"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "14",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "14"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "15",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "15"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "16",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "16"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "17",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "17"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "18",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "18"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "19",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "19"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "20",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "20"
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_even center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Gearbox Oil Sight Glass",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxOilSightGlass_true",
+                              "text": "= Between Lines"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxOilSightGlass_false",
+                              "text": "= High / Low"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "21",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "21"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "22",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "22"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "23",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "23"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "24",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "24"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "25",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "25"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "26",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "26"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "27",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "27"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "28",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "28"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "29",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "29"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "30",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "30"
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_odd center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Gearbox Vibration",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxVibration_true",
+                              "text": "= Good"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxVibration_false",
+                              "text": "= Excess Vibration"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "31",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "31"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "32",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "32"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "33",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "33"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "34",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "34"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "35",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "35"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "36",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "36"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "37",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "37"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "38",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "38"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "39",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "39"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "40",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "40"
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_even center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Cyanide Lines",
+                      "class": "center_align",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "CyanideLines_true",
+                              "text": "= Turning"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend"
+                            },
+                            {
+                              "type": "label",
+                              "name": "CyanideLines_false",
+                              "text": "= Stopped"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "41",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "41"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "42",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "42"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "43",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "43"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "44",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "44"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "45",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "45"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "46",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "46"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "47",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "47"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "48",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "48"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "49",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "49"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "50",
+                          "class": "center_align"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "shift",
+                          "value": "true",
+                          "class": "switch_styles",
+                          "contentDescription": "50"
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_odd center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Comments Operator",
+                      "class": "table_header center_align",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "Description",
+                      "class": "table_header center_align",
+                      "style": {
+                        "width": "60%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "comments_operator",
+                      "placeholder": "Comments Operator",
+                      "value": "+add",
+                      "class": "center_align",
+                      "style": {
+                        "width": "40%",
+                        "height": "10%",
+                        "size": "15"
+                      }
+                    },
+                    {
+                      "type": "textarea",
+                      "name": "description",
+                      "placeholder": "Enter description",
+                      "class": "center_align",
+                      "style": {
+                        "width": "60%",
+                        "height": "10%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "30%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "save",
+                      "class": "center_align save_button"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "update",
+                      "text": "update",
+                      "class": "center_align update_button"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "submit",
+                      "text": "submit",
+                      "class": "center_align submit_button"
+                    }
+                  ],
+                  "class": "no_padding center_align"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
