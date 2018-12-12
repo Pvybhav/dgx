@@ -2,7 +2,7 @@
   "$jason": {
     "head": {
       "title": "Line-1",
-      "description": "Line-1 by using Loops",
+      "description": "Line-2 by using Loops",
       "offline": "true",
       "styles": {
         "no_padding": {
@@ -20,17 +20,6 @@
           "align": "center",
           "color": "rgb(255,255,255)",
           "background": "rgb(0,162,224)"
-        },
-        "header_2_styles": {
-          "size": 13,
-          "width": "20%",
-          "color": "rgb(0,162,224)",
-          "border": "rgb(0,0,0)"
-        },
-        "header_2_label": {
-          "size": 13,
-          "width": "20%",
-          "color": "rgb(0,162,224)"
         },
         "table_header_styles": {
           "size": 18,
@@ -66,13 +55,34 @@
         },
         "table_row_even_styles": {
           "background": "rgb(231,232,235)"
+        },
+        "save_button_styles": {
+          "width": "20%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(83,176,46)",
+          "corner_radius": "1%"
+        },
+        "update_button_styles": {
+          "width": "20%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(243,216,7)",
+          "corner_radius": "1%"
+        },
+        "submit_button_styles": {
+          "width": "20%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
         }
       },
       "actions": {
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/Data_SafetyScreenShiftReport-Line-1.json"
+            "url": "https://pvybhav.github.io/json/APP/data/SafetyScreenShiftReport/Line-2.json"
           },
           "success": {
             "type": "$render"
@@ -104,37 +114,6 @@
             }
           },
           "sections": [
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "label",
-                  "text": "11/12/2018",
-                  "class": "header_2_styles center_align black"
-                },
-                {
-                  "type": "label",
-                  "text": "Day Shift",
-                  "class": "header_2_styles center_align black"
-                },
-                {
-                  "type": "label",
-                  "text": "* Operator",
-                  "class": "header_2_styles center_align black"
-                },
-                {
-                  "type": "label",
-                  "text": "Signed",
-                  "class": "header_2_label center_align"
-                },
-                {
-                  "type": "label",
-                  "text": "Jean Pronovost",
-                  "class": "header_2_styles center_align black"
-                }
-              ],
-              "class": "no_padding"
-            },
             {
               "type": "horizontal",
               "items": [
@@ -279,6 +258,101 @@
                       ]
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Description",
+                      "class": "table_header_styles center_align",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "description",
+                      "placeholder": "Enter description",
+                      "class": "center_align",
+                      "contentDescription": "description",
+                      "style": {
+                        "width": "100%",
+                        "height": "15%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "30%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "save",
+                      "class": "center_align save_button_styles",
+                      "contentDescription": "save"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "update",
+                      "text": "update",
+                      "class": "center_align update_button_styles",
+                      "contentDescription": "update"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "submit",
+                      "text": "submit",
+                      "class": "center_align submit_button_styles",
+                      "contentDescription": "submit"
+                    }
+                  ],
+                  "class": "no_padding center_align"
                 }
               ]
             }
