@@ -1,0 +1,100 @@
+{
+  "$jason": {
+    "head": {
+      "title": "APP",
+      "description": "A jasonette app",
+      "offline": "true",
+      "styles": {
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,162,224)"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "eform_button_styles": {
+          "width": "70%",
+          "height": "10%",
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "eform_voicetag_styles": {
+          "width": "70%",
+          "height": "10%",
+          "color": "rgb(0, 102, 204)",
+          "background": "rgb(102, 255, 204)"
+        }
+      },
+      "actions": {
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "type": "vertical",
+              "class": "center_align",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Form-1",
+                      "class": "center_align eform_voicetag_styles",
+                      "contentDescription": "Form-1"
+                    },
+                    {
+                      "type": "button",
+                      "text": "Leach Area Shift Report",
+                      "class": "center_align eform_button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/LeachAreaShiftReport-Line-1.json"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Form-2",
+                      "class": "center_align eform_voicetag_styles",
+                      "contentDescription": "Form-2"
+                    },
+                    {
+                      "type": "button",
+                      "text": "Safety Screen Shift Report",
+                      "class": "center_align eform_button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/SafetyScreenShiftReport-Line-1.json"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
