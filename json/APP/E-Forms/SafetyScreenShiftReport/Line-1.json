@@ -79,7 +79,13 @@
           }
         },
         "$show": {
-          "type": "$reload"
+          "type": "$network.request",
+          "options": {
+            "url": "https://pvybhav.github.io/json/APP/data/SafetyScreenShiftReport/Line-1.json"
+          },
+          "success": {
+            "type": "$render"
+          }
         },
         "$pull": {
           "type": "$reload",

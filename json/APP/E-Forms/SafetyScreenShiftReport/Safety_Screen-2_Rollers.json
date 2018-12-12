@@ -89,7 +89,13 @@
           }
         },
         "$show": {
-          "type": "$reload"
+          "type": "$network.request",
+          "options": {
+            "url": "https://pvybhav.github.io/json/APP/data/SafetyScreenShiftReport/Safety_Screen-2_Rollers.json"
+          },
+          "success": {
+            "type": "$render"
+          }
         },
         "$pull": {
           "type": "$reload",
