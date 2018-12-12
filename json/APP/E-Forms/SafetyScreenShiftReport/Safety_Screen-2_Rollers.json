@@ -25,7 +25,8 @@
           "size": 18,
           "font": "HelveticaHeader",
           "background": "rgb(14,53,112)",
-          "color": "rgb(255,255,255)"
+          "color": "rgb(255,255,255)",
+          "height": "25%"
         },
         "button_styles": {
           "width": "40%",
@@ -147,10 +148,7 @@
                         "{{#each $jason.Table_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
-                          "class": "{{styles}}",
-                          "style": {
-                            "height": "25%"
-                          }
+                          "class": "{{styles}}"
                         }
                       }
                     }
