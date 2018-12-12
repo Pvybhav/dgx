@@ -8,9 +8,6 @@
         "no_padding": {
           "padding": "0"
         },
-        "no_border": {
-          "border": "none"
-        },
         "center_align": {
           "align": "center"
         },
@@ -272,7 +269,7 @@
                                       ]
                                     }
                                   ],
-                                  "class": "{{this[0].styles}} no_padding no_border"
+                                  "class": "{{this[0].styles}} no_padding"
                                 }
                               ]
                             }
@@ -294,7 +291,7 @@
                     {
                       "type": "label",
                       "text": "Description",
-                      "class": "table_header_styles",
+                      "class": "table_header_styles center_align",
                       "style": {
                         "width": "100%"
                       }
@@ -313,6 +310,7 @@
                       "type": "textarea",
                       "name": "description",
                       "placeholder": "Enter description",
+                      "class": "center_align",
                       "contentDescription": "description",
                       "style": {
                         "width": "100%",
@@ -374,7 +372,7 @@
                       "contentDescription": "submit"
                     }
                   ],
-                  "class": "no_padding center_align no_border"
+                  "class": "no_padding center_align"
                 }
               ]
             },
@@ -421,8 +419,7 @@
                 }
               ]
             }
-          ],
-          "class": "no_border"
+          ]
         }
       }
     }
