@@ -143,14 +143,14 @@
                   "components": [
                     {
                       "type": "horizontal",
-                      "style": {
-                        "height": "25%"
-                      },
                       "components": {
                         "{{#each $jason.Table_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
-                          "class": "{{styles}}"
+                          "class": "{{styles}}",
+                          "style": {
+                            "height": "25%"
+                          }
                         }
                       }
                     }
