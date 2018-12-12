@@ -304,18 +304,30 @@
             },
             {
               "type": "horizontal",
-              "components": [
+              "items": [
                 {
                   "type": "button",
                   "name": "next",
                   "text": "Next",
-                  "class": "next_button_styles"
+                  "class": "next_button_styles",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://pvybhav.github.io/json/APP/data/LeachAreaShiftReport/Line-2.json"
+                    }
+                  }
                 },
                 {
                   "type": "button",
                   "name": "home",
                   "text": "Home",
-                  "class": "home_button_styles"
+                  "class": "home_button_styles",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://pvybhav.github.io/json/APP/Home.json"
+                    }
+                  }
                 }
               ]
             }
