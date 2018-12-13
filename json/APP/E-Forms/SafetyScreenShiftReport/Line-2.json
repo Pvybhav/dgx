@@ -334,12 +334,16 @@
               "items": [
                 {
                   "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding": "2%"
+                  },
                   "components": [
                     {
                       "type": "label",
                       "text": "",
                       "style": {
-                        "width": "30%"
+                        "width": "25%"
                       }
                     },
                     {
@@ -376,64 +380,82 @@
                       "text": "submit",
                       "class": "center_align submit_button_styles",
                       "contentDescription": "submit"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
                     }
-                  ],
-                  "class": "no_padding center_align"
+                  ]
                 }
               ]
             },
             {
               "type": "horizontal",
+              "style": {
+                "padding": "2%"
+              },
               "items": [
                 {
-                  "type": "button",
-                  "name": "previous",
-                  "text": "Previous",
-                  "class": "previous_button_styles",
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Line-1.json"
-                    }
-                  }
-                },
-                {
-                  "type": "label",
-                  "text": "",
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
                   "style": {
-                    "width": "5%"
-                  }
-                },
-                {
-                  "type": "button",
-                  "name": "home",
-                  "text": "Home",
-                  "class": "home_button_styles",
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "https://pvybhav.github.io/json/APP/Home.json"
+                    "padding": "2%"
+                  },
+                  "components": [
+                    {
+                      "type": "button",
+                      "name": "previous",
+                      "text": "Previous",
+                      "class": "previous_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Line-1.json"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/Home.json"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "next",
+                      "text": "Next",
+                      "class": "next_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Safety_Screen-1_Rollers.json"
+                        }
+                      }
                     }
-                  }
-                },
-                {
-                  "type": "label",
-                  "text": "",
-                  "style": {
-                    "width": "5%"
-                  }
-                },
-                {
-                  "type": "button",
-                  "name": "next",
-                  "text": "Next",
-                  "class": "next_button_styles",
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Safety_Screen-1_Rollers.json"
-                    }
-                  }
+                  ]
                 }
               ]
             }
