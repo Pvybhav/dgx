@@ -233,35 +233,14 @@
                                                                     "text": "= {{unchecked}}"
                                                                   }
                                                                 ]
-                                                              },
-                                                              "{{#elseif type=='switch'}}": {
-                                                                "type": "vertical",
-                                                                "components": [
-                                                                  {
-                                                                    "type": "horizontal",
-                                                                    "components": [
-                                                                      {
-                                                                        "type": "label",
-                                                                        "text": "{{contentDescription || ''}}",
-                                                                        "name": "{{key}}"
-                                                                      }
-                                                                    ]
-                                                                  },
-                                                                  {
-                                                                    "type": "horizontal",
-                                                                    "components": [
-                                                                      {
-                                                                        "type": "switch",
-                                                                        "value": "{{value}}",
-                                                                        "contentDescription": "{{contentDescription}}",
-                                                                        "class": "{{styles}} center_align"
-                                                                      }
-                                                                    ]
-                                                                  }
-                                                                ]
                                                               }
                                                             }
-                                                          ]
+                                                          ],
+                                                          "text": "{{contentDescription || value}}",
+                                                          "name": "{{key}}",
+                                                          "value": "{{value}}",
+                                                          "contentDescription": "{{contentDescription}}",
+                                                          "class": "{{styles}} center_align"
                                                         }
                                                       },
                                                       "style": {
