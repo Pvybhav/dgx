@@ -286,6 +286,27 @@
               "items": [
                 {
                   "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each $jason.Table2_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
                   "class": "no_padding center_align",
                   "components": [
                     {
