@@ -215,7 +215,15 @@
                                                           ],
                                                           "class": "center_align no_padding {{col_type}}_styles",
                                                           "style": {
-                                                            "color": "rgb(14,53,112)"
+                                                            "color": "rgb(14,53,112)",
+                                                            "background": [
+                                                              {
+                                                                "{{#if $index / 2 == 0}}": "table_row_even_styles"
+                                                              },
+                                                              {
+                                                                "{{#if $index / 2 == 1}}": "table_row_odd_styles"
+                                                              }
+                                                            ]
                                                           }
                                                         }
                                                       },
@@ -398,7 +406,15 @@
                                                           "value": "{{value}}",
                                                           "class": "{{styles}} center_align",
                                                           "style": {
-                                                            "width": "{{width}}"
+                                                            "width": "{{width}}",
+                                                            "background": [
+                                                              {
+                                                                "{{#if $index / 2 == 0}}": "table_row_even_styles"
+                                                              },
+                                                              {
+                                                                "{{#if $index / 2 == 1}}": "table_row_odd_styles"
+                                                              }
+                                                            ]
                                                           }
                                                         }
                                                       },
