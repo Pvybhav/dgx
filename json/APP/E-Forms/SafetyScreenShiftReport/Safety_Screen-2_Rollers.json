@@ -12,20 +12,22 @@
           "align": "center"
         },
         "black": {
-          "color": "rgb(0,0,0)"
+          "color": "rgb(0, 0, 0)"
         },
         "title_styles": {
           "font": "HelveticaHeader",
           "size": 20,
           "align": "center",
-          "color": "rgb(255,255,255)",
-          "background": "rgb(0,162,224)"
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 162, 224)"
         },
         "table_header_styles": {
           "size": 15,
           "font": "HelveticaHeader",
-          "background": "rgb(14,53,112)",
-          "color": "rgb(255,255,255)"
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "8%"
         },
         "button_styles": {
           "width": "40%",
@@ -35,12 +37,12 @@
           "background": "rgb(0, 102, 204)"
         },
         "switch_styles": {
-          "color": "#00ff00",
-          "color:disabled": "#ff0000"
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)"
         },
         "switch_legend_styles": {
-          "color": "#00ff00",
-          "color:disabled": "#ff0000",
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
           "height": "4%",
           "width": "7%"
         },
@@ -147,10 +149,7 @@
                         "{{#each $jason.Table1_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
-                          "class": "{{styles}}",
-                          "style": {
-                            "height": "15%"
-                          }
+                          "class": "{{styles}}"
                         }
                       }
                     }
@@ -290,8 +289,7 @@
                           "text": "{{value}}",
                           "class": "{{styles}}",
                           "style": {
-                            "width": "{{width}}",
-                            "height": "17%"
+                            "width": "{{width}}"
                           }
                         }
                       }
