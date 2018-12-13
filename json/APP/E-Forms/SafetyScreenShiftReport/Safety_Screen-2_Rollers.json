@@ -345,44 +345,6 @@
                                                               "{{#if key=='legend'}}": "horizontal"
                                                             },
                                                             {
-                                                              "{{#else key!='legend'}}": "label"
-                                                            }
-                                                          ],
-                                                          "name": "{{key}}",
-                                                          "components": [
-                                                            {
-                                                              "type": "switch",
-                                                              "name": "{{key}}",
-                                                              "value": "true",
-                                                              "class": "switch_legend_styles"
-                                                            },
-                                                            {
-                                                              "type": "label",
-                                                              "name": "{{key}}",
-                                                              "text": "= {{checked}}"
-                                                            }
-                                                          ],
-                                                          "class": "center_align no_padding {{col_type}}_styles",
-                                                          "style": {
-                                                            "color": "rgb(14,53,112)",
-                                                            "width": "{{width}}"
-                                                          }
-                                                        }
-                                                      },
-                                                      "class": "{{this[0].styles}}",
-                                                      "style": {
-                                                        "height": "10%"
-                                                      }
-                                                    },
-                                                    {
-                                                      "type": "horizontal",
-                                                      "components": {
-                                                        "{{#each this[0].rowValues}}": {
-                                                          "type": [
-                                                            {
-                                                              "{{#if key=='legend'}}": "horizontal"
-                                                            },
-                                                            {
                                                               "{{#else key!='legend'}}": "{{type}}"
                                                             }
                                                           ],
