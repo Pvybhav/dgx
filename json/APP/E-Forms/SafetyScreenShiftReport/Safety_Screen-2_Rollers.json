@@ -160,12 +160,18 @@
                               "{{#if key=='legend'}}": "horizontal"
                             },
                             {
-                              "{{#else key!='legend'}}": "switch"
+                              "{{#else key!='legend'}}": "label"
                             }
                           ],
                           "text": "{{value}}",
                           "value":"true",
-                          "class": "{{styles}}"
+                          "class": "{{styles}}",
+                          "components":[
+                            {
+                              "type":"label",
+                              "text":"123"
+                            }
+                          ]
                         }
                       }
                     }
