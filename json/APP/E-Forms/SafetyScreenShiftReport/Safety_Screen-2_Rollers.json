@@ -348,7 +348,7 @@
                                                               "{{#else key!='legend'}}": "{{type}}"
                                                             }
                                                           ],
-                                                          "text": "{{value}}",
+                                                          "text": "{{value}} {{$index}}",
                                                           "components": [
                                                             {
                                                               "type": "vertical",
@@ -384,7 +384,7 @@
                                                                     {
                                                                       "type": "label",
                                                                       "name": "{{key}}",
-                                                                      "text": "= {{unchecked}} {{$index}}",
+                                                                      "text": "= {{unchecked}}",
                                                                       "style": {
                                                                         "height": "10%"
                                                                       }
