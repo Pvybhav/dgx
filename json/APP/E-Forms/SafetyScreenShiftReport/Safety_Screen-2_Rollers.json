@@ -160,86 +160,122 @@
               "items": [
                 {
                   "type": "vertical",
+                  "class": "no_padding center_align",
                   "components": [
                     {
-                      "type": "horizontal",
+                      "type": "vertical",
                       "components": [
                         {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "switch_styles"
-                        },
-                        {
-                          "type": "label",
-                          "text": "= Turning"
+                          "type": "vertical",
+                          "components": {
+                            "{{#each $jason.Table_Body}}": {
+                              "type": "horizontal",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "horizontal",
+                                          "components": [
+                                            {
+                                              "type": "horizontal",
+                                              "components": [
+                                                {
+                                                  "type": "vertical",
+                                                  "components": [
+                                                    {
+                                                      "type": "horizontal",
+                                                      "components": {
+                                                        "{{#each this[0].rowValues}}": {
+                                                          "type": [
+                                                            {
+                                                              "{{#if key=='legend'}}": "horizontal"
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": "label"
+                                                            }
+                                                          ],
+                                                          "name": "{{key}}",
+                                                          "text": "{{contentDescription || ' '}}",
+                                                          "components": [
+                                                            {
+                                                              "type": "switch",
+                                                              "name": "{{key}}",
+                                                              "value": "true",
+                                                              "class": "switch_legend_styles"
+                                                            },
+                                                            {
+                                                              "type": "label",
+                                                              "name": "{{key}}",
+                                                              "text": "= {{checked}}"
+                                                            }
+                                                          ],
+                                                          "class": "center_align no_padding {{col_type}}_styles",
+                                                          "style": {
+                                                            "color": "rgb(14,53,112)"
+                                                          }
+                                                        }
+                                                      },
+                                                      "class": "{{this[0].styles}}",
+                                                      "style": {
+                                                        "height": "10%"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "horizontal",
+                                                      "components": {
+                                                        "{{#each this[0].rowValues}}": {
+                                                          "type": [
+                                                            {
+                                                              "{{#if key=='legend'}}": "horizontal"
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": "{{type}}"
+                                                            }
+                                                          ],
+                                                          "text": "{{value}}",
+                                                          "components": [
+                                                            {
+                                                              "type": "switch",
+                                                              "name": "{{key}}",
+                                                              "value": "false",
+                                                              "class": "switch_legend_styles"
+                                                            },
+                                                            {
+                                                              "type": "label",
+                                                              "name": "{{key}}",
+                                                              "text": "= {{unchecked}}"
+                                                            }
+                                                          ],
+                                                          "name": "{{key}}",
+                                                          "value": "{{value}}",
+                                                          "contentDescription": "{{contentDescription}}",
+                                                          "class": "{{styles}} center_align"
+                                                        }
+                                                      },
+                                                      "style": {
+                                                        "height": "11%"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "class": "{{this[0].styles}} no_padding"
+                                }
+                              ]
+                            }
+                          }
                         }
                       ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "class": "table_header_name_styles",
-                      "components": [
-                        {
-                          "type": "switch",
-                          "value": "false",
-                          "class": "switch_styles"
-                        },
-                        {
-                          "type": "label",
-                          "text": "= Stopped"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "class": "table_header_value_styles",
-                  "components": [
-                    {
-                      "type": "switch",
-                      "value": "true",
-                      "class": "switch_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "value": "true",
-                      "class": "switch_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "value": "true",
-                      "class": "switch_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "value": "true",
-                      "class": "switch_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "value": "true",
-                      "class": "switch_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "value": "true",
-                      "class": "switch_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "value": "true",
-                      "class": "switch_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "value": "true",
-                      "class": "switch_styles"
-                    },
-                    {
-                      "type": "switch",
-                      "value": "true",
-                      "class": "switch_styles"
                     }
                   ]
                 }
