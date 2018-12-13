@@ -146,7 +146,7 @@
                       "components": {
                         "{{#each $jason.Table1_Headers}}": {
                           "type": "label",
-                          "text": "{{value}} {{$index}}",
+                          "text": "{{value}}",
                           "class": "{{styles}}"
                         }
                       }
@@ -348,7 +348,7 @@
                                                               "{{#else key!='legend'}}": "{{type}}"
                                                             }
                                                           ],
-                                                          "text": "{{value}} {{$index}}",
+                                                          "text": "{{value}}",
                                                           "components": [
                                                             {
                                                               "type": "vertical",
@@ -365,7 +365,7 @@
                                                                     {
                                                                       "type": "label",
                                                                       "name": "{{key}}",
-                                                                      "text": "= {{checked}} {{$index}}"
+                                                                      "text": "= {{checked}}"
                                                                     }
                                                                   ]
                                                                 },
@@ -384,7 +384,7 @@
                                                                     {
                                                                       "type": "label",
                                                                       "name": "{{key}}",
-                                                                      "text": "= {{unchecked}} {{$index}}",
+                                                                      "text": "= {{unchecked}}",
                                                                       "style": {
                                                                         "height": "10%"
                                                                       }
@@ -403,7 +403,7 @@
                                                         }
                                                       },
                                                       "style": {
-                                                        "height": "25%"
+                                                        "height": "20%"
                                                       }
                                                     }
                                                   ]
