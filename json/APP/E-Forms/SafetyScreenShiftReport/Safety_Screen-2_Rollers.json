@@ -205,9 +205,21 @@
                                                           "value": "{{value}}",
                                                           "contentDescription": "{{contentDescription}}",
                                                           "class": "{{styles}} center_align",
-                                                          "style": {
-                                                            "width": "{{width}}"
-                                                          },
+                                                          "style": [
+                                                            {
+                                                              "{{#if key=='legend'}}": {
+                                                                "height": "{{height}}",
+                                                                "width": "{{width}}"
+                                                              }
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": {
+                                                                "height": "{{height}}",
+                                                                "width": "{{width}}",
+                                                                "padding": "2%"
+                                                              }
+                                                            }
+                                                          ],
                                                           "components": [
                                                             {
                                                               "type": "vertical",
@@ -248,20 +260,7 @@
                                                             }
                                                           ]
                                                         }
-                                                      },
-                                                      "style": [
-                                                        {
-                                                          "{{#if key=='legend'}}": {
-                                                            "height": "{{height}}"
-                                                          }
-                                                        },
-                                                        {
-                                                          "{{#else key!='legend'}}": {
-                                                            "height": "{{height}}",
-                                                            "padding": "2%"
-                                                          }
-                                                        }
-                                                      ]
+                                                      }
                                                     }
                                                   ]
                                                 }
