@@ -146,7 +146,7 @@
                       "components": {
                         "{{#each $jason.Table1_Headers}}": {
                           "type": "label",
-                          "text": "{{value}}",
+                          "text": "{{value}} {{$index}}",
                           "class": "{{styles}}"
                         }
                       }
@@ -215,15 +215,7 @@
                                                           ],
                                                           "class": "center_align no_padding {{col_type}}_styles",
                                                           "style": {
-                                                            "color": "rgb(14,53,112)",
-                                                            "background": [
-                                                              {
-                                                                "{{#if $index % 2 == 0}}": "table_row_even_styles"
-                                                              },
-                                                              {
-                                                                "{{#if $index % 2 == 1}}": "table_row_odd_styles"
-                                                              }
-                                                            ]
+                                                            "color": "rgb(14,53,112)"
                                                           }
                                                         }
                                                       },
@@ -406,15 +398,7 @@
                                                           "value": "{{value}}",
                                                           "class": "{{styles}} center_align",
                                                           "style": {
-                                                            "width": "{{width}}",
-                                                            "background": [
-                                                              {
-                                                                "{{#if $index % 2 == 0}}": "table_row_even_styles"
-                                                              },
-                                                              {
-                                                                "{{#if $index % 2 == 1}}": "table_row_odd_styles"
-                                                              }
-                                                            ]
+                                                            "width": "{{width}}"
                                                           }
                                                         }
                                                       },
