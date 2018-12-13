@@ -373,7 +373,7 @@
                                                                     {
                                                                       "type": "label",
                                                                       "name": "{{key}}",
-                                                                      "text": "= {{checked}}"
+                                                                      "text": "= {{checked}} {{$index}}"
                                                                     }
                                                                   ]
                                                                 },
@@ -392,7 +392,7 @@
                                                                     {
                                                                       "type": "label",
                                                                       "name": "{{key}}",
-                                                                      "text": "= {{unchecked}}",
+                                                                      "text": "= {{unchecked}} {{$index}}",
                                                                       "style": {
                                                                         "height": "10%"
                                                                       }
@@ -406,20 +406,20 @@
                                                           "value": "{{value}}",
                                                           "class": "{{styles}} center_align",
                                                           "style": {
-                                                            "width": "{{width}}",
-                                                            "background": [
-                                                              {
-                                                                "{{#if $index % 2 == 0}}": "table_row_even_styles"
-                                                              },
-                                                              {
-                                                                "{{#if $index % 2 == 1}}": "table_row_odd_styles"
-                                                              }
-                                                            ]
+                                                            "width": "{{width}}"
                                                           }
                                                         }
                                                       },
                                                       "style": {
-                                                        "height": "25%"
+                                                        "height": "25%",
+                                                        "background": [
+                                                          {
+                                                            "{{#if $index % 2 == 0}}": "table_row_even_styles"
+                                                          },
+                                                          {
+                                                            "{{#if $index % 2 == 1}}": "table_row_odd_styles"
+                                                          }
+                                                        ]
                                                       }
                                                     }
                                                   ]
