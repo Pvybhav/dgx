@@ -12,43 +12,52 @@
           "align": "center"
         },
         "black": {
-          "color": "rgb(0,0,0)"
+          "color": "rgb(0, 0, 0)"
         },
         "title_styles": {
           "font": "HelveticaHeader",
           "size": 20,
           "align": "center",
-          "color": "rgb(255,255,255)",
-          "background": "rgb(0,162,224)"
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 162, 224)"
+        },
+        "header_2_styles": {
+          "size": 13,
+          "width": "20%",
+          "color": "rgb(0,162,224)",
+          "border": "rgb(0,0,0)"
+        },
+        "header_2_label": {
+          "size": 13,
+          "width": "20%",
+          "color": "rgb(0,162,224)"
         },
         "table_header_styles": {
-          "size": 18,
+          "size": 15,
           "font": "HelveticaHeader",
-          "background": "rgb(14,53,112)",
-          "color": "rgb(255,255,255)"
-        },
-        "button_styles": {
-          "width": "40%",
-          "height": 50,
-          "space": "15",
+          "background": "rgb(14, 53, 112)",
           "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 204)"
+          "border": "rgb(255, 255, 255)",
+          "height": "6%"
         },
         "switch_styles": {
-          "color": "#00ff00",
-          "color:disabled": "#ff0000"
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "align": "center"
         },
         "switch_legend_styles": {
-          "color": "#00ff00",
-          "color:disabled": "#ff0000",
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
           "height": "4%",
           "width": "7%"
         },
-        "col_name_styles": {
-          "width": "20%"
+        "table_header_name_styles": {
+          "width": "28%",
+          "border": "rgb(255, 255, 255)"
         },
-        "col_value_styles": {
-          "width": "6%"
+        "table_header_value_styles": {
+          "width": "8%",
+          "border": "rgb(255, 255, 255)"
         },
         "table_row_odd_styles": {
           "background": "rgb(204,206,213)"
@@ -58,33 +67,26 @@
         },
         "save_button_styles": {
           "width": "20%",
-          "height": "7%",
+          "height": "10%",
           "color": "rgb(255,255,255)",
           "background": "rgb(83,176,46)",
           "corner_radius": "1%"
         },
         "update_button_styles": {
           "width": "20%",
-          "height": "7%",
+          "height": "10%",
           "color": "rgb(255,255,255)",
           "background": "rgb(243,216,7)",
           "corner_radius": "1%"
         },
         "submit_button_styles": {
           "width": "20%",
-          "height": "7%",
+          "height": "10%",
           "color": "rgb(255,255,255)",
           "background": "rgb(0,147,215)",
           "corner_radius": "1%"
         },
         "previous_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "30%",
-          "height": "10%",
-          "corner_radius": "1%"
-        },
-        "next_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0, 102, 255)",
           "width": "30%",
@@ -103,7 +105,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/SafetyScreenShiftReport/Safety_Screen-1_Rollers.json"
+            "url": "https://pvybhav.github.io/json/APP/data/SafetyScreenShiftReport/Safety_Screen-2_Rollers.json"
           },
           "success": {
             "type": "$render"
@@ -112,7 +114,7 @@
         "$show": {
           "type": "$network.request",
           "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/SafetyScreenShiftReport/Safety_Screen-1_Rollers.json"
+            "url": "https://pvybhav.github.io/json/APP/data/SafetyScreenShiftReport/Safety_Screen-2_Rollers.json"
           },
           "success": {
             "type": "$render"
@@ -145,13 +147,44 @@
               "type": "horizontal",
               "items": [
                 {
+                  "type": "label",
+                  "text": "11/12/2018",
+                  "class": "header_2_styles center_align black"
+                },
+                {
+                  "type": "label",
+                  "text": "Day Shift",
+                  "class": "header_2_styles center_align black"
+                },
+                {
+                  "type": "label",
+                  "text": "* Operator",
+                  "class": "header_2_styles center_align black"
+                },
+                {
+                  "type": "label",
+                  "text": "Signed",
+                  "class": "header_2_label center_align"
+                },
+                {
+                  "type": "label",
+                  "text": "Jean Pronovost",
+                  "class": "header_2_styles center_align black"
+                }
+              ],
+              "class": "no_padding"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
                   "type": "vertical",
                   "class": "no_padding",
                   "components": [
                     {
                       "type": "horizontal",
                       "components": {
-                        "{{#each $jason.Table_Headers}}": {
+                        "{{#each $jason.Table1_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"
@@ -175,7 +208,7 @@
                         {
                           "type": "vertical",
                           "components": {
-                            "{{#each $jason.Table_Body}}": {
+                            "{{#each $jason.Table1_Body}}": {
                               "type": "horizontal",
                               "components": [
                                 {
@@ -202,69 +235,69 @@
                                                               "{{#if key=='legend'}}": "horizontal"
                                                             },
                                                             {
-                                                              "{{#else key!='legend'}}": "label"
-                                                            }
-                                                          ],
-                                                          "name": "{{key}}",
-                                                          "text": "{{contentDescription || ' '}}",
-                                                          "components": [
-                                                            {
-                                                              "type": "switch",
-                                                              "name": "{{key}}",
-                                                              "value": "true",
-                                                              "class": "switch_legend_styles"
-                                                            },
-                                                            {
-                                                              "type": "label",
-                                                              "name": "{{key}}",
-                                                              "text": "= {{checked}}"
-                                                            }
-                                                          ],
-                                                          "class": "center_align no_padding {{col_type}}_styles",
-                                                          "style": {
-                                                            "color": "rgb(14,53,112)"
-                                                          }
-                                                        }
-                                                      },
-                                                      "class": "{{this[0].styles}}",
-                                                      "style": {
-                                                        "height": "10%"
-                                                      }
-                                                    },
-                                                    {
-                                                      "type": "horizontal",
-                                                      "components": {
-                                                        "{{#each this[0].rowValues}}": {
-                                                          "type": [
-                                                            {
-                                                              "{{#if key=='legend'}}": "horizontal"
-                                                            },
-                                                            {
                                                               "{{#else key!='legend'}}": "{{type}}"
                                                             }
                                                           ],
                                                           "text": "{{value}}",
-                                                          "components": [
-                                                            {
-                                                              "type": "switch",
-                                                              "name": "{{key}}",
-                                                              "value": "false",
-                                                              "class": "switch_legend_styles"
-                                                            },
-                                                            {
-                                                              "type": "label",
-                                                              "name": "{{key}}",
-                                                              "text": "= {{unchecked}}"
-                                                            }
-                                                          ],
                                                           "name": "{{key}}",
                                                           "value": "{{value}}",
                                                           "contentDescription": "{{contentDescription}}",
-                                                          "class": "{{styles}} center_align"
+                                                          "class": "{{styles}} center_align",
+                                                          "style": [
+                                                            {
+                                                              "{{#if key=='legend'}}": {
+                                                                "height": "{{height}}",
+                                                                "width": "{{width}}"
+                                                              }
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": {
+                                                                "height": "{{height}}",
+                                                                "width": "{{width}}",
+                                                                "padding": "2%"
+                                                              }
+                                                            }
+                                                          ],
+                                                          "components": [
+                                                            {
+                                                              "type": "vertical",
+                                                              "components": [
+                                                                {
+                                                                  "type": "horizontal",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "switch",
+                                                                      "name": "{{key}}",
+                                                                      "value": "true",
+                                                                      "class": "switch_legend_styles"
+                                                                    },
+                                                                    {
+                                                                      "type": "label",
+                                                                      "name": "{{key}}",
+                                                                      "text": "= {{checked}}"
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "type": "horizontal",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "switch",
+                                                                      "name": "{{key}}",
+                                                                      "value": "false",
+                                                                      "class": "switch_legend_styles"
+                                                                    },
+                                                                    {
+                                                                      "type": "label",
+                                                                      "name": "{{key}}",
+                                                                      "text": "= {{unchecked}}"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
                                                         }
-                                                      },
-                                                      "style": {
-                                                        "height": "11%"
                                                       }
                                                     }
                                                   ]
@@ -285,6 +318,206 @@
                       ]
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each $jason.Table2_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}",
+                          "style": {
+                            "width": "{{width}}"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding center_align",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "components": {
+                            "{{#each $jason.Table2_Body}}": {
+                              "type": "horizontal",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "horizontal",
+                                          "components": [
+                                            {
+                                              "type": "horizontal",
+                                              "components": [
+                                                {
+                                                  "type": "vertical",
+                                                  "components": [
+                                                    {
+                                                      "type": "horizontal",
+                                                      "components": {
+                                                        "{{#each this[0].rowValues}}": {
+                                                          "type": [
+                                                            {
+                                                              "{{#if key=='legend'}}": "horizontal"
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": "{{type}}"
+                                                            }
+                                                          ],
+                                                          "text": "{{value}}",
+                                                          "name": "{{key}}",
+                                                          "value": "{{value}}",
+                                                          "class": "{{styles}} center_align",
+                                                          "style": [
+                                                            {
+                                                              "{{#if key=='legend'}}": {
+                                                                "width": "{{width}}"
+                                                              }
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": {
+                                                                "width": "{{width}}",
+                                                                "padding": "2%"
+                                                              }
+                                                            }
+                                                          ],
+                                                          "components": [
+                                                            {
+                                                              "type": "vertical",
+                                                              "components": [
+                                                                {
+                                                                  "type": "horizontal",
+                                                                  "style": {
+                                                                    "padding": "0"
+                                                                  },
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "switch",
+                                                                      "name": "{{key}}",
+                                                                      "value": "true",
+                                                                      "class": "switch_legend_styles",
+                                                                      "style": {
+                                                                        "height": "7%"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "type": "label",
+                                                                      "name": "{{key}}",
+                                                                      "text": "= {{checked}}"
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "type": "horizontal",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "switch",
+                                                                      "name": "{{key}}",
+                                                                      "value": "false",
+                                                                      "class": "switch_legend_styles",
+                                                                      "style": {
+                                                                        "height": "7%"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "type": "label",
+                                                                      "name": "{{key}}",
+                                                                      "text": "= {{unchecked}}"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "style": {
+                                                        "height": "15%"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "class": "{{this[0].styles}} no_padding"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Description of Deficiency",
+                      "class": "table_header_styles",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "description",
+                      "placeholder": "Enter Description of Deficiency",
+                      "contentDescription": "descriptionOfDeficiency",
+                      "style": {
+                        "width": "100%",
+                        "height": "15%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
                 }
               ]
             },
@@ -334,12 +567,16 @@
               "items": [
                 {
                   "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding": "2%"
+                  },
                   "components": [
                     {
                       "type": "label",
                       "text": "",
                       "style": {
-                        "width": "30%"
+                        "width": "25%"
                       }
                     },
                     {
@@ -376,64 +613,70 @@
                       "text": "submit",
                       "class": "center_align submit_button_styles",
                       "contentDescription": "submit"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
                     }
-                  ],
-                  "class": "no_padding center_align"
+                  ]
                 }
               ]
             },
             {
               "type": "horizontal",
+              "style": {
+                "padding": "2%"
+              },
               "items": [
                 {
-                  "type": "button",
-                  "name": "previous",
-                  "text": "Previous",
-                  "class": "previous_button_styles",
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Line-2.json"
-                    }
-                  }
-                },
-                {
-                  "type": "label",
-                  "text": "",
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
                   "style": {
-                    "width": "5%"
-                  }
-                },
-                {
-                  "type": "button",
-                  "name": "home",
-                  "text": "Home",
-                  "class": "home_button_styles",
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "https://pvybhav.github.io/json/APP/Home.json"
+                    "padding": "2%"
+                  },
+                  "components": [
+                    {
+                      "type": "button",
+                      "name": "previous",
+                      "text": "Previous",
+                      "class": "previous_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Safety_Screen-1_Rollers.json"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/Home.json"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "35%"
+                      }
                     }
-                  }
-                },
-                {
-                  "type": "label",
-                  "text": "",
-                  "style": {
-                    "width": "5%"
-                  }
-                },
-                {
-                  "type": "button",
-                  "name": "next",
-                  "text": "Next",
-                  "class": "next_button_styles",
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Safety_Screen-2_Rollers.json"
-                    }
-                  }
+                  ]
                 }
               ]
             }
