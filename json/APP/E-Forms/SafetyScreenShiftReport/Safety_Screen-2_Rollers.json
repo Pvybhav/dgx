@@ -158,13 +158,14 @@
                           "type": [
                             {
                               "{{#if key=='legend'}}": "horizontal"
-                            },
-                            {
-                              "{{#else key!='legend'}}": "label"
                             }
                           ],
                           "name": "{{key}}",
                           "text": "{{contentDescription || ' '}}",
+                          "class": "center_align no_padding {{col_type}}_styles",
+                          "style": {
+                            "color": "rgb(14,53,112)"
+                          },
                           "components": [
                             {
                               "type": "switch",
@@ -177,11 +178,7 @@
                               "name": "{{key}}",
                               "text": "= {{checked}}"
                             }
-                          ],
-                          "class": "center_align no_padding {{col_type}}_styles",
-                          "style": {
-                            "color": "rgb(14,53,112)"
-                          }
+                          ]
                         }
                       },
                       "class": "{{this[0].styles}}",
