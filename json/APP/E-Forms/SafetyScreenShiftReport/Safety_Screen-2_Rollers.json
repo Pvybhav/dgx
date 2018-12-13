@@ -352,10 +352,19 @@
                                                           "name": "{{key}}",
                                                           "value": "{{value}}",
                                                           "class": "{{styles}} center_align",
-                                                          "style": {
-                                                            "width": "{{width}}",
-                                                            "padding": "2%"
-                                                          },
+                                                          "style": [
+                                                            {
+                                                              "{{#if key=='legend'}}": {
+                                                                "width": "{{width}}"
+                                                              }
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": {
+                                                                "width": "{{width}}",
+                                                                "padding": "2%"
+                                                              }
+                                                            }
+                                                          ],
                                                           "components": [
                                                             {
                                                               "type": "vertical",
