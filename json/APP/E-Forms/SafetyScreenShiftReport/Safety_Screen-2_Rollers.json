@@ -155,8 +155,16 @@
                       "type": "horizontal",
                       "components": {
                         "{{#each $jason.Table1_Headers}}": {
-                          "type": "label",
+                          "type": [
+                            {
+                              "{{#if key=='legend'}}": "horizontal"
+                            },
+                            {
+                              "{{#else key!='legend'}}": "switch"
+                            }
+                          ],
                           "text": "{{value}}",
+                          "value":"true",
                           "class": "{{styles}}"
                         }
                       }
