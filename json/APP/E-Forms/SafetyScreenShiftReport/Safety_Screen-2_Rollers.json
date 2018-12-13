@@ -154,7 +154,7 @@
                     {
                       "type": "horizontal",
                       "components": {
-                        "{{#each $jason.Table1_Body}}": {
+                        "{{#each $jason.Table1_Body.rowValues}}": {
                           "type": "{{type}}",
                           "text": "{{value}} {{$index}}",
                           "value": "true",
