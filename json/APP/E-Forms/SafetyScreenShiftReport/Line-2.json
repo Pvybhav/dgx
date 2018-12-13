@@ -238,15 +238,25 @@
                                                                 "type": "vertical",
                                                                 "components": [
                                                                   {
-                                                                    "type": "label",
-                                                                    "text": "{{contentDescription || ''}}",
-                                                                    "name": "{{key}}"
+                                                                    "type": "horizontal",
+                                                                    "components": [
+                                                                      {
+                                                                        "type": "label",
+                                                                        "text": "{{contentDescription || ''}}",
+                                                                        "name": "{{key}}"
+                                                                      }
+                                                                    ]
                                                                   },
                                                                   {
-                                                                    "type": "switch",
-                                                                    "value": "{{value}}",
-                                                                    "contentDescription": "{{contentDescription}}",
-                                                                    "class": "{{styles}} center_align"
+                                                                    "type": "horizontal",
+                                                                    "components": [
+                                                                      {
+                                                                        "type": "switch",
+                                                                        "value": "{{value}}",
+                                                                        "contentDescription": "{{contentDescription}}",
+                                                                        "class": "{{styles}} center_align"
+                                                                      }
+                                                                    ]
                                                                   }
                                                                 ]
                                                               }
