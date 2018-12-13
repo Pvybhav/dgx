@@ -249,9 +249,19 @@
                                                           ]
                                                         }
                                                       },
-                                                      "style": {
-                                                        "height": "20%"
-                                                      }
+                                                      "style": [
+                                                        {
+                                                          "{{#if key=='legend'}}": {
+                                                            "height": "{{height}}"
+                                                          }
+                                                        },
+                                                        {
+                                                          "{{#else key!='legend'}}": {
+                                                            "height": "{{height}}",
+                                                            "padding": "2%"
+                                                          }
+                                                        }
+                                                      ]
                                                     }
                                                   ]
                                                 }
