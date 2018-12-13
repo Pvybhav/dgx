@@ -349,7 +349,6 @@
                                                             }
                                                           ],
                                                           "name": "{{key}}",
-                                                          "text": "{{contentDescription || ' '}}",
                                                           "components": [
                                                             {
                                                               "type": "switch",
@@ -365,7 +364,8 @@
                                                           ],
                                                           "class": "center_align no_padding {{col_type}}_styles",
                                                           "style": {
-                                                            "color": "rgb(14,53,112)"
+                                                            "color": "rgb(14,53,112)",
+                                                            "width":"{{width}}"
                                                           }
                                                         }
                                                       },
@@ -402,7 +402,8 @@
                                                           ],
                                                           "name": "{{key}}",
                                                           "value": "{{value}}",
-                                                          "class": "{{styles}} center_align"
+                                                          "class": "{{styles}} center_align",
+                                                          "style":"{{width}}"
                                                         }
                                                       },
                                                       "style": {
