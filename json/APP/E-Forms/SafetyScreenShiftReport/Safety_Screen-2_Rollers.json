@@ -144,7 +144,7 @@
                     {
                       "type": "horizontal",
                       "components": {
-                        "{{#each $jason.Table_Headers}}": {
+                        "{{#each $jason.Table1_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"
@@ -153,87 +153,41 @@
                     },
                     {
                       "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "class": "table_header_name_styles",
-                          "components": [
+                      "components": {
+                        "{{#each $jason.Table1_Body}}": {
+                          "type": [
                             {
-                              "type": "horizontal",
-                              "components": [
-                                {
-                                  "type": "switch",
-                                  "value": "true",
-                                  "class": "switch_styles"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": " = Turning"
-                                }
-                              ]
+                              "{{#if key=='legend'}}": "horizontal"
                             },
                             {
-                              "type": "horizontal",
-                              "components": [
-                                {
-                                  "type": "switch",
-                                  "value": "false",
-                                  "class": "switch_styles"
-                                },
-                                {
-                                  "type": "label",
-                                  "text": " = Stopped"
-                                }
-                              ]
+                              "{{#else key!='legend'}}": "{{type}}"
                             }
-                          ]
-                        },
-                        {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "table_header_value_styles switch_styles"
-                        },
-                        {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "table_header_value_styles switch_styles"
-                        },
-                        {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "table_header_value_styles switch_styles"
-                        },
-                        {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "table_header_value_styles switch_styles"
-                        },
-                        {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "table_header_value_styles switch_styles"
-                        },
-                        {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "table_header_value_styles switch_styles"
-                        },
-                        {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "table_header_value_styles switch_styles"
-                        },
-                        {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "table_header_value_styles switch_styles"
-                        },
-                        {
-                          "type": "switch",
-                          "value": "true",
-                          "class": "table_header_value_styles switch_styles"
+                          ],
+                          "name": "{{key}}",
+                          "text": "{{contentDescription || ' '}}",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "{{key}}",
+                              "value": "true",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "{{key}}",
+                              "text": "= {{checked}}"
+                            }
+                          ],
+                          "class": "center_align no_padding {{col_type}}_styles",
+                          "style": {
+                            "color": "rgb(14,53,112)"
+                          }
                         }
-                      ]
+                      },
+                      "class": "{{this[0].styles}}",
+                      "style": {
+                        "height": "10%"
+                      }
                     }
                   ]
                 }
