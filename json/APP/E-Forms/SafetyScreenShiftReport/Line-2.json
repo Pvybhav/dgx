@@ -204,19 +204,7 @@
                                                               "{{#if key=='legend'}}": "horizontal"
                                                             },
                                                             {
-                                                              "{{#else key!='legend'}}": {
-                                                                "type": "horizontal",
-                                                                "coponents": [
-                                                                  {
-                                                                    "type": "label",
-                                                                    "text": "l1"
-                                                                  },
-                                                                  {
-                                                                    "type": "label",
-                                                                    "text": "l2"
-                                                                  }
-                                                                ]
-                                                              }
+                                                              "{{#else key!='legend'}}": "{{type}}"
                                                             }
                                                           ],
                                                           "text": "{{contentDescription || value}}",
