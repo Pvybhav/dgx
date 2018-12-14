@@ -199,7 +199,14 @@
                                                       "type": "horizontal",
                                                       "components": {
                                                         "{{#each this[0].rowValues}}": {
-                                                          "type": "horizontal",
+                                                          "type": [
+                                                            {
+                                                              "{{#if key=='legend'}}": "horizontal"
+                                                            },
+                                                            {
+                                                              "{{#else key!='legend'}}": "{{type}}"
+                                                            }
+                                                          ],
                                                           "components": [
                                                             [
                                                               {
@@ -237,46 +244,17 @@
                                                                 }
                                                               },
                                                               {
-                                                                "{{#if key=='legend'}}": {
-                                                                  "type": "vertical",
-                                                                  "components": [
-                                                                    {
-                                                                      "type": "horizontal",
-                                                                      "components": [
-                                                                        {
-                                                                          "type": "switch",
-                                                                          "name": "{{key}}",
-                                                                          "value": "true",
-                                                                          "class": "switch_legend_styles"
-                                                                        },
-                                                                        {
-                                                                          "type": "label",
-                                                                          "name": "{{key}}",
-                                                                          "text": "= {{checked}}"
-                                                                        }
-                                                                      ]
-                                                                    },
-                                                                    {
-                                                                      "type": "switch",
-                                                                      "name": "{{key}}",
-                                                                      "value": "false",
-                                                                      "class": "switch_legend_styles"
-                                                                    },
-                                                                    {
-                                                                      "type": "label",
-                                                                      "name": "{{key}}",
-                                                                      "text": "= {{unchecked}}"
-                                                                    }
-                                                                  ]
+                                                                "{{#else key!='legend'}}": {
+                                                                  "type": "{{type}}",
+                                                                  "text": "{{contentDescription || value}}",
+                                                                  "name": "{{key}}",
+                                                                  "value": "{{value}}",
+                                                                  "contentDescription": "{{contentDescription}}",
+                                                                  "class": "{{styles}} center_align"
                                                                 }
                                                               }
                                                             ]
-                                                          ],
-                                                          "text": "{{contentDescription || value}}",
-                                                          "name": "{{key}}",
-                                                          "value": "{{value}}",
-                                                          "contentDescription": "{{contentDescription}}",
-                                                          "class": "{{styles}} center_align"
+                                                          ]
                                                         }
                                                       },
                                                       "style": {
