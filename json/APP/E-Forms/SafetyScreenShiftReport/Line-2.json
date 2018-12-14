@@ -249,7 +249,7 @@
                                                                 }
                                                               },
                                                               {
-                                                                "{{#else key!='legend'}}": {
+                                                                "{{#elseif key!='legend'}}": {
                                                                   "type": "vertical",
                                                                   "components": [
                                                                     {
@@ -275,6 +275,14 @@
                                                                       ]
                                                                     }
                                                                   ]
+                                                                }
+                                                              },
+                                                              {
+                                                                "{{#else type=='label'}}": {
+                                                                  "type": "label",
+                                                                  "text": "{{value}}",
+                                                                  "name": "{{key}}",
+                                                                  "class": "{{styles}}"
                                                                 }
                                                               }
                                                             ]
