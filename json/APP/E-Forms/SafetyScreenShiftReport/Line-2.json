@@ -259,7 +259,7 @@
                                                                           "type": "label",
                                                                           "text": "{{contentDescription || ' '}}",
                                                                           "name": "{{key}}",
-                                                                          "class": "{{styles}} center_align"
+                                                                          "class": "center_align"
                                                                         }
                                                                       ]
                                                                     },
@@ -267,8 +267,8 @@
                                                                       "type": "horizontal",
                                                                       "components": [
                                                                         {
-                                                                          "type": "label",
-                                                                          "text": "{{contentDescription || value}}",
+                                                                          "type": "switch",
+                                                                          "value": "{{value}}",
                                                                           "name": "{{key}}",
                                                                           "class": "{{styles}} center_align"
                                                                         }
