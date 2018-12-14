@@ -199,14 +199,7 @@
                                                       "type": "horizontal",
                                                       "components": {
                                                         "{{#each this[0].rowValues}}": {
-                                                          "type": [
-                                                            {
-                                                              "{{#if key=='legend'}}": "horizontal"
-                                                            },
-                                                            {
-                                                              "{{#else key!='legend'}}": "horizontal"
-                                                            }
-                                                          ],
+                                                          "type": "horizontal",
                                                           "components": [
                                                             [
                                                               {
@@ -233,6 +226,40 @@
                                                                       "type": "switch",
                                                                       "name": "{{key}}",
                                                                       "value": "false",
+                                                                      "class": "switch_legend_styles"
+                                                                    },
+                                                                    {
+                                                                      "type": "label",
+                                                                      "name": "{{key}}",
+                                                                      "text": "= {{unchecked}}"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              },
+                                                              {
+                                                                "{{#if key!='legend'}}": {
+                                                                  "type": "vertical",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "label",
+                                                                          "name": "{{key}}",
+                                                                          "text": "true",
+                                                                          "class": "switch_legend_styles"
+                                                                        },
+                                                                        {
+                                                                          "type": "label",
+                                                                          "name": "{{key}}",
+                                                                          "text": "= {{checked}}"
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "type": "label",
+                                                                      "name": "{{key}}",
+                                                                      "text": "false",
                                                                       "class": "switch_legend_styles"
                                                                     },
                                                                     {
