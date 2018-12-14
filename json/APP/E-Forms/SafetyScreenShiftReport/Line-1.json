@@ -340,42 +340,51 @@
               },
               "items": [
                 {
-                  "type": "label",
-                  "text": "",
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
                   "style": {
-                    "width": "35%"
-                  }
-                },
-                {
-                  "type": "button",
-                  "name": "home",
-                  "text": "Home",
-                  "class": "home_button_styles",
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "https://pvybhav.github.io/json/APP/Home.json"
+                    "padding": "2%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "35%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/Home.json"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "next",
+                      "text": "Next",
+                      "class": "next_button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Line-2.json"
+                        }
+                      }
                     }
-                  }
-                },
-                {
-                  "type": "label",
-                  "text": "",
-                  "style": {
-                    "width": "5%"
-                  }
-                },
-                {
-                  "type": "button",
-                  "name": "next",
-                  "text": "Next",
-                  "class": "next_button_styles",
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Line-2.json"
-                    }
-                  }
+                  ]
                 }
               ]
             }
