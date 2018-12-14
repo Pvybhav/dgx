@@ -28,7 +28,27 @@
         "$pull": {
           "type": "$reload"
         },
-        "banner": {
+        "banner1": {
+          "type": "$util.banner",
+          "options": {
+            "title": "{{$get.light}}",
+            "description": "{{$jason.item}}"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "banner2": {
+          "type": "$util.banner",
+          "options": {
+            "title": "{{$get.light}}",
+            "description": "{{$jason.item}}"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "banner3": {
           "type": "$util.banner",
           "options": {
             "title": "{{$get.light}}",
@@ -57,37 +77,47 @@
                   "components": [
                     {
                       "type": "switch",
-                      "name": "light",
+                      "name": "light1",
                       "value": "true",
                       "class": "right_align_switch_styles",
                       "action": {
-                        "trigger": "banner",
+                        "trigger": "banner1",
                         "options": {
-                          "item": "Light is On?"
+                          "item": "Light1 is On?"
                         }
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "components": [
                     {
                       "type": "switch",
-                      "name": "light",
+                      "name": "light2",
                       "value": "true",
                       "class": "center_align_switch_styles",
                       "action": {
-                        "trigger": "banner",
+                        "trigger": "banner2",
                         "options": {
-                          "item": "Light is On?"
+                          "item": "Light2 is On?"
                         }
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "components": [
                     {
                       "type": "switch",
-                      "name": "light",
+                      "name": "light3",
                       "value": "true",
                       "class": "left_align_switch_styles",
                       "action": {
-                        "trigger": "banner",
+                        "trigger": "banner3",
                         "options": {
-                          "item": "Light is On?"
+                          "item": "Light3 is On?"
                         }
                       }
                     }
