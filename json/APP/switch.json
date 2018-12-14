@@ -35,71 +35,71 @@
             "type": "$render"
           }
         }
-      }
-    }
-  },
-  "templates": {
-    "body": {
-      "header": {
-        "title": "Switch",
-        "style": {
-          "background": "rgb(0, 0, 204)",
-          "color": "rgb(255, 255, 255)"
-        }
       },
-      "sections": [
-        {
-          "type": "horizontal",
-          "components": [
-            {
-              "type": "switch",
-              "name": "light",
-              "value": "true",
-              "class": "right_align_switch_styles",
-              "action": {
-                "trigger": "banner",
-                "options": {
-                  "item": "Light is On?"
-                }
-              }
+      "templates": {
+        "body": {
+          "header": {
+            "title": "Switch",
+            "style": {
+              "background": "rgb(0, 0, 204)",
+              "color": "rgb(255, 255, 255)"
             }
-          ]
-        },
-        {
-          "type": "horizontal",
-          "components": [
+          },
+          "sections": [
             {
-              "type": "switch",
-              "name": "light",
-              "value": "true",
-              "class": "center_align_switch_styles",
-              "action": {
-                "trigger": "banner",
-                "options": {
-                  "item": "Light is On?"
+              "type": "horizontal",
+              "components": [
+                {
+                  "type": "switch",
+                  "name": "light",
+                  "value": "true",
+                  "class": "right_align_switch_styles",
+                  "action": {
+                    "trigger": "banner",
+                    "options": {
+                      "item": "Light is On?"
+                    }
+                  }
                 }
-              }
-            }
-          ]
-        },
-        {
-          "type": "horizontal",
-          "components": [
+              ]
+            },
             {
-              "type": "switch",
-              "name": "light",
-              "value": "true",
-              "class": "left_align_switch_styles",
-              "action": {
-                "trigger": "banner",
-                "options": {
-                  "item": "Light is On?"
+              "type": "horizontal",
+              "components": [
+                {
+                  "type": "switch",
+                  "name": "light",
+                  "value": "true",
+                  "class": "center_align_switch_styles",
+                  "action": {
+                    "trigger": "banner",
+                    "options": {
+                      "item": "Light is On?"
+                    }
+                  }
                 }
-              }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "components": [
+                {
+                  "type": "switch",
+                  "name": "light",
+                  "value": "true",
+                  "class": "left_align_switch_styles",
+                  "action": {
+                    "trigger": "banner",
+                    "options": {
+                      "item": "Light is On?"
+                    }
+                  }
+                }
+              ]
             }
           ]
         }
-      ]
+      }
     }
   }
 }
