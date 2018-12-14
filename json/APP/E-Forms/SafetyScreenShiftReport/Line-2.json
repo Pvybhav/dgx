@@ -201,10 +201,10 @@
                                                         "{{#each this[0].rowValues}}": {
                                                           "type": [
                                                             {
-                                                              "{{#if key=='legend'}}": "horizontal"
+                                                              "{{#if type=='label'}}": "label"
                                                             },
                                                             {
-                                                              "{{#else key!='legend'}}": "horizontal"
+                                                              "{{#else type!='label'}}": "horizontal"
                                                             }
                                                           ],
                                                           "components": [
