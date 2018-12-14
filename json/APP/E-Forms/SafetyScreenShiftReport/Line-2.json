@@ -230,15 +230,20 @@
                                                                       ]
                                                                     },
                                                                     {
-                                                                      "type": "switch",
-                                                                      "name": "{{key}}",
-                                                                      "value": "false",
-                                                                      "class": "switch_legend_styles"
-                                                                    },
-                                                                    {
-                                                                      "type": "label",
-                                                                      "name": "{{key}}",
-                                                                      "text": "= {{unchecked}}"
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "switch",
+                                                                          "name": "{{key}}",
+                                                                          "value": "false",
+                                                                          "class": "switch_legend_styles"
+                                                                        },
+                                                                        {
+                                                                          "type": "label",
+                                                                          "name": "{{key}}",
+                                                                          "text": "= {{unchecked}}"
+                                                                        }
+                                                                      ]
                                                                     }
                                                                   ]
                                                                 }
