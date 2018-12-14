@@ -21,7 +21,18 @@
       "actions": {
         "$show": {
           "type": "$render"
+        },
+        "banner": {
+          "type": "$util.banner",
+          "options": {
+            "title": "{{$get[$jason.item].toString()}}",
+            "description": "{{$jason.item}}"
+          },
+          "success": {
+            "type": "$render"
+          }
         }
+      }
       }
     },
     "body": {
@@ -38,18 +49,49 @@
           "components": [
             {
               "type": "switch",
+              "name": "light",
               "value": "true",
-              "class": "left_align_switch_styles"
-            },
+              "class": "right_align_switch_styles",
+              "action": {
+                "trigger": "banner",
+                "options": {
+                  "item": "Light is On?"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "horizontal",
+          "components": [
             {
               "type": "switch",
+              "name": "light",
               "value": "true",
-              "class": "center_align_switch_styles"
-            },
+              "class": "center_align_switch_styles",
+              "action": {
+                "trigger": "banner",
+                "options": {
+                  "item": "Light is On?"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "horizontal",
+          "components": [
             {
               "type": "switch",
+              "name": "light",
               "value": "true",
-              "class": "right_align_switch_styles"
+              "class": "left_align_switch_styles",
+              "action": {
+                "trigger": "banner",
+                "options": {
+                  "item": "Light is On?"
+                }
+              }
             }
           ]
         }
