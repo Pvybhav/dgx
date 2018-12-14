@@ -245,12 +245,33 @@
                                                               },
                                                               {
                                                                 "{{#else key!='legend'}}": {
-                                                                  "type": "{{type}}",
-                                                                  "text": "{{contentDescription || value}}",
-                                                                  "name": "{{key}}",
-                                                                  "value": "{{value}}",
-                                                                  "contentDescription": "{{contentDescription}}",
-                                                                  "class": "{{styles}} center_align"
+                                                                  "type": "vertical",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "label",
+                                                                          "text": "{{contentDescription || ' '}}",
+                                                                          "name": "{{key}}",
+                                                                          "class": "{{styles}} center_align"
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "{{type}}",
+                                                                          "text": "{{contentDescription || value}}",
+                                                                          "name": "{{key}}",
+                                                                          "value": "{{value}}",
+                                                                          "contentDescription": "{{contentDescription}}",
+                                                                          "class": "{{styles}} center_align"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
                                                                 }
                                                               }
                                                             ]
