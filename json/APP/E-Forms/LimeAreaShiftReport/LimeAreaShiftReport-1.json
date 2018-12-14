@@ -40,6 +40,12 @@
           "border": "rgb(255, 255, 255)",
           "height": "6%"
         },
+        "note_styles": {
+          "background": "rgb(255, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "align": "left",
+          "size": 18
+        },
         "switch_styles": {
           "color": "rgb(0,255,0)",
           "color:disabled": "rgb(255,0,0)",
@@ -131,6 +137,7 @@
           "sections": [
             {
               "type": "horizontal",
+              "class": "no_padding",
               "items": [
                 {
                   "type": "label",
@@ -157,8 +164,30 @@
                   "text": "Jean Pronovost",
                   "class": "header_2_styles center_align black"
                 }
-              ],
-              "class": "no_padding"
+              ]
+            },
+            {
+              "class": "note_styles",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Ensure to wear all of the required PPE when working in the lime area as well as when performing inspections."
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Ensure to fill out TASC card and complete proper LOTO if necessary"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "type": "horizontal",
