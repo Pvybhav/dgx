@@ -48,13 +48,45 @@
           "sections": [
             {
               "type": "vertical",
-              "components": [
+              "items": [
                 {
                   "type": "horizontal",
                   "components": [
                     {
-                      "type":"label",
-                      "text":"123"
+                      "type": "switch",
+                      "name": "light",
+                      "value": "true",
+                      "class": "right_align_switch_styles",
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Light is On?"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "light",
+                      "value": "true",
+                      "class": "center_align_switch_styles",
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Light is On?"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "light",
+                      "value": "true",
+                      "class": "left_align_switch_styles",
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Light is On?"
+                        }
+                      }
                     }
                   ]
                 }
