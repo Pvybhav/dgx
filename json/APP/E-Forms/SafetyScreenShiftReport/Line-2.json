@@ -282,9 +282,13 @@
                                                           "text": "{{value}}",
                                                           "name": "{{key}}",
                                                           "class": "{{styles}}",
-                                                          "style": {
-                                                            "padding": "2%"
-                                                          }
+                                                          "style": [
+                                                            {
+                                                              "{{#if type=='label'}}": {
+                                                                "padding": "2%"
+                                                              }
+                                                            }
+                                                          ]
                                                         }
                                                       },
                                                       "style": {
