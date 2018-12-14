@@ -47,53 +47,48 @@
           },
           "sections": [
             {
-              "type": "horizontal",
+              "type": "vertical",
               "components": [
                 {
-                  "type": "switch",
-                  "name": "light",
-                  "value": "true",
-                  "class": "right_align_switch_styles",
-                  "action": {
-                    "trigger": "banner",
-                    "options": {
-                      "item": "Light is On?"
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "switch",
+                      "name": "light",
+                      "value": "true",
+                      "class": "right_align_switch_styles",
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Light is On?"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "light",
+                      "value": "true",
+                      "class": "center_align_switch_styles",
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Light is On?"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "light",
+                      "value": "true",
+                      "class": "left_align_switch_styles",
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Light is On?"
+                        }
+                      }
                     }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "components": [
-                {
-                  "type": "switch",
-                  "name": "light",
-                  "value": "true",
-                  "class": "center_align_switch_styles",
-                  "action": {
-                    "trigger": "banner",
-                    "options": {
-                      "item": "Light is On?"
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "components": [
-                {
-                  "type": "switch",
-                  "name": "light",
-                  "value": "true",
-                  "class": "left_align_switch_styles",
-                  "action": {
-                    "trigger": "banner",
-                    "options": {
-                      "item": "Light is On?"
-                    }
-                  }
+                  ]
                 }
               ]
             }
