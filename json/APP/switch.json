@@ -7,15 +7,18 @@
       "styles": {
         "left_align_switch_styles": {
           "color": "rgb(0, 255, 0)",
-          "color:disabled": "rgb(255,0,0)"
+          "color:disabled": "rgb(255,0,0)",
+          "align": "left"
         },
         "center_align_switch_styles": {
           "color": "rgb(0, 255, 0)",
-          "color:disabled": "rgb(255,0,0)"
+          "color:disabled": "rgb(255,0,0)",
+          "align": "center"
         },
         "right_align_switch_styles": {
           "color": "rgb(0, 255, 0)",
-          "color:disabled": "rgb(255,0,0)"
+          "color:disabled": "rgb(255,0,0)",
+          "align": "right"
         }
       },
       "actions": {
@@ -47,10 +50,10 @@
           },
           "sections": [
             {
-              "type": "vertical",
+              "type": "horizontal",
               "items": [
                 {
-                  "type": "horizontal",
+                  "type": "vertical",
                   "components": [
                     {
                       "type": "switch",
