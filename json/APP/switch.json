@@ -1,0 +1,57 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Switch",
+      "description": "A jasonette app",
+      "offline": "true",
+      "styles": {
+        "left_align_switch_styles": {
+          "color": "rgb(0, 255, 0)",
+          "color:disabled": "rgb(255,0,0)"
+        },
+        "center_align_switch_styles": {
+          "color": "rgb(0, 255, 0)",
+          "color:disabled": "rgb(255,0,0)"
+        },
+        "right_align_switch_styles": {
+          "color": "rgb(0, 255, 0)",
+          "color:disabled": "rgb(255,0,0)"
+        }
+      },
+      "actions": {
+        "$show": {
+          "type": "$render"
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "title": "Switch",
+        "background": "rgb(0, 0, 204)",
+        "color": "rgb(255, 255, 255)"
+      },
+      "sections": [
+        {
+          "type": "horizontal",
+          "components": [
+            {
+              "type": "switch",
+              "value": "true",
+              "class": "left_align_switch_styles"
+            },
+            {
+              "type": "switch",
+              "value": "true",
+              "class": "center_align_switch_styles"
+            },
+            {
+              "type": "switch",
+              "value": "true",
+              "class": "right_align_switch_styles"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
