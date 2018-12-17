@@ -71,13 +71,6 @@
         "table_row_even_styles": {
           "background": "rgb(231,232,235)"
         },
-        "previous_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "30%",
-          "height": "10%",
-          "corner_radius": "1%"
-        },
         "home_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(51, 102, 153)",
@@ -97,7 +90,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/SafetyScreenShiftReport/Safety_Screen-1_Rollers.json"
+            "url": "https://pvybhav.github.io/json/APP/data/LimeAreaShiftReport/LimeAreaShiftReport-1.json"
           },
           "success": {
             "type": "$render"
@@ -106,7 +99,7 @@
         "$show": {
           "type": "$network.request",
           "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/SafetyScreenShiftReport/Safety_Screen-1_Rollers.json"
+            "url": "https://pvybhav.github.io/json/APP/data/LimeAreaShiftReport/LimeAreaShiftReport-1.json"
           },
           "success": {
             "type": "$render"
@@ -513,22 +506,10 @@
                   },
                   "components": [
                     {
-                      "type": "button",
-                      "name": "previous",
-                      "text": "Previous",
-                      "class": "previous_button_styles center_align",
-                      "action": {
-                        "type": "$href",
-                        "options": {
-                          "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Line-2.json"
-                        }
-                      }
-                    },
-                    {
                       "type": "label",
                       "text": "",
                       "style": {
-                        "width": "5%"
+                        "width": "35%"
                       }
                     },
                     {
@@ -558,7 +539,7 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Safety_Screen-2_Rollers.json"
+                          "url": "https://pvybhav.github.io/json/APP/E-Forms/LimeAreaShiftReport/LimeAreaShiftReport-2.json"
                         }
                       }
                     }
