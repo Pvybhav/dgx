@@ -38,7 +38,7 @@
           "background": "rgb(14, 53, 112)",
           "color": "rgb(255, 255, 255)",
           "border": "rgb(255, 255, 255)",
-          "height": "15%"
+          "height": "6%"
         },
         "note_styles": {
           "background": "rgb(255, 0, 0)",
@@ -84,16 +84,37 @@
         "table_row_even_styles": {
           "background": "rgb(231,232,235)"
         },
-        "home_button_styles": {
+        "save_button_styles": {
+          "width": "20%",
+          "height": "10%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(83,176,46)",
+          "corner_radius": "1%"
+        },
+        "update_button_styles": {
+          "width": "20%",
+          "height": "10%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(243,216,7)",
+          "corner_radius": "1%"
+        },
+        "submit_button_styles": {
+          "width": "20%",
+          "height": "10%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "previous_button_styles": {
           "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
+          "background": "rgb(0, 102, 255)",
           "width": "30%",
           "height": "10%",
           "corner_radius": "1%"
         },
-        "next_button_styles": {
+        "home_button_styles": {
           "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
+          "background": "rgb(51, 102, 153)",
           "width": "30%",
           "height": "10%",
           "corner_radius": "1%"
@@ -103,7 +124,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/LimeAreaShiftReport/LimeAreaShiftReport-1.json"
+            "url": "https://pvybhav.github.io/json/APP/data/LimeAreaShiftReport/LimeAreaShiftReport-2.json"
           },
           "success": {
             "type": "$render"
@@ -112,7 +133,7 @@
         "$show": {
           "type": "$network.request",
           "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/LimeAreaShiftReport/LimeAreaShiftReport-1.json"
+            "url": "https://pvybhav.github.io/json/APP/data/LimeAreaShiftReport/LimeAreaShiftReport-2.json"
           },
           "success": {
             "type": "$render"
@@ -141,63 +162,6 @@
             }
           },
           "sections": [
-            {
-              "type": "horizontal",
-              "class": "no_padding",
-              "items": [
-                {
-                  "type": "label",
-                  "text": "11/12/2018",
-                  "class": "header_2_styles center_align black"
-                },
-                {
-                  "type": "label",
-                  "text": "Day Shift",
-                  "class": "header_2_styles center_align black"
-                },
-                {
-                  "type": "label",
-                  "text": "* Operator",
-                  "class": "header_2_styles center_align black"
-                },
-                {
-                  "type": "label",
-                  "text": "Signed",
-                  "class": "header_2_label center_align"
-                },
-                {
-                  "type": "label",
-                  "text": "Jean Pronovost",
-                  "class": "header_2_styles center_align black"
-                }
-              ]
-            },
-            {
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "label",
-                      "class": "note_styles",
-                      "text": "Ensure to wear all of the required PPE when working in the lime area as well as when performing inspections."
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "label",
-                      "class": "note_styles",
-                      "text": "Ensure to fill out TASC card and complete proper LOTO if necessary"
-                    }
-                  ]
-                }
-              ]
-            },
             {
               "type": "horizontal",
               "items": [
