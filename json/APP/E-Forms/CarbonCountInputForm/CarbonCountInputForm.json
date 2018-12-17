@@ -183,7 +183,6 @@
               "items": [
                 {
                   "type": "vertical",
-                  "class": "no_padding",
                   "components": [
                     {
                       "type": "horizontal",
@@ -191,7 +190,10 @@
                         "{{#each $jason.Table_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
-                          "class": "{{styles}}"
+                          "class": "{{styles}}",
+                          "style": {
+                            "width": "{{width}}"
+                          }
                         }
                       }
                     }
