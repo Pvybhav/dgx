@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Line-1",
+      "title": "Carbon Count Input Form",
       "description": "Carbon Count Input Form",
       "offline": "true",
       "styles": {
@@ -20,6 +20,12 @@
           "align": "center",
           "color": "rgb(255,255,255)",
           "background": "rgb(0,162,224)"
+        },
+        "header_2_styles": {
+          "size": 13,
+          "width": "25%",
+          "color": "rgb(0,162,224)",
+          "border": "rgb(0,0,0)"
         },
         "table_header_styles": {
           "size": 15,
@@ -108,7 +114,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/LeachAreaShiftReport/Line-2.json"
+            "url": "https://pvybhav.github.io/json/APP/data/CarbonCountInputForm/CarbonCountInputForm.json"
           },
           "success": {
             "type": "$render"
@@ -117,7 +123,7 @@
         "$show": {
           "type": "$network.request",
           "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/LeachAreaShiftReport/Line-2.json"
+            "url": "https://pvybhav.github.io/json/APP/data/CarbonCountInputForm/CarbonCountInputForm.json"
           },
           "success": {
             "type": "$render"
@@ -146,6 +152,32 @@
             }
           },
           "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "*Supervisor",
+                  "class": "header_2_styles center_align black"
+                },
+                {
+                  "type": "label",
+                  "text": "Shift",
+                  "class": "header_2_styles center_align black"
+                },
+                {
+                  "type": "label",
+                  "text": "11/18/2018",
+                  "class": "header_2_styles center_align black"
+                },
+                {
+                  "type": "label",
+                  "text": "Dean Smith",
+                  "class": "header_2_styles center_align black"
+                }
+              ],
+              "class": "no_padding"
+            },
             {
               "type": "horizontal",
               "items": [
