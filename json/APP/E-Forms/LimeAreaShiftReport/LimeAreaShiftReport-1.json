@@ -38,7 +38,7 @@
           "background": "rgb(14, 53, 112)",
           "color": "rgb(255, 255, 255)",
           "border": "rgb(255, 255, 255)",
-          "height": "12%"
+          "height": "15%"
         },
         "note_styles": {
           "background": "rgb(255, 0, 0)",
@@ -203,40 +203,15 @@
               "items": [
                 {
                   "type": "vertical",
-                  "text": "{{value}}",
-                  "class": "{{styles}}",
+                  "class": "no_padding",
                   "components": [
                     {
                       "type": "horizontal",
                       "components": {
                         "{{#each $jason.Table1_Headers}}": {
-                          "type": [
-                            {
-                              "{{#if type=='label'}}": "{{type}}"
-                            },
-                            {
-                              "{{#else type!='2labels'}}": "horizontal"
-                            }
-                          ],
-                          "components": [
-                            {
-                              "type": "vertical",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "name": "{{key}}",
-                                  "text": "{{lable_1_value}}",
-                                  "class": "center_align"
-                                },
-                                {
-                                  "type": "label",
-                                  "name": "{{key}}",
-                                  "text": "{{lable_2_value}}",
-                                  "class": "center_align"
-                                }
-                              ]
-                            }
-                          ]
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
                         }
                       }
                     }
