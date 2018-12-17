@@ -208,7 +208,7 @@
                     {
                       "type": "horizontal",
                       "components": {
-                        "{{#each $jason.Table2_Headers}}": {
+                        "{{#each $jason.Table1_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"
@@ -232,7 +232,7 @@
                         {
                           "type": "vertical",
                           "components": {
-                            "{{#each $jason.Table2_Body}}": {
+                            "{{#each $jason.Table1_Body}}": {
                               "type": "horizontal",
                               "components": [
                                 {
@@ -325,7 +325,7 @@
                     {
                       "type": "horizontal",
                       "components": {
-                        "{{#each $jason.Table1_Headers}}": {
+                        "{{#each $jason.Table2_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"
