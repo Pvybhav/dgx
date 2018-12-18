@@ -116,18 +116,65 @@
           "corner_radius": "1%"
         }
       },
+      {
+        "type": "$href",
+        "options": {
+          "url": "https://www.jasonbase.com/dhen3",
+          
+        }
+      },
       "actions": {
         "$load": {
-          "type": "$render",
+          "type": "$network.request",
           "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/CarbonCountInputForm/CarbonCountInputForm.json"
+            "url": "https://pvybhav.github.io/json/APP/data/CarbonCountInputForm/CarbonCountInputForm.json",
+            "preload": {
+              "style": {
+                "background": "#ff0000"
+              },
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "file://loading.gif",
+                  "style": {
+                    "top": "50%-25",
+                    "left": "50%-25",
+                    "width": "50",
+                    "height": "50"
+                  }
+                }
+              ]
+            }
           },
           "success": {
             "type": "$render"
           }
         },
         "$show": {
-          "type": "$render"
+          "type": "$network.request",
+          "options": {
+            "url": "https://pvybhav.github.io/json/APP/data/CarbonCountInputForm/CarbonCountInputForm.json",
+            "preload": {
+              "style": {
+                "background": "#ff0000"
+              },
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "file://infinit.gif",
+                  "style": {
+                    "top": "50%-25",
+                    "left": "50%-25",
+                    "width": "50",
+                    "height": "50"
+                  }
+                }
+              ]
+            }
+          },
+          "success": {
+            "type": "$render"
+          }
         },
         "$pull": {
           "type": "$reload",
