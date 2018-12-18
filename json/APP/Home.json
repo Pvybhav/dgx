@@ -264,7 +264,24 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://jasonette.github.io/Jasonpedia/hello.json"
+                          "url": "https://jasonette.github.io/Jasonpedia/hello.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
                         }
                       }
                     }
