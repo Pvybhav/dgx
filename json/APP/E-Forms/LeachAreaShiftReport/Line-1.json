@@ -312,7 +312,7 @@
                                                                       "components": [
                                                                         {
                                                                           "type": "label",
-                                                                          "text": "{{contentDescription || ' '}}",
+                                                                          "text": "{{contentDescriptionText || ' '}}",
                                                                           "name": "{{key}}",
                                                                           "class": "center_align"
                                                                         }
@@ -466,18 +466,6 @@
                           "text": "1",
                           "name": "name",
                           "class": "center_align"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "switch",
-                          "value": "true",
-                          "name": "switch",
-                          "class": "center_align",
-                          "contentDescription": "one"
                         }
                       ]
                     }
