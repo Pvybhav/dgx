@@ -118,7 +118,13 @@
       },
       "actions": {
         "$load": {
-          "type": "$render"
+          "type": "$render",
+          "options": {
+            "url": "https://pvybhav.github.io/json/APP/data/CarbonCountInputForm/CarbonCountInputForm.json"
+          },
+          "success": {
+            "type": "$render"
+          }
         },
         "$show": {
           "type": "$render"
