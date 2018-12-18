@@ -118,22 +118,10 @@
       },
       "actions": {
         "$load": {
-          "type": "$network.request",
-          "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/CarbonCountInputForm/CarbonCountInputForm.json"
-          },
-          "success": {
-            "type": "$render"
-          }
+          "type": "$render"
         },
         "$show": {
-          "type": "$network.request",
-          "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/CarbonCountInputForm/CarbonCountInputForm.json"
-          },
-          "success": {
-            "type": "$render"
-          }
+          "type": "$render"
         },
         "$pull": {
           "type": "$reload",
