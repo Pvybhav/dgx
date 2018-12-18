@@ -128,7 +128,7 @@
               "layers": [
                 {
                   "type": "image",
-                  "url": "file://loading.gif",
+                  "url": "file://infinit.gif",
                   "style": {
                     "top": "50%-25",
                     "left": "50%-25",
@@ -401,7 +401,24 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://pvybhav.github.io/json/APP/Home.json"
+                          "url": "https://pvybhav.github.io/json/APP/Home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
                         }
                       }
                     },
