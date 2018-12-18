@@ -299,7 +299,6 @@
                                                           "text": "{{value}}",
                                                           "name": "{{key}}",
                                                           "value": "{{value}}",
-                                                          "contentDescription": "{{contentDescription}}",
                                                           "class": "{{styles}} center_align",
                                                           "components": [
                                                             {
@@ -311,14 +310,15 @@
                                                                     {
                                                                       "type": "label",
                                                                       "name": "{{key}}",
-                                                                      "text": "{{contentDescription}}",
+                                                                      "text": "{{contentDescriptionText || ' '}}",
                                                                       "class": "center_align"
                                                                     },
                                                                     {
                                                                       "type": "switch",
                                                                       "name": "{{key}}",
                                                                       "value": "{{value}}",
-                                                                      "class": "switch_styles"
+                                                                      "class": "switch_styles",
+                                                                      "contentDescription": "{{contentDescription || ' '}}"
                                                                     }
                                                                   ]
                                                                 }
@@ -416,7 +416,6 @@
                                                           "text": "{{value}}",
                                                           "name": "{{key}}",
                                                           "value": "{{value}}",
-                                                          "contentDescription": "{{contentDescription}}",
                                                           "class": "{{styles}} center_align",
                                                           "components": [
                                                             {
@@ -428,14 +427,15 @@
                                                                     {
                                                                       "type": "label",
                                                                       "name": "{{key}}",
-                                                                      "text": "{{contentDescription}}",
+                                                                      "text": "{{contentDescriptionText || ' '}}",
                                                                       "class": "center_align"
                                                                     },
                                                                     {
                                                                       "type": "switch",
                                                                       "name": "{{key}}",
                                                                       "value": "{{value}}",
-                                                                      "class": "switch_styles"
+                                                                      "class": "switch_styles",
+                                                                      "contentDescription": "{{contentDescription || ' '}}"
                                                                     }
                                                                   ]
                                                                 }
