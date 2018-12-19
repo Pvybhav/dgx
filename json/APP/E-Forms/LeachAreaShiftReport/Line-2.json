@@ -151,7 +151,7 @@
           }
         },
         "$pull": {
-          "type": "$reload",
+          "type": "$flush",
           "success": {
             "type": "$render"
           }
