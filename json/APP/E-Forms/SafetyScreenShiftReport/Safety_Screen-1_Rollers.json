@@ -505,10 +505,10 @@
                                                               "{{#if key=='legend'}}": "horizontal"
                                                             },
                                                             {
-                                                              "{{#else key!='legend'}}": "{{type}}"
+                                                              "{{#elseif key=='Completed'}}": "horizontal"
                                                             },
                                                             {
-                                                              "{{#else key=='Completed'}}": "horizontal"
+                                                              "{{#else key!='legend'}}": "{{type}}"
                                                             }
                                                           ],
                                                           "text": "{{value}}",
