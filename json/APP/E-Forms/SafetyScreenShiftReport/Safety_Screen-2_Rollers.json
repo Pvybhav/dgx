@@ -74,6 +74,13 @@
           "width": "15%",
           "height": "7%",
           "corner_radius": "1%"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "30%",
+          "height": "7%",
+          "corner_radius": "1%"
         }
       },
       "actions": {
@@ -399,7 +406,7 @@
                                                                       "value": "true",
                                                                       "class": "switch_legend_styles",
                                                                       "style": {
-                                                                        "height": "7%"
+                                                                        "height": "5%"
                                                                       }
                                                                     },
                                                                     {
@@ -418,7 +425,7 @@
                                                                       "value": "false",
                                                                       "class": "switch_legend_styles",
                                                                       "style": {
-                                                                        "height": "7%"
+                                                                        "height": "5%"
                                                                       }
                                                                     },
                                                                     {
@@ -434,7 +441,7 @@
                                                         }
                                                       },
                                                       "style": {
-                                                        "height": "15%"
+                                                        "height": "10%"
                                                       }
                                                     }
                                                   ]
@@ -685,6 +692,35 @@
                       "text": "",
                       "style": {
                         "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "next",
+                      "text": "Next",
+                      "class": "next_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Safety_Screen-3_Rollers.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
                       }
                     }
                   ]
