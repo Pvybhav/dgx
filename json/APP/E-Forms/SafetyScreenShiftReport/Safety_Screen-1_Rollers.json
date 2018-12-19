@@ -71,21 +71,21 @@
         "previous_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0, 102, 255)",
-          "width": "30%",
+          "width": "15%",
           "height": "7%",
           "corner_radius": "1%"
         },
         "home_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(51, 102, 153)",
-          "width": "30%",
+          "width": "15%",
           "height": "7%",
           "corner_radius": "1%"
         },
         "next_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0, 102, 255)",
-          "width": "30%",
+          "width": "15%",
           "height": "7%",
           "corner_radius": "1%"
         }
@@ -554,15 +554,19 @@
               ]
             },
             {
-              "type": "horizontal"
+              "type": "horizontal",
               "items": [
                 {
                   "type": "horizontal",
                   "class": "no_padding center_align",
-                  "style": {
-                    "padding": "1%"
-                  },
                   "components": [
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
                     {
                       "type": "button",
                       "name": "previous",
@@ -662,6 +666,13 @@
                             ]
                           }
                         }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
                       }
                     }
                   ]
