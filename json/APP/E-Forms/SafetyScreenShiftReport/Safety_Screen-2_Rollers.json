@@ -408,7 +408,10 @@
                                                               "{{#if key=='legend'}}": "horizontal"
                                                             },
                                                             {
-                                                              "{{#else key!='legend'}}": "{{type}}"
+                                                              "{{#elseif key=='label'}}": "{{type}}"
+                                                            },
+                                                            {
+                                                              "{{#else key=='Completed'}}": "horizontal"
                                                             }
                                                           ],
                                                           "text": "{{value}}",
@@ -469,21 +472,23 @@
                                                                 }
                                                               },
                                                               {
-                                                                "{{#elseif key=='label'}}": {
-                                                                  "type": "vertical",
+                                                                "{{#elseif key=='Completed'}}": {
+                                                                  "type": "horizontal",
                                                                   "components": [
                                                                     {
                                                                       "type": "horizontal",
                                                                       "components": [
                                                                         {
                                                                           "type": "label",
-                                                                          "text": "{{value}}",
+                                                                          "text": "{{contentDescriptionText || ' '}}",
                                                                           "class": "center_align"
+                                                                        },
+                                                                        {
+                                                                          "type": "switch",
+                                                                          "value": "{{contentDescription || ' '}}",
+                                                                          "class": "switch_styles"
                                                                         }
-                                                                      ],
-                                                                      "style": {
-                                                                        "height": "4%"
-                                                                      }
+                                                                      ]
                                                                     }
                                                                   ]
                                                                 }
