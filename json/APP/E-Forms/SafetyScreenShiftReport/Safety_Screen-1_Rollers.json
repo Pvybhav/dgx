@@ -321,13 +321,13 @@
                                                           "style": [
                                                             {
                                                               "{{#if key=='legend'}}": {
-                                                                "height": "6%",
+                                                                "height": "10%",
                                                                 "width": "{{width}}"
                                                               }
                                                             },
                                                             {
                                                               "{{#else key!='legend'}}": {
-                                                                "height": "6%",
+                                                                "height": "10%",
                                                                 "width": "7%"
                                                               }
                                                             }
@@ -572,7 +572,7 @@
                                                                 }
                                                               },
                                                               {
-                                                                "{{#elseif key!='legend'}}": {
+                                                                "{{#elseif key=='label'}}": {
                                                                   "type": "vertical",
                                                                   "components": [
                                                                     {
@@ -580,28 +580,12 @@
                                                                       "components": [
                                                                         {
                                                                           "type": "label",
-                                                                          "text": "{{contentDescriptionText || ' '}}",
-                                                                          "name": "{{key}}",
+                                                                          "text": "{{value}}",
                                                                           "class": "center_align"
                                                                         }
                                                                       ],
                                                                       "style": {
                                                                         "height": "4%"
-                                                                      }
-                                                                    },
-                                                                    {
-                                                                      "type": "horizontal",
-                                                                      "components": [
-                                                                        {
-                                                                          "type": "switch",
-                                                                          "value": "{{value}}",
-                                                                          "name": "{{key}}",
-                                                                          "class": "{{styles}} center_align",
-                                                                          "contentDescription": "{{contentDescription || ' '}}"
-                                                                        }
-                                                                      ],
-                                                                      "style": {
-                                                                        "height": "6%"
                                                                       }
                                                                     }
                                                                   ]
@@ -612,7 +596,7 @@
                                                         }
                                                       },
                                                       "style": {
-                                                        "height": "14%"
+                                                        "height": "10%"
                                                       }
                                                     }
                                                   ]
