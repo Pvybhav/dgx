@@ -231,8 +231,7 @@
                                                             {
                                                               "{{#else key!='legend'}}": {
                                                                 "height": "10%",
-                                                                "width": "{{width}}",
-                                                                "padding": "2%"
+                                                                "width": "{{width}}"
                                                               }
                                                             }
                                                           ],
@@ -378,8 +377,7 @@
                                                             },
                                                             {
                                                               "{{#else key!='legend'}}": {
-                                                                "width": "{{width}}",
-                                                                "padding": "2%"
+                                                                "width": "{{width}}"
                                                               }
                                                             }
                                                           ],
@@ -470,6 +468,13 @@
                   "class": "no_padding center_align",
                   "components": [
                     {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
+                    {
                       "type": "button",
                       "name": "previous",
                       "text": "Previous",
@@ -502,7 +507,7 @@
                       "type": "label",
                       "text": "",
                       "style": {
-                        "width": "60%"
+                        "width": "5%"
                       }
                     },
                     {
