@@ -310,7 +310,7 @@
                                                               "{{#if key=='legend'}}": "horizontal"
                                                             },
                                                             {
-                                                              "{{#else key!='legend'}}": "{{type}}"
+                                                              "{{#else key!='legend'}}": "horizontal"
                                                             }
                                                           ],
                                                           "text": "{{value}}",
@@ -401,15 +401,15 @@
                                                                       "type": "horizontal",
                                                                       "components": [
                                                                         {
-                                                                          "type": "label",
-                                                                          "text": "{{value}}",
+                                                                          "type": "switch",
+                                                                          "value": "{{value}}",
                                                                           "name": "{{key}}",
                                                                           "class": "{{styles}} center_align",
                                                                           "contentDescription": "{{contentDescription || ' '}}"
                                                                         }
                                                                       ],
                                                                       "style": {
-                                                                        "height": "10%"
+                                                                        "height": "6%"
                                                                       }
                                                                     }
                                                                   ]
