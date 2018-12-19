@@ -378,7 +378,8 @@
                                                             },
                                                             {
                                                               "{{#else key!='legend'}}": {
-                                                                "width": "{{width}}"
+                                                                "width": "{{width}}",
+                                                                "padding": "2%"
                                                               }
                                                             }
                                                           ],
@@ -541,22 +542,82 @@
             },
             {
               "type": "horizontal",
+              "style": {
+                "padding": "2%",
+                "border": "none"
+              },
               "items": [
                 {
                   "type": "horizontal",
-                  "style": {
-                    "padding": "1%",
-                    "border": "none"
-                  },
                   "class": "no_padding center_align",
                   "components": [
                     {
                       "type": "label",
                       "text": "",
                       "style": {
-                        "width": "40%"
+                        "width": "25%"
                       }
                     },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "save",
+                      "class": "center_align save_button_styles",
+                      "contentDescription": "save"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "update",
+                      "text": "update",
+                      "class": "center_align update_button_styles",
+                      "contentDescription": "update"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "submit",
+                      "text": "submit",
+                      "class": "center_align submit_button_styles",
+                      "contentDescription": "submit"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "style": {
+                "padding": "2%",
+                "border": "none"
+              },
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding": "2%"
+                  },
+                  "components": [
                     {
                       "type": "button",
                       "name": "previous",
@@ -621,20 +682,6 @@
                           }
                         }
                       }
-                    },
-                    {
-                      "type": "label",
-                      "text": "",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "submit",
-                      "text": "submit",
-                      "class": "center_align submit_button_styles",
-                      "contentDescription": "submit"
                     },
                     {
                       "type": "label",
