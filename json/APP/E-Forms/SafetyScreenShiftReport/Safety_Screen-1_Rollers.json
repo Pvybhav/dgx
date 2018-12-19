@@ -65,18 +65,25 @@
         "table_row_even_styles": {
           "background": "rgb(231,232,235)"
         },
+        "previous_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "30%",
+          "height": "10%",
+          "corner_radius": "1%"
+        },
         "home_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(51, 102, 153)",
-          "width": "15%",
-          "height": "7%",
+          "width": "30%",
+          "height": "10%",
           "corner_radius": "1%"
         },
         "next_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0, 102, 255)",
-          "width": "15%",
-          "height": "7%",
+          "width": "30%",
+          "height": "10%",
           "corner_radius": "1%"
         }
       },
@@ -259,11 +266,13 @@
                                                           "style": [
                                                             {
                                                               "{{#if key=='legend'}}": {
+                                                                "height": "{{height}}",
                                                                 "width": "{{width}}"
                                                               }
                                                             },
                                                             {
                                                               "{{#else key!='legend'}}": {
+                                                                "height": "{{height}}",
                                                                 "width": "{{width}}",
                                                                 "padding": "2%"
                                                               }
@@ -411,7 +420,8 @@
                                                             },
                                                             {
                                                               "{{#else key!='legend'}}": {
-                                                                "width": "{{width}}"
+                                                                "width": "{{width}}",
+                                                                "padding": "2%"
                                                               }
                                                             }
                                                           ],
@@ -421,7 +431,9 @@
                                                               "components": [
                                                                 {
                                                                   "type": "horizontal",
-                                                                  "class": "no_padding",
+                                                                  "style": {
+                                                                    "padding": "0"
+                                                                  },
                                                                   "components": [
                                                                     {
                                                                       "type": "switch",
@@ -429,7 +441,7 @@
                                                                       "value": "true",
                                                                       "class": "switch_legend_styles",
                                                                       "style": {
-                                                                        "height": "5%"
+                                                                        "height": "7%"
                                                                       }
                                                                     },
                                                                     {
@@ -448,7 +460,7 @@
                                                                       "value": "false",
                                                                       "class": "switch_legend_styles",
                                                                       "style": {
-                                                                        "height": "6%"
+                                                                        "height": "7%"
                                                                       }
                                                                     },
                                                                     {
@@ -464,7 +476,7 @@
                                                         }
                                                       },
                                                       "style": {
-                                                        "height": "10%"
+                                                        "height": "15%"
                                                       }
                                                     }
                                                   ]
@@ -499,13 +511,43 @@
                   "type": "horizontal",
                   "class": "no_padding center_align",
                   "style": {
-                    "padding": "1%"
+                    "padding": "2%"
                   },
                   "components": [
                     {
-                      "type": "space",
+                      "type": "button",
+                      "name": "previous",
+                      "text": "Previous",
+                      "class": "previous_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/E-Forms/SafetyScreenShiftReport/Line-2.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
                       "style": {
-                        "width": "60%"
+                        "width": "5%"
                       }
                     },
                     {
@@ -538,7 +580,8 @@
                       }
                     },
                     {
-                      "type": "space",
+                      "type": "label",
+                      "text": "",
                       "style": {
                         "width": "5%"
                       }
@@ -570,12 +613,6 @@
                             ]
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
                       }
                     }
                   ]
