@@ -23,17 +23,17 @@
         },
         "header_2_styles": {
           "size": 13,
-          "width": "20%",
+          "width": "19%",
+          "height": "7%",
           "color": "rgb(0,162,224)",
-          "border": "rgb(0,0,0)",
-          "height": "5%"
+          "border": "rgb(0,0,0)"
         },
         "header_2_label": {
-          "align": "right",
           "size": 13,
-          "height": "5%",
-          "width": "20%",
-          "color": "rgb(0,162,224)"
+          "height": "7%",
+          "width": "19%",
+          "color": "rgb(0,162,224)",
+          "align": "right"
         },
         "table_header_styles": {
           "size": 15,
@@ -171,17 +171,67 @@
                 {
                   "type": "label",
                   "text": "11/12/2018",
-                  "class": "header_2_styles center_align black"
+                  "class": "header_2_styles center_align black",
+                  "contentDescription": "date"
                 },
                 {
                   "type": "label",
-                  "text": "Day Shift",
-                  "class": "header_2_styles center_align black"
+                  "text": "",
+                  "style": {
+                    "width": "1%"
+                  }
+                },
+                {
+                  "type": "dropdown",
+                  "name": "shift",
+                  "contentDescription": "shift",
+                  "class": "header_2_styles center_align",
+                  "options": [
+                    {
+                      "value": "Night Shift",
+                      "defaultSelected": "false"
+                    },
+                    {
+                      "value": "Day Shift",
+                      "defaultSelected": "true"
+                    }
+                  ],
+                  "style": {
+                    "color": "rgb(200,130,0)"
+                  }
                 },
                 {
                   "type": "label",
-                  "text": "* Operator",
-                  "class": "header_2_styles center_align black"
+                  "text": "",
+                  "style": {
+                    "width": "1%"
+                  }
+                },
+                {
+                  "type": "dropdown",
+                  "name": "operator",
+                  "contentDescription": "operator",
+                  "class": "header_2_styles center_align",
+                  "options": [
+                    {
+                      "value": "Operator-1",
+                      "defaultSelected": "true"
+                    },
+                    {
+                      "value": "Operator-2",
+                      "defaultSelected": "false"
+                    }
+                  ],
+                  "style": {
+                    "color": "rgb(200,130,0)"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "width": "1%"
+                  }
                 },
                 {
                   "type": "label",
@@ -189,9 +239,11 @@
                   "class": "header_2_label center_align"
                 },
                 {
-                  "type": "label",
-                  "text": "Jean Pronovost",
-                  "class": "header_2_styles center_align black"
+                  "type": "textfield",
+                  "text": "",
+                  "placeholder": "Sign",
+                  "class": "header_2_styles center_align black",
+                  "contentDescription": "Sign"
                 }
               ],
               "class": "no_padding"
