@@ -528,11 +528,28 @@
                                                             [
                                                               {
                                                                 "{{#if key=='legend'}}": {
-                                                                  "type": "switch",
-                                                                  "name": "{{key}}",
-                                                                  "text": "= {{checked}}",
-                                                                  "value": "true",
-                                                                  "class":"switch_styles"
+                                                                  "type": "vertical",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "label",
+                                                                          "text": "{{contentDescriptionText || ' '}}",
+                                                                          "style": {
+                                                                            "align": "left"
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "type": "switch",
+                                                                          "name": "{{key}}",
+                                                                          "text": "= {{checked}}",
+                                                                          "value": "true",
+                                                                          "class": "switch_styles"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
                                                                 }
                                                               },
                                                               {
