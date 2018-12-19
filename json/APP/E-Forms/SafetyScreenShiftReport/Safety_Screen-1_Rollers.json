@@ -528,29 +528,9 @@
                                                             [
                                                               {
                                                                 "{{#if key=='legend'}}": {
-                                                                  "type": "vertical",
-                                                                  "components": [
-                                                                    {
-                                                                      "type": "horizontal",
-                                                                      "class": "{{styles}}",
-                                                                      "style": {
-                                                                        "width": "30%"
-                                                                      },
-                                                                      "components": [
-                                                                        {
-                                                                          "type": "horizontal",
-                                                                          "components": [
-                                                                            {
-                                                                              "type": "switch",
-                                                                              "name": "{{key}}",
-                                                                              "value": "true",
-                                                                              "class": "switch_styles"
-                                                                            }
-                                                                          ]
-                                                                        }
-                                                                      ]
-                                                                    }
-                                                                  ]
+                                                                  "type": "label",
+                                                                  "name": "{{key}}",
+                                                                  "text": "= {{checked}}"
                                                                 }
                                                               },
                                                               {
