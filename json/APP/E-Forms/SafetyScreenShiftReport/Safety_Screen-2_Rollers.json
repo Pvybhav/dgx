@@ -428,57 +428,41 @@
                                                             }
                                                           ],
                                                           "components": [
-                                                            {
-                                                              "type": "vertical",
-                                                              "components": [
-                                                                {
-                                                                  "type": "horizontal",
-                                                                  "style": {
-                                                                    "padding": "0"
-                                                                  },
+                                                            [
+                                                              {
+                                                                "{{#if key=='legend'}}": {
+                                                                  "type": "switch",
+                                                                  "name": "{{key}}",
+                                                                  "text": "= {{checked}}",
+                                                                  "value": "true"
+                                                                }
+                                                              },
+                                                              {
+                                                                "{{#elseif key=='label'}}": {
+                                                                  "type": "vertical",
                                                                   "components": [
                                                                     {
-                                                                      "type": "switch",
-                                                                      "name": "{{key}}",
-                                                                      "value": "true",
-                                                                      "class": "switch_legend_styles",
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "label",
+                                                                          "text": "{{value}}",
+                                                                          "class": "center_align"
+                                                                        }
+                                                                      ],
                                                                       "style": {
-                                                                        "height": "5%"
+                                                                        "height": "4%"
                                                                       }
-                                                                    },
-                                                                    {
-                                                                      "type": "label",
-                                                                      "name": "{{key}}",
-                                                                      "text": "= {{checked}}"
-                                                                    }
-                                                                  ]
-                                                                },
-                                                                {
-                                                                  "type": "horizontal",
-                                                                  "components": [
-                                                                    {
-                                                                      "type": "switch",
-                                                                      "name": "{{key}}",
-                                                                      "value": "false",
-                                                                      "class": "switch_legend_styles",
-                                                                      "style": {
-                                                                        "height": "5%"
-                                                                      }
-                                                                    },
-                                                                    {
-                                                                      "type": "label",
-                                                                      "name": "{{key}}",
-                                                                      "text": "= {{unchecked}}"
                                                                     }
                                                                   ]
                                                                 }
-                                                              ]
-                                                            }
+                                                              }
+                                                            ]
                                                           ]
                                                         }
                                                       },
                                                       "style": {
-                                                        "height": "10%"
+                                                        "height": "8%"
                                                       }
                                                     }
                                                   ]
