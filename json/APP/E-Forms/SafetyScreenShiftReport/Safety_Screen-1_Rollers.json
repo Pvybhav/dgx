@@ -506,6 +506,9 @@
                                                             },
                                                             {
                                                               "{{#else key!='legend'}}": "{{type}}"
+                                                            },
+                                                            {
+                                                              "{{#else key=='Completed'}}": "horizontal"
                                                             }
                                                           ],
                                                           "text": "{{value}}",
@@ -575,13 +578,26 @@
                                                                         {
                                                                           "type": "label",
                                                                           "text": "{{contentDescriptionText || ' '}}",
-                                                                          "class": "center_align"
+                                                                          "class": "center_align",
+                                                                          "style": {
+                                                                            "width": "5%"
+                                                                          }
                                                                         },
                                                                         {
                                                                           "type": "switch",
-                                                                          "value": "{{value}}",
+                                                                          "value": "{{contentDescription || ' '}}",
                                                                           "class": "switch_styles",
-                                                                          "contentDescription":"{{contentDescription || ' '}}"
+                                                                          "style": {
+                                                                            "width": "10%"
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "type": "label",
+                                                                          "text": "",
+                                                                          "class": "center_align",
+                                                                          "style": {
+                                                                            "width": "5%"
+                                                                          }
                                                                         }
                                                                       ]
                                                                     }
