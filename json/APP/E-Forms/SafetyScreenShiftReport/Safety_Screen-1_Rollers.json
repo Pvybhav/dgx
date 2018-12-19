@@ -335,7 +335,7 @@
                                                           "components": [
                                                             {
                                                               "type": "horizontal",
-                                                              "class": "table_header_name_styles",
+                                                              "class": "{{styles}}",
                                                               "components": [
                                                                 {
                                                                   "type": "horizontal",
@@ -343,12 +343,13 @@
                                                                     {
                                                                       "type": "switch",
                                                                       "name": "{{key}}",
-                                                                      "value": "true"
+                                                                      "value": "true",
+                                                                      "class": "switch_styles"
                                                                     },
                                                                     {
                                                                       "type": "label",
                                                                       "name": "{{key}}",
-                                                                      "text": "= {{checked}}/"
+                                                                      "text": "= {{checked}}"
                                                                     }
                                                                   ]
                                                                 },
@@ -358,7 +359,8 @@
                                                                     {
                                                                       "type": "switch",
                                                                       "name": "{{key}}",
-                                                                      "value": "false"
+                                                                      "value": "false",
+                                                                      "class": "switch_styles"
                                                                     },
                                                                     {
                                                                       "type": "label",
