@@ -243,39 +243,33 @@
                                                                   "components": [
                                                                     {
                                                                       "type": "horizontal",
-                                                                      "class": "{{styles}}",
                                                                       "components": [
                                                                         {
-                                                                          "type": "horizontal",
-                                                                          "components": [
-                                                                            {
-                                                                              "type": "switch",
-                                                                              "name": "{{key}}",
-                                                                              "value": "true",
-                                                                              "class": "switch_styles"
-                                                                            },
-                                                                            {
-                                                                              "type": "label",
-                                                                              "name": "{{key}}",
-                                                                              "text": "= {{checked}}"
-                                                                            }
-                                                                          ]
+                                                                          "type": "label",
+                                                                          "text": "{{contentDescriptionText || ' '}}",
+                                                                          "class": "center_align",
+                                                                          "style": {
+                                                                            "width": "9%"
+                                                                          }
                                                                         },
                                                                         {
-                                                                          "type": "horizontal",
-                                                                          "components": [
-                                                                            {
-                                                                              "type": "switch",
-                                                                              "name": "{{key}}",
-                                                                              "value": "false",
-                                                                              "class": "switch_styles"
-                                                                            },
-                                                                            {
-                                                                              "type": "label",
-                                                                              "name": "{{key}}",
-                                                                              "text": "= {{unchecked}}"
-                                                                            }
-                                                                          ]
+                                                                          "type": "switch",
+                                                                          "name": "{{key}}",
+                                                                          "text": "= {{checked}}",
+                                                                          "value": "true",
+                                                                          "class": "switch_styles",
+                                                                          "contentDescription": "{{contentDescription || ' '}}",
+                                                                          "style": {
+                                                                            "width": "8%"
+                                                                          }
+                                                                        },
+                                                                        {
+                                                                          "type": "label",
+                                                                          "text": "",
+                                                                          "class": "center_align",
+                                                                          "style": {
+                                                                            "width": "8%"
+                                                                          }
                                                                         }
                                                                       ]
                                                                     }
