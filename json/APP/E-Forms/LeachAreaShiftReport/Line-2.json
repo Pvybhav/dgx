@@ -124,32 +124,6 @@
             "type": "$render"
           }
         },
-        "$show": {
-          "type": "$network.request",
-          "options": {
-            "url": "https://pvybhav.github.io/json/APP/data/LeachAreaShiftReport/Line-2.json",
-            "preload": {
-              "style": {
-                "background": "#ff0000"
-              },
-              "layers": [
-                {
-                  "type": "image",
-                  "url": "file://infinit.gif",
-                  "style": {
-                    "top": "50%-25",
-                    "left": "50%-25",
-                    "width": "50",
-                    "height": "50"
-                  }
-                }
-              ]
-            }
-          },
-          "success": {
-            "type": "$render"
-          }
-        },
         "$pull": {
           "type": "$flush",
           "success": {
