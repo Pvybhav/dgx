@@ -566,21 +566,24 @@
                                                                 }
                                                               },
                                                               {
-                                                                "{{#elseif key=='label'}}": {
-                                                                  "type": "vertical",
+                                                                "{{#elseif key=='Completed'}}": {
+                                                                  "type": "horizontal",
                                                                   "components": [
                                                                     {
                                                                       "type": "horizontal",
                                                                       "components": [
                                                                         {
                                                                           "type": "label",
-                                                                          "text": "{{value}}",
+                                                                          "text": "{{contentDescriptionText || ' '}}",
                                                                           "class": "center_align"
+                                                                        },
+                                                                        {
+                                                                          "type": "switch",
+                                                                          "value": "{{value}}",
+                                                                          "class": "switch_styles",
+                                                                          "contentDescription":"{{contentDescription || ' '}}"
                                                                         }
-                                                                      ],
-                                                                      "style": {
-                                                                        "height": "4%"
-                                                                      }
+                                                                      ]
                                                                     }
                                                                   ]
                                                                 }
