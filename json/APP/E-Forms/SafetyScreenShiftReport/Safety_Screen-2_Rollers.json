@@ -54,23 +54,9 @@
         "table_row_even_styles": {
           "background": "rgb(231,232,235)"
         },
-        "save_button_styles": {
-          "width": "20%",
-          "height": "10%",
-          "color": "rgb(255,255,255)",
-          "background": "rgb(83,176,46)",
-          "corner_radius": "1%"
-        },
-        "update_button_styles": {
-          "width": "20%",
-          "height": "10%",
-          "color": "rgb(255,255,255)",
-          "background": "rgb(243,216,7)",
-          "corner_radius": "1%"
-        },
         "submit_button_styles": {
-          "width": "20%",
-          "height": "10%",
+          "width": "15%",
+          "height": "7%",
           "color": "rgb(255,255,255)",
           "background": "rgb(0,147,215)",
           "corner_radius": "1%"
@@ -78,15 +64,15 @@
         "previous_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0, 102, 255)",
-          "width": "30%",
-          "height": "10%",
+          "width": "15%",
+          "height": "7%",
           "corner_radius": "1%"
         },
         "home_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(51, 102, 153)",
-          "width": "30%",
-          "height": "10%",
+          "width": "15%",
+          "height": "7%",
           "corner_radius": "1%"
         }
       },
@@ -556,82 +542,21 @@
             },
             {
               "type": "horizontal",
-              "style": {
-                "padding": "2%",
-                "border": "none"
-              },
               "items": [
                 {
                   "type": "horizontal",
-                  "class": "no_padding center_align",
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "",
-                      "style": {
-                        "width": "25%"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "save",
-                      "text": "save",
-                      "class": "center_align save_button_styles",
-                      "contentDescription": "save"
-                    },
-                    {
-                      "type": "label",
-                      "text": "",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "update",
-                      "text": "update",
-                      "class": "center_align update_button_styles",
-                      "contentDescription": "update"
-                    },
-                    {
-                      "type": "label",
-                      "text": "",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "submit",
-                      "text": "submit",
-                      "class": "center_align submit_button_styles",
-                      "contentDescription": "submit"
-                    },
-                    {
-                      "type": "label",
-                      "text": "",
-                      "style": {
-                        "width": "5%"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "style": {
-                "padding": "2%",
-                "border": "none"
-              },
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding center_align",
                   "style": {
-                    "padding": "2%"
+                    "padding": "1%",
+                    "border": "none"
                   },
+                  "class": "no_padding center_align",
                   "components": [
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
                     {
                       "type": "button",
                       "name": "previous",
@@ -662,8 +587,7 @@
                       }
                     },
                     {
-                      "type": "label",
-                      "text": "",
+                      "type": "space",
                       "style": {
                         "width": "5%"
                       }
@@ -698,10 +622,22 @@
                       }
                     },
                     {
-                      "type": "label",
-                      "text": "",
+                      "type": "space",
                       "style": {
-                        "width": "35%"
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "submit",
+                      "text": "submit",
+                      "class": "center_align submit_button_styles",
+                      "contentDescription": "submit"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
                       }
                     }
                   ]
