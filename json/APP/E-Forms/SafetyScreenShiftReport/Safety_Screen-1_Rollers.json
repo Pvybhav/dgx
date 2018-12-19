@@ -416,7 +416,6 @@
                                                                 }
                                                               }
                                                             ]
-                                                            
                                                           ]
                                                         }
                                                       }
@@ -506,7 +505,7 @@
                                                               "{{#if key=='legend'}}": "horizontal"
                                                             },
                                                             {
-                                                              "{{#else key!='legend'}}": "{{type}}"
+                                                              "{{#else key!='legend'}}": "horizontal"
                                                             }
                                                           ],
                                                           "text": "{{value}}",
@@ -526,52 +525,89 @@
                                                             }
                                                           ],
                                                           "components": [
-                                                            {
-                                                              "type": "vertical",
-                                                              "components": [
-                                                                {
-                                                                  "type": "horizontal",
-                                                                  "style": {
-                                                                    "padding": "0"
-                                                                  },
+                                                            [
+                                                              {
+                                                                "{{#if key=='legend'}}": {
+                                                                  "type": "vertical",
                                                                   "components": [
                                                                     {
-                                                                      "type": "switch",
-                                                                      "name": "{{key}}",
-                                                                      "value": "true",
-                                                                      "class": "switch_legend_styles",
-                                                                      "style": {
-                                                                        "height": "5%"
-                                                                      }
-                                                                    },
-                                                                    {
-                                                                      "type": "label",
-                                                                      "name": "{{key}}",
-                                                                      "text": "= {{checked}}"
-                                                                    }
-                                                                  ]
-                                                                },
-                                                                {
-                                                                  "type": "horizontal",
-                                                                  "components": [
-                                                                    {
-                                                                      "type": "switch",
-                                                                      "name": "{{key}}",
-                                                                      "value": "false",
-                                                                      "class": "switch_legend_styles",
-                                                                      "style": {
-                                                                        "height": "5%"
-                                                                      }
-                                                                    },
-                                                                    {
-                                                                      "type": "label",
-                                                                      "name": "{{key}}",
-                                                                      "text": "= {{unchecked}}"
+                                                                      "type": "horizontal",
+                                                                      "class": "{{styles}}",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "horizontal",
+                                                                          "components": [
+                                                                            {
+                                                                              "type": "switch",
+                                                                              "name": "{{key}}",
+                                                                              "value": "true",
+                                                                              "class": "switch_styles"
+                                                                            },
+                                                                            {
+                                                                              "type": "label",
+                                                                              "name": "{{key}}",
+                                                                              "text": "= {{checked}}"
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "type": "horizontal",
+                                                                          "components": [
+                                                                            {
+                                                                              "type": "switch",
+                                                                              "name": "{{key}}",
+                                                                              "value": "false",
+                                                                              "class": "switch_styles"
+                                                                            },
+                                                                            {
+                                                                              "type": "label",
+                                                                              "name": "{{key}}",
+                                                                              "text": "= {{unchecked}}"
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
                                                                     }
                                                                   ]
                                                                 }
-                                                              ]
-                                                            }
+                                                              },
+                                                              {
+                                                                "{{#elseif key!='legend'}}": {
+                                                                  "type": "vertical",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "label",
+                                                                          "text": "{{contentDescriptionText || ' '}}",
+                                                                          "name": "{{key}}",
+                                                                          "class": "center_align"
+                                                                        }
+                                                                      ],
+                                                                      "style": {
+                                                                        "height": "4%"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "switch",
+                                                                          "value": "{{value}}",
+                                                                          "name": "{{key}}",
+                                                                          "class": "{{styles}} center_align",
+                                                                          "contentDescription": "{{contentDescription || ' '}}"
+                                                                        }
+                                                                      ],
+                                                                      "style": {
+                                                                        "height": "6%"
+                                                                      }
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              }
+                                                            ]
                                                           ]
                                                         }
                                                       },
