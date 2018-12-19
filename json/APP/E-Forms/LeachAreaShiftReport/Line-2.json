@@ -62,7 +62,7 @@
           "background": "rgb(231,232,235)"
         },
         "submit_button_styles": {
-          "width": "30%",
+          "width": "15%",
           "height": "7%",
           "color": "rgb(255,255,255)",
           "background": "rgb(0,147,215)",
@@ -71,14 +71,14 @@
         "previous_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0, 102, 255)",
-          "width": "30%",
+          "width": "15%",
           "height": "7%",
           "corner_radius": "1%"
         },
         "home_button_styles": {
           "color": "rgb(255, 255, 255)",
           "background": "rgb(51, 102, 153)",
-          "width": "30%",
+          "width": "15%",
           "height": "7%",
           "corner_radius": "1%"
         }
@@ -356,20 +356,20 @@
             },
             {
               "type": "horizontal",
-              "style": {
-                "padding": "2%",
-                "border": "none"
-              },
               "items": [
                 {
                   "type": "horizontal",
                   "class": "no_padding center_align",
+                  "style": {
+                    "padding": "2%",
+                    "border": "none"
+                  },
                   "components": [
                     {
                       "type": "label",
                       "text": "",
                       "style": {
-                        "width": "2%"
+                        "width": "45%"
                       }
                     },
                     {
@@ -450,6 +450,13 @@
                       "text": "submit",
                       "class": "center_align submit_button_styles",
                       "contentDescription": "submit"
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
                     }
                   ]
                 }
