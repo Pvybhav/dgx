@@ -177,8 +177,7 @@
                   "contentDescription": "date"
                 },
                 {
-                  "type": "label",
-                  "text":"",
+                  "type": "space",
                   "style": {
                     "width": "1%"
                   }
@@ -203,8 +202,7 @@
                   }
                 },
                 {
-                  "type": "label",
-                  "text": "",
+                  "type": "space",
                   "style": {
                     "width": "1%"
                   }
@@ -228,24 +226,16 @@
                     "color": "rgb(200,130,0)"
                   }
                 },
-               {
-                "type": "label",
-                "text": "",
-                "style": {
-                  "width": "1%"
-                }
-              },
                 {
-                  "type": "label",
-                  "text": "Signed",
-                  "class": "header_2_label"
-                },
-                {
-                  "type": "label",
-                  "text": "",
+                  "type": "space",
                   "style": {
                     "width": "1%"
                   }
+                },
+                {
+                  "type": "label",
+                  "text": "Signed",
+                  "class": "header_2_label center_align"
                 },
                 {
                   "type": "textfield",
@@ -253,13 +243,6 @@
                   "placeholder": "Sign",
                   "class": "header_2_styles center_align black",
                   "contentDescription": "Sign"
-                },
-                {
-                  "type": "label",
-                  "text": "",
-                  "style": {
-                    "width": "1%"
-                  }
                 }
               ],
               "class": "no_padding"
@@ -509,7 +492,24 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://pvybhav.github.io/json/APP/E-Forms/LeachAreaShiftReport/Line-2.json"
+                          "url": "https://pvybhav.github.io/json/APP/E-Forms/LeachAreaShiftReport/Line-2.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
                         }
                       }
                     },
