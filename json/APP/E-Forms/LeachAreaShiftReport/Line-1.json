@@ -8,7 +8,7 @@
         "no_padding": {
           "padding": "0"
         },
-        "no_border":{
+        "no_border": {
           "border": "none"
         },
         "center_align": {
@@ -224,10 +224,63 @@
               "type": "horizontal",
               "items": [
                 {
-                  "type": "label",
-                  "text": "11/12/2018",
-                  "class": "header_2_styles center_align black_color",
-                  "contentDescription": "date"
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "date",
+                      "options": [
+                        {
+                          "value": "value-1",
+                          "defaultSelected": false
+                        },
+                        {
+                          "value": "value-2",
+                          "defaultSelected": true
+                        },
+                        {
+                          "value": "value-3",
+                          "defaultSelected": false
+                        }
+                      ]
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "options": [
+                        {
+                          "value": "value-1",
+                          "defaultSelected": false
+                        },
+                        {
+                          "value": "value-2",
+                          "defaultSelected": true
+                        },
+                        {
+                          "value": "value-3",
+                          "defaultSelected": false
+                        }
+                      ]
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "options": [
+                        {
+                          "value": "value-1",
+                          "defaultSelected": false
+                        },
+                        {
+                          "value": "value-2",
+                          "defaultSelected": true
+                        },
+                        {
+                          "value": "value-3",
+                          "defaultSelected": false
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "label",
