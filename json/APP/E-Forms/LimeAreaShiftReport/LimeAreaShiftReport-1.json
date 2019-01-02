@@ -177,34 +177,86 @@
           "sections": [
             {
               "type": "horizontal",
-              "class": "no_padding",
               "items": [
                 {
                   "type": "label",
                   "text": "11/12/2018",
-                  "class": "header_2_styles center_align black"
+                  "class": "header_2_styles center_align black",
+                  "contentDescription": "date"
                 },
                 {
                   "type": "label",
-                  "text": "Day Shift",
-                  "class": "header_2_styles center_align black"
+                  "text": "",
+                  "style": {
+                    "width": "1%"
+                  }
+                },
+                {
+                  "type": "dropdown",
+                  "name": "shift",
+                  "contentDescription": "shift",
+                  "class": "header_2_styles center_align",
+                  "options": [
+                    {
+                      "value": "Night Shift",
+                      "defaultSelected": "false"
+                    },
+                    {
+                      "value": "Day Shift",
+                      "defaultSelected": "true"
+                    }
+                  ],
+                  "style": {
+                    "color": "rgb(200,130,0)"
+                  }
                 },
                 {
                   "type": "label",
-                  "text": "* Operator",
-                  "class": "header_2_styles center_align black"
+                  "text": "",
+                  "style": {
+                    "width": "1%"
+                  }
+                },
+                {
+                  "type": "dropdown",
+                  "name": "operator",
+                  "contentDescription": "operator",
+                  "class": "header_2_styles center_align",
+                  "options": [
+                    {
+                      "value": "Operator-1",
+                      "defaultSelected": "true"
+                    },
+                    {
+                      "value": "Operator-2",
+                      "defaultSelected": "false"
+                    }
+                  ],
+                  "style": {
+                    "color": "rgb(200,130,0)"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "width": "1%"
+                  }
                 },
                 {
                   "type": "label",
                   "text": "Signed",
-                  "class": "header_2_label center_align"
+                  "class": "header_2_label"
                 },
                 {
-                  "type": "label",
-                  "text": "Jean Pronovost",
-                  "class": "header_2_styles center_align black"
+                  "type": "textfield",
+                  "text": "",
+                  "placeholder": "Sign",
+                  "class": "header_2_styles center_align black",
+                  "contentDescription": "Sign"
                 }
-              ]
+              ],
+              "class": "no_padding"
             },
             {
               "items": [
