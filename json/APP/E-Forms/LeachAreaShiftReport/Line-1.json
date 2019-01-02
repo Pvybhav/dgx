@@ -24,7 +24,7 @@
         "header_2_styles": {
           "size": 13,
           "width": "19%",
-          "height": "9%",
+          "height": "7%",
           "color": "rgb(0,162,224)",
           "border": "rgb(0,0,0)"
         },
@@ -165,6 +165,89 @@
             }
           },
           "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "Date/Month/Year",
+                  "class": "header_2_styles center_align black_color",
+                  "contentDescription": "date"
+                },
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "width": "1%"
+                  }
+                },
+                {
+                  "type": "dropdown",
+                  "name": "shift",
+                  "contentDescription": "shift",
+                  "class": "header_2_styles center_align",
+                  "options": [
+                    {
+                      "value": "Night Shift",
+                      "defaultSelected": "false"
+                    },
+                    {
+                      "value": "Day Shift",
+                      "defaultSelected": "true"
+                    }
+                  ],
+                  "style": {
+                    "color": "rgb(200,130,0)"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "width": "1%"
+                  }
+                },
+                {
+                  "type": "dropdown",
+                  "name": "operator",
+                  "contentDescription": "operator",
+                  "class": "header_2_styles center_align",
+                  "options": [
+                    {
+                      "value": "Operator-1",
+                      "defaultSelected": "true"
+                    },
+                    {
+                      "value": "Operator-2",
+                      "defaultSelected": "false"
+                    }
+                  ],
+                  "style": {
+                    "color": "rgb(200,130,0)"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "width": "1%"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "Signed",
+                  "class": "header_2_label"
+                },
+                {
+                  "type": "textfield",
+                  "text": "",
+                  "placeholder": "Sign",
+                  "class": "header_2_styles center_align black_color",
+                  "contentDescription": "Sign"
+                }
+              ],
+              "class": "no_padding"
+            },
             {
               "type": "horizontal",
               "items": [
