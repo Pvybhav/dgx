@@ -224,59 +224,64 @@
               "type": "horizontal",
               "items": [
                 {
-                  "type": "vertical",
+                  "type": "horizontal",
                   "components": [
                     {
-                      "type": "dropdown",
-                      "name": "date",
-                      "options": [
+                      "type": "vertical",
+                      "components": [
                         {
-                          "value": "value-1",
-                          "defaultSelected": false
+                          "type": "dropdown",
+                          "name": "date",
+                          "options": [
+                            {
+                              "value": "value-1",
+                              "defaultSelected": false
+                            },
+                            {
+                              "value": "value-2",
+                              "defaultSelected": true
+                            },
+                            {
+                              "value": "value-3",
+                              "defaultSelected": false
+                            }
+                          ]
                         },
                         {
-                          "value": "value-2",
-                          "defaultSelected": true
+                          "type": "dropdown",
+                          "name": "month",
+                          "options": [
+                            {
+                              "value": "value-1",
+                              "defaultSelected": false
+                            },
+                            {
+                              "value": "value-2",
+                              "defaultSelected": true
+                            },
+                            {
+                              "value": "value-3",
+                              "defaultSelected": false
+                            }
+                          ]
                         },
                         {
-                          "value": "value-3",
-                          "defaultSelected": false
-                        }
-                      ]
-                    },
-                    {
-                      "type": "dropdown",
-                      "name": "month",
-                      "options": [
-                        {
-                          "value": "value-1",
-                          "defaultSelected": false
-                        },
-                        {
-                          "value": "value-2",
-                          "defaultSelected": true
-                        },
-                        {
-                          "value": "value-3",
-                          "defaultSelected": false
-                        }
-                      ]
-                    },
-                    {
-                      "type": "dropdown",
-                      "name": "year",
-                      "options": [
-                        {
-                          "value": "value-1",
-                          "defaultSelected": false
-                        },
-                        {
-                          "value": "value-2",
-                          "defaultSelected": true
-                        },
-                        {
-                          "value": "value-3",
-                          "defaultSelected": false
+                          "type": "dropdown",
+                          "name": "year",
+                          "options": [
+                            {
+                              "value": "value-1",
+                              "defaultSelected": false
+                            },
+                            {
+                              "value": "value-2",
+                              "defaultSelected": true
+                            },
+                            {
+                              "value": "value-3",
+                              "defaultSelected": false
+                            }
+                          ]
                         }
                       ]
                     }
