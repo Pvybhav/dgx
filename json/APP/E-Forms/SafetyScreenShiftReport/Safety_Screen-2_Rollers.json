@@ -408,9 +408,6 @@
                                                               "{{#if key=='legend'}}": "horizontal"
                                                             },
                                                             {
-                                                              "{{#elseif key=='Completed'}}": "horizontal"
-                                                            },
-                                                            {
                                                               "{{#else key=='label'}}": "{{type}}"
                                                             }
                                                           ],
@@ -464,42 +461,6 @@
                                                                           "class": "center_align",
                                                                           "style": {
                                                                             "width": "8%"
-                                                                          }
-                                                                        }
-                                                                      ]
-                                                                    }
-                                                                  ]
-                                                                }
-                                                              },
-                                                              {
-                                                                "{{#elseif key=='Completed'}}": {
-                                                                  "type": "horizontal",
-                                                                  "components": [
-                                                                    {
-                                                                      "type": "horizontal",
-                                                                      "components": [
-                                                                        {
-                                                                          "type": "label",
-                                                                          "text": "{{contentDescriptionText || ' '}}",
-                                                                          "class": "center_align",
-                                                                          "style": {
-                                                                            "width": "5%"
-                                                                          }
-                                                                        },
-                                                                        {
-                                                                          "type": "switch",
-                                                                          "value": "{{contentDescription || ' '}}",
-                                                                          "class": "switch_styles",
-                                                                          "style": {
-                                                                            "width": "10%"
-                                                                          }
-                                                                        },
-                                                                        {
-                                                                          "type": "label",
-                                                                          "text": "",
-                                                                          "class": "center_align",
-                                                                          "style": {
-                                                                            "width": "5%"
                                                                           }
                                                                         }
                                                                       ]
