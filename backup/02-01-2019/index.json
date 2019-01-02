@@ -1,0 +1,201 @@
+{
+  "$jason": {
+    "head": {
+      "title": "APP",
+      "description": "A jasonette app",
+      "offline": "true",
+      "styles": {
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,162,224)"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": 50,
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        }
+      },
+      "actions": {
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "type": "vertical",
+              "class": "center_align",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Line-1 (without loops)",
+                      "class": "center_align button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/Line-1.json"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Line-2 (without loops)",
+                      "class": "center_align button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/Line-2.json"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Loops - Generating table",
+                      "class": "center_align button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/Loops.json"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Leach Area Shift Report - Line-1",
+                      "class": "center_align button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/LeachAreaShiftReport-Line-1.json"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Leach Area Shift Report - Line-2",
+                      "class": "center_align button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/LeachAreaShiftReport-Line-2.json"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Safety Screen Shift Report - Line-1",
+                      "class": "center_align button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/SafetyScreenShiftReport-Line-1.json"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Safety Screen Shift Report - Line-2",
+                      "class": "center_align button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/SafetyScreenShiftReport-Line-2.json"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Safety Screen Shift Report - Safety Screen-1 Rollers",
+                      "class": "center_align button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/SafetyScreenShiftReport-Safety_Screen-1_Rollers.json"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Safety Screen Shift Report - Safety Screen-2 Rollers",
+                      "class": "center_align button_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://pvybhav.github.io/json/APP/SafetyScreenShiftReport-Safety_Screen-2_Rollers.json"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
