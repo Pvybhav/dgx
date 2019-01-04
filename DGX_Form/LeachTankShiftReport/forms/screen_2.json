@@ -163,10 +163,16 @@
           }
         },
         "handleSave": {
-          "type": "$util.alert",
+          "type": "$global.set",
           "options": {
-            "title": "Global changed values",
-            "description": "{{JSON.stringify($global)}}"
+            "description": "{{$get.description || ''}}"
+          },
+          "success": {
+            "type": "$util.alert",
+            "options": {
+              "title": "Global changed values",
+              "description": "{{JSON.stringify($global)}}"
+            }
           }
         }
       },
@@ -322,9 +328,7 @@
                                                                           "action": {
                                                                             "trigger": "handleSwitchValues",
                                                                             "options": {
-                                                                              "item": "Light is On?",
-                                                                              "fieldName": "{{id}}",
-                                                                              "value": "{{$get{{id}}]}} {{$get.toString()}} {{JSON.stringify($get)}}"
+                                                                              "fieldName": "{{id}}"
                                                                             }
                                                                           }
                                                                         }
