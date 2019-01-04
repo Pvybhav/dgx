@@ -160,14 +160,14 @@
         "handleSwitchValues": {
           "type": "$global.set",
           "options": {
-            "section_id":"switch_form1_page2",
+            "section_id":"form1_page2",
             "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
           }
         },
         "handleSave": {
           "type": "$global.set",
           "options": {
-            "section_id":"global_form1_page2",
+            "section_id":"form1_page2",
             "description": "{{$get.description || ''}}"
           },
           "success": {
