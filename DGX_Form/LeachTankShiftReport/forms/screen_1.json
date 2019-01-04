@@ -2,6 +2,7 @@
   "$jason": {
     "head": {
       "title": "Line-1",
+      "json_id":"field",
       "description": "Leach Area Shift Report Line-1",
       "offline": "true",
       "styles": {
@@ -167,18 +168,22 @@
         "handleDropdownAndTextValues": {
           "type": "$global.set",
           "options": {
+            "section_id":"dropdown_form1_page1",
             "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
           }
         },
         "handleSwitchValues": {
           "type": "$global.set",
+          
           "options": {
+            "section_id":"switch_form1_page1",
             "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
           }
         },
         "handleSave": {
           "type": "$global.set",
           "options": {
+            "section_id":"global_form1_page1",
             "sign": "{{$get.signed || ''}}"
           },
           "success": {
@@ -586,6 +591,7 @@
                   "action": {
                     "type": "$global.set",
                     "options": {
+                      "section_id":"dropdown2_form1_page1",
                       "operator": "{{$get.operator}}"
                     }
                   }
