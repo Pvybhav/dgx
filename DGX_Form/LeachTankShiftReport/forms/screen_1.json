@@ -2,7 +2,7 @@
   "$jason": {
     "head": {
       "title": "Line-1",
-      "json_id":"field",
+      "json_id": "field",
       "description": "Leach Area Shift Report Line-1",
       "offline": "true",
       "styles": {
@@ -104,13 +104,16 @@
           "width": "15%",
           "height": "7%",
           "corner_radius": "1%"
+        },
+        "date_styles": {
+          "width": "8%"
         }
       },
       "actions": {
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://raw.githubusercontent.com/Pvybhav/pvybhav.github.io/master/DGX_Form/LeachTankShiftReport/data/screen_1.json",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/data/screen_1.json",
             "preload": {
               "style": {
                 "background": "#ff0000"
@@ -130,13 +133,82 @@
             }
           },
           "success": {
-            "type": "$render"
+            "type": "$render",
+            "success": {
+              "type": "$global.set",
+              "options": {
+                "section_id": "form1_page1",
+                "date": "7",
+                "month": "1",
+                "year": "2019",
+                "shift": "Day Shift",
+                "operator": "Operator-1",
+                "sign": "",
+                "agitator_shaft_l1_101": "false",
+                "agitator_shaft_l1_102": "true",
+                "agitator_shaft_l1_103": "true",
+                "agitator_shaft_l1_104": "true",
+                "agitator_shaft_l1_105": "true",
+                "agitator_shaft_l1_111": "true",
+                "agitator_shaft_l1_112": "true",
+                "agitator_shaft_l1_113": "true",
+                "agitator_shaft_l1_114": "true",
+                "agitator_shaft_l1_115": "true",
+                "filter_bypass_indicator_l1_101": "false",
+                "filter_bypass_indicator_l1_102": "true",
+                "filter_bypass_indicator_l1_103": "true",
+                "filter_bypass_indicator_l1_104": "true",
+                "filter_bypass_indicator_l1_105": "true",
+                "filter_bypass_indicator_l1_111": "true",
+                "filter_bypass_indicator_l1_112": "true",
+                "filter_bypass_indicator_l1_113": "true",
+                "filter_bypass_indicator_l1_114": "true",
+                "filter_bypass_indicator_l1_115": "true",
+                "gearbox_oil_sight_glass_l1_101": "false",
+                "gearbox_oil_sight_glass_l1_102": "true",
+                "gearbox_oil_sight_glass_l1_103": "true",
+                "gearbox_oil_sight_glass_l1_104": "true",
+                "gearbox_oil_sight_glass_l1_105": "true",
+                "gearbox_oil_sight_glass_l1_111": "true",
+                "gearbox_oil_sight_glass_l1_112": "true",
+                "gearbox_oil_sight_glass_l1_113": "true",
+                "gearbox_oil_sight_glass_l1_114": "true",
+                "gearbox_oil_sight_glass_l1_115": "true",
+                "gearbox_vibration_l1_101": "false",
+                "gearbox_vibration_l1_102": "true",
+                "gearbox_vibration_l1_103": "true",
+                "gearbox_vibration_l1_104": "true",
+                "gearbox_vibration_l1_105": "true",
+                "gearbox_vibration_l1_111": "true",
+                "gearbox_vibration_l1_112": "true",
+                "gearbox_vibration_l1_113": "true",
+                "gearbox_vibration_l1_114": "true",
+                "gearbox_vibration_l1_115": "true",
+                "cyanide_lines_l1_101": "false",
+                "cyanide_lines_l1_102": "true",
+                "cyanide_lines_l1_103": "true",
+                "cyanide_lines_l1_104": "true",
+                "cyanide_lines_l1_105": "true",
+                "cyanide_lines_l1_111": "true",
+                "cyanide_lines_l1_112": "true",
+                "cyanide_lines_l1_113": "true",
+                "cyanide_lines_l1_114": "true",
+                "cyanide_lines_l1_115": "true"
+              },
+              "success": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "Page loaded successfully",
+                  "type": "warning"
+                }
+              }
+            }
           }
         },
         "$show": {
           "type": "$network.request",
           "options": {
-            "url": "https://raw.githubusercontent.com/Pvybhav/pvybhav.github.io/master/DGX_Form/LeachTankShiftReport/data/screen_1.json",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/data/screen_1.json",
             "preload": {
               "style": {
                 "background": "#ff0000"
@@ -156,7 +228,14 @@
             }
           },
           "success": {
-            "type": "$render"
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
           }
         },
         "$pull": {
@@ -168,29 +247,44 @@
         "handleDropdownAndTextValues": {
           "type": "$global.set",
           "options": {
-            "section_id":"form1_page1",
+            "section_id": "form1_page1",
             "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
           }
         },
         "handleSwitchValues": {
           "type": "$global.set",
-          
           "options": {
-            "section_id":"form1_page1",
-            "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
+            "section_id": "form1_page1",
+            "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}",
+            "currentFieldValue": "{{$get[$jason.fieldName]}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "{{$global.currentFieldValue}}",
+              "type": "warning"
+            }
           }
         },
         "handleSave": {
           "type": "$global.set",
           "options": {
-            "section_id":"form1_page1",
-            "sign": "{{$get.signed || ''}}"
+            "section_id": "form1_page1",
+            "sign": "{{$get.sign || ''}}",
+            "date23": "{{$get.date}}"
           },
           "success": {
-            "type": "$util.alert",
+            "type": "$global.set",
             "options": {
-              "title": "Global changed values",
-              "description": "{{JSON.stringify($global)}}"
+              "section_id": "form1_page1",
+              "sign2": "vybhav2"
+            },
+            "success": {
+              "type": "$util.alert",
+              "options": {
+                "title": "Global changed values",
+                "description": "{{JSON.stringify($global)}} 1111111111111111 {{$global.f1_s1_values.sign}} {{$global.f1_s1_values.date}} {{$global.date23}} {{$get.date}}"
+              }
             }
           }
         }
@@ -282,144 +376,32 @@
                     {
                       "type": "dropdown",
                       "name": "date",
+                      "value": "{{$global.date23}}",
                       "contentDescription": "date",
-                      "class": "header_2_styles center_align",
-                      "style": {
-                        "width": "8%"
-                      },
-                      "action": {
-                        "type": "$util.alert",
-                        "options": {
-                          "title": "date",
-                          "description": "{{$get.date}}"
-                        }
-                      },
                       "options": [
                         {
-                          "value": "1",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "2",
+                          "value": "0",
                           "defaultSelected": "true"
                         },
                         {
-                          "value": "3",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "4",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "5",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "6",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "7",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "8",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "9",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "10",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "11",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "12",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "13",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "14",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "15",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "16",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "17",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "18",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "19",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "20",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "21",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "22",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "23",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "24",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "25",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "26",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "27",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "28",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "29",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "30",
-                          "defaultSelected": "false"
-                        },
-                        {
-                          "value": "31",
+                          "value": "2",
                           "defaultSelected": "false"
                         }
-                      ]
+                      ],
+                      "style": {
+                        "size": "13",
+                        "color": "rgb(0, 0, 0)",
+                        "width": "100",
+                        "height": "80",
+                        "border": "rgb(0, 0, 0)"
+                      },
+                      "action": {
+                        "type": "$util.toast",
+                        "options": {
+                          "text": "date {{$get.date}}",
+                          "type": "warning"
+                        }
+                      }
                     },
                     {
                       "type": "dropdown",
@@ -591,7 +573,7 @@
                   "action": {
                     "type": "$global.set",
                     "options": {
-                      "section_id":"form1_page1",
+                      "section_id": "form1_page1",
                       "operator": "{{$get.operator}}"
                     }
                   }
@@ -606,8 +588,8 @@
                 },
                 {
                   "type": "textfield",
-                  "text": "",
-                  "name": "signed",
+                  "value": "{{$global.sign || ''}}",
+                  "name": "sign",
                   "placeholder": "Sign",
                   "class": "header_2_styles center_align black_color",
                   "contentDescription": "Sign"
@@ -745,16 +727,16 @@
                                                                       "components": [
                                                                         {
                                                                           "type": "switch",
-                                                                          "value": "{{value}}",
+                                                                          "value": "{{(var thisFieldName = id; return $global[$jason[thisFieldName]] || value)();}}",
                                                                           "name": "{{id}}",
                                                                           "class": "{{styles}} center_align",
                                                                           "contentDescription": "{{contentDescription || ' '}}",
                                                                           "action": {
                                                                             "trigger": "handleSwitchValues",
                                                                             "options": {
-                                                                              "item": "Light is On?",
                                                                               "fieldName": "{{id}}",
-                                                                              "value": "{{$get{{id}}]}} {{$get.toString()}} {{JSON.stringify($get)}}"
+                                                                              "switchValue": "{{$global[$jason[id]] || value}}",
+                                                                              "conditionValue": "{{$global.f1_s1_values}}"
                                                                             }
                                                                           }
                                                                         }
@@ -832,7 +814,7 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://raw.githubusercontent.com/Pvybhav/pvybhav.github.io/master/DGX_Form/home.json",
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/home.json",
                           "preload": {
                             "style": {
                               "background": "#ff0000"
@@ -869,7 +851,7 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://raw.githubusercontent.com/Pvybhav/pvybhav.github.io/master/DGX_Form/LeachTankShiftReport/forms/screen_2.json",
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/forms/screen_2.json",
                           "preload": {
                             "style": {
                               "background": "#ff0000"

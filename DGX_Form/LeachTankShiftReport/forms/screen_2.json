@@ -2,7 +2,7 @@
   "$jason": {
     "head": {
       "title": "Line-1",
-      "json_id":"field",
+      "json_id": "field",
       "description": "Leach Area Shift Report Line-2",
       "offline": "true",
       "styles": {
@@ -102,7 +102,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://raw.githubusercontent.com/Pvybhav/pvybhav.github.io/master/DGX_Form/LeachTankShiftReport/data/screen_2.json",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/data/screen_2.json",
             "preload": {
               "style": {
                 "background": "#ff0000"
@@ -122,13 +122,20 @@
             }
           },
           "success": {
-            "type": "$render"
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
           }
         },
         "$show": {
           "type": "$network.request",
           "options": {
-            "url": "https://raw.githubusercontent.com/Pvybhav/pvybhav.github.io/master/DGX_Form/LeachTankShiftReport/data/screen_2.json",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/data/screen_2.json",
             "preload": {
               "style": {
                 "background": "#ff0000"
@@ -160,14 +167,14 @@
         "handleSwitchValues": {
           "type": "$global.set",
           "options": {
-            "section_id":"form1_page2",
+            "section_id": "switch_form1_page2",
             "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
           }
         },
         "handleSave": {
           "type": "$global.set",
           "options": {
-            "section_id":"form1_page2",
+            "section_id": "global_form1_page2",
             "description": "{{$get.description || ''}}"
           },
           "success": {
@@ -409,6 +416,7 @@
                   "components": [
                     {
                       "type": "textarea",
+                      "value": "{{$global.description || ''}}",
                       "name": "description",
                       "placeholder": "Enter description",
                       "contentDescription": "Enter Description",
@@ -450,7 +458,7 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://raw.githubusercontent.com/Pvybhav/pvybhav.github.io/master/DGX_Form/LeachTankShiftReport/forms/screen_1.json",
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/forms/screen_1.json",
                           "preload": {
                             "style": {
                               "background": "#ff0000"
@@ -487,7 +495,7 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://raw.githubusercontent.com/Pvybhav/pvybhav.github.io/master/DGX_Form/home.json",
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/home.json",
                           "preload": {
                             "style": {
                               "background": "#ff0000"
@@ -524,18 +532,11 @@
                       "contentDescription": "submit",
                       "action": {
                         "type": "$global.reset",
-                      "options": {
-                        "save":"true",
-                        "filename":"LeachTankShiftReport"
-                      },
-                      "success": {
-                        "type": "$util.alert",
                         "options": {
-                          "title": "Submit",
-                          "description": "Submitted Successfully!"
+                          "save": "true",
+                          "filename": "LeachTankShiftReport"
                         }
                       }
-                    }
                     },
                     {
                       "type": "label",
