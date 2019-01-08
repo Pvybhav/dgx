@@ -62,7 +62,7 @@
                     {
                       "type": "switch",
                       "name": "light",
-                      "value": "true",
+                      "value": "{{$global.lightOn}}",
                       "switch_text" :"1",
                       "style":{
                         "textsize":"10",
@@ -125,7 +125,7 @@
                           "section_id":"something",
                           "dropdownval": "{{$get.shift}}",
                           "textbox": "{{$get.txtfield}}",
-                          "checkbox":"{{$get.checkbox}}"
+                          "lightOn":"{{$get.light}}"
                         },
                         "success": {
                           "type": "$href",
