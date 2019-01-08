@@ -1,0 +1,146 @@
+{
+  "$jason": {
+    "head": {
+      "actions": {
+        "$show": {
+          "type": "$render"
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value" : "{{$global.dropdownval}}",
+                      "contentDescription": "shift",
+                      "options": [
+                        {
+                          "value": "Value 1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Value 2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Value 3",
+                          "defaultSelected": "true"
+                        }
+                      ],
+                      "style": {
+                        "size": "20",
+                        "color": "rgb(200,130,0)"
+
+                      },
+                      "action": {
+                        "type": "$util.toast",
+                        "options": {
+                          "text": "{{$get.shift}}",
+                          "type": "warning"
+                        }
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "txtfield",
+                      "placeholder": "Enter Text",
+                      "style": {
+                        "placeholder_color": "#cecece",
+                        "font": "HelveticaNeue",
+                        "align": "center",
+                        "width": "200",
+                        "height": "60",
+                        "size": "12"
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "light",
+                      "value": "true",
+                      "switch_text" :"1",
+                      "style":{
+                        "textsize":"10",
+                        "scalex" : "5",
+                        "scaley":"5"
+                      },
+                      "action": {
+                        "trigger": "banner",
+                        "options": {
+                          "item": "Light is On?"
+                        }
+                      }
+                    },
+                    {
+                      "type": "checkboxes",
+                      "name": "checkbox",
+                      "options": [
+                        {
+                          "label": "Checkbox Option 1",
+                          "value": "Value 1",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "label": "Checkbox Option 2",
+                          "value": "Value 2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "label": "Checkbox Option 3",
+                          "value": "Value 3",
+                          "defaultSelected": "true"
+                        }
+                      ],
+                      "style": {
+                        "size": "30",
+                        "color": "rgb(200,0,0)",
+                        "padding": "10"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Click",
+                      "style": {
+                        "width": "50",
+                        "height": "50",
+                        "background": "#00ff00",
+                        "color": "#ffffff",
+                        "font": "HelveticaNeue",
+                        "size": "12"
+                      },
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "dropdownval": "{{$get.shift}}",
+                          "textbox": "{{$get.txtfield}}",
+                          "checkbox":"{{$get.checkbox}}"
+                        },
+                        "success": {
+                          "type": "$href",
+                          "options": {
+                            "url": "file://pageTwo.json"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

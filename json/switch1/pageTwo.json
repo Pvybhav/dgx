@@ -1,0 +1,64 @@
+{
+  "$jason": {
+    "head": {
+      "actions": {
+        "$show":{
+          "type":"$render"
+        }
+      },
+      "templates" : {
+        "body":{
+          "sections":[
+            {
+              "items":[
+                {
+                  "type":"vertical",
+                  "components" : [
+                    {
+                      "type": "textfield",
+                      "name": "txtfield2",
+                      "value": "{{$global.dropdownval}}",
+                      "placeholder": "Enter Text",
+                      "style": {
+                        "placeholder_color": "#cecece",
+                        "font": "HelveticaNeue",
+                        "align": "center",
+                        "width": "200",
+                        "height": "60",
+                        "size": "12"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "txtfield2",
+                      "value": "{{$global.checkbox}}",
+                      "placeholder": "Enter Text",
+                      "style": {
+                        "placeholder_color": "#cecece",
+                        "font": "HelveticaNeue",
+                        "align": "center",
+                        "width": "200",
+                        "height": "60",
+                        "size": "12"
+                      }
+                    },
+                    {
+                      "type":"button",
+                      "text": "Back",
+                      "action":{
+                        "type":"$href",
+                        "options":{
+                          "url":"file://index.json"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
