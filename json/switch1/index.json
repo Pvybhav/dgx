@@ -79,7 +79,7 @@
                     },
                     {
                       "type": "switch",
-                      "name": "light",
+                      "name": "lights",
                       "value": [
                         {
                             "{{#if $global.lightOn}}": "{{$global.lightOn}}"
@@ -98,7 +98,7 @@
                         "type": "$global.set",
                         "options": {
                           "section_id":"something",
-                          "lightOn":"{{$get.light}}"
+                          "lightOn":"{{$get.lights}}"
                         }
                       }
                     }
