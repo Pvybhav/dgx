@@ -2,8 +2,28 @@
   "$jason": {
     "head": {
       "actions": {
-        "$show": {
-          "type": "$render"
+        "$load": {
+          "type": "$global.set",
+          "options": {
+            "section_id":"something",
+            "lightOn":"{{$global.lightOn || 'true'}}"
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "$pull": {
+          "type": "$reload",
+          "success": {
+            "type": "$render"
+          }
         }
       },
       "templates": {
