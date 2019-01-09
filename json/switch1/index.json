@@ -62,7 +62,7 @@
                     {
                       "type": "switch",
                       "name": "light",
-                      "value": "{{true || $global.lightOn}}",
+                      "value": "{{'true' || $global.lightOn}}",
                       "switch_text" :"1",
                       "style":{
                         "textsize":"10",
@@ -70,9 +70,10 @@
                         "scaley":"5"
                       },
                       "action": {
-                        "trigger": "banner",
+                        "type": "$global.set",
                         "options": {
-                          "item": "Light is On?"
+                          "section_id":"something",
+                          "lightOn":"{{$get.light}}"
                         }
                       }
                     }
@@ -97,10 +98,6 @@
                       "action": {
                         "type": "$global.set",
                         "options": {
-                          "section_id":"something",
-                          "dropdownval": "{{$get.shift}}",
-                          "textbox": "{{$get.txtfield}}",
-                          "lightOn":"{{$get.light}}"
                         },
                         "success": {
                           "type": "$href",

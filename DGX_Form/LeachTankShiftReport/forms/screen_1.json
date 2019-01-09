@@ -223,7 +223,35 @@
         "$load": {
           "type": "$global.set",
           "options": {
+          
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "$pull": {
+          "type": "$reload",
+          "success": {
+            "type": "$render"
+          }
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
             "section_id": "form1_page1",
+            "sign": "{{$get.sign || ''}}",
+            "date": "{{$get.date}}",
+            "month": "{{$get.month}}",
+            "year": "{{$get.year}}",
+            "shift": "{{$get.shift}}",
+            "operator": "{{$get.operator}}",
             "agitator_shaft_l1_101": "true",
             "agitator_shaft_l1_102": "true",
             "agitator_shaft_l1_103": "true",
@@ -274,34 +302,6 @@
             "cyanide_lines_l1_113": "true",
             "cyanide_lines_l1_114": "true",
             "cyanide_lines_l1_115": "true"
-          },
-          "success": {
-            "type": "$render",
-            "success": {
-              "type": "$util.toast",
-              "options": {
-                "text": "Page loaded successfully",
-                "type": "warning"
-              }
-            }
-          }
-        },
-        "$pull": {
-          "type": "$reload",
-          "success": {
-            "type": "$render"
-          }
-        },
-        "handleSave": {
-          "type": "$global.set",
-          "options": {
-            "section_id": "form1_page1",
-            "sign": "{{$get.sign || ''}}",
-            "date": "{{$get.date}}",
-            "month": "{{$get.month}}",
-            "year": "{{$get.year}}",
-            "shift": "{{$get.shift}}",
-            "operator": "{{$get.operator}}"
           },
           "success": {
             "type": "$util.toast",
