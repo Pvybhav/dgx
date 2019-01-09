@@ -83,10 +83,7 @@
                       "name": "lights",
                       "value": [
                         {
-                          "{{#if $global.lightOn == 'true'}}": "false"
-                        },
-                        {
-                          "{{#elseif $global.lightOn == 'false'}}": "false"
+                          "{{#if $global.lightOn}}": "true"
                         },
                         {
                           "{{#else}}": "false"
