@@ -98,6 +98,9 @@
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id":"something",
+                          "dropdownval": "{{$get.shift}}",
+                          "textbox": "{{$get.txtfield}}"
                         },
                         "success": {
                           "type": "$href",
