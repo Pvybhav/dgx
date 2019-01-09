@@ -81,7 +81,14 @@
                     {
                       "type": "switch",
                       "name": "light",
-                      "value": "{{$global.lightOn}}",
+                      "value": [
+                        {
+                            "{{#if $global.lightOn}}": "{{$global.lightOn}}"
+                        },
+                        {
+                            "{{#else}}": "true"
+                        }
+                    ],
                       "switch_text" :"1",
                       "style":{
                         "textsize":"10",
