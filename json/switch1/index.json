@@ -176,7 +176,11 @@
                         "options": {
                           "section_id":"something",
                           "dropdownval": "{{$get.shift}}",
-                          "textbox": "{{$get.txtfield}}"
+                          "textbox": "{{$get.txtfield}}",
+                          "lightOn2":"{{$global.lightOn2 || 'false'}}",
+                          "lightOn1":"{{$global.lightOn1 || 'false'}}",
+                          "lightOn3":"{{$global.lightOn3 || 'false'}}",
+                          "lightOn":"{{$global.lightOn || 'false'}}"
                           
                         },
                         "success": {
