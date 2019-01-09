@@ -202,10 +202,38 @@
                           "section_id":"something",
                           "dropdownval": "{{$get.shift}}",
                           "textbox": "{{$get.txtfield}}",
-                          "lightOn2":"{{$get.lights2}}",
-                          "lightOn1":"{{$get.lights1}}",
-                          "lightOn3":"{{$get.lights3}}",
-                          "lightOn":"{{$get.lights}}"
+                          "lightOn2":[
+                            {
+                              "{{#if $global.lightOn2}}": "{{$global.lightOn2}}"
+                            },
+                            {
+                              "{{#else}}": "false"
+                            }
+                          ],
+                          "lightOn1":[
+                            {
+                              "{{#if $global.lightOn2}}": "{{$global.lightOn2}}"
+                            },
+                            {
+                              "{{#else}}": "false"
+                            }
+                          ],
+                          "lightOn3":[
+                            {
+                              "{{#if $global.lightOn2}}": "{{$global.lightOn2}}"
+                            },
+                            {
+                              "{{#else}}": "false"
+                            }
+                          ],
+                          "lightOn":[
+                            {
+                              "{{#if $global.lightOn2}}": "{{$global.lightOn2}}"
+                            },
+                            {
+                              "{{#else}}": "false"
+                            }
+                          ]
                         },
                         "success": {
                           "type": "$href",
