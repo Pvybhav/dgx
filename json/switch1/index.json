@@ -85,7 +85,7 @@
                             "{{#if $global.lightOn}}": "{{$global.lightOn}}"
                         },
                         {
-                            "{{#else}}": "true"
+                            "{{#else !$global.lightOn}}": "true"
                         }
                     ],
                       "switch_text" :"1",
