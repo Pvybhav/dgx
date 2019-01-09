@@ -5,7 +5,7 @@
         "$load": {
           "type": "$global.set",
           "options": {
-            "lightOn":"{{$global.lightOn || 'true'}}"
+            // "lightOn":"{{$global.lightOn || 'true'}}"
           },
           "success": {
             "type": "$render",
@@ -36,7 +36,7 @@
                     {
                       "type": "dropdown",
                       "name": "shift",
-                      "value" : "{{$global.dropdownval}}",
+                      "value" : "Value 1",
                       "contentDescription": "shift",
                       "options": [
                         {
