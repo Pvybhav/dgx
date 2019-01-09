@@ -102,6 +102,81 @@
                           "lightOn":"{{$get.lights}}"
                         }
                       }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "lights3",
+                      "value": [
+                        {
+                          "{{#if $global.lightOn3}}": "{{$global.lightOn3}}"
+                        },
+                        {
+                          "{{#else}}": "false"
+                        }
+                      ],
+                      "switch_text" :"1",
+                      "style":{
+                        "textsize":"10",
+                        "scalex" : "5",
+                        "scaley":"5"
+                      },
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id":"something",
+                          "lightOn3":"{{$get.lights3}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "lights1",
+                      "value": [
+                        {
+                          "{{#if $global.lightOn1}}": "{{$global.lightOn1}}"
+                        },
+                        {
+                          "{{#else}}": "false"
+                        }
+                      ],
+                      "switch_text" :"1",
+                      "style":{
+                        "textsize":"10",
+                        "scalex" : "5",
+                        "scaley":"5"
+                      },
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id":"something",
+                          "lightOn1":"{{$get.lights1}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "switch",
+                      "name": "lights2",
+                      "value": [
+                        {
+                          "{{#if $global.lightOn2}}": "{{$global.lightOn2}}"
+                        },
+                        {
+                          "{{#else}}": "false"
+                        }
+                      ],
+                      "switch_text" :"1",
+                      "style":{
+                        "textsize":"10",
+                        "scalex" : "5",
+                        "scaley":"5"
+                      },
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id":"something",
+                          "lightOn2":"{{$get.lights2}}"
+                        }
+                      }
                     }
                     
 
