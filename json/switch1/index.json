@@ -5,7 +5,38 @@
         "$load": {
           "type": "$global.set",
           "options": {
-
+            "lightOn2":[
+              {
+                "{{#if $global.lightOn2}}": "{{$global.lightOn2}}"
+              },
+              {
+                "{{#else}}": "false"
+              }
+            ],
+            "lightOn1":[
+              {
+                "{{#if $global.lightOn1}}": "{{$global.lightOn1}}"
+              },
+              {
+                "{{#else}}": "false"
+              }
+            ],
+            "lightOn3":[
+              {
+                "{{#if $global.lightOn3}}": "{{$global.lightOn3}}"
+              },
+              {
+                "{{#else}}": "false"
+              }
+            ],
+            "lightOn":[
+              {
+                "{{#if $global.lightOn}}": "{{$global.lightOn}}"
+              },
+              {
+                "{{#else}}": "false"
+              }
+            ]
           },
           "success": {
             "type": "$render",
@@ -81,14 +112,7 @@
                     {
                       "type": "switch",
                       "name": "lights",
-                      "value": [
-                        {
-                          "{{#if $global.lightOn}}": "{{$global.lightOn}}"
-                        },
-                        {
-                          "{{#else}}": "false"
-                        }
-                      ],
+                      "value": "{{$global.lightOn}}",
                       "switch_text" :"1",
                       "style":{
                         "textsize":"10",
@@ -106,14 +130,7 @@
                     {
                       "type": "switch",
                       "name": "lights3",
-                      "value": [
-                        {
-                          "{{#if $global.lightOn3}}": "{{$global.lightOn3}}"
-                        },
-                        {
-                          "{{#else}}": "false"
-                        }
-                      ],
+                      "value": "{{$global.lightOn3}}",
                       "switch_text" :"1",
                       "style":{
                         "textsize":"10",
@@ -131,14 +148,7 @@
                     {
                       "type": "switch",
                       "name": "lights1",
-                      "value": [
-                        {
-                          "{{#if $global.lightOn1}}": "{{$global.lightOn1}}"
-                        },
-                        {
-                          "{{#else}}": "false"
-                        }
-                      ],
+                      "value": "{{$global.lightOn1}}",
                       "switch_text" :"1",
                       "style":{
                         "textsize":"10",
@@ -156,14 +166,7 @@
                     {
                       "type": "switch",
                       "name": "lights2",
-                      "value": [
-                        {
-                          "{{#if $global.lightOn2}}": "{{$global.lightOn2}}"
-                        },
-                        {
-                          "{{#else}}": "false"
-                        }
-                      ],
+                      "value": "{{$global.lightOn2}}",
                       "switch_text" :"1",
                       "style":{
                         "textsize":"10",
@@ -202,38 +205,7 @@
                           "section_id":"something",
                           "dropdownval": "{{$get.shift}}",
                           "textbox": "{{$get.txtfield}}",
-                          "lightOn2":[
-                            {
-                              "{{#if $global.lightOn2}}": "{{$global.lightOn2}}"
-                            },
-                            {
-                              "{{#else}}": "false"
-                            }
-                          ],
-                          "lightOn1":[
-                            {
-                              "{{#if $global.lightOn1}}": "{{$global.lightOn1}}"
-                            },
-                            {
-                              "{{#else}}": "false"
-                            }
-                          ],
-                          "lightOn3":[
-                            {
-                              "{{#if $global.lightOn3}}": "{{$global.lightOn3}}"
-                            },
-                            {
-                              "{{#else}}": "false"
-                            }
-                          ],
-                          "lightOn":[
-                            {
-                              "{{#if $global.lightOn}}": "{{$global.lightOn}}"
-                            },
-                            {
-                              "{{#else}}": "false"
-                            }
-                          ]
+                          
                         },
                         "success": {
                           "type": "$href",
