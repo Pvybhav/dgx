@@ -1244,11 +1244,11 @@
                           "type":"vertical",
                           "components":[
                             {
-                          
                               "type":"horizontal",
                               "style":{
                                 "width":"49%",
-                                "align":"center"
+                                "align":"center",
+                                "padding_left":"5"
                               },
                               "components":[
                               
@@ -1257,8 +1257,8 @@
                                     "components": [
                                       {
                                         "type": "label",
-                                        "text": "Strainer Press. Upstream",
-                                        "class": "black_color",
+                                        "text": "Under Pan",
+                                        "class": "center_align black_color",
                                         "style":{
                                           "padding_left":"5"
                                           
@@ -1275,15 +1275,15 @@
                                   },
                                   {
                                     "type": "label",
-                                    "text": "16",
+                                    "text": "17",
                                     "class": "center_align black_color"
                                   },
                                   {
                                     "type": "textfield",
-                                    "name": "strainer_press_screen1",
-                                    "value": "{{$global.strainer_press_screen1 || ''}}",
+                                    "name": "TS_Under_Pan_screen1",
+                                    "value": "{{$global.TS_Under_Pan_screen1 || ''}}",
                                     "class": "center_align black_color",
-                                    "contentDescription": "sixteen",
+                                    "contentDescription": "seventeen",
                                     "style":{
                                       "placeholder_color": "#cecece",
                                   "font": "HelveticaNeue",
