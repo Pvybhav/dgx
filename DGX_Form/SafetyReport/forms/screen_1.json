@@ -254,34 +254,8 @@
             "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           }
-        ],
-        "Table2_Headers": [
-          {
-            "type": "label",
-            "value": "",
-            "styles": "table_header_styles center_align",
-            "width": "30%"
-          },
-          {
-            "type": "label",
-            "value": "Turning/Stopped",
-            "styles": "table_header_styles center_align",
-            "width": "25%"
-          },
-          {
-            "type": "label",
-            "value": "Action Required",
-            "styles": "table_header_styles center_align",
-            "width": "25%"
-          },
-          {
-            "type": "label",
-            "value": "Completed",
-            "col_type": "col_value",
-            "styles": "table_header_styles center_align",
-            "width": "20%"
-          }
         ]
+        
       },
       "actions": {
         "$load": {
@@ -724,7 +698,7 @@
                   "type": "horizontal",
                   "components": [
                     {
-                      "type":"vertical",
+                  "type":"vertical",
                   "class":"table_header_name_styles",
                   "style":{ "background": "rgb(204,206,213)"},
                       "components":[
@@ -1131,31 +1105,6 @@
                 }
               ],
               "class": "center_align"
-            },
-            
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "vertical",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "horizontal",
-                      "components": {
-                        "{{#each Table2_Headers}}": {
-                          "type": "label",
-                          "text": "{{value}}",
-                          "class": "{{styles}}",
-                          "style": {
-                            "width": "{{width}}"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              ]
             },
             {
               "type": "horizontal",
