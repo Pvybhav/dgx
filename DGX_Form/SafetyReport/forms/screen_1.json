@@ -1142,10 +1142,22 @@
                         },
                         {
                           "type": "textfield",
-                          "name": "srainer_press_screen1",
-                          "value": "{{$global.sign || ''}}",
+                          "name": "strainer_press_screen1",
+                          "value": "{{$global.strainer_press_screen1 || ''}}",
                           "class": "sign_style center_align black_color",
-                          "contentDescription": "sixteen"
+                          "contentDescription": "sixteen",
+                          "style":{
+                            "placeholder_color": "#cecece",
+                        "font": "HelveticaNeue",
+                        "width": "180",
+                        "height": "37",
+                        "size": "14",
+                        "align": "center",
+                        "background": "#ffffff",
+                        "padding": "10",
+                        "color": "#000000",
+                        "border": "#000000"
+                          }
                         }
                       ]
                     },
