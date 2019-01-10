@@ -1147,7 +1147,12 @@
                             "components": [
                               {
                                 "type": "label",
-                                "text": "Record kPa 16",
+                                "text": "Record kPa",
+                                "class": "center_align black_color"
+                              },
+                              {
+                                "type": "label",
+                                "text": "16",
                                 "class": "center_align black_color"
                               },
                               {
@@ -1179,48 +1184,59 @@
                       "type":"vertical",
                       "components":[
                         {
-                          "type": "horizontal",
-                          "class": "table2_col_name_styles",
-                          "components": [
-                            {
-                              "type": "horizontal",
-                              "class": "center_align",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "Under-Pan",
-                                  "class": "black_color"
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "table2_col_value_styles",
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "Record kPa 17",
-                              "class": "center_align black_color"
-                            },
-                            {
-                              "type": "textfield",
-                              "name": "under_pan_screen1",
-                              "value": "{{$global.under_pan_screen1 || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "seventeen",
-                              "style":{
-                                "placeholder_color": "#cecece",
-                            "font": "HelveticaNeue",
-                            "size": "14",
-                            "align": "center",
-                            "padding": "10",
-                            "border": "#000000",
-                            "width":"6%",
-                            "height":"3%"
+                          "type":"horizontal",
+                          "components":[
+                          
+                          {
+                            "type": "horizontal",
+                            "class": "table2_col_name_styles",
+                            "components": [
+                              {
+                                "type": "horizontal",
+                                "class": "center_align",
+                                "components": [
+                                  {
+                                    "type": "label",
+                                    "text": "Under-Pan",
+                                    "class": "black_color"
+                                  }
+                                ]
                               }
-                            }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "table2_col_value_styles",
+                            "components": [
+                              {
+                                "type": "label",
+                                "text": "Record kPa",
+                                "class": "center_align black_color"
+                              },
+                              {
+                                "type": "label",
+                                "text": "17",
+                                "class": "center_align black_color"
+                              },
+                              {
+                                "type": "textfield",
+                                "name": "TS_Under_pan_screen1",
+                                "value": "{{$global.TS_Under_pan_screen1 || ''}}",
+                                "class": "center_align black_color",
+                                "contentDescription": "sixteen",
+                                "style":{
+                                  "placeholder_color": "#cecece",
+                              "font": "HelveticaNeue",
+                              "size": "14",
+                              "align": "center",
+                              "padding": "10",
+                              "border": "#000000",
+                              "width":"6%",
+                              "height":"3%"
+                                }
+                              }
+                            ]
+                          }
                           ]
                         }
                       ],
