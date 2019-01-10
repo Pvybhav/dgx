@@ -159,7 +159,7 @@
         "Table1_Headers": [
           {
             "type": "label",
-            "value": "Trash Screen-1",
+            "value": "Rollers",
             "col_type": "col_name",
             "styles": "table_header_styles center_align table_header_name_styles"
           },
@@ -724,19 +724,50 @@
                   "type": "horizontal",
                   "components": [
                     {
-                      "type": "vertical",
-                      "style":{
-                        "background": "rgb(14, 53, 112)",
-                        "color": "rgb(255, 255, 255)"
-                      },
-                      "components": [
-                    {
-                      "type":"label",
-                      "text":"Rollers",
-                      "class":"table_header_name_styles roller_header_style center_align"
-                    }
-                  ]
-                },
+                      "type":"vertical",
+                      "items":[
+                        {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "components": [
+                                {
+                                  "type": "switch",
+                                  "name": "shift",
+                                  "value": "true",
+                                  "class": "switch_legend_styles"
+                                },
+                                {
+                                  "type": "label",
+                                  "name": "AgitatorShaft_true",
+                                  "text": "= Turning",
+                                  "class": "black_color"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "components": [
+                                {
+                                  "type": "switch",
+                                  "name": "shift",
+                                  "value": "false",
+                                  "class": "switch_legend_styles"
+                                },
+                                {
+                                  "type": "label",
+                                  "name": "AgitatorShaft_false",
+                                  "text": "= Stopped",
+                                  "class": "black_color"
+                                }
+                              ],
+                            
+                          "style": {
+                            "width": "25%"
+                          }
+                        }
+                      ]
+                    },
                     {
                       "type": "vertical",
                       "components": [
@@ -1100,55 +1131,7 @@
               ],
               "class": "center_align"
             },
-            {
-              "type":"horizontal",
-              "items":[
-                {
-                  "type": "horizontal",
-                  "components": [
-                    {
-                      "type": "horizontal",
-                      "class": "center_align",
-                      "components": [
-                        {
-                          "type": "switch",
-                          "name": "shift",
-                          "value": "true",
-                          "class": "switch_legend_styles"
-                        },
-                        {
-                          "type": "label",
-                          "name": "AgitatorShaft_true",
-                          "text": "= Turning",
-                          "class": "black_color"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "class": "center_align",
-                      "components": [
-                        {
-                          "type": "switch",
-                          "name": "shift",
-                          "value": "false",
-                          "class": "switch_legend_styles"
-                        },
-                        {
-                          "type": "label",
-                          "name": "AgitatorShaft_false",
-                          "text": "= Stopped",
-                          "class": "black_color"
-                        }
-                      ]
-                    }
-                  ],
-                  "style": {
-                    "width": "37%"
-                  }
-                }
-              ]
-            },
+            
             {
               "type": "horizontal",
               "items": [
