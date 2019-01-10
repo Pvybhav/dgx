@@ -1119,13 +1119,132 @@
                   },
                   "components": [
                     {
-                      "type":"vertical",
+                      "type":"horizontal",
                       "components":[
                        
                         {
-                          "type":"horizontal",
+                          "type":"vertical",
                           "components":[
                             {
+                          
+                              "type":"horizontal",
+                              "style":{
+                                "width":"49%",
+                                "align":"center"
+                              },
+                              "components":[
+                              
+                              {
+                                    "type": "horizontal",
+                                    "components": [
+                                      {
+                                        "type": "label",
+                                        "text": "Strainer Press. Upstream",
+                                        "class": "black_color",
+                                        "style":{
+                                          "padding_left":"5"
+                                          
+                                        }
+                                      }
+                                    ]
+                                  
+                              },
+                              
+                                  {
+                                    "type": "label",
+                                    "text": "Record kPa",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "label",
+                                    "text": "16",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "textfield",
+                                    "name": "strainer_press_screen1",
+                                    "value": "{{$global.strainer_press_screen1 || ''}}",
+                                    "class": "center_align black_color",
+                                    "contentDescription": "sixteen",
+                                    "style":{
+                                      "placeholder_color": "#cecece",
+                                  "font": "HelveticaNeue",
+                                  "size": "14",
+                                  "align": "center",
+                                  "padding": "10",
+                                  "border": "#000000",
+                                  "width":"6%",
+                                  "height":"4%"
+                                    }
+                                 
+                              }
+                              ],
+                              "class": "table_row_even_styles center_align"
+                            },
+                            {
+                              "type":"horizontal",
+                              "style":{
+                                "width":"49%",
+                                "align":"center",
+                                "padding_left":"5"
+                              },
+                              "components":[
+                              
+                              {
+                                    "type": "horizontal",
+                                    "components": [
+                                      {
+                                        "type": "label",
+                                        "text": "Under Pan",
+                                        "class": "center_align black_color",
+                                        "style":{
+                                          "padding_left":"5"
+                                          
+                                        }
+                                      }
+                                    ]
+                                  
+                              },
+                              
+                                  {
+                                    "type": "label",
+                                    "text": "Record kPa",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "label",
+                                    "text": "17",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "textfield",
+                                    "name": "TS_Under_Pan_screen1",
+                                    "value": "{{$global.TS_Under_Pan_screen1 || ''}}",
+                                    "class": "center_align black_color",
+                                    "contentDescription": "seventeen",
+                                    "style":{
+                                      "placeholder_color": "#cecece",
+                                  "font": "HelveticaNeue",
+                                  "size": "14",
+                                  "align": "center",
+                                  "padding": "10",
+                                  "border": "#000000",
+                                  "width":"6%",
+                                  "height":"4%"
+                                    }
+                                 
+                              }
+                              ],
+                              "class": "table_row_even_styles center_align"
+                            }
+                          ]
+                        },
+
+                        {
+                          "type":"vertical",
+                          "components":[
+                            {
+                          
                               "type":"horizontal",
                               "style":{
                                 "width":"49%",
@@ -1239,6 +1358,7 @@
                           ]
                         }
                         
+                         
                       ]
                       
                     }
