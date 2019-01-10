@@ -277,7 +277,7 @@
             "trash_screen1_rollers_14": "true",
             "trash_screen1_rollers_15": "true",
            
-            "spray_bars_screen1": "true",
+           
             "cloths_screen1":"true",
             "under_pan_screen1":"true",
             "clean_under_pan_build_up_screen1":"true",
@@ -1123,7 +1123,7 @@
                           "components": [
                             {
                               "type": "label",
-                              "text": "Spray Bars",
+                              "text": "Strainer Press. Upstream",
                               "class": "black_color center_align"
                             }
                           ]
@@ -1136,15 +1136,15 @@
                       "components": [
                         {
                           "type": "label",
-                          "text": "10",
+                          "text": "Record kPa 16",
                           "class": "center_align black_color"
                         },
                         {
-                          "type": "switch",
-                          "name": "spray_bars_screen1",
-                          "value": "{{true}}",
+                          "type": "textfield",
+                          "name": "srainer_press_screen1",
+                          "value": "{{$global.sign || ''}}",
                           "class": "switch_styles",
-                          "contentDescription": "ten"
+                          "contentDescription": "sixteen"
                         }
                       ]
                     },
