@@ -107,7 +107,7 @@
           "width": "5%"
         },
         "table2_col_name_styles": {
-          "width": "51%"
+          "width": "20%"
         },
         "table2_col_value_styles": {
           "width": "30%"
@@ -1130,43 +1130,47 @@
                             "components": [
                               {
                                 "type": "horizontal",
+                                "class": "center_align",
                                 "components": [
                                   {
                                     "type": "label",
                                     "text": "Strainer Press. Upstream",
-                                    "class": "center_align black_color",
-                                    "style":{
-                                      "width":"15%"
-                                    }
-                                  },
-                                  {
-                                    "type": "label",
-                                    "text": "Record kPa",
                                     "class": "center_align black_color"
-                                  },
-                                  {
-                                    "type": "label",
-                                    "text": "16",
-                                    "class": "center_align black_color"
-                                  },
-                                  {
-                                    "type": "textfield",
-                                    "name": "strainer_press_screen1",
-                                    "value": "{{$global.strainer_press_screen1 || ''}}",
-                                    "class": "center_align black_color",
-                                    "contentDescription": "sixteen",
-                                    "style":{
-                                      "placeholder_color": "#cecece",
-                                  "font": "HelveticaNeue",
-                                  "size": "14",
-                                  "align": "center",
-                                  "padding": "10",
-                                  "border": "#000000",
-                                  "width":"6%",
-                                  "height":"3%"
-                                    }
                                   }
                                 ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "table2_col_value_styles",
+                            "components": [
+                              {
+                                "type": "label",
+                                "text": "Record kPa",
+                                "class": "center_align black_color"
+                              },
+                              {
+                                "type": "label",
+                                "text": "16",
+                                "class": "center_align black_color"
+                              },
+                              {
+                                "type": "textfield",
+                                "name": "strainer_press_screen1",
+                                "value": "{{$global.strainer_press_screen1 || ''}}",
+                                "class": "center_align black_color",
+                                "contentDescription": "sixteen",
+                                "style":{
+                                  "placeholder_color": "#cecece",
+                              "font": "HelveticaNeue",
+                              "size": "14",
+                              "align": "center",
+                              "padding": "10",
+                              "border": "#000000",
+                              "width":"6%",
+                              "height":"3%"
+                                }
                               }
                             ]
                           }
@@ -1189,40 +1193,47 @@
                             "components": [
                               {
                                 "type": "horizontal",
+                                "class": "center_align",
                                 "components": [
                                   {
                                     "type": "label",
                                     "text": "Under-Pan",
                                     "class": "center_align black_color"
-                                  },
-                                  {
-                                    "type": "label",
-                                    "text": "Record kPa",
-                                    "class": "center_align black_color"
-                                  },
-                                  {
-                                    "type": "label",
-                                    "text": "17",
-                                    "class": "center_align black_color"
-                                  },
-                                  {
-                                    "type": "textfield",
-                                    "name": "TS_Under_pan_screen1",
-                                    "value": "{{$global.TS_Under_pan_screen1 || ''}}",
-                                    "class": "center_align black_color",
-                                    "contentDescription": "sixteen",
-                                    "style":{
-                                      "placeholder_color": "#cecece",
-                                  "font": "HelveticaNeue",
-                                  "size": "14",
-                                  "align": "center",
-                                  "padding": "10",
-                                  "border": "#000000",
-                                  "width":"6%",
-                                  "height":"3%"
-                                    }
                                   }
                                 ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "table2_col_value_styles",
+                            "components": [
+                              {
+                                "type": "label",
+                                "text": "Record kPa",
+                                "class": "center_align black_color"
+                              },
+                              {
+                                "type": "label",
+                                "text": "17",
+                                "class": "center_align black_color"
+                              },
+                              {
+                                "type": "textfield",
+                                "name": "TS_Under_pan_screen1",
+                                "value": "{{$global.TS_Under_pan_screen1 || ''}}",
+                                "class": "center_align black_color",
+                                "contentDescription": "sixteen",
+                                "style":{
+                                  "placeholder_color": "#cecece",
+                              "font": "HelveticaNeue",
+                              "size": "14",
+                              "align": "center",
+                              "padding": "10",
+                              "border": "#000000",
+                              "width":"6%",
+                              "height":"3%"
+                                }
                               }
                             ]
                           }
@@ -1236,7 +1247,7 @@
                   
                 }
               ],
-              "class": "no_padding"
+              "class": "center_align"
             },
             
             {
