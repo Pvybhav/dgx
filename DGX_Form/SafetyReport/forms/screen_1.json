@@ -36,6 +36,7 @@
           "size": "13",
           "color": "rgb(0, 0, 0)",
           "border": "rgb(0, 0, 0)",
+          "width": "20%",
           "height": "3%",
           "align": "center"
         },
@@ -590,8 +591,9 @@
                 {
                   "type": "dropdown",
                   "name": "shift",
+
                   "contentDescription": "shift",
-                  "class": "header_2_styles center_align dropdown_shift_style",
+                  "class": "center_align dropdown_shift_style",
                   "options": [
                     {
                       "value": "Night Shift",
@@ -617,7 +619,7 @@
                   "type": "dropdown",
                   "name": "operator",
                   "contentDescription": "operator",
-                  "class": "header_2_styles center_align black_color dropdown_operator_style",
+                  "class": "center_align black_color dropdown_operator_style",
                   "options": [
                     {
                       "value": "Operator-1",
@@ -640,12 +642,7 @@
                   "type": "label",
                   "text": "▼"
                 },
-                {
-                  "type": "label",
-                  "text": "",
-                  "class": "black_color",
-                  "style": {}
-                },
+                
                 {
                   "type": "textfield",
                   "value": "{{$global.sign || ''}}",
