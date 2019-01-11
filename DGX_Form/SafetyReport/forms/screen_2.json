@@ -17,6 +17,13 @@
         "black_color": {
           "color": "rgb(0, 0, 0)"
         },
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "align": "center",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 162, 224)"
+        },
         "dropdown_date_style": {
           "color": "rgb(0, 0, 0)",
           "border": "rgb(0, 0, 0)",
@@ -36,9 +43,11 @@
           "height": "3%"
         },
         "sign_style": {
-          "height": "4%",
+          "height": "3%",
           "width": "20%",
-          "size": "15"
+          "size": "15",
+          "border":"#000000",
+          "padding_top":"10"
         },
         "header_2_styles": {
           "size": 13,
@@ -67,6 +76,14 @@
           "border": "rgb(255, 255, 255)",
           "height": "6%"
         },
+        "roller_header_style": {
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "12%"
+        },
         "switch_styles": {
           "color": "rgb(0,255,0)",
           "color:disabled": "rgb(255,0,0)",
@@ -78,24 +95,30 @@
           "height": "4%",
           "width": "7%"
         },
+        "switch_table_styles": {
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "height": "2%",
+          "width": "5%"
+        },
         "table1_col_name_styles": {
           "width": "37%"
         },
         "table1_col_value_styles": {
-          "width": "7%"
+          "width": "5%"
         },
         "table2_col_name_styles": {
-          "width": "30%"
-        },
-        "table2_col_value_styles": {
           "width": "20%"
         },
+        "table2_col_value_styles": {
+          "width": "30%"
+        },
         "table_header_name_styles": {
-          "width": "37%",
+          "width": "25%",
           "border": "rgb(255, 255, 255)"
         },
         "table_header_value_styles": {
-          "width": "7%",
+          "width": "5%",
           "border": "rgb(255, 255, 255)"
         },
         "table_row_odd_styles": {
@@ -134,10 +157,10 @@
         }
       },
       "data": {
-        "Page_Heading": "Safety Screen Shift Report",
+        "Page_Heading": "Trash Screens Shift Report",
         "Table1_Headers": [{
             "type": "label",
-            "value": "Safety Screen-2 Rollers",
+            "value": "Rollers",
             "col_type": "col_name",
             "styles": "table_header_styles center_align table_header_name_styles"
           },
@@ -194,56 +217,77 @@
             "value": "9",
             "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
-          }
-        ],
-        "Table2_Headers": [{
-            "type": "label",
-            "value": "",
-            "styles": "table_header_styles center_align",
-            "width": "30%"
           },
           {
             "type": "label",
-            "value": "Turning/Stopped",
-            "styles": "table_header_styles center_align",
-            "width": "25%"
-          },
-          {
-            "type": "label",
-            "value": "Action Required",
-            "styles": "table_header_styles center_align",
-            "width": "25%"
-          },
-          {
-            "type": "label",
-            "value": "Completed",
+            "value": "10",
             "col_type": "col_value",
-            "styles": "table_header_styles center_align",
-            "width": "20%"
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+
+          {
+            "type": "label",
+            "value": "11",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "12",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "13",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "14",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "15",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
           }
         ]
+
       },
       "actions": {
         "$load": {
           "type": "$global.set",
           "options": {
-            "safety_screen2_rollers_1": "true",
-            "safety_screen2_rollers_2": "true",
-            "safety_screen2_rollers_3": "true",
-            "safety_screen2_rollers_4": "true",
-            "safety_screen2_rollers_5": "true",
-            "safety_screen2_rollers_6": "true",
-            "safety_screen2_rollers_7": "true",
-            "safety_screen2_rollers_8": "true",
-            "safety_screen2_rollers_9": "true",
-            "spray_bars_screen2": "true",
-            "cloths_screen2": "true",
-            "under_pan_screen2": "true",
-            "clean_under_pan_build_up_screen2": "true",
-            "trough_north_screen2": "true",
-            "clean_trough_build_up_1_screen2": "true",
-            "trough_south_screen2": "true",
-            "clean_trough_build_up_2_screen2": "true"
+            "trash_screen2_rollers_1": "{{$global.trash_screen2_rollers_1 || 'true'}}",
+            "trash_screen2_rollers_2":  "{{$global.trash_screen2_rollers_2 || 'true'}}",
+            "trash_screen2_rollers_3":  "{{$global.trash_screen2_rollers_3 || 'true'}}",
+            "trash_screen2_rollers_4":  "{{$global.trash_screen2_rollers_4 || 'true'}}",
+            "trash_screen2_rollers_5":  "{{$global.trash_screen2_rollers_5 || 'true'}}",
+            "trash_screen2_rollers_6":  "{{$global.trash_screen2_rollers_6 || 'true'}}",
+            "trash_screen2_rollers_7":  "{{$global.trash_screen2_rollers_7 || 'true'}}",
+            "trash_screen2_rollers_8":  "{{$global.trash_screen2_rollers_8 || 'true'}}",
+            "trash_screen2_rollers_9":  "{{$global.trash_screen2_rollers_9 || 'true'}}",
+            "trash_screen2_rollers_10":  "{{$global.trash_screen2_rollers_10 || 'true'}}",
+            "trash_screen2_rollers_11":  "{{$global.trash_screen2_rollers_11 || 'true'}}",
+            "trash_screen2_rollers_12":  "{{$global.trash_screen2_rollers_12 || 'true'}}",
+            "trash_screen2_rollers_13":  "{{$global.trash_screen2_rollers_13 || 'true'}}",
+            "trash_screen2_rollers_14":  "{{$global.trash_screen2_rollers_14 || 'true'}}",
+            "trash_screen2_rollers_15":  "{{$global.trash_screen2_rollers_15 || 'true'}}",
+            "TS_South_trough_Build_up_screen2": "{{$global.TS_South_trough_Build_up_screen2 || 'true'}}",
+            "TS_trough_south_screen2": "{{$global.TS_trough_south_screen2 || 'true'}}",
+            "TS_Under_pan_Build_up_screen2": "{{$global.TS_Under_pan_Build_up_screen2 || 'true'}}",
+            "Trough_North_screen2": "{{$global.Trough_North_screen2 || 'true'}}",
+            "TS_North_trough_Build_up_screen2": "{{$global.TS_North_trough_Build_up_screen2 || 'true'}}",
+            "TS_Under_Pan_screen2": "{{$global.TS_Under_Pan_screen2 || ''}}",                                  
+            "TS_cloth_screen2": "{{$global.TS_cloth_screen2 || 'true'}}",
+            "TS_spray_bars_screen2": "{{$global.TS_spray_bars_screen2 || 'true'}}",
+            "TS_Strainer_Downstream_screen2": "{{$global.TS_Strainer_Downstream_screen2 || ''}}",
+            "TS_strainer_upstream_screen2": "{{$global.TS_strainer_upstream_screen2 || ''}}"
+
           }
         },
         "$pull": {
@@ -255,7 +299,35 @@
         "handleSave": {
           "type": "$global.set",
           "options": {
-            "section_id": "form2_page2"
+            "section_id": "Trash_Screen_Page2",
+            
+            "trash_screen2_rollers_1": "{{$global.trash_screen2_rollers_1}}",
+            "trash_screen2_rollers_2":  "{{$global.trash_screen2_rollers_2}}",
+            "trash_screen2_rollers_3":  "{{$global.trash_screen2_rollers_3}}",
+            "trash_screen2_rollers_4":  "{{$global.trash_screen2_rollers_4}}",
+            "trash_screen2_rollers_5":  "{{$global.trash_screen2_rollers_5}}",
+            "trash_screen2_rollers_6":  "{{$global.trash_screen2_rollers_6}}",
+            "trash_screen2_rollers_7":  "{{$global.trash_screen2_rollers_7}}",
+            "trash_screen2_rollers_8":  "{{$global.trash_screen2_rollers_8}}",
+            "trash_screen2_rollers_9":  "{{$global.trash_screen2_rollers_9}}",
+            "trash_screen2_rollers_10":  "{{$global.trash_screen2_rollers_10}}",
+            "trash_screen2_rollers_11":  "{{$global.trash_screen2_rollers_11}}",
+            "trash_screen2_rollers_12":  "{{$global.trash_screen2_rollers_12}}",
+            "trash_screen2_rollers_13":  "{{$global.trash_screen2_rollers_13}}",
+            "trash_screen2_rollers_14":  "{{$global.trash_screen2_rollers_14}}",
+            "trash_screen2_rollers_15":  "{{$global.trash_screen2_rollers_15}}",
+            "TS_South_trough_Build_up_screen2": "{{$global.TS_South_trough_Build_up_screen2}}",
+            "TS_trough_south_screen2": "{{$global.TS_trough_south_screen2}}",
+            "TS_Under_pan_Build_up_screen2": "{{$global.TS_Under_pan_Build_up_screen2}}",
+            "Trough_North_screen2": "{{$global.Trough_North_screen2}}",
+            "TS_North_trough_Build_up_screen2": "{{$global.TS_North_trough_Build_up_screen2}}",
+            "TS_Under_Pan_screen2": "{{$global.TS_Under_Pan_screen2}}",                                  
+            "TS_cloth_screen2": "{{$global.TS_cloth_screen2}}",
+            "TS_spray_bars_screen2": "{{$global.TS_spray_bars_screen2}}",
+            "TS_strainer_upstream_screen2": "{{$global.TS_strainer_upstream_screen2}}",
+            "TS_Strainer_Downstream_screen2": "{{$global.TS_Strainer_Downstream_screen2}}"
+
+
           },
           "success": {
             "type": "$util.toast",
@@ -281,7 +353,9 @@
               "height": "3%"
             }
           },
-          "sections": [{
+          "sections": [
+            
+            {
               "type": "horizontal",
               "items": [{
                 "type": "vertical",
@@ -303,15 +377,28 @@
               "items": [{
                 "type": "horizontal",
                 "components": [{
-                    "type": "horizontal",
+                    "type": "vertical",
+                    "class": "table_header_styles center_align table_header_name_styles",
+                    "style": {
+                      "background": "rgb(231,232,235)",
+                      "color":"rgb(0, 0, 0)",
+                      "height": "9%"
+                    },
                     "components": [{
                         "type": "horizontal",
+                        "style":{
+                          "background": "rgb(231,232,235)",
+                          "color":"rgb(0, 0, 0)"
+                          
+                        },
                         "class": "center_align",
                         "components": [{
                             "type": "switch",
                             "name": "shift",
                             "value": "true",
-                            "class": "switch_legend_styles"
+                            "class": "switch_legend_styles",
+                            "isClickable": "false"
+                            
                           },
                           {
                             "type": "label",
@@ -323,12 +410,17 @@
                       },
                       {
                         "type": "horizontal",
+                        "style":{
+                          "background": "rgb(231,232,235)",
+                          "color":"rgb(0, 0, 0)"
+                        },
                         "class": "center_align",
                         "components": [{
                             "type": "switch",
                             "name": "shift",
                             "value": "false",
-                            "class": "switch_legend_styles"
+                            "class": "switch_legend_styles",
+                            "isClickable": "false"
                           },
                           {
                             "type": "label",
@@ -337,14 +429,14 @@
                             "class": "black_color"
                           }
                         ]
+
+
                       }
-                    ],
-                    "style": {
-                      "width": "37%"
-                    }
+                    ]
                   },
                   {
                     "type": "vertical",
+
                     "components": [{
                         "type": "label",
                         "text": "1",
@@ -352,15 +444,14 @@
                       },
                       {
                         "type": "switch",
-                        "name": "safety_screen2_rollers_1",
-                        "value": "{{true}}",
+                        "name": "trash_screen2_rollers_1",
+                        "value": "{{$global.trash_screen2_rollers_1}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "one",
                         "action": {
                           "type": "$global.set",
                           "options": {
-                            "section_id": "form2_page2",
-                            "agitator_shaft_l1_101": "{{$get.agitator_shaft_l1_101}}"
+                            "trash_screen2_rollers_1": "{{$get.trash_screen2_rollers_1}}"
                           }
                         }
                       }
@@ -375,15 +466,14 @@
                       },
                       {
                         "type": "switch",
-                        "name": "safety_screen2_rollers_2",
-                        "value": "{{true}}",
+                        "name": "trash_screen2_rollers_2",
+                        "value": "{{$global.trash_screen2_rollers_2}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "two",
                         "action": {
                           "type": "$global.set",
                           "options": {
-                            "section_id": "form2_page2",
-                            "agitator_shaft_l1_102": "{{$get.agitator_shaft_l1_102}}"
+                            "trash_screen2_rollers_2": "{{$get.trash_screen2_rollers_2}}"
                           }
                         }
                       }
@@ -398,15 +488,14 @@
                       },
                       {
                         "type": "switch",
-                        "name": "safety_screen2_rollers_3",
-                        "value": "{{true}}",
+                        "name": "trash_screen2_rollers_3",
+                        "value": "{{$global.trash_screen2_rollers_3}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "three",
                         "action": {
                           "type": "$global.set",
                           "options": {
-                            "section_id": "form2_page2",
-                            "agitator_shaft_l1_103": "{{$get.agitator_shaft_l1_103}}"
+                            "trash_screen2_rollers_3": "{{$get.trash_screen2_rollers_3}}"
                           }
                         }
                       }
@@ -421,15 +510,14 @@
                       },
                       {
                         "type": "switch",
-                        "name": "safety_screen2_rollers_4",
-                        "value": "true",
+                        "name": "trash_screen2_rollers_4",
+                        "value": "{{$global.trash_screen2_rollers_4}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "four",
                         "action": {
                           "type": "$global.set",
                           "options": {
-                            "section_id": "form2_page2",
-                            "agitator_shaft_l1_104": "{{$get.agitator_shaft_l1_104}}"
+                            "trash_screen2_rollers_4": "{{$get.trash_screen2_rollers_4}}"
                           }
                         }
                       }
@@ -444,15 +532,14 @@
                       },
                       {
                         "type": "switch",
-                        "name": "safety_screen2_rollers_5",
-                        "value": "true",
+                        "name": "trash_screen2_rollers_5",
+                        "value": "{{$global.trash_screen2_rollers_5}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "five",
                         "action": {
                           "type": "$global.set",
                           "options": {
-                            "section_id": "form2_page2",
-                            "agitator_shaft_l1_105": "{{$get.agitator_shaft_l1_105}}"
+                            "trash_screen2_rollers_5": "{{$get.trash_screen2_rollers_5}}"
                           }
                         }
                       }
@@ -467,15 +554,14 @@
                       },
                       {
                         "type": "switch",
-                        "name": "safety_screen2_rollers_6",
-                        "value": "true",
+                        "name": "trash_screen2_rollers_6",
+                        "value": "{{$global.trash_screen2_rollers_6}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "six",
                         "action": {
                           "type": "$global.set",
                           "options": {
-                            "section_id": "form2_page2",
-                            "agitator_shaft_l1_111": "{{$get.agitator_shaft_l1_111}}"
+                            "trash_screen2_rollers_6": "{{$get.trash_screen2_rollers_6}}"
                           }
                         }
                       }
@@ -490,15 +576,14 @@
                       },
                       {
                         "type": "switch",
-                        "name": "safety_screen2_rollers_7",
-                        "value": "true",
+                        "name": "trash_screen2_rollers_7",
+                        "value": "{{$global.trash_screen2_rollers_7}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "seven",
                         "action": {
                           "type": "$global.set",
                           "options": {
-                            "section_id": "form2_page2",
-                            "agitator_shaft_l1_112": "{{$get.agitator_shaft_l1_112}}"
+                            "trash_screen2_rollers_7": "{{$get.trash_screen2_rollers_7}}"
                           }
                         }
                       }
@@ -513,15 +598,14 @@
                       },
                       {
                         "type": "switch",
-                        "name": "safety_screen2_rollers_8",
-                        "value": "true",
+                        "name": "trash_screen2_rollers_8",
+                        "value": "{{$global.trash_screen2_rollers_8}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "eight",
                         "action": {
                           "type": "$global.set",
                           "options": {
-                            "section_id": "form2_page2",
-                            "agitator_shaft_l1_113": "{{$get.agitator_shaft_l1_113}}"
+                            "trash_screen2_rollers_8": "{{$get.trash_screen2_rollers_8}}"
                           }
                         }
                       }
@@ -536,15 +620,143 @@
                       },
                       {
                         "type": "switch",
-                        "name": "safety_screen2_rollers_9",
-                        "value": "true",
+                        "name": "trash_screen2_rollers_9",
+                        "value": "{{$global.trash_screen2_rollers_9}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "nine",
                         "action": {
                           "type": "$global.set",
                           "options": {
-                            "section_id": "form2_page2",
-                            "agitator_shaft_l1_114": "{{$get.agitator_shaft_l1_114}}"
+                            "trash_screen2_rollers_9": "{{$get.trash_screen2_rollers_9}}"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "vertical",
+                    "components": [{
+                        "type": "label",
+                        "text": "10",
+                        "class": "center_align black_color"
+                      },
+                      {
+                        "type": "switch",
+                        "name": "trash_screen2_rollers_10",
+                        "value":"{{$global.trash_screen2_rollers_10}}",
+                        "class": "table1_col_value_styles switch_styles",
+                        "contentDescription": "ten",
+                        "action": {
+                          "type": "$global.set",
+                          "options": {
+                            "trash_screen2_rollers_10": "{{$get.trash_screen2_rollers_10}}"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "vertical",
+                    "components": [{
+                        "type": "label",
+                        "text": "11",
+                        "class": "center_align black_color"
+                      },
+                      {
+                        "type": "switch",
+                        "name": "trash_screen2_rollers_11",
+                        "value":"{{$global.trash_screen2_rollers_11}}",
+                        "class": "table1_col_value_styles switch_styles",
+                        "contentDescription": "eleven",
+                        "action": {
+                          "type": "$global.set",
+                          "options": {
+                            "trash_screen2_rollers_11": "{{$get.trash_screen2_rollers_11}}"
+                          }
+                        }
+                      }
+                    ]
+                  }, {
+                    "type": "vertical",
+                    "components": [{
+                        "type": "label",
+                        "text": "12",
+                        "class": "center_align black_color"
+                      },
+                      {
+                        "type": "switch",
+                        "name": "trash_screen2_rollers_12",
+                        "value": "{{$global.trash_screen2_rollers_12}}",
+                        "class": "table1_col_value_styles switch_styles",
+                        "contentDescription": "twelve",
+                        "action": {
+                          "type": "$global.set",
+                          "options": {
+                            "trash_screen2_rollers_12": "{{$get.trash_screen2_rollers_12}}"
+                          }
+                        }
+                      }
+                    ]
+                  }, {
+                    "type": "vertical",
+                    "components": [{
+                        "type": "label",
+                        "text": "13",
+                        "class": "center_align black_color"
+                      },
+                      {
+                        "type": "switch",
+                        "name": "trash_screen2_rollers_13",
+                        "value": "{{$global.trash_screen2_rollers_13}}",
+                        "class": "table1_col_value_styles switch_styles",
+                        "contentDescription": "thirteen",
+                        "action": {
+                          "type": "$global.set",
+                          "options": {
+                            "trash_screen2_rollers_13": "{{$get.trash_screen2_rollers_13}}"
+                          }
+                        }
+                      }
+                    ]
+                  }, {
+                    "type": "vertical",
+                    "components": [{
+                        "type": "label",
+                        "text": "14",
+                        "class": "center_align black_color"
+                      },
+                      {
+                        "type": "switch",
+                        "name": "trash_screen2_rollers_14",
+                        "value": "{{$global.trash_screen2_rollers_14}}",
+                        "class": "table1_col_value_styles switch_styles",
+                        "contentDescription": "fourteen",
+                        "action": {
+                          "type": "$global.set",
+                          "options": {
+                            "trash_screen2_rollers_14": "{{$get.trash_screen2_rollers_14}}"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "vertical",
+                    "components": [{
+                        "type": "label",
+                        "text": "15",
+                        "class": "center_align black_color"
+                      },
+                      {
+                        "type": "switch",
+                        "name": "trash_screen2_rollers_15",
+                        "value": "{{$global.trash_screen2_rollers_15}}",
+                        "class": "table1_col_value_styles switch_styles",
+                        "contentDescription": "fifteen",
+                        "action": {
+                          "type": "$global.set",
+                          "options": {
+                            "trash_screen2_rollers_15": "{{$get.trash_screen2_rollers_15}}"
                           }
                         }
                       }
@@ -555,337 +767,884 @@
               }],
               "class": "center_align"
             },
+
             {
               "type": "horizontal",
               "items": [{
-                "type": "vertical",
-                "class": "no_padding",
+                "type": "horizontal",
+                "style": {
+                  "border": "#ffffff"
+                },
                 "components": [{
-                  "type": "horizontal",
-                  "components": {
-                    "{{#each Table2_Headers}}": {
-                      "type": "label",
-                      "text": "{{value}}",
-                      "class": "{{styles}}",
-                      "style": {
-                        "width": "{{width}}"
+                    "type": "horizontal",
+                    "components": [
+
+                      {
+                        "type": "vertical",
+                        "style": {
+                          "border": "#ffffff"
+                        },
+                        "components": [{
+
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center"
+                            },
+                            "components": [
+
+                              {
+                                "type": "vertical",
+                                "style":{
+                                  "width":"23%"
+                                },
+                                "components": [{
+                                  "type": "label",
+                                  "text": "Strainer Press Upstream",
+                                  "class": "center_align black_color",
+                                  "style": {
+
+                                  }
+                                }]
+
+                              },
+
+                              {
+                                "type": "label",
+                                "text": "Record kPa",
+                                "class": "center_align black_color",
+                                "style":{
+                                  "width":"15%"
+                                }
+                              },
+                              {
+                                "type":"horizontal",
+                                "style":{
+                                  "width":"10%"
+                                },
+                                "components":[
+                                  {
+                                    "type": "label",
+                                    "text": "16",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "textfield",
+                                    "name": "TS_strainer_upstream_screen2",
+                                    "value": "{{$global.TS_strainer_upstream_screen2}}",
+                                    "class": "center_align black_color",
+                                    "contentDescription": "sixteen",
+                                    "style": {
+                                      "placeholder_color": "#cecece",
+                                      "font": "HelveticaNeue",
+                                      "size": "14",
+                                      "align": "center",
+                                      "padding": "10",
+                                      "border": "#000000",
+                                      "width": "6%",
+                                      "height": "4%",
+                                      "action": {
+                                        "type": "$global.set",
+                                        "options": {
+                                          "TS_strainer_upstream_screen2": "{{$get.TS_strainer_upstream_screen2}}"
+                                        }
+                                      }
+                                      
+                                    }
+    
+                                  }
+                                ]
+                              }
+                              
+                            ],
+                            "class": "table_row_even_styles center_align"
+                          },
+                          {
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center"
+                            },
+                            "components": [
+
+                              {
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"23%"
+                                },
+                                "components": [{
+                                  "type": "label",
+                                  "text": "Strainer Press Downstream",
+                                  "class": "center_align black_color",
+                                  "style": {
+
+                                  }
+                                }]
+
+                              },
+
+                              {
+                                "type": "label",
+                                "text": "Record kPa",
+                                "class": "center_align black_color",
+                                "style":{
+                                  "width":"15%"
+                                }
+                              },
+                              {
+                                "type":"horizontal",
+                                "style":{
+                                  "width":"10%"
+                                },
+                                "components":[
+                                  {
+                                    "type": "label",
+                                    "text": "18",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "textfield",
+                                    "name": "TS_Strainer_Downstream_screen2",
+                                    "value": "{{$global.TS_Strainer_Downstream_screen2}}",
+                                    "class": "center_align black_color",
+                                    "contentDescription": "eighteen",
+                                    "style": {
+                                      "placeholder_color": "#cecece",
+                                      "font": "HelveticaNeue",
+                                      "size": "14",
+                                      "align": "center",
+                                      "padding": "10",
+                                      "border": "#000000",
+                                      "width": "6%",
+                                      "height": "4%",
+                                      "action": {
+                                        "type": "$global.set",
+                                        "options": {
+                                          "TS_Strainer_Downstream_screen2": "{{$get.TS_Strainer_Downstream_screen2}}"
+                                        }
+                                      }
+                                    }
+    
+                                  }
+                                ]
+                              }
+                             
+                            ],
+                            "class": "table_row_odd_styles center_align"
+                          },
+                          {
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center",
+                              "padding_left": "5"
+                            },
+                            "components": [
+
+                              {
+                                "type": "horizontal",
+                                "components": [{
+                                  "type": "label",
+                                  "text": "Switch filters if different above 50 kPa",
+                                  "class": "center_align black_color",
+                                  "style": {
+                                    "padding": "1%"
+
+                                  }
+                                }]
+                              }
+
+
+                            ],
+                            "class": "table_row_even_styles center_align"
+                          },
+                          {
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center"
+                            },
+                            "components": [
+
+                              {
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"14%"
+                                },
+                                "components": [
+                                  {
+                                  "type": "label",
+                                  "text": "Spray Bars",
+                                  "class": "center_align black_color",
+                                  "style": {
+
+                                  }
+                                }]
+
+                              },
+
+                              {
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"24%"
+                                },
+                                "components": [{
+                                    "type": "horizontal",
+                                    "class": "center_align",
+                                    "components": [{
+                                        "type": "switch",
+                                        "name": "on",
+                                        "value": "true",
+                                        "class": "switch_table_styles",
+                                        "isClickable": "false"
+                                      },
+                                      {
+                                        "type": "label",
+                                        "name": "AgitatorShaft_true",
+                                        "text": "-Good",
+                                        "class": "black_color"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "horizontal",
+                                    "class": "center_align",
+                                    "components": [{
+                                        "type": "switch",
+                                        "name": "off",
+                                        "value": "false",
+                                        "class": "switch_table_styles",
+                                        "isClickable": "false"
+                                      },
+                                      {
+                                        "type": "label",
+                                        "name": "AgitatorShaft_false",
+                                        "text": "-Plugged",
+                                        "class": "black_color"
+                                      }
+                                    ]
+
+
+                                  }
+                                ]
+                              },
+                              {"type":"horizontal",
+                                "style":{
+                                  "width":"10%"
+                                },
+                              "components":[
+                                {
+                                  "type": "label",
+                                  "text": "21",
+                                  "class": "center_align black_color"
+                                },
+                                {
+                                  "type": "switch",
+                                  "name": "TS_spray_bars_screen2",
+                                  "value": "{{$global.TS_spray_bars_screen2}}",
+                                  "class": "switch_styles",
+                                  "style": {
+                                    "width": "5%"
+                                  },
+                                  "contentDescription": "twenty-one",
+                                  "action": {
+                                    "type": "$global.set",
+                                    "options": {
+                                      "TS_spray_bars_screen2": "{{$get.TS_spray_bars_screen2}}"
+                                    }
+                                  }
+                                }
+                              ]
+                              }
+                              
+                            ],
+                            "class": "table_row_odd_styles center_align"
+                          }, {
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center"
+                            },
+                            "components": [
+
+                              {
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"14%"
+                                },
+                                "components": [{
+                                  "type": "label",
+                                  "text": "Cloth",
+                                  "class": "center_align black_color",
+                                  "style": {
+
+                                  }
+                                }]
+
+                              },
+
+                              {
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"24%"
+                                },
+                                "components": [{
+                                    "type": "horizontal",
+                                    "class": "center_align",
+                                    "components": [{
+                                        "type": "switch",
+                                        "name": "on",
+                                        "value": "true",
+                                        "class": "switch_table_styles",
+                                        "isClickable": "false"
+                                      },
+                                      {
+                                        "type": "label",
+                                        "name": "AgitatorShaft_true",
+                                        "text": "-Good",
+                                        "class": "black_color"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "horizontal",
+                                    "class": "center_align",
+                                    "components": [{
+                                        "type": "switch",
+                                        "name": "off",
+                                        "value": "false",
+                                        "class": "switch_table_styles",
+                                        "isClickable": "false"
+                                      },
+                                      {
+                                        "type": "label",
+                                        "name": "AgitatorShaft_false",
+                                        "text": "-Torn/Holes",
+                                        "class": "black_color"
+                                      }
+                                    ]
+
+
+                                  }
+                                ]
+                              },
+                              {
+                                "type":"horizontal",
+                                "style":{
+                                  "width":"10%"
+                                },
+                                "components":[
+                                  {
+                                    "type": "label",
+                                    "text": "23",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "switch",
+                                    "name": "TS_cloth_screen2",
+                                    "value": "{{$global.TS_cloth_screen2}}",
+                                    "class": "switch_styles",
+                                    "style": {
+                                      "width": "5%"
+                                    },
+                                    "contentDescription": "twenty-three",
+                                    "action": {
+                                      "type": "$global.set",
+                                      "options": {
+                                        "TS_cloth_screen2": "{{$get.TS_cloth_screen2}}"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                              
+                            ],
+                            "class": "table_row_even_styles center_align"
+                          }
+                        ]
+                      },
+
+                      {
+                        "type": "label",
+                        "text": "",
+                        "style": {
+                          "border": "#ffffff",
+                          "width": "1%"
+                        }
+                      },
+                      {
+                        "type": "vertical",
+                        "style": {
+                          "border": "#ffffff"
+                        },
+                        "components": [{
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center",
+                              "padding_left": "5"
+                            },
+                            "components": [
+
+                              {
+                                "type": "horizontal",
+                                "components": [{
+                                  "type": "label",
+                                  "text": "Under Pan",
+                                  "class": "center_align black_color",
+                                  "style": {
+                                    "padding_left": "5"
+
+                                  }
+                                }]
+
+                              },
+
+                              {
+                                "type": "label",
+                                "text": "Record kPa",
+                                "class": "center_align black_color"
+                              },
+                              {
+                                "type": "label",
+                                "text": "17",
+                                "class": "center_align black_color"
+                              },
+                              {
+                                "type": "textfield",
+                                "name": "TS_Under_Pan_screen2",
+                                "value": "{{$global.TS_Under_Pan_screen2}}",
+                                "class": "center_align black_color",
+                                "contentDescription": "seventeen",
+                                "style": {
+                                  "placeholder_color": "#cecece",
+                                  "font": "HelveticaNeue",
+                                  "size": "14",
+                                  "align": "center",
+                                  "padding": "10",
+                                  "border": "#000000",
+                                  "width": "6%",
+                                  "height": "4%"
+                                }
+
+                              }
+                            ],
+                            "class": "table_row_even_styles center_align"
+                          },
+                          {
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center",
+                              "padding_left": "5"
+                            },
+                            "components": [
+
+                              {
+                                "type": "vertical",
+                                "components": [{
+                                    "type": "label",
+                                    "text": "Clean Under-pan Build-up",
+                                    "class": "center_align black_color",
+                                    "style": {
+                                      "padding_left": "5"
+
+                                    }
+                                  }
+
+
+                                ]
+
+
+                              },
+                              {
+                                "type": "horizontal",
+                                "components": [{
+                                    "type": "label",
+                                    "text": "",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "label",
+                                    "text": "19",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "switch",
+                                    "name": "TS_Under_pan_Build_up_screen2",
+                                    "value": "{{$global.TS_Under_pan_Build_up_screen2}}",
+                                    "class": "switch_styles",
+                                    "style": {
+                                      "width": "9%"
+                                    },
+                                    "contentDescription": "nineteen",
+                                    "action": {
+                                      "type": "$global.set",
+                                      "options": {
+                                        "TS_Under_pan_Build_up_screen2": "{{$get.TS_Under_pan_Build_up_screen2}}"
+                                      }
+                                    }
+                                    
+                                  }
+                                ]
+                              }
+
+                            ],
+                            "class": "table_row_odd_styles center_align"
+                          },
+                          {
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center"
+                            },
+                            "components": [
+
+                              {
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"14%"
+                                },
+                                "components": [{
+                                  "type": "label",
+                                  "text": "Trough, North",
+                                  "class": "center_align black_color"
+                                  
+                                }]
+
+                              },
+
+                              {
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"24%"
+                                },
+                                "components": [{
+                                    "type": "horizontal",
+                                    "class": "center_align",
+                                    "components": [{
+                                        "type": "switch",
+                                        "name":"plugged",
+                                        "value": "true",
+                                        "class": "switch_table_styles",
+                                        "isClickable": "false"
+                                      },
+                                      {
+                                        "type": "label",
+                                        "text": "-Good",
+                                        "class": "black_color"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "horizontal",
+                                    "class": "center_align",
+                                    "components": [{
+                                        "type": "switch",
+                                        "name":"clear",
+                                        "value": "false",
+                                        "class": "switch_table_styles",
+                                        "isClickable": "false"
+                                      },
+                                      {
+                                        "type": "label",
+                                        "name": "AgitatorShaft_false",
+                                        "text": "- Plugged",
+                                        "class": "black_color"
+                                      }
+                                    ]
+
+
+                                  }
+                                ]
+                              },
+                              {
+                                "type":"horizontal",
+                                "style":{
+                                  "width":"10%"
+                                },
+                                "components":[
+                              {
+                                "type": "label",
+                                "text": "20",
+                                "class": "center_align black_color"
+                              },
+                              {
+                                "type": "switch",
+                                "name": "Trough_North_screen2",
+                                "value": "{{$global.Trough_North_screen2}}",
+                                "class": "switch_styles",
+                                "style": {
+                                  "width": "5%"
+                                },
+                                "contentDescription": "twenty",
+                                "action": {
+                                  "type": "$global.set",
+                                  "options": {
+                                    "Trough_North_screen2": "{{$get.Trough_North_screen2}}"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                            ],
+                            "class": "table_row_even_styles center_align"
+                          },
+                          {
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center",
+                              "padding_left": "5"
+                            },
+                            "components": [
+
+                              {
+                                "type": "vertical",
+                                "components": [{
+                                    "type": "label",
+                                    "text": "Clean North Trough Buildup",
+                                    "class": "center_align black_color",
+                                    "style": {
+                                      "padding_left": "5"
+
+                                    }
+                                  }
+
+
+                                ]
+
+
+                              },
+                              {
+                                "type": "horizontal",
+                                "components": [{
+                                    "type": "label",
+                                    "text": "",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "label",
+                                    "text": "22",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "switch",
+                                    "name": "TS_North_trough_Build_up_screen2",
+                                    "value": "{{$global.TS_North_trough_Build_up_screen2}}",
+                                    "class": "switch_styles",
+                                    "style": {
+                                      "width": "9%"
+                                    },
+                                    "contentDescription": "twenty-two",
+                                    "action": {
+                                      "type": "$global.set",
+                                      "options": {
+                                        "TS_North_trough_Build_up_screen2": "{{$get.TS_North_trough_Build_up_screen2}}"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+
+                            ],
+                            "class": "table_row_odd_styles center_align"
+                          },
+                          {
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center"
+                             
+                            },
+                            "components": [
+
+                              {
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"14%"
+                                },
+                                "components": [{
+                                  "type": "label",
+                                  "text": "Trough, South",
+                                  "class": "center_align black_color",
+                                  "style": {
+                                   
+
+                                  }
+                                }]
+
+                              },
+
+                              {
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"24%"
+                                },
+                                "components": [{
+                                    "type": "horizontal",
+                                    "components": [{
+                                        "type": "switch",
+                                        "name":"trueSOuth",
+                                        "value": "true",
+                                        "class": "switch_table_styles",
+                                        "isClickable": "false"
+                                      },
+                                      {
+                                        "type": "label",
+                                        "text": "-Clear",
+                                        
+                                        "class": "black_color"
+                                      },
+                                      {
+                                        "type": "switch",
+                                        "name":"falseSouth",
+                                        "value": "false",
+                                        "class": "switch_table_styles",
+                                        "isClickable": "false"
+                                      },
+                                      {
+                                        "type": "label",
+                                        "text": "- Plugged",
+                                        
+                                        "class": "black_color"
+                                      }
+                                    ]
+                                  }
+                                  
+                                    
+                                ]
+                              },
+                              {
+                                "type":"horizontal",
+                                "style":{
+                                  "width":"10%"
+                                },
+                                "components":[
+                                  {
+                                    "type": "label",
+                                    "text": "24",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "switch",
+                                    "name": "TS_trough_south_screen2",
+                                    "value": "{{$global.TS_trough_south_screen2}}",
+                                    "class": "switch_styles",
+                                    "style": {
+                                      "width":"5%"
+                                    },
+                                    "contentDescription": "twenty-four",
+                                     "action": {
+                                      "type": "$global.set",
+                                      "options": {
+                                        "TS_trough_south_screen2": "{{$get.TS_trough_south_screen2}}"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                              
+                            ],
+                            "class": "table_row_even_styles center_align"
+                          },
+                          {
+                            "type": "horizontal",
+                            "style": {
+                              "width": "48%",
+                              "align": "center",
+                              "padding_left": "5"
+                            },
+                            "components": [
+
+                              {
+                                "type": "vertical",
+                                "components": [{
+                                    "type": "label",
+                                    "text": "Clean South Trough Buildup",
+                                    "class": "center_align black_color",
+                                    "style": {
+                                      "padding_left": "5"
+
+                                    }
+                                  }
+
+
+                                ]
+
+
+                              },
+                              {
+                                "type": "horizontal",
+                                "components": [{
+                                    "type": "label",
+                                    "text": "",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "label",
+                                    "text": "25",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "switch",
+                                    "name": "TS_South_trough_Build_up_screen2",
+                                    "value": "{{$global.TS_South_trough_Build_up_screen2}}",
+                                    "class": "switch_styles",
+                                    "contentDescription": "twenty-five",
+                                    "action": {
+                                      "type": "$global.set",
+                                      "options": {
+                                        "TS_South_trough_Build_up_screen2": "{{$get.TS_South_trough_Build_up_screen2}}"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+
+                            ],
+                            "class": "table_row_odd_styles center_align"
+                          }
+                        ]
                       }
-                    }
+
+
+                    ]
+
                   }
-                }]
+
+
+
+
+                ]
               }]
             },
             {
               "type": "horizontal",
+              "style": {
+                "padding": "1%"
+              },
               "items": [{
-                "type": "horizontal",
-                "class": "no_padding table_row_even_styles center_align",
-                "style": {
-                  "height": "6%"
-                },
-                "components": [{
-                    "type": "horizontal",
-                    "class": "table2_col_name_styles",
-                    "components": [{
-                      "type": "horizontal",
-                      "class": "center_align",
-                      "components": [{
-                        "type": "label",
-                        "text": "Spray Bars",
-                        "class": "black_color center_align"
-                      }]
-                    }]
-                  },
+                "type": "vertical",
+                "components": [
+
                   {
-                    "type": "horizontal",
-                    "class": "table2_col_value_styles",
-                    "components": [{
-                        "type": "label",
-                        "text": "10",
-                        "class": "center_align black_color"
-                      },
-                      {
-                        "type": "switch",
-                        "name": "spray_bars_screen2",
-                        "value": "{{true}}",
-                        "class": "switch_styles",
-                        "contentDescription": "ten"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "vertical",
-                    "class": "table2_col_name_styles",
-                    "components": [{
-                      "type": "label",
-                      "text": "",
-                      "class": "center_align black_color"
-                    }]
-                  },
-                  {
-                    "type": "vertical",
-                    "class": "table2_col_value_styles",
-                    "components": [{
-                      "type": "label",
-                      "text": "",
-                      "class": "center_align black_color"
-                    }]
-                  }
-                ]
-              }],
-              "class": "center_align"
-            },
-            {
-              "type": "horizontal",
-              "items": [{
-                "type": "horizontal",
-                "components": [{
-                    "type": "horizontal",
-                    "class": "table2_col_name_styles",
-                    "components": [{
-                      "type": "horizontal",
-                      "class": "center_align",
-                      "components": [{
-                        "type": "label",
-                        "text": "Cloths",
-                        "class": "black_color center_align"
-                      }]
-                    }]
-                  },
-                  {
-                    "type": "horizontal",
-                    "class": "table2_col_value_styles",
-                    "components": [{
-                        "type": "label",
-                        "text": "11",
-                        "class": "center_align black_color"
-                      },
-                      {
-                        "type": "switch",
-                        "name": "cloths_screen2",
-                        "value": "{{true}}",
-                        "class": "switch_styles",
-                        "contentDescription": "eleven"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "vertical",
-                    "class": "table2_col_name_styles",
-                    "components": [{
-                      "type": "label",
-                      "text": "",
-                      "class": "center_align black_color"
-                    }]
-                  },
-                  {
-                    "type": "vertical",
-                    "class": "table2_col_value_styles",
-                    "components": [{
-                      "type": "label",
-                      "text": "",
-                      "class": "center_align black_color"
-                    }]
+                    "type": "textarea",
+                    "value": "{{$global.Comments || ''}}",
+                    "name": "Comments",
+                    "placeholder": "Comments",
+                    "contentDescription": "Comments",
+                    "style": {
+                      "width": "100%",
+                      "height": "15%",
+                      "size": "15",
+                      "border": "#000000"
+
+                    }
                   }
                 ],
-                "class": "no_padding table_row_odd_styles center_align"
-              }],
-              "class": "center_align"
-            },
-            {
-              "type": "horizontal",
-              "items": [{
-                "type": "horizontal",
-                "components": [{
-                    "type": "horizontal",
-                    "class": "table2_col_name_styles",
-                    "components": [{
-                      "type": "horizontal",
-                      "class": "center_align",
-                      "components": [{
-                        "type": "label",
-                        "text": "Under-pan",
-                        "class": "black_color center_align"
-                      }]
-                    }]
-                  },
-                  {
-                    "type": "horizontal",
-                    "class": "table2_col_value_styles",
-                    "components": [{
-                        "type": "label",
-                        "text": "12",
-                        "class": "center_align black_color"
-                      },
-                      {
-                        "type": "switch",
-                        "name": "under_pan_screen2",
-                        "value": "{{true}}",
-                        "class": "switch_styles",
-                        "contentDescription": "twelve"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "vertical",
-                    "class": "table2_col_name_styles",
-                    "components": [{
-                      "type": "label",
-                      "text": "Clean under-pan build up",
-                      "class": "black_color center_align"
-                    }]
-                  },
-                  {
-                    "type": "horizontal",
-                    "class": "table2_col_value_styles",
-                    "components": [{
-                        "type": "label",
-                        "text": "13",
-                        "class": "center_align black_color"
-                      },
-                      {
-                        "type": "switch",
-                        "name": "clean_under_pan_build_up_screen2",
-                        "value": "{{true}}",
-                        "class": "switch_styles",
-                        "contentDescription": "thirteen"
-                      }
-                    ]
-                  }
-                ],
-                "class": "no_padding table_row_even_styles center_align"
-              }],
-              "class": "center_align"
-            },
-            {
-              "type": "horizontal",
-              "items": [{
-                "type": "horizontal",
-                "components": [{
-                    "type": "horizontal",
-                    "class": "table2_col_name_styles",
-                    "components": [{
-                      "type": "horizontal",
-                      "class": "center_align",
-                      "components": [{
-                        "type": "label",
-                        "text": "Trough, North",
-                        "class": "black_color center_align"
-                      }]
-                    }]
-                  },
-                  {
-                    "type": "horizontal",
-                    "class": "table2_col_value_styles",
-                    "components": [{
-                        "type": "label",
-                        "text": "14",
-                        "class": "center_align black_color"
-                      },
-                      {
-                        "type": "switch",
-                        "name": "trough_north_screen2",
-                        "value": "{{true}}",
-                        "class": "switch_styles",
-                        "contentDescription": "fourteen"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "vertical",
-                    "class": "table2_col_name_styles",
-                    "components": [{
-                      "type": "label",
-                      "text": "Clean trough build up",
-                      "class": "black_color center_align"
-                    }]
-                  },
-                  {
-                    "type": "horizontal",
-                    "class": "table2_col_value_styles",
-                    "components": [{
-                        "type": "label",
-                        "text": "15",
-                        "class": "center_align black_color"
-                      },
-                      {
-                        "type": "switch",
-                        "name": "clean_trough_build_up_1__screen2",
-                        "value": "{{true}}",
-                        "class": "switch_styles",
-                        "contentDescription": "fifteen"
-                      }
-                    ]
-                  }
-                ],
-                "class": "no_padding table_row_odd_styles center_align"
-              }],
-              "class": "center_align"
-            },
-            {
-              "type": "horizontal",
-              "items": [{
-                "type": "horizontal",
-                "components": [{
-                    "type": "horizontal",
-                    "class": "table2_col_name_styles",
-                    "components": [{
-                      "type": "horizontal",
-                      "class": "center_align",
-                      "components": [{
-                        "type": "label",
-                        "text": "Trough, South",
-                        "class": "black_color center_align"
-                      }]
-                    }]
-                  },
-                  {
-                    "type": "horizontal",
-                    "class": "table2_col_value_styles",
-                    "components": [{
-                        "type": "label",
-                        "text": "16",
-                        "class": "center_align black_color"
-                      },
-                      {
-                        "type": "switch",
-                        "name": "under_pan_screen2",
-                        "value": "{{true}}",
-                        "class": "switch_styles",
-                        "contentDescription": "sixteen"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "vertical",
-                    "class": "table2_col_name_styles",
-                    "components": [{
-                      "type": "label",
-                      "text": "Clean trough build up",
-                      "class": "black_color center_align"
-                    }]
-                  },
-                  {
-                    "type": "horizontal",
-                    "class": "table2_col_value_styles",
-                    "components": [{
-                        "type": "label",
-                        "text": "17",
-                        "class": "center_align black_color"
-                      },
-                      {
-                        "type": "switch",
-                        "name": "clean_trough_build_up_2__screen2",
-                        "value": "{{true}}",
-                        "class": "switch_styles",
-                        "contentDescription": "seventeen"
-                      }
-                    ]
-                  }
-                ],
-                "class": "no_padding table_row_even_styles center_align"
-              }],
-              "class": "center_align"
+                "class": "no_padding"
+              }]
             },
             {
               "type": "horizontal",
@@ -901,42 +1660,7 @@
                     "text": "",
                     "class": "black_color",
                     "style": {
-                      "width": "20%"
-                    }
-                  },
-                  {
-                    "type": "button",
-                    "name": "previous",
-                    "text": "Previous",
-                    "class": "previous_button_styles center_align",
-                    "action": {
-                      "type": "$href",
-                      "options": {
-                        "url": "https://pvybhav.github.io/DGX_Form/SafetyReport/forms/screen_1.json",
-                        "preload": {
-                          "style": {
-                            "background": "#ff0000"
-                          },
-                          "layers": [{
-                            "type": "image",
-                            "url": "file://infinit.gif",
-                            "style": {
-                              "top": "50%-25",
-                              "left": "50%-25",
-                              "width": "50",
-                              "height": "50"
-                            }
-                          }]
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "type": "label",
-                    "text": "",
-                    "class": "black_color",
-                    "style": {
-                      "width": "5%"
+                      "width": "40%"
                     }
                   },
                   {
@@ -982,7 +1706,7 @@
                     "action": {
                       "type": "$href",
                       "options": {
-                        "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms-static/SafetyScreenShiftReport/forms/screen_3.json",
+                        "url": "https://pvybhav.github.io/DGX_Form/SafetyReport/forms/screen_2.json",
                         "preload": {
                           "style": {
                             "background": "#ff0000"
