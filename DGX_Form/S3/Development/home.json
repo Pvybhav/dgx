@@ -1,0 +1,266 @@
+{
+  "$jason": {
+    "head": {
+      "title": "DG Forms",
+      "description": "Detour Gold E-Forms",
+      "offline": "true",
+      "styles": {
+        "center_align": {
+          "align": "center"
+        },
+        "left_align": {
+          "align": "left"
+        },
+        "eform_button_styles": {
+          "width": "90%",
+          "height": "10%",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)",
+          "size": 20
+        },
+        "eform_voicetag_styles": {
+          "width": "10%",
+          "height": "10%",
+          "font": "HelveticaNeue-Bold",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(102, 255, 204)",
+          "size": 20
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "$show": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "$pull": {
+          "type": "$reload",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "Detour Gold E-Forms"
+            },
+            "style": {
+              "font": "HelveticaHeader",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)",
+              "height": "3%"
+            }
+          },
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "padding": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Form1",
+                      "class": "center_align eform_voicetag_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/1_LeachAreaShiftReport/screen_1.json",
+                          "preload": {
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://noimage.jpg",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "text": "  Leach Area Shift Report",
+                      "class": "left_align eform_button_styles",
+                      "contentDescription": "Form1",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/1_LeachAreaShiftReport/screen_1.json",
+                          "preload": {
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://noimage.jpg",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "padding": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Form2",
+                      "class": "center_align eform_voicetag_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/2_SafetyScreenShiftReport/screen_1.json",
+                          "preload": {
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://noimage.jpg",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "text": "  Safety Screen Shift Report",
+                      "class": "left_align eform_button_styles",
+                      "contentDescription": "Form2",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/2_SafetyScreenShiftReport/screen_1.json",
+                          "preload": {
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://noimage.jpg",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "padding": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Form3",
+                      "class": "center_align eform_voicetag_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/3_LimeAreaShiftReport/screen_1.json",
+                          "preload": {
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://noimage.jpg",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "text": "  Lime Area Shift Report",
+                      "class": "left_align eform_button_styles",
+                      "contentDescription": "Form3",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/3_LimeAreaShiftReport/screen_1.json",
+                          "preload": {
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://noimage.jpg",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
