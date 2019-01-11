@@ -1888,7 +1888,29 @@
                 }
               ]
             },
-            
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "value": "{{$global.description || ''}}",
+                      "name": "description",
+                      "placeholder": "Enter description",
+                      "contentDescription": "Enter Description",
+                      "style": {
+                        "width": "100%",
+                        "height": "15%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
             {
               "type": "horizontal",
               "items": [
