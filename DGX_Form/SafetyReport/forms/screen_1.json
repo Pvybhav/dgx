@@ -586,69 +586,78 @@
                       "type": "label",
                       "text": "▼"
                       
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+    
+                      "contentDescription": "shift",
+                      "class": "center_align dropdown_shift_style",
+                      "options": [
+                        {
+                          "value": "Night Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Day Shift",
+                          "defaultSelected": "true"
+                        }
+                      ],
+                      "action": {
+                        "trigger": "handleDropdownAndTextValues",
+                        "options": {
+                          "fieldName": "shift"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼"
+                      
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": [
+                        {
+                          "value": "Operator-1",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Operator-2",
+                          "defaultSelected": "false"
+                        }
+                      ],
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form2_page1",
+                          "operator": "{{$get.operator}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼"
+                      
+                    },
+                    
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
                     }
+                  ],
+                  "class": "no_padding"
+                },
                   ]
                 },
-                {
-                  "type": "dropdown",
-                  "name": "shift",
-
-                  "contentDescription": "shift",
-                  "class": "center_align dropdown_shift_style",
-                  "options": [
-                    {
-                      "value": "Night Shift",
-                      "defaultSelected": "false"
-                    },
-                    {
-                      "value": "Day Shift",
-                      "defaultSelected": "true"
-                    }
-                  ],
-                  "action": {
-                    "trigger": "handleDropdownAndTextValues",
-                    "options": {
-                      "fieldName": "shift"
-                    }
-                  }
-                },
-                
-                {
-                  "type": "dropdown",
-                  "name": "operator",
-                  "contentDescription": "operator",
-                  "class": "center_align black_color dropdown_operator_style",
-                  "options": [
-                    {
-                      "value": "Operator-1",
-                      "defaultSelected": "true"
-                    },
-                    {
-                      "value": "Operator-2",
-                      "defaultSelected": "false"
-                    }
-                  ],
-                  "action": {
-                    "type": "$global.set",
-                    "options": {
-                      "section_id": "form2_page1",
-                      "operator": "{{$get.operator}}"
-                    }
-                  }
-                },
-                
-                
-                {
-                  "type": "textfield",
-                  "value": "{{$global.sign || ''}}",
-                  "name": "sign",
-                  "placeholder": "Sign",
-                  "class": "sign_style center_align black_color",
-                  "contentDescription": "Sign"
-                }
-              ],
-              "class": "no_padding"
-            },
+               
             {
               "type": "horizontal",
               "items": [
