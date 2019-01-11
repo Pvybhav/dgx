@@ -17,41 +17,28 @@
         "black_color": {
           "color": "rgb(0, 0, 0)"
         },
-        "title_styles": {
-          "font": "HelveticaHeader",
-          "size": 20,
-          "align": "center",
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 162, 224)"
-        },
         "dropdown_date_style": {
-          "size": "13",
           "color": "rgb(0, 0, 0)",
           "border": "rgb(0, 0, 0)",
           "width": "7%",
-          "height": "3%",
-          "align": "center"
+          "height": "3%"
         },
         "dropdown_shift_style": {
-          "size": "13",
           "color": "rgb(0, 0, 0)",
           "border": "rgb(0, 0, 0)",
           "width": "20%",
-          "height": "3%",
-          "align": "center"
+          "height": "3%"
         },
         "dropdown_operator_style": {
-          "size": "13",
           "color": "rgb(0, 0, 0)",
           "border": "rgb(0, 0, 0)",
           "width": "20%",
-          "height": "3%",
-          "align": "center"
+          "height": "3%"
         },
         "sign_style": {
           "height": "4%",
           "width": "20%",
-          "size": "12"
+          "size": "15"
         },
         "header_2_styles": {
           "size": 13,
@@ -299,21 +286,350 @@
           "sections": [
             {
               "type": "horizontal",
-              "items": [
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": ""
+              "items": [{
+                "type": "horizontal",
+                "class": "no_padding center_align",
+                "style": {
+                  "padding_left": "1%",
+                  "padding_right": "1%"
+                },
+                "components": [{
+                    "type": "dropdown",
+                    "name": "date",
+                    "value": "{{$global.date}}",
+                    "contentDescription": "date",
+                    "class": "dropdown_date_style center_align",
+                    "options": [{
+                        "value": "Date",
+                        "defaultSelected": "true"
+                      },
+                      {
+                        "value": "1",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "2",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "3",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "4",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "5",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "6",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "7",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "8",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "9",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "10",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "11",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "12",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "13",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "14",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "15",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "16",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "17",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "18",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "19",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "20",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "21",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "22",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "23",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "24",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "25",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "26",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "27",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "28",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "29",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "30",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "31",
+                        "defaultSelected": "false"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "label",
+                    "text": "▼",
+                    "class": "right_padding"
+                  },
+                  {
+                    "type": "dropdown",
+                    "name": "month",
+                    "value": "{{$global.month}}",
+                    "contentDescription": "month",
+                    "class": "dropdown_date_style center_align",
+                    "options": [{
+                        "value": "Month",
+                        "defaultSelected": "true"
+                      },
+                      {
+                        "value": "1",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "2",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "3",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "4",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "5",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "6",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "7",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "8",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "9",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "10",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "11",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "12",
+                        "defaultSelected": "false"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "label",
+                    "text": "▼",
+                    "class": "right_padding"
+                  },
+                  {
+                    "type": "dropdown",
+                    "name": "year",
+                    "contentDescription": "year",
+                    "value": "{{$global.year}}",
+                    "class": "dropdown_date_style center_align",
+                    "options": [{
+                        "value": "Year",
+                        "defaultSelected": "true"
+                      },
+                      {
+                        "value": "2019",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "2020",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "2021",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "2022",
+                        "defaultSelected": "false"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "label",
+                    "text": "▼",
+                    "class": "right_padding"
+                  },
+                  {
+                    "type": "space",
+                    "style": {
+                      "width": "2%"
                     }
-                  ],
-                  "style": {
-                    "padding_top": "0",
-                    "height": "2%"
+                  },
+                  {
+                    "type": "dropdown",
+                    "name": "shift",
+                    "value": "{{$global.shift}}",
+                    "contentDescription": "shift",
+                    "class": "center_align black_color dropdown_shift_style",
+                    "options": [{
+                        "value": "Shift",
+                        "defaultSelected": "true"
+                      },
+                      {
+                        "value": "Night Shift",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "Day Shift",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "Regular Shift",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "Rotating Shift",
+                        "defaultSelected": "false"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "label",
+                    "text": "▼",
+                    "class": "right_padding"
+                  },
+                  {
+                    "type": "space",
+                    "style": {
+                      "width": "2%"
+                    }
+                  },
+                  {
+                    "type": "dropdown",
+                    "name": "operator",
+                    "value": "{{$global.operator}}",
+                    "contentDescription": "operator",
+                    "class": "center_align black_color dropdown_operator_style",
+                    "options": [{
+                        "value": "Operator",
+                        "defaultSelected": "true"
+                      },
+                      {
+                        "value": "John",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "Smith",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "Michael",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "Federer",
+                        "defaultSelected": "false"
+                      },
+                      {
+                        "value": "David",
+                        "defaultSelected": "false"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "label",
+                    "text": "▼",
+                    "class": "right_padding"
+                  },
+                  {
+                    "type": "space",
+                    "style": {
+                      "width": "2%"
+                    }
+                  },
+                  {
+                    "type": "textfield",
+                    "value": "{{$global.sign || ''}}",
+                    "name": "sign",
+                    "placeholder": "Sign",
+                    "class": "sign_style center_align black_color",
+                    "contentDescription": "Sign"
                   }
-                }
-              ]
+                ]
+              }]
             },
             {
               "type": "horizontal",
