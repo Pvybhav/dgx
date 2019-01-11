@@ -1749,6 +1749,35 @@
                     "style": {
                       "width": "5%"
                     }
+                  },
+                  {
+                    "type": "button",
+                    "name": "submit",
+                    "text": "submit",
+                    "class": "center_align submit_button_styles",
+                    "contentDescription": "submit",
+                    "action": {
+                      "type": "$global.reset",
+                      "options": {
+                        "save": "true",
+                        "filename": "TrashScreenShiftReport"
+                      },
+                      "success": {
+                        "type": "$util.toast",
+                        "options": {
+                          "text": "Data Submitted successfully",
+                          "type": "warning"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "label",
+                    "text": "",
+                    "class": "black_color",
+                    "style": {
+                      "width": "5%"
+                    }
                   }
                 ]
               }]
