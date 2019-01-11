@@ -1264,9 +1264,13 @@
 
                               {
                                 "type": "horizontal",
-                                "components": [{
+                                "style":{
+                                  "width":"14%"
+                                },
+                                "components": [
+                                  {
                                   "type": "label",
-                                  "text": "Trough, North",
+                                  "text": "Spray Bars",
                                   "class": "center_align black_color",
                                   "style": {
                                     "padding_left": "5"
@@ -1277,7 +1281,10 @@
                               },
 
                               {
-                                "type": "vertical",
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"24%"
+                                },
                                 "components": [{
                                     "type": "horizontal",
                                     "class": "center_align",
@@ -1318,21 +1325,29 @@
                                   }
                                 ]
                               },
-                              {
-                                "type": "label",
-                                "text": "20",
-                                "class": "center_align black_color"
-                              },
-                              {
-                                "type": "switch",
-                                "name": "TS_Under_pan_Build_up_screen1",
-                                "value": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
-                                "class": "switch_styles",
-                                "style": {
-                                  "width": "6%"
+                              {"type":"horizontal",
+                                "style":{
+                                  "width":"10%"
                                 },
-                                "contentDescription": "tewnty"
+                              "components":[
+                                {
+                                  "type": "label",
+                                  "text": "20",
+                                  "class": "center_align black_color"
+                                },
+                                {
+                                  "type": "switch",
+                                  "name": "TS_Under_pan_Build_up_screen1",
+                                  "value": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
+                                  "class": "switch_styles",
+                                  "style": {
+                                    "width": "6%"
+                                  },
+                                  "contentDescription": "tewnty"
+                                }
+                              ]
                               }
+                              
                             ],
                             "class": "table_row_odd_styles center_align"
                           }, {
