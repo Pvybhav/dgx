@@ -325,11 +325,11 @@
             "TS_Under_pan_Build_up_screen1": "{{$global.TS_Under_pan_Build_up_screen1}}",
             "Trough_North_screen1": "{{$global.Trough_North_screen1}}",
             "TS_North_trough_Build_up_screen1": "{{$global.TS_North_trough_Build_up_screen1}}",
-            "TS_Under_Pan_screen1": "{{$global.TS_Under_Pan_screen1}}",                                  
+            "TS_Under_Pan_screen1": "{{$get.TS_Under_Pan_screen1}}",                                  
             "TS_cloth_screen1": "{{$global.TS_cloth_screen1}}",
             "TS_spray_bars_screen1": "{{$global.TS_spray_bars_screen1}}",
-            "TS_strainer_upstream_screen1": "{{$global.TS_strainer_upstream_screen1}}",
-            "TS_Strainer_Downstream_screen1": "{{$global.TS_Strainer_Downstream_screen1}}",
+            "TS_strainer_upstream_screen1": "{{$get.TS_strainer_upstream_screen1}}",
+            "TS_Strainer_Downstream_screen1": "{{$get.TS_Strainer_Downstream_screen1}}",
             "Comments":"{{$get.Comments}}"
 
 
@@ -1183,7 +1183,7 @@
                                   {
                                     "type": "textfield",
                                     "name": "TS_strainer_upstream_screen1",
-                                    "value": "{{$global.TS_strainer_upstream_screen1}}",
+                                    "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
                                     "class": "center_align black_color",
                                     "contentDescription": "sixteen",
                                     "style": {
@@ -1257,7 +1257,7 @@
                                   {
                                     "type": "textfield",
                                     "name": "TS_Strainer_Downstream_screen1",
-                                    "value": "{{$global.TS_Strainer_Downstream_screen1}}",
+                                    "value": "{{$global.TS_Strainer_Downstream_screen1 || ''}}",
                                     "class": "center_align black_color",
                                     "contentDescription": "eighteen",
                                     "style": {
@@ -1575,7 +1575,7 @@
                                   {
                                     "type": "textfield",
                                     "name": "TS_Under_Pan_screen1",
-                                    "value": "{{$global.TS_Under_Pan_screen1}}",
+                                    "value": "{{$global.TS_Under_Pan_screen1 || ''}}",
                                     "class": "center_align black_color",
                                     "contentDescription": "seventeen",
                                     "style": {
