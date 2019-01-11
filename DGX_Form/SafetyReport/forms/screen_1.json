@@ -277,13 +277,14 @@
             "trash_screen1_rollers_13":  "{{$global.trash_screen1_rollers_13 || 'true'}}",
             "trash_screen1_rollers_14":  "{{$global.trash_screen1_rollers_14 || 'true'}}",
             "trash_screen1_rollers_15":  "{{$global.trash_screen1_rollers_15 || 'true'}}",
-            "cloths_screen1": "true",
-            "under_pan_screen1": "true",
-            "clean_under_pan_build_up_screen1": "true",
-            "trough_north_screen1": "true",
-            "clean_trough_build_up_1_screen1": "true",
-            "trough_south_screen1": "true",
-            "clean_trough_build_up_2_screen1": "true"
+            "TS_South_trough_Build_up_screen1": "{{$global.TS_South_trough_Build_up_screen1 || 'true'}}",
+            "TS_trough_south_screen1": "{{$global.TS_trough_south_screen1 || 'true'}}",
+            "TS_Under_pan_Build_up_screen1": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
+            "Trough_North_screen1": "{{$global.Trough_North_screen1 || 'true'}}",
+            "TS_North_trough_Build_up_screen1": "{{$global.TS_North_trough_Build_up_screen1}}",
+            "TS_Under_Pan_screen1": "{{$global.TS_Under_Pan_screen1 || ''}}","date"                                    "value": "{{$global.TS_cloth_screen1 || 'true'}}",
+            "TS_cloth_screen1": "{{$global.TS_cloth_screen1 || 'true'}}",
+            "TS_spray_bars_screen1": "{{$global.TS_spray_bars_screen1 || 'true'}}"
           }
         },
         "$pull": {
@@ -1458,7 +1459,7 @@
                                   {
                                     "type": "switch",
                                     "name": "TS_cloth_screen1",
-                                    "value": "{{$global.TS_cloth_screen1 || 'true'}}",
+                                    "value": "{{$global.TS_cloth_screen1}}",
                                     "class": "switch_styles",
                                     "style": {
                                       "width": "5%"
@@ -1523,7 +1524,7 @@
                               {
                                 "type": "textfield",
                                 "name": "TS_Under_Pan_screen1",
-                                "value": "{{$global.TS_Under_Pan_screen1 || ''}}",
+                                "value": "{{$global.TS_Under_Pan_screen1}}",
                                 "class": "center_align black_color",
                                 "contentDescription": "seventeen",
                                 "style": {
@@ -1582,7 +1583,7 @@
                                   {
                                     "type": "switch",
                                     "name": "TS_Under_pan_Build_up_screen1",
-                                    "value": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
+                                    "value": "{{$global.TS_Under_pan_Build_up_screen1}}",
                                     "class": "switch_styles",
                                     "style": {
                                       "width": "9%"
@@ -1674,8 +1675,8 @@
                               },
                               {
                                 "type": "switch",
-                                "name": "TS_Under_pan_Build_up_screen1",
-                                "value": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
+                                "name": "Trough_North_screen1",
+                                "value": "{{$global.Trough_North_screen1}}",
                                 "class": "switch_styles",
                                 "style": {
                                   "width": "5%"
@@ -1728,7 +1729,7 @@
                                   {
                                     "type": "switch",
                                     "name": "TS_North_trough_Build_up_screen1",
-                                    "value": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
+                                    "value": "{{$global.TS_North_trough_Build_up_screen1}}",
                                     "class": "switch_styles",
                                     "style": {
                                       "width": "9%"
@@ -1820,7 +1821,7 @@
                                   {
                                     "type": "switch",
                                     "name": "TS_trough_south_screen1",
-                                    "value": "{{$global.TS_trough_south_screen1 || 'true'}}",
+                                    "value": "{{$global.TS_trough_south_screen1}}",
                                     "class": "switch_styles",
                                     "style": {
                                       "width":"5%"
@@ -1874,7 +1875,7 @@
                                   {
                                     "type": "switch",
                                     "name": "TS_South_trough_Build_up_screen1",
-                                    "value": "{{$global.TS_South_trough_Build_up_screen1 || 'true'}}",
+                                    "value": "{{$global.TS_South_trough_Build_up_screen1}}",
                                     "class": "switch_styles",
                                     "contentDescription": "twenty five"
                                   }
