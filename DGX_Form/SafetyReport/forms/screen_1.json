@@ -1745,20 +1745,26 @@
                                 ]
                               },
                               {
-                                "type": "label",
-                                "text": "24",
-                                "class": "center_align black_color"
-                              },
-                              {
-                                "type": "switch",
-                                "name": "TS_trough_south_screen1",
-                                "value": "{{$global.TS_trough_south_screen1 || 'true'}}",
-                                "class": "switch_styles",
-                                "style": {
-                                  "width": "6%"
-                                },
-                                "contentDescription": "tewnty-four"
+                                "type":"horizontal",
+                                "components":[
+                                  {
+                                    "type": "label",
+                                    "text": "24",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "switch",
+                                    "name": "TS_trough_south_screen1",
+                                    "value": "{{$global.TS_trough_south_screen1 || 'true'}}",
+                                    "class": "switch_styles",
+                                    "style": {
+                                      "width": "6%"
+                                    },
+                                    "contentDescription": "tewnty-four"
+                                  }
+                                ]
                               }
+                              
                             ],
                             "class": "table_row_even_styles center_align"
                           },
