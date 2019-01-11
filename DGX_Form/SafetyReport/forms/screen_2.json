@@ -1188,19 +1188,20 @@
                             "type": "horizontal",
                             "style": {
                               "width": "48%",
-                              "align": "center",
-                              "padding_left": "5"
+                              "align": "center"
                             },
                             "components": [
 
                               {
                                 "type": "horizontal",
+                                "style":{
+                                  "width":"23%"
+                                },
                                 "components": [{
                                   "type": "label",
                                   "text": "Under Pan",
                                   "class": "center_align black_color",
                                   "style": {
-                                    "padding_left": "5"
 
                                   }
                                 }]
@@ -1210,31 +1211,43 @@
                               {
                                 "type": "label",
                                 "text": "Record kPa",
-                                "class": "center_align black_color"
-                              },
-                              {
-                                "type": "label",
-                                "text": "17",
-                                "class": "center_align black_color"
-                              },
-                              {
-                                "type": "textfield",
-                                "name": "TS_Under_Pan_screen2",
-                                "value": "{{$global.TS_Under_Pan_screen2}}",
                                 "class": "center_align black_color",
-                                "contentDescription": "seventeen",
-                                "style": {
-                                  "placeholder_color": "#cecece",
-                                  "font": "HelveticaNeue",
-                                  "size": "14",
-                                  "align": "center",
-                                  "padding": "10",
-                                  "border": "#000000",
-                                  "width": "6%",
-                                  "height": "4%"
+                                "style":{
+                                  "width":"15%"
                                 }
-
+                              },
+                              {
+                                "type":"horizontal",
+                                "style":{
+                                  "width":"10%"
+                                },
+                                "components":[
+                                  {
+                                    "type": "label",
+                                    "text": "17",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "textfield",
+                                    "name": "TS_Under_Pan_screen1",
+                                    "value": "{{$global.TS_Under_Pan_screen1}}",
+                                    "class": "center_align black_color",
+                                    "contentDescription": "seventeen",
+                                    "style": {
+                                      "placeholder_color": "#cecece",
+                                      "font": "HelveticaNeue",
+                                      "size": "14",
+                                      "align": "center",
+                                      "padding": "10",
+                                      "border": "#000000",
+                                      "width": "6%",
+                                      "height": "4%"
+                                    }
+    
+                                  }
+                                ]
                               }
+                              
                             ],
                             "class": "table_row_even_styles center_align"
                           },
@@ -1249,7 +1262,8 @@
 
                               {
                                 "type": "vertical",
-                                "components": [{
+                                "components": [
+                                  {
                                     "type": "label",
                                     "text": "Clean Under-pan Build-up",
                                     "class": "center_align black_color",
@@ -1266,33 +1280,44 @@
                               },
                               {
                                 "type": "horizontal",
-                                "components": [{
-                                    "type": "label",
-                                    "text": "",
-                                    "class": "center_align black_color"
-                                  },
+                                
+                                "components": [
+                                {
+                                  "type": "label",
+                                  "text": "",
+                                  "class": "center_align black_color"
+                                },
                                   {
-                                    "type": "label",
-                                    "text": "19",
-                                    "class": "center_align black_color"
-                                  },
-                                  {
-                                    "type": "switch",
-                                    "name": "TS_Under_pan_Build_up_screen2",
-                                    "value": "{{$global.TS_Under_pan_Build_up_screen2}}",
-                                    "class": "switch_styles",
-                                    "style": {
-                                      "width": "9%"
+                                    "type":"horizontal",
+                                    "style":{
+                                      "width":"10%"
                                     },
-                                    "contentDescription": "nineteen",
-                                    "action": {
-                                      "type": "$global.set",
-                                      "options": {
-                                        "TS_Under_pan_Build_up_screen2": "{{$get.TS_Under_pan_Build_up_screen2}}"
+                                    "components":[
+                                      {
+                                        "type": "label",
+                                        "text": "19",
+                                        "class": "center_align black_color"
+                                      },
+                                      {
+                                        "type": "switch",
+                                        "name": "TS_Under_pan_Build_up_screen1",
+                                        "value": "{{$global.TS_Under_pan_Build_up_screen1}}",
+                                        "class": "switch_styles",
+                                        "style": {
+                                          "width": "5%"
+                                        },
+                                        "contentDescription": "nineteen",
+                                        "action": {
+                                          "type": "$global.set",
+                                          "options": {
+                                            "TS_Under_pan_Build_up_screen1": "{{$get.TS_Under_pan_Build_up_screen1}}"
+                                          }
+                                        }
+                                        
                                       }
-                                    }
-                                    
+                                    ]
                                   }
+                                  
                                 ]
                               }
 
@@ -1378,8 +1403,8 @@
                               },
                               {
                                 "type": "switch",
-                                "name": "Trough_North_screen2",
-                                "value": "{{$global.Trough_North_screen2}}",
+                                "name": "Trough_North_screen1",
+                                "value": "{{$global.Trough_North_screen1}}",
                                 "class": "switch_styles",
                                 "style": {
                                   "width": "5%"
@@ -1388,7 +1413,7 @@
                                 "action": {
                                   "type": "$global.set",
                                   "options": {
-                                    "Trough_North_screen2": "{{$get.Trough_North_screen2}}"
+                                    "Trough_North_screen1": "{{$get.Trough_North_screen1}}"
                                   }
                                 }
                               }
@@ -1431,26 +1456,35 @@
                                     "class": "center_align black_color"
                                   },
                                   {
-                                    "type": "label",
-                                    "text": "22",
-                                    "class": "center_align black_color"
-                                  },
-                                  {
-                                    "type": "switch",
-                                    "name": "TS_North_trough_Build_up_screen2",
-                                    "value": "{{$global.TS_North_trough_Build_up_screen2}}",
-                                    "class": "switch_styles",
-                                    "style": {
-                                      "width": "9%"
+                                    "type":"horizontal",
+                                    "style":{
+                                      "width":"10%"
                                     },
-                                    "contentDescription": "twenty-two",
-                                    "action": {
-                                      "type": "$global.set",
-                                      "options": {
-                                        "TS_North_trough_Build_up_screen2": "{{$get.TS_North_trough_Build_up_screen2}}"
+                                    "components":[
+                                      {
+                                        "type": "label",
+                                        "text": "22",
+                                        "class": "center_align black_color"
+                                      },
+                                      {
+                                        "type": "switch",
+                                        "name": "TS_North_trough_Build_up_screen1",
+                                        "value": "{{$global.TS_North_trough_Build_up_screen1}}",
+                                        "class": "switch_styles",
+                                        "style": {
+                                          "width": "5%"
+                                        },
+                                        "contentDescription": "twenty-two",
+                                        "action": {
+                                          "type": "$global.set",
+                                          "options": {
+                                            "TS_North_trough_Build_up_screen1": "{{$get.TS_North_trough_Build_up_screen1}}"
+                                          }
+                                        }
                                       }
-                                    }
+                                    ]
                                   }
+                                  
                                 ]
                               }
 
@@ -1535,8 +1569,8 @@
                                   },
                                   {
                                     "type": "switch",
-                                    "name": "TS_trough_south_screen2",
-                                    "value": "{{$global.TS_trough_south_screen2}}",
+                                    "name": "TS_trough_south_screen1",
+                                    "value": "{{$global.TS_trough_south_screen1}}",
                                     "class": "switch_styles",
                                     "style": {
                                       "width":"5%"
@@ -1545,7 +1579,7 @@
                                      "action": {
                                       "type": "$global.set",
                                       "options": {
-                                        "TS_trough_south_screen2": "{{$get.TS_trough_south_screen2}}"
+                                        "TS_trough_south_screen1": "{{$get.TS_trough_south_screen1}}"
                                       }
                                     }
                                   }
@@ -1589,23 +1623,32 @@
                                     "class": "center_align black_color"
                                   },
                                   {
-                                    "type": "label",
-                                    "text": "25",
-                                    "class": "center_align black_color"
-                                  },
-                                  {
-                                    "type": "switch",
-                                    "name": "TS_South_trough_Build_up_screen2",
-                                    "value": "{{$global.TS_South_trough_Build_up_screen2}}",
-                                    "class": "switch_styles",
-                                    "contentDescription": "twenty-five",
-                                    "action": {
-                                      "type": "$global.set",
-                                      "options": {
-                                        "TS_South_trough_Build_up_screen2": "{{$get.TS_South_trough_Build_up_screen2}}"
+                                    "type":"horizontal",
+                                    "style":{
+                                      "width":"10%"
+                                    },
+                                    "components":[
+                                      {
+                                        "type": "label",
+                                        "text": "25",
+                                        "class": "center_align black_color"
+                                      },
+                                      {
+                                        "type": "switch",
+                                        "name": "TS_South_trough_Build_up_screen1",
+                                        "value": "{{$global.TS_South_trough_Build_up_screen1}}",
+                                        "class": "switch_styles",
+                                        "contentDescription": "twenty-five",
+                                        "action": {
+                                          "type": "$global.set",
+                                          "options": {
+                                            "TS_South_trough_Build_up_screen1": "{{$get.TS_South_trough_Build_up_screen1}}"
+                                          }
+                                        }
                                       }
-                                    }
+                                    ]
                                   }
+                                  
                                 ]
                               }
 
