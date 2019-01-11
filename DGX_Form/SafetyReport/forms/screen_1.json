@@ -1296,7 +1296,7 @@
                                       {
                                         "type": "label",
                                         "name": "AgitatorShaft_true",
-                                        "text": "-Clear",
+                                        "text": "-Good",
                                         "class": "black_color"
                                       }
                                     ]
@@ -1314,7 +1314,7 @@
                                       {
                                         "type": "label",
                                         "name": "AgitatorShaft_false",
-                                        "text": "- Plugged",
+                                        "text": "-Plugged",
                                         "class": "black_color"
                                       }
                                     ]
@@ -1373,7 +1373,10 @@
                               },
 
                               {
-                                "type": "vertical",
+                                "type": "horizontal",
+                                "style":{
+                                  "width":"24%"
+                                },
                                 "components": [{
                                     "type": "horizontal",
                                     "class": "center_align",
@@ -1387,7 +1390,7 @@
                                       {
                                         "type": "label",
                                         "name": "AgitatorShaft_true",
-                                        "text": "-Clear",
+                                        "text": "-Good",
                                         "class": "black_color"
                                       }
                                     ]
@@ -1405,7 +1408,7 @@
                                       {
                                         "type": "label",
                                         "name": "AgitatorShaft_false",
-                                        "text": "- Plugged",
+                                        "text": "-Torn/Holes",
                                         "class": "black_color"
                                       }
                                     ]
@@ -1415,20 +1418,29 @@
                                 ]
                               },
                               {
-                                "type": "label",
-                                "text": "20",
-                                "class": "center_align black_color"
-                              },
-                              {
-                                "type": "switch",
-                                "name": "TS_Under_pan_Build_up_screen1",
-                                "value": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
-                                "class": "switch_styles",
-                                "style": {
-                                  "width": "6%"
+                                "type":"horizontal",
+                                "style":{
+                                  "width":"10%"
                                 },
-                                "contentDescription": "tewnty"
+                                "components":[
+                                  {
+                                    "type": "label",
+                                    "text": "20",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "switch",
+                                    "name": "TS_Under_pan_Build_up_screen1",
+                                    "value": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
+                                    "class": "switch_styles",
+                                    "style": {
+                                      "width": "6%"
+                                    },
+                                    "contentDescription": "tewnty"
+                                  }
+                                ]
                               }
+                              
                             ],
                             "class": "table_row_even_styles center_align"
                           }
