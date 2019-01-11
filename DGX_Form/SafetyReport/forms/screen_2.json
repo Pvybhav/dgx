@@ -332,8 +332,8 @@
             "TS_cloth_screen2": "{{$global.TS_cloth_screen2}}",
             "TS_spray_bars_screen2": "{{$global.TS_spray_bars_screen2}}",
             "TS_strainer_upstream_screen2": "{{$global.TS_strainer_upstream_screen2}}",
-            "TS_Strainer_Downstream_screen2": "{{$global.TS_Strainer_Downstream_screen2}}"
-
+            "TS_Strainer_Downstream_screen2": "{{$global.TS_Strainer_Downstream_screen2}}",
+            "Comments":"{{$get.Comments}}"
 
           },
           "success": {
@@ -1637,7 +1637,7 @@
 
                   {
                     "type": "textarea",
-                    "value": "{{$global.Comments || ''}}",
+                    "value": "",
                     "name": "Comments",
                     "placeholder": "Comments",
                     "contentDescription": "Comments",
@@ -1667,7 +1667,7 @@
                     "text": "",
                     "class": "black_color",
                     "style": {
-                      "width": "40%"
+                      "width": "60%"
                     }
                   },
                   {

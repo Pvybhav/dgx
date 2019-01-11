@@ -329,7 +329,8 @@
             "TS_cloth_screen1": "{{$global.TS_cloth_screen1}}",
             "TS_spray_bars_screen1": "{{$global.TS_spray_bars_screen1}}",
             "TS_strainer_upstream_screen1": "{{$global.TS_strainer_upstream_screen1}}",
-            "TS_Strainer_Downstream_screen1": "{{$global.TS_Strainer_Downstream_screen1}}"
+            "TS_Strainer_Downstream_screen1": "{{$global.TS_Strainer_Downstream_screen1}}",
+            "Comments":"{{$get.Comments}}"
 
 
           },
@@ -1981,7 +1982,7 @@
 
                   {
                     "type": "textarea",
-                    "value": "{{$global.Comments || ''}}",
+                    "value": "",
                     "name": "Comments",
                     "placeholder": "Comments",
                     "contentDescription": "Comments",
