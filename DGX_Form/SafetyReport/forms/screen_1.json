@@ -262,23 +262,21 @@
         "$load": {
           "type": "$global.set",
           "options": {
-            "trash_screen1_rollers_1": "true",
-            "trash_screen1_rollers_2": "true",
-            "trash_screen1_rollers_3": "true",
-            "trash_screen1_rollers_4": "true",
-            "trash_screen1_rollers_5": "true",
-            "trash_screen1_rollers_6": "true",
-            "trash_screen1_rollers_7": "true",
-            "trash_screen1_rollers_8": "true",
-            "trash_screen1_rollers_9": "true",
-            "trash_screen1_rollers_10": "true",
-            "trash_screen1_rollers_11": "true",
-            "trash_screen1_rollers_12": "true",
-            "trash_screen1_rollers_13": "true",
-            "trash_screen1_rollers_14": "true",
-            "trash_screen1_rollers_15": "true",
-
-
+            "trash_screen1_rollers_1": "{{$global.trash_screen1_rollers_1 || 'true'}}",
+            "trash_screen1_rollers_2":  "{{$global.trash_screen1_rollers_2 || 'true'}}",
+            "trash_screen1_rollers_3":  "{{$global.trash_screen1_rollers_3 || 'true'}}",
+            "trash_screen1_rollers_4":  "{{$global.trash_screen1_rollers_4 || 'true'}}",
+            "trash_screen1_rollers_5":  "{{$global.trash_screen1_rollers_5 || 'true'}}",
+            "trash_screen1_rollers_6":  "{{$global.trash_screen1_rollers_6 || 'true'}}",
+            "trash_screen1_rollers_7":  "{{$global.trash_screen1_rollers_7 || 'true'}}",
+            "trash_screen1_rollers_8":  "{{$global.trash_screen1_rollers_8 || 'true'}}",
+            "trash_screen1_rollers_9":  "{{$global.trash_screen1_rollers_9 || 'true'}}",
+            "trash_screen1_rollers_10":  "{{$global.trash_screen1_rollers_10 || 'true'}}",
+            "trash_screen1_rollers_11":  "{{$global.trash_screen1_rollers_11 || 'true'}}",
+            "trash_screen1_rollers_12":  "{{$global.trash_screen1_rollers_12 || 'true'}}",
+            "trash_screen1_rollers_13":  "{{$global.trash_screen1_rollers_13 || 'true'}}",
+            "trash_screen1_rollers_14":  "{{$global.trash_screen1_rollers_14 || 'true'}}",
+            "trash_screen1_rollers_15":  "{{$global.trash_screen1_rollers_15 || 'true'}}",
             "cloths_screen1": "true",
             "under_pan_screen1": "true",
             "clean_under_pan_build_up_screen1": "true",
@@ -768,14 +766,13 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_1",
-                        "value": "{{true}}",
+                        "value": "{{$global.trash_screen1_rollers_1}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "one",
                         "action": {
                           "type": "$global.set",
                           "options": {
-                            "section_id": "form2_page1",
-                            "agitator_shaft_l1_101": "{{$get.agitator_shaft_l1_101}}"
+                            "trash_screen1_rollers_1": "{{$get.trash_screen1_rollers_1}}"
                           }
                         }
                       }
@@ -791,7 +788,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_2",
-                        "value": "{{true}}",
+                        "value": "{{$global.trash_screen1_rollers_2}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "two",
                         "action": {
@@ -814,7 +811,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_3",
-                        "value": "{{true}}",
+                        "value": "{{$global.trash_screen1_rollers_3}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "three",
                         "action": {
@@ -837,7 +834,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_4",
-                        "value": "true",
+                        "value": "{{$global.trash_screen1_rollers_4}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "four",
                         "action": {
@@ -860,7 +857,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_5",
-                        "value": "true",
+                        "value": "{{$global.trash_screen1_rollers_5}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "five",
                         "action": {
@@ -883,7 +880,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_6",
-                        "value": "true",
+                        "value": "{{$global.trash_screen1_rollers_6}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "six",
                         "action": {
@@ -906,7 +903,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_7",
-                        "value": "true",
+                        "value": "{{$global.trash_screen1_rollers_7}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "seven",
                         "action": {
@@ -929,7 +926,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_8",
-                        "value": "true",
+                        "value": "{{$global.trash_screen1_rollers_8}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "eight",
                         "action": {
@@ -952,7 +949,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_9",
-                        "value": "true",
+                        "value": "{{$global.trash_screen1_rollers_9}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "nine",
                         "action": {
@@ -975,7 +972,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_10",
-                        "value": "true",
+                        "value":"{{$global.trash_screen1_rollers_10}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "ten",
                         "action": {
@@ -998,7 +995,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_11",
-                        "value": "true",
+                        "value":"{{$global.trash_screen1_rollers_11}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "eleven",
                         "action": {
@@ -1020,7 +1017,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_12",
-                        "value": "true",
+                        "value": "{{$global.trash_screen1_rollers_12}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "twelve",
                         "action": {
@@ -1042,7 +1039,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_13",
-                        "value": "true",
+                        "value": "{{$global.trash_screen1_rollers_13}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "thirteen",
                         "action": {
@@ -1064,7 +1061,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_14",
-                        "value": "true",
+                        "value": "{{$global.trash_screen1_rollers_14}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "fourteen",
                         "action": {
@@ -1087,7 +1084,7 @@
                       {
                         "type": "switch",
                         "name": "trash_screen1_rollers_15",
-                        "value": "true",
+                        "value": "{{$global.trash_screen1_rollers_15}}",
                         "class": "table1_col_value_styles switch_styles",
                         "contentDescription": "fifteen",
                         "action": {
