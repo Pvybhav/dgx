@@ -282,7 +282,7 @@
             "TS_Under_pan_Build_up_screen1": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
             "Trough_North_screen1": "{{$global.Trough_North_screen1 || 'true'}}",
             "TS_North_trough_Build_up_screen1": "{{$global.TS_North_trough_Build_up_screen1}}",
-            "TS_Under_Pan_screen1": "{{$global.TS_Under_Pan_screen1 || ''}}",                                  "value": "{{$global.TS_cloth_screen1 || 'true'}}",
+            "TS_Under_Pan_screen1": "{{$global.TS_Under_Pan_screen1 || ''}}",                                  
             "TS_cloth_screen1": "{{$global.TS_cloth_screen1 || 'true'}}",
             "TS_spray_bars_screen1": "{{$global.TS_spray_bars_screen1 || 'true'}}"
           }
@@ -296,13 +296,36 @@
         "handleSave": {
           "type": "$global.set",
           "options": {
-            "section_id": "form2_page1",
+            "section_id": "Trash_Screen_Page1",
             "sign": "{{$get.sign || ''}}",
             "date": "{{$get.date}}",
             "month": "{{$get.month}}",
             "year": "{{$get.year}}",
             "shift": "{{$get.shift}}",
-            "operator": "{{$get.operator}}"
+            "operator": "{{$get.operator}}",
+            "trash_screen1_rollers_1": "{{$global.trash_screen1_rollers_1 || 'true'}}",
+            "trash_screen1_rollers_2":  "{{$global.trash_screen1_rollers_2 || 'true'}}",
+            "trash_screen1_rollers_3":  "{{$global.trash_screen1_rollers_3 || 'true'}}",
+            "trash_screen1_rollers_4":  "{{$global.trash_screen1_rollers_4 || 'true'}}",
+            "trash_screen1_rollers_5":  "{{$global.trash_screen1_rollers_5 || 'true'}}",
+            "trash_screen1_rollers_6":  "{{$global.trash_screen1_rollers_6 || 'true'}}",
+            "trash_screen1_rollers_7":  "{{$global.trash_screen1_rollers_7 || 'true'}}",
+            "trash_screen1_rollers_8":  "{{$global.trash_screen1_rollers_8 || 'true'}}",
+            "trash_screen1_rollers_9":  "{{$global.trash_screen1_rollers_9 || 'true'}}",
+            "trash_screen1_rollers_10":  "{{$global.trash_screen1_rollers_10 || 'true'}}",
+            "trash_screen1_rollers_11":  "{{$global.trash_screen1_rollers_11 || 'true'}}",
+            "trash_screen1_rollers_12":  "{{$global.trash_screen1_rollers_12 || 'true'}}",
+            "trash_screen1_rollers_13":  "{{$global.trash_screen1_rollers_13 || 'true'}}",
+            "trash_screen1_rollers_14":  "{{$global.trash_screen1_rollers_14 || 'true'}}",
+            "trash_screen1_rollers_15":  "{{$global.trash_screen1_rollers_15 || 'true'}}",
+            "TS_South_trough_Build_up_screen1": "{{$global.TS_South_trough_Build_up_screen1 || 'true'}}",
+            "TS_trough_south_screen1": "{{$global.TS_trough_south_screen1 || 'true'}}",
+            "TS_Under_pan_Build_up_screen1": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
+            "Trough_North_screen1": "{{$global.Trough_North_screen1 || 'true'}}",
+            "TS_North_trough_Build_up_screen1": "{{$global.TS_North_trough_Build_up_screen1}}",
+            "TS_Under_Pan_screen1": "{{$global.TS_Under_Pan_screen1 || ''}}",                                  
+            "TS_cloth_screen1": "{{$global.TS_cloth_screen1 || 'true'}}",
+            "TS_spray_bars_screen1": "{{$global.TS_spray_bars_screen1 || 'true'}}"
           },
           "success": {
             "type": "$util.toast",
