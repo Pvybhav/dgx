@@ -283,9 +283,8 @@
             "TS_North_trough_Build_up_screen1": "{{$global.TS_North_trough_Build_up_screen1 || 'true'}}",
             "TS_Under_Pan_screen1": "{{$global.TS_Under_Pan_screen1 || ''}}",                                  
             "TS_cloth_screen1": "{{$global.TS_cloth_screen1 || 'true'}}",
-            "TS_spray_bars_screen1": "{{$global.TS_spray_bars_screen1 || 'true'}}",
-            "TS_Strainer_Downstream_screen1": "{{$global.TS_Strainer_Downstream_screen1 || ''}}",
-            "TS_strainer_upstream_screen1": "{{$global.TS_strainer_upstream_screen1 || ''}}"
+            "TS_spray_bars_screen1": "{{$global.TS_spray_bars_screen1 || 'true'}}"
+         
 
           }
         },
@@ -328,8 +327,8 @@
             "TS_Under_Pan_screen1": "{{$get.TS_Under_Pan_screen1}}",                                  
             "TS_cloth_screen1": "{{$global.TS_cloth_screen1}}",
             "TS_spray_bars_screen1": "{{$global.TS_spray_bars_screen1}}",
-            "TS_strainer_upstream_screen1": "{{$get.TS_strainer_upstream_screen1}}",
-            "TS_Strainer_Downstream_screen1": "{{$get.TS_Strainer_Downstream_screen1}}",
+            "TS_strainer_upstream_screen1": "{{$get.TS_strainer_upstream_screen1 || ''}}",
+            "TS_Strainer_Downstream_screen1": "{{$get.TS_Strainer_Downstream_screen1 || ''}}",
             "Comments":"{{$get.Comments}}"
 
 
