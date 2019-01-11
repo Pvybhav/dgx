@@ -1272,9 +1272,186 @@
                                   
                               ],
                               "class": "table_row_even_styles center_align"
+                            },
+                            {
+                              "type":"horizontal",
+                              "style":{
+                                "width":"49%",
+                                "align":"center",
+                                "padding_left":"5"
+                              },
+                              "components":[
+                              
+                              {
+                                    "type": "horizontal",
+                                    "components": [
+                                      {
+                                        "type": "label",
+                                        "text": "Trough, North",
+                                        "class": "center_align black_color",
+                                        "style":{
+                                          "padding_left":"5"
+                                          
+                                        }
+                                      }
+                                    ]
+                                  
+                              },
+                              
+                                  {
+                                    "type": "vertical",
+                                    "components":[
+                                      {
+                                        "type": "horizontal",
+                                        "class": "center_align",
+                                        "components": [
+                                          {
+                                            "type": "switch",
+                                            "name": "shift",
+                                            "value": "true",
+                                            "class": "switch_table_styles",
+                                            "isClickable" : "false" 
+                                          },
+                                          {
+                                            "type": "label",
+                                            "name": "AgitatorShaft_true",
+                                            "text": "-Clear",
+                                            "class": "black_color"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "class": "center_align",
+                                        "components": [
+                                          {
+                                            "type": "switch",
+                                            "name": "shift",
+                                            "value": "false",
+                                            "class": "switch_table_styles",
+                                            "isClickable" : "false"
+                                          },
+                                          {
+                                            "type": "label",
+                                            "name": "AgitatorShaft_false",
+                                            "text": "- Plugged",
+                                            "class": "black_color"
+                                          }
+                                        ]
+                                      
+                                
+                                  }
+                                    ]
+                                  },
+                                  {
+                                    "type": "label",
+                                    "text": "20",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "switch",
+                                    "name": "TS_Under_pan_Build_up_screen1",
+                                    "value": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
+                                    "class": "switch_styles",
+                                    "style":{
+                                      "width":"6%"
+                                    },
+                                    "contentDescription": "tewnty"
+                                  }
+                              ],
+                              "class": "table_row_even_styles center_align"
+                            },{
+                              "type":"horizontal",
+                              "style":{
+                                "width":"49%",
+                                "align":"center",
+                                "padding_left":"5"
+                              },
+                              "components":[
+                              
+                              {
+                                    "type": "horizontal",
+                                    "components": [
+                                      {
+                                        "type": "label",
+                                        "text": "Trough, North",
+                                        "class": "center_align black_color",
+                                        "style":{
+                                          "padding_left":"5"
+                                          
+                                        }
+                                      }
+                                    ]
+                                  
+                              },
+                              
+                                  {
+                                    "type": "vertical",
+                                    "components":[
+                                      {
+                                        "type": "horizontal",
+                                        "class": "center_align",
+                                        "components": [
+                                          {
+                                            "type": "switch",
+                                            "name": "shift",
+                                            "value": "true",
+                                            "class": "switch_table_styles",
+                                            "isClickable" : "false" 
+                                          },
+                                          {
+                                            "type": "label",
+                                            "name": "AgitatorShaft_true",
+                                            "text": "-Clear",
+                                            "class": "black_color"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "class": "center_align",
+                                        "components": [
+                                          {
+                                            "type": "switch",
+                                            "name": "shift",
+                                            "value": "false",
+                                            "class": "switch_table_styles",
+                                            "isClickable" : "false"
+                                          },
+                                          {
+                                            "type": "label",
+                                            "name": "AgitatorShaft_false",
+                                            "text": "- Plugged",
+                                            "class": "black_color"
+                                          }
+                                        ]
+                                      
+                                
+                                  }
+                                    ]
+                                  },
+                                  {
+                                    "type": "label",
+                                    "text": "20",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "switch",
+                                    "name": "TS_Under_pan_Build_up_screen1",
+                                    "value": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
+                                    "class": "switch_styles",
+                                    "style":{
+                                      "width":"6%"
+                                    },
+                                    "contentDescription": "tewnty"
+                                  }
+                              ],
+                              "class": "table_row_even_styles center_align"
                             }
                           ]
                         },
+
+                        // *****************************************************************
                         {
                           "type":"textfield",
                           "text":"",
@@ -1632,6 +1809,62 @@
                                   }
                               ],
                               "class": "table_row_even_styles center_align"
+                            },
+                            {
+                              "type":"horizontal",
+                              "style":{
+                                "width":"49%",
+                                "align":"center",
+                                "padding_left":"5"
+                              },
+                              "components":[
+                              
+                              {
+                                    "type": "vertical",
+                                    "components": [
+                                      {
+                                        "type": "label",
+                                        "text": "Clean South Trough Buildup",
+                                        "class": "center_align black_color",
+                                        "style":{
+                                          "padding_left":"5"
+                                          
+                                        }
+                                      }
+                                      
+
+                                    ]
+                                    
+                                  
+                              },
+                              {
+                                "type":"horizontal",
+                                "components":[
+                                  {
+                                    "type": "label",
+                                    "text": "",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "label",
+                                    "text": "25",
+                                    "class": "center_align black_color"
+                                  },
+                                  {
+                                    "type": "switch",
+                                    "name": "TS_South_trough_Build_up_screen1",
+                                    "value": "{{$global.TS_South_trough_Build_up_screen1 || 'true'}}",
+                                    "class": "switch_styles",
+                                    "style":{
+                                      "width":"9%"
+                                    },
+                                    "contentDescription": "twenty-five"
+                                  }
+                                ]
+                              }
+                            
+                              ],
+                              "class": "table_row_odd_styles center_align"
                             }
                           ]
                         }
