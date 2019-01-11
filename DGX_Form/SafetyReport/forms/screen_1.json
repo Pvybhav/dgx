@@ -1892,19 +1892,23 @@
               "type": "horizontal",
               "items": [
                 {
-                  "type": "horizontal",
+                  "type": "vertical",
                   "components": [
                     {
+                      "type":"label",
+                      "text":"Comments"
+                    },
+                    {
                       "type": "textarea",
-                      "value": "{{$global.description || ''}}",
-                      "name": "description",
-                      "placeholder": "Comments",
+                      "value": "{{$global.Comments || ''}}",
+                      "name": "Comments",
                       "contentDescription": "Comments",
                       "style": {
                         "width": "100%",
                         "height": "15%",
                         "size": "15",
-                        "border":"#000000"
+                        "border":"#000000",
+                        "padding":"1%"
                       }
                     }
                   ],
