@@ -1257,8 +1257,7 @@
                             "type": "horizontal",
                             "style": {
                               "width": "48%",
-                              "align": "center",
-                              "padding_left": "5"
+                              "align": "center"
                             },
                             "components": [
 
@@ -1273,7 +1272,6 @@
                                   "text": "Spray Bars",
                                   "class": "center_align black_color",
                                   "style": {
-                                    "padding_left": "5"
 
                                   }
                                 }]
@@ -1290,7 +1288,7 @@
                                     "class": "center_align",
                                     "components": [{
                                         "type": "switch",
-                                        "name": "shift",
+                                        "name": "on",
                                         "value": "true",
                                         "class": "switch_table_styles",
                                         "isClickable": "false"
@@ -1308,7 +1306,7 @@
                                     "class": "center_align",
                                     "components": [{
                                         "type": "switch",
-                                        "name": "shift",
+                                        "name": "off",
                                         "value": "false",
                                         "class": "switch_table_styles",
                                         "isClickable": "false"
@@ -1337,8 +1335,8 @@
                                 },
                                 {
                                   "type": "switch",
-                                  "name": "TS_Under_pan_Build_up_screen1",
-                                  "value": "{{$global.TS_Under_pan_Build_up_screen1 || 'true'}}",
+                                  "name": "TS_spray_bars_screen1",
+                                  "value": "{{$global.TS_spray_bars_screen1 || 'true'}}",
                                   "class": "switch_styles",
                                   "style": {
                                     "width": "6%"
@@ -1354,19 +1352,20 @@
                             "type": "horizontal",
                             "style": {
                               "width": "48%",
-                              "align": "center",
-                              "padding_left": "5"
+                              "align": "center"
                             },
                             "components": [
 
                               {
                                 "type": "horizontal",
+                                "style":{
+                                  "width":"14%"
+                                },
                                 "components": [{
                                   "type": "label",
-                                  "text": "Trough, North",
+                                  "text": "Cloth",
                                   "class": "center_align black_color",
                                   "style": {
-                                    "padding_left": "5"
 
                                   }
                                 }]
