@@ -286,31 +286,19 @@
                                             "class": "content_style_odd"
                                         },
                                         {
-                                            "type": "horizontal",
-                                           
-                                            "components":[
-                                                {
-                                                    "type": "switch",
-                                                    "name": "trash_screen1_rollers_2",
-                                                    "value": "{{$global.trash_screen1_rollers_2}}",
-                                                    "contentDescription": "two",
-                                                    "style": {
-                                                        "background": "rgb(204, 216, 213)",
-                                                        "color": "rgb(255, 255, 255)",
-                                                        "height": "8%",
-                                                        "border": "#ffffff",
-                                                        "width": "10%"
-                                                        
-                                                    },
-                                                    "action": {
-                                                      "type": "$global.set",
-                                                      "options": {
-                                                        "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
-                                                      }
-                                                    }
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "switch_styles content_style_odd",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
                                                   }
-                                            ],
-                                            "class": "content_style_odd"
+                                                }
+                                              
 
                                         },
                                         {
