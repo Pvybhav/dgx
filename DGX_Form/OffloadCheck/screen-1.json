@@ -823,6 +823,89 @@
                                
                 ],
                 "class":"no_padding"
+                },
+                {
+                    "type":"horizontal",
+                    "style": {
+                        "background": "rgb(14, 53, 112)",
+                        "color": "rgb(255, 255, 255)",
+                        "height":"6%"
+                      },
+                    "components":[
+
+                                  {
+                                    "type":"label",
+                                    "text":"Truck Driver Name",
+                                    "style":{
+                                        "background": "rgb(14, 53, 112)",
+                                            "color": "rgb(255, 255, 255)",
+                                            "width":"50%",
+                                            "align":"center",
+                                            "border": "rgb(255, 255, 255)",
+                                            "height":"6%"
+                
+                                      }
+                                
+                        },
+                        
+                                  {
+                                    "type":"label",
+                                    "text":"Company",
+                                    "style":{
+                                        "background": "rgb(14, 53, 112)",
+                                            "color": "rgb(255, 255, 255)",
+                                            "width":"50%",
+                                            "align":"center",
+                                            "border": "rgb(255, 255, 255)",
+                                            "height":"6%"
+                
+                                      }
+                                }
+                               
+                ],
+                "class":"no_padding"
+                },
+                {
+                    "type":"horizontal",
+                    "style": {
+                        "background": "rgb(14, 53, 112)",
+                        "color": "rgb(255, 255, 255)",
+                        "height":"6%"
+                      },
+                    "components":[
+
+                        {
+                            "type": "textarea",
+                            "value": "{{$global.truck_driver_name || ''}}",
+                            "name": "truck_driver_name",
+                            "contentDescription": "truck driver name",
+                            "style": {
+                              "height": "6%",
+                              "size": "15",
+                              "width":"50%",
+                              "background":"rgb(204,206,213)",
+                              "border": "rgb(255, 255, 255)"
+        
+                            }
+                          },
+                        
+                          {
+                            "type": "textarea",
+                            "value": "{{$global.company || ''}}",
+                            "name": "company",
+                            "contentDescription": "company",
+                            "style": {
+                              "height": "6%",
+                              "size": "15",
+                              "width":"50%",
+                              "background":"rgb(204,206,213)",
+                              "border": "rgb(255, 255, 255)"
+        
+                            }
+                          }
+                               
+                ],
+                "class":"no_padding"
                 }
             ] ,
             "class":"no_padding" 
