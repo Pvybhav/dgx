@@ -30,6 +30,19 @@
                     "height": "8%",
                     "border": "#ffffff",
                     "padding_left": "2%"
+                },"content_style_odd": {
+                    "background": "rgb(14, 53, 112)",
+                    "color": "rgb(204, 216, 213)",
+                    "height": "8%",
+                    "border": "#ffffff",
+                    "padding_left": "2%"
+                },
+                "content_style_even": {
+                    "background": "rgb(14, 53, 112)",
+                    "color": "rgb(231, 232, 235)",
+                    "height": "8%",
+                    "border": "#ffffff",
+                    "padding_left": "2%"
                 },
                 "dropdown_date_style": {
                     "color": "rgb(0, 0, 0)",
@@ -253,6 +266,55 @@
                                                 "width": "30%"
                                             },
                                             "class": "header_style"
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "padding_bottom": "1%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Install safety perimeter cones",
+                                            "style": {
+                                                "width": "60%"
+                                            },
+                                            "class": "content_style_odd"
+                                        },
+                                        {
+                                            "type":"horizontal",
+                                            "style": {
+                                                "width": "10%"
+                                            },
+                                            "components":[
+                                                {
+                                                    "type": "switch",
+                                                    "name": "trash_screen1_rollers_2",
+                                                    "value": "{{$global.trash_screen1_rollers_2}}",
+                                                    "class": "table1_col_value_styles switch_styles",
+                                                    "contentDescription": "two",
+                                                    "action": {
+                                                      "type": "$global.set",
+                                                      "options": {
+                                                        "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                      }
+                                                    }
+                                                  } 
+                                            ]
+                                        }
+                                        ,
+                                        {
+                                            "type": "textfield",
+                                            "value": "{{$global.Safety_concerns || ''}}",
+                                            "name": "Safety_concerns",
+                                            "contentDescription": "Safety concerns",
+                                            "style": {
+                                                "width": "30%"
+                                            },
+                                            "class": "content_style_odd"
                                         }
                                     ],
                                     "class": "no_padding"
