@@ -295,13 +295,17 @@
 
                                         },
                                         {
-                                            "type": "label",
-                                            "text": " ",
+                                            "type": "textarea",
+                                            "value": "{{$global.comment1 || ''}}",
+                                            "name": "comment1",
+                                            "contentDescription": "comment1",
+                                            
                                             "style": {
-                                                "width": "30%"
+                                                "width": "30%",
+                                                "height":"8%"
                                             },
                                             "class": "content_style_odd"
-
+                                            
                                         }
                                     ],
                                     "class": "no_padding"
