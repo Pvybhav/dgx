@@ -706,74 +706,79 @@
                 }]
               },
   
-              
-                    {
-                        "type":"vertical",
-                        "style": {
-                            "background": "rgb(14, 53, 112)",
-                            "color": "rgb(255, 255, 255)"
-                          },
-                        "components":[
-                        {
-                      "type":"label",
-                      "text":"Safety Concerns",
-                      "style":{
+              {
+              "type":"vertical",
+            "items":[
+                {
+                    "type":"vertical",
+                    "style": {
                         "background": "rgb(14, 53, 112)",
-                            "color": "rgb(255, 255, 255)"
-                      }
-                    },
+                        "color": "rgb(255, 255, 255)"
+                      },
+                    "components":[
                     {
-                        "type": "textarea",
-                        "value": "{{$global.Safety_concerrns || ''}}",
-                        "name": "Safety_concerrns",
-                        "contentDescription": "Safety concerrns",
-                        "style": {
-                          "height": "8%",
-                          "size": "15",
-                          "border": "rgb(255, 255, 255)"
-    
-                        }
-                      }]
-                    },
+                  "type":"label",
+                  "text":"Safety Concerns",
+                  "style":{
+                    "background": "rgb(14, 53, 112)",
+                        "color": "rgb(255, 255, 255)"
+                  }
+                },
+                {
+                    "type": "textarea",
+                    "value": "{{$global.Safety_concerrns || ''}}",
+                    "name": "Safety_concerrns",
+                    "contentDescription": "Safety concerrns",
+                    "style": {
+                      "height": "8%",
+                      "size": "15",
+                      "border": "rgb(255, 255, 255)"
+
+                    }
+                  }]
+                },
+                
+                
+                {
+                    "type":"horizontal",
+                    "style": {
+                        "background": "rgb(14, 53, 112)",
+                        "color": "rgb(255, 255, 255)"
+                      },
+                    "components":[
+
+                                  {
+                                    "type":"label",
+                                    "text":"Warehouse Tech Name",
+                                    "style":{
+                                        "background": "rgb(14, 53, 112)",
+                                            "color": "rgb(255, 255, 255)",
+                                            "width":"50%",
+                                            "align":"center",
+                                            "border": "rgb(255, 255, 255)"
+                
+                                      }
+                                
+                        },
+                        
+                                  {
+                                    "type":"label",
+                                    "text":"BOL#",
+                                    "style":{
+                                        "background": "rgb(14, 53, 112)",
+                                            "color": "rgb(255, 255, 255)",
+                                            "width":"50%",
+                                            "align":"center",
+                                            "border": "rgb(255, 255, 255)"
+                
+                                      }
+                                }
+                               
+                ]
+                }
+            ]  
+            },
                     
-                    
-                    {
-                        "type":"horizontal",
-                        "style": {
-                            "background": "rgb(14, 53, 112)",
-                            "color": "rgb(255, 255, 255)"
-                          },
-                        "components":[
-    
-                                      {
-                                        "type":"label",
-                                        "text":"Warehouse Tech Name",
-                                        "style":{
-                                            "background": "rgb(14, 53, 112)",
-                                                "color": "rgb(255, 255, 255)",
-                                                "width":"50%",
-                                                "align":"center",
-                                                "border": "rgb(255, 255, 255)"
-                    
-                                          }
-                                    
-                            },
-                            
-                                      {
-                                        "type":"label",
-                                        "text":"BOL#",
-                                        "style":{
-                                            "background": "rgb(14, 53, 112)",
-                                                "color": "rgb(255, 255, 255)",
-                                                "width":"50%",
-                                                "align":"center",
-                                                "border": "rgb(255, 255, 255)"
-                    
-                                          }
-                                    }
-                                   
-                    ]
-                    },
                     
                    
               
