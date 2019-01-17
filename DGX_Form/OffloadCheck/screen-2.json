@@ -286,26 +286,11 @@
                                             "class": "content_style_odd"
                                         },
                                         {
-                                            "type":"horizontal",
+                                            "type": "label",
+                                            "text": " ",
                                             "style": {
-                                                "width": "10%",
-                                                "height":"8%"
+                                                "width": "10%"
                                             },
-                                            "components":[
-                                                {
-                                                    "type": "switch",
-                                                    "name": "trash_screen1_rollers_2",
-                                                    "value": "{{$global.trash_screen1_rollers_2}}",
-                                                    "class": "switch_styles",
-                                                    "contentDescription": "two",
-                                                    "action": {
-                                                      "type": "$global.set",
-                                                      "options": {
-                                                        "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
-                                                      }
-                                                    }
-                                                  } 
-                                            ],
                                             "class": "content_style_odd"
 
                                         }
