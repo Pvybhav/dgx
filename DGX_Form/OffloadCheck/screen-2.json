@@ -286,11 +286,25 @@
                                             "class": "content_style_odd"
                                         },
                                         {
-                                            "type": "label",
-                                            "text": " ",
+                                            "type": "horizontal",
                                             "style": {
                                                 "width": "10%"
                                             },
+                                            "components":[
+                                                {
+                                                    "type": "switch",
+                                                    "name": "trash_screen1_rollers_2",
+                                                    "value": "{{$global.trash_screen1_rollers_2}}",
+                                                    "class": "table1_col_value_styles switch_styles",
+                                                    "contentDescription": "two",
+                                                    "action": {
+                                                      "type": "$global.set",
+                                                      "options": {
+                                                        "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                      }
+                                                    }
+                                                  }
+                                            ],
                                             "class": "content_style_odd"
 
                                         },
@@ -301,8 +315,7 @@
                                             "contentDescription": "comment1",
                                             
                                             "style": {
-                                                "width": "29%",
-                                                "height":"8%"
+                                                "width": "30%"
                                             },
                                             "class": "content_style_odd"
                                             
