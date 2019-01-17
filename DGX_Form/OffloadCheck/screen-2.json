@@ -39,12 +39,25 @@
                     "border": "#ffffff",
                     "padding_left": "2%"
                 },
+                "content_style_odd_textfield":{
+                    "background": "rgb(204, 216, 213)",
+                    "color": "rgb(255, 255, 255)",
+                    "padding":"0",
+                    "border": "#ffffff"
+
+                },
                 "content_style_even": {
                     "background": "rgb(231, 232, 235)",
                     "color": "rgb(255, 255, 255)",
                     "height": "8%",
                     "border": "#ffffff",
                     "padding_left": "2%"
+                },
+                "content_style_even_textfield": {
+                    "background": "rgb(231, 232, 235)",
+                    "color": "rgb(255, 255, 255)",
+                    "padding":"0",
+                    "border": "#ffffff"
                 },
                 "dropdown_date_style": {
                     "color": "rgb(0, 0, 0)",
@@ -310,11 +323,56 @@
                                             "contentDescription": "comment1",
                                             "style": {
                                                 "width": "30%",
-                                                "height":"4%",
-                                                "background": "rgb(204, 216, 213)",
-                                                "color": "rgb(255, 255, 255)",
-                                                "padding":"0"
-                                            }
+                                                "height":"4%"
+                                                
+                                            },
+                                            "class":"content_style_odd_textfield"
+                                            
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "padding_bottom": "1%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Ensure Truck wheels are chocked",
+                                            "style": {
+                                                "width": "60%"
+                                            },
+                                            "class": "content_style_even"
+                                        },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "switch_styles content_style_even",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
+                                                }
+                                              
+
+                                        },
+                                        {
+                                            "type": "textfield",
+                                            "value": "{{$global.comment1 || ''}}",
+                                            "name": "comment1",
+                                            "contentDescription": "comment1",
+                                            "style": {
+                                                "width": "30%",
+                                                "height":"4%"
+                                                
+                                            },
+                                            "class":"content_style_even_textfield"
                                             
                                         }
                                     ],
