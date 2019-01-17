@@ -747,7 +747,11 @@
                
                 "items": [
                     {
-                        "type":"horizontal",
+                        "type":"vertical",
+                        "style": {
+                            "background": "rgb(14, 53, 112)",
+                            "color": "rgb(255, 255, 255)"
+                          },
                         "components":[
                         {
                       "type":"label",
@@ -755,9 +759,7 @@
                       "style":{
                         "background": "rgb(14, 53, 112)",
                             "color": "rgb(255, 255, 255)",
-                            "width":"50%",
-                            "height": "10%",
-                            "border":"#ffffff"
+                            "width":"50%"
                       }
                     },
                     {
@@ -766,13 +768,9 @@
                         "style":{
                           "background": "rgb(14, 53, 112)",
                               "color": "rgb(255, 255, 255)",
-                              "width":"50%",
-                              "height": "10%",
-                              "border":"#ffffff"
+                              "width":"50%"
                         }
                       }
-                ]
-                    },
                     {
                         "type": "textarea",
                         "value": "{{$global.Safety_concerrns || ''}}",
@@ -785,9 +783,12 @@
                           "border": "#000000"
     
                         }
-                      }
+                      }]
+                    }
+                    
                    ]
               },
+              
             
              
               {
