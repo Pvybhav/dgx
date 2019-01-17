@@ -380,6 +380,104 @@
                                           }
                                     ],
                                     "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height":"8%"
+                                        
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Safety Shower tested",
+                                            "style": {
+                                                "width": "60%"
+                                            },
+                                            "class": "content_style_odd"
+                                        },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_odd switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
+                                                }
+                                              
+
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "value": "{{$global.comment1 || ''}}",
+                                            "name": "comment1",
+                                            "contentDescription": "comment1",
+                                            "style": {
+                                                "width": "30%",
+                                                "height":"8%"
+                                                
+                                            },
+                                            "class":"content_style_odd_textfield"
+                                            
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height":"8%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "10 minute escape packs inspection",
+                                            "style": {
+                                                "width": "60%"
+                                            },
+                                            "class": "content_style_even"
+                                        },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_even switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
+                                                }
+                                              
+
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "8%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          }
+                                    ],
+                                    "class": "no_padding"
                                 }
 
                             ],
