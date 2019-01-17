@@ -708,12 +708,23 @@
   
               {
                 "type": "horizontal",
-                "items": [{
-                  "type":"label",
-                  "text":"Safety Concerns",
-                  "background": "#ff0000",
-                  "color":"#ffffff"
-                }]
+                "items": [
+                    {
+                        "type":"horizontal",
+                        "style": {
+                            "background": "rgb(231,232,235)",
+                            "color":"rgb(0, 0, 0)",
+                            "height": "9%"
+                          },
+                        "components":[
+                        {
+                      "type":"label",
+                      "text":"Safety Concerns",
+                      "background": "#ff0000",
+                      "color":"#ffffff"
+                    }]
+                    }
+                   ]
               },
             
              
