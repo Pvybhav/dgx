@@ -742,6 +742,53 @@
                       }
                    ]
               },
+              {
+                "type": "horizontal",
+               
+                "items": [
+                    {
+                        "type":"horizontal",
+                        "style": {
+                            "background": "rgb(14, 53, 112)",
+                            "color": "rgb(255, 255, 255)",
+                            "width": "100%"
+                          },
+                        "components":[
+                        {
+                      "type":"label",
+                      "text":"Warehouse Tech Name",
+                      "style":{
+                        "background": "rgb(14, 53, 112)",
+                            "color": "rgb(255, 255, 255)",
+                            "width":"50%"
+                      }
+                    },
+                    {
+                        "type":"label",
+                        "text":"BOL#",
+                        "style":{
+                          "background": "rgb(14, 53, 112)",
+                              "color": "rgb(255, 255, 255)",
+                              "width":"50%"
+                        }
+                      }
+                ]
+                    },
+                    {
+                        "type": "textarea",
+                        "value": "{{$global.Safety_concerrns || ''}}",
+                        "name": "Safety_concerrns",
+                        "contentDescription": "Safety concerrns",
+                        "style": {
+                          "width": "100%",
+                          "height": "10%",
+                          "size": "15",
+                          "border": "#000000"
+    
+                        }
+                      }
+                   ]
+              },
             
              
               {
