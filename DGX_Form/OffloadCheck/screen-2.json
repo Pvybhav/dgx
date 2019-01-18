@@ -284,14 +284,73 @@
                                 },
                                 {
                                     "type":"horizontal",
+                                    "style":{
+                                        "height":"6%"
+                                    },
                                     "components":[
                                         {
                                             "type":"textfield",
                                             "value":"Install Safety Perimeter Cones",
                                             "class":"content_style_odd",
                                             "style":{
-                                                "disable":"true"
+                                                "disable":"true",
+                                                "width":"60%"
                                             }
+                                        },
+                                        {
+                                            "type":"horizontal",
+                                            "style":{
+                                                "width":"10%"
+                                            },
+                                            "components":[
+                                                {
+                                                    "type":"textfield",
+                                                    "value":"1",
+                                                    "class":"content_style_odd",
+                                                    "style":{
+                                                        "disable":"true",
+                                                        "width":"5%"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "switch",
+                                                    "name": "trash_screen2_rollers_1",
+                                                    "value": "{{$global.trash_screen2_rollers_1}}",
+                                                    "class": "table1_col_value_styles switch_styles",
+                                                    "contentDescription": "one",
+                                                    "action": {
+                                                      "type": "$global.set",
+                                                      "options": {
+                                                        "trash_screen2_rollers_1": "{{$get.trash_screen2_rollers_1}}"
+                                                      }
+                                                    }
+                                                  }
+                                            ]
+                                        }
+                                        {
+                                            "type":"horizontal",
+                                            "style":{
+                                                "width":"30%"
+                                            },
+                                            "components":[
+                                                {
+                                                    "type":"textfield",
+                                                    "value":"2",
+                                                    "class":"content_style_odd",
+                                                    "style":{
+                                                        "disable":"true",
+                                                        "width":"60%"
+                                                    }
+                                                },
+                                                {
+                                                    "type":"textfield",
+                                                    "value":"",
+                                                    "class":"content_style_odd",
+                                                    "style":{
+                                                        "width":"60%"
+                                                    }
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
