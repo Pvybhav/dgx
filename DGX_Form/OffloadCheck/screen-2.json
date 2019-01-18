@@ -283,78 +283,508 @@
                                     "class": "no_padding"
                                 },
                                 {
-                                    "type":"horizontal",
-                                    "style":{
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height":"6%"
+                                        
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Install safety perimeter cones",
+                                            "style": {
+                                                "width": "60%"
+                                            },
+                                            "class": "content_style_odd_textfield"
+                                        },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_odd_textfield switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
+                                                }
+                                              
+
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "value": "{{$global.comment1 || ''}}",
+                                            "name": "comment1",
+                                            "contentDescription": "comment1",
+                                            "style": {
+                                                "width": "30%",
+                                                "height": "6%"
+                                                
+                                            },
+                                            "class":"content_style_odd_textfield"
+                                            
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
                                         "height":"6%"
                                     },
-                                    "components":[
-                                        {
-                                            "type":"textfield",
-                                            "value":"Install Safety Perimeter Cones",
-                                            "class":"content_style_odd",
-                                            "style":{
-                                                "disable":"true",
-                                                "width":"60%"
-                                            }
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Ensure Truck wheels are chocked",
+                                            "style": {
+                                                "width": "60%"
+                                            },
+                                            "class": "content_style_even_textfield"
                                         },
                                         {
-                                            "type":"horizontal",
-                                            "style":{
-                                                "width":"10%"
-                                            },
-                                            "components":[
-                                                {
-                                                    "type":"textfield",
-                                                    "value":"1",
-                                                    "class":"content_style_odd",
-                                                    "style":{
-                                                        "disable":"true",
-                                                        "width":"5%"
-                                                    }
-                                                },
-                                                {
-                                                    "type": "switch",
-                                                    "name": "trash_screen2_rollers_1",
-                                                    "value": "{{$global.trash_screen2_rollers_1}}",
-                                                    "class": "table1_col_value_styles switch_styles",
-                                                    "contentDescription": "one",
-                                                    "action": {
-                                                      "type": "$global.set",
-                                                      "options": {
-                                                        "trash_screen2_rollers_1": "{{$get.trash_screen2_rollers_1}}"
-                                                      }
-                                                    }
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_even_textfield switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
                                                   }
-                                            ]
+                                                }
+                                              
+
                                         },
                                         {
-                                            "type":"horizontal",
-                                            "style":{
-                                                "width":"30%"
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "6%"
+                                              
+                                              
+                                            }
+            
+                                          }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height":"6%"
+                                        
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Safety Shower tested",
+                                            "style": {
+                                                "width": "60%"
                                             },
-                                            "components":[
-                                                {
-                                                    "type":"textfield",
-                                                    "value":"2",
-                                                    "class":"content_style_odd",
-                                                    "style":{
-                                                        "disable":"true",
-                                                        "width":"60%"
-                                                    }
-                                                },
-                                                {
-                                                    "type":"textfield",
-                                                    "value":"",
-                                                    "class":"content_style_odd",
-                                                    "style":{
-                                                        "width":"60%"
-                                                    }
+                                            "class": "content_style_odd_textfield"
+                                        },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_odd_textfield switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
                                                 }
-                                            ]
+                                              
+
+                                        },
+                                        {
+                                            "type": "textfield",
+                                            "value": "{{$global.comment1 || ''}}",
+                                            "name": "comment1",
+                                            "contentDescription": "comment1",
+                                            "style": {
+                                                "width": "30%",
+                                                "height": "6%"
+                                                
+                                            },
+                                            "class":"content_style_odd_textfield"
+                                            
                                         }
-                                    ]
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "10 minute escape packs inspection",
+                                            "style": {
+                                                "width": "60%"
+                                            },
+                                            "class": "content_style_even_textfield"
+                                        },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_even_textfield switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
+                                                }
+                                              
+
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "6%"
+                                              
+                                              
+                                            }
+            
+                                          }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)"
+                                        
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Record SO2 Storage Tank Levels",
+                                            "style": {
+                                                "width": "60%"
+                                            },
+                                            "class": "header_style"
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": " ",
+                                            "style": {
+                                                "width": "10%"
+                                            },
+                                            "class": "header_style"
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": " ",
+                                            "style": {
+                                                "width": "30%"
+                                            },
+                                            "class": "header_style"
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Tank 1",
+                                            "style": {
+                                                "width": "40%"
+                                            },
+                                            "class": "content_style_even_textfield"
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#555555",
+                                              "width": "20%",
+                                              "height": "6%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_even_textfield switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
+                                                }
+                                              
+
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "6%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Tank 2",
+                                            "style": {
+                                                "width": "40%"
+                                            },
+                                            "class": "content_style_even_textfield"
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#555555",
+                                              "width": "20%",
+                                              "height": "6%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_even_textfield switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
+                                                }
+                                              
+
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "6%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Tank 3",
+                                            "style": {
+                                                "width": "40%"
+                                            },
+                                            "class": "content_style_even_textfield"
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#555555",
+                                              "width": "20%",
+                                              "height": "6%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_even_textfield switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
+                                                }
+                                              
+
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "6%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Tank 4",
+                                            "style": {
+                                                "width": "40%"
+                                            },
+                                            "class": "content_style_even_textfield"
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#555555",
+                                              "width": "20%",
+                                              "height": "6%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_even_textfield switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
+                                                }
+                                              
+
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "6%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          }
+                                    ],
+                                    "class": "no_padding"
                                 }
-                              
 
                             ],
                             "class": "no_padding"
