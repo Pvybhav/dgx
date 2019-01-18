@@ -35,29 +35,27 @@
                 "content_style_odd": {
                     "background": "rgb(204, 216, 213)",
                     "color": "rgb(0, 0, 0)",
+                    "height": "8%",
                     "border": "#ffffff",
-                    "padding_left": "2%",
-                    "height":"6%" 
+                    "padding_left": "2%"
                 },
                 "content_style_odd_textfield":{
                     "background": "rgb(204, 216, 213)",
                     "color": "rgb(0, 0, 0)",
-                    "border": "#ffffff",
-                    "height":"6%"
+                    "border": "#ffffff"
 
                 },
                 "content_style_even": {
                     "background": "rgb(231, 232, 235)",
                     "color": "rgb(0, 0, 0)",
+                    "height": "8%",
                     "border": "#ffffff",
-                    "padding_left": "2%",
-                    "height":"6%" 
+                    "padding_left": "2%"
                 },
                 "content_style_even_textfield": {
                     "background": "rgb(231, 232, 235)",
                     "color": "rgb(0, 0, 0)",
-                    "border": "#ffffff",
-                    "height":"6%" 
+                    "border": "#ffffff"
                 },
                 "dropdown_date_style": {
                     "color": "rgb(0, 0, 0)",
@@ -290,15 +288,14 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "padding":"0"
+                                        "height":"8%"
                                         
                                     },
                                     "components": [{
                                             "type": "label",
                                             "text": "Install safety perimeter cones",
                                             "style": {
-                                                "width": "60%",
-                                                "padding":"0"
+                                                "width": "60%"
                                             },
                                             "class": "content_style_odd"
                                         },
@@ -319,12 +316,14 @@
 
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "textarea",
                                             "value": "{{$global.comment1 || ''}}",
                                             "name": "comment1",
                                             "contentDescription": "comment1",
                                             "style": {
-                                                "width": "30%" 
+                                                "width": "30%",
+                                                "height":"8%"
+                                                
                                             },
                                             "class":"content_style_odd_textfield"
                                             
@@ -336,7 +335,7 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height":"6%"
+                                        "height":"8%"
                                     },
                                     "components": [{
                                             "type": "label",
@@ -363,16 +362,23 @@
 
                                         },
                                         {
-                                            "type": "textfield",
-                                            "value": "{{$global.comment1 || ''}}",
-                                            "name": "comment1",
-                                            "contentDescription": "comment1",
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
                                             "style": {
-                                                "width": "30%" 
-                                            },
-                                            "class":"content_style_even_textfield"
-                                            
-                                        }
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "8%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          }
                                     ],
                                     "class": "no_padding"
                                 },
@@ -380,7 +386,7 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height":"6%"
+                                        "height":"8%"
                                         
                                     },
                                     "components": [{
@@ -408,12 +414,13 @@
 
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "textarea",
                                             "value": "{{$global.comment1 || ''}}",
                                             "name": "comment1",
                                             "contentDescription": "comment1",
                                             "style": {
-                                                "width": "30%"
+                                                "width": "30%",
+                                                "height":"8%"
                                                 
                                             },
                                             "class":"content_style_odd_textfield"
@@ -426,7 +433,7 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height":"6%"
+                                        "height":"8%"
                                     },
                                     "components": [{
                                             "type": "label",
@@ -453,16 +460,23 @@
 
                                         },
                                         {
-                                            "type": "textfield",
-                                            "value": "{{$global.comment1 || ''}}",
-                                            "name": "comment1",
-                                            "contentDescription": "comment1",
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
                                             "style": {
-                                                "width": "30%" 
-                                            },
-                                            "class":"content_style_even_textfield"
-                                            
-                                        }
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "8%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          }
                                     ],
                                     "class": "no_padding"
                                 },
@@ -503,19 +517,18 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height":"6%"
+                                        "height":"8%"
                                     },
                                     "components": [{
                                             "type": "label",
                                             "text": "Tank 1",
                                             "style": {
-                                                "width": "40%",
-                                                "align":"center"    
+                                                "width": "40%"
                                             },
                                             "class": "content_style_even"
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "textarea",
                                             "name": "TS_strainer_upstream_screen1",
                                             "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
                                             "class": "center_align content_style_even_textfield",
@@ -524,7 +537,9 @@
                                               "placeholder_color": "#cecece",
                                               "font": "HelveticaNeue",
                                               "border": "#555555",
-                                              "width": "20%"
+                                              "width": "20%",
+                                              "height": "8%",
+                                              "padding":"0"
                                               
                                               
                                             }
@@ -547,16 +562,23 @@
 
                                         },
                                         {
-                                            "type": "textfield",
-                                            "value": "{{$global.comment1 || ''}}",
-                                            "name": "comment1",
-                                            "contentDescription": "comment1",
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
                                             "style": {
-                                                "width": "30%" 
-                                            },
-                                            "class":"content_style_even_textfield"
-                                            
-                                        }
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "8%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          }
                                     ],
                                     "class": "no_padding"
                                 },
@@ -564,28 +586,29 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height":"6%"
+                                        "height":"8%"
                                     },
                                     "components": [{
                                             "type": "label",
                                             "text": "Tank 2",
                                             "style": {
-                                                "width": "40%",
-                                                "align":"center"
+                                                "width": "40%"
                                             },
-                                            "class": "content_style_odd"
+                                            "class": "content_style_even"
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "textarea",
                                             "name": "TS_strainer_upstream_screen1",
                                             "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
-                                            "class": "center_align content_style_odd_textfield",
+                                            "class": "center_align content_style_even_textfield",
                                             "contentDescription": "sixteen",
                                             "style": {
                                               "placeholder_color": "#cecece",
                                               "font": "HelveticaNeue",
                                               "border": "#555555",
-                                              "width": "20%"
+                                              "width": "20%",
+                                              "height": "8%",
+                                              "padding":"0"
                                               
                                               
                                             }
@@ -596,7 +619,7 @@
                                                 "type": "switch",
                                                 "name": "trash_screen1_rollers_2",
                                                 "value": "{{$global.trash_screen1_rollers_2}}",
-                                                "class": "content_style_odd switch_styles",
+                                                "class": "content_style_even switch_styles",
                                                 "contentDescription": "two",
                                                 "action": {
                                                   "type": "$global.set",
@@ -608,16 +631,18 @@
 
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "textarea",
                                             "name": "TS_strainer_upstream_screen1",
                                             "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
-                                            "class": "center_align content_style_odd_textfield",
+                                            "class": "center_align content_style_even_textfield",
                                             "contentDescription": "sixteen",
                                             "style": {
                                               "placeholder_color": "#cecece",
                                               "font": "HelveticaNeue",
                                               "border": "#ffffff",
-                                              "width": "30%"
+                                              "width": "30%",
+                                              "height": "8%",
+                                              "padding":"0"
                                               
                                               
                                             }
@@ -630,19 +655,18 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height":"6%"
+                                        "height":"8%"
                                     },
                                     "components": [{
                                             "type": "label",
                                             "text": "Tank 3",
                                             "style": {
-                                                "width": "40%",
-                                                "align":"center"
+                                                "width": "40%"
                                             },
                                             "class": "content_style_even"
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "textarea",
                                             "name": "TS_strainer_upstream_screen1",
                                             "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
                                             "class": "center_align content_style_even_textfield",
@@ -651,7 +675,9 @@
                                               "placeholder_color": "#cecece",
                                               "font": "HelveticaNeue",
                                               "border": "#555555",
-                                              "width": "20%"
+                                              "width": "20%",
+                                              "height": "8%",
+                                              "padding":"0"
                                               
                                               
                                             }
@@ -674,7 +700,7 @@
 
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "textarea",
                                             "name": "TS_strainer_upstream_screen1",
                                             "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
                                             "class": "center_align content_style_even_textfield",
@@ -683,7 +709,9 @@
                                               "placeholder_color": "#cecece",
                                               "font": "HelveticaNeue",
                                               "border": "#ffffff",
-                                              "width": "30%"
+                                              "width": "30%",
+                                              "height": "8%",
+                                              "padding":"0"
                                               
                                               
                                             }
@@ -696,19 +724,18 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height":"6%"
+                                        "height":"8%"
                                     },
                                     "components": [{
                                             "type": "label",
                                             "text": "Tank 4",
                                             "style": {
-                                                "width": "40%",
-                                                "align":"center"
+                                                "width": "40%"
                                             },
                                             "class": "content_style_even"
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "textarea",
                                             "name": "TS_strainer_upstream_screen1",
                                             "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
                                             "class": "center_align content_style_even_textfield",
@@ -717,7 +744,9 @@
                                               "placeholder_color": "#cecece",
                                               "font": "HelveticaNeue",
                                               "border": "#555555",
-                                              "width": "20%"
+                                              "width": "20%",
+                                              "height": "8%",
+                                              "padding":"0"
                                               
                                               
                                             }
@@ -740,7 +769,7 @@
 
                                         },
                                         {
-                                            "type": "textfield",
+                                            "type": "textarea",
                                             "name": "TS_strainer_upstream_screen1",
                                             "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
                                             "class": "center_align content_style_even_textfield",
@@ -749,7 +778,9 @@
                                               "placeholder_color": "#cecece",
                                               "font": "HelveticaNeue",
                                               "border": "#ffffff",
-                                              "width": "30%"
+                                              "width": "30%",
+                                              "height": "8%",
+                                              "padding":"0"
                                               
                                               
                                             }
