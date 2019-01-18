@@ -483,8 +483,8 @@
                                 {
                                     "type": "horizontal",
                                     "style": {
-                                        "color": "rgb(255, 255, 255)",
-                                        "padding_bottom": "1%"
+                                        "color": "rgb(255, 255, 255)"
+                                        
                                     },
                                     "components": [{
                                             "type": "label",
@@ -510,6 +510,75 @@
                                             },
                                             "class": "header_style"
                                         }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height":"8%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Tank 1",
+                                            "style": {
+                                                "width": "40%"
+                                            },
+                                            "class": "content_style_even"
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "20%",
+                                              "height": "8%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          },
+                                        {
+                                            
+                                                "type": "switch",
+                                                "name": "trash_screen1_rollers_2",
+                                                "value": "{{$global.trash_screen1_rollers_2}}",
+                                                "class": "content_style_even switch_styles",
+                                                "contentDescription": "two",
+                                                "action": {
+                                                  "type": "$global.set",
+                                                  "options": {
+                                                    "trash_screen1_rollers_2": "{{$get.trash_screen1_rollers_2}}"
+                                                  }
+                                                }
+                                              
+
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "TS_strainer_upstream_screen1",
+                                            "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                            "class": "center_align content_style_even_textfield",
+                                            "contentDescription": "sixteen",
+                                            "style": {
+                                              "placeholder_color": "#cecece",
+                                              "font": "HelveticaNeue",
+                                              "border": "#ffffff",
+                                              "width": "30%",
+                                              "height": "8%",
+                                              "padding":"0"
+                                              
+                                              
+                                            }
+            
+                                          }
                                     ],
                                     "class": "no_padding"
                                 }
