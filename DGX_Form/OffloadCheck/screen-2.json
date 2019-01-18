@@ -35,6 +35,9 @@
                     "padding_left": "2%"
 
                 },
+                "textarea_style":{
+                    "height":"7%"
+                },
                 "content_style_odd": {
                     "background": "rgb(204, 216, 213)",
                     "color": "rgb(0, 0, 0)",
@@ -312,7 +315,7 @@
                                     "components": [{
                                             "type": "textarea",
                                             "value": "Install safety perimeter cones",
-                                            "class": "content_style_odd_textfield title_styles"
+                                            "class": "content_style_odd_textfield title_styles textarea_style"
                                         },
                                         {
                                             "type": "label",
@@ -343,7 +346,7 @@
                                         {
                                             "type": "label",
                                             "text": "2",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -360,7 +363,7 @@
                                                 "height": "6%"
 
                                             },
-                                            "class": "content_style_odd"
+                                            "class": "content_style_odd textarea_style"
 
                                         }
                                     ],
@@ -375,14 +378,14 @@
                                     "components": [{
                                             "type": "textarea",
                                             "value": "Ensure Truck wheels are choked",
-                                            "class": "content_style_even_textfield title_styles"
+                                            "class": "content_style_even_textfield title_styles textarea_style"
 
 
                                         },
                                         {
                                             "type": "label",
                                             "text": "3",
-                                            "class": "content_style_even center_align",
+                                            "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -408,7 +411,7 @@
                                         {
                                             "type": "label",
                                             "text": "4",
-                                            "class": "content_style_even center_align",
+                                            "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -419,7 +422,7 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_truck_wheels_choked_comments",
                                             "value": "{{$global.so2_screen2_truck_wheels_choked_comments || ''}}",
-                                            "class": "content_style_even_textfield",
+                                            "class": "content_style_even_textfield textarea_style",
                                             "contentDescription": "four",
                                             "style": {
                                                 "placeholder_color": "#cecece",
@@ -444,13 +447,13 @@
                                     "components": [{
                                             "type": "textarea",
                                             "value": "Safety Shower Tested",
-                                            "class": "content_style_odd_textfield title_styles"
+                                            "class": "content_style_odd_textfield title_styles textarea_style"
 
                                         },
                                         {
                                             "type": "label",
                                             "text": "5",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -476,7 +479,7 @@
                                         {
                                             "type": "label",
                                             "text": "6",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -493,7 +496,7 @@
                                                 "height": "6%"
 
                                             },
-                                            "class": "content_style_odd"
+                                            "class": "content_style_odd textarea_style"
 
                                         }
                                     ],
@@ -508,13 +511,13 @@
                                     "components": [{
                                             "type": "textarea",
                                             "value": "10 minute escape packs inspection",
-                                            "class": "content_style_even_textfield title_styles"
+                                            "class": "content_style_even_textfield title_styles textarea_style"
 
 
                                         }, {
                                             "type": "label",
                                             "text": "7",
-                                            "class": "content_style_even center_align",
+                                            "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -540,7 +543,7 @@
                                         {
                                             "type": "label",
                                             "text": "8",
-                                            "class": "content_style_even center_align",
+                                            "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -551,7 +554,7 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_escape_packs_inspection_comments",
                                             "value": "{{$global.so2_screen2_escape_packs_inspection_comments || ''}}",
-                                            "class": "content_style_even_textfield",
+                                            "class": "content_style_even_textfield textarea_style",
                                             "contentDescription": "eight",
                                             "style": {
                                                 "placeholder_color": "#cecece",
@@ -610,7 +613,7 @@
                                             "type": "textarea",
                                             "name": "tank 1",
                                             "value": "Tank 1",
-                                            "class": "content_style_odd_textfield",
+                                            "class": "content_style_odd_textfield textarea_style",
                                             "style": {
                                                 "font": "HelveticaNeue",
                                                 "width": "30%",
@@ -626,7 +629,7 @@
                                         }, {
                                             "type": "label",
                                             "text": "9",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -637,7 +640,7 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_1_level",
                                             "value": "{{$global.so2_screen2_storage_tank_1_level || ''}}",
-                                            "class": "center_align content_style_odd_textfield",
+                                            "class": "center_align content_style_odd_textfield textarea_style",
                                             "contentDescription": "nine",
                                             "style": {
                                                 "placeholder_color": "#cecece",
@@ -654,7 +657,7 @@
                                         {
                                             "type": "label",
                                             "text": "10",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -680,7 +683,7 @@
                                         {
                                             "type": "label",
                                             "text": "11",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -691,7 +694,7 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_1_comments",
                                             "value": "{{$global.so2_screen2_storage_tank_1_comments || ''}}",
-                                            "class": "center_align content_style_odd",
+                                            "class": "center_align content_style_odd textarea_style",
                                             "contentDescription": "eleven",
                                             "style": {
                                                 "placeholder_color": "#cecece",
@@ -718,7 +721,7 @@
                                             "type": "textarea",
                                             "name": "tank 2",
                                             "value": "Tank 2",
-                                            "class": "content_style_even_textfield",
+                                            "class": "content_style_even_textfield textarea_style",
                                             "style": {
                                                 "font": "HelveticaNeue",
                                                 "width": "30%",
@@ -734,7 +737,7 @@
                                         }, {
                                             "type": "label",
                                             "text": "12",
-                                            "class": "content_style_even center_align",
+                                            "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -745,7 +748,7 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_2_level",
                                             "value": "{{$global.so2_screen2_storage_tank_2_level || ''}}",
-                                            "class": "center_align content_style_even_textfield",
+                                            "class": "center_align content_style_even_textfield textarea_style",
                                             "contentDescription": "twelve",
                                             "style": {
                                                 "placeholder_color": "#cecece",
@@ -762,7 +765,7 @@
                                         {
                                             "type": "label",
                                             "text": "13",
-                                            "class": "content_style_even center_align",
+                                            "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -788,7 +791,7 @@
                                         {
                                             "type": "label",
                                             "text": "14",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -799,7 +802,7 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_2_comments",
                                             "value": "{{$global.so2_screen2_storage_tank_2_comments || ''}}",
-                                            "class": "center_align content_style_even_textfield",
+                                            "class": "center_align content_style_even_textfield textarea_style",
                                             "contentDescription": "fourteen",
                                             "style": {
                                                 "placeholder_color": "#cecece",
@@ -826,7 +829,7 @@
                                             "type": "textarea",
                                             "name": "tank 3",
                                             "value": "Tank 3",
-                                            "class": "content_style_odd_textfield",
+                                            "class": "content_style_odd_textfield textarea_style",
                                             "style": {
                                                 "font": "HelveticaNeue",
                                                 "width": "30%",
@@ -842,7 +845,7 @@
                                         }, {
                                             "type": "label",
                                             "text": "15",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -853,7 +856,7 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_3_level",
                                             "value": "{{$global.so2_screen2_storage_tank_3_level || ''}}",
-                                            "class": "center_align content_style_odd_textfield",
+                                            "class": "center_align content_style_odd_textfield textarea_style",
                                             "contentDescription": "fifteen",
                                             "style": {
                                                 "placeholder_color": "#cecece",
@@ -870,7 +873,7 @@
                                         {
                                             "type": "label",
                                             "text": "16",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -899,7 +902,7 @@
                                         {
                                             "type": "label",
                                             "text": "17",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -910,7 +913,7 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_3_comments",
                                             "value": "{{$global.so2_screen2_storage_tank_3_comments || ''}}",
-                                            "class": "center_align content_style_odd_textfield",
+                                            "class": "center_align content_style_odd_textfield textarea_style",
                                             "contentDescription": "seventeen",
                                             "style": {
                                                 "placeholder_color": "#cecece",
@@ -937,7 +940,7 @@
                                             "type": "textarea",
                                             "name": "tank 4",
                                             "value": "Tank 4",
-                                            "class": "content_style_even_textfield",
+                                            "class": "content_style_even_textfield textarea_style",
                                             "style": {
                                                 "font": "HelveticaNeue",
                                                 "width": "30%",
@@ -953,7 +956,7 @@
                                         }, {
                                             "type": "label",
                                             "text": "18",
-                                            "class": "content_style_even center_align",
+                                            "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -964,7 +967,7 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_4_level",
                                             "value": "{{$global.so2_screen2_storage_tank_4_level || ''}}",
-                                            "class": "center_align content_style_even_textfield",
+                                            "class": "center_align content_style_even_textfield textarea_style",
                                             "contentDescription": "eighteen",
                                             "style": {
                                                 "placeholder_color": "#cecece",
@@ -981,7 +984,7 @@
                                         {
                                             "type": "label",
                                             "text": "19",
-                                            "class": "content_style_even center_align",
+                                            "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3",
@@ -1009,7 +1012,7 @@
                                         {
                                             "type": "label",
                                             "text": "20",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "3"
@@ -1020,7 +1023,7 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_4_comments",
                                             "value": "{{$global.so2_screen2_storage_tank_4_comments || ''}}",
-                                            "class": "center_align content_style_even_textfield",
+                                            "class": "center_align content_style_even_textfield textarea_style",
                                             "contentDescription": "twenty",
                                             "style": {
                                                 "placeholder_color": "#cecece",
