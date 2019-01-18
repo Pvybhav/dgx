@@ -998,9 +998,15 @@
             
                                           },
                                           {
+                                              "type":"horizontal",
+                                              "style":{
+                                                  "border":"#ffffff"
+                                              },
+                                              "components":[
+                                                  {
                                             "type": "label",
                                             "text": "19",
-                                            "class": "content_style_even center_align",
+                                            "class": "content_style_even_textfield center_align",
                                             "style": {
                                                 "width": "5%",
                                                 "padding":"3"
@@ -1012,7 +1018,7 @@
                                                 "type": "switch",
                                                 "name": "trash_screen1_rollers_2",
                                                 "value": "{{$global.trash_screen1_rollers_2}}",
-                                                "class": "content_style_even switch_styles",
+                                                "class": "content_style_even_textfield switch_styles",
                                                 "contentDescription": "two",
                                                 "action": {
                                                   "type": "$global.set",
@@ -1022,7 +1028,10 @@
                                                 }
                                               
 
-                                        },
+                                        }
+                                              ]
+                                          }
+                                          ,
                                         {
                                             "type": "label",
                                             "text": "20",
