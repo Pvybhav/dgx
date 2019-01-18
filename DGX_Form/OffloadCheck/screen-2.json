@@ -517,13 +517,23 @@
                                         "height": "6%"
                                     },
                                     "components": [{
-                                            "type": "label",
-                                            "text": "Tank 1",
-                                            "style": {
-                                                "width": "40%"
-                                            },
-                                            "class": "content_style_even_textfield"
-                                        },
+                                        "type": "textarea",
+                                        "name": "TS_strainer_upstream_screen1",
+                                        "value": "{{$global.TS_strainer_upstream_screen1 || ''}}",
+                                        "class": "center_align content_style_even_textfield",
+                                        "contentDescription": "sixteen",
+                                        "style": {
+                                          "placeholder_color": "#cecece",
+                                          "font": "HelveticaNeue",
+                                          "border": "#555555",
+                                          "width": "40%",
+                                          "height": "6%",
+                                          "padding":"0"
+                                          
+                                          
+                                        }
+        
+                                      },
                                         {
                                             "type": "textarea",
                                             "name": "TS_strainer_upstream_screen1",
