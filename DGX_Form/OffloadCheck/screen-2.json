@@ -541,18 +541,28 @@
 
                                         },
                                         {
-                                            "type": "textarea",
-                                            "name": "so2_screen2_safety_shower_comments",
-                                            "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                            "contentDescription": "six",
+                                            "type":"horizontal",
                                             "style": {
-                                                "padding": "3",
                                                 "width": "25%"
 
                                             },
-                                            "class": "content_style_odd"
-
+                                            "components":[
+                                                {
+                                                    "type": "textfield",
+                                                    "name": "so2_screen2_safety_shower_comments",
+                                                    "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                    "contentDescription": "six",
+                                                    "style": {
+                                                        "padding": "3",
+                                                        "width": "25%"
+        
+                                                    },
+                                                    "class": "content_style_odd"
+        
+                                                }
+                                            ]
                                         }
+                                        
                                     ],
                                     "class": "no_padding"
                                 },
