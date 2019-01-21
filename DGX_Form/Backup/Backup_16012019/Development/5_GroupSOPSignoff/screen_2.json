@@ -1,0 +1,1300 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Form-5",
+      "json_id": "field",
+      "description": "Group SOP Sign-off",
+      "offline": "true",
+      "styles": {
+        "dropdown_style": {
+          "size": "10",
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "5%"
+        },
+        "textfield_style": {
+          "size": "8",
+          "border": "rgb(0, 0, 0)",
+          "height": "5%",
+          "width": "10%"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "no_padding": {
+          "padding": "0"
+        },
+        "no_border": {
+          "border": "none"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "table_header_name_styles": {
+          "width": "50%"
+        },
+        "table_header_description_styles": {
+          "width": "50%"
+        },
+        "table_header_value_styles": {
+          "width": "11%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "table_dropdown_fields_stylesname": {
+          "height": "5%",
+          "width": "30%",
+          "size":"10",
+          "align":"center",
+          "border":"#FFFFFF",
+          "border_width":"2",
+          "font": "HelveticaHeader",
+          "padding_bottom":"3%"
+        },
+        "table_dropdown_fields_stylesid": {
+          "height": "5%",
+          "width": "10%",
+          "size":"10",
+          "align":"center",
+          "border":"#FFFFFF",
+          "border_width":"2",
+          "font": "HelveticaHeader",
+          "padding_bottom":"3%"
+        },
+        "table_dropdown_fields_stylesdate": {
+          "height": "5%",
+          "width": "20%",
+          "size":"10",
+          "align":"center",
+          "border":"#FFFFFF",
+          "border_width":"2",
+          "font": "HelveticaHeader",
+          "padding_bottom":"3%"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": 50,
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "height": "7%",
+          "border":"#FFFFFF",
+          "border_width":"2"
+        },
+        "table_header_styles3": {
+          "size": 15,
+          "font": "HelveticaHeader",
+          "color": "rgb(255, 255, 255)",
+          "height": "5%",
+          "border":"#FFFFFF",
+          "border_width":"2"
+        },
+        "table_header2_styles": {
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "7%"
+        },
+        "table_header1_styles": {
+          "size": 10,
+          "font": "HelveticaHeader",
+          "background": "#9999CC",
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(255, 255, 255)",
+          "height": "7%"
+        },
+        "table_row_odd_styles": {
+          "background": "#C8C8E6"
+        },
+        "table_row_even_styles": {
+          "background": "#E4E4EF"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "name_width":{
+          "width": "30%"
+        },
+        "date_width":{
+          "width":"20%"
+        },
+        "hash_width":{
+          "width":"10%"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$render"
+        },
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form3_page1",
+            "eleven":"{{$get.eleven || '11'}}",
+            "eleven_name":"{{$get.eleven_name  || ''}}",
+            "eleven_id":"{{$get.eleven_id  || ''}}",
+            "eleven_date":"{{$get.eleven_date  || ''}}",
+            "eleven_sign":"{{$get.eleven_sign  || ''}}",
+            "twelve":"{{$get.twelve || '12'}}",
+            "twelve_name":"{{$get.twelve_name  || ''}}",
+            "twelve_id":"{{$get.twelve_id  || ''}}",
+            "twelve_date":"{{$get.twelve_date  || ''}}",
+            "twelve_sign":"{{$get.twelve_sign  || ''}}",
+            "thirteen":"{{$get.thirteen || '13'}}",
+            "thirteen_name":"{{$get.thirteen_name  || ''}}",
+            "thirteen_id":"{{$get.thirteen_id  || ''}}",
+            "thirteen_date":"{{$get.thirteen_date  || ''}}",
+            "thirteen_sign":"{{$get.thirteen_sign  || ''}}",
+            "fourteen":"{{$get.fourteen || '14'}}",
+            "fourteen_name":"{{$get.fourteen_name  || ''}}",
+            "fourteen_id":"{{$get.fourteen_id  || ''}}",
+            "fourteen_date":"{{$get.fourteen_date  || ''}}",
+            "fourteen_sign":"{{$get.fourteen_sign || ''}}",
+            "fifteen":"{{$get.fifteen || '15'}}",
+            "fifteen_name":"{{$get.fifteen_name || ''}}",
+            "fifteen_id":"{{$get.fifteen_id || ''}}",
+            "fifteen_date":"{{$get.fifteen_date || ''}}",
+            "fifteen_sign":"{{$get.fifteen_sign || ''}}",
+            "sixteen":"{{$get.sixteen || '16'}}",
+            "sixteen_name":"{{$get.sixteen_name || ''}}",
+            "sixteen_id":"{{$get.sixteen_id || ''}}",
+            "sixteen_date":"{{$get.sixteen_date || ''}}",
+            "sixteen_sign":"{{$get.sixteen_sign || ''}}",
+            "seventeen":"{{$get.seventeen || '17'}}",
+            "seventeen_name":"{{$get.seventeen_name || ''}}",
+            "seventeen_id":"{{$get.seventeen_id || ''}}",
+            "seventeen_date":"{{$get.seventeen_date || ''}}",
+            "seventeen_sign":"{{$get.seventeen_sign || ''}}",
+            "eightteen":"{{$get.eightteen || '18'}}",
+            "eightteen_name":"{{$get.eightteen_name || ''}}",
+            "eightteen_id":"{{$get.eightteen_id || ''}}",
+            "eightteen_date":"{{$get.eightteen_date || ''}}",
+            "eightteen_sign":"{{$get.eightteen_sign || ''}}",
+            "nineteen":"{{$get.nineteen || '19'}}",
+            "nineteen_name":"{{$get.nineteen_name || ''}}",
+            "nineteen_id":"{{$get.nineteen_id || ''}}",
+            "nineteen_date":"{{$get.nineteen_date || ''}}",
+            "nineteen_sign":"{{$get.nineteen_sign || ''}}",
+            "twenty":"{{$get.twenty || '20'}}",
+            "twenty_name":"{{$get.twenty_name || ''}}",
+            "twenty_id":"{{$get.twenty_id || ''}}",
+            "twenty_date":"{{$get.twenty_date || ''}}",
+            "twenty_sign":"{{$get.twenty_sign || ''}}"
+          }
+        }
+      },
+      "data": {
+        "Page_Heading": "Group SOP Sign-off",
+        "Table3_Headers": [
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_name",
+            "styles": "table_header_styles3 center_align table_header_name_styles table_row_even_styles"
+          },
+          {
+            "type": "textfield",
+            "value": "",
+            "col_type": "col_value",
+            "styles": "table_header_styles3 center_align table_header_description_styles table_row_even_styles"
+          }
+        ],
+        "Table2_Headers": [
+          {
+            "type": "label",
+            "value": "Name",
+            "col_type": "col_name",
+            "styles": "table_header1_styles center_align table_header_name_styles table_row_odd_styles"
+          },
+          {
+            "type": "label",
+            "value": "Data Entered",
+            "col_type": "col_value",
+            "styles": "table_header1_styles center_align table_header_description_styles table_row_odd_styles"
+          }
+        ],
+         "Table1_Headers": [
+          {
+            "type": "label",
+            "value": "#",
+            "col_type": "col_name",
+            "styles": "table_header2_styles center_align hash_width"
+          },
+          {
+            "type": "label",
+            "value": "Name",
+            "col_type": "col_value",
+            "styles": "table_header2_styles center_align name_width"
+          },
+          {
+            "type": "label",
+            "value": "ID#",
+            "col_type": "col_name",
+            "styles": "table_header2_styles center_align hash_width"
+          },
+          {
+            "type": "label",
+            "value": "Date",
+            "col_type": "col_value",
+            "styles": "table_header2_styles center_align date_width"
+          },
+          {
+            "type": "label",
+            "value": "Name as signature",
+            "col_type": "col_name",
+            "styles": "table_header2_styles center_align name_width"
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": ""
+                    }
+                  ],
+                  "style": {
+                    "padding_top": "0",
+                    "height": "0%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table1_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      },
+                      "style": {
+                        "padding_top": "0%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "eleven",
+                              "value": "{{$global.eleven || 11}}",
+                              "class": "table_dropdown_fields_stylesid table_row_odd_styles"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eleven_name",
+                          "value": "{{$global.eleven_name  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eleven_id",
+                          "value": "{{$global.eleven_id  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eleven_date",
+                          "value": "{{$global.eleven_date  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eleven_sign",
+                          "value": "{{$global.eleven_sign  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "twelve",
+                              "value": "{{$global.twelve || 12}}",
+                              "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "twelve-name",
+                          "value": "{{$global.twelve_name  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "twelve_id",
+                          "value": "{{$global.twelve_id  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "twelve_date",
+                          "value": "{{$global.twelve_date  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "twelve_sign",
+                          "value": "{{$global.twelve_sign  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "thirteen",
+                              "value": "{{$global.thirteen || 13}}",
+                              "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "thirteen_name",
+                          "value": "{{$global.thirteen_name  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "thirteen_id",
+                          "value": "{{$global.thirteen_id  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "thirteen_date",
+                          "value": "{{$global.thirteen_date  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "thirteen_sign",
+                          "value": "{{$global.thirteen_sign  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "fourteen",
+                              "value": "{{$global.fourteen || 14}}",
+                              "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "fourteen_name",
+                          "value": "{{$global.fourteen_name  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "fourteen_id",
+                          "value": "{{$global.fourteen_id  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "fourteen_date",
+                          "value": "{{$global.fourteen_date  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "fourteen_sign",
+                          "value": "{{$global.fourteen_sign  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "fifteen",
+                              "value": "{{$global.fifteen || 15}}",
+                              "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "fifteen_name",
+                          "value": "{{$global.fifteen_name  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "fifteen_id",
+                          "value": "{{$global.fifteen_id  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "fifteen_date",
+                          "value": "{{$global.fifteen_date  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "fifteen_sign",
+                          "value": "{{$global.fifteen_sign  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "sixteen",
+                              "value": "{{$global.sixteen || 16}}",
+                              "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "sixteen_name",
+                          "value": "{{$global.sixteen_name || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "sixteen_id",
+                          "value": "{{$global.sixteen_id  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "sixteen_date",
+                          "value": "{{$global.sixteen_date  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "sixteen_sign",
+                          "value": "{{$global.sixteen_sign  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding ",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "seventeen",
+                              "value": "{{$global.seventeen || 17}}",
+                              "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "seventeen_name",
+                          "value": "{{$global.seventeen_name  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "seventeen_id",
+                          "value": "{{$global.seventeen_id  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "seventeen_date",
+                          "value": "{{$global.seventeen_date  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "seventeen_sign",
+                          "value": "{{$global.seventeen_sign  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding ",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "eightteen",
+                              "value": "{{$global.eightteen || 18}}",
+                              "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eightteen_name",
+                          "value": "{{$global.eightteen_name  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eightteen_id",
+                          "value": "{{$global.eightteen_id  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eightteen_date",
+                          "value": "{{$global.eightteen_date  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eightteen_sign",
+                          "value": "{{$global.eightteen_sign || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding ",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "nineteen",
+                              "value": "{{$global.nineteen || 19}}",
+                              "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "nineteen_name",
+                          "value": "{{$global.nineteen_name  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "nineteen_id",
+                          "value": "{{$global.nineteen_id  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "nineteen_date",
+                          "value": "{{$global.nineteen_date  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "nineteen_sign",
+                          "value": "{{$global.nineteen_sign  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding ",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "twenty",
+                              "value": "{{$global.twenty || 20}}",
+                              "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "twenty_name",
+                          "value": "{{$global.twenty_name  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "twenty_id",
+                          "value": "{{$global.twenty_id  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "twenty_date",
+                          "value": "{{$global.twenty_date  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "twenty_sign",
+                          "value": "{{$global.twenty_sign  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "width":"100%",
+                    "height":"4%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "SOP Review entered by",
+                  "style": {
+                    "width":"100%",
+                    "color": "#FFFFFF",
+                    "background": "rgb(14, 53, 112)",
+                    "border": "#FFFFFF",
+                    "border_width": "0",
+                    "height":"10%",
+                    "align":"left",
+                    "padding_top":"0"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table2_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      },
+                      "style": {
+                        "padding_top": "0%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table3_Headers}}": {
+                          "type": "textfield",
+                          "value": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "1%",
+                    "padding_bottom": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "previous",
+                      "text": "Previous",
+                      "class": "next_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/5_GroupSOPSignoff/screen_1.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

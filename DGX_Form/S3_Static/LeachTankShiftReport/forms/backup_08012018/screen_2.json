@@ -1,0 +1,1951 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Line-1",
+      "json_id": "field",
+      "description": "Leach Area Shift Report Line-2",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,162,224)"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "6%"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": 50,
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "switch_styles": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000"
+        },
+        "switch_legend_styles": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000",
+          "height": "4%",
+          "width": "7%"
+        },
+        "col_name_styles": {
+          "width": "22%"
+        },
+        "col_legend_styles": {
+          "width": "18%"
+        },
+        "col_value_styles": {
+          "width": "6%"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "update_button_styles": {
+          "width": "15%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(243,216,7)",
+          "corner_radius": "1%"
+        },
+        "submit_button_styles": {
+          "width": "15%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "previous_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        }
+      },
+      "data": {
+        "Page_Heading": "Leach Area Shift Report",
+        "Table_Headers": [
+          {
+            "type": "label",
+            "value": "Line-2",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align col_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align col_legend_styles"
+          },
+          {
+            "type": "label",
+            "value": "101",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align col_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "102",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align col_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "103",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align col_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "104",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align col_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "105",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align col_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "111",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align col_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "112",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align col_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "113",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align col_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "114",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align col_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "115",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align col_value_styles"
+          }
+        ]
+      },
+      "actions": {
+        "$load": {
+          "type": "$render"
+        },
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "global_form1_page2",
+            "description": "{{$get.description || ''}}"
+          },
+          "success": {
+            "type": "$util.alert",
+            "options": {
+              "title": "Global changed values",
+              "description": "{{JSON.stringify($global)}}"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}}"
+            },
+            "style": {
+              "font": "HelveticaHeader",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Agitator Shaft",
+                      "class": "center_align black_color",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "AgitatorShaft_true",
+                              "text": "= Turning",
+                              "class": "black_color"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "AgitatorShaft_false",
+                              "text": "= Stopped",
+                              "class": "black_color"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "agitator_shaft_l1_101",
+                          "value": "{{$global.agitator_shaft_l1_101 || false}}",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "1",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "agitator_shaft_l1_101": "{{$get.agitator_shaft_l1_101}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "2",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "agitator_shaft_l1_102",
+                          "value": "{{$global.agitator_shaft_l1_102 || true}}",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "2",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "agitator_shaft_l1_102": "{{$get.agitator_shaft_l1_102}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "3",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "agitator_shaft_l1_103",
+                          "value": "{{true}}",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "3",
+                          "action": {
+                            "type": "$util.alert",
+                            "options": {
+                              "title": "agitator_shaft_l1_103",
+                              "description": "{{$global.agitator_shaft_l1_103}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "4",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "agitator_shaft_l1_104",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "4",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "agitator_shaft_l1_104": "{{$get.agitator_shaft_l1_104}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "5",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "agitator_shaft_l1_105",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "5",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "agitator_shaft_l1_105": "{{$get.agitator_shaft_l1_105}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "6",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "agitator_shaft_l1_111",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "6",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "agitator_shaft_l1_111": "{{$get.agitator_shaft_l1_111}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "7",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "agitator_shaft_l1_112",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "7",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "agitator_shaft_l1_112": "{{$get.agitator_shaft_l1_112}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "8",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "agitator_shaft_l1_113",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "8",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "agitator_shaft_l1_113": "{{$get.agitator_shaft_l1_113}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "9",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "agitator_shaft_l1_114",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "9",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "agitator_shaft_l1_114": "{{$get.agitator_shaft_l1_114}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "10",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "agitator_shaft_l1_115",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "10",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "agitator_shaft_l1_115": "{{$get.agitator_shaft_l1_115}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Filter Bypass Indicator",
+                      "class": "center_align black_color",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "FilterBypassIndicator_true",
+                              "text": "= Good",
+                              "class": "black_color"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "FilterBypassIndicator_false",
+                              "text": "= Popped",
+                              "class": "black_color"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "11",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "filter_bypass_indicator_l1_101",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "11",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "filter_bypass_indicator_l1_101": "{{$get.filter_bypass_indicator_l1_101}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "12",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "filter_bypass_indicator_l1_102",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "12",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "filter_bypass_indicator_l1_102": "{{$get.filter_bypass_indicator_l1_102}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "13",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "filter_bypass_indicator_l1_103",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "13",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "filter_bypass_indicator_l1_103": "{{$get.filter_bypass_indicator_l1_103}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "14",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "filter_bypass_indicator_l1_104",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "14",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "filter_bypass_indicator_l1_104": "{{$get.filter_bypass_indicator_l1_104}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "15",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "filter_bypass_indicator_l1_105",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "15",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "filter_bypass_indicator_l1_105": "{{$get.filter_bypass_indicator_l1_105}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "16",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "filter_bypass_indicator_l1_111",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "16",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "filter_bypass_indicator_l1_111": "{{$get.filter_bypass_indicator_l1_111}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "17",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "filter_bypass_indicator_l1_112",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "17",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "filter_bypass_indicator_l1_112": "{{$get.filter_bypass_indicator_l1_112}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "18",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "filter_bypass_indicator_l1_113",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "18",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "filter_bypass_indicator_l1_113": "{{$get.filter_bypass_indicator_l1_113}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "19",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "filter_bypass_indicator_l1_114",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "19",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "filter_bypass_indicator_l1_114": "{{$get.filter_bypass_indicator_l1_114}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "20",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "filter_bypass_indicator_l1_115",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "20",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "filter_bypass_indicator_l1_115": "{{$get.filter_bypass_indicator_l1_115}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Gearbox Oil Sight Glass",
+                      "class": "center_align black_color",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxOilSightGlass_true",
+                              "text": "= Between Lines",
+                              "class": "black_color"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "gearbox_oil_sight_glass_l1_101",
+                              "value": "false",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxOilSightGlass_false",
+                              "text": "= High / Low",
+                              "class": "black_color"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "21",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_oil_sight_glass_l1_101",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "21",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_oil_sight_glass_l1_101": "{{$get.gearbox_oil_sight_glass_l1_101}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "22",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_oil_sight_glass_l1_102",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "22",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_oil_sight_glass_l1_102": "{{$get.gearbox_oil_sight_glass_l1_102}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "23",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_oil_sight_glass_l1_103",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "23",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_oil_sight_glass_l1_103": "{{$get.gearbox_oil_sight_glass_l1_103}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "24",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_oil_sight_glass_l1_104",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "24",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_oil_sight_glass_l1_104": "{{$get.gearbox_oil_sight_glass_l1_104}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "25",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_oil_sight_glass_l1_105",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "25",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_oil_sight_glass_l1_105": "{{$get.gearbox_oil_sight_glass_l1_105}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "26",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_oil_sight_glass_l1_111",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "26",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_oil_sight_glass_l1_111": "{{$get.gearbox_oil_sight_glass_l1_111}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "27",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_oil_sight_glass_l1_112",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "27",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_oil_sight_glass_l1_112": "{{$get.gearbox_oil_sight_glass_l1_112}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "28",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_oil_sight_glass_l1_113",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "28",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_oil_sight_glass_l1_113": "{{$get.gearbox_oil_sight_glass_l1_113}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "29",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_oil_sight_glass_l1_114",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "29",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_oil_sight_glass_l1_114": "{{$get.gearbox_oil_sight_glass_l1_114}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "30",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_oil_sight_glass_l1_115",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "30",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_oil_sight_glass_l1_115": "{{$get.gearbox_oil_sight_glass_l1_115}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Gearbox Vibration",
+                      "class": "center_align black_color",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "true",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxVibration_true",
+                              "text": "= Good",
+                              "class": "black_color"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "shift",
+                              "value": "false",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "GearboxVibration_false",
+                              "text": "= Excess Vibration",
+                              "class": "black_color"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "31",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_vibration_l1_101",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "31",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_vibration_l1_101": "{{$get.gearbox_vibration_l1_101}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "32",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_vibration_l1_102",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "32",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_vibration_l1_102": "{{$get.gearbox_vibration_l1_102}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "33",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_vibration_l1_103",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "33",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_vibration_l1_103": "{{$get.gearbox_vibration_l1_103}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "34",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_vibration_l1_104",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "34",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_vibration_l1_104": "{{$get.gearbox_vibration_l1_104}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "35",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_vibration_l1_105",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "35",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_vibration_l1_105": "{{$get.gearbox_vibration_l1_105}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "36",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_vibration_l1_111",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "36",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_vibration_l1_111": "{{$get.gearbox_vibration_l1_111}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "37",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_vibration_l1_112",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "37",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_vibration_l1_112": "{{$get.gearbox_vibration_l1_112}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "38",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_vibration_l1_113",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "38",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_vibration_l1_113": "{{$get.gearbox_vibration_l1_113}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "39",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_vibration_l1_114",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "39",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_vibration_l1_114": "{{$get.gearbox_vibration_l1_114}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "40",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "gearbox_vibration_l1_115",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "40",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "gearbox_vibration_l1_115": "{{$get.gearbox_vibration_l1_115}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Cyanide Lines",
+                      "class": "center_align black_color",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "cyanide_lines_l1_101",
+                              "value": "true",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "CyanideLines_true",
+                              "text": "= Turning",
+                              "class": "black_color"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "cyanide_lines_l1_102",
+                              "value": "false",
+                              "class": "switch_legend_styles"
+                            },
+                            {
+                              "type": "label",
+                              "name": "CyanideLines_false",
+                              "text": "= Stopped",
+                              "class": "black_color"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "41",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cyanide_lines_l1_101",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "41",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "cyanide_lines_l1_101": "{{$get.cyanide_lines_l1_101}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "42",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cyanide_lines_l1_102",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "42",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "cyanide_lines_l1_102": "{{$get.cyanide_lines_l1_102}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "43",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cyanide_lines_l1_103",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "43",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "cyanide_lines_l1_103": "{{$get.cyanide_lines_l1_103}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "44",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cyanide_lines_l1_104",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "44",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "cyanide_lines_l1_104": "{{$get.cyanide_lines_l1_104}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "45",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cyanide_lines_l1_105",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "45",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "cyanide_lines_l1_105": "{{$get.cyanide_lines_l1_105}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "46",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cyanide_lines_l1_111",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "46",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "cyanide_lines_l1_111": "{{$get.cyanide_lines_l1_111}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "47",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cyanide_lines_l1_112",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "47",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "cyanide_lines_l1_112": "{{$get.cyanide_lines_l1_112}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "48",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cyanide_lines_l1_113",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "48",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "cyanide_lines_l1_113": "{{$get.cyanide_lines_l1_113}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "49",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cyanide_lines_l1_114",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "49",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "cyanide_lines_l1_114": "{{$get.cyanide_lines_l1_114}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "50",
+                          "class": "center_align black_color"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cyanide_lines_l1_115",
+                          "value": "true",
+                          "class": "col_value_styles switch_styles",
+                          "contentDescription": "50",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form1_page1",
+                              "cyanide_lines_l1_115": "{{$get.cyanide_lines_l1_115}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Description",
+                      "class": "table_header_styles",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "value": "{{$global.description || ''}}",
+                      "name": "description",
+                      "placeholder": "Enter description",
+                      "contentDescription": "Enter Description",
+                      "style": {
+                        "width": "100%",
+                        "height": "15%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_bottom": "2%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "previous",
+                      "text": "Previous",
+                      "class": "previous_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms-static/LeachTankShiftReport/forms/screen_1.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms-static/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "submit",
+                      "text": "submit",
+                      "class": "center_align submit_button_styles",
+                      "contentDescription": "submit",
+                      "action": {
+                        "type": "$global.reset",
+                        "options": {
+                          "save": "true",
+                          "filename": "LeachTankShiftReport"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

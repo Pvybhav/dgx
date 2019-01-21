@@ -1,0 +1,197 @@
+{
+  "$jason": {
+    "head": {
+      "title": "DG Forms",
+      "description": "Detour Gold E-Forms",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "left_align": {
+          "align": "left"
+        },
+        "buttons_height": {
+          "height": "6%"
+        },
+        "eform_button_styles": {
+          "width": "88%",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)",
+          "size": 16
+        },
+        "eform_voicetag_styles": {
+          "width": "10%",
+          "font": "HelveticaNeue-Bold",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(102, 255, 204)",
+          "size": 18
+        }
+      },
+      "data": {
+        "forms": [
+          {
+            "form_name": "Leach Area Shift Report",
+            "voicetag_name": "Form1",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/1_LeachAreaShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "Safety Screen Shift Report",
+            "voicetag_name": "Form2",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/2_SafetyScreenShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "Lime Area Shift Report",
+            "voicetag_name": "Form3",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/3_LimeAreaShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "Trash Screen Shift Report",
+            "voicetag_name": "Form4",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/4_TrashScreenShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "Group SOP Signoff",
+            "voicetag_name": "Form5",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/5_GroupSOPSignoff/screen_1.json"
+          },
+          {
+            "form_name": "Kemix Screen Inspection",
+            "voicetag_name": "Form6",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/6_KemixScreenInspection/screen_1.json"
+          },
+          {
+            "form_name": "CIP Checklist",
+            "voicetag_name": "Form9",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_1.json"
+          },
+          {
+            "form_name": "Production Forms",
+            "voicetag_name": "PROD",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json"
+          },
+          {
+            "form_name": "Tutorial",
+            "voicetag_name": "TUT",
+            "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/gh-pages/hello.json"
+          }
+        ]
+      },
+      "actions": {
+        "$load": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "Detour Gold E-Forms"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)",
+              "height": "3%"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each forms}}": {
+                          "type": "horizontal",
+                          "style": {
+                            "padding": "1%"
+                          },
+                          "components": [
+                            {
+                              "type": "button",
+                              "text": "{{voicetag_name}}",
+                              "class": "center_align buttons_height eform_voicetag_styles",
+                              "action": {
+                                "type": "$href",
+                                "options": {
+                                  "url": "{{url}}",
+                                  "preload": {
+                                    "layers": [
+                                      {
+                                        "type": "image",
+                                        "url": "file://infinit.gif",
+                                        "style": {
+                                          "top": "50%-25",
+                                          "left": "50%-25",
+                                          "width": "50",
+                                          "height": "50"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "button",
+                              "text": "  {{form_name}}",
+                              "class": "left_align buttons_height eform_button_styles",
+                              "contentDescription": "{{voicetag_name}}",
+                              "action": {
+                                "type": "$href",
+                                "options": {
+                                  "url": "{{url}}",
+                                  "preload": {
+                                    "layers": [
+                                      {
+                                        "type": "image",
+                                        "url": "file://infinit.gif",
+                                        "style": {
+                                          "top": "50%-25",
+                                          "left": "50%-25",
+                                          "width": "50",
+                                          "height": "50"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

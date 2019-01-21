@@ -1,0 +1,283 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Switch",
+      "description": "A jasonette app",
+      "offline": "true",
+      "styles": {
+        "center_align": {
+          "align": "center"
+        },
+        "black_color": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "left_align_switch_styles": {
+          "color": "rgb(0, 255, 0)",
+          "color:disabled": "rgb(255,0,0)"
+        },
+        "center_align_switch_styles": {
+          "color": "rgb(0, 255, 0)",
+          "color:disabled": "rgb(255,0,0)"
+        },
+        "right_align_switch_styles": {
+          "color": "rgb(0, 255, 0)",
+          "color:disabled": "rgb(255,0,0)"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "test",
+            "switchValue1": "{{$global.switchValue1 == null ? true : $global.switchValue1}}",
+            "switchValue2": "{{$global.switchValue2 == null ? true : $global.switchValue2}}",
+            "switchValue3": "{{$global.switchValue3 == null ? true : $global.switchValue3}}"
+          },
+          "$show": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "$Show",
+                "type": "warning"
+              }
+            }
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "rendered successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "$pull": {
+          "type": "$reload",
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page reloaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "banner1": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "test",
+            "switchValue1": "{{$get.light1}}"
+          }
+        },
+        "banner2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "test",
+            "switchValue2": "{{$get.light2}}"
+          }
+        },
+        "banner3": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "test",
+            "switchValue3": "{{$get.light3}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "updated"
+            }
+          }
+        },
+        "showGlobalVariables": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Global Variables",
+            "description": "{{JSON.stringify($global)}}"
+          }
+        },
+        "showRootVariables": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Root Variables",
+            "description": "{{JSON.stringify($root)}}"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "Switch",
+            "style": {
+              "background": "rgb(0, 0, 204)",
+              "color": "rgb(255, 255, 255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "switch",
+                      "name": "light1",
+                      "value": "{{$global.switchValue1}}",
+                      "class": "right_align_switch_styles",
+                      "contentDescription": "one",
+                      "sytle": {
+                        "align": "left",
+                        "padding_right": "20"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "switch",
+                      "name": "light2",
+                      "value": "{{$global.switchValue2}}",
+                      "class": "center_align_switch_styles",
+                      "contentDescription": "two",
+                      "sytle": {
+                        "align": "center",
+                        "padding_right": "40"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "switch",
+                      "name": "light3",
+                      "value": "{{$global.switchValue3}}",
+                      "class": "left_align_switch_styles",
+                      "contentDescription": "three",
+                      "sytle": {
+                        "align": "right",
+                        "padding_left": "50"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "name": "button",
+                      "text": "Show Global Variables",
+                      "contentDescription": "show_global_variables",
+                      "style": {
+                        "color": "rgb(255, 255, 255)",
+                        "background": "rgb(50,100,150)"
+                      },
+                      "action": {
+                        "trigger": "showGlobalVariables"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "space",
+                  "style": {
+                    "height": "4%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "name": "button",
+                      "text": "Show Root Variables",
+                      "contentDescription": "show_global_variables",
+                      "style": {
+                        "color": "rgb(255, 255, 255)",
+                        "background": "rgb(50,100,150)"
+                      },
+                      "action": {
+                        "trigger": "showRootVariables"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "space",
+                  "style": {
+                    "height": "4%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "name": "button",
+                      "text": "Save Switch Values",
+                      "contentDescription": "show_global_variables",
+                      "style": {
+                        "color": "rgb(255, 255, 255)",
+                        "background": "rgb(50,100,150)"
+                      },
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "test",
+                          "switchValue1": "{{!$get.light1 ? true : $get.light1}}",
+                          "switchValue2": "{{!$get.light2 ? true : $get.light2}}",
+                          "switchValue3": "{{!$get.light3 ? true : $get.light3}}"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "space",
+                  "style": {
+                    "height": "4%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "name": "button",
+                      "text": "Next",
+                      "contentDescription": "next",
+                      "style": {
+                        "color": "rgb(255, 255, 255)",
+                        "background": "rgb(50,100,150)"
+                      },
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/test/home2.json"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
