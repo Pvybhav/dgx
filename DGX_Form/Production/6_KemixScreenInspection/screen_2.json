@@ -302,7 +302,7 @@
                       "components": [
                         {
                           "type": "horizontal",
-                          "class": "table_row_odd_styles",
+                          "class": "table_row_odd_styles table_row table_body_value_styles",
                           "components": [
                             {
                               "type": "vertical",
@@ -328,7 +328,8 @@
                                   "contentDescription": "one",
                                   "style": {
                                     "height": "4%",
-                                    "width": "35%"
+                                    "width": "35%",
+                                    "size": "14"
                                   }
                                 }
                               ]
@@ -363,7 +364,8 @@
                                   "contentDescription": "two",
                                   "style": {
                                     "height": "4%",
-                                    "width": "35%"
+                                    "width": "35%",
+                                    "size": "14"
                                   }
                                 }
                               ]
@@ -398,7 +400,8 @@
                                   "contentDescription": "three",
                                   "style": {
                                     "height": "4%",
-                                    "width": "35%"
+                                    "width": "35%",
+                                    "size": "14"
                                   }
                                 }
                               ]
@@ -410,32 +413,44 @@
                   ]
                 },
                 {
-                  "type": "vertical",
-                  "class": "no_padding center_align table_row_even_styles",
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
                   "components": [
                     {
+                      "type": "label",
+                      "text": "Lips",
+                      "class": "center_align black_color table_body_name_styles table_fields_size"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Damage",
+                      "class": "center_align black_color table_body_description_styles table_fields_size"
+                    },
+                    {
                       "type": "horizontal",
-                      "class": "table_row",
                       "components": [
                         {
-                          "type": "label",
-                          "text": "Lips",
-                          "class": "center_align black_color table_body_name_styles table_row_even_styles table_row table_fields_size"
-                        },
-                        {
-                          "type": "label",
-                          "text": "Damage",
-                          "class": "center_align black_color table_body_description_styles table_row_even_styles table_row table_fields_size"
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "table_row",
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
                           "components": [
                             {
                               "type": "label",
                               "text": "4",
-                              "class": "no_padding label_styles black_color center_align table_row"
-                            },
+                              "class": "no_padding label_styles black_color center_align",
+                              "style": {
+                                "height": "6%"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
                             {
                               "type": "textfield",
                               "name": "lips_damage",
@@ -443,8 +458,9 @@
                               "class": "center_align black_color",
                               "contentDescription": "four",
                               "style": {
+                                "width": "35%",
                                 "height": "4%",
-                                "width": "35%"
+                                "size": "14"
                               }
                             }
                           ]
@@ -508,9 +524,6 @@
                 {
                   "type": "vertical",
                   "class": "no_padding center_align table_row_odd_styles",
-                  "style": {
-                    "height": "7%"
-                  },
                   "components": [
                     {
                       "type": "horizontal",
@@ -529,7 +542,7 @@
                               "type": "space",
                               "class": "table_row_odd_styles",
                               "style": {
-                                "width": "9%"
+                                "width": "7%"
                               }
                             },
                             {
@@ -555,38 +568,63 @@
                               "type": "space",
                               "class": "table_row_odd_styles",
                               "style": {
-                                "width": "9%"
+                                "width": "7%"
                               }
                             }
                           ]
                         },
                         {
                           "type": "horizontal",
-                          "class": "table_row table_body_value_styles",
+                          "class": "table_body_value_styles",
                           "components": [
                             {
-                              "type": "label",
-                              "text": "WN#",
-                              "class": "center_align black_color table_fields_size",
+                              "type": "vertical",
                               "style": {
                                 "width": "7%"
-                              }
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "WN#",
+                                  "class": "center_align black_color table_fields_size",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
                             },
                             {
-                              "type": "label",
-                              "text": "6",
-                              "class": "label_styles black_color center_align"
-                            },
-                            {
-                              "type": "textfield",
-                              "name": "wn",
-                              "value": "{{$global.wn}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "six",
+                              "type": "vertical",
                               "style": {
-                                "width": "28%",
-                                "height": "4%"
-                              }
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "6",
+                                  "class": "label_styles black_color center_align",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "wn",
+                                  "value": "{{$global.wn}}",
+                                  "class": "center_align black_color",
+                                  "contentDescription": "six",
+                                  "style": {
+                                    "width": "28%",
+                                    "height": "4%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
                             }
                           ]
                         }
@@ -597,9 +635,6 @@
                 {
                   "type": "vertical",
                   "class": "no_padding center_align table_row_even_styles",
-                  "style": {
-                    "height": "7%"
-                  },
                   "components": [
                     {
                       "type": "horizontal",
@@ -618,7 +653,7 @@
                               "type": "space",
                               "class": "table_row_even_styles",
                               "style": {
-                                "width": "9%"
+                                "width": "7%"
                               }
                             },
                             {
@@ -644,38 +679,63 @@
                               "type": "space",
                               "class": "table_row_even_styles",
                               "style": {
-                                "width": "9%"
+                                "width": "7%"
                               }
                             }
                           ]
                         },
                         {
                           "type": "horizontal",
-                          "class": "table_row",
+                          "class": "table_body_value_styles",
                           "components": [
                             {
-                              "type": "label",
-                              "text": "Tank #",
-                              "class": "center_align black_color table_fields_size",
+                              "type": "vertical",
                               "style": {
                                 "width": "7%"
-                              }
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Tank #",
+                                  "class": "center_align black_color table_fields_size",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
                             },
                             {
-                              "type": "label",
-                              "text": "8",
-                              "class": "label_styles black_color center_align"
-                            },
-                            {
-                              "type": "textfield",
-                              "name": "tank",
-                              "value": "{{$global.tank}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "eight",
+                              "type": "vertical",
                               "style": {
-                                "width": "28%",
-                                "height": "4%"
-                              }
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "8",
+                                  "class": "label_styles black_color center_align",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "tank",
+                                  "value": "{{$global.tank}}",
+                                  "class": "center_align black_color",
+                                  "contentDescription": "eight",
+                                  "style": {
+                                    "width": "28%",
+                                    "height": "4%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
                             }
                           ]
                         }
@@ -712,7 +772,7 @@
                   "components": [
                     {
                       "type": "textarea",
-                      "name": "comments",
+                      "name": "comments.",
                       "value": "{{$global.f6_s2_comments}}",
                       "placeholder": "Enter Comments",
                       "contentDescription": "comments",
@@ -740,7 +800,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text" : "Reference Image.",
+                      "text": "Reference Image.",
                       "style": {
                         "size": "15"
                       }

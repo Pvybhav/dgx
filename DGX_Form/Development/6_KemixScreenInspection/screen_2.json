@@ -302,7 +302,7 @@
                       "components": [
                         {
                           "type": "horizontal",
-                          "class": "table_row_odd_styles",
+                          "class": "table_row_odd_styles table_row table_body_value_styles",
                           "components": [
                             {
                               "type": "vertical",
@@ -328,7 +328,8 @@
                                   "contentDescription": "one",
                                   "style": {
                                     "height": "4%",
-                                    "width": "35%"
+                                    "width": "35%",
+                                    "size": "14"
                                   }
                                 }
                               ]
@@ -363,7 +364,8 @@
                                   "contentDescription": "two",
                                   "style": {
                                     "height": "4%",
-                                    "width": "35%"
+                                    "width": "35%",
+                                    "size": "14"
                                   }
                                 }
                               ]
@@ -398,7 +400,8 @@
                                   "contentDescription": "three",
                                   "style": {
                                     "height": "4%",
-                                    "width": "35%"
+                                    "width": "35%",
+                                    "size": "14"
                                   }
                                 }
                               ]
@@ -539,7 +542,7 @@
                               "type": "space",
                               "class": "table_row_odd_styles",
                               "style": {
-                                "width": "9%"
+                                "width": "7%"
                               }
                             },
                             {
@@ -565,7 +568,7 @@
                               "type": "space",
                               "class": "table_row_odd_styles",
                               "style": {
-                                "width": "9%"
+                                "width": "7%"
                               }
                             }
                           ]
@@ -617,7 +620,8 @@
                                   "contentDescription": "six",
                                   "style": {
                                     "width": "28%",
-                                    "height": "4%"
+                                    "height": "4%",
+                                    "size": "14"
                                   }
                                 }
                               ]
@@ -649,7 +653,7 @@
                               "type": "space",
                               "class": "table_row_even_styles",
                               "style": {
-                                "width": "9%"
+                                "width": "7%"
                               }
                             },
                             {
@@ -675,7 +679,7 @@
                               "type": "space",
                               "class": "table_row_even_styles",
                               "style": {
-                                "width": "9%"
+                                "width": "7%"
                               }
                             }
                           ]
@@ -727,7 +731,8 @@
                                   "contentDescription": "eight",
                                   "style": {
                                     "width": "28%",
-                                    "height": "4%"
+                                    "height": "4%",
+                                    "size": "14"
                                   }
                                 }
                               ]
@@ -767,7 +772,7 @@
                   "components": [
                     {
                       "type": "textarea",
-                      "name": "comments",
+                      "name": "comments.",
                       "value": "{{$global.f6_s2_comments}}",
                       "placeholder": "Enter Comments",
                       "contentDescription": "comments",
@@ -865,7 +870,7 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
                           "preload": {
                             "style": {
                               "background": "#ff0000"
