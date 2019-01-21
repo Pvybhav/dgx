@@ -453,18 +453,25 @@
 
                                         },
                                         {
-                                            "type": "textarea",
-                                            "name": "so2_screen2_truck_wheels_choked_comments",
-                                            "value": "{{$global.so2_screen2_truck_wheels_choked_comments || ''}}",
-                                            "class": "content_style_even",
-                                            "contentDescription": "four",
+                                            "type":"horizontal",
                                             "style": {
                                                 "padding": "3",
                                                 "width": "25%"
 
-                                            }
-
+                                            },
+                                            "components":[
+                                                {
+                                                    "type": "textarea",
+                                                    "name": "so2_screen2_truck_wheels_choked_comments",
+                                                    "value": "{{$global.so2_screen2_truck_wheels_choked_comments || ''}}",
+                                                    "class": "content_style_even",
+                                                    "contentDescription": "four"
+                                                   
+        
+                                                }
+                                            ]
                                         }
+                                        
                                     ],
                                     "class": "no_padding"
                                 },
