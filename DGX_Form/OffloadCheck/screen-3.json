@@ -21,8 +21,7 @@
                 "title_styles": {
                     "font": "HelveticaNeue",
                     "width": "55%",
-                    "padding": "4",
-                    "height": "6%",
+                    "padding": "5",
                     "disable": "true",
                     "size": "13",
                     "padding_left": "2%"
@@ -121,7 +120,9 @@
                 "switch_styles": {
                     "color": "rgb(0,255,0)",
                     "color:disabled": "rgb(255,0,0)",
-                    "align": "center"
+                    "align": "center",
+                    "height": "6%"
+
                 },
                 "switch_legend_styles": {
                     "color": "rgb(0,255,0)",
@@ -175,13 +176,6 @@
                     "height": "7%",
                     "corner_radius": "1%"
                 },
-                "next_button_styles": {
-                    "color": "rgb(255, 255, 255)",
-                    "background": "rgb(0, 102, 255)",
-                    "width": "15%",
-                    "height": "7%",
-                    "corner_radius": "1%"
-                },
                 
                   "submit_button_styles": {
                     "width": "15%",
@@ -190,6 +184,13 @@
                     "background": "rgb(0,147,215)",
                     "corner_radius": "1%"
                   },
+                "next_button_styles": {
+                    "color": "rgb(255, 255, 255)",
+                    "background": "rgb(0, 102, 255)",
+                    "width": "15%",
+                    "height": "7%",
+                    "corner_radius": "1%"
+                },
                 "save_button_styles": {
                     "color": "rgb(255, 255, 255)",
                     "background": "rgb(51, 102, 153)",
@@ -283,8 +284,7 @@
                             "items": [{
                                     "type": "horizontal",
                                     "style": {
-                                        "color": "rgb(255, 255, 255)",
-                                        "padding_bottom": "1%"
+                                        "color": "rgb(255, 255, 255)"
                                     },
                                     "components": [{
                                             "type": "label",
@@ -317,75 +317,44 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height": "6%",
-                                        "border": "#ffffff"
+                                        "height": "6%"
+
                                     },
-                                    "components": [{
-                                            "type": "textarea",
-                                            "name": "so2_in_tank",
-                                            "value": "Amount of Liquid SO2 in the tank",
-                                            "class": "content_style_odd textarea_style",
-                                            "style": {
-                                                "font": "HelveticaNeue",
-                                                "width": "40%",
-                                                "padding": "5",
-                                                "height": "6%",
-                                                "disable": "true",
-                                                "size": "13",
-                                                "padding_left": "2%"
-
-
-                                            }
-
-                                        }, {
+                                    "components": [
+                                        {
                                             "type": "label",
-                                            "text": "9",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "text":  "Install safety perimeter cones",
+                                            "class": "content_style_odd title_styles",
                                             "style": {
-                                                "width": "5%",
-                                                "padding": "3"
-                                            }
-
-                                        },
-                                        {""
-                                            "type": "textarea",
-                                            "name": "so2_screen2_storage_tank_1_level",
-                                            "value": "{{$global.so2_screen2_storage_tank_1_level || ''}}",
-                                            "class": "center_align content_style_odd textarea_style",
-                                            "contentDescription": "nine",
-                                            "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "border": "#555555",
-                                                "width": "10%",
-                                                "height": "6%",
-                                                "padding": "0"
-
-
+                                                "width": "55%",
+                                                "padding": "4",
+                                                "height":"6%",
+                                                "padding_left":"2%"
                                             }
 
                                         },
                                         {
                                             "type": "label",
-                                            "text": "10",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "text": "1",
+                                            "class": "content_style_odd center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
                                         {
 
                                             "type": "switch",
-                                            "name": "so2_screen2_storage_tank_1",
-                                            "value": "{{$global.so2_screen2_storage_tank_1}}",
+                                            "name": "so2_screen2_safety_perimeter_cones",
+                                            "value": "{{$global.so2_screen2_safety_perimeter_cones}}",
                                             "class": "content_style_odd switch_styles",
-                                            "contentDescription": "ten",
+                                            "contentDescription": "one",
                                             "action": {
                                                 "type": "$global.set",
                                                 "options": {
-                                                    "so2_screen2_storage_tank_1": "{{$get.so2_screen2_storage_tank_1}}"
+                                                    "so2_screen2_safety_perimeter_cones": "{{$get.so2_screen2_safety_perimeter_cones}}"
                                                 }
                                             }
 
@@ -393,30 +362,27 @@
                                         },
                                         {
                                             "type": "label",
-                                            "text": "11",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "text": "2",
+                                            "class": "content_style_odd center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
+
                                             }
 
                                         },
                                         {
                                             "type": "textarea",
-                                            "name": "so2_screen2_storage_tank_1_comments",
-                                            "value": "{{$global.so2_screen2_storage_tank_1_comments || ''}}",
-                                            "class": "center_align content_style_odd textarea_style",
-                                            "contentDescription": "eleven",
+                                            "name": "so2_screen2_safety_perimeter_cones_comments",
+                                            "value": "{{$global.so2_screen2_safety_perimeter_cones_comments || ''}}",
+                                            "contentDescription": "two",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "border": "#ffffff",
-                                                "width": "25%",
-                                                "height": "6%",
-                                                "padding": "0"
+                                                "padding": "3",
+                                                "width": "25%"
 
-
-                                            }
+                                            },
+                                            "class": "content_style_odd"
 
                                         }
                                     ],
@@ -428,11 +394,17 @@
                                         "color": "rgb(255, 255, 255)",
                                         "height": "6%"
                                     },
-                                    "components": [{
-                                            "type": "textarea",
-                                            "value": "Ensure Truck wheels are choked",
-                                            "class": "content_style_even title_styles textarea_style"
-
+                                    "components": [
+                                        {
+                                            "type": "label",
+                                            "text": "Ensure Truck wheels are choked",
+                                            "class": "content_style_even title_styles",
+                                            "style": {
+                                                "width": "55%",
+                                                "padding": "4",
+                                                "height":"6%",
+                                                "padding_left":"2%"
+                                            }
 
                                         },
                                         {
@@ -441,7 +413,8 @@
                                             "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -467,7 +440,8 @@
                                             "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -475,14 +449,11 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_truck_wheels_choked_comments",
                                             "value": "{{$global.so2_screen2_truck_wheels_choked_comments || ''}}",
-                                            "class": "content_style_even textarea_style",
+                                            "class": "content_style_even",
                                             "contentDescription": "four",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "width": "25%",
-                                                "height": "6%"
-
+                                                "padding": "3",
+                                                "width": "25%"
 
                                             }
 
@@ -497,10 +468,17 @@
                                         "height": "6%"
 
                                     },
-                                    "components": [{
-                                            "type": "textarea",
-                                            "value": "Safety Shower Tested",
-                                            "class": "content_style_odd title_styles textarea_style"
+                                    "components": [
+                                        {
+                                            "type": "label",
+                                            "text":  "Safety Shower Tested",
+                                            "class": "content_style_odd title_styles",
+                                            "style": {
+                                                "width": "55%",
+                                                "padding": "4",
+                                                "height":"6%",
+                                                "padding_left":"2%"
+                                            }
 
                                         },
                                         {
@@ -509,7 +487,8 @@
                                             "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -535,7 +514,8 @@
                                             "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -545,11 +525,11 @@
                                             "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
                                             "contentDescription": "six",
                                             "style": {
-                                                "width": "25%",
-                                                "height": "6%"
+                                                "padding": "3",
+                                                "width": "25%"
 
                                             },
-                                            "class": "content_style_odd textarea_style"
+                                            "class": "content_style_odd"
 
                                         }
                                     ],
@@ -561,11 +541,17 @@
                                         "color": "rgb(255, 255, 255)",
                                         "height": "6%"
                                     },
-                                    "components": [{
-                                            "type": "textarea",
-                                            "value": "10 minute escape packs inspection",
-                                            "class": "content_style_even title_styles textarea_style"
-
+                                    "components": [
+                                        {
+                                            "type": "label",
+                                            "text":  "10 minute escape packs inspection",
+                                            "class": "content_style_even title_styles",
+                                            "style": {
+                                                "width": "55%",
+                                                "padding": "4",
+                                                "height":"6%",
+                                                "padding_left":"2%"
+                                            }
 
                                         }, {
                                             "type": "label",
@@ -573,7 +559,8 @@
                                             "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -599,7 +586,8 @@
                                             "class": "content_style_even center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -607,14 +595,11 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_escape_packs_inspection_comments",
                                             "value": "{{$global.so2_screen2_escape_packs_inspection_comments || ''}}",
-                                            "class": "content_style_even textarea_style",
+                                            "class": "content_style_even",
                                             "contentDescription": "eight",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "width": "25%",
-                                                "height": "6%"
-
+                                                "padding": "3",
+                                                "width": "25%"
 
                                             }
 
@@ -663,45 +648,37 @@
                                         "border": "#ffffff"
                                     },
                                     "components": [{
-                                            "type": "textarea",
-                                            "name": "tank 1",
-                                            "value": "Tank 1",
-                                            "class": "content_style_odd textarea_style",
+                                            "type": "label",
+                                            "text": "Tank 1",
+                                            "class": "content_style_odd title_styles",
                                             "style": {
-                                                "font": "HelveticaNeue",
                                                 "width": "30%",
                                                 "padding": "4",
-                                                "height": "6%",
-                                                "disable": "true",
-                                                "size": "13",
-                                                "padding_left": "2%"
-
-
+                                                "height":"6%",
+                                                "padding_left":"2%"
                                             }
 
                                         }, {
                                             "type": "label",
                                             "text": "9",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "class": "content_style_odd center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
-
                                         },
                                         {
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_1_level",
                                             "value": "{{$global.so2_screen2_storage_tank_1_level || ''}}",
-                                            "class": "center_align content_style_odd textarea_style",
+                                            "class": "content_style_odd",
                                             "contentDescription": "nine",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "border": "#555555",
+                                                
                                                 "width": "20%",
-                                                "height": "6%",
-                                                "padding": "0"
+                                                "padding": "3"
+                                                
 
 
                                             }
@@ -710,10 +687,11 @@
                                         {
                                             "type": "label",
                                             "text": "10",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "class": "content_style_odd center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -736,10 +714,11 @@
                                         {
                                             "type": "label",
                                             "text": "11",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "class": "content_style_odd center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -747,15 +726,13 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_1_comments",
                                             "value": "{{$global.so2_screen2_storage_tank_1_comments || ''}}",
-                                            "class": "center_align content_style_odd textarea_style",
+                                            "class": "content_style_odd",
                                             "contentDescription": "eleven",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "border": "#ffffff",
+                                                
                                                 "width": "25%",
-                                                "height": "6%",
-                                                "padding": "0"
+                                                "padding": "3"
+                                                
 
 
                                             }
@@ -771,29 +748,24 @@
                                         "height": "6%"
                                     },
                                     "components": [{
-                                            "type": "textarea",
-                                            "name": "tank 2",
-                                            "value": "Tank 2",
-                                            "class": "content_style_even textarea_style",
+                                            "type": "label",
+                                            "text": "Tank 2",
+                                            "class": "content_style_even title_styles",
                                             "style": {
-                                                "font": "HelveticaNeue",
                                                 "width": "30%",
                                                 "padding": "4",
-                                                "height": "6%",
-                                                "disable": "true",
-                                                "size": "13",
-                                                "padding_left": "2%"
-
-
+                                                "height":"6%",
+                                                "padding_left":"2%"
                                             }
 
                                         }, {
                                             "type": "label",
                                             "text": "12",
-                                            "class": "content_style_even center_align textarea_style",
+                                            "class": "content_style_even center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -801,16 +773,13 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_2_level",
                                             "value": "{{$global.so2_screen2_storage_tank_2_level || ''}}",
-                                            "class": "center_align content_style_even textarea_style",
+                                            "class": "content_style_even",
                                             "contentDescription": "twelve",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "border": "#555555",
-                                                "width": "20%",
-                                                "height": "6%",
-                                                "padding": "0"
+                                                "padding": "3",
+                                                "width": "20%"
 
+                                                
 
                                             }
 
@@ -818,10 +787,11 @@
                                         {
                                             "type": "label",
                                             "text": "13",
-                                            "class": "content_style_even center_align textarea_style",
+                                            "class": "content_style_even center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -844,10 +814,11 @@
                                         {
                                             "type": "label",
                                             "text": "14",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "class": "content_style_even center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -855,16 +826,13 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_2_comments",
                                             "value": "{{$global.so2_screen2_storage_tank_2_comments || ''}}",
-                                            "class": "center_align content_style_even textarea_style",
+                                            "class": "content_style_even",
                                             "contentDescription": "fourteen",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "border": "#ffffff",
-                                                "width": "25%",
-                                                "height": "6%",
-                                                "padding": "0"
+                                                "padding": "3",
+                                                "width": "25%"
 
+                                                
 
                                             }
 
@@ -879,29 +847,24 @@
                                         "height": "6%"
                                     },
                                     "components": [{
-                                            "type": "textarea",
-                                            "name": "tank 3",
-                                            "value": "Tank 3",
-                                            "class": "content_style_odd textarea_style",
+                                            "type": "label",
+                                            "text": "Tank 3",
+                                            "class": "content_style_odd title_styles",
                                             "style": {
-                                                "font": "HelveticaNeue",
                                                 "width": "30%",
                                                 "padding": "4",
-                                                "height": "6%",
-                                                "disable": "true",
-                                                "size": "13",
-                                                "padding_left": "2%"
-
-
+                                                "height":"6%",
+                                                "padding_left":"2%"
                                             }
 
                                         }, {
                                             "type": "label",
                                             "text": "15",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "class": "content_style_odd center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -909,16 +872,13 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_3_level",
                                             "value": "{{$global.so2_screen2_storage_tank_3_level || ''}}",
-                                            "class": "center_align content_style_odd textarea_style",
+                                            "class": "content_style_odd",
                                             "contentDescription": "fifteen",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "border": "#555555",
-                                                "width": "20%",
-                                                "height": "6%",
-                                                "padding": "0"
+                                                "padding": "3",
+                                                "width": "20%"
 
+                                                
 
                                             }
 
@@ -926,10 +886,11 @@
                                         {
                                             "type": "label",
                                             "text": "16",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "class": "content_style_odd center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -955,10 +916,11 @@
                                         {
                                             "type": "label",
                                             "text": "17",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "class": "content_style_odd center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -966,16 +928,13 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_3_comments",
                                             "value": "{{$global.so2_screen2_storage_tank_3_comments || ''}}",
-                                            "class": "center_align content_style_odd textarea_style",
+                                            "class": "content_style_odd",
                                             "contentDescription": "seventeen",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "border": "#ffffff",
-                                                "width": "25%",
-                                                "height": "6%",
-                                                "padding": "0"
+                                                "padding": "3",
+                                                "width": "25%"
 
+                                                
 
                                             }
 
@@ -990,46 +949,37 @@
                                         "height": "6%"
                                     },
                                     "components": [{
-                                            "type": "textarea",
-                                            "name": "tank 4",
-                                            "value": "Tank 4",
-                                            "class": "content_style_even textarea_style",
+                                            "type": "label",
+                                            "text": "Tank 4",
+                                            "class": "content_style_even title_styles",
                                             "style": {
-                                                "font": "HelveticaNeue",
                                                 "width": "30%",
                                                 "padding": "4",
-                                                "height": "6%",
-                                                "disable": "true",
-                                                "size": "13",
-                                                "padding_left": "2%"
-
-
+                                                "height":"6%",
+                                                "padding_left":"2%"
                                             }
 
                                         }, {
                                             "type": "label",
                                             "text": "18",
-                                            "class": "content_style_even center_align textarea_style",
+                                            "class": "content_style_even center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
-
                                         },
                                         {
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_4_level",
                                             "value": "{{$global.so2_screen2_storage_tank_4_level || ''}}",
-                                            "class": "center_align content_style_even textarea_style",
+                                            "class": "content_style_even",
                                             "contentDescription": "eighteen",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "border": "#555555",
-                                                "width": "20%",
-                                                "height": "6%",
-                                                "padding": "0"
+                                                "padding": "3",
+                                                "width": "20%"
 
+                                                
 
                                             }
 
@@ -1037,11 +987,11 @@
                                         {
                                             "type": "label",
                                             "text": "19",
-                                            "class": "content_style_even center_align textarea_style",
+                                            "class": "content_style_even center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3",
-                                                "height":"7%"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -1065,10 +1015,11 @@
                                         {
                                             "type": "label",
                                             "text": "20",
-                                            "class": "content_style_odd center_align textarea_style",
+                                            "class": "content_style_even center_align",
                                             "style": {
                                                 "width": "5%",
-                                                "padding": "3"
+                                                "padding": "4",
+                                                "height":"6%"
                                             }
 
                                         },
@@ -1076,16 +1027,13 @@
                                             "type": "textarea",
                                             "name": "so2_screen2_storage_tank_4_comments",
                                             "value": "{{$global.so2_screen2_storage_tank_4_comments || ''}}",
-                                            "class": "center_align content_style_even textarea_style",
+                                            "class": "content_style_even",
                                             "contentDescription": "twenty",
                                             "style": {
-                                                "placeholder_color": "#cecece",
-                                                "font": "HelveticaNeue",
-                                                "border": "#ffffff",
-                                                "width": "25%",
-                                                "height": "6%",
-                                                "padding": "0"
+                                                "padding": "3",
+                                                "width": "25%"
 
+                                                
 
                                             }
 
@@ -1179,7 +1127,41 @@
                                           }
                                         }
                                       },
-                                   
+                                    {
+                                        "type": "label",
+                                        "text": "",
+                                        "class": "black_color",
+                                        "style": {
+                                            "width": "5%"
+                                        }
+                                    },
+                                    {
+                                        "type": "button",
+                                        "name": "next",
+                                        "text": "Next",
+                                        "class": "next_button_styles center_align",
+                                        "action": {
+                                            "type": "$href",
+                                            "options": {
+                                                "url": "https://pvybhav.github.io/DGX_Form/OffloadCheck/screen-3.json",
+                                                "preload": {
+                                                    "style": {
+                                                        "background": "#ff0000"
+                                                    },
+                                                    "layers": [{
+                                                        "type": "image",
+                                                        "url": "file://infinit.gif",
+                                                        "style": {
+                                                            "top": "50%-25",
+                                                            "left": "50%-25",
+                                                            "width": "50",
+                                                            "height": "50"
+                                                        }
+                                                    }]
+                                                }
+                                            }
+                                        }
+                                    },
                                     {
                                         "type": "label",
                                         "text": "",
@@ -1204,37 +1186,7 @@
                                         "style": {
                                             "width": "5%"
                                         }
-                                    },
-                                    
-                                    {
-                                        "type": "button",
-                                        "name": "submit",
-                                        "text": "submit",
-                                        "class": "center_align submit_button_styles",
-                                        "contentDescription": "submit",
-                                        "action": {
-                                          "type": "$global.reset",
-                                          "options": {
-                                            "save": "true",
-                                            "filename": "OffloadCheck"
-                                          },
-                                          "success": {
-                                            "type": "$util.toast",
-                                            "options": {
-                                              "text": "Data Submitted successfully",
-                                              "type": "warning"
-                                            }
-                                          }
-                                        }
-                                      },
-                                      {
-                                        "type": "label",
-                                        "text": "",
-                                        "class": "black_color",
-                                        "style": {
-                                          "width": "5%"
-                                        }
-                                      }
+                                    }
                                 ]
                             }]
                         }
