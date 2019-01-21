@@ -373,18 +373,24 @@
 
                                         },
                                         {
-                                            "type": "textarea",
-                                            "name": "so2_screen2_safety_perimeter_cones_comments",
-                                            "value": "{{$global.so2_screen2_safety_perimeter_cones_comments || ''}}",
-                                            "contentDescription": "two",
+                                            "type":"horizontal",
                                             "style": {
-                                                "padding": "3",
                                                 "width": "25%"
 
                                             },
-                                            "class": "content_style_odd"
-
+                                            "components":[
+                                                {
+                                                    "type": "textfield",
+                                                    "name": "so2_screen2_safety_perimeter_cones_comments",
+                                                    "value": "{{$global.so2_screen2_safety_perimeter_cones_comments || ''}}",
+                                                    "contentDescription": "two",
+                                                    
+                                                    "class": "content_style_odd"
+        
+                                                }
+                                            ]
                                         }
+                                        
                                     ],
                                     "class": "no_padding"
                                 },
