@@ -21,6 +21,8 @@
                 "title_styles": {
                     "font": "HelveticaNeue",
                     "width": "55%",
+                    "padding": "4",
+                    "height": "6%",
                     "disable": "true",
                     "size": "13",
                     "padding_left": "2%"
@@ -321,17 +323,20 @@
                                     "components": [{
                                             "type": "textarea",
                                             "value": "Install safety perimeter cones",
-                                            "class": "content_style_odd title_styles"
+                                            "class": "content_style_odd title_styles textarea_style"
                                         },
                                         {
                                             "type": "textarea",
                                             "value": "1",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_odd textarea_style",
                                             "style":{
                                                 "font": "HelveticaNeue",
                                                 "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%",
                                                 "disable": "true",
-                                                "size": "13"
+                                                "size": "13",
+                                                "padding_left": "2%"
                                             }
                                            
                                         },
@@ -352,19 +357,15 @@
 
                                         },
                                         {
-                                            "type": "textarea",
-                                            "value": "2",
-                                            "class": "content_style_odd center_align",
-                                            "style":{
-                                                "font": "HelveticaNeue",
+                                            "type": "label",
+                                            "text": "2",
+                                            "class": "content_style_odd center_align textarea_style",
+                                            "style": {
                                                 "width": "5%",
-                                                "height": "6%",
-                                                "disable": "true",
-                                                "size": "13"
+                                                "padding": "3"
                                             }
-                                        }
 
-                                        ,
+                                        },
                                         {
                                             "type": "textarea",
                                             "name": "so2_screen2_safety_perimeter_cones_comments",
@@ -375,7 +376,7 @@
                                                 "height": "6%"
 
                                             },
-                                            "class": "content_style_odd"
+                                            "class": "content_style_odd textarea_style"
 
                                         }
                                     ],
@@ -392,6 +393,7 @@
                                             "value": "Ensure Truck wheels are choked",
                                             "class": "content_style_even title_styles textarea_style",
                                             "style": {
+                                                "padding": "3"
                                             }
 
 
