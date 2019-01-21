@@ -317,17 +317,57 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height": "6%"
-
+                                        "height": "6%",
+                                        "border": "#ffffff"
                                     },
                                     "components": [{
                                             "type": "textarea",
-                                            "value": "Install safety perimeter cones",
-                                            "class": "content_style_odd title_styles textarea_style"
+                                            "name": "so2_in_tank",
+                                            "value": "Amount of Liquid SO2 in the tank",
+                                            "class": "content_style_odd textarea_style",
+                                            "style": {
+                                                "font": "HelveticaNeue",
+                                                "width": "30%",
+                                                "padding": "4",
+                                                "height": "6%",
+                                                "disable": "true",
+                                                "size": "13",
+                                                "padding_left": "2%"
+
+
+                                            }
+
+                                        }, {
+                                            "type": "label",
+                                            "text": "9",
+                                            "class": "content_style_odd center_align textarea_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "3"
+                                            }
+
+                                        },
+                                        {
+                                            "type": "textarea",
+                                            "name": "so2_screen2_storage_tank_1_level",
+                                            "value": "{{$global.so2_screen2_storage_tank_1_level || ''}}",
+                                            "class": "center_align content_style_odd textarea_style",
+                                            "contentDescription": "nine",
+                                            "style": {
+                                                "placeholder_color": "#cecece",
+                                                "font": "HelveticaNeue",
+                                                "border": "#555555",
+                                                "width": "20%",
+                                                "height": "6%",
+                                                "padding": "0"
+
+
+                                            }
+
                                         },
                                         {
                                             "type": "label",
-                                            "text": "1",
+                                            "text": "10",
                                             "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
@@ -338,14 +378,14 @@
                                         {
 
                                             "type": "switch",
-                                            "name": "so2_screen2_safety_perimeter_cones",
-                                            "value": "{{$global.so2_screen2_safety_perimeter_cones}}",
+                                            "name": "so2_screen2_storage_tank_1",
+                                            "value": "{{$global.so2_screen2_storage_tank_1}}",
                                             "class": "content_style_odd switch_styles",
-                                            "contentDescription": "one",
+                                            "contentDescription": "ten",
                                             "action": {
                                                 "type": "$global.set",
                                                 "options": {
-                                                    "so2_screen2_safety_perimeter_cones": "{{$get.so2_screen2_safety_perimeter_cones}}"
+                                                    "so2_screen2_storage_tank_1": "{{$get.so2_screen2_storage_tank_1}}"
                                                 }
                                             }
 
@@ -353,7 +393,7 @@
                                         },
                                         {
                                             "type": "label",
-                                            "text": "2",
+                                            "text": "11",
                                             "class": "content_style_odd center_align textarea_style",
                                             "style": {
                                                 "width": "5%",
@@ -363,15 +403,20 @@
                                         },
                                         {
                                             "type": "textarea",
-                                            "name": "so2_screen2_safety_perimeter_cones_comments",
-                                            "value": "{{$global.so2_screen2_safety_perimeter_cones_comments || ''}}",
-                                            "contentDescription": "two",
+                                            "name": "so2_screen2_storage_tank_1_comments",
+                                            "value": "{{$global.so2_screen2_storage_tank_1_comments || ''}}",
+                                            "class": "center_align content_style_odd textarea_style",
+                                            "contentDescription": "eleven",
                                             "style": {
+                                                "placeholder_color": "#cecece",
+                                                "font": "HelveticaNeue",
+                                                "border": "#ffffff",
                                                 "width": "25%",
-                                                "height": "6%"
+                                                "height": "6%",
+                                                "padding": "0"
 
-                                            },
-                                            "class": "content_style_odd textarea_style"
+
+                                            }
 
                                         }
                                     ],
