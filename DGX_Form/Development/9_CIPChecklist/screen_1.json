@@ -75,6 +75,9 @@
         "table_body_value_styles": {
           "width": "18%"
         },
+        "table_fields_size": {
+          "size": "16"
+        },
         "label_styles": {
           "font": "HelveticaNeue-Bold"
         },
@@ -88,13 +91,6 @@
         },
         "table_dropdown_even_fields_styles": {
           "background": "rgb(231,232,235)"
-        },
-        "button_styles": {
-          "width": "40%",
-          "height": 50,
-          "space": "15",
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 204)"
         },
         "col_name_styles": {
           "width": "22%"
@@ -121,28 +117,11 @@
         "table_row_even_styles": {
           "background": "rgb(231,232,235)"
         },
-        "table_fields_size": {
-          "size": "16"
-        },
-        "home_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
+        "button_styles": {
           "width": "15%",
           "height": "7%",
-          "corner_radius": "1%"
-        },
-        "next_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
-        },
-        "save_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
-          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,147,215)",
           "corner_radius": "1%"
         }
       },
@@ -232,7 +211,11 @@
             "secondary_safety_screen_holed_0640_M221_011": "{{ $get.secondary_safety_screen_holed_0640_M221_011 || '' }}",
             "secondary_safety_screen_blinded_0640_M221_011": "{{ $get.secondary_safety_screen_blinded_0640_M221_011 || '' }}",
             "secondary_safety_screen_clean_0640_M221_011": "{{ $get.secondary_safety_screen_clean_0640_M221_011 || '' }}",
-            "secondary_safety_screen_good_0640_M221_011": "{{ $get.secondary_safety_screen_good_0640_M221_011 || ' '}}"
+            "secondary_safety_screen_good_0640_M221_011": "{{ $get.secondary_safety_screen_good_0640_M221_011 || ' '}}",
+            "secondary_safety_screen_holed_0640_M221_012": "{{ $get.secondary_safety_screen_holed_0640_M221_012 || '' }}",
+            "secondary_safety_screen_blinded_0640_M221_012": "{{ $get.secondary_safety_screen_blinded_0640_M221_012 || '' }}",
+            "secondary_safety_screen_clean_0640_M221_012": "{{ $get.secondary_safety_screen_clean_0640_M221_012 || '' }}",
+            "secondary_safety_screen_good_0640_M221_012": "{{ $get.secondary_safety_screen_good_0640_M221_012 || ' '}}"
           },
           "success": {
             "type": "$util.toast",
@@ -653,6 +636,7 @@
                     },
                     {
                       "type": "horizontal",
+                      "class": "table_fields_size",
                       "components": [
                         {
                           "type": "vertical",
@@ -814,7 +798,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "0640-M221-001 Safety Screen",
+                      "text": "0640-M221-002 Safety Screen",
                       "class": "center_align black_color table_body_name_styles"
                     },
                     {
@@ -980,7 +964,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "0640-M221-001 Safety Screen",
+                      "text": "0640-M221-101 Derrick Screen",
                       "class": "center_align black_color table_body_name_styles"
                     },
                     {
@@ -1146,7 +1130,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "0640-M221-001 Safety Screen",
+                      "text": "0640-M221-102 Derrick Screen",
                       "class": "center_align black_color table_body_name_styles"
                     },
                     {
@@ -1312,7 +1296,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "0640-M221-001 Safety Screen",
+                      "text": "0640-M221-201 Derrick Screen",
                       "class": "center_align black_color table_body_name_styles"
                     },
                     {
@@ -1478,7 +1462,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "0640-M221-001 Safety Screen",
+                      "text": "0640-M221-202 Derrick Screen",
                       "class": "center_align black_color table_body_name_styles"
                     },
                     {
@@ -1644,7 +1628,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "0640-M221-001 Safety Screen",
+                      "text": "2 Secondary Safety Screen",
                       "class": "center_align black_color table_body_name_styles"
                     },
                     {
@@ -1800,6 +1784,172 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "0640-M221-012 Secondary Safety Screen",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "29",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "secondary_safety_screen_holed_0640_M221_012",
+                              "value": "{{$global.secondary_safety_screen_holed_0640_M221_012 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twenty-nine",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "30",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "secondary_safety_screen_blinded_0640_M221_012",
+                              "value": "{{$global.secondary_safety_screen_blinded_0640_M221_012 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "thirty",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "31",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "secondary_safety_screen_clean_0640_M221_012",
+                              "value": "{{$global.secondary_safety_screen_clean_0640_M221_012 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "thirty-one",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "32",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "secondary_safety_screen_good_0640_M221_012",
+                              "value": "{{$global.secondary_safety_screen_good_0640_M221_012 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "thirty-two",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -1824,7 +1974,7 @@
                       "type": "button",
                       "name": "home",
                       "text": "Home",
-                      "class": "home_button_styles center_align",
+                      "class": "button_styles center_align",
                       "action": {
                         "type": "$href",
                         "options": {
@@ -1859,7 +2009,7 @@
                       "type": "button",
                       "name": "next",
                       "text": "Next",
-                      "class": "next_button_styles center_align",
+                      "class": "button_styles center_align",
                       "action": {
                         "type": "$href",
                         "options": {
@@ -1894,7 +2044,7 @@
                       "type": "button",
                       "name": "save",
                       "text": "Save",
-                      "class": "save_button_styles center_align",
+                      "class": "button_styles center_align",
                       "action": {
                         "trigger": "handleSave"
                       }

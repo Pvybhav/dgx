@@ -82,7 +82,7 @@
         "Table1_Headers": [
           {
             "type": "label",
-            "value": "Detox U/F Pumps",
+            "value": "Final Tails",
             "col_type": "col_name",
             "styles": "table_header_styles center_align table_header_name_styles"
           },
@@ -120,7 +120,7 @@
         "Table2_Headers": [
           {
             "type": "label",
-            "value": "CIP Tails",
+            "value": "Reclaim Pumps",
             "col_type": "col_name",
             "styles": "table_header_styles center_align table_header_name_styles"
           },
@@ -175,52 +175,57 @@
         "handleSave": {
           "type": "$global.set",
           "options": {
-            "section_id": "form9_page2",
-            "detox_UF_pumps_pump001_running": "{{ $get.detox_UF_pumps_pump001_running || '' }}",
-            "detox_UF_pumps_pump001_valves": "{{ $get.detox_UF_pumps_pump001_valves || '' }}",
-            "detox_UF_pumps_pump001_gland_m3hr": "{{ $get.detox_UF_pumps_pump001_gland_m3hr || '' }}",
-            "detox_UF_pumps_pump001_packing": "{{ $get.detox_UF_pumps_pump001_packing || '' }}",
-            "detox_UF_pumps_pump001_oil_level": "{{ $get.detox_UF_pumps_pump001_oil_level || '' }}",
-            "detox_UF_pumps_pump021_running": "{{ $get.detox_UF_pumps_pump021_running || '' }}",
-            "detox_UF_pumps_pump021_valves": "{{ $get.detox_UF_pumps_pump021_valves || '' }}",
-            "detox_UF_pumps_pump021_gland_m3hr": "{{ $get.detox_UF_pumps_pump021_gland_m3hr || '' }}",
-            "detox_UF_pumps_pump021_packing": "{{ $get.detox_UF_pumps_pump021_packing || '' }}",
-            "detox_UF_pumps_pump021_oil_level": "{{ $get.detox_UF_pumps_pump021_oil_level || '' }}",
-            "detox_UF_pumps_pump041_running": "{{ $get.detox_UF_pumps_pump041_running || '' }}",
-            "detox_UF_pumps_pump041_valves": "{{ $get.detox_UF_pumps_pump041_valves || '' }}",
-            "detox_UF_pumps_pump041_gland_m3hr": "{{ $get.detox_UF_pumps_pump041_gland_m3hr || '' }}",
-            "detox_UF_pumps_pump041_packing": "{{ $get.detox_UF_pumps_pump041_packing || '' }}",
-            "detox_UF_pumps_pump041_oil_level": "{{ $get.detox_UF_pumps_pump041_oil_level || '' }}",
-            "detox_UF_pumps_sump_pump001_running": "{{ $get.detox_UF_pumps_sump_pump001_running || '' }}",
-            "detox_UF_pumps_sump_pump001_valves": "{{ $get.detox_UF_pumps_sump_pump001_valves || '' }}",
-            "detox_UF_pumps_sump_pump001_gland_m3hr": "{{ $get.detox_UF_pumps_sump_pump001_gland_m3hr || '' }}",
-            "detox_UF_pumps_sump_pump001_packing": "{{ $get.detox_UF_pumps_sump_pump001_packing || '' }}",
-            "detox_UF_pumps_sump_pump001_oil_level": "{{ $get.detox_UF_pumps_sump_pump001_oil_level || '' }}",
-            "detox_UF_pumps_sump_pump002_running": "{{ $get.detox_UF_pumps_sump_pump002_running || '' }}",
-            "detox_UF_pumps_sump_pump002_valves": "{{ $get.detox_UF_pumps_sump_pump002_valves || '' }}",
-            "detox_UF_pumps_sump_pump002_gland_m3hr": "{{ $get.detox_UF_pumps_sump_pump002_gland_m3hr || '' }}",
-            "detox_UF_pumps_sump_pump002_packing": "{{ $get.detox_UF_pumps_sump_pump002_packing || '' }}",
-            "detox_UF_pumps_sump_pump002_oil_level": "{{ $get.detox_UF_pumps_sump_pump002_oil_level || '' }}",
-            "CIP_tails_pump_001_running": "{{ $get.CIP_tails_pump_001_running || ''}}",
-            "CIP_tails_pump_001_valves": "{{ $get.CIP_tails_pump_001_valves || ''}}",
-            "CIP_tails_pump_001_gland_m3hr": "{{ $get.CIP_tails_pump_001_gland_m3hr || ''}}",
-            "CIP_tails_pump_001_packing": "{{ $get.CIP_tails_pump_001_packing || ''}}",
-            "CIP_tails_pump_001_oil_level": "{{ $get.CIP_tails_pump_001_oil_level || ''}}",
-            "CIP_tails_pump_011_running": "{{ $get.CIP_tails_pump_011_running || ''}}",
-            "CIP_tails_pump_011_valves": "{{ $get.CIP_tails_pump_011_valves || ''}}",
-            "CIP_tails_pump_011_gland_m3hr": "{{ $get.CIP_tails_pump_011_gland_m3hr || ''}}",
-            "CIP_tails_pump_011_packing": "{{ $get.CIP_tails_pump_011_packing || ''}}",
-            "CIP_tails_pump_011_oil_level": "{{ $get.CIP_tails_pump_011_oil_level || ''}}",
-            "CIP_tails_pump_012_running": "{{ $get.CIP_tails_pump_012_running || ''}}",
-            "CIP_tails_pump_012_valves": "{{ $get.CIP_tails_pump_012_valves || ''}}",
-            "CIP_tails_pump_012_gland_m3hr": "{{ $get.CIP_tails_pump_012_gland_m3hr || ''}}",
-            "CIP_tails_pump_012_packing": "{{ $get.CIP_tails_pump_012_packing || ''}}",
-            "CIP_tails_pump_012_oil_level": "{{ $get.CIP_tails_pump_012_oil_level || ''}}",
-            "CIP_tails_clean_pump_box_level_probe_running": "{{ $get.CIP_tails_clean_pump_box_level_probe_running || ''}}",
-            "CIP_tails_clean_pump_box_level_probe_valves": "{{ $get.CIP_tails_clean_pump_box_level_probe_valves || ''}}",
-            "CIP_tails_clean_pump_box_level_probe_gland_m3hr": "{{ $get.CIP_tails_clean_pump_box_level_probe_gland_m3hr || ''}}",
-            "CIP_tails_clean_pump_box_level_probe_packing": "{{ $get.CIP_tails_clean_pump_box_level_probe_packing || ''}}",
-            "CIP_tails_clean_pump_box_level_probe_oil_level": "{{ $get.CIP_tails_clean_pump_box_level_probe_oil_level || ''}}"
+            "section_id": "form9_page3",
+            "final_tails_pump001_running": "{{ $get.final_tails_pump001_running || '' }}",
+            "final_tails_pump001_valves": "{{ $get.final_tails_pump001_valves || '' }}",
+            "final_tails_pump001_gland_m3hr": "{{ $get.final_tails_pump001_gland_m3hr || '' }}",
+            "final_tails_pump001_packing": "{{ $get.final_tails_pump001_packing || '' }}",
+            "final_tails_pump001_oil_level": "{{ $get.final_tails_pump001_oil_level || '' }}",
+            "final_tails_pump002_running": "{{ $get.final_tails_pump002_running || '' }}",
+            "final_tails_pump002_valves": "{{ $get.final_tails_pump002_valves || '' }}",
+            "final_tails_pump002_gland_m3hr": "{{ $get.final_tails_pump002_gland_m3hr || '' }}",
+            "final_tails_pump002_packing": "{{ $get.final_tails_pump002_packing || '' }}",
+            "final_tails_pump002_oil_level": "{{ $get.final_tails_pump002_oil_level || '' }}",
+            "final_tails_pump021_running": "{{ $get.final_tails_pump021_running || '' }}",
+            "final_tails_pump021_valves": "{{ $get.final_tails_pump021_valves || '' }}",
+            "final_tails_pump021_gland_m3hr": "{{ $get.final_tails_pump021_gland_m3hr || '' }}",
+            "final_tails_pump021_packing": "{{ $get.final_tails_pump021_packing || '' }}",
+            "final_tails_pump021_oil_level": "{{ $get.final_tails_pump021_oil_level || '' }}",
+            "final_tails_pump022_running": "{{ $get.final_tails_pump022_running || '' }}",
+            "final_tails_pump022_valves": "{{ $get.final_tails_pump022_valves || '' }}",
+            "final_tails_pump022_gland_m3hr": "{{ $get.final_tails_pump022_gland_m3hr || '' }}",
+            "final_tails_pump022_packing": "{{ $get.final_tails_pump022_packing || '' }}",
+            "final_tails_pump022_oil_level": "{{ $get.final_tails_pump022_oil_level || '' }}",
+            "final_tails_pump041_running": "{{ $get.final_tails_pump041_running || '' }}",
+            "final_tails_pump041_valves": "{{ $get.final_tails_pump041_valves || '' }}",
+            "final_tails_pump041_gland_m3hr": "{{ $get.final_tails_pump041_gland_m3hr || '' }}",
+            "final_tails_pump041_packing": "{{ $get.final_tails_pump041_packing || '' }}",
+            "final_tails_pump041_oil_level": "{{ $get.final_tails_pump041_oil_level || '' }}",
+            "final_tails_pump042_running": "{{ $get.final_tails_pump042_running || '' }}",
+            "final_tails_pump042_valves": "{{ $get.final_tails_pump042_valves || '' }}",
+            "final_tails_pump042_gland_m3hr": "{{ $get.final_tails_pump042_gland_m3hr || '' }}",
+            "final_tails_pump042_packing": "{{ $get.final_tails_pump042_packing || '' }}",
+            "final_tails_pump042_oil_level": "{{ $get.final_tails_pump042_oil_level || '' }}",
+            "final_tails_clean_pump_box_level_probe_running": "{{ $get.final_tails_clean_pump_box_level_probe_running || '' }}",
+            "final_tails_clean_pump_box_level_probe_valves": "{{ $get.final_tails_clean_pump_box_level_probe_valves || '' }}",
+            "final_tails_clean_pump_box_level_probe_gland_m3hr": "{{ $get.final_tails_clean_pump_box_level_probe_gland_m3hr || '' }}",
+            "final_tails_clean_pump_box_level_probe_packing": "{{ $get.final_tails_clean_pump_box_level_probe_packing || '' }}",
+            "final_tails_clean_pump_box_level_probe_oil_level": "{{ $get.final_tails_clean_pump_box_level_probe_oil_level || '' }}",
+            "reclaim_pumps_pump_010_running": "{{ $get.reclaim_pumps_pump_010_running || ''}}",
+            "reclaim_pumps_pump_010_valves": "{{ $get.reclaim_pumps_pump_010_valves || ''}}",
+            "reclaim_pumps_pump_010_gland_m3hr": "{{ $get.reclaim_pumps_pump_010_gland_m3hr || ''}}",
+            "reclaim_pumps_pump_010_packing": "{{ $get.reclaim_pumps_pump_010_packing || ''}}",
+            "reclaim_pumps_pump_010_oil_level": "{{ $get.reclaim_pumps_pump_010_oil_level || ''}}",
+            "reclaim_pumps_pump_011_running": "{{ $get.reclaim_pumps_pump_011_running || ''}}",
+            "reclaim_pumps_pump_011_valves": "{{ $get.reclaim_pumps_pump_011_valves || ''}}",
+            "reclaim_pumps_pump_011_gland_m3hr": "{{ $get.reclaim_pumps_pump_011_gland_m3hr || ''}}",
+            "reclaim_pumps_pump_011_packing": "{{ $get.reclaim_pumps_pump_011_packing || ''}}",
+            "reclaim_pumps_pump_011_oil_level": "{{ $get.reclaim_pumps_pump_011_oil_level || ''}}",
+            "reclaim_pumps_pump_012_running": "{{ $get.reclaim_pumps_pump_012_running || ''}}",
+            "reclaim_pumps_pump_012_valves": "{{ $get.reclaim_pumps_pump_012_valves || ''}}",
+            "reclaim_pumps_pump_012_gland_m3hr": "{{ $get.reclaim_pumps_pump_012_gland_m3hr || ''}}",
+            "reclaim_pumps_pump_012_packing": "{{ $get.reclaim_pumps_pump_012_packing || ''}}",
+            "reclaim_pumps_pump_012_oil_level": "{{ $get.reclaim_pumps_pump_012_oil_level || ''}}"
           },
           "success": {
             "type": "$util.toast",
@@ -262,9 +267,6 @@
                           "text": "{{value}}",
                           "class": "{{styles}}"
                         }
-                      },
-                      "style": {
-                        "padding_top": "1%"
                       }
                     }
                   ]
@@ -310,8 +312,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump001_running",
-                              "value": "{{$global.detox_UF_pumps_pump001_running || ''}}",
+                              "name": "final_tails_pump001_running",
+                              "value": "{{$global.final_tails_pump001_running || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "one",
                               "style": {
@@ -348,8 +350,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump001_valves",
-                              "value": "{{$global.detox_UF_pumps_pump001_valves || ''}}",
+                              "name": "final_tails_pump001_valves",
+                              "value": "{{$global.final_tails_pump001_valves || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "two",
                               "style": {
@@ -386,8 +388,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump001_gland_m3hr",
-                              "value": "{{$global.detox_UF_pumps_pump001_gland_m3hr || ''}}",
+                              "name": "final_tails_pump001_gland_m3hr",
+                              "value": "{{$global.final_tails_pump001_gland_m3hr || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "three",
                               "style": {
@@ -424,8 +426,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump001_packing",
-                              "value": "{{$global.detox_UF_pumps_pump001_packing || ''}}",
+                              "name": "final_tails_pump001_packing",
+                              "value": "{{$global.final_tails_pump001_packing || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "four",
                               "style": {
@@ -462,8 +464,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump001_oil_level",
-                              "value": "{{$global.detox_UF_pumps_pump001_oil_level || ''}}",
+                              "name": "final_tails_pump001_oil_level",
+                              "value": "{{$global.final_tails_pump001_oil_level || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "five",
                               "style": {
@@ -487,7 +489,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "Pump 021",
+                      "text": "Pump 002",
                       "class": "center_align black_color table_body_name_styles"
                     },
                     {
@@ -509,13 +511,13 @@
                         {
                           "type": "vertical",
                           "style": {
-                            "width": "14%"
+                            "width": "13%"
                           },
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump021_running",
-                              "value": "{{$global.detox_UF_pumps_pump021_running || ''}}",
+                              "name": "final_tails_pump002_running",
+                              "value": "{{$global.final_tails_pump002_running || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "six",
                               "style": {
@@ -552,8 +554,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump021_valves",
-                              "value": "{{$global.detox_UF_pumps_pump021_valves || ''}}",
+                              "name": "final_tails_pump002_valves",
+                              "value": "{{$global.final_tails_pump002_valves || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "seven",
                               "style": {
@@ -590,8 +592,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump021_gland_m3hr",
-                              "value": "{{$global.detox_UF_pumps_pump021_gland_m3hr || ''}}",
+                              "name": "final_tails_pump002_gland_m3hr",
+                              "value": "{{$global.final_tails_pump002_gland_m3hr || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "eight",
                               "style": {
@@ -628,8 +630,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump021_packing",
-                              "value": "{{$global.detox_UF_pumps_pump021_packing || ''}}",
+                              "name": "final_tails_pump002_packing",
+                              "value": "{{$global.final_tails_pump002_packing || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "nine",
                               "style": {
@@ -666,8 +668,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump021_oil_level",
-                              "value": "{{$global.detox_UF_pumps_pump021_oil_level || ''}}",
+                              "name": "final_tails_pump002_oil_level",
+                              "value": "{{$global.final_tails_pump002_oil_level || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "ten",
                               "style": {
@@ -691,7 +693,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "Pump 041",
+                      "text": "Pump 021",
                       "class": "center_align black_color table_body_name_styles"
                     },
                     {
@@ -718,8 +720,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump041_running",
-                              "value": "{{$global.detox_UF_pumps_pump041_running || ''}}",
+                              "name": "final_tails_pump021_running",
+                              "value": "{{$global.final_tails_pump021_running || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "eleven",
                               "style": {
@@ -756,8 +758,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump041_valves",
-                              "value": "{{$global.detox_UF_pumps_pump041_valves || ''}}",
+                              "name": "final_tails_pump021_valves",
+                              "value": "{{$global.final_tails_pump021_valves || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "twelve",
                               "style": {
@@ -794,8 +796,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump041_gland_m3hr",
-                              "value": "{{$global.detox_UF_pumps_pump041_gland_m3hr || ''}}",
+                              "name": "final_tails_pump021_gland_m3hr",
+                              "value": "{{$global.final_tails_pump021_gland_m3hr || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "thirteen",
                               "style": {
@@ -832,8 +834,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump041_packing",
-                              "value": "{{$global.detox_UF_pumps_pump041_packing || ''}}",
+                              "name": "final_tails_pump021_packing",
+                              "value": "{{$global.final_tails_pump021_packing || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "fourteen",
                               "style": {
@@ -870,8 +872,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_pump041_oil_level",
-                              "value": "{{$global.detox_UF_pumps_pump041_oil_level || ''}}",
+                              "name": "final_tails_pump021_oil_level",
+                              "value": "{{$global.final_tails_pump021_oil_level || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "fifteen",
                               "style": {
@@ -895,7 +897,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "Sump pump 001",
+                      "text": "Pump 022",
                       "class": "center_align black_color table_body_name_styles"
                     },
                     {
@@ -922,8 +924,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_sump_pump001_running",
-                              "value": "{{$global.detox_UF_pumps_sump_pump001_running || ''}}",
+                              "name": "final_tails_pump022_running",
+                              "value": "{{$global.final_tails_pump022_running || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "sixteen",
                               "style": {
@@ -960,8 +962,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_sump_pump001_valves",
-                              "value": "{{$global.detox_UF_pumps_sump_pump001_valves || ''}}",
+                              "name": "final_tails_pump022_valves",
+                              "value": "{{$global.final_tails_pump022_valves || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "seventeen",
                               "style": {
@@ -998,8 +1000,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_sump_pump001_gland_m3hr",
-                              "value": "{{$global.detox_UF_pumps_sump_pump001_gland_m3hr || ''}}",
+                              "name": "final_tails_pump022_gland_m3hr",
+                              "value": "{{$global.final_tails_pump022_gland_m3hr || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "eighteen",
                               "style": {
@@ -1036,8 +1038,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_sump_pump001_packing",
-                              "value": "{{$global.detox_UF_pumps_sump_pump001_packing || ''}}",
+                              "name": "final_tails_pump022_packing",
+                              "value": "{{$global.final_tails_pump022_packing || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "nineteen",
                               "style": {
@@ -1074,651 +1076,10 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "detox_UF_pumps_sump_pump001_oil_level",
-                              "value": "{{$global.detox_UF_pumps_sump_pump001_oil_level || ''}}",
+                              "name": "final_tails_pump022_oil_level",
+                              "value": "{{$global.final_tails_pump022_oil_level || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "twenty",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "class": "no_padding center_align table_row table_row_odd_styles",
-                  "style": {
-                    "height": "6%"
-                  },
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "Sump pump 002",
-                      "class": "center_align black_color table_body_name_styles"
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "21",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_UF_pumps_sump_pump002_running",
-                              "value": "{{$global.detox_UF_pumps_sump_pump002_running || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "twenty-one",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "22",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_UF_pumps_sump_pump002_valves",
-                              "value": "{{$global.detox_UF_pumps_sump_pump002_valves || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "twenty-two",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "23",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_UF_pumps_sump_pump002_gland_m3hr",
-                              "value": "{{$global.detox_UF_pumps_sump_pump002_gland_m3hr || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "twenty-three",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "24",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_UF_pumps_sump_pump002_packing",
-                              "value": "{{$global.detox_UF_pumps_sump_pump002_packing || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "twenty-four",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "25",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_UF_pumps_sump_pump002_oil_level",
-                              "value": "{{$global.detox_UF_pumps_sump_pump002_oil_level || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "twenty-five",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "vertical",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "horizontal",
-                      "components": {
-                        "{{#each Table2_Headers}}": {
-                          "type": "label",
-                          "text": "{{value}}",
-                          "class": "{{styles}}"
-                        }
-                      },
-                      "style": {
-                        "padding_top": "1%"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "vertical",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding center_align table_row table_row_odd_styles",
-                  "style": {
-                    "height": "6%"
-                  },
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "Pump 001",
-                      "class": "center_align black_color table_body_name_styles"
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "26",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "CIP_tails_pump_001_running",
-                              "value": "{{$global.CIP_tails_pump_001_running || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "twenty-six",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "27",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "CIP_tails_pump_001_valves",
-                              "value": "{{$global.CIP_tails_pump_001_valves || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "twenty-seven",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "28",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "CIP_tails_pump_001_gland_m3hr",
-                              "value": "{{$global.CIP_tails_pump_001_gland_m3hr || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "twenty-eight",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "29",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "CIP_tails_pump_001_packing",
-                              "value": "{{$global.CIP_tails_pump_001_packing || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "twenty-nine",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "30",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "CIP_tails_pump_001_oil_level",
-                              "value": "{{$global.CIP_tails_pump_001_oil_level || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "thirty",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "class": "no_padding center_align table_row table_row_even_styles",
-                  "style": {
-                    "height": "6%"
-                  },
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "Pump 021",
-                      "class": "center_align black_color table_body_name_styles"
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "31",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "CIP_tails_pump_011_running",
-                              "value": "{{$global.CIP_tails_pump_011_running || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "thirty-one",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "32",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "CIP_tails_pump_011_valves",
-                              "value": "{{$global.CIP_tails_pump_011_valves || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "thirty-two",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "33",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "CIP_tails_pump_011_gland_m3hr",
-                              "value": "{{$global.CIP_tails_pump_011_gland_m3hr || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "thirty-three",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "34",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "CIP_tails_pump_011_packing",
-                              "value": "{{$global.CIP_tails_pump_011_packing || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "thirty-four",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "35",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "CIP_tails_pump_011_oil_level",
-                              "value": "{{$global.CIP_tails_pump_011_oil_level || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "thirty-five",
                               "style": {
                                 "width": "13%",
                                 "height": "4%",
@@ -1754,6 +1115,644 @@
                           "components": [
                             {
                               "type": "label",
+                              "text": "21",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_pump041_running",
+                              "value": "{{$global.final_tails_pump041_running || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twemty-one",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "22",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_pump041_valves",
+                              "value": "{{$global.final_tails_pump041_valves || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twemty-two",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "23",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_pump041_gland_m3hr",
+                              "value": "{{$global.final_tails_pump041_gland_m3hr || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twemty-three",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "24",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_pump041_packing",
+                              "value": "{{$global.final_tails_pump041_packing || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twemty-four",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "25",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_pump041_oil_level",
+                              "value": "{{$global.final_tails_pump041_oil_level || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twemty-five",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_even_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Pump 042",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "26",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_pump042_running",
+                              "value": "{{$global.final_tails_pump042_running || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twemty-six",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "27",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_pump042_valves",
+                              "value": "{{$global.final_tails_pump042_valves || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twemty-seven",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "28",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_pump042_gland_m3hr",
+                              "value": "{{$global.final_tails_pump042_gland_m3hr || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twemty-eight",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "29",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_pump042_packing",
+                              "value": "{{$global.final_tails_pump042_packing || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twemty-nine",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "30",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_pump042_oil_level",
+                              "value": "{{$global.final_tails_pump042_oil_level || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "thirty",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "8%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Clean Pump Box Level Probe",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "31",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_clean_pump_box_level_probe_running",
+                              "value": "{{$global.final_tails_clean_pump_box_level_probe_running || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "thirty-one",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "32",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_clean_pump_box_level_probe_valves",
+                              "value": "{{$global.final_tails_clean_pump_box_level_probe_valves || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "thirty-two",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "33",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_clean_pump_box_level_probe_gland_m3hr",
+                              "value": "{{$global.final_tails_clean_pump_box_level_probe_gland_m3hr || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "thirty-three",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "34",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_clean_pump_box_level_probe_packing",
+                              "value": "{{$global.final_tails_clean_pump_box_level_probe_packing || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "thirty-four",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "35",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "final_tails_clean_pump_box_level_probe_oil_level",
+                              "value": "{{$global.final_tails_clean_pump_box_level_probe_oil_level || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "thirty-five",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table2_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Pump 010",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
                               "text": "36",
                               "class": "no_padding label_styles black_color center_align"
                             }
@@ -1767,8 +1766,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "CIP_tails_pump_012_running",
-                              "value": "{{$global.CIP_tails_pump_012_running || ''}}",
+                              "name": "reclaim_pumps_pump_010_running",
+                              "value": "{{$global.reclaim_pumps_pump_010_running || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "thirty-six",
                               "style": {
@@ -1805,8 +1804,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "CIP_tails_pump_012_valves",
-                              "value": "{{$global.CIP_tails_pump_012_valves || ''}}",
+                              "name": "reclaim_pumps_pump_010_valves",
+                              "value": "{{$global.reclaim_pumps_pump_010_valves || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "thirty-seven",
                               "style": {
@@ -1843,8 +1842,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "CIP_tails_pump_012_gland_m3hr",
-                              "value": "{{$global.CIP_tails_pump_012_gland_m3hr || ''}}",
+                              "name": "reclaim_pumps_pump_010_gland_m3hr",
+                              "value": "{{$global.reclaim_pumps_pump_010_gland_m3hr || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "thirty-eight",
                               "style": {
@@ -1881,8 +1880,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "CIP_tails_pump_012_packing",
-                              "value": "{{$global.CIP_tails_pump_012_packing || ''}}",
+                              "name": "reclaim_pumps_pump_010_packing",
+                              "value": "{{$global.reclaim_pumps_pump_010_packing || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "thirty-nine",
                               "style": {
@@ -1919,8 +1918,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "CIP_tails_pump_012_oil_level",
-                              "value": "{{$global.CIP_tails_pump_012_oil_level || ''}}",
+                              "name": "reclaim_pumps_pump_010_oil_level",
+                              "value": "{{$global.reclaim_pumps_pump_010_oil_level || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "forty",
                               "style": {
@@ -1939,12 +1938,12 @@
                   "type": "horizontal",
                   "class": "no_padding center_align table_row table_row_even_styles",
                   "style": {
-                    "height": "8%"
+                    "height": "6%"
                   },
                   "components": [
                     {
                       "type": "label",
-                      "text": "Clean Pump Box Level Probe",
+                      "text": "Pump 011",
                       "class": "center_align black_color table_body_name_styles"
                     },
                     {
@@ -1971,8 +1970,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "CIP_tails_clean_pump_box_level_probe_running",
-                              "value": "{{$global.CIP_tails_clean_pump_box_level_probe_running || ''}}",
+                              "name": "reclaim_pumps_pump_011_running",
+                              "value": "{{$global.reclaim_pumps_pump_011_running || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "forty-one",
                               "style": {
@@ -2009,8 +2008,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "CIP_tails_clean_pump_box_level_probe_valves",
-                              "value": "{{$global.CIP_tails_clean_pump_box_level_probe_valves || ''}}",
+                              "name": "reclaim_pumps_pump_011_valves",
+                              "value": "{{$global.reclaim_pumps_pump_011_valves || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "forty-two",
                               "style": {
@@ -2047,8 +2046,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "CIP_tails_clean_pump_box_level_probe_gland_m3hr",
-                              "value": "{{$global.CIP_tails_clean_pump_box_level_probe_gland_m3hr || ''}}",
+                              "name": "reclaim_pumps_pump_011_gland_m3hr",
+                              "value": "{{$global.reclaim_pumps_pump_011_gland_m3hr || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "forty-three",
                               "style": {
@@ -2085,8 +2084,8 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "CIP_tails_clean_pump_box_level_probe_packing",
-                              "value": "{{$global.CIP_tails_clean_pump_box_level_probe_packing || ''}}",
+                              "name": "reclaim_pumps_pump_011_packing",
+                              "value": "{{$global.reclaim_pumps_pump_011_packing || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "forty-four",
                               "style": {
@@ -2123,10 +2122,214 @@
                           "components": [
                             {
                               "type": "textfield",
-                              "name": "CIP_tails_clean_pump_box_level_probe_oil_level",
-                              "value": "{{$global.CIP_tails_clean_pump_box_level_probe_oil_level || ''}}",
+                              "name": "reclaim_pumps_pump_011_oil_level",
+                              "value": "{{$global.reclaim_pumps_pump_011_oil_level || ''}}",
                               "class": "center_align black_color",
                               "contentDescription": "forty-five",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Pump 012",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "46",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "13%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "reclaim_pumps_pump_012_running",
+                              "value": "{{$global.reclaim_pumps_pump_012_running || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "forty-six",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "47",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "13%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "reclaim_pumps_pump_012_valves",
+                              "value": "{{$global.reclaim_pumps_pump_012_valves || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "forty-seven",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "48",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "13%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "reclaim_pumps_pump_012_gland_m3hr",
+                              "value": "{{$global.reclaim_pumps_pump_012_gland_m3hr || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "forty-eight",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "49",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "13%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "reclaim_pumps_pump_012_packing",
+                              "value": "{{$global.reclaim_pumps_pump_012_packing || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "forty-nine",
+                              "style": {
+                                "width": "13%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "50",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "13%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "reclaim_pumps_pump_012_oil_level",
+                              "value": "{{$global.reclaim_pumps_pump_012_oil_level || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "fifty",
                               "style": {
                                 "width": "13%",
                                 "height": "4%",
@@ -2166,7 +2369,7 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_1.json",
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_2.json",
                           "preload": {
                             "style": {
                               "background": "#ff0000"
@@ -2236,7 +2439,7 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_3.json",
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_4.json",
                           "preload": {
                             "style": {
                               "background": "#ff0000"
