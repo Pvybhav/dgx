@@ -710,7 +710,7 @@
                                                     "style": {
         
                                                         
-                                                        "padding": "3"
+                                                        "padding": "4"
         
         
         
@@ -759,21 +759,26 @@
 
                                         },
                                         {
-                                            "type": "textarea",
-                                            "name": "so2_screen2_storage_tank_1_comments",
-                                            "value": "{{$global.so2_screen2_storage_tank_1_comments || ''}}",
-                                            "class": "content_style_odd",
-                                            "contentDescription": "eleven",
-                                            "style": {
-
-                                                "width": "25%",
-                                                "padding": "3"
-
-
-
-                                            }
-
+                                            "type":"horizontal",
+                                            "style":{
+                                                "width":"25%"
+                                            },
+                                            "components":[
+                                                {
+                                                    "type": "textfield",
+                                                    "name": "so2_screen2_storage_tank_1_comments",
+                                                    "value": "{{$global.so2_screen2_storage_tank_1_comments || ''}}",
+                                                    "class": "content_style_odd",
+                                                    "contentDescription": "eleven",
+                                                    "style": {
+                                                        "padding": "4"
+        
+                                                    }
+        
+                                                }
+                                            ]
                                         }
+                                        
                                     ],
                                     "class": "no_padding"
                                 },
@@ -820,7 +825,7 @@
                                                     "style": {
         
                                                         
-                                                        "padding": "3"
+                                                        "padding": "4"
         
         
         
@@ -928,7 +933,7 @@
                                                     "style": {
         
                                                         
-                                                        "padding": "3"
+                                                        "padding": "4"
         
         
         
@@ -1038,7 +1043,7 @@
                                                     "style": {
         
                                                         
-                                                        "padding": "3"
+                                                        "padding": "4"
         
         
         
