@@ -375,8 +375,7 @@
                                         {
                                             "type":"horizontal",
                                             "style": {
-                                                "width": "25%",
-                                                "padding":"4"
+                                                "width": "25%"
 
                                             },
                                             "components":[
@@ -386,7 +385,11 @@
                                                     "value": "{{$global.so2_screen2_safety_perimeter_cones_comments || ''}}",
                                                     "contentDescription": "two",
                                                     
-                                                    "class": "content_style_odd"
+                                                    "class": "content_style_odd",
+                                                    "style":{
+                                                        "padding":"4"
+
+                                                    }
         
                                                 }
                                             ]
@@ -455,17 +458,20 @@
                                         {
                                             "type":"horizontal",
                                             "style": {
-                                                "padding": "3",
                                                 "width": "25%"
 
                                             },
                                             "components":[
                                                 {
-                                                    "type": "textarea",
+                                                    "type": "textfield",
                                                     "name": "so2_screen2_truck_wheels_choked_comments",
                                                     "value": "{{$global.so2_screen2_truck_wheels_choked_comments || ''}}",
                                                     "class": "content_style_even",
-                                                    "contentDescription": "four"
+                                                    "contentDescription": "four",
+                                                    "style":{
+                                                        "padding":"4"
+
+                                                    }
                                                    
         
                                                 }
