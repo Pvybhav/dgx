@@ -1,0 +1,415 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Line-1",
+      "description": "Line-2 by using Loops",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "black_color": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "align": "center",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 162, 224)"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "6%"
+        },
+        "switch_styles": {
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "align": "center"
+        },
+        "switch_legend_styles": {
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "height": "4%",
+          "width": "7%"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "table_header_name_styles": {
+          "width": "28%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_header_value_styles": {
+          "width": "8%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "table_fields_size": {
+          "size": "16"
+        },
+        "submit_button_styles": {
+          "width": "15%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "previous_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$render"
+        },
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload",
+          "success": {
+            "type": "$render"
+          }
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form2_page3",
+            "description_of_deficiency": "{{$get.description_of_deficiency}}",
+            "comments_operator_description": "{{$get.comments_operator_description}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved Successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "Safety Screen Shift Report"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Description of Deficiency",
+                      "class": "table_header_styles",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "description_of_deficiency",
+                      "value": "{{$global.description_of_deficiency || ''}}",
+                      "placeholder": "Enter Description of Deficiency",
+                      "contentDescription": "descriptionOfDeficiency",
+                      "style": {
+                        "width": "100%",
+                        "height": "30%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Description",
+                      "class": "table_header_styles",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "comments_operator_description",
+                      "value": "{{$global.comments_operator_description || ''}}",
+                      "placeholder": "Enter description",
+                      "contentDescription": "Enter Description",
+                      "style": {
+                        "width": "100%",
+                        "height": "30%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "2%",
+                    "padding_bottom": "2%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "previous",
+                      "text": "Previous",
+                      "class": "previous_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/2_SafetyScreenShiftReport/screen_2.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "submit",
+                      "text": "submit",
+                      "class": "center_align submit_button_styles",
+                      "contentDescription": "submit",
+                      "action": {
+                        "type": "$global.reset",
+                        "options": {
+                          "save": "true",
+                          "filename": "SafetyScreenShiftReport"
+                        },
+                        "success": {
+                          "type": "$global.reset",
+                          "options": {
+                            "items": [
+                              "section_id",
+                              "safety_screen1_rollers_1",
+                              "safety_screen1_rollers_2",
+                              "safety_screen1_rollers_3",
+                              "safety_screen1_rollers_4",
+                              "safety_screen1_rollers_5",
+                              "safety_screen1_rollers_6",
+                              "safety_screen1_rollers_7",
+                              "safety_screen1_rollers_8",
+                              "safety_screen1_rollers_9",
+                              "spray_bars_screen1",
+                              "cloths_screen1",
+                              "under_pan_screen1",
+                              "clean_under_pan_build_up_screen1",
+                              "trough_north_screen1",
+                              "clean_trough_build_up_1_screen1",
+                              "trough_south_screen1",
+                              "clean_trough_build_up_2_screen1",
+                              "f2_s1_sign",
+                              "f2_s1_day",
+                              "f2_s1_month",
+                              "f2_s1_year",
+                              "f2_s1_shift",
+                              "f2_s1_operator",
+                              "safety_screen2_rollers_1",
+                              "safety_screen2_rollers_2",
+                              "safety_screen2_rollers_3",
+                              "safety_screen2_rollers_4",
+                              "safety_screen2_rollers_5",
+                              "safety_screen2_rollers_6",
+                              "safety_screen2_rollers_7",
+                              "safety_screen2_rollers_8",
+                              "safety_screen2_rollers_9",
+                              "spray_bars_screen2",
+                              "cloths_screen2",
+                              "under_pan_screen2",
+                              "clean_under_pan_build_up_screen2",
+                              "trough_north_screen2",
+                              "clean_trough_build_up_1_screen2",
+                              "trough_south_screen2",
+                              "clean_trough_build_up_2_screen2",
+                              "description_of_deficiency",
+                              "comments_operator_description"
+                            ]
+                          },
+                          "success": {
+                            "type": "$util.toast",
+                            "options": {
+                              "text": "Data Submitted successfully",
+                              "type": "warning"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

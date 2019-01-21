@@ -1,0 +1,905 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Line-1",
+      "json_id": "field",
+      "description": "Leach Area Shift Report Line-1",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "no_border": {
+          "border": "none"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,162,224)"
+        },
+        "header_2_styles": {
+          "size": 13,
+          "width": "24%",
+          "height": "8%",
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)"
+        },
+        "header_2_label": {
+          "size": 13,
+          "width": "19%",
+          "color": "rgb(0,162,224)",
+          "align": "right"
+        },
+        "header_2_labels_styles": {
+          "size": 13,
+          "width": "25%",
+          "height": "8%",
+          "color": "rgb(0,162,224)"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "6%"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": 50,
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "switch_styles": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000"
+        },
+        "switch_legend_styles": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000",
+          "height": "4%",
+          "width": "7%"
+        },
+        "col_name_styles": {
+          "width": "15%"
+        },
+        "col_legend_styles": {
+          "width": "25%"
+        },
+        "col_value_styles": {
+          "width": "6%"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "date_styles": {
+          "width": "8%"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/data/screen_1.json",
+            "preload": {
+              "style": {
+                "background": "#ff0000"
+              },
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "file://infinit.gif",
+                  "style": {
+                    "top": "50%-25",
+                    "left": "50%-25",
+                    "width": "50",
+                    "height": "50"
+                  }
+                }
+              ]
+            }
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$global.set",
+              "options": {
+                "section_id": "form1_page1",
+                "date": "0",
+                "month": "0",
+                "year": "0",
+                "shift": "0",
+                "operator": "0",
+                "sign": "",
+                "agitator_shaft_l1_101": "false",
+                "agitator_shaft_l1_102": "true",
+                "agitator_shaft_l1_103": "true",
+                "agitator_shaft_l1_104": "true",
+                "agitator_shaft_l1_105": "true",
+                "agitator_shaft_l1_111": "true",
+                "agitator_shaft_l1_112": "true",
+                "agitator_shaft_l1_113": "true",
+                "agitator_shaft_l1_114": "true",
+                "agitator_shaft_l1_115": "true",
+                "filter_bypass_indicator_l1_101": "false",
+                "filter_bypass_indicator_l1_102": "true",
+                "filter_bypass_indicator_l1_103": "true",
+                "filter_bypass_indicator_l1_104": "true",
+                "filter_bypass_indicator_l1_105": "true",
+                "filter_bypass_indicator_l1_111": "true",
+                "filter_bypass_indicator_l1_112": "true",
+                "filter_bypass_indicator_l1_113": "true",
+                "filter_bypass_indicator_l1_114": "true",
+                "filter_bypass_indicator_l1_115": "true",
+                "gearbox_oil_sight_glass_l1_101": "false",
+                "gearbox_oil_sight_glass_l1_102": "true",
+                "gearbox_oil_sight_glass_l1_103": "true",
+                "gearbox_oil_sight_glass_l1_104": "true",
+                "gearbox_oil_sight_glass_l1_105": "true",
+                "gearbox_oil_sight_glass_l1_111": "true",
+                "gearbox_oil_sight_glass_l1_112": "true",
+                "gearbox_oil_sight_glass_l1_113": "true",
+                "gearbox_oil_sight_glass_l1_114": "true",
+                "gearbox_oil_sight_glass_l1_115": "true",
+                "gearbox_vibration_l1_101": "false",
+                "gearbox_vibration_l1_102": "true",
+                "gearbox_vibration_l1_103": "true",
+                "gearbox_vibration_l1_104": "true",
+                "gearbox_vibration_l1_105": "true",
+                "gearbox_vibration_l1_111": "true",
+                "gearbox_vibration_l1_112": "true",
+                "gearbox_vibration_l1_113": "true",
+                "gearbox_vibration_l1_114": "true",
+                "gearbox_vibration_l1_115": "true",
+                "cyanide_lines_l1_101": "false",
+                "cyanide_lines_l1_102": "true",
+                "cyanide_lines_l1_103": "true",
+                "cyanide_lines_l1_104": "true",
+                "cyanide_lines_l1_105": "true",
+                "cyanide_lines_l1_111": "true",
+                "cyanide_lines_l1_112": "true",
+                "cyanide_lines_l1_113": "true",
+                "cyanide_lines_l1_114": "true",
+                "cyanide_lines_l1_115": "true"
+              },
+              "success": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "Page loaded successfully",
+                  "type": "warning"
+                }
+              }
+            }
+          }
+        },
+        "$show": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/data/screen_1.json",
+            "preload": {
+              "style": {
+                "background": "#ff0000"
+              },
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "file://infinit.gif",
+                  "style": {
+                    "top": "50%-25",
+                    "left": "50%-25",
+                    "width": "50",
+                    "height": "50"
+                  }
+                }
+              ]
+            }
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload",
+            "success": {
+              "type": "$reload",
+              "success": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "Page loaded successfully",
+                  "type": "warning"
+                }
+              }
+            }
+          }
+        },
+        "handleDropdownAndTextValues": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form1_page1",
+            "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
+          }
+        },
+        "handleSwitchValues": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form1_page1",
+            "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}",
+            "currentFieldValue": "{{$get[$jason.fieldName]}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "{{$global.currentFieldValue}}",
+              "type": "warning"
+            }
+          }
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form1_page1",
+            "sign": "{{$get.sign || ''}}",
+            "date": "{{$get.date}}",
+            "month": "{{$get.month}}",
+            "year": "{{$get.year}}",
+            "shift": "{{$get.shift}}",
+            "operator": "{{$get.operator}}"
+          },
+          "success": {
+            "type": "$util.alert",
+            "options": {
+              "title": "Global changed values",
+              "description": "{{JSON.stringify($global)}}"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{$jason.Page_Heading}}"
+            },
+            "style": {
+              "font": "HelveticaHeader",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)",
+              "border": "none"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "style": {
+                    "size": 13,
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Date.▼",
+                      "style": {
+                        "width": "8%",
+                        "height": "6%",
+                        "color": "rgb(0,162,224)"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "Month.▼",
+                      "style": {
+                        "width": "8%",
+                        "height": "6%",
+                        "color": "rgb(0,162,224)"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "Year.▼",
+                      "style": {
+                        "width": "8%",
+                        "height": "6%",
+                        "color": "rgb(0,162,224)"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "label",
+                  "text": "Shift.▼",
+                  "class": "header_2_labels_styles"
+                },
+                {
+                  "type": "label",
+                  "text": "Operator.▼",
+                  "class": "header_2_labels_styles"
+                },
+                {
+                  "type": "label",
+                  "text": "Signed",
+                  "class": "header_2_labels_styles"
+                }
+              ],
+              "class": "no_padding"
+            },
+            {
+              "type": "horizontal",
+              "style": {
+                "height": "8%"
+              },
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "date",
+                      "value": "{{$global.date}}",
+                      "contentDescription": "date",
+                      "options": [
+                        {
+                          "value": "0",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        }
+                      ],
+                      "style": {
+                        "size": "13",
+                        "color": "rgb(0, 0, 0)",
+                        "width": "100",
+                        "height": "80",
+                        "border": "rgb(0, 0, 0)"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.month}}",
+                      "contentDescription": "month",
+                      "class": "header_2_styles center_align",
+                      "style": {
+                        "size": "13",
+                        "color": "rgb(0, 0, 0)",
+                        "width": "100",
+                        "height": "80",
+                        "border": "rgb(0, 0, 0)"
+                      },
+                      "options": [
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "value": "{{$global.year}}",
+                      "contentDescription": "year",
+                      "style": {
+                        "size": "13",
+                        "color": "rgb(0, 0, 0)",
+                        "width": "100",
+                        "height": "80",
+                        "border": "rgb(0, 0, 0)"
+                      },
+                      "options": [
+                        {
+                          "value": "2019",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2020",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2021",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2022",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2023",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2024",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2025",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "label",
+                  "text": "",
+                  "class": "black_color",
+                  "style": {
+                    "width": "1%"
+                  }
+                },
+                {
+                  "type": "dropdown",
+                  "name": "shift",
+                  "value": "{{$global.shift}}",
+                  "contentDescription": "shift",
+                  "style": {
+                    "size": "13",
+                    "color": "rgb(0, 0, 0)",
+                    "width": "100",
+                    "height": "80",
+                    "border": "rgb(0, 0, 0)"
+                  },
+                  "options": [
+                    {
+                      "value": "Night Shift",
+                      "defaultSelected": "false"
+                    },
+                    {
+                      "value": "Day Shift",
+                      "defaultSelected": "true"
+                    }
+                  ]
+                },
+                {
+                  "type": "label",
+                  "text": "",
+                  "class": "black_color",
+                  "style": {
+                    "width": "1%"
+                  }
+                },
+                {
+                  "type": "dropdown",
+                  "name": "operator",
+                  "value": "{{$global.opertor}}",
+                  "contentDescription": "operator",
+                  "options": [
+                    {
+                      "value": "Operator-1",
+                      "defaultSelected": "true"
+                    },
+                    {
+                      "value": "Operator-2",
+                      "defaultSelected": "false"
+                    }
+                  ],
+                  "style": {
+                    "size": "13",
+                    "color": "rgb(0, 0, 0)",
+                    "width": "100",
+                    "height": "80",
+                    "border": "rgb(0, 0, 0)"
+                  }
+                },
+                {
+                  "type": "label",
+                  "text": "",
+                  "class": "black_color",
+                  "style": {
+                    "width": "1%"
+                  }
+                },
+                {
+                  "type": "textfield",
+                  "value": "{{$global.sign || ''}}",
+                  "name": "sign",
+                  "placeholder": "Sign",
+                  "class": "header_2_styles center_align black_color",
+                  "contentDescription": "Sign"
+                }
+              ],
+              "class": "no_padding"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each $jason.Table_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding center_align",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "components": {
+                            "{{#each $jason.Table_Body}}": {
+                              "type": "horizontal",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "horizontal",
+                                          "components": [
+                                            {
+                                              "type": "horizontal",
+                                              "components": [
+                                                {
+                                                  "type": "vertical",
+                                                  "components": [
+                                                    {
+                                                      "type": "horizontal",
+                                                      "components": {
+                                                        "{{#each this[0].rowValues}}": {
+                                                          "type": [
+                                                            {
+                                                              "{{#if type=='label'}}": "label"
+                                                            },
+                                                            {
+                                                              "{{#else type!='label'}}": "horizontal"
+                                                            }
+                                                          ],
+                                                          "components": [
+                                                            [
+                                                              {
+                                                                "{{#if key=='legend'}}": {
+                                                                  "type": "vertical",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "switch",
+                                                                          "name": "{{id}}",
+                                                                          "value": "true",
+                                                                          "class": "switch_legend_styles"
+                                                                        },
+                                                                        {
+                                                                          "type": "label",
+                                                                          "name": "{{key}}",
+                                                                          "class": "black_color",
+                                                                          "text": "= {{checked}}"
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "switch",
+                                                                          "name": "{{id}}",
+                                                                          "value": "false",
+                                                                          "class": "switch_legend_styles"
+                                                                        },
+                                                                        {
+                                                                          "type": "label",
+                                                                          "name": "{{key}}",
+                                                                          "class": "black_color",
+                                                                          "text": "= {{unchecked}}"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              },
+                                                              {
+                                                                "{{#elseif key!='legend'}}": {
+                                                                  "type": "vertical",
+                                                                  "components": [
+                                                                    {
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "label",
+                                                                          "text": "{{contentDescriptionText || ' '}}",
+                                                                          "name": "{{key}}",
+                                                                          "class": "center_align black_color"
+                                                                        }
+                                                                      ],
+                                                                      "style": {
+                                                                        "height": "4%"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "type": "horizontal",
+                                                                      "components": [
+                                                                        {
+                                                                          "type": "switch",
+                                                                          "value": "{{(var thisFieldName = id; return $global[$jason[thisFieldName]] || value)();}}",
+                                                                          "name": "{{id}}",
+                                                                          "class": "{{styles}} center_align",
+                                                                          "contentDescription": "{{contentDescription || ' '}}",
+                                                                          "action": {
+                                                                            "trigger": "handleSwitchValues",
+                                                                            "options": {
+                                                                              "fieldName": "{{id}}",
+                                                                              "switchValue": "{{$global[$jason[id]] || value}}",
+                                                                              "conditionValue": "{{$global.f1_s1_values}}"
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      ],
+                                                                      "style": {
+                                                                        "height": "6%"
+                                                                      }
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              }
+                                                            ]
+                                                          ],
+                                                          "text": "{{value}}",
+                                                          "name": "{{key}}",
+                                                          "class": "{{styles}} black_color",
+                                                          "style": [
+                                                            {
+                                                              "{{#if type=='label'}}": {
+                                                                "padding": "1%"
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "style": {
+                                                        "height": "10%"
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "class": "{{this[0].styles}} no_padding"
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "2%",
+                    "padding_bottom": "2%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "next",
+                      "text": "Next",
+                      "class": "next_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/forms/screen_2.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

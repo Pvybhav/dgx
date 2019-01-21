@@ -1,0 +1,1187 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Screen-1",
+      "description": "Kemix Screen Inspection",
+      "offline": "true",
+      "icon": "https://s3.amazonaws.com/enu-digital-ips/development/DG_Logo.png",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "no_border": {
+          "border": "none"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "dropdown_date_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "15"
+        },
+        "note_styles": {
+          "background": "rgb(255, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "align": "left",
+          "size": "14"
+        },
+        "table_header_name_styles": {
+          "width": "30%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_header_description_styles": {
+          "width": "35%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_header_value_styles": {
+          "width": "35%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_row": {
+          "height": "6%"
+        },
+        "table_body_name_styles": {
+          "width": "30%"
+        },
+        "table_body_description_styles": {
+          "width": "35%"
+        },
+        "table_body_value_styles": {
+          "width": "35%"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "table_dropdown_fields_styles": {
+          "height": "3%",
+          "width": "8%",
+          "border": "rgb(0, 0, 0)"
+        },
+        "table_dropdown_odd_fields_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_dropdown_even_fields_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": 50,
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "col_name_styles": {
+          "width": "22%"
+        },
+        "col_legend_styles": {
+          "width": "18%"
+        },
+        "col_value_styles": {
+          "width": "6%"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "7%",
+          "padding_top": "1%",
+          "padding_bottom": "1%"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        }
+      },
+      "data": {
+        "Page_Heading": "Kemix Screen Inspection",
+        "Table_Headers": [
+          {
+            "type": "label",
+            "value": "Inspection Point",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "Specific",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "Comments",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
+        ]
+      },
+      "actions": {
+        "$load": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "$pull": {
+          "type": "$reload"
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form6_page1",
+            "f6_s1_sign": "{{$get.sign || ''}}",
+            "f6_s1_date": "{{$get.date}}",
+            "f6_s1_month": "{{$get.month}}",
+            "f6_s1_year": "{{$get.year}}",
+            "f6_s1_shift": "{{$get.shift}}",
+            "f6_s1_operator": "{{$get.operator}}",
+            "bolt_at_the_top": "{{$get.bolt_at_the_top || ''}}",
+            "bolt_at_the_bottom": "{{$get.bolt_at_the_bottom || ''}}",
+            "impeller": "{{$get.impeller || ''}}",
+            "cage": "{{$get.cage || ''}}",
+            "screen_measurement_top_section_1": "{{$get.screen_measurement_top_section_1 || ''}}",
+            "screen_measurement_top_section_2": "{{$get.screen_measurement_top_section_2 || ''}}",
+            "screen_measurement_bottom_section_1": "{{$get.screen_measurement_bottom_section_1 || ''}}",
+            "screen_measurement_bottom_section_2": "{{$get.screen_measurement_bottom_section_2 || ''}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved Successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "icon": "https://s3.amazonaws.com/enu-digital-ips/development/DG_Logo.png",
+            "title": {
+              "type": "label",
+              "text": "Kemix Screen Inspection"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            },
+            "menu": {
+              "type": "image",
+              "url": "https://s3.amazonaws.com/enu-digital-ips/development/DG_Logo.png"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "date",
+                      "value": "{{$global.f6_s1_date}}",
+                      "contentDescription": "date",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Date",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "13",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "14",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "15",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "16",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "17",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "18",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "19",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "20",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "21",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "22",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "23",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "24",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "25",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "26",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "27",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "28",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "29",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "30",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "31",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.f6_s1_month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Month",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.f6_s1_year}}",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Year",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2019",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2020",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2021",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2022",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.f6_s1_shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": [
+                        {
+                          "value": "Shift",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Night Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Day Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Regular Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Rotating Shift",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.f6_s1_operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": [
+                        {
+                          "value": "Operator",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "John",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Smith",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Michael",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Federer",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "David",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.f6_s1_sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "note_styles",
+                      "text": "After the pumpcell has been cleaned (Ref to SOP-6.10.0) and see over, inspect following the list below."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Bolt at the top",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "label",
+                      "text": "16 bolts",
+                      "class": "center_align black_color table_body_description_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "1",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "bolt_at_the_top",
+                              "value": "{{$global.bolt_at_the_top || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "one",
+                              "style": {
+                                "width": "30%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_even_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Bolt at the bottom",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "label",
+                      "text": "3 inspections holes contain 8 bolts",
+                      "class": "center_align black_color table_body_description_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "2",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "bolt_at_the_bottom",
+                              "value": "{{$global.bolt_at_the_bottom || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "two",
+                              "style": {
+                                "width": "30%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Impeller",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Damage",
+                      "class": "center_align black_color table_body_description_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "3",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "impeller",
+                              "value": "{{$global.impeller || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "three",
+                              "style": {
+                                "width": "30%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_even_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Cage",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Damage",
+                      "class": "center_align black_color table_body_description_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "4",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "cage",
+                              "value": "{{$global.cage || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "four",
+                              "style": {
+                                "width": "30%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row_odd_styles",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Screen measurement (mm)",
+                      "class": "center_align black_color table_row table_body_name_styles"
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Top section 1",
+                                  "class": "center_align black_color table_row"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_even_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Top section 2",
+                                  "class": "center_align black_color table_row"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Bottom section 1",
+                                  "class": "center_align black_color table_row"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_even_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Bottom section 2",
+                                  "class": "center_align black_color table_row"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles table_row",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "5",
+                                  "class": "no_padding label_styles black_color center_align"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "screen_measurement_top_section_1",
+                                  "value": "{{$global.screen_measurement_top_section_1 || ''}}",
+                                  "class": "center_align black_color",
+                                  "contentDescription": "five",
+                                  "style": {
+                                    "width": "30%",
+                                    "height": "4%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_even_styles table_row",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "6",
+                                  "class": "no_padding label_styles black_color center_align"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "screen_measurement_top_section_2",
+                                  "value": "{{$global.screen_measurement_top_section_2 || ''}}",
+                                  "class": "center_align black_color",
+                                  "contentDescription": "six",
+                                  "style": {
+                                    "width": "30%",
+                                    "height": "4%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles table_row",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "7",
+                                  "class": "no_padding label_styles black_color center_align"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "screen_measurement_bottom_section_1",
+                                  "value": "{{$global.screen_measurement_bottom_section_1 || ''}}",
+                                  "class": "center_align black_color",
+                                  "contentDescription": "seven",
+                                  "style": {
+                                    "width": "30%",
+                                    "height": "4%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_even_styles table_row",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "8",
+                                  "class": "no_padding label_styles black_color center_align"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "screen_measurement_bottom_section_2",
+                                  "value": "{{$global.screen_measurement_bottom_section_2 || ''}}",
+                                  "class": "center_align black_color",
+                                  "contentDescription": "eight",
+                                  "style": {
+                                    "width": "30%",
+                                    "height": "4%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "1%",
+                    "padding_bottom": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "next",
+                      "text": "Next",
+                      "class": "next_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/6_KemixScreenInspection/screen_2.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

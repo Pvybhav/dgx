@@ -1,0 +1,177 @@
+{
+  "$jason": {
+    "head": {
+      "title": "APP",
+      "description": "A jasonette app",
+      "offline": "true",
+      "styles": {
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,162,224)"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "left_align": {
+          "align": "left"
+        },
+        "eform_button_styles": {
+          "width": "90%",
+          "height": "15%",
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)",
+          "size": 16
+        },
+        "eform_voicetag_styles": {
+          "width": "10%",
+          "height": "15%",
+          "color": "rgb(0, 102, 204)",
+          "background": "rgb(102, 255, 204)",
+          "size": 16
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "$show": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "$pull": {
+          "type": "$reload",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "type": "vertical",
+              "class": "center_align",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Form1",
+                      "class": "center_align eform_voicetag_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/forms/screen_1.json",
+                          "loading": "true",
+                          "preload": {
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://loading.jpeg"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "text": "  Leach Area Shift Checklist",
+                      "class": "left_align eform_button_styles",
+                      "contentDescription": "Form1",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/LeachTankShiftReport/forms/screen_1.json",
+                          "loading": "true",
+                          "preload": {
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://loading.jpeg"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "center_align",
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "Form2",
+                      "class": "center_align eform_voicetag_styles",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/SafetyScreenShiftReport/forms/screen_1.json",
+                          "loading": "true",
+                          "preload": {
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://loading.jpeg"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "text": "  Safety Screen Shift Report",
+                      "class": "left_align eform_button_styles",
+                      "contentDescription": "Form2",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms/SafetyScreenShiftReport/forms/screen_1.json",
+                          "loading": "true",
+                          "preload": {
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://loading.jpeg"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

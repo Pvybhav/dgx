@@ -1,0 +1,1467 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Form-5",
+      "json_id": "field",
+      "description": "Group SOP Sign-off",
+      "offline": "true",
+      "styles": {
+        "dropdown_style": {
+          "size": "10",
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "5%"
+        },
+        "textfield_style": {
+          "size": "8",
+          "border": "rgb(0, 0, 0)",
+          "height": "5%",
+          "width": "10%"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "no_padding": {
+          "padding": "0"
+        },
+        "no_border": {
+          "border": "none"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "table_header_name_styles": {
+          "width": "75%"
+        },
+        "table_header_description_styles": {
+          "width": "25%"
+        },
+        "table_header_value_styles": {
+          "width": "11%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "table_dropdown_fields_stylesname": {
+          "height": "5%",
+          "width": "30%",
+          "size":"10",
+          "align":"center",
+          "border":"#FFFFFF",
+          "border_width":"2",
+          "font": "HelveticaHeader"
+        },
+        "table_dropdown_fields_stylesid": {
+          "height": "5%",
+          "width": "10%",
+          "size":"10",
+          "align":"center",
+          "border":"#FFFFFF",
+          "border_width":"2",
+          "font": "HelveticaHeader"
+        },
+        "table_dropdown_fields_stylesdate": {
+          "height": "5%",
+          "width": "20%",
+          "size":"10",
+          "align":"center",
+          "border":"#FFFFFF",
+          "border_width":"2",
+          "font": "HelveticaHeader"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": 50,
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "height": "7%",
+          "border":"#FFFFFF",
+          "border_width":"2"
+        },
+        "table_header_styles2": {
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "7%"
+        },
+        "table_header1_styles": {
+          "size": 10,
+          "font": "HelveticaHeader",
+          "background": "#9999CC",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "7%"
+        },
+        "table_row_odd_styles": {
+          "background": "#C8C8E6"
+        },
+        "table_row_even_styles": {
+          "background": "#E4E4EF"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "name_width":{
+          "width": "30%"
+        },
+        "date_width":{
+          "width":"20%"
+        },
+        "hash_width":{
+          "width":"10%"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$render"
+        },
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form3_page1",
+            "sign": "{{$get.sign}}",
+            "supervisor":"{{$get.supervisor}}",
+            "shift":"{{$get.shift}}",
+            "date":"{{$get.date || 18}}",
+            "month":"{{$get.month || 11}}",
+            "year":"{{$get.year || 2018}}",
+            "year":"{{$get.custname || 'Dean Smith'}}",
+            "Sop_title":"{{$get.Sop_title || 'SOP Title'}}",
+            "Sop_title":"{{$get.Sop_number || 'SOP Number'}}",
+            "one":"{{$get.one || '1'}}",
+            "one_name":"{{$get.one_name || ''}}",
+            "one_id":"{{$get.one_id || ''}}",
+            "one_date":"{{$get.one_date  || ''}}",
+            "one_sign":"{{$get.one_sign  || ''}}",
+            "two":"{{$get.two || '2'}}",
+            "two_name":"{{$get.two_name  || ''}}",
+            "two_id":"{{$get.two_id  || ''}}",
+            "two_date":"{{$get.two_date  || ''}}",
+            "two_sign":"{{$get.two_sign  || ''}}",
+            "three":"{{$get.three || '3'}}",
+            "three_name":"{{$get.three_name  || ''}}",
+            "three_id":"{{$get.three_id  || ''}}",
+            "three_date":"{{$get.three_date  || ''}}",
+            "three_sign":"{{$get.three_sign  || ''}}",
+            "four":"{{$get.four || '4'}}",
+            "four_name":"{{$get.four_name  || ''}}",
+            "four_id":"{{$get.four_id  || ''}}",
+            "four_date":"{{$get.four_date  || ''}}",
+            "four_sign":"{{$get.four_sign  || ''}}",
+            "five":"{{$get.five || '5'}}",
+            "five_name":"{{$get.five_name  || ''}}",
+            "five_id":"{{$get.five_id  || ''}}",
+            "five_date":"{{$get.five_date  || ''}}",
+            "five_sign":"{{$get.five_sign  || ''}}",
+            "six":"{{$get.six || '6'}}",
+            "six_name":"{{$get.six_name  || ''}}",
+            "six_id":"{{$get.six_id  || ''}}",
+            "six_date":"{{$get.six_date  || ''}}",
+            "six_sign":"{{$get.six_sign  || ''}}",
+            "seven":"{{$get.seven || '7'}}",
+            "seven_name":"{{$get.seven_name  || ''}}",
+            "seven_id":"{{$get.seven_id  || ''}}",
+            "seven_date":"{{$get.seven_date  || ''}}",
+            "seven_sign":"{{$get.seven_sign  || ''}}",
+            "eight":"{{$get.eight || '8'}}",
+            "eight_name":"{{$get.eight_name  || ''}}",
+            "eight_id":"{{$get.eight_id  || ''}}",
+            "eight_date":"{{$get.eight_date  || ''}}",
+            "eight_sign":"{{$get.eight_sign  || ''}}",
+            "nine":"{{$get.nine || '9'}}",
+            "nine_name":"{{$get.nine_name  || ''}}",
+            "nine_id":"{{$get.nine_id  || ''}}",
+            "nine_date":"{{$get.nine_date  || ''}}",
+            "nine_sign":"{{$get.nine_sign  || ''}}",
+            "ten":"{{$get.ten || '10'}}",
+            "ten_name":"{{$get.ten_name  || ''}}",
+            "ten_id":"{{$get.ten_id  || ''}}",
+            "ten_date":"{{$get.ten_date  || ''}}",
+            "ten_sign":"{{$get.ten_sign  || ''}}"
+          },
+          "success": {
+            "type": "$util.alert",
+            "options": {
+              "type": "Basic Alert",
+              "description": "{{$get.sign}}"
+            }
+          }
+        }
+      },
+      "data": {
+        "Page_Heading": "Group SOP Sign-off",
+        "sop_Title": "SOP title",
+        "sop_Number": "SOP Number",
+        "Table1_Headers": [
+          {
+            "type": "textfield",
+            "name": "Sop_title",
+            "value": "{{$global.Sop_title || 'SOP Title'}}",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "textfield",
+            "name": "Sop_title",
+            "value": "{{$global.Sop_number || 'SOP Number'}}",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_description_styles"
+          }
+        ],
+        "Table2_Headers": [
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_name",
+            "styles": "table_header1_styles center_align table_header_name_styles table_row_odd_styles"
+          },
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_value",
+            "styles": "table_header1_styles center_align table_header_description_styles table_row_odd_styles"
+          }
+        ],
+        "Table3_Headers": [
+          {
+            "type": "label",
+            "value": "#",
+            "col_type": "col_name",
+            "styles": "table_header_styles2 center_align hash_width"
+          },
+          {
+            "type": "label",
+            "value": "Name",
+            "col_type": "col_value",
+            "styles": "table_header_styles2 center_align name_width"
+          },
+          {
+            "type": "label",
+            "value": "ID#",
+            "col_type": "col_name",
+            "styles": "table_header_styles2 center_align hash_width"
+          },
+          {
+            "type": "label",
+            "value": "Date",
+            "col_type": "col_value",
+            "styles": "table_header_styles2 center_align date_width"
+          },
+          {
+            "type": "label",
+            "value": "Name as signature",
+            "col_type": "col_name",
+            "styles": "table_header_styles2 center_align name_width"
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}}",
+              "style": {
+                "align": "left",
+                "height":"3%"
+              }
+            },
+            "style": {
+              "font": "HelveticaHeader",
+              "size": 20,
+              "background": "rgb(154,205,50)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": ""
+                    }
+                  ],
+                  "style": {
+                    "padding_top": "0",
+                    "height": "0%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "supervisor",
+                      "value": "{{$global.supervisor}}",
+                      "contentDescription": "Field one",
+                      "options": [
+                        {
+                          "label": "Dropdown Option 1",
+                          "value": "Supervisor",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "label": "Dropdown Option 2",
+                          "value": "Value 2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "label": "Dropdown Option 3",
+                          "value": "Value 3",
+                          "defaultSelected": "false"
+                        }
+                      ],
+                      "class": "dropdown_style"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "1%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "1%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "contentDescription": "Field two",
+                      "value": "{{$global.shift}}",
+                      "options": [
+                        {
+                          "label": "Dropdown Option 1",
+                          "value": "* shift",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "label": "Dropdown Option 2",
+                          "value": "Value 2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "label": "Dropdown Option 3",
+                          "value": "Value 3",
+                          "defaultSelected": "false"
+                        }
+                      ],
+                      "class": "dropdown_style"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "1%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "1%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "month",
+                      "value": "{{$global.month || 11}}",
+                      "class": "textfield_style center_align black_color"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "1%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "date",
+                      "value": "{{$global.date || 18}}",
+                      "class": "textfield_style center_align black_color"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "1%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "year",
+                      "value": "{{$global.year || 2018}}",
+                      "class": "textfield_style center_align black_color"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "1%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "custname",
+                      "value": "{{$global.custname || 'Dean Smith'}}",
+                      "class": "center_align black_color",
+                      "style": {
+                        "width": "19%",
+                        "height": "5%",
+                        "size": "8",
+                        "align": "center",
+                        "font": "HelveticaNeue",
+                        "border":"#000000"
+                      }
+
+                    }
+                  ]
+                }
+              ],
+              "class": "no_padding"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table1_Headers}}": {
+                          "type": "{{type}}",
+                          "value": "{{value}}",
+                          "class": "{{styles}}",
+                          "style":{
+                            "background":"rgb(14, 53, 112)"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table2_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      },
+                      "style": {
+                        "padding_top": "0%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [{
+                        "type": "label",
+                        "text": "SUPERVISOR/DELEGATE WHO REVIEWED THE PROCEDURE WITH BELOW INDIVIDUALS:",
+                        "style": {
+                          "width":"100%",
+                          "color": "#FFFFFF",
+                          "background": "rgb(14, 53, 112)",
+                          "border": "#FFFFFF",
+                          "border_width": "2",
+                          "height":"7%",
+                          "padding-left":"2%",
+                          "align":"center"
+                        }
+                      }],
+                      "style": {
+                        "padding_top": "0%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table3_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      },
+                      "style": {
+                        "padding_top": "0%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "one",
+                              "value": "{{$global.one || 1}}",
+                              "class": "table_dropdown_fields_stylesid table_row_odd_styles"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "one_name",
+                          "value": "{{$global.one_name  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "one_id",
+                          "value": "{{$global.one_id  || ''}}",
+                          "class": "table_dropdown_fields_stylesid table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "one_date",
+                          "value": "{{$global.one_date  || ''}}",
+                          "class": "table_dropdown_fields_stylesdate table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "one_sign",
+                          "value": "{{$global.one_sign  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_odd_styles"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "two",
+                              "value": "{{$global.two || 2}}",
+                              "class": "table_dropdown_fields_stylesid table_row_even_styles"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "two_name",
+                          "value": "{{$global.two_name  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "two_id",
+                          "value": "{{$global.two_id  || ''}}",
+                          "class": "table_dropdown_fields_stylesid table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "two_date",
+                          "value": "{{$global.two_date  || ''}}",
+                          "class": "table_dropdown_fields_stylesdate table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "two_sign",
+                          "value": "{{$global.two_sign  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_even_styles"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "three",
+                              "value": "{{$global.three || 3}}",
+                              "class": "table_dropdown_fields_stylesid table_row_odd_styles"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "three_name",
+                          "value": "{{$global.three_name  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "three_id",
+                          "value": "{{$global.three_id  || ''}}",
+                          "class": "table_dropdown_fields_stylesid table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "three_date",
+                          "value": "{{$global.three_date  || ''}}",
+                          "class": "table_dropdown_fields_stylesdate table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "three_sign",
+                          "value": "{{$global.three_sign  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_odd_styles"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "four",
+                              "value": "{{$global.four || 4}}",
+                              "class": "table_dropdown_fields_stylesid table_row_even_styles"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "four_name",
+                          "value": "{{$global.four_name  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "four_id",
+                          "value": "{{$global.four_id  || ''}}",
+                          "class": "table_dropdown_fields_stylesid table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "four_date",
+                          "value": "{{$global.four_date  || ''}}",
+                          "class": "table_dropdown_fields_stylesdate table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "four_sign",
+                          "value": "{{$global.four_sign  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_even_styles"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "five",
+                              "value": "{{$global.five || 5}}",
+                              "class": "table_dropdown_fields_stylesid table_row_odd_styles"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "five_name",
+                          "value": "{{$global.five_name  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "five_id",
+                          "value": "{{$global.five_id  || ''}}",
+                          "class": "table_dropdown_fields_stylesid table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "five_date",
+                          "value": "{{$global.five_date  || ''}}",
+                          "class": "table_dropdown_fields_stylesdate table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "five_sign",
+                          "value": "{{$global.five_sign  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_odd_styles"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "six",
+                              "value": "{{$global.six || 6}}",
+                              "class": "table_dropdown_fields_stylesid table_row_even_styles"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "six_name",
+                          "value": "{{$global.six_name  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "six_id",
+                          "value": "{{$global.six_id  || ''}}",
+                          "class": "table_dropdown_fields_stylesid table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "six_date",
+                          "value": "{{$global.six_date  || ''}}",
+                          "class": "table_dropdown_fields_stylesdate table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "six_sign",
+                          "value": "{{$global.six_sign  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_even_styles"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding ",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "seven",
+                              "value": "{{$global.seven || 7}}",
+                              "class": "table_dropdown_fields_stylesid table_row_odd_styles"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "seven_name",
+                          "value": "{{$global.seven_name  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "seven_id",
+                          "value": "{{$global.seven_id  || ''}}",
+                          "class": "table_dropdown_fields_stylesid table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "seven_date",
+                          "value": "{{$global.seven_date  || ''}}",
+                          "class": "table_dropdown_fields_stylesdate table_row_odd_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "seven_sign",
+                          "value": "{{$global.seven_sign  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_odd_styles"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "eight",
+                              "value": "{{$global.eight || 8}}",
+                              "class": "table_dropdown_fields_stylesid table_row_even_styles"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eight_name",
+                          "value": "{{$global.eight_name  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eight_id",
+                          "value": "{{$global.eight_id  || ''}}",
+                          "class": "table_dropdown_fields_stylesid table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eight_date",
+                          "value": "{{$global.eight_date  || ''}}",
+                          "class": "table_dropdown_fields_stylesdate table_row_even_styles"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "eight_sign",
+                          "value": "{{$global.eight_sign  || ''}}",
+                          "class": "table_dropdown_fields_stylesname table_row_even_styles"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "nine",
+                              "value": "{{$global.nine || 9}}",
+                              "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "nine_name",
+                          "value": "{{$global.nine_name  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "nine_id",
+                          "value": "{{$global.nine_id  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "nine_date",
+                          "value": "{{$global.nine_date  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "nine_sign",
+                          "value": "{{$global.nine_sign  || ''}}",
+                          "class": "table_row_odd_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding ",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "ten",
+                              "value": "{{$global.ten || 10}}",
+                              "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "ten_name",
+                          "value": "{{$global.ten_name  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "ten_id",
+                          "value": "{{$global.ten_id  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "ten_date",
+                          "value": "{{$global.ten_date  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesdate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "ten_sign",
+                          "value": "{{$global.ten_sign  || ''}}",
+                          "class": "table_row_even_styles table_dropdown_fields_stylesname"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "1%",
+                    "padding_bottom": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "next",
+                      "text": "Next",
+                      "class": "next_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/5_GroupSOPSignoff/screen_2.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

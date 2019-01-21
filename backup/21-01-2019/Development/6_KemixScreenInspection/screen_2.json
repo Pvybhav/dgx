@@ -1,0 +1,977 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Screen-1",
+      "description": "Kemix Screen Inspection",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "no_border": {
+          "border": "none"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "note_styles": {
+          "background": "rgb(255, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "align": "left",
+          "size": "15"
+        },
+        "table_header_name_styles": {
+          "width": "35%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_header_description_styles": {
+          "width": "25%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_header_value_styles": {
+          "width": "40%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_row": {
+          "height": "6%"
+        },
+        "table_body_name_styles": {
+          "width": "35%"
+        },
+        "table_body_description_styles": {
+          "width": "25%"
+        },
+        "table_body_value_styles": {
+          "width": "40%"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold",
+          "width": "3%"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "6%",
+          "padding_top": "1%",
+          "padding_bottom": "1%"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "table_fields_size": {
+          "size": "16"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "previous_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "submit_button_styles": {
+          "width": "15%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "switch_styles": {
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "align": "center"
+        }
+      },
+      "data": {
+        "Page_Heading": "Kemix Screen Inspection",
+        "Table1_Headers": [
+          {
+            "type": "label",
+            "value": "Inspection Point",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "Specific",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "Comments",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
+        ],
+        "Table2_Headers": [
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "Yes / No",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "Record",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
+        ]
+      },
+      "actions": {
+        "$load": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form6_page2",
+            "f6_s2_comments": "{{$global.f6_s2_comments || ''}}",
+            "wn": "{{$global.wn || ''}}",
+            "tank": "{{$global.tank || ''}}",
+            "is_a_work_notification_required": "{{$global.is_a_work_notification_required == null ? true : $global.is_a_work_notification_required}}",
+            "will_the_pumpcell_be_reinstalled": "{{$global.will_the_pumpcell_be_reinstalled == null ? true : $global.will_the_pumpcell_be_reinstalled}}"
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "$pull": {
+          "type": "$reload"
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form6_page2",
+            "screen_damage": "{{$get.screen_damage || ''}}",
+            "screen_wire_wave": "{{$get.screen_wire_wave || ''}}",
+            "screen_no_carbon": "{{$get.screen_no_carbon || ''}}",
+            "lips_damage": "{{$get.lips_damage || ''}}",
+            "wn": "{{$get.wn || ''}}",
+            "tank": "{{$get.tank || ''}}",
+            "f6_s2_comments": "{{$get.comments || ''}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved Successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}}"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaNeue-Bold",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table1_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row_odd_styles",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Screen",
+                      "class": "center_align black_color table_row table_body_name_styles table_fields_size"
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Damage",
+                                  "class": "center_align black_color table_row table_fields_size"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_even_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Wire wave",
+                                  "class": "center_align black_color table_row table_fields_size"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "No carbon",
+                                  "class": "center_align black_color table_row table_fields_size"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "1",
+                                  "class": "no_padding label_styles black_color center_align table_row"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "screen_damage",
+                                  "value": "{{$global.screen_damage || ''}}",
+                                  "class": "center_align black_color table_row",
+                                  "contentDescription": "one",
+                                  "style": {
+                                    "height": "4%",
+                                    "width": "35%"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_even_styles table_row table_body_value_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "2",
+                                  "class": "no_padding label_styles black_color center_align"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "screen_wire_wave",
+                                  "value": "{{$global.screen_wire_wave || ''}}",
+                                  "class": "center_align black_color table_row",
+                                  "contentDescription": "two",
+                                  "style": {
+                                    "height": "4%",
+                                    "width": "35%"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "3",
+                                  "class": "no_padding label_styles black_color center_align table_row"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "screen_no_carbon",
+                                  "value": "{{$global.screen_no_carbon || ''}}",
+                                  "class": "center_align black_color table_row",
+                                  "contentDescription": "three",
+                                  "style": {
+                                    "height": "4%",
+                                    "width": "35%"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Lips",
+                      "class": "center_align black_color table_body_name_styles table_fields_size"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Damage",
+                      "class": "center_align black_color table_body_description_styles table_fields_size"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "4",
+                              "class": "no_padding label_styles black_color center_align",
+                              "style": {
+                                "height": "6%"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "lips_damage",
+                              "value": "{{$global.lips_damage || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "four",
+                              "style": {
+                                "width": "35%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "note_styles",
+                      "text": "P.S. If measurements are between 1.1 mm & 1.2 mm, a WN is require to rebuilt the screen next time the pumpcell is available (usually 17 days)"
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "note_styles",
+                      "text": "P.S. If at least 2 measurements are 1.2 mm or greater, the screen need to be change immediately"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table2_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding center_align table_row_odd_styles",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "table_row table_row_odd_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Is a work notification required?",
+                          "class": "center_align black_color table_body_name_styles table_row_odd_styles table_row table_fields_size"
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row table_header_description_styles",
+                          "components": [
+                            {
+                              "type": "space",
+                              "class": "table_row_odd_styles",
+                              "style": {
+                                "width": "9%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "5",
+                              "class": "label_styles black_color center_align table_row_odd_styles table_row"
+                            },
+                            {
+                              "type": "switch",
+                              "name": "is_a_work_notification_required",
+                              "value": "{{$global.is_a_work_notification_required}}",
+                              "class": "switch_styles table_row_odd_styles table_row",
+                              "contentDescription": "five",
+                              "action": {
+                                "type": "$global.set",
+                                "options": {
+                                  "section_id": "form6_page2",
+                                  "is_a_work_notification_required": "{{$get.is_a_work_notification_required}}"
+                                }
+                              }
+                            },
+                            {
+                              "type": "space",
+                              "class": "table_row_odd_styles",
+                              "style": {
+                                "width": "9%"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_body_value_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "7%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "WN#",
+                                  "class": "center_align black_color table_fields_size",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "6",
+                                  "class": "label_styles black_color center_align",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "wn",
+                                  "value": "{{$global.wn}}",
+                                  "class": "center_align black_color",
+                                  "contentDescription": "six",
+                                  "style": {
+                                    "width": "28%",
+                                    "height": "4%"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "vertical",
+                  "class": "no_padding center_align table_row_even_styles",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "table_row",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Will the pumpcell be re-installed?",
+                          "class": "center_align black_color table_body_name_styles table_row_even_styles table_row table_fields_size"
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row table_header_description_styles table_row_even_styles",
+                          "components": [
+                            {
+                              "type": "space",
+                              "class": "table_row_even_styles",
+                              "style": {
+                                "width": "9%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "7",
+                              "class": "label_styles black_color center_align table_row_even_styles table_row"
+                            },
+                            {
+                              "type": "switch",
+                              "name": "will_the_pumpcell_be_reinstalled",
+                              "value": "{{$global.will_the_pumpcell_be_reinstalled}}",
+                              "class": "switch_styles table_row_even_styles table_row",
+                              "contentDescription": "seven",
+                              "action": {
+                                "type": "$global.set",
+                                "options": {
+                                  "section_id": "form6_page2",
+                                  "will_the_pumpcell_be_reinstalled": "{{$get.will_the_pumpcell_be_reinstalled}}"
+                                }
+                              }
+                            },
+                            {
+                              "type": "space",
+                              "class": "table_row_even_styles",
+                              "style": {
+                                "width": "9%"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_body_value_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "7%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Tank #",
+                                  "class": "center_align black_color table_fields_size",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "8",
+                                  "class": "label_styles black_color center_align",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "tank",
+                                  "value": "{{$global.tank}}",
+                                  "class": "center_align black_color",
+                                  "contentDescription": "eight",
+                                  "style": {
+                                    "width": "28%",
+                                    "height": "4%"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Comments",
+                      "class": "table_header_styles",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "comments",
+                      "value": "{{$global.f6_s2_comments}}",
+                      "placeholder": "Enter Comments",
+                      "contentDescription": "comments",
+                      "style": {
+                        "width": "100%",
+                        "height": "6%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "1%",
+                    "padding_bottom": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Reference Image.",
+                      "style": {
+                        "size": "15"
+                      }
+                    },
+                    {
+                      "type": "image",
+                      "url": "https://s3.amazonaws.com/enu-digital-ips/development/6_KemixScreenInspection/KemixScreen_ref_img.jpg",
+                      "contentDescription": "reference image",
+                      "style": {
+                        "width": "100",
+                        "height": "7%"
+                      },
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/6_KemixScreenInspection/kemix_screen_ref_image.json",
+                          "transition": "modal"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "previous",
+                      "text": "Previous",
+                      "class": "previous_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/6_KemixScreenInspection/screen_1.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "submit",
+                      "text": "submit",
+                      "class": "center_align submit_button_styles",
+                      "contentDescription": "submit",
+                      "action": {
+                        "type": "$global.reset",
+                        "options": {
+                          "save": "true",
+                          "filename": "KemixScreenInspection"
+                        },
+                        "success": {
+                          "type": "$global.reset",
+                          "options": {
+                            "items": [
+                              "section_id",
+                              "f6_s2_comments",
+                              "wn",
+                              "tank",
+                              "is_a_work_notification_required",
+                              "will_the_pumpcell_be_reinstalled",
+                              "f6_s1_sign",
+                              "f6_s1_day",
+                              "f6_s1_month",
+                              "f6_s1_year",
+                              "f6_s1_shift",
+                              "f6_s1_operator",
+                              "bolt_at_the_top",
+                              "bolt_at_the_bottom",
+                              "impeller",
+                              "cage",
+                              "screen_measurement_top_section_1",
+                              "screen_measurement_top_section_2",
+                              "screen_measurement_bottom_section_1",
+                              "screen_measurement_bottom_section_2",
+                              "screen_damage",
+                              "screen_wire_wave",
+                              "screen_no_carbon",
+                              "lips_damage"
+                            ]
+                          },
+                          "success": {
+                            "type": "$util.toast",
+                            "options": {
+                              "text": "Data Submitted successfully",
+                              "type": "warning"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "3%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

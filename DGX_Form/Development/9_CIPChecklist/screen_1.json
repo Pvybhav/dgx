@@ -1,0 +1,1917 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Screen-1",
+      "description": "CIP Checklist",
+      "offline": "true",
+      "icon": "https://s3.amazonaws.com/enu-digital-ips/development/DG_Logo.png",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "no_border": {
+          "border": "none"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "dropdown_day_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "15"
+        },
+        "note_styles": {
+          "background": "rgb(255, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "align": "left",
+          "size": "14"
+        },
+        "table_header_name_styles": {
+          "width": "28%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_header_description_styles": {
+          "width": "35%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_header_value_styles": {
+          "width": "18%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_row": {
+          "height": "6%"
+        },
+        "table_body_name_styles": {
+          "width": "28%"
+        },
+        "table_body_description_styles": {
+          "width": "35%"
+        },
+        "table_body_value_styles": {
+          "width": "18%"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "table_dropdown_fields_styles": {
+          "height": "3%",
+          "width": "8%",
+          "border": "rgb(0, 0, 0)"
+        },
+        "table_dropdown_odd_fields_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_dropdown_even_fields_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": 50,
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "col_name_styles": {
+          "width": "22%"
+        },
+        "col_legend_styles": {
+          "width": "18%"
+        },
+        "col_value_styles": {
+          "width": "6%"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "7%",
+          "padding_top": "1%",
+          "padding_bottom": "1%"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "table_fields_size": {
+          "size": "16"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        }
+      },
+      "data": {
+        "Page_Heading": "CIP Report",
+        "Table_Headers": [
+          {
+            "type": "label",
+            "value": "Screens",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "Holed",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "Blinded",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "Clean",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "Good",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
+        ]
+      },
+      "actions": {
+        "$load": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "$pull": {
+          "type": "$reload"
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form9_page1",
+            "f9_s1_sign": "{{ $get.sign || '' }}",
+            "f9_s1_day": "{{ $get.day }}",
+            "f9_s1_month": "{{ $get.month }}",
+            "f9_s1_year": "{{ $get.year }}",
+            "f9_s1_shift": "{{ $get.shift }}",
+            "f9_s1_operator": "{{ $get.operator }}",
+            "safety_screen_holed_0640_M221_001": "{{ $get.safety_screen_holed_0640_M221_001 || '' }}",
+            "safety_screen_blinded_0640_M221_001": "{{ $get.safety_screen_blinded_0640_M221_001 || '' }}",
+            "safety_screen_clean_0640_M221_001": "{{ $get.safety_screen_clean_0640_M221_001 || '' }}",
+            "safety_screen_good_0640_M221_001": "{{ $get.safety_screen_good_0640_M221_001 || '' }}",
+            "safety_screen_holed_0640_M221_002": "{{ $get.safety_screen_holed_0640_M221_002 || '' }}",
+            "safety_screen_blinded_0640_M221_002": "{{ $get.safety_screen_blinded_0640_M221_002 || '' }}",
+            "safety_screen_clean_0640_M221_002": "{{ $get.safety_screen_clean_0640_M221_002 || '' }}",
+            "safety_screen_good_0640_M221_002": "{{ $get.safety_screen_good_0640_M221_002 || '' }}",
+            "derrrick_screen_holed_0640_M221_101": "{{ $get.derrrick_screen_holed_0640_M221_101 || '' }}",
+            "derrrick_screen_blinded_0640_M221_101": "{{ $get.derrrick_screen_blinded_0640_M221_101 || '' }}",
+            "derrrick_screen_clean_0640_M221_101": "{{ $get.derrrick_screen_clean_0640_M221_101 || '' }}",
+            "derrrick_screen_good_0640_M221_101": "{{ $get.derrrick_screen_good_0640_M221_101 || '' }}",
+            "derrick_screen_holed_0640_M221_102": "{{ $get.derrick_screen_holed_0640_M221_102 || '' }}",
+            "derrick_screen_blinded_0640_M221_102": "{{ $get.derrick_screen_blinded_0640_M221_102 || '' }}",
+            "derrick_screen_clean_0640_M221_102": "{{ $get.derrick_screen_clean_0640_M221_102 || '' }}",
+            "derrick_screen_good_0640_M221_102": "{{ $get.derrick_screen_good_0640_M221_102 || '' }}",
+            "derrick_screen_holed_0640_M221_201": "{{ $get.derrick_screen_holed_0640_M221_201 || '' }}",
+            "derrick_screen_blinded_0640_M221_201": "{{ $get.derrick_screen_blinded_0640_M221_201 || '' }}",
+            "derrick_screen_clean_0640_M221_201": "{{ $get.derrick_screen_clean_0640_M221_201 || '' }}",
+            "derrick_screen_good_0640_M221_201": "{{ $get.derrick_screen_good_0640_M221_201 || '' }}",
+            "derrick_screen_holed_0640_M221_202": "{{ $get.derrick_screen_holed_0640_M221_202 || '' }}",
+            "derrick_screen_blinded_0640_M221_202": "{{ $get.derrick_screen_blinded_0640_M221_202 || '' }}",
+            "derrick_screen_clean_0640_M221_202": "{{ $get.derrick_screen_clean_0640_M221_202 || '' }}",
+            "derrick_screen_good_0640_M221_202": "{{ $get.derrick_screen_good_0640_M221_202 || '' }}",
+            "secondary_safety_screen_holed_0640_M221_011": "{{ $get.secondary_safety_screen_holed_0640_M221_011 || '' }}",
+            "secondary_safety_screen_blinded_0640_M221_011": "{{ $get.secondary_safety_screen_blinded_0640_M221_011 || '' }}",
+            "secondary_safety_screen_clean_0640_M221_011": "{{ $get.secondary_safety_screen_clean_0640_M221_011 || '' }}",
+            "secondary_safety_screen_good_0640_M221_011": "{{ $get.secondary_safety_screen_good_0640_M221_011 || ' '}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved Successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}}"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "background": "rgb(146, 208, 80)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "day",
+                      "value": "{{$global.f9_s1_day}}",
+                      "contentDescription": "day",
+                      "class": "dropdown_day_style center_align",
+                      "options": [
+                        {
+                          "value": "Day",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "13",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "14",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "15",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "16",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "17",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "18",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "19",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "20",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "21",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "22",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "23",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "24",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "25",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "26",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "27",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "28",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "29",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "30",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "31",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.f9_s1_month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_day_style center_align",
+                      "options": [
+                        {
+                          "value": "Month",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.f9_s1_year}}",
+                      "class": "dropdown_day_style center_align",
+                      "options": [
+                        {
+                          "value": "Year",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2019",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2020",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2021",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2022",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.f9_s1_shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": [
+                        {
+                          "value": "Shift",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Night Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Day Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Regular Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Rotating Shift",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.f9_s1_operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": [
+                        {
+                          "value": "Operator",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "John",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Smith",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Michael",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Federer",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "David",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.f9_s1_sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "0640-M221-001 Safety Screen",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "1",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "safety_screen_holed_0640_M221_001",
+                              "value": "{{$global.safety_screen_holed_0640_M221_001 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "one",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "2",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "safety_screen_blinded_0640_M221_001",
+                              "value": "{{$global.safety_screen_blinded_0640_M221_001 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "two",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "3",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "safety_screen_clean_0640_M221_001",
+                              "value": "{{$global.safety_screen_clean_0640_M221_001 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "three",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "4",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "safety_screen_good_0640_M221_001",
+                              "value": "{{$global.safety_screen_good_0640_M221_001 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "four",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_even_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "0640-M221-001 Safety Screen",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "5",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "safety_screen_holed_0640_M221_002",
+                              "value": "{{$global.safety_screen_holed_0640_M221_002 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "five",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "6",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "safety_screen_blinded_0640_M221_002",
+                              "value": "{{$global.safety_screen_blinded_0640_M221_002 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "six",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "7",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "safety_screen_clean_0640_M221_002",
+                              "value": "{{$global.safety_screen_clean_0640_M221_002 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "seven",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "8",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "safety_screen_good_0640_M221_002",
+                              "value": "{{$global.safety_screen_good_0640_M221_002 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "eight",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "0640-M221-001 Safety Screen",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "9",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrrick_screen_holed_0640_M221_101",
+                              "value": "{{$global.derrrick_screen_holed_0640_M221_101 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "nine",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "10",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrrick_screen_blinded_0640_M221_101",
+                              "value": "{{$global.derrrick_screen_blinded_0640_M221_101 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "ten",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "11",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrrick_screen_clean_0640_M221_101",
+                              "value": "{{$global.derrrick_screen_clean_0640_M221_101 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "eleven",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "12",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrrick_screen_good_0640_M221_101",
+                              "value": "{{$global.derrrick_screen_good_0640_M221_101 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twelve",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_even_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "0640-M221-001 Safety Screen",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "13",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_holed_0640_M221_102",
+                              "value": "{{$global.derrick_screen_holed_0640_M221_102 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "thirteen",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "14",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_blinded_0640_M221_102",
+                              "value": "{{$global.derrick_screen_blinded_0640_M221_102 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "fourteen",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "15",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_clean_0640_M221_102",
+                              "value": "{{$global.derrick_screen_clean_0640_M221_102 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "fifteen",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "16",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_good_0640_M221_102",
+                              "value": "{{$global.derrick_screen_good_0640_M221_102 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "sixteen",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "0640-M221-001 Safety Screen",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "17",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_holed_0640_M221_201",
+                              "value": "{{$global.derrick_screen_holed_0640_M221_201 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "seventeen",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "18",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_blinded_0640_M221_201",
+                              "value": "{{$global.derrick_screen_blinded_0640_M221_201 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "eighteen",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "19",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_clean_0640_M221_201",
+                              "value": "{{$global.derrick_screen_clean_0640_M221_201 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "nineteen",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "20",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_good_0640_M221_201",
+                              "value": "{{$global.derrick_screen_good_0640_M221_201 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twenty",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_even_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "0640-M221-001 Safety Screen",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "21",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_holed_0640_M221_202",
+                              "value": "{{$global.derrick_screen_holed_0640_M221_202 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twenty-one",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "22",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_blinded_0640_M221_202",
+                              "value": "{{$global.derrick_screen_blinded_0640_M221_202 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twenty-two",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "23",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_clean_0640_M221_202",
+                              "value": "{{$global.derrick_screen_clean_0640_M221_202 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twenty-three",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "24",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "derrick_screen_good_0640_M221_202",
+                              "value": "{{$global.derrick_screen_good_0640_M221_202 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twenty-four",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "0640-M221-001 Safety Screen",
+                      "class": "center_align black_color table_body_name_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "25",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "secondary_safety_screen_holed_0640_M221_011",
+                              "value": "{{$global.secondary_safety_screen_holed_0640_M221_011 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twenty-five",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "26",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "secondary_safety_screen_blinded_0640_M221_011",
+                              "value": "{{$global.secondary_safety_screen_blinded_0640_M221_011 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twenty-six",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "27",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "secondary_safety_screen_clean_0640_M221_011",
+                              "value": "{{$global.secondary_safety_screen_clean_0640_M221_011 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twenty-seven",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "28",
+                              "class": "no_padding label_styles black_color center_align"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "15%"
+                          },
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "secondary_safety_screen_good_0640_M221_011",
+                              "value": "{{$global.secondary_safety_screen_good_0640_M221_011 || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "twenty-eight",
+                              "style": {
+                                "width": "15%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "1%",
+                    "padding_bottom": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "next",
+                      "text": "Next",
+                      "class": "next_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_2.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
