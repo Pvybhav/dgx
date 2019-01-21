@@ -347,20 +347,22 @@
 
                                         },
                                         {
-                                            "type": "textarea",
-                                            "name": "so2_screen3_liquid_so2_level",
-                                            "value": "{{$global.so2_screen3_storage_tank_2_level || ''}}",
-                                            "class": "content_style_even",
-                                            "contentDescription": "one",
-                                            "style": {
-                                                "padding": "4",
-                                                "width": "15%"
-
-                                                
-
-                                            }
-
-                                        },
+                                            "type":"horizontal",
+                                            "style":{
+                                                "width":"15%"
+                                            },
+                                            "components":[
+                                                {
+                                                    "type": "textarea",
+                                                    "name": "so2_screen3_liquid_so2_level",
+                                                    "value": "{{$global.so2_screen3_storage_tank_2_level || ''}}",
+                                                    "class": "content_style_even",
+                                                    "contentDescription": "one"
+        
+                                                }
+                                            ]
+                                        }
+                                        ,
                                         {
                                             "type": "label",
                                             "text": "2",
