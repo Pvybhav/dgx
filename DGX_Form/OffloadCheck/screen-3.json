@@ -937,15 +937,21 @@
                                                     }
                                                 },
                                                 {
-                                                    "type": "textfield",
-                                                    "name": "so2_screen3_truck_driver_sign",
-                                                    "value": "{{$global.so2_screen3_truck_driver_sign || ''}}",
-                                                    "class": "content_style_even",
-                                                    "contentDescription": "twelve",
-                                                    "style": {
-                                                        "padding": "4"
-                                                    }
+                                                    "type":"horizontal",
+                                                    "components":[
+                                                        {
+                                                            "type": "textfield",
+                                                            "name": "so2_screen3_truck_driver_sign",
+                                                            "value": "{{$global.so2_screen3_truck_driver_sign || ''}}",
+                                                            "class": "content_style_even",
+                                                            "contentDescription": "twelve",
+                                                            "style": {
+                                                                "padding": "4"
+                                                            }
+                                                        }
+                                                    ]
                                                 }
+                                                
                                             ]
                                         }
                                     ]
