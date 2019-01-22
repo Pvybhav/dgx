@@ -905,7 +905,8 @@
                                                 "color": "rgb(255, 255, 255)",
                                                 "height": "6%"
                                             },
-                                            "components": [{
+                                            "components": [
+                                                {
                                                     "type": "label",
                                                     "class": "content_style_even center_align",
                                                     "text": "Operator's Signature",
@@ -913,6 +914,15 @@
                                                         "padding": "4",
                                                         "height": "6%"
                                                     }
+                                                },
+                                                {
+                                                    "type": "label",
+                                                    "text": "15",
+                                                    "class": "content_style_even center_align",
+                                                    "style": {
+                                                        "padding": "4",
+                                                        "height":"6%"                                           }
+        
                                                 },
                                                 {
                                                     "type": "horizontal",
@@ -924,7 +934,7 @@
                                                         "name": "so2_screen3_operator_sign",
                                                         "value": "{{$global.so2_screen3_operator_sign || ''}}",
                                                         "class": "content_style_even",
-                                                        "contentDescription": "twelve",
+                                                        "contentDescription": "fifteen",
                                                         "style": {
                                                             "padding": "4"
                                                         }
@@ -952,6 +962,15 @@
                                                     }
                                                 },
                                                 {
+                                                    "type": "label",
+                                                    "text": "16",
+                                                    "class": "content_style_even center_align",
+                                                    "style": {
+                                                        "padding": "4",
+                                                        "height":"6%"                                           }
+        
+                                                },
+                                                {
                                                     "type":"horizontal",
                                                     "components":[
                                                         {
@@ -959,7 +978,7 @@
                                                             "name": "so2_screen3_truck_driver_sign",
                                                             "value": "{{$global.so2_screen3_truck_driver_sign || ''}}",
                                                             "class": "content_style_even",
-                                                            "contentDescription": "twelve",
+                                                            "contentDescription": "sixteen",
                                                             "style": {
                                                                 "padding": "4"
                                                             }
