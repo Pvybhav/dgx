@@ -116,11 +116,101 @@
             "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           }
+        ],
+        "Table_Rows": [
+          {
+            "row_name": "Pump 002",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump002_running",
+                "value": "",
+                "label": "1",
+                "contentDescription": "one"
+              },
+              {
+                "type": "textfield",
+                "value": "",
+                "name": "detox_OF_pump002_valves",
+                "label": "2",
+                "contentDescription": "two"
+              },
+              {
+                "type": "textfield",
+                "value": "",
+                "name": "detox_OF_pump002_gland_m3hr",
+                "label": "3",
+                "contentDescription": "three"
+              },
+              {
+                "type": "textfield",
+                "value": "",
+                "name": "detox_OF_pump002_packing",
+                "label": "4",
+                "contentDescription": "four"
+              },
+              {
+                "type": "textfield",
+                "value": "",
+                "name": "detox_OF_pump002_oil_level",
+                "label": "5",
+                "contentDescription": "five"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 003",
+            "row_values": [
+              {
+                "type": "textfield",
+                "value": "",
+                "name": "detox_OF_pump003_running",
+                "label": "6",
+                "contentDescription": "six"
+              },
+              {
+                "type": "textfield",
+                "value": "",
+                "name": "detox_OF_pump003_valves",
+                "label": "7",
+                "contentDescription": "seven"
+              },
+              {
+                "type": "textfield",
+                "value": "",
+                "name": "detox_OF_pump003_gland_m3hr",
+                "label": "8",
+                "contentDescription": "eight"
+              },
+              {
+                "type": "textfield",
+                "value": "",
+                "name": "detox_OF_pump003_packing",
+                "label": "9",
+                "contentDescription": "nine"
+              },
+              {
+                "type": "textfield",
+                "value": "",
+                "name": "detox_OF_pump003_oil_level",
+                "label": "10",
+                "contentDescription": "ten"
+              }
+            ]
+          }
         ]
       },
       "actions": {
         "$load": {
-          "$load": {
+          "type": "$script.include",
+          "options": {
+            "items": [
+              {
+                "text": "var getCurrentFieldValue = function(root, id, globalValues) {  for (var key in globalValues) { if(globalValues.hasOwnProperty(id)) return globalValues[id]; };}"
+              }
+            ]
+          },
+          "success": {
             "type": "$render",
             "success": {
               "type": "$util.toast",
@@ -190,6 +280,92 @@
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "no_padding center_align table_row table_row_odd_styles",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{var current_field_name = $root.Table_Rows[$index].row_name; return current_field_name;}}",
+                                      "class": "center_align black_color table_body_name_styles"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "style": {
+                                            "width": "3%"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "label",
+                                              "text": "{{label}}",
+                                              "class": "no_padding label_styles black_color center_align"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "vertical",
+                                          "style": {
+                                            "width": "13%"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "class": "center_align black_color",
+                                              "contentDescription": "{{contentDescription}}",
+                                              "style": {
+                                                "width": "13%",
+                                                "height": "4%",
+                                                "size": "14"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
                         }
                       }
                     }

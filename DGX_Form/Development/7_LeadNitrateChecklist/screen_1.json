@@ -1,0 +1,1166 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Form-7",
+      "json_id": "field",
+      "description": "Lead Nitrate Check List",
+      "offline": "true",
+      "styles": {
+        "center_align": {
+          "align": "center"
+        },
+        "no_padding": {
+          "padding": "0"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "table_header_name_styles": {
+          "width": "50%"
+        },
+        "table_header_verify_styles": {
+          "width": "20%"
+        },
+        "table_header_comment_styles": {
+          "width": "30%"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": "50",
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "table_header_styles": {
+          "size": "15",
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "height": "7%",
+          "border": "#FFFFFF",
+          "border_width": "2"
+        },
+        "check_style": {
+          "size": "15",
+          "font": "HelveticaHeader",
+          "color": "rgb(0, 0, 0)",
+          "width": "50%"
+        },
+        "number_style": {
+          "size": "15",
+          "font": "HelveticaNeue-Bold",
+          "color": "rgb(0, 0, 0)",
+          "width": "8%",
+          "align": "center",
+          "padding": "0"
+        },
+        "number_style1": {
+          "size": "15",
+          "font": "HelveticaNeue-Bold",
+          "color": "rgb(0, 0, 0)",
+          "width": "5%",
+          "align": "center",
+          "padding": "0"
+        },
+        "switch_label": {
+          "width": "8%",
+          "align": "left",
+          "padding": "0"
+        },
+        "comments_label": {
+          "width": "25%",
+          "size": "15",
+          "font": "HelveticaHeader",
+          "color": "rgb(0, 0, 0)",
+          "padding": "0"
+        },
+        "switch_styles": {
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "align": "center"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "dropdown_date_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "15"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form7_page1",
+            "reagent_operator_switch1": "{{$global.reagent_operator_switch1 == null ? true : $global.reagent_operator_switch1}}",
+            "reagent_operator_switch2": "{{$global.reagent_operator_switch2 == null ? true : $global.reagent_operator_switch2}}",
+            "reagent_operator_switch3": "{{$global.reagent_operator_switch3 == null ? true : $global.reagent_operator_switch3}}",
+            "reagent_operator_switch4": "{{$global.reagent_operator_switch4 == null ? true : $global.reagent_operator_switch4}}",
+            "reagent_operator_switch5": "{{$global.reagent_operator_switch5 == null ? true : $global.reagent_operator_switch5}}",
+            "reagent_operator_switch6": "{{$global.reagent_operator_switch6 == null ? true : $global.reagent_operator_switch6}}",
+            "reagent_operator_switch7": "{{$global.reagent_operator_switch7 == null ? true : $global.reagent_operator_switch7}}"
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form7_page1",
+            "f7_s1_sign": "{{$get.sign || ''}}",
+            "f7_s1_day": "{{$get.day}}",
+            "f7_s1_month": "{{$get.month}}",
+            "f7_s1_year": "{{$get.year}}",
+            "f7_s1_shift": "{{$get.shift}}",
+            "f7_s1_operator": "{{$get.operator}}",
+            "comments_one": "{{$get.comments_one || ''}}",
+            "comments_two": "{{$get.comments_two || ''}}",
+            "comments_three": "{{$get.comments_three || ''}}",
+            "comments_four": "{{$get.comments_four || ''}}",
+            "comments_five": "{{$get.comments_five || ''}}",
+            "comments_six": "{{$get.comments_six || ''}}",
+            "comments_seven": "{{$get.comments_seven || ''}}",
+            "reagent_operator_switch1": "{{$global.reagent_operator_switch1 == null ? true : $global.reagent_operator_switch1}}",
+            "reagent_operator_switch2": "{{$global.reagent_operator_switch2 == null ? true : $global.reagent_operator_switch2}}",
+            "reagent_operator_switch3": "{{$global.reagent_operator_switch3 == null ? true : $global.reagent_operator_switch3}}",
+            "reagent_operator_switch4": "{{$global.reagent_operator_switch4 == null ? true : $global.reagent_operator_switch4}}",
+            "reagent_operator_switch5": "{{$global.reagent_operator_switch5 == null ? true : $global.reagent_operator_switch5}}",
+            "reagent_operator_switch6": "{{$global.reagent_operator_switch6 == null ? true : $global.reagent_operator_switch6}}",
+            "reagent_operator_switch7": "{{$global.reagent_operator_switch7 == null ? true : $global.reagent_operator_switch7}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved Successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "data": {
+        "Page_Heading": "Reagent Operator - Lead Nitrate Checklist",
+        "Table1_Headers": [
+          {
+            "type": "label",
+            "name": "checks",
+            "value": "Checks",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "name": "verify",
+            "value": "Verified",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_verify_styles"
+          },
+          {
+            "type": "label",
+            "name": "comment",
+            "value": "Comments",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_comment_styles"
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}}",
+              "align": "left"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 15,
+              "background": "rgb(154,205,50)",
+              "color": "rgb(255,255,255)",
+              "height": "0%",
+              "padding": "0",
+              "align": "left"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "day",
+                      "value": "{{$global.f7_s1_day}}",
+                      "contentDescription": "Day",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Day",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "13",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "14",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "15",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "16",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "17",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "18",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "19",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "20",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "21",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "22",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "23",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "24",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "25",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "26",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "27",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "28",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "29",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "30",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "31",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.f7_s1_month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Month",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.f7_s1_year}}",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Year",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2019",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2020",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2021",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2022",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.f7_s1_shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": [
+                        {
+                          "value": "Shift",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Night Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Day Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Regular Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Rotating Shift",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.f7_s1_operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": [
+                        {
+                          "value": "Operator",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "John",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Smith",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Michael",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Federer",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "David",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.f7_s1_sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ],
+              "class": "no_padding"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table1_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_1",
+                      "text": "Sump Pump is operating in remote, and on",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "1",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch1",
+                      "value": "{{$global.reagent_operator_switch1}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "one",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "reagent_operator_switch1": "{{$get.reagent_operator_switch1}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "8",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_one",
+                      "value": "{{$global.comments_one || ''}}",
+                      "contentDescription": "eight",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "7%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_2",
+                      "text": "Four metering pumps are operating",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "2",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch2",
+                      "value": "{{$global.reagent_operator_switch2}}",
+                      "class": "switch_label switch_styles table_row_even_styles",
+                      "contentDescription": "two",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "reagent_operator_switch2": "{{$get.reagent_operator_switch2}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "9",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_two",
+                      "value": "{{$global.comments_two || ''}}",
+                      "contentDescription": "nine",
+                      "class": "comments_label table_row_even_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles",
+                  "style": {
+                    "height": "7%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_3",
+                      "text": "Scrubber fan is running efficiently",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "3",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch3",
+                      "value": "{{$global.reagent_operator_switch3}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "three",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "reagent_operator_switch3": "{{$get.reagent_operator_switch3}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "10",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_three",
+                      "value": "{{$global.comments_three || ''}}",
+                      "contentDescription": "ten",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "7%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_4",
+                      "text": "Eye wash and safety shower checked",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "4",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch4",
+                      "value": "{{$global.reagent_operator_switch4}}",
+                      "class": "switch_label switch_styles table_row_even_styles",
+                      "contentDescription": "four",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "reagent_operator_switch4": "{{$get.reagent_operator_switch4}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "11",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_four",
+                      "value": "{{$global.comments_four || ''}}",
+                      "contentDescription": "eleven",
+                      "class": "comments_label table_row_even_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles",
+                  "style": {
+                    "height": "7%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_5",
+                      "text": "No leaks",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "5",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch5",
+                      "value": "{{$global.reagent_operator_switch5}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "five",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "reagent_operator_switch5": "{{$get.reagent_operator_switch5}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "12",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_five",
+                      "value": "{{$global.comments_five || ''}}",
+                      "contentDescription": "twelve",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "7%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_6",
+                      "text": "Confirm heat trace is operating (lights at back of the PP next to the door)",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "6",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch6",
+                      "value": "{{$global.reagent_operator_switch6}}",
+                      "class": "switch_label switch_styles table_row_even_styles",
+                      "contentDescription": "six",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "reagent_operator_switch6": "{{$get.reagent_operator_switch6}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "13",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_six",
+                      "value": "{{$global.comments_six || ''}}",
+                      "contentDescription": "thirteen",
+                      "class": "comments_label table_row_even_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles",
+                  "style": {
+                    "height": "11%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_7",
+                      "text": "Strainer basket cleaned after every mix.No holes in basket",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "7",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch7",
+                      "value": "{{$global.reagent_operator_switch7}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "seven",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "reagent_operator_switch7": "{{$get.reagent_operator_switch7}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "14",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_seven",
+                      "value": "{{$global.comments_seven || ''}}",
+                      "contentDescription": "fourteen",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "11%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "next",
+                      "text": "Next",
+                      "class": "next_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/7_LeadNitrateChecklist/screen_2.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "10%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
