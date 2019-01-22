@@ -212,12 +212,12 @@
                 "$load": {
                     "type": "$global.set",
                     "options": {
-                        "so2_screen3_liquid_so2": "{{$global.so2_screen3_liquid_so2  || 'true' }}",
-                        "so2_screen3_so2_value_at_offload": "{{$global.so2_screen3_so2_value_at_offload  || 'true'}}",
-                        "so2_screen3_respirator_mask": "{{$global.so2_screen3_respirator_mask  || 'true'}}",
-                        "so2_screen3_chemical_resistant_suit": "{{$global.so2_screen3_chemical_resistant_suit || 'true'}}",
-                        "so2_screen3_chemical_resistant_gloves": "{{$global.so2_screen3_chemical_resistant_gloves || 'true'}}",
-                        "so2_screen3_chemical_boots": "{{$global.so2_screen3_chemical_boots || 'true'}}"
+                        "so2_screen3_liquid_so2": "{{$global.so2_screen3_liquid_so2  == null ? 'true' : $global.so2_screen3_liquid_so2}}",
+                        "so2_screen3_so2_value_at_offload": "{{$global.so2_screen3_so2_value_at_offload  == null ? 'true' : $global.so2_screen3_so2_value_at_offload}}",
+                        "so2_screen3_respirator_mask": "{{$global.so2_screen3_respirator_mask  == null ? 'true' : $global.so2_screen3_respirator_mask}}",
+                        "so2_screen3_chemical_resistant_suit": "{{$global.so2_screen3_chemical_resistant_suit  == null ? 'true' : $global.so2_screen3_chemical_resistant_suit}}",
+                        "so2_screen3_chemical_resistant_gloves": "{{$global.so2_screen3_chemical_resistant_gloves  == null ? 'true' : $global.so2_screen3_chemical_resistant_gloves}}",
+                        "so2_screen3_chemical_boots": "{{$global.so2_screen3_chemical_boots  == null ? 'true' : $global.so2_screen3_chemical_boots}}"
                       
 
                     }
