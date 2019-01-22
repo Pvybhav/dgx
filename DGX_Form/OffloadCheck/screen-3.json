@@ -886,57 +886,86 @@
                                     "class": "no_padding"
                                 },
                                 {
-                                    "type":"vertical",
-                                    "components":[
-                                        {
-                                            "type":"label",
-                                            "text":"Before starting this offload I confirm that I have inspected the area and safety equipment and that it is safe to proceed."
+                                    "type": "vertical",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Before starting this offload I confirm that I have inspected the area and safety equipment and that it is safe to proceed."
                                         },
                                         {
-                                            "type":"horizontal",
-                                            "components":[
-                                                {
-                                                    "type":"label",
+                                            "type": "horizontal",
+                                            "style": {
+                                                "color": "rgb(255, 255, 255)",
+                                                "height": "6%"
+                                            },
+                                            "components": [{
+                                                    "type": "label",
                                                     "class": "content_style_even",
-                                                    "text":"Opeartor's Signature"
-                                                },
-                                                {
-                                                    "type":"textfield",
-                                                    "name":"so2_screen3_operator_sign",
-                                                    "value": "{{$global.so2_screen3_operator_sign || ''}}",
-                                                "class": "content_style_even",
-                                                "contentDescription": "twelve",
-                                                "style": {
-                                                    "padding": "4"
-                                                }
-                                                },
-                                                {
-                                                    "type":"label",
-                                                    "text":"",
-                                                    "style":{
-                                                        "width":"1%",
-                                                        "class": "content_style_even"
+                                                    "text": "Opeartor's Signature",
+                                                    "style": {
+                                                        "padding": "4",
+                                                        "height": "6%"
                                                     }
                                                 },
                                                 {
-                                                    "type":"label",
-                                                    "class": "content_style_even",
+                                                    "type": "horizontal",
+                                                    "style": {
 
-                                                    "text":"Truck Driver's Signature"
+                                                    },
+                                                    "components": [{
+                                                        "type": "textfield",
+                                                        "name": "so2_screen3_operator_sign",
+                                                        "value": "{{$global.so2_screen3_operator_sign || ''}}",
+                                                        "class": "content_style_even",
+                                                        "contentDescription": "twelve",
+                                                        "style": {
+                                                            "padding": "4"
+                                                        }
+                                                    }]
                                                 },
                                                 {
-                                                    "type":"textfield",
-                                                    "name":"so2_screen3_truck_driver_sign",
-                                                    "value": "{{$global.so2_screen3_truck_driver_sign || ''}}",
-                                                "class": "content_style_even",
-                                                "contentDescription": "twelve",
-                                                "style": {
-                                                    "padding": "4"
+                                                    "type": "label",
+                                                    "text": "",
+                                                    "style": {
+                                                        "width": "1%",
+                                                        "class": "content_style_even",
+                                                        "style": {
+                                                            "padding": "4",
+                                                            "height": "6%"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "type": "label",
+                                                    "class": "content_style_even",
+                                                    "text": "Truck Driver's Signature",
+                                                    "style": {
+                                                        "padding": "4",
+                                                        "height": "6%"
+                                                    }
+                                                },
+                                                {
+                                                    "type":"horizontal",
+                                                    "components":[
+                                                        {
+                                                            "type": "textfield",
+                                                            "name": "so2_screen3_truck_driver_sign",
+                                                            "value": "{{$global.so2_screen3_truck_driver_sign || ''}}",
+                                                            "class": "content_style_even",
+                                                            "contentDescription": "twelve",
+                                                            "style": {
+                                                                "padding": "4"
+                                                            }
+                                                        }
+                                                    ]
                                                 }
-                                                }
+                                                
                                             ]
                                         }
-                                    ]
+                                    ],
+                                    "class": "no_padding"
                                 }
 
                             ],
