@@ -280,47 +280,44 @@
                     "sections": [
 
                         {
-                            "type":"horizontal",
-                            "items":[
-                                {
-                                    "type": "horizontal",
-                                    "style": {
-                                        "color": "rgb(255, 255, 255)"
+                            "type": "horizontal",
+                            "items": [{
+                                "type": "horizontal",
+                                "style": {
+                                    "color": "rgb(255, 255, 255)"
+                                },
+                                "components": [{
+                                        "type": "label",
+                                        "text": "Checks",
+                                        "style": {
+                                            "width": "60%"
+                                        },
+                                        "class": "header_style"
                                     },
-                                    "components": [{
-                                            "type": "label",
-                                            "text": "Checks",
-                                            "style": {
-                                                "width": "60%"
-                                            },
-                                            "class": "header_style"
+                                    {
+                                        "type": "label",
+                                        "text": " ",
+                                        "style": {
+                                            "width": "10%"
                                         },
-                                        {
-                                            "type": "label",
-                                            "text": " ",
-                                            "style": {
-                                                "width": "10%"
-                                            },
-                                            "class": "header_style"
+                                        "class": "header_style"
+                                    },
+                                    {
+                                        "type": "label",
+                                        "text": "Comments",
+                                        "style": {
+                                            "width": "30%"
                                         },
-                                        {
-                                            "type": "label",
-                                            "text": "Comments",
-                                            "style": {
-                                                "width": "30%"
-                                            },
-                                            "class": "header_style"
-                                        }
-                                    ],
-                                    "class": "no_padding"
-                                }
-                            ]
+                                        "class": "header_style"
+                                    }
+                                ],
+                                "class": "no_padding"
+                            }]
                         },
-                        
+
                         {
                             "type": "vertical",
-                            "items": [
-                                {
+                            "items": [{
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
@@ -333,8 +330,8 @@
                                             "style": {
                                                 "width": "40%",
                                                 "padding": "6",
-                                                "height":"8%",
-                                                "padding_left":"2%"
+                                                "height": "8%",
+                                                "padding_left": "2%"
                                             }
 
                                         }, {
@@ -344,26 +341,24 @@
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "4",
-                                                "height":"8%"                                           }
+                                                "height": "8%"
+                                            }
 
                                         },
                                         {
-                                            "type":"horizontal",
-                                            "style":{
-                                                "width":"15%"
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
                                             },
-                                            "components":[
-                                                {
-                                                    "type": "textfield",
-                                                    "name": "so2_screen3_liquid_so2_level",
-                                                    "value": "{{$global.so2_screen3_storage_tank_2_level || ''}}",
-                                                    "class": "content_style_even",
-                                                    "contentDescription": "one"
-        
-                                                }
-                                            ]
-                                        }
-                                        ,
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen3_liquid_so2_level",
+                                                "value": "{{$global.so2_screen3_storage_tank_2_level || ''}}",
+                                                "class": "content_style_even",
+                                                "contentDescription": "one"
+
+                                            }]
+                                        },
                                         {
                                             "type": "label",
                                             "text": "2",
@@ -372,7 +367,7 @@
                                                 "width": "5%",
                                                 "padding": "4",
                                                 "height": "6%"
-                                         }
+                                            }
 
                                         },
                                         {
@@ -398,38 +393,37 @@
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "4",
-                                                "height":"8%"                                            }
+                                                "height": "8%"
+                                            }
 
                                         },
                                         {
-                                            "type":"horizontal",
-                                            "style":{
-                                                "width":"25%"
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "25%"
                                             },
-                                            "components":[
-                                                {
-                                                    "type": "textarea",
-                                                    "name": "so2_screen3_liquid_so2_level_comments",
-                                                    "value": "{{$global.so2_screen3_storage_tank_2_comments || ''}}",
-                                                    "class": "content_style_even",
-                                                    "contentDescription": "three",
-                                                    "style": {
-                                                        "padding": "3",
-                                                        "width": "25%",
-                                                        "height":"8%"
-        
-                                                        
-        
-                                                    }
-        
+                                            "components": [{
+                                                "type": "textarea",
+                                                "name": "so2_screen3_liquid_so2_level_comments",
+                                                "value": "{{$global.so2_screen3_storage_tank_2_comments || ''}}",
+                                                "class": "content_style_even",
+                                                "contentDescription": "three",
+                                                "style": {
+                                                    "padding": "3",
+                                                    "width": "25%",
+                                                    "height": "8%"
+
+
+
                                                 }
-                                            ]
+
+                                            }]
                                         }
-                                        
+
                                     ],
                                     "class": "no_padding"
                                 },
-                                
+
                                 {
                                     "type": "horizontal",
                                     "style": {
@@ -443,8 +437,8 @@
                                             "style": {
                                                 "width": "40%",
                                                 "padding": "6",
-                                                "height":"8%",
-                                                "padding_left":"2%"
+                                                "height": "8%",
+                                                "padding_left": "2%"
                                             }
 
                                         }, {
@@ -454,26 +448,24 @@
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "4",
-                                                "height":"8%"                                           }
+                                                "height": "8%"
+                                            }
 
                                         },
                                         {
-                                            "type":"horizontal",
-                                            "style":{
-                                                "width":"15%"
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
                                             },
-                                            "components":[
-                                                {
-                                                    "type": "textfield",
-                                                    "name": "so2_screen3_so2_value_at_offload_value",
-                                                    "value": "{{$global.so2_screen3_so2_value_at_offload_value || ''}}",
-                                                    "class": "content_style_odd",
-                                                    "contentDescription": "fout"
-        
-                                                }
-                                            ]
-                                        }
-                                        ,
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen3_so2_value_at_offload_value",
+                                                "value": "{{$global.so2_screen3_so2_value_at_offload_value || ''}}",
+                                                "class": "content_style_odd",
+                                                "contentDescription": "fout"
+
+                                            }]
+                                        },
                                         {
                                             "type": "label",
                                             "text": "5",
@@ -507,39 +499,38 @@
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "4",
-                                                "height":"8%"                                            }
+                                                "height": "8%"
+                                            }
 
                                         },
                                         {
-                                            "type":"horizontal",
-                                            "style":{
-                                                "width":"25%"
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "25%"
                                             },
-                                            "components":[
-                                                {
-                                                    "type": "textfield",
-                                                    "name": "so2_screen3_so2_value_at_offload_comments",
-                                                    "value": "{{$global.so2_screen3_so2_value_at_offload_comments || ''}}",
-                                                    "class": "content_style_odd",
-                                                    "contentDescription": "six",
-                                                    "style": {
-                                                        "padding": "3",
-                                                        "width": "25%",
-                                                        "height":"8%"
-        
-                                                        
-        
-                                                    }
-        
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen3_so2_value_at_offload_comments",
+                                                "value": "{{$global.so2_screen3_so2_value_at_offload_comments || ''}}",
+                                                "class": "content_style_odd",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "3",
+                                                    "width": "25%",
+                                                    "height": "8%"
+
+
+
                                                 }
-                                            ]
+
+                                            }]
                                         }
-                                        
+
                                     ],
                                     "class": "no_padding"
                                 },
-                                
-                                
+
+
                                 {
                                     "type": "horizontal",
                                     "style": {
@@ -865,7 +856,6 @@
                                         {
                                             "type": "horizontal",
                                             "style": {
-                                                "width": "25%"
 
                                             },
                                             "components": [{
@@ -886,46 +876,50 @@
                                     "class": "no_padding"
                                 },
                                 {
-                                    "type":"vertical",
+                                    "type": "vertical",
                                     "style": {
                                         "color": "rgb(255, 255, 255)"
                                     },
-                                    "components":[
-                                        {
-                                            "type":"label",
-                                            "text":"Before starting this offload I confirm that I have inspected the area and safety equipment and that it is safe to proceed."
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Before starting this offload I confirm that I have inspected the area and safety equipment and that it is safe to proceed."
                                         },
                                         {
-                                            "type":"horizontal",
+                                            "type": "horizontal",
                                             "style": {
                                                 "color": "rgb(255, 255, 255)",
                                                 "height": "6%"
                                             },
-                                            "components":[
-                                                {
-                                                    "type":"label",
+                                            "components": [{
+                                                    "type": "label",
                                                     "class": "content_style_even",
-                                                    "text":"Opeartor's Signature",
+                                                    "text": "Opeartor's Signature",
                                                     "style": {
                                                         "padding": "4",
                                                         "height": "6%"
                                                     }
                                                 },
                                                 {
-                                                    "type":"textfield",
-                                                    "name":"so2_screen3_operator_sign",
-                                                    "value": "{{$global.so2_screen3_operator_sign || ''}}",
-                                                "class": "content_style_even",
-                                                "contentDescription": "twelve",
-                                                "style": {
-                                                    "padding": "4"
-                                                }
+                                                    "type": "horizontal",
+                                                    "style": {
+
+                                                    },
+                                                    "components": [{
+                                                        "type": "textfield",
+                                                        "name": "so2_screen3_operator_sign",
+                                                        "value": "{{$global.so2_screen3_operator_sign || ''}}",
+                                                        "class": "content_style_even",
+                                                        "contentDescription": "twelve",
+                                                        "style": {
+                                                            "padding": "4"
+                                                        }
+                                                    }]
                                                 },
                                                 {
-                                                    "type":"label",
-                                                    "text":"",
-                                                    "style":{
-                                                        "width":"1%",
+                                                    "type": "label",
+                                                    "text": "",
+                                                    "style": {
+                                                        "width": "1%",
                                                         "class": "content_style_even",
                                                         "style": {
                                                             "padding": "4",
@@ -934,23 +928,23 @@
                                                     }
                                                 },
                                                 {
-                                                    "type":"label",
+                                                    "type": "label",
                                                     "class": "content_style_even",
-                                                    "text":"Truck Driver's Signature",
+                                                    "text": "Truck Driver's Signature",
                                                     "style": {
                                                         "padding": "4",
                                                         "height": "6%"
                                                     }
                                                 },
                                                 {
-                                                    "type":"textfield",
-                                                    "name":"so2_screen3_truck_driver_sign",
+                                                    "type": "textfield",
+                                                    "name": "so2_screen3_truck_driver_sign",
                                                     "value": "{{$global.so2_screen3_truck_driver_sign || ''}}",
-                                                "class": "content_style_even",
-                                                "contentDescription": "twelve",
-                                                "style": {
-                                                    "padding": "4"
-                                                }
+                                                    "class": "content_style_even",
+                                                    "contentDescription": "twelve",
+                                                    "style": {
+                                                        "padding": "4"
+                                                    }
                                                 }
                                             ]
                                         }
@@ -1010,38 +1004,36 @@
                                         "text": "",
                                         "class": "black_color",
                                         "style": {
-                                          "width": "5%"
+                                            "width": "5%"
                                         }
-                                      },
-                                      {
+                                    },
+                                    {
                                         "type": "button",
                                         "name": "previous",
                                         "text": "Previous",
                                         "class": "previous_button_styles center_align",
                                         "action": {
-                                          "type": "$href",
-                                          "options": {
-                                            "url": "https://pvybhav.github.io/DGX_Form/OffloadCheck/screen-1.json",
-                                            "preload": {
-                                              "style": {
-                                                "background": "#ff0000"
-                                              },
-                                              "layers": [
-                                                {
-                                                  "type": "image",
-                                                  "url": "file://infinit.gif",
-                                                  "style": {
-                                                    "top": "50%-25",
-                                                    "left": "50%-25",
-                                                    "width": "50",
-                                                    "height": "50"
-                                                  }
+                                            "type": "$href",
+                                            "options": {
+                                                "url": "https://pvybhav.github.io/DGX_Form/OffloadCheck/screen-1.json",
+                                                "preload": {
+                                                    "style": {
+                                                        "background": "#ff0000"
+                                                    },
+                                                    "layers": [{
+                                                        "type": "image",
+                                                        "url": "file://infinit.gif",
+                                                        "style": {
+                                                            "top": "50%-25",
+                                                            "left": "50%-25",
+                                                            "width": "50",
+                                                            "height": "50"
+                                                        }
+                                                    }]
                                                 }
-                                              ]
                                             }
-                                          }
                                         }
-                                      },
+                                    },
                                     {
                                         "type": "label",
                                         "text": "",
