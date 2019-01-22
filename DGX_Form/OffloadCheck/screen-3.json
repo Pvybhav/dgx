@@ -891,6 +891,46 @@
                                         {
                                             "type":"label",
                                             "text":"Before starting this offload I confirm that I have inspected the area and safety equipment and that it is safe to proceed."
+                                        },
+                                        {
+                                            "type":"horizontal",
+                                            "components":[
+                                                {
+                                                    "type":"label",
+                                                    "text":"Opeartor's Signature"
+                                                },
+                                                {
+                                                    "type":"textfield",
+                                                    "name":"so2_screen3_operator_sign",
+                                                    "value": "{{$global.so2_screen3_operator_sign || ''}}",
+                                                "class": "content_style_even",
+                                                "contentDescription": "twelve",
+                                                "style": {
+                                                    "padding": "4"
+                                                }
+                                                },
+                                                {
+                                                    "type":"label",
+                                                    "text":"",
+                                                    "style":{
+                                                        "width":"1%"
+                                                    }
+                                                },
+                                                {
+                                                    "type":"label",
+                                                    "text":"Truck Driver's Signature"
+                                                },
+                                                {
+                                                    "type":"textfield",
+                                                    "name":"so2_screen3_truck_driver_sign",
+                                                    "value": "{{$global.so2_screen3_truck_driver_sign || ''}}",
+                                                "class": "content_style_even",
+                                                "contentDescription": "twelve",
+                                                "style": {
+                                                    "padding": "4"
+                                                }
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
