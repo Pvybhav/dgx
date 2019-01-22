@@ -316,9 +316,10 @@
                                 }
                             ]
                         },
+                        
                         {
-                            "type":"horizontal",
-                            "items":[
+                            "type": "vertical",
+                            "items": [
                                 {
                                     "type": "horizontal",
                                     "style": {
@@ -426,13 +427,7 @@
                                         
                                     ],
                                     "class": "no_padding"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "vertical",
-                            "items": [
-                                
+                                },
                                 
                                 {
                                     "type": "horizontal",
@@ -532,154 +527,7 @@
                                     "class": "no_padding"
                                 },
                                 
-                                {
-                                    "type": "horizontal",
-                                    "style": {
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "6%"
-
-                                    },
-                                    "components": [
-                                        {
-                                            "type": "label",
-                                            "text":  "Safety Shower Tested",
-                                            "class": "content_style_odd title_styles",
-                                            "style": {
-                                                "width": "55%",
-                                                "padding": "4",
-                                                "height":"6%",
-                                                "padding_left":"2%"
-                                            }
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "5",
-                                            "class": "content_style_odd center_align textarea_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height":"6%"
-                                            }
-
-                                        },
-                                        {
-
-                                            "type": "switch",
-                                            "name": "so2_screen3_safety_shower",
-                                            "value": "{{$global.so2_screen3_safety_shower}}",
-                                            "class": "content_style_odd switch_styles",
-                                            "contentDescription": "five",
-                                            "action": {
-                                                "type": "$global.set",
-                                                "options": {
-                                                    "so2_screen3_safety_shower": "{{$get.so2_screen3_safety_shower}}"
-                                                }
-                                            }
-
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "6",
-                                            "class": "content_style_odd center_align textarea_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height":"6%"
-                                            }
-
-                                        },
-                                        {
-                                            "type": "textarea",
-                                            "name": "so2_screen3_safety_shower_comments",
-                                            "value": "{{$global.so2_screen3_safety_shower_comments || ''}}",
-                                            "contentDescription": "six",
-                                            "style": {
-                                                "padding": "3",
-                                                "width": "25%",
-                                                "height":"6%"
-
-                                            },
-                                            "class": "content_style_odd"
-
-                                        }
-                                    ],
-                                    "class": "no_padding"
-                                },
-                                {
-                                    "type": "horizontal",
-                                    "style": {
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "6%"
-                                    },
-                                    "components": [
-                                        {
-                                            "type": "label",
-                                            "text":  "10 minute escape packs inspection",
-                                            "class": "content_style_even title_styles",
-                                            "style": {
-                                                "width": "55%",
-                                                "padding": "4",
-                                                "height":"6%",
-                                                "padding_left":"2%"
-                                            }
-
-                                        }, {
-                                            "type": "label",
-                                            "text": "7",
-                                            "class": "content_style_even center_align textarea_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height":"6%"
-                                            }
-
-                                        },
-                                        {
-
-                                            "type": "switch",
-                                            "name": "so2_screen3_escape_packs_inspection",
-                                            "value": "{{$global.so2_screen3_escape_packs_inspection}}",
-                                            "class": "content_style_even switch_styles",
-                                            "contentDescription": "seven",
-                                            "action": {
-                                                "type": "$global.set",
-                                                "options": {
-                                                    "so2_screen3_escape_packs_inspection": "{{$get.so2_screen3_escape_packs_inspection}}"
-                                                }
-                                            }
-
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "8",
-                                            "class": "content_style_even center_align textarea_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height":"6%"
-                                            }
-
-                                        },
-                                        {
-                                            "type": "textarea",
-                                            "name": "so2_screen3_escape_packs_inspection_comments",
-                                            "value": "{{$global.so2_screen3_escape_packs_inspection_comments || ''}}",
-                                            "class": "content_style_even",
-                                            "contentDescription": "eight",
-                                            "style": {
-                                                "padding": "3",
-                                                "width": "25%",
-                                                "height":"6%"
-
-                                            }
-
-                                        }
-                                    ],
-                                    "class": "no_padding"
-                                },
+                                
                                 {
                                     "type": "horizontal",
                                     "style": {
