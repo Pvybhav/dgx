@@ -208,14 +208,14 @@
                 "$load": {
                     "type": "$global.set",
                     "options": {
-                        "so2_screen2_safety_perimeter_cones": "{{$global.so2_screen2_safety_perimeter_cones || 'true'}}",
-                        "so2_screen2_truck_wheels_choked": "{{$global.so2_screen2_truck_wheels_choked  || 'true'}}",
-                        "so2_screen2_safety_shower": "{{$global.so2_screen2_safety_shower  || 'true'}}",
-                        "so2_screen2_escape_packs_inspection": "{{$global.so2_screen2_escape_packs_inspection  || 'true'}}",
-                        "so2_screen2_storage_tank_1": "{{$global.so2_screen2_storage_tank_1_level  || 'true'}}",
-                        "so2_screen2_storage_tank_2": "{{$global.so2_screen2_storage_tank_2  || 'true'}}",
-                        "so2_screen2_storage_tank_3": "{{$global.so2_screen2_storage_tank_3  || 'true'}}",
-                        "so2_screen2_storage_tank_4": "{{$global.so2_screen2_storage_tank_4  || 'true'}}"
+                        "so2_screen2_safety_perimeter_cones": "{{$global.so2_screen2_safety_perimeter_cones == null ? 'true' : $global.so2_screen2_safety_perimeter_cones}}",
+                        "so2_screen2_truck_wheels_choked": "{{$global.so2_screen2_truck_wheels_choked  == null ? 'true' : $global.so2_screen2_truck_wheels_choked}}",
+                        "so2_screen2_safety_shower": "{{$global.so2_screen2_safety_shower  == null ? 'true' : $global.so2_screen2_safety_shower}}",
+                        "so2_screen2_escape_packs_inspection": "{{$global.so2_screen2_escape_packs_inspection  == null ? 'true' : $global.so2_screen2_escape_packs_inspection}}",
+                        "so2_screen2_storage_tank_1": "{{$global.so2_screen2_storage_tank_1_level  == null ? 'true' : $global.so2_screen2_storage_tank_1_level}}",
+                        "so2_screen2_storage_tank_2": "{{$global.so2_screen2_storage_tank_2  == null ? 'true' : $global.so2_screen2_storage_tank_2}}",
+                        "so2_screen2_storage_tank_3": "{{$global.so2_screen2_storage_tank_3  == null ? 'true' : $global.so2_screen2_storage_tank_3}}",
+                        "so2_screen2_storage_tank_4": "{{$global.so2_screen2_storage_tank_4  == null ? 'true' : $global.so2_screen2_storage_tank_4}}"
 
 
                     }
@@ -347,7 +347,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen2_safety_perimeter_cones",
-                                            "value": "{{$global.so2_screen2_safety_perimeter_cones || 'true' }}",
+                                            "value": "{{$global.so2_screen2_safety_perimeter_cones}}",
                                             "class": "content_style_odd switch_styles",
                                             "contentDescription": "one",
                                             "action": {
@@ -429,7 +429,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen2_truck_wheels_choked",
-                                            "value": "{{$global.so2_screen2_truck_wheels_choked || 'true'}}",
+                                            "value": "{{$global.so2_screen2_truck_wheels_choked}}",
                                             "class": "content_style_even switch_styles",
                                             "contentDescription": "three",
                                             "action": {
@@ -510,7 +510,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen2_safety_shower",
-                                            "value": "{{$global.so2_screen2_safety_shower || 'true'}}",
+                                            "value": "{{$global.so2_screen2_safety_shower}}",
                                             "class": "content_style_odd switch_styles",
                                             "contentDescription": "five",
                                             "action": {
@@ -588,7 +588,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen2_escape_packs_inspection",
-                                            "value": "{{$global.so2_screen2_escape_packs_inspection || 'true'}}",
+                                            "value": "{{$global.so2_screen2_escape_packs_inspection}}",
                                             "class": "content_style_even switch_styles",
                                             "contentDescription": "seven",
                                             "action": {
@@ -735,7 +735,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen2_storage_tank_1",
-                                            "value": "{{$global.so2_screen2_storage_tank_1 || 'true'}}",
+                                            "value": "{{$global.so2_screen2_storage_tank_1}}",
                                             "class": "content_style_odd switch_styles",
                                             "contentDescription": "ten",
                                             "action": {
@@ -849,7 +849,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen2_storage_tank_2",
-                                            "value": "{{$global.so2_screen2_storage_tank_2 || 'true'}}",
+                                            "value": "{{$global.so2_screen2_storage_tank_2}}",
                                             "class": "content_style_even switch_styles",
                                             "contentDescription": "thirteen",
                                             "action": {
@@ -962,7 +962,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen2_storage_tank_3",
-                                            "value": "{{$global.so2_screen2_storage_tank_3 || 'true'}}",
+                                            "value": "{{$global.so2_screen2_storage_tank_3}}",
                                             "class": "content_style_odd switch_styles",
                                             "contentDescription": "sixteen",
                                             "action": {
@@ -1077,7 +1077,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen2_storage_tank_4",
-                                            "value": "{{$global.so2_screen2_storage_tank_4 || 'true'}}",
+                                            "value": "{{$global.so2_screen2_storage_tank_4}}",
                                             "class": "content_style_even switch_styles",
                                             "contentDescription": "nineteen",
                                             "action": {
