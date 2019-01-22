@@ -212,12 +212,12 @@
                 "$load": {
                     "type": "$global.set",
                     "options": {
-                        "so2_screen3_liquid_so2": "{{$global.so2_screen3_liquid_so2  == null ? 'true' : $global.so2_screen3_liquid_so2}}",
-                        "so2_screen3_so2_value_at_offload": "{{$global.so2_screen3_so2_value_at_offload  == null ? 'true' : $global.so2_screen3_so2_value_at_offload}}",
-                        "so2_screen3_respirator_mask": "{{$global.so2_screen3_respirator_mask  == null ? 'true' : $global.so2_screen3_respirator_mask}}",
-                        "so2_screen3_chemical_resistant_suit": "{{$global.so2_screen3_chemical_resistant_suit  == null ? 'true' : $global.so2_screen3_chemical_resistant_suit}}",
-                        "so2_screen3_chemical_resistant_gloves": "{{$global.so2_screen3_chemical_resistant_gloves  == null ? 'true' : $global.so2_screen3_chemical_resistant_gloves}}",
-                        "so2_screen3_chemical_boots": "{{$global.so2_screen3_chemical_boots  == null ? 'true' : $global.so2_screen3_chemical_boots}}"
+                        "so2_screen3_liquid_so2": "{{$global.so2_screen3_liquid_so2  || 'true' }}",
+                        "so2_screen3_so2_value_at_offload": "{{$global.so2_screen3_so2_value_at_offload  || 'true'}}",
+                        "so2_screen3_respirator_mask": "{{$global.so2_screen3_respirator_mask  || 'true'}}",
+                        "so2_screen3_chemical_resistant_suit": "{{$global.so2_screen3_chemical_resistant_suit || 'true'}}",
+                        "so2_screen3_chemical_resistant_gloves": "{{$global.so2_screen3_chemical_resistant_gloves || 'true'}}",
+                        "so2_screen3_chemical_boots": "{{$global.so2_screen3_chemical_boots || 'true'}}"
                       
 
                     }
@@ -380,7 +380,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen3_liquid_so2",
-                                            "value": "{{$global.so2_screen3_liquid_so2}}",
+                                            "value": "{{$global.so2_screen3_liquid_so2 || 'true'}}",
                                             "class": "content_style_even switch_styles",
                                             "contentDescription": "two",
                                             "action": {
@@ -490,7 +490,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen3_so2_value_at_offload",
-                                            "value": "{{$global.so2_screen3_so2_value_at_offload}}",
+                                            "value": "{{$global.so2_screen3_so2_value_at_offload || 'true'}}",
                                             "class": "content_style_odd switch_styles",
                                             "contentDescription": "five",
                                             "action": {
@@ -606,7 +606,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen3_respirator_mask",
-                                            "value": "{{$global.so2_screen3_respirator_mask}}",
+                                            "value": "{{$global.so2_screen3_respirator_mask || 'true'}}",
                                             "class": "content_style_even switch_styles",
                                             "contentDescription": "seven",
                                             "action": {
@@ -684,7 +684,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen3_chemical_resistant_suit",
-                                            "value": "{{$global.so2_screen3_chemical_resistant_suit}}",
+                                            "value": "{{$global.so2_screen3_chemical_resistant_suit || 'true'}}",
                                             "class": "content_style_odd switch_styles",
                                             "contentDescription": "nine",
                                             "action": {
@@ -762,7 +762,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen3_chemical_resistant_gloves",
-                                            "value": "{{$global.so2_screen3_chemical_resistant_gloves}}",
+                                            "value": "{{$global.so2_screen3_chemical_resistant_gloves || 'true'}}",
                                             "class": "content_style_even switch_styles",
                                             "contentDescription": "eleven",
                                             "action": {
@@ -840,7 +840,7 @@
 
                                             "type": "switch",
                                             "name": "so2_screen3_chemical_boots",
-                                            "value": "{{$global.so2_screen3_chemical_boots}}",
+                                            "value": "{{$global.so2_screen3_chemical_boots || 'true'}}",
                                             "class": "content_style_odd switch_styles",
                                             "contentDescription": "thirteen",
                                             "action": {
