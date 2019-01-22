@@ -29,7 +29,7 @@
           "width": "16%",
           "border": "rgb(255, 255, 255)"
         },
-        "table_row": {
+        "table_row_height": {
           "height": "6%"
         },
         "table_body_name_styles": {
@@ -55,10 +55,10 @@
           "padding_top": "1%",
           "padding_bottom": "1%"
         },
-        "table_row_odd_styles": {
+        "table_odd_row_styles": {
           "background": "rgb(204,206,213)"
         },
-        "table_row_even_styles": {
+        "table_even_row_styles": {
           "background": "rgb(231,232,235)"
         },
         "table_fields_size": {
@@ -69,7 +69,8 @@
           "height": "7%",
           "color": "rgb(255,255,255)",
           "background": "rgb(0,147,215)",
-          "corner_radius": "1%"
+          "corner_radius": "1%",
+          "align": "center"
         },
         "switch_styles": {
           "color": "rgb(0,255,0)",
@@ -84,37 +85,37 @@
             "type": "label",
             "value": "Detox O/F",
             "col_type": "col_name",
-            "styles": "table_header_styles center_align table_header_name_styles"
+            "styles": "table_header_styles table_header_name_styles"
           },
           {
             "type": "label",
             "value": "Running",
             "col_type": "col_value",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles table_header_value_styles"
           },
           {
             "type": "label",
             "value": "Valves",
             "col_type": "col_value",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles table_header_value_styles"
           },
           {
             "type": "label",
             "value": "Gland m3/hr",
             "col_type": "col_value",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles table_header_value_styles"
           },
           {
             "type": "label",
             "value": "Packing",
             "col_type": "col_value",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles table_header_value_styles"
           },
           {
             "type": "label",
             "value": "Oil Level",
             "col_type": "col_value",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles table_header_value_styles"
           }
         ],
         "Table_Rows": [
@@ -124,34 +125,29 @@
               {
                 "type": "textfield",
                 "name": "detox_OF_pump002_running",
-                "value": "",
                 "label": "1",
                 "contentDescription": "one"
               },
               {
                 "type": "textfield",
-                "value": "",
                 "name": "detox_OF_pump002_valves",
                 "label": "2",
                 "contentDescription": "two"
               },
               {
                 "type": "textfield",
-                "value": "",
                 "name": "detox_OF_pump002_gland_m3hr",
                 "label": "3",
                 "contentDescription": "three"
               },
               {
                 "type": "textfield",
-                "value": "",
                 "name": "detox_OF_pump002_packing",
                 "label": "4",
                 "contentDescription": "four"
               },
               {
                 "type": "textfield",
-                "value": "",
                 "name": "detox_OF_pump002_oil_level",
                 "label": "5",
                 "contentDescription": "five"
@@ -163,35 +159,30 @@
             "row_values": [
               {
                 "type": "textfield",
-                "value": "",
                 "name": "detox_OF_pump003_running",
                 "label": "6",
                 "contentDescription": "six"
               },
               {
                 "type": "textfield",
-                "value": "",
                 "name": "detox_OF_pump003_valves",
                 "label": "7",
                 "contentDescription": "seven"
               },
               {
                 "type": "textfield",
-                "value": "",
                 "name": "detox_OF_pump003_gland_m3hr",
                 "label": "8",
                 "contentDescription": "eight"
               },
               {
                 "type": "textfield",
-                "value": "",
                 "name": "detox_OF_pump003_packing",
                 "label": "9",
                 "contentDescription": "nine"
               },
               {
                 "type": "textfield",
-                "value": "",
                 "name": "detox_OF_pump003_oil_level",
                 "label": "10",
                 "contentDescription": "ten"
@@ -228,16 +219,16 @@
           "type": "$global.set",
           "options": {
             "section_id": "form9_page3",
-            "detox_OF_pump002_running": "{{ $get.detox_OF_pump002_running || '' }}",
-            "detox_OF_pump002_valves": "{{ $get.detox_OF_pump002_valves || '' }}",
-            "detox_OF_pump002_gland_m3hr": "{{ $get.detox_OF_pump002_gland_m3hr || '' }}",
-            "detox_OF_pump002_packing": "{{ $get.detox_OF_pump002_packing || '' }}",
-            "detox_OF_pump002_oil_level": "{{ $get.detox_OF_pump002_oil_level || '' }}",
-            "detox_OF_pump003_running": "{{ $get.detox_OF_pump003_running || '' }}",
-            "detox_OF_pump003_valves": "{{ $get.detox_OF_pump003_valves || '' }}",
-            "detox_OF_pump003_gland_m3hr": "{{ $get.detox_OF_pump003_gland_m3hr || '' }}",
-            "detox_OF_pump003_packing": "{{ $get.detox_OF_pump003_packing || '' }}",
-            "detox_OF_pump003_oil_level": "{{ $get.detox_OF_pump003_oil_level || '' }}",
+            "detox_OF_pump002_running": "{{ $get.detox_OF_pump002_running }}",
+            "detox_OF_pump002_valves": "{{ $get.detox_OF_pump002_valves }}",
+            "detox_OF_pump002_gland_m3hr": "{{ $get.detox_OF_pump002_gland_m3hr }}",
+            "detox_OF_pump002_packing": "{{ $get.detox_OF_pump002_packing }}",
+            "detox_OF_pump002_oil_level": "{{ $get.detox_OF_pump002_oil_level }}",
+            "detox_OF_pump003_running": "{{ $get.detox_OF_pump003_running }}",
+            "detox_OF_pump003_valves": "{{ $get.detox_OF_pump003_valves }}",
+            "detox_OF_pump003_gland_m3hr": "{{ $get.detox_OF_pump003_gland_m3hr }}",
+            "detox_OF_pump003_packing": "{{ $get.detox_OF_pump003_packing }}",
+            "detox_OF_pump003_oil_level": "{{ $get.detox_OF_pump003_oil_level }}",
             "f9_s4_notifications": "{{ $get.notifications || '' }}",
             "f9_s4_comments": "{{ $get.comments || '' }}"
           },
@@ -246,6 +237,173 @@
             "options": {
               "text": "Saved Successfully",
               "type": "warning"
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "filename": "CIPChecklist"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id",
+                "f9_s1_sign",
+                "f9_s1_day",
+                "f9_s1_month",
+                "f9_s1_year",
+                "f9_s1_shift",
+                "f9_s1_operator",
+                "safety_screen_holed_0640_M221_001",
+                "safety_screen_blinded_0640_M221_001",
+                "safety_screen_clean_0640_M221_001",
+                "safety_screen_good_0640_M221_001",
+                "safety_screen_holed_0640_M221_002",
+                "safety_screen_blinded_0640_M221_002",
+                "safety_screen_clean_0640_M221_002",
+                "safety_screen_good_0640_M221_002",
+                "derrrick_screen_holed_0640_M221_101",
+                "derrrick_screen_blinded_0640_M221_101",
+                "derrrick_screen_clean_0640_M221_101",
+                "derrrick_screen_good_0640_M221_101",
+                "derrick_screen_holed_0640_M221_102",
+                "derrick_screen_blinded_0640_M221_102",
+                "derrick_screen_clean_0640_M221_102",
+                "derrick_screen_good_0640_M221_102",
+                "derrick_screen_holed_0640_M221_201",
+                "derrick_screen_blinded_0640_M221_201",
+                "derrick_screen_clean_0640_M221_201",
+                "derrick_screen_good_0640_M221_201",
+                "derrick_screen_holed_0640_M221_202",
+                "derrick_screen_blinded_0640_M221_202",
+                "derrick_screen_clean_0640_M221_202",
+                "derrick_screen_good_0640_M221_202",
+                "secondary_safety_screen_holed_0640_M221_011",
+                "secondary_safety_screen_blinded_0640_M221_011",
+                "secondary_safety_screen_clean_0640_M221_011",
+                "secondary_safety_screen_good_0640_M221_011",
+                "secondary_safety_screen_holed_0640_M221_012",
+                "secondary_safety_screen_blinded_0640_M221_012",
+                "secondary_safety_screen_clean_0640_M221_012",
+                "secondary_safety_screen_good_0640_M221_012",
+                "detox_UF_pumps_pump001_running",
+                "detox_UF_pumps_pump001_valves",
+                "detox_UF_pumps_pump001_gland_m3hr",
+                "detox_UF_pumps_pump001_packing",
+                "detox_UF_pumps_pump001_oil_level",
+                "detox_UF_pumps_pump021_running",
+                "detox_UF_pumps_pump021_valves",
+                "detox_UF_pumps_pump021_gland_m3hr",
+                "detox_UF_pumps_pump021_packing",
+                "detox_UF_pumps_pump021_oil_level",
+                "detox_UF_pumps_pump041_running",
+                "detox_UF_pumps_pump041_valves",
+                "detox_UF_pumps_pump041_gland_m3hr",
+                "detox_UF_pumps_pump041_packing",
+                "detox_UF_pumps_pump041_oil_level",
+                "detox_UF_pumps_sump_pump001_running",
+                "detox_UF_pumps_sump_pump001_valves",
+                "detox_UF_pumps_sump_pump001_gland_m3hr",
+                "detox_UF_pumps_sump_pump001_packing",
+                "detox_UF_pumps_sump_pump001_oil_level",
+                "detox_UF_pumps_sump_pump002_running",
+                "detox_UF_pumps_sump_pump002_valves",
+                "detox_UF_pumps_sump_pump002_gland_m3hr",
+                "detox_UF_pumps_sump_pump002_packing",
+                "detox_UF_pumps_sump_pump002_oil_level",
+                "CIP_tails_pump_001_running",
+                "CIP_tails_pump_001_valves",
+                "CIP_tails_pump_001_gland_m3hr",
+                "CIP_tails_pump_001_packing",
+                "CIP_tails_pump_001_oil_level",
+                "CIP_tails_pump_011_running",
+                "CIP_tails_pump_011_valves",
+                "CIP_tails_pump_011_gland_m3hr",
+                "CIP_tails_pump_011_packing",
+                "CIP_tails_pump_011_oil_level",
+                "CIP_tails_pump_012_running",
+                "CIP_tails_pump_012_valves",
+                "CIP_tails_pump_012_gland_m3hr",
+                "CIP_tails_pump_012_packing",
+                "CIP_tails_pump_012_oil_level",
+                "CIP_tails_clean_pump_box_level_probe_running",
+                "CIP_tails_clean_pump_box_level_probe_valves",
+                "CIP_tails_clean_pump_box_level_probe_gland_m3hr",
+                "CIP_tails_clean_pump_box_level_probe_packing",
+                "CIP_tails_clean_pump_box_level_probe_oil_level",
+                "final_tails_pump001_running",
+                "final_tails_pump001_valves",
+                "final_tails_pump001_gland_m3hr",
+                "final_tails_pump001_packing",
+                "final_tails_pump001_oil_level",
+                "final_tails_pump002_running",
+                "final_tails_pump002_valves",
+                "final_tails_pump002_gland_m3hr",
+                "final_tails_pump002_packing",
+                "final_tails_pump002_oil_level",
+                "final_tails_pump021_running",
+                "final_tails_pump021_valves",
+                "final_tails_pump021_gland_m3hr",
+                "final_tails_pump021_packing",
+                "final_tails_pump021_oil_level",
+                "final_tails_pump022_running",
+                "final_tails_pump022_valves",
+                "final_tails_pump022_gland_m3hr",
+                "final_tails_pump022_packing",
+                "final_tails_pump022_oil_level",
+                "final_tails_pump041_running",
+                "final_tails_pump041_valves",
+                "final_tails_pump041_gland_m3hr",
+                "final_tails_pump041_packing",
+                "final_tails_pump041_oil_level",
+                "final_tails_pump042_running",
+                "final_tails_pump042_valves",
+                "final_tails_pump042_gland_m3hr",
+                "final_tails_pump042_packing",
+                "final_tails_pump042_oil_level",
+                "final_tails_clean_pump_box_level_probe_running",
+                "final_tails_clean_pump_box_level_probe_valves",
+                "final_tails_clean_pump_box_level_probe_gland_m3hr",
+                "final_tails_clean_pump_box_level_probe_packing",
+                "final_tails_clean_pump_box_level_probe_oil_level",
+                "reclaim_pumps_pump_010_running",
+                "reclaim_pumps_pump_010_valves",
+                "reclaim_pumps_pump_010_gland_m3hr",
+                "reclaim_pumps_pump_010_packing",
+                "reclaim_pumps_pump_010_oil_level",
+                "reclaim_pumps_pump_011_running",
+                "reclaim_pumps_pump_011_valves",
+                "reclaim_pumps_pump_011_gland_m3hr",
+                "reclaim_pumps_pump_011_packing",
+                "reclaim_pumps_pump_011_oil_level",
+                "reclaim_pumps_pump_012_running",
+                "reclaim_pumps_pump_012_valves",
+                "reclaim_pumps_pump_012_gland_m3hr",
+                "reclaim_pumps_pump_012_packing",
+                "reclaim_pumps_pump_012_oil_level",
+                "detox_OF_pump002_running",
+                "detox_OF_pump002_valves",
+                "detox_OF_pump002_gland_m3hr",
+                "detox_OF_pump002_packing",
+                "detox_OF_pump002_oil_level",
+                "detox_OF_pump003_running",
+                "detox_OF_pump003_valves",
+                "detox_OF_pump003_gland_m3hr",
+                "detox_OF_pump003_packing",
+                "detox_OF_pump003_oil_level",
+                "f9_s4_notifications",
+                "f9_s4_comments"
+              ]
+            },
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Data Submitted successfully",
+                "type": "warning"
+              }
             }
           }
         }
@@ -279,7 +437,7 @@
                         "{{#each Table_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
-                          "class": "{{styles}}"
+                          "class": "{{styles}} center_align"
                         }
                       }
                     }
@@ -304,7 +462,7 @@
                             },
                             {
                               "type": "horizontal",
-                              "class": "no_padding center_align table_row table_row_odd_styles",
+                              "class": "center_align table_row_height {{row_index%2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
                               "style": {
                                 "height": "6%"
                               },
@@ -335,7 +493,7 @@
                                             {
                                               "type": "label",
                                               "text": "{{label}}",
-                                              "class": "no_padding label_styles black_color center_align"
+                                              "class": "label_styles black_color center_align"
                                             }
                                           ]
                                         },
@@ -374,419 +532,6 @@
               ]
             },
             {
-              "type": "vertical",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding center_align table_row table_row_odd_styles",
-                  "style": {
-                    "height": "6%"
-                  },
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "Pump 002",
-                      "class": "center_align black_color table_body_name_styles"
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "1",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_OF_pump002_running",
-                              "value": "{{$global.detox_OF_pump002_running || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "one",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "2",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_OF_pump002_valves",
-                              "value": "{{$global.detox_OF_pump002_valves || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "two",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "3",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_OF_pump002_gland_m3hr",
-                              "value": "{{$global.detox_OF_pump002_gland_m3hr || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "three",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "4",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_OF_pump002_packing",
-                              "value": "{{$global.detox_OF_pump002_packing || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "four",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "5",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_OF_pump002_oil_level",
-                              "value": "{{$global.detox_OF_pump002_oil_level || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "five",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "class": "no_padding center_align table_row table_row_odd_styles",
-                  "style": {
-                    "height": "6%"
-                  },
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "Pump 003",
-                      "class": "center_align black_color table_body_name_styles"
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "6",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "13%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_OF_pump003_running",
-                              "value": "{{$global.detox_OF_pump003_running || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "six",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "7",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_OF_pump003_valves",
-                              "value": "{{$global.detox_OF_pump003_valves || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "seven",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "8",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_OF_pump003_gland_m3hr",
-                              "value": "{{$global.detox_OF_pump003_gland_m3hr || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "eight",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "9",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_OF_pump003_packing",
-                              "value": "{{$global.detox_OF_pump003_packing || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "nine",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "3%"
-                          },
-                          "components": [
-                            {
-                              "type": "label",
-                              "text": "10",
-                              "class": "no_padding label_styles black_color center_align"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "style": {
-                            "width": "14%"
-                          },
-                          "components": [
-                            {
-                              "type": "textfield",
-                              "name": "detox_OF_pump003_oil_level",
-                              "value": "{{$global.detox_OF_pump003_oil_level || ''}}",
-                              "class": "center_align black_color",
-                              "contentDescription": "ten",
-                              "style": {
-                                "width": "13%",
-                                "height": "4%",
-                                "size": "14"
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "type": "horizontal",
               "items": [
                 {
@@ -810,6 +555,7 @@
               "items": [
                 {
                   "type": "horizontal",
+                  "class": "no_padding",
                   "components": [
                     {
                       "type": "textarea",
@@ -823,8 +569,7 @@
                         "size": "15"
                       }
                     }
-                  ],
-                  "class": "no_padding"
+                  ]
                 }
               ]
             },
@@ -891,7 +636,7 @@
                       "type": "button",
                       "name": "previous",
                       "text": "Previous",
-                      "class": "button_styles center_align",
+                      "class": "button_styles",
                       "action": {
                         "type": "$href",
                         "options": {
@@ -926,7 +671,7 @@
                       "type": "button",
                       "name": "home",
                       "text": "Home",
-                      "class": "button_styles center_align",
+                      "class": "button_styles",
                       "action": {
                         "type": "$href",
                         "options": {
@@ -961,7 +706,7 @@
                       "type": "button",
                       "name": "save",
                       "text": "Save",
-                      "class": "button_styles center_align",
+                      "class": "button_styles",
                       "action": {
                         "trigger": "handleSave"
                       }
@@ -976,174 +721,10 @@
                       "type": "button",
                       "name": "submit",
                       "text": "submit",
-                      "class": "center_align button_styles",
+                      "class": "button_styles",
                       "contentDescription": "submit",
                       "action": {
-                        "type": "$global.reset",
-                        "options": {
-                          "save": "true",
-                          "filename": "CIPChecklist"
-                        },
-                        "success": {
-                          "type": "$global.reset",
-                          "options": {
-                            "items": [
-                              "section_id",
-                              "f9_s1_sign",
-                              "f9_s1_day",
-                              "f9_s1_month",
-                              "f9_s1_year",
-                              "f9_s1_shift",
-                              "f9_s1_operator",
-                              "safety_screen_holed_0640_M221_001",
-                              "safety_screen_blinded_0640_M221_001",
-                              "safety_screen_clean_0640_M221_001",
-                              "safety_screen_good_0640_M221_001",
-                              "safety_screen_holed_0640_M221_002",
-                              "safety_screen_blinded_0640_M221_002",
-                              "safety_screen_clean_0640_M221_002",
-                              "safety_screen_good_0640_M221_002",
-                              "derrrick_screen_holed_0640_M221_101",
-                              "derrrick_screen_blinded_0640_M221_101",
-                              "derrrick_screen_clean_0640_M221_101",
-                              "derrrick_screen_good_0640_M221_101",
-                              "derrick_screen_holed_0640_M221_102",
-                              "derrick_screen_blinded_0640_M221_102",
-                              "derrick_screen_clean_0640_M221_102",
-                              "derrick_screen_good_0640_M221_102",
-                              "derrick_screen_holed_0640_M221_201",
-                              "derrick_screen_blinded_0640_M221_201",
-                              "derrick_screen_clean_0640_M221_201",
-                              "derrick_screen_good_0640_M221_201",
-                              "derrick_screen_holed_0640_M221_202",
-                              "derrick_screen_blinded_0640_M221_202",
-                              "derrick_screen_clean_0640_M221_202",
-                              "derrick_screen_good_0640_M221_202",
-                              "secondary_safety_screen_holed_0640_M221_011",
-                              "secondary_safety_screen_blinded_0640_M221_011",
-                              "secondary_safety_screen_clean_0640_M221_011",
-                              "secondary_safety_screen_good_0640_M221_011",
-                              "secondary_safety_screen_holed_0640_M221_012",
-                              "secondary_safety_screen_blinded_0640_M221_012",
-                              "secondary_safety_screen_clean_0640_M221_012",
-                              "secondary_safety_screen_good_0640_M221_012",
-                              "detox_UF_pumps_pump001_running",
-                              "detox_UF_pumps_pump001_valves",
-                              "detox_UF_pumps_pump001_gland_m3hr",
-                              "detox_UF_pumps_pump001_packing",
-                              "detox_UF_pumps_pump001_oil_level",
-                              "detox_UF_pumps_pump021_running",
-                              "detox_UF_pumps_pump021_valves",
-                              "detox_UF_pumps_pump021_gland_m3hr",
-                              "detox_UF_pumps_pump021_packing",
-                              "detox_UF_pumps_pump021_oil_level",
-                              "detox_UF_pumps_pump041_running",
-                              "detox_UF_pumps_pump041_valves",
-                              "detox_UF_pumps_pump041_gland_m3hr",
-                              "detox_UF_pumps_pump041_packing",
-                              "detox_UF_pumps_pump041_oil_level",
-                              "detox_UF_pumps_sump_pump001_running",
-                              "detox_UF_pumps_sump_pump001_valves",
-                              "detox_UF_pumps_sump_pump001_gland_m3hr",
-                              "detox_UF_pumps_sump_pump001_packing",
-                              "detox_UF_pumps_sump_pump001_oil_level",
-                              "detox_UF_pumps_sump_pump002_running",
-                              "detox_UF_pumps_sump_pump002_valves",
-                              "detox_UF_pumps_sump_pump002_gland_m3hr",
-                              "detox_UF_pumps_sump_pump002_packing",
-                              "detox_UF_pumps_sump_pump002_oil_level",
-                              "CIP_tails_pump_001_running",
-                              "CIP_tails_pump_001_valves",
-                              "CIP_tails_pump_001_gland_m3hr",
-                              "CIP_tails_pump_001_packing",
-                              "CIP_tails_pump_001_oil_level",
-                              "CIP_tails_pump_011_running",
-                              "CIP_tails_pump_011_valves",
-                              "CIP_tails_pump_011_gland_m3hr",
-                              "CIP_tails_pump_011_packing",
-                              "CIP_tails_pump_011_oil_level",
-                              "CIP_tails_pump_012_running",
-                              "CIP_tails_pump_012_valves",
-                              "CIP_tails_pump_012_gland_m3hr",
-                              "CIP_tails_pump_012_packing",
-                              "CIP_tails_pump_012_oil_level",
-                              "CIP_tails_clean_pump_box_level_probe_running",
-                              "CIP_tails_clean_pump_box_level_probe_valves",
-                              "CIP_tails_clean_pump_box_level_probe_gland_m3hr",
-                              "CIP_tails_clean_pump_box_level_probe_packing",
-                              "CIP_tails_clean_pump_box_level_probe_oil_level",
-                              "final_tails_pump001_running",
-                              "final_tails_pump001_valves",
-                              "final_tails_pump001_gland_m3hr",
-                              "final_tails_pump001_packing",
-                              "final_tails_pump001_oil_level",
-                              "final_tails_pump002_running",
-                              "final_tails_pump002_valves",
-                              "final_tails_pump002_gland_m3hr",
-                              "final_tails_pump002_packing",
-                              "final_tails_pump002_oil_level",
-                              "final_tails_pump021_running",
-                              "final_tails_pump021_valves",
-                              "final_tails_pump021_gland_m3hr",
-                              "final_tails_pump021_packing",
-                              "final_tails_pump021_oil_level",
-                              "final_tails_pump022_running",
-                              "final_tails_pump022_valves",
-                              "final_tails_pump022_gland_m3hr",
-                              "final_tails_pump022_packing",
-                              "final_tails_pump022_oil_level",
-                              "final_tails_pump041_running",
-                              "final_tails_pump041_valves",
-                              "final_tails_pump041_gland_m3hr",
-                              "final_tails_pump041_packing",
-                              "final_tails_pump041_oil_level",
-                              "final_tails_pump042_running",
-                              "final_tails_pump042_valves",
-                              "final_tails_pump042_gland_m3hr",
-                              "final_tails_pump042_packing",
-                              "final_tails_pump042_oil_level",
-                              "final_tails_clean_pump_box_level_probe_running",
-                              "final_tails_clean_pump_box_level_probe_valves",
-                              "final_tails_clean_pump_box_level_probe_gland_m3hr",
-                              "final_tails_clean_pump_box_level_probe_packing",
-                              "final_tails_clean_pump_box_level_probe_oil_level",
-                              "reclaim_pumps_pump_010_running",
-                              "reclaim_pumps_pump_010_valves",
-                              "reclaim_pumps_pump_010_gland_m3hr",
-                              "reclaim_pumps_pump_010_packing",
-                              "reclaim_pumps_pump_010_oil_level",
-                              "reclaim_pumps_pump_011_running",
-                              "reclaim_pumps_pump_011_valves",
-                              "reclaim_pumps_pump_011_gland_m3hr",
-                              "reclaim_pumps_pump_011_packing",
-                              "reclaim_pumps_pump_011_oil_level",
-                              "reclaim_pumps_pump_012_running",
-                              "reclaim_pumps_pump_012_valves",
-                              "reclaim_pumps_pump_012_gland_m3hr",
-                              "reclaim_pumps_pump_012_packing",
-                              "reclaim_pumps_pump_012_oil_level",
-                              "detox_OF_pump002_running",
-                              "detox_OF_pump002_valves",
-                              "detox_OF_pump002_gland_m3hr",
-                              "detox_OF_pump002_packing",
-                              "detox_OF_pump002_oil_level",
-                              "detox_OF_pump003_running",
-                              "detox_OF_pump003_valves",
-                              "detox_OF_pump003_gland_m3hr",
-                              "detox_OF_pump003_packing",
-                              "detox_OF_pump003_oil_level",
-                              "f9_s4_notifications",
-                              "f9_s4_comments"
-                            ]
-                          },
-                          "success": {
-                            "type": "$util.toast",
-                            "options": {
-                              "text": "Data Submitted successfully",
-                              "type": "warning"
-                            }
-                          }
-                        }
+                        "trigger": "handleSubmit"
                       }
                     },
                     {
