@@ -209,15 +209,13 @@
                 "$load": {
                     "type": "$global.set",
                     "options": {
-                        "so2_screen3_safety_perimeter_cones": "{{$global.so2_screen3_safety_perimeter_cones || 'true'}}",
-                        "so2_screen3_truck_wheels_choked": "{{$global.so2_screen3_truck_wheels_choked || 'true'}}",
-                        "so2_screen3_safety_shower": "{{$global.so2_screen3_safety_shower || 'true'}}",
-                        "so2_screen3_escape_packs_inspection": "{{$global.so2_screen3_escape_packs_inspection || 'true'}}",
-                        "so2_screen3_storage_tank_1": "{{$global.so2_screen3_storage_tank_1_level || 'true'}}",
-                        "so2_screen3_storage_tank_2": "{{$global.so2_screen3_storage_tank_2 || 'true'}}",
-                        "so2_screen3_storage_tank_3": "{{$global.so2_screen3_storage_tank_3 || 'true'}}",
-                        "so2_screen3_storage_tank_4": "{{$global.so2_screen3_storage_tank_4 || 'true'}}"
-
+                        "so2_screen3_liquid_so2": "{{$global.so2_screen3_liquid_so2 || 'true'}}",
+                        "so2_screen3_so2_value_at_offload": "{{$global.so2_screen3_so2_value_at_offload || 'true'}}",
+                        "so2_screen3_respirator_mask": "{{$global.so2_screen3_respirator_mask || 'true'}}",
+                        "so2_screen3_chemical_resistant_suit": "{{$global.so2_screen3_chemical_resistant_suit || 'true'}}",
+                        "so2_screen3_chemical_resistant_gloves": "{{$global.so2_screen3_chemical_resistant_gloves || 'true'}}",
+                        "so2_screen3_chemical_boots": "{{$global.so2_screen3_chemical_boots || 'true'}}"
+                      
 
                     }
                 },
@@ -231,26 +229,22 @@
                     "type": "$global.set",
                     "options": {
                         "section_id": "Reagent_Operator",
-                        "so2_screen3_safety_perimeter_cones": "{{$global.so2_screen3_safety_perimeter_cones}}",
-                        "so2_screen3_safety_perimeter_cones_comments": "{{$get.so2_screen3_safety_perimeter_cones_comments}}",
-                        "so2_screen3_truck_wheels_choked": "{{$global.so2_screen3_truck_wheels_choked}}",
-                        "so2_screen3_truck_wheels_choked_comments": "{{$get.so2_screen3_truck_wheels_choked_comments}}",
-                        "so2_screen3_safety_shower": "{{$global.so2_screen3_safety_shower}}",
-                        "so2_screen3_safety_shower_comments": "{{$get.so2_screen3_safety_shower_comments}}",
-                        "so2_screen3_escape_packs_inspection": "{{$global.so2_screen3_escape_packs_inspection}}",
-                        "so2_screen3_escape_packs_inspection_comments": "{{$get.so2_screen3_escape_packs_inspection_comments}}",
-                        "so2_screen3_storage_tank_1_level": "{{$get.so2_screen3_storage_tank_1_level}}",
-                        "so2_screen3_storage_tank_1": "{{$global.so2_screen3_storage_tank_1}}",
-                        "so2_screen3_storage_tank_1_comments": "{{$get.so2_screen3_storage_tank_1_comments}}",
-                        "so2_screen3_storage_tank_2_level": "{{$get.so2_screen3_storage_tank_2_level}}",
-                        "so2_screen3_storage_tank_2": "{{$global.so2_screen3_storage_tank_2}}",
-                        "so2_screen3_storage_tank_2_comments": "{{$get.so2_screen3_storage_tank_2_comments}}",
-                        "so2_screen3_storage_tank_3_level": "{{$get.so2_screen3_storage_tank_3_level}}",
-                        "so2_screen3_storage_tank_3": "{{$global.so2_screen3_storage_tank_3}}",
-                        "so2_screen3_storage_tank_3_comments": "{{$get.so2_screen3_storage_tank_3_comments}}",
-                        "so2_screen3_storage_tank_4_level": "{{$get.so2_screen3_storage_tank_4_level}}",
-                        "so2_screen3_storage_tank_4": "{{$global.so2_screen3_storage_tank_4}}",
-                        "so2_screen3_storage_tank_4_comments": "{{$get.so2_screen3_storage_tank_4_comments}}"
+                        "so2_screen3_liquid_so2": "{{$global.so2_screen3_liquid_so2}}",
+                        "so2_screen3_liquid_so2_level": "{{$get.so2_screen3_liquid_so2_level}}",
+                        "so2_screen3_liquid_so2_level_comments": "{{$global.so2_screen3_liquid_so2_level_comments}}",
+                        "so2_screen3_so2_value_at_offload": "{{$global.so2_screen3_so2_value_at_offload}}",
+                        "so2_screen3_so2_value_at_offload_value": "{{$get.so2_screen3_so2_value_at_offload_value}}",
+                        "so2_screen3_so2_value_at_offload_comments": "{{$get.so2_screen3_so2_value_at_offload_comments}}",
+                        "so2_screen3_respirator_mask": "{{$global.so2_screen3_respirator_mask}}",
+                        "so2_screen3_respirator_mask_comments": "{{$get.so2_screen3_respirator_mask_comments}}",
+                        "so2_screen3_chemical_resistant_suit": "{{$global.so2_screen3_chemical_resistant_suit}}",
+                        "so2_screen3_chemical_resistant_suit_comments": "{{$get.so2_screen3_chemical_resistant_suit_comments}}",
+                        "so2_screen3_chemical_resistant_gloves": "{{$global.so2_screen3_chemical_resistant_gloves}}",
+                        "so2_screen3_chemical_resistant_gloves_comments": "{{$get.so2_screen3_chemical_resistant_gloves_comments}}",
+                        "so2_screen3_chemical_boots": "{{$get.so2_screen3_chemical_boots}}",
+                        "so2_screen3_chemical_boots_comments": "{{$global.so2_screen3_chemical_boots_comments}}",
+                        "so2_screen3_operator_sign": "{{$get.so2_screen3_operator_sign}}",
+                        "so2_screen3_truck_driver_sign": "{{$get.so2_screen3_truck_driver_sign}}"
 
 
                     },
@@ -357,7 +351,7 @@
                                                 {
                                                     "type": "textfield",
                                                     "name": "so2_screen3_liquid_so2_level",
-                                                    "value": "{{$global.so2_screen3_storage_tank_2_level || ''}}",
+                                                    "value": "{{$global.so2_screen3_liquid_so2_level || ''}}",
                                                     "class": "content_style_even",
                                                     "contentDescription": "one",
                                                     "style":{
@@ -383,13 +377,13 @@
 
                                             "type": "switch",
                                             "name": "so2_screen3_liquid_so2",
-                                            "value": "{{$global.so2_screen3_storage_tank_2}}",
+                                            "value": "{{$global.so2_screen3_liquid_so2}}",
                                             "class": "content_style_even switch_styles",
                                             "contentDescription": "two",
                                             "action": {
                                                 "type": "$global.set",
                                                 "options": {
-                                                    "so2_screen3_storage_tank_2": "{{$get.so2_screen3_storage_tank_2}}"
+                                                    "so2_screen3_liquid_so2": "{{$get.so2_screen3_liquid_so2}}"
                                                 }
                                             }
 
@@ -414,7 +408,7 @@
                                                 {
                                                     "type": "textarea",
                                                     "name": "so2_screen3_liquid_so2_level_comments",
-                                                    "value": "{{$global.so2_screen3_storage_tank_2_comments || ''}}",
+                                                    "value": "{{$global.so2_screen3_liquid_so2_level_comments || ''}}",
                                                     "class": "content_style_even",
                                                     "contentDescription": "three",
                                                     "style": {
@@ -492,7 +486,7 @@
                                         {
 
                                             "type": "switch",
-                                            "name": "so2_screen3_liquid_so2",
+                                            "name": "so2_screen3_so2_value_at_offload",
                                             "value": "{{$global.so2_screen3_so2_value_at_offload}}",
                                             "class": "content_style_odd switch_styles",
                                             "contentDescription": "five",
