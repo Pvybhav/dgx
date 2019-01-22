@@ -437,44 +437,46 @@
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "Portable S02 badge value at offload station",
-                                            "class": "content_style_odd title_styles",
+                                            "text": "POrtable SO2 badge value at offload",
+                                            "class": "content_style_even title_styles",
                                             "style": {
                                                 "width": "40%",
-                                                "padding": "4",
+                                                "padding": "6",
                                                 "height":"8%",
-                                                                                              "padding_left":"2%"
+                                                "padding_left":"2%"
                                             }
 
                                         }, {
                                             "type": "label",
                                             "text": "4",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_even center_align",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "4",
-                                                "height":"8%"                                         }
+                                                "height":"8%"                                           }
 
                                         },
                                         {
-                                            "type": "textarea",
-                                            "name": "so2_screen3_liquid_so2_level",
-                                            "value": "{{$global.so2_screen3_storage_tank_2_level || ''}}",
-                                            "class": "content_style_odd",
-                                            "contentDescription": "four",
-                                            "style": {
-                                                "padding": "3",
-                                                "width": "10%"
-
-                                                
-
-                                            }
-
-                                        },
+                                            "type":"horizontal",
+                                            "style":{
+                                                "width":"15%"
+                                            },
+                                            "components":[
+                                                {
+                                                    "type": "textfield",
+                                                    "name": "so2_screen3_so2_value_at_offload_value",
+                                                    "value": "{{$global.so2_screen3_so2_value_at_offload_value || ''}}",
+                                                    "class": "content_style_even",
+                                                    "contentDescription": "fout"
+        
+                                                }
+                                            ]
+                                        }
+                                        ,
                                         {
                                             "type": "label",
                                             "text": "5",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_even center_align",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "4",
@@ -485,13 +487,13 @@
 
                                             "type": "switch",
                                             "name": "so2_screen3_liquid_so2",
-                                            "value": "{{$global.so2_screen3_storage_tank_2}}",
-                                            "class": "content_style_odd switch_styles",
+                                            "value": "{{$global.so2_screen3_so2_value_at_offload}}",
+                                            "class": "content_style_even switch_styles",
                                             "contentDescription": "five",
                                             "action": {
                                                 "type": "$global.set",
                                                 "options": {
-                                                    "so2_screen3_storage_tank_2": "{{$get.so2_screen3_storage_tank_2}}"
+                                                    "so2_screen3_so2_value_at_offload": "{{$get.so2_screen3_so2_value_at_offload}}"
                                                 }
                                             }
 
@@ -500,29 +502,38 @@
                                         {
                                             "type": "label",
                                             "text": "6",
-                                            "class": "content_style_odd center_align",
+                                            "class": "content_style_even center_align",
                                             "style": {
                                                 "width": "5%",
                                                 "padding": "4",
-                                                "height":"6%"
-                                            }
+                                                "height":"8%"                                            }
 
                                         },
                                         {
-                                            "type": "textarea",
-                                            "name": "so2_screen3_liquid_so2_level_comments",
-                                            "value": "{{$global.so2_screen3_storage_tank_2_comments || ''}}",
-                                            "class": "content_style_odd",
-                                            "contentDescription": "six",
-                                            "style": {
-                                                "padding": "3",
-                                                "width": "25%"
-
-                                                
-
-                                            }
-
+                                            "type":"horizontal",
+                                            "style":{
+                                                "width":"25%"
+                                            },
+                                            "components":[
+                                                {
+                                                    "type": "textfield",
+                                                    "name": "so2_screen3_so2_value_at_offload_comments",
+                                                    "value": "{{$global.so2_screen3_so2_value_at_offload_comments || ''}}",
+                                                    "class": "content_style_even",
+                                                    "contentDescription": "six",
+                                                    "style": {
+                                                        "padding": "3",
+                                                        "width": "25%",
+                                                        "height":"8%"
+        
+                                                        
+        
+                                                    }
+        
+                                                }
+                                            ]
                                         }
+                                        
                                     ],
                                     "class": "no_padding"
                                 },
