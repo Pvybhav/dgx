@@ -243,10 +243,17 @@
         "$pull": {
           "type": "$reload"
         },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
+        },
         "handleSave": {
           "type": "$global.set",
           "options": {
-            "section_id": "form9_page3",
+            "section_id": "form9_page4",
             "detox_OF_pump002_running": "{{ $get.detox_OF_pump002_running }}",
             "detox_OF_pump002_valves": "{{ $get.detox_OF_pump002_valves }}",
             "detox_OF_pump002_gland_m3hr": "{{ $get.detox_OF_pump002_gland_m3hr }}",
@@ -431,13 +438,6 @@
                 "message": "Data Submitted successfully"
               }
             }
-          }
-        },
-        "displayToaster": {
-          "type": "$util.toast",
-          "options": {
-            "text": "{{$jason.message}}",
-            "type": "warning"
           }
         }
       },

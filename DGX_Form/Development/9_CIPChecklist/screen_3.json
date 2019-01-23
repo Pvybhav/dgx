@@ -79,79 +79,56 @@
       },
       "data": {
         "Page_Heading": "CIP Report",
+        "loading_image_url": "file://infinit.gif",
         "Table1_Headers": [
           {
-            "type": "label",
             "value": "Final Tails",
-            "col_type": "col_name",
             "styles": "table_header_styles center_align table_header_name_styles"
           },
           {
-            "type": "label",
             "value": "Running",
-            "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Valves",
-            "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Gland m3/hr",
-            "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Packing",
-            "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Oil Level",
-            "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           }
         ],
         "Table2_Headers": [
           {
-            "type": "label",
             "value": "Reclaim Pumps",
-            "col_type": "col_name",
             "styles": "table_header_styles center_align table_header_name_styles"
           },
           {
-            "type": "label",
             "value": "Running",
-            "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Valves",
-            "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Gland m3/hr",
-            "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Packing",
-            "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Oil Level",
-            "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           }
         ]
@@ -160,15 +137,21 @@
         "$load": {
           "type": "$render",
           "success": {
-            "type": "$util.toast",
+            "trigger": "displayToaster",
             "options": {
-              "text": "Page loaded successfully",
-              "type": "warning"
+              "message": "Page loaded successfully"
             }
           }
         },
         "$pull": {
           "type": "$reload"
+        },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
         },
         "handleSave": {
           "type": "$global.set",
@@ -226,10 +209,9 @@
             "reclaim_pumps_pump_012_oil_level": "{{ $get.reclaim_pumps_pump_012_oil_level || ''}}"
           },
           "success": {
-            "type": "$util.toast",
+            "trigger": "displayToaster",
             "options": {
-              "text": "Saved Successfully",
-              "type": "warning"
+              "message": "Saved Successfully"
             }
           }
         }
