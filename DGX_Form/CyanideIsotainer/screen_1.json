@@ -311,10 +311,10 @@
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "Install safety perimeter cones",
+                                            "text": "HCN gas detector reading 675-AIT-8090A",
                                             "class": "content_style_odd title_styles",
                                             "style": {
-                                                "width": "55%",
+                                                "width": "60%",
                                                 "padding": "4",
                                                 "height": "6%",
                                                 "padding_left": "2%",
@@ -324,62 +324,27 @@
                                         },
                                         {
                                             "type": "label",
-                                            "text": "1",
+                                            "text": "PPM",
                                             "class": "content_style_odd center_align label_description_style",
                                             "style": {
-                                                "width": "5%",
+                                                "width": "20%",
                                                 "padding": "4",
                                                 "height": "6%"
                                             }
-
-                                        },
-                                        {
-
-                                            "type": "switch",
-                                            "name": "so2_screen2_safety_perimeter_cones",
-                                            "value": "{{$global.so2_screen2_safety_perimeter_cones || 'true'}}",
-                                            "class": "content_style_odd switch_styles",
-                                            "contentDescription": "one",
-                                            "action": {
-                                                "type": "$global.set",
-                                                "options": {
-                                                    "so2_screen2_safety_perimeter_cones": "{{$get.so2_screen2_safety_perimeter_cones}}"
-                                                }
-                                            }
-
 
                                         },
                                         {
                                             "type": "label",
-                                            "text": "2",
+                                            "text": " ",
                                             "class": "content_style_odd center_align label_description_style",
                                             "style": {
-                                                "width": "5%",
+                                                "width": "20%",
                                                 "padding": "4",
                                                 "height": "6%"
-
                                             }
 
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "25%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "so2_screen2_safety_perimeter_cones_comments",
-                                                "value": "{{$global.so2_screen2_safety_perimeter_cones_comments || ''}}",
-                                                "contentDescription": "two",
-
-                                                "class": "content_style_odd",
-                                                "style": {
-                                                    "padding": "4"
-
-                                                }
-
-                                            }]
+                                        }
+                                        ]
                                         }
 
 
