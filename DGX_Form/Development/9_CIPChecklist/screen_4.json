@@ -8,9 +8,6 @@
         "no_padding": {
           "padding": "0"
         },
-        "no_border": {
-          "border": "none"
-        },
         "center_align": {
           "align": "center"
         },
@@ -19,10 +16,6 @@
         },
         "table_header_name_styles": {
           "width": "20%",
-          "border": "rgb(255, 255, 255)"
-        },
-        "table_header_description_styles": {
-          "width": "25%",
           "border": "rgb(255, 255, 255)"
         },
         "table_header_value_styles": {
@@ -35,11 +28,16 @@
         "table_body_name_styles": {
           "width": "20%"
         },
-        "table_body_description_styles": {
-          "width": "25%"
+        "table_body_textfield_width": {
+          "width": "13%"
         },
-        "table_body_value_styles": {
-          "width": "16%"
+        "table_body_label_width": {
+          "width": "3%"
+        },
+        "table_body_textfield_styles": {
+          "width": "13%",
+          "height": "4%",
+          "size": "14"
         },
         "label_styles": {
           "font": "HelveticaNeue-Bold",
@@ -56,10 +54,10 @@
           "padding_bottom": "1%"
         },
         "table_odd_row_styles": {
-          "background": "rgb(204,206,213)"
+          "background": "rgb(231,232,235)"
         },
         "table_even_row_styles": {
-          "background": "rgb(231,232,235)"
+          "background": "rgb(204,206,213)"
         },
         "table_fields_size": {
           "size": "16"
@@ -69,58 +67,66 @@
           "height": "7%",
           "color": "rgb(255,255,255)",
           "background": "rgb(0,147,215)",
-          "corner_radius": "1%",
-          "align": "center"
+          "corner_radius": "1%"
         },
-        "switch_styles": {
-          "color": "rgb(0,255,0)",
-          "color:disabled": "rgb(255,0,0)",
-          "align": "center"
+        "footer_styles": {
+          "padding_top": "1%",
+          "padding_bottom": "1%"
+        },
+        "loading_image_styles": {
+          "top": "50%-25",
+          "left": "50%-25",
+          "width": "50",
+          "height": "50"
+        },
+        "preload_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "comments_title_styles": {
+          "width": "100%"
+        },
+        "comments_styles": {
+          "width": "100%",
+          "height": "15%",
+          "size": "15"
+        },
+        "footer_buttons_spacing": {
+          "spacing": "5%"
         }
       },
       "data": {
         "Page_Heading": "CIP Report",
+        "loading_image_url": "file://infinit.gif",
         "Table_Headers": [
           {
-            "type": "label",
             "value": "Detox O/F",
-            "col_type": "col_name",
             "styles": "table_header_styles table_header_name_styles"
           },
           {
-            "type": "label",
             "value": "Running",
-            "col_type": "col_value",
             "styles": "table_header_styles table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Valves",
-            "col_type": "col_value",
             "styles": "table_header_styles table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Gland m3/hr",
-            "col_type": "col_value",
             "styles": "table_header_styles table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Packing",
-            "col_type": "col_value",
             "styles": "table_header_styles table_header_value_styles"
           },
           {
-            "type": "label",
             "value": "Oil Level",
-            "col_type": "col_value",
             "styles": "table_header_styles table_header_value_styles"
           }
         ],
         "Table_Rows": [
           {
             "row_name": "Pump 002",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -156,6 +162,7 @@
           },
           {
             "row_name": "Pump 003",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -189,7 +196,29 @@
               }
             ]
           }
-        ]
+        ],
+        "Footer_Buttons": {
+          "previous": {
+            "displayName": "Previous",
+            "contentDescription": "previous",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_3.json"
+          },
+          "home": {
+            "displayName": "Home",
+            "contentDescription": "home",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+          },
+          "save": {
+            "displayName": "Save",
+            "contentDescription": "save",
+            "url": ""
+          },
+          "submit": {
+            "displayName": "Submit",
+            "contentDescription": "submit",
+            "url": ""
+          }
+        }
       },
       "actions": {
         "$load": {
@@ -204,10 +233,9 @@
           "success": {
             "type": "$render",
             "success": {
-              "type": "$util.toast",
+              "trigger": "displayToaster",
               "options": {
-                "text": "Page loaded successfully",
-                "type": "warning"
+                "message": "Page loaded successfully"
               }
             }
           }
@@ -233,10 +261,9 @@
             "f9_s4_comments": "{{ $get.comments || '' }}"
           },
           "success": {
-            "type": "$util.toast",
+            "trigger": "displayToaster",
             "options": {
-              "text": "Saved Successfully",
-              "type": "warning"
+              "message": "Saved Successfully"
             }
           }
         },
@@ -399,12 +426,18 @@
               ]
             },
             "success": {
-              "type": "$util.toast",
+              "trigger": "displayToaster",
               "options": {
-                "text": "Data Submitted successfully",
-                "type": "warning"
+                "message": "Data Submitted successfully"
               }
             }
+          }
+        },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
           }
         }
       },
@@ -462,10 +495,7 @@
                             },
                             {
                               "type": "horizontal",
-                              "class": "center_align table_row_height {{row_index%2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
-                              "style": {
-                                "height": "6%"
-                              },
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
                               "components": [
                                 {
                                   "type": "horizontal",
@@ -473,8 +503,8 @@
                                   "components": [
                                     {
                                       "type": "label",
-                                      "text": "{{var current_field_name = $root.Table_Rows[$index].row_name; return current_field_name;}}",
-                                      "class": "center_align black_color table_body_name_styles"
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}}"
                                     }
                                   ]
                                 },
@@ -486,34 +516,25 @@
                                       "components": [
                                         {
                                           "type": "vertical",
-                                          "style": {
-                                            "width": "3%"
-                                          },
+                                          "class": "table_body_label_width",
                                           "components": [
                                             {
                                               "type": "label",
                                               "text": "{{label}}",
-                                              "class": "label_styles black_color center_align"
+                                              "class": "label_styles black_color center_align table_row_height"
                                             }
                                           ]
                                         },
                                         {
                                           "type": "vertical",
-                                          "style": {
-                                            "width": "13%"
-                                          },
+                                          "class": "table_body_textfield_width",
                                           "components": [
                                             {
                                               "type": "{{type}}",
                                               "name": "{{name}}",
                                               "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                              "class": "center_align black_color",
-                                              "contentDescription": "{{contentDescription}}",
-                                              "style": {
-                                                "width": "13%",
-                                                "height": "4%",
-                                                "size": "14"
-                                              }
+                                              "class": "center_align black_color table_body_textfield_styles",
+                                              "contentDescription": "{{contentDescription}}"
                                             }
                                           ]
                                         }
@@ -541,10 +562,7 @@
                     {
                       "type": "label",
                       "text": "Notifications",
-                      "class": "table_header_styles",
-                      "style": {
-                        "width": "100%"
-                      }
+                      "class": "table_header_styles comments_title_styles"
                     }
                   ]
                 }
@@ -560,14 +578,10 @@
                     {
                       "type": "textarea",
                       "name": "notifications",
+                      "class": "comments_styles",
                       "value": "{{$global.f9_s4_notifications || ''}}",
                       "placeholder": "Enter Notifications",
-                      "contentDescription": "notifications",
-                      "style": {
-                        "width": "100%",
-                        "height": "15%",
-                        "size": "15"
-                      }
+                      "contentDescription": "notifications"
                     }
                   ]
                 }
@@ -583,10 +597,7 @@
                     {
                       "type": "label",
                       "text": "Comments",
-                      "class": "table_header_styles",
-                      "style": {
-                        "width": "100%"
-                      }
+                      "class": "table_header_styles comments_title_styles"
                     }
                   ]
                 }
@@ -601,14 +612,10 @@
                     {
                       "type": "textarea",
                       "name": "comments",
+                      "class": "comments_styles",
                       "value": "{{$global.f9_s4_comments || ''}}",
                       "placeholder": "Enter Comments",
-                      "contentDescription": "comments",
-                      "style": {
-                        "width": "100%",
-                        "height": "15%",
-                        "size": "15"
-                      }
+                      "contentDescription": "comments"
                     }
                   ],
                   "class": "no_padding"
@@ -620,41 +627,31 @@
               "items": [
                 {
                   "type": "horizontal",
-                  "class": "no_padding center_align",
-                  "style": {
-                    "padding_top": "1%",
-                    "padding_bottom": "1%"
-                  },
+                  "class": "no_padding center_align footer_styles footer_buttons_spacing",
                   "components": [
                     {
                       "type": "space",
                       "style": {
-                        "width": "20%"
+                        "width": "{{(100 % (Object.keys(Footer_Buttons).length*20))-5}}%"
                       }
                     },
                     {
                       "type": "button",
-                      "name": "previous",
-                      "text": "Previous",
-                      "class": "button_styles",
+                      "name": "{{Footer_Buttons.previous.contentDescription}}",
+                      "text": "{{Footer_Buttons.previous.displayName}}",
+                      "class": "button_styles center_align",
+                      "contentDescription": "{{Footer_Buttons.previous.contentDescription}}",
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_3.json",
+                          "url": "{{Footer_Buttons.previous.url}}",
                           "preload": {
-                            "style": {
-                              "background": "#ff0000"
-                            },
+                            "class": "preload_styles",
                             "layers": [
                               {
                                 "type": "image",
-                                "url": "file://infinit.gif",
-                                "style": {
-                                  "top": "50%-25",
-                                  "left": "50%-25",
-                                  "width": "50",
-                                  "height": "50"
-                                }
+                                "url": "{{loading_image_url}}",
+                                "class": "loading_image_styles"
                               }
                             ]
                           }
@@ -662,34 +659,22 @@
                       }
                     },
                     {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
                       "type": "button",
-                      "name": "home",
-                      "text": "Home",
-                      "class": "button_styles",
+                      "name": "{{Footer_Buttons.home.contentDescription}}",
+                      "text": "{{Footer_Buttons.home.displayName}}",
+                      "class": "button_styles center_align",
+                      "contentDescription": "{{Footer_Buttons.home.contentDescription}}",
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+                          "url": "{{Footer_Buttons.home.url}}",
                           "preload": {
-                            "style": {
-                              "background": "#ff0000"
-                            },
+                            "class": "preload_styles",
                             "layers": [
                               {
                                 "type": "image",
-                                "url": "file://infinit.gif",
-                                "style": {
-                                  "top": "50%-25",
-                                  "left": "50%-25",
-                                  "width": "50",
-                                  "height": "50"
-                                }
+                                "url": "{{loading_image_url}}",
+                                "class": "loading_image_styles"
                               }
                             ]
                           }
@@ -697,40 +682,23 @@
                       }
                     },
                     {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
                       "type": "button",
-                      "name": "save",
-                      "text": "Save",
-                      "class": "button_styles",
+                      "name": "{{Footer_Buttons.save.contentDescription}}",
+                      "text": "{{Footer_Buttons.save.displayName}}",
+                      "class": "button_styles center_align",
+                      "contentDescription": "{{Footer_Buttons.save.contentDescription}}",
                       "action": {
                         "trigger": "handleSave"
                       }
                     },
                     {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
                       "type": "button",
-                      "name": "submit",
-                      "text": "submit",
-                      "class": "button_styles",
-                      "contentDescription": "submit",
+                      "name": "{{Footer_Buttons.submit.contentDescription}}",
+                      "text": "{{Footer_Buttons.submit.displayName}}",
+                      "class": "button_styles center_align",
+                      "contentDescription": "{{Footer_Buttons.submit.contentDescription}}",
                       "action": {
                         "trigger": "handleSubmit"
-                      }
-                    },
-                    {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
                       }
                     }
                   ]
