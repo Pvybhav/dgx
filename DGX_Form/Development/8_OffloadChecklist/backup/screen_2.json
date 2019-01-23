@@ -49,6 +49,10 @@
           "color": "rgb(0, 0, 0)",
           "border": "#ffffff"
         },
+        "label_description_style": {
+          "font": "HelveticaNeue-Bold",
+          "size": "15"
+        },
         "content_style_eventextfield": {
           "background": "rgb(231, 232, 235)",
           "color": "rgb(0, 0, 0)"
@@ -279,7 +283,7 @@
                       "style": {
                         "width": "60%"
                       },
-                      "class": "header_style"
+                      "class": "header_style label_description_style"
                     },
                     {
                       "type": "label",
@@ -295,10 +299,10 @@
                       "style": {
                         "width": "30%"
                       },
-                      "class": "header_style"
+                      "class": "header_style label_description_style"
                     }
                   ],
-                  "class": "no_padding"
+                  "class": "no_padding label_description_style"
                 },
                 {
                   "type": "horizontal",
@@ -315,13 +319,14 @@
                         "width": "55%",
                         "padding": "4",
                         "height": "6%",
-                        "padding_left": "2%"
+                        "padding_left": "2%",
+                        "size": "15"
                       }
                     },
                     {
                       "type": "label",
                       "text": "1",
-                      "class": "content_style_odd center_align",
+                      "class": "content_style_odd center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -331,7 +336,7 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_safety_perimeter_cones",
-                      "value": "{{$global.so2_screen2_safety_perimeter_cones}}",
+                      "value": "{{$global.so2_screen2_safety_perimeter_cones || 'true'}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "one",
                       "action": {
@@ -344,7 +349,7 @@
                     {
                       "type": "label",
                       "text": "2",
-                      "class": "content_style_odd center_align",
+                      "class": "content_style_odd center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -387,13 +392,14 @@
                         "width": "55%",
                         "padding": "4",
                         "height": "6%",
-                        "padding_left": "2%"
+                        "padding_left": "2%",
+                        "size": "15"
                       }
                     },
                     {
                       "type": "label",
                       "text": "3",
-                      "class": "content_style_even center_align textarea_style",
+                      "class": "content_style_even center_align textarea_style label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -403,7 +409,7 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_truck_wheels_choked",
-                      "value": "{{$global.so2_screen2_truck_wheels_choked}}",
+                      "value": "{{$global.so2_screen2_truck_wheels_choked || 'true'}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "three",
                       "action": {
@@ -416,7 +422,7 @@
                     {
                       "type": "label",
                       "text": "4",
-                      "class": "content_style_even center_align textarea_style",
+                      "class": "content_style_even center_align textarea_style label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -459,13 +465,14 @@
                         "width": "55%",
                         "padding": "4",
                         "height": "6%",
-                        "padding_left": "2%"
+                        "padding_left": "2%",
+                        "size": "15"
                       }
                     },
                     {
                       "type": "label",
                       "text": "5",
-                      "class": "content_style_odd center_align textarea_style",
+                      "class": "content_style_odd center_align textarea_style label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -475,7 +482,7 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_safety_shower",
-                      "value": "{{$global.so2_screen2_safety_shower}}",
+                      "value": "{{$global.so2_screen2_safety_shower || 'true'}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "five",
                       "action": {
@@ -488,7 +495,7 @@
                     {
                       "type": "label",
                       "text": "6",
-                      "class": "content_style_odd center_align textarea_style",
+                      "class": "content_style_odd center_align textarea_style label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -531,13 +538,14 @@
                         "width": "55%",
                         "padding": "4",
                         "height": "6%",
-                        "padding_left": "2%"
+                        "padding_left": "2%",
+                        "size": "15"
                       }
                     },
                     {
                       "type": "label",
                       "text": "7",
-                      "class": "content_style_even center_align textarea_style",
+                      "class": "content_style_even center_align textarea_style label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -547,7 +555,7 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_escape_packs_inspection",
-                      "value": "{{$global.so2_screen2_escape_packs_inspection}}",
+                      "value": "{{$global.so2_screen2_escape_packs_inspection || 'true'}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "seven",
                       "action": {
@@ -560,7 +568,7 @@
                     {
                       "type": "label",
                       "text": "8",
-                      "class": "content_style_even center_align textarea_style",
+                      "class": "content_style_even center_align textarea_style label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -600,7 +608,7 @@
                       "style": {
                         "width": "60%"
                       },
-                      "class": "header_style"
+                      "class": "header_style label_description_style"
                     },
                     {
                       "type": "label",
@@ -619,7 +627,7 @@
                       "class": "header_style"
                     }
                   ],
-                  "class": "no_padding"
+                  "class": "no_padding label_description_style"
                 },
                 {
                   "type": "horizontal",
@@ -637,13 +645,14 @@
                         "width": "30%",
                         "padding": "4",
                         "height": "6%",
-                        "padding_left": "2%"
+                        "padding_left": "2%",
+                        "size": "15"
                       }
                     },
                     {
                       "type": "label",
                       "text": "9",
-                      "class": "content_style_odd center_align",
+                      "class": "content_style_odd center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -671,7 +680,7 @@
                     {
                       "type": "label",
                       "text": "10",
-                      "class": "content_style_odd center_align",
+                      "class": "content_style_odd center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -681,7 +690,7 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_storage_tank_1",
-                      "value": "{{$global.so2_screen2_storage_tank_1}}",
+                      "value": "{{$global.so2_screen2_storage_tank_1 || 'true'}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "ten",
                       "action": {
@@ -694,7 +703,7 @@
                     {
                       "type": "label",
                       "text": "11",
-                      "class": "content_style_odd center_align",
+                      "class": "content_style_odd center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -737,13 +746,14 @@
                         "width": "30%",
                         "padding": "4",
                         "height": "6%",
-                        "padding_left": "2%"
+                        "padding_left": "2%",
+                        "size": "15"
                       }
                     },
                     {
                       "type": "label",
                       "text": "12",
-                      "class": "content_style_even center_align",
+                      "class": "content_style_even center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -771,7 +781,7 @@
                     {
                       "type": "label",
                       "text": "13",
-                      "class": "content_style_even center_align",
+                      "class": "content_style_even center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -781,7 +791,7 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_storage_tank_2",
-                      "value": "{{$global.so2_screen2_storage_tank_2}}",
+                      "value": "{{$global.so2_screen2_storage_tank_2 || 'true'}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "thirteen",
                       "action": {
@@ -794,7 +804,7 @@
                     {
                       "type": "label",
                       "text": "14",
-                      "class": "content_style_even center_align",
+                      "class": "content_style_even center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -837,13 +847,14 @@
                         "width": "30%",
                         "padding": "4",
                         "height": "6%",
-                        "padding_left": "2%"
+                        "padding_left": "2%",
+                        "size": "15"
                       }
                     },
                     {
                       "type": "label",
                       "text": "15",
-                      "class": "content_style_odd center_align",
+                      "class": "content_style_odd center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -871,7 +882,7 @@
                     {
                       "type": "label",
                       "text": "16",
-                      "class": "content_style_odd center_align",
+                      "class": "content_style_odd center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -881,7 +892,7 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_storage_tank_3",
-                      "value": "{{$global.so2_screen2_storage_tank_3}}",
+                      "value": "{{$global.so2_screen2_storage_tank_3 || 'true'}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "sixteen",
                       "action": {
@@ -897,7 +908,7 @@
                     {
                       "type": "label",
                       "text": "17",
-                      "class": "content_style_odd center_align",
+                      "class": "content_style_odd center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -940,13 +951,14 @@
                         "width": "30%",
                         "padding": "4",
                         "height": "6%",
-                        "padding_left": "2%"
+                        "padding_left": "2%",
+                        "size": "15"
                       }
                     },
                     {
                       "type": "label",
                       "text": "18",
-                      "class": "content_style_even center_align",
+                      "class": "content_style_even center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -974,7 +986,7 @@
                     {
                       "type": "label",
                       "text": "19",
-                      "class": "content_style_even center_align",
+                      "class": "content_style_even center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
@@ -984,7 +996,7 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_storage_tank_4",
-                      "value": "{{$global.so2_screen2_storage_tank_4}}",
+                      "value": "{{$global.so2_screen2_storage_tank_4 || 'true'}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "nineteen",
                       "action": {
@@ -997,7 +1009,7 @@
                     {
                       "type": "label",
                       "text": "20",
-                      "class": "content_style_even center_align",
+                      "class": "content_style_even center_align label_description_style",
                       "style": {
                         "width": "5%",
                         "padding": "4",
