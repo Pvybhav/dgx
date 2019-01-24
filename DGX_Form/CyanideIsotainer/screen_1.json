@@ -235,26 +235,25 @@
                     "type": "$global.set",
                     "options": {
                         "section_id": "Reagent_Operator",
-                        "so2_screen2_safety_perimeter_cones": "{{$global.so2_screen2_safety_perimeter_cones}}",
-                        "so2_screen2_safety_perimeter_cones_comments": "{{$get.so2_screen2_safety_perimeter_cones_comments}}",
-                        "so2_screen2_truck_wheels_choked": "{{$global.so2_screen2_truck_wheels_choked}}",
-                        "so2_screen2_truck_wheels_choked_comments": "{{$get.so2_screen2_truck_wheels_choked_comments}}",
-                        "so2_screen2_safety_shower": "{{$global.so2_screen2_safety_shower}}",
-                        "so2_screen2_safety_shower_comments": "{{$get.so2_screen2_safety_shower_comments}}",
-                        "so2_screen2_escape_packs_inspection": "{{$global.so2_screen2_escape_packs_inspection}}",
-                        "so2_screen2_escape_packs_inspection_comments": "{{$get.so2_screen2_escape_packs_inspection_comments}}",
-                        "so2_screen2_storage_tank_1_level": "{{$get.so2_screen2_storage_tank_1_level}}",
-                        "so2_screen2_storage_tank_1": "{{$global.so2_screen2_storage_tank_1}}",
-                        "so2_screen2_storage_tank_1_comments": "{{$get.so2_screen2_storage_tank_1_comments}}",
-                        "so2_screen2_storage_tank_2_level": "{{$get.so2_screen2_storage_tank_2_level}}",
-                        "so2_screen2_storage_tank_2": "{{$global.so2_screen2_storage_tank_2}}",
-                        "so2_screen2_storage_tank_2_comments": "{{$get.so2_screen2_storage_tank_2_comments}}",
-                        "so2_screen2_storage_tank_3_level": "{{$get.so2_screen2_storage_tank_3_level}}",
-                        "so2_screen2_storage_tank_3": "{{$global.so2_screen2_storage_tank_3}}",
-                        "so2_screen2_storage_tank_3_comments": "{{$get.so2_screen2_storage_tank_3_comments}}",
-                        "so2_screen2_storage_tank_4_level": "{{$get.so2_screen2_storage_tank_4_level}}",
-                        "so2_screen2_storage_tank_4": "{{$global.so2_screen2_storage_tank_4}}",
-                        "so2_screen2_storage_tank_4_comments": "{{$get.so2_screen2_storage_tank_4_comments}}"
+                        "eye_wash_lower_floor_text1": "{{$get.eye_wash_lower_floor_text1}}",
+                        "eye_wash_lower_floor_text2": "{{$get.eye_wash_lower_floor_text2}}",
+                        "eye_wash_upper_floor_text1": "{{$get.eye_wash_upper_floor_text1}}",
+                        "eye_wash_upper_floor_text2": "{{$get.eye_wash_upper_floor_text2}}",
+                        "inspect_iso_for_damage_text1": "{{$get.inspect_iso_for_damage_text1}}",
+                        "inspect_iso_for_damage_text2": "{{$get.inspect_iso_for_damage_text2}}",
+                        "inspection_hashes_secured_text1": "{{$get.inspection_hashes_secured_text1}}",
+                        "inspection_hashes_secured_text2": "{{$get.inspection_hashes_secured_text2}}",
+                        "condition_of_hoses_text1": "{{$get.condition_of_hoses_text1}}",
+                        "condition_of_hoses_text2": "{{$get.condition_of_hoses_text2}}",
+                        "condition_of_hoses_text3": "{{$get.condition_of_hoses_text3}}",
+                        "replace_gasket_on_hose_text1": "{{$get.replace_gasket_on_hose_text1}}",
+                        "replace_gasket_on_hose_text2": "{{$get.replace_gasket_on_hose_text2}}",
+                        "pressure_completed_time": "{{$get.pressure_completed_time}}",
+                        "pressure_check_across_shifts": "{{$get.pressure_check_across_shifts}}",
+                        "flip_placards": "{{$get.flip_placards}}",
+                        "iso_washed": "{{$get.iso_washed}}",
+                        "mix_started_time": "{{$get.mix_started_time}}",
+                        "mix_end_time": "{{$get.mix_end_time}}"
 
 
                     },
@@ -385,7 +384,7 @@
                                             "components": [{
                                                 "type": "textfield",
                                                 "name": "eye_wash_lower_floor_text1",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "value": "{{$global.eye_wash_lower_floor_text1 || ''}}",
                                                 "contentDescription": "one",
                                                 "style": {
                                                     "padding": "2"
@@ -413,9 +412,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "eye_wash_lower_floor_text2",
+                                                "value": "{{$global.eye_wash_lower_floor_text2 || ''}}",
+                                                "contentDescription": "two",
                                                 "style": {
                                                     "padding": "2"
 
@@ -464,9 +463,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "eye_wash_upper_floor_text1",
+                                                "value": "{{$global.eye_wash_upper_floor_text1 || ''}}",
+                                                "contentDescription": "three",
                                                 "style": {
                                                     "padding": "2"
 
@@ -494,9 +493,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "eye_wash_upper_floor_text2",
+                                                "value": "{{$global.eye_wash_upper_floor_text2 || ''}}",
+                                                "contentDescription": "four",
                                                 "style": {
                                                     "padding": "2"
 
@@ -545,9 +544,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "inspect_iso_for_damage_text1",
+                                                "value": "{{$global.inspect_iso_for_damage_text1 || ''}}",
+                                                "contentDescription": "five",
                                                 "style": {
                                                     "padding": "2"
 
@@ -575,8 +574,8 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "name": "inspect_iso_for_damage_text2",
+                                                "value": "{{$global.inspect_iso_for_damage_text2 || ''}}",
                                                 "contentDescription": "six",
                                                 "style": {
                                                     "padding": "2"
@@ -626,9 +625,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "inspection_hashes_secured_text1",
+                                                "value": "{{$global.inspection_hashes_secured_text1 || ''}}",
+                                                "contentDescription": "seven",
                                                 "style": {
                                                     "padding": "2"
 
@@ -656,9 +655,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "inspection_hashes_secured_text2",
+                                                "value": "{{$global.inspection_hashes_secured_text2 || ''}}",
+                                                "contentDescription": "eight",
                                                 "style": {
                                                     "padding": "2"
 
@@ -707,9 +706,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "condition_of_hoses_text1",
+                                                "value": "{{$global.condition_of_hoses_text1 || ''}}",
+                                                "contentDescription": "nine",
                                                 "style": {
                                                     "padding": "2"
 
@@ -736,9 +735,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "condition_of_hoses_text2",
+                                                "value": "{{$global.condition_of_hoses_text2 || ''}}",
+                                                "contentDescription": "ten",
                                                 "style": {
                                                     "padding": "2"
 
@@ -766,9 +765,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "condition_of_hoses_text3",
+                                                "value": "{{$global.condition_of_hoses_text3 || ''}}",
+                                                "contentDescription": "eleven",
                                                 "style": {
                                                     "padding": "2"
 
@@ -817,9 +816,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "replace_gasket_on_hose_text1",
+                                                "value": "{{$global.replace_gasket_on_hose_text1 || ''}}",
+                                                "contentDescription": "twelve",
                                                 "style": {
                                                     "padding": "2"
 
@@ -847,9 +846,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "replace_gasket_on_hose_text2",
+                                                "value": "{{$global.replace_gasket_on_hose_text2 || ''}}",
+                                                "contentDescription": "thirteen",
                                                 "style": {
                                                     "padding": "2"
 
@@ -913,9 +912,9 @@
                                                 
                                                 {
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "pressure_completed_time",
+                                                "value": "{{$global.pressure_completed_time || ''}}",
+                                                "contentDescription": "fourteen",
                                                 "style": {
                                                     "padding": "2"
 
@@ -966,9 +965,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "pressure_check_across_shifts",
+                                                "value": "{{$global.pressure_check_across_shifts || ''}}",
+                                                "contentDescription": "fifteen",
                                                 "style": {
                                                     "padding": "2"
 
@@ -1020,40 +1019,9 @@
                                                 
                                                 {
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_odd"
-
-                                            }]
-                                        },
-                                        
-                                        
-                                        {
-                                            "type": "label",
-                                            "text": "17",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "flip_placards",
+                                                "value": "{{$global.flip_placards || ''}}",
+                                                "contentDescription": "sixteen",
                                                 "style": {
                                                     "padding": "2"
 
@@ -1088,7 +1056,7 @@
                                         
                                         {
                                             "type": "label",
-                                            "text": "18",
+                                            "text": "17",
                                             "class": "content_style_even center_align label_description_style",
                                             "style": {
                                                 "width": "5%",
@@ -1104,9 +1072,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "iso_washed",
+                                                "value": "{{$global.iso_washed || ''}}",
+                                                "contentDescription": "seventeen",
                                                 "style": {
                                                     "padding": "2"
 
@@ -1152,7 +1120,7 @@
                                         },
                                         {
                                             "type": "label",
-                                            "text": "19",
+                                            "text": "18",
                                             "class": "content_style_odd center_align label_description_style",
                                             "style": {
                                                 "width": "5%",
@@ -1170,9 +1138,9 @@
                                                 
                                                 {
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "mix_started_time",
+                                                "value": "{{$global.mix_started_time || ''}}",
+                                                "contentDescription": "eighteen",
                                                 "style": {
                                                     "padding": "2"
 
@@ -1220,7 +1188,7 @@
                                         
                                         {
                                             "type": "label",
-                                            "text": "20",
+                                            "text": "19",
                                             "class": "content_style_even center_align label_description_style",
                                             "style": {
                                                 "width": "5%",
@@ -1236,9 +1204,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_safety_shower_comments",
-                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
-                                                "contentDescription": "six",
+                                                "name": "mix_end_time",
+                                                "value": "{{$global.mix_end_time || ''}}",
+                                                "contentDescription": "nineteen",
                                                 "style": {
                                                     "padding": "2"
 
