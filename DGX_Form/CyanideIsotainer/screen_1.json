@@ -413,14 +413,13 @@
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
                                         "height": "6%"
-
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "Safety Shower Tested",
-                                            "class": "content_style_odd title_styles",
+                                            "text": "Eye wash & Safety shower lower floor",
+                                            "class": "content_style_even title_styles",
                                             "style": {
-                                                "width": "55%",
+                                                "width": "60%",
                                                 "padding": "4",
                                                 "height": "6%",
                                                 "padding_left": "2%",
@@ -429,47 +428,29 @@
 
                                         },
                                         {
-                                            "type": "label",
-                                            "text": "5",
-                                            "class": "content_style_odd center_align textarea_style label_description_style",
+                                            "type": "horizontal",
                                             "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
+                                                "width": "20%"
 
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
                                         },
-                                        {
-
-                                            "type": "switch",
-                                            "name": "so2_screen2_safety_shower",
-                                            "value": "{{$global.so2_screen2_safety_shower || 'true'}}",
-                                            "class": "content_style_odd switch_styles",
-                                            "contentDescription": "five",
-                                            "action": {
-                                                "type": "$global.set",
-                                                "options": {
-                                                    "so2_screen2_safety_shower": "{{$get.so2_screen2_safety_shower}}"
-                                                }
-                                            }
-
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "6",
-                                            "class": "content_style_odd center_align textarea_style label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
-                                        },
+                                        
                                         {
                                             "type": "horizontal",
                                             "style": {
-                                                "width": "25%"
+                                                "width": "20%"
 
                                             },
                                             "components": [{
@@ -485,7 +466,6 @@
 
                                             }]
                                         }
-
                                     ],
                                     "class": "no_padding"
                                 },
@@ -497,109 +477,119 @@
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "10 minute escape packs inspection",
+                                            "text": "Eye wash & Safety shower lower floor",
                                             "class": "content_style_even title_styles",
                                             "style": {
-                                                "width": "55%",
+                                                "width": "60%",
                                                 "padding": "4",
                                                 "height": "6%",
                                                 "padding_left": "2%",
                                                 "size": "16"
                                             }
 
-                                        }, {
-                                            "type": "label",
-                                            "text": "7",
-                                            "class": "content_style_even center_align textarea_style label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
-                                        },
-                                        {
-
-                                            "type": "switch",
-                                            "name": "so2_screen2_escape_packs_inspection",
-                                            "value": "{{$global.so2_screen2_escape_packs_inspection || 'true'}}",
-                                            "class": "content_style_even switch_styles",
-                                            "contentDescription": "seven",
-                                            "action": {
-                                                "type": "$global.set",
-                                                "options": {
-                                                    "so2_screen2_escape_packs_inspection": "{{$get.so2_screen2_escape_packs_inspection}}"
-                                                }
-                                            }
-
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "8",
-                                            "class": "content_style_even center_align textarea_style label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
                                         },
                                         {
                                             "type": "horizontal",
                                             "style": {
-                                                "width": "25%"
+                                                "width": "20%"
 
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "so2_screen2_escape_packs_inspection_comments",
-                                                "value": "{{$global.so2_screen2_escape_packs_inspection_comments || ''}}",
-                                                "class": "content_style_even",
-                                                "contentDescription": "eight",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
                                                 "style": {
                                                     "padding": "4"
-                                                }
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        },
+                                        
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "20%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_odd"
 
                                             }]
                                         }
-
-
                                     ],
                                     "class": "no_padding"
                                 },
                                 {
                                     "type": "horizontal",
                                     "style": {
-                                        "color": "rgb(255, 255, 255)"
-
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "Record SO2 Storage Tank Levels",
+                                            "text": "Eye wash & Safety shower lower floor",
+                                            "class": "content_style_even title_styles",
                                             "style": {
-                                                "width": "60%"
-                                            },
-                                            "class": "header_style label_description_style"
+                                                "width": "60%",
+                                                "padding": "4",
+                                                "height": "6%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
                                         },
                                         {
-                                            "type": "label",
-                                            "text": " ",
+                                            "type": "horizontal",
                                             "style": {
-                                                "width": "10%"
+                                                "width": "20%"
+
                                             },
-                                            "class": "header_style"
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
                                         },
+                                        
                                         {
-                                            "type": "label",
-                                            "text": " ",
+                                            "type": "horizontal",
                                             "style": {
-                                                "width": "30%"
+                                                "width": "20%"
+
                                             },
-                                            "class": "header_style"
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
                                         }
                                     ],
-                                    "class": "no_padding label_description_style"
+                                    "class": "no_padding"
                                 },
                                 {
                                     "type": "horizontal",
