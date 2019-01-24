@@ -203,46 +203,46 @@
         "$load": {
           "type": "$global.set",
           "options": {
-            "so2_screen2_safety_perimeter_cones": "{{$global.so2_screen2_safety_perimeter_cones || 'true'}}",
-            "so2_screen2_truck_wheels_choked": "{{$global.so2_screen2_truck_wheels_choked || 'true'}}",
-            "so2_screen2_safety_shower": "{{$global.so2_screen2_safety_shower || 'true'}}",
-            "so2_screen2_escape_packs_inspection": "{{$global.so2_screen2_escape_packs_inspection || 'true'}}",
-            "so2_screen2_storage_tank_1": "{{$global.so2_screen2_storage_tank_1_level || 'true'}}",
-            "so2_screen2_storage_tank_2": "{{$global.so2_screen2_storage_tank_2 || 'true'}}",
-            "so2_screen2_storage_tank_3": "{{$global.so2_screen2_storage_tank_3 || 'true'}}",
-            "so2_screen2_storage_tank_4": "{{$global.so2_screen2_storage_tank_4 || 'true'}}"
+            "section_id": "form8_page2",
+            "so2_screen2_safety_perimeter_cones": "{{$global.so2_screen2_safety_perimeter_cones == null ? true : $global.so2_screen2_safety_perimeter_cones}}",
+            "so2_screen2_truck_wheels_choked": "{{$global.so2_screen2_truck_wheels_choked == null ? true : $global.so2_screen2_truck_wheels_choked}}",
+            "so2_screen2_safety_shower": "{{$global.so2_screen2_safety_shower == null ? true : $global.so2_screen2_safety_shower}}",
+            "so2_screen2_escape_packs_inspection": "{{$global.so2_screen2_escape_packs_inspection == null ? true : $global.so2_screen2_escape_packs_inspection}}",
+            "so2_screen2_storage_tank_1": "{{$global.so2_screen2_storage_tank_1_level == null ? true : $global.so2_screen2_storage_tank_1}}",
+            "so2_screen2_storage_tank_2": "{{$global.so2_screen2_storage_tank_2 == null ? true : $global.so2_screen2_storage_tank_2}}",
+            "so2_screen2_storage_tank_3": "{{$global.so2_screen2_storage_tank_3 == null ? true : $global.so2_screen2_storage_tank_3}}",
+            "so2_screen2_storage_tank_4": "{{$global.so2_screen2_storage_tank_4 == null ? true : $global.so2_screen2_storage_tank_4}}"
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
           }
         },
         "$pull": {
-          "type": "$reload",
-          "success": {
-            "type": "$render"
-          }
+          "type": "$reload"
         },
         "handleSave": {
           "type": "$global.set",
           "options": {
-            "section_id": "Reagent_Operator",
-            "so2_screen2_safety_perimeter_cones": "{{$global.so2_screen2_safety_perimeter_cones}}",
-            "so2_screen2_safety_perimeter_cones_comments": "{{$get.so2_screen2_safety_perimeter_cones_comments}}",
-            "so2_screen2_truck_wheels_choked": "{{$global.so2_screen2_truck_wheels_choked}}",
-            "so2_screen2_truck_wheels_choked_comments": "{{$get.so2_screen2_truck_wheels_choked_comments}}",
-            "so2_screen2_safety_shower": "{{$global.so2_screen2_safety_shower}}",
-            "so2_screen2_safety_shower_comments": "{{$get.so2_screen2_safety_shower_comments}}",
-            "so2_screen2_escape_packs_inspection": "{{$global.so2_screen2_escape_packs_inspection}}",
-            "so2_screen2_escape_packs_inspection_comments": "{{$get.so2_screen2_escape_packs_inspection_comments}}",
-            "so2_screen2_storage_tank_1_level": "{{$get.so2_screen2_storage_tank_1_level}}",
-            "so2_screen2_storage_tank_1": "{{$global.so2_screen2_storage_tank_1}}",
-            "so2_screen2_storage_tank_1_comments": "{{$get.so2_screen2_storage_tank_1_comments}}",
-            "so2_screen2_storage_tank_2_level": "{{$get.so2_screen2_storage_tank_2_level}}",
-            "so2_screen2_storage_tank_2": "{{$global.so2_screen2_storage_tank_2}}",
-            "so2_screen2_storage_tank_2_comments": "{{$get.so2_screen2_storage_tank_2_comments}}",
-            "so2_screen2_storage_tank_3_level": "{{$get.so2_screen2_storage_tank_3_level}}",
-            "so2_screen2_storage_tank_3": "{{$global.so2_screen2_storage_tank_3}}",
-            "so2_screen2_storage_tank_3_comments": "{{$get.so2_screen2_storage_tank_3_comments}}",
-            "so2_screen2_storage_tank_4_level": "{{$get.so2_screen2_storage_tank_4_level}}",
-            "so2_screen2_storage_tank_4": "{{$global.so2_screen2_storage_tank_4}}",
-            "so2_screen2_storage_tank_4_comments": "{{$get.so2_screen2_storage_tank_4_comments}}"
+            "section_id": "form8_page2",
+            "so2_screen2_safety_perimeter_cones_comments": "{{$get.so2_screen2_safety_perimeter_cones_comments || ' '}}",
+            "so2_screen2_truck_wheels_choked_comments": "{{$get.so2_screen2_truck_wheels_choked_comments || ' '}}",
+            "so2_screen2_safety_shower_comments": "{{$get.so2_screen2_safety_shower_comments || ' '}}",
+            "so2_screen2_escape_packs_inspection_comments": "{{$get.so2_screen2_escape_packs_inspection_comments || ' '}}",
+            "so2_screen2_storage_tank_1_level": "{{$get.so2_screen2_storage_tank_1_level || ' '}}",
+            "so2_screen2_storage_tank_1_comments": "{{$get.so2_screen2_storage_tank_1_comments || ' '}}",
+            "so2_screen2_storage_tank_2_level": "{{$get.so2_screen2_storage_tank_2_level || ' '}}",
+            "so2_screen2_storage_tank_2_comments": "{{$get.so2_screen2_storage_tank_2_comments || ' '}}",
+            "so2_screen2_storage_tank_3_level": "{{$get.so2_screen2_storage_tank_3_level || ' '}}",
+            "so2_screen2_storage_tank_3_comments": "{{$get.so2_screen2_storage_tank_3_comments || ' '}}",
+            "so2_screen2_storage_tank_4_level": "{{$get.so2_screen2_storage_tank_4_level || ' '}}",
+            "so2_screen2_storage_tank_4_comments": "{{$get.so2_screen2_storage_tank_4_comments|| ' '}}"
           },
           "success": {
             "type": "$util.toast",
@@ -337,12 +337,13 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_safety_perimeter_cones",
-                      "value": "{{$global.so2_screen2_safety_perimeter_cones || 'true'}}",
+                      "value": "{{$global.so2_screen2_safety_perimeter_cones}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "one",
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form8_page2",
                           "so2_screen2_safety_perimeter_cones": "{{$get.so2_screen2_safety_perimeter_cones}}"
                         }
                       }
@@ -410,12 +411,13 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_truck_wheels_choked",
-                      "value": "{{$global.so2_screen2_truck_wheels_choked || 'true'}}",
+                      "value": "{{$global.so2_screen2_truck_wheels_choked}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "three",
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form8_page2",
                           "so2_screen2_truck_wheels_choked": "{{$get.so2_screen2_truck_wheels_choked}}"
                         }
                       }
@@ -483,12 +485,13 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_safety_shower",
-                      "value": "{{$global.so2_screen2_safety_shower || 'true'}}",
+                      "value": "{{$global.so2_screen2_safety_shower}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "five",
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form8_page2",
                           "so2_screen2_safety_shower": "{{$get.so2_screen2_safety_shower}}"
                         }
                       }
@@ -556,12 +559,13 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_escape_packs_inspection",
-                      "value": "{{$global.so2_screen2_escape_packs_inspection || 'true'}}",
+                      "value": "{{$global.so2_screen2_escape_packs_inspection}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "seven",
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form8_page2",
                           "so2_screen2_escape_packs_inspection": "{{$get.so2_screen2_escape_packs_inspection}}"
                         }
                       }
@@ -691,12 +695,13 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_storage_tank_1",
-                      "value": "{{$global.so2_screen2_storage_tank_1 || 'true'}}",
+                      "value": "{{$global.so2_screen2_storage_tank_1}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "ten",
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form8_page2",
                           "so2_screen2_storage_tank_1": "{{$get.so2_screen2_storage_tank_1}}"
                         }
                       }
@@ -792,12 +797,13 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_storage_tank_2",
-                      "value": "{{$global.so2_screen2_storage_tank_2 || 'true'}}",
+                      "value": "{{$global.so2_screen2_storage_tank_2}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "thirteen",
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form8_page2",
                           "so2_screen2_storage_tank_2": "{{$get.so2_screen2_storage_tank_2}}"
                         }
                       }
@@ -893,12 +899,13 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_storage_tank_3",
-                      "value": "{{$global.so2_screen2_storage_tank_3 || 'true'}}",
+                      "value": "{{$global.so2_screen2_storage_tank_3}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "sixteen",
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form8_page2",
                           "so2_screen2_storage_tank_3": "{{$get.so2_screen2_storage_tank_3}}"
                         },
                         "style": {
@@ -997,12 +1004,13 @@
                     {
                       "type": "switch",
                       "name": "so2_screen2_storage_tank_4",
-                      "value": "{{$global.so2_screen2_storage_tank_4 || 'true'}}",
+                      "value": "{{$global.so2_screen2_storage_tank_4}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "nineteen",
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form8_page2",
                           "so2_screen2_storage_tank_4": "{{$get.so2_screen2_storage_tank_4}}"
                         }
                       }

@@ -89,26 +89,23 @@
           "options": {}
         },
         "$pull": {
-          "type": "$reload",
-          "success": {
-            "type": "$render"
-          }
+          "type": "$reload"
         },
         "handleSave": {
           "type": "$global.set",
           "options": {
-            "section_id": "Reagent_Operator",
+            "section_id": "form8_page1",
             "sign": "{{$get.sign || ''}}",
             "date": "{{$get.date}}",
             "month": "{{$get.month}}",
             "year": "{{$get.year}}",
             "shift": "{{$get.shift}}",
             "operator": "{{$get.operator}}",
-            "company": "{{$get.company}}",
-            "truck_driver_name": "{{$get.truck_driver_name}}",
-            "BOL": "{{$get.BOL}}",
-            "Safety_concerns": "{{$get.Safety_concerns}}",
-            "warehouse_tech_name": "{{$get.warehouse_tech_name}}"
+            "company": "{{$get.company || ''}}",
+            "truck_driver_name": "{{$get.truck_driver_name || ''}}",
+            "BOL": "{{$get.BOL || ''}}",
+            "Safety_concerns": "{{$get.Safety_concerns || ''}}",
+            "warehouse_tech_name": "{{$get.warehouse_tech_name || ''}}"
           },
           "success": {
             "type": "$util.toast",
@@ -587,8 +584,8 @@
                     {
                       "type": "textarea",
                       "value": "{{$global.BOL || ''}}",
-                      "name": "three",
-                      "contentDescription": "B-O-L",
+                      "name": "BOL",
+                      "contentDescription": "three",
                       "style": {
                         "height": "8%",
                         "size": "16",
