@@ -193,14 +193,7 @@
             "comments_four": "{{$get.comments_four || ''}}",
             "comments_five": "{{$get.comments_five || ''}}",
             "comments_six": "{{$get.comments_six || ''}}",
-            "comments_seven": "{{$get.comments_seven || ''}}",
-            "reagent_operator_switch1": "{{$global.reagent_operator_switch1 == null ? true : $global.reagent_operator_switch1}}",
-            "reagent_operator_switch2": "{{$global.reagent_operator_switch2 == null ? true : $global.reagent_operator_switch2}}",
-            "reagent_operator_switch3": "{{$global.reagent_operator_switch3 == null ? true : $global.reagent_operator_switch3}}",
-            "reagent_operator_switch4": "{{$global.reagent_operator_switch4 == null ? true : $global.reagent_operator_switch4}}",
-            "reagent_operator_switch5": "{{$global.reagent_operator_switch5 == null ? true : $global.reagent_operator_switch5}}",
-            "reagent_operator_switch6": "{{$global.reagent_operator_switch6 == null ? true : $global.reagent_operator_switch6}}",
-            "reagent_operator_switch7": "{{$global.reagent_operator_switch7 == null ? true : $global.reagent_operator_switch7}}"
+            "comments_seven": "{{$get.comments_seven || ''}}"
           },
           "success": {
             "type": "$util.toast",
@@ -663,6 +656,7 @@
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form7_page1",
                           "reagent_operator_switch1": "{{$get.reagent_operator_switch1}}"
                         }
                       }
@@ -723,6 +717,7 @@
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form7_page1",
                           "reagent_operator_switch2": "{{$get.reagent_operator_switch2}}"
                         }
                       }
@@ -783,6 +778,7 @@
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form7_page1",
                           "reagent_operator_switch3": "{{$get.reagent_operator_switch3}}"
                         }
                       }
@@ -843,6 +839,7 @@
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form7_page1",
                           "reagent_operator_switch4": "{{$get.reagent_operator_switch4}}"
                         }
                       }
@@ -903,6 +900,7 @@
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form7_page1",
                           "reagent_operator_switch5": "{{$get.reagent_operator_switch5}}"
                         }
                       }
@@ -963,6 +961,7 @@
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form7_page1",
                           "reagent_operator_switch6": "{{$get.reagent_operator_switch6}}"
                         }
                       }
@@ -1023,6 +1022,7 @@
                       "action": {
                         "type": "$global.set",
                         "options": {
+                          "section_id": "form7_page1",
                           "reagent_operator_switch7": "{{$get.reagent_operator_switch7}}"
                         }
                       }
