@@ -595,115 +595,79 @@
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height": "6%",
-                                        "border": "#ffffff"
+                                        "height": "6%"
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "Tank 1",
+                                            "text": "Visually inspect condition of ISO for damage",
                                             "class": "content_style_odd title_styles",
                                             "style": {
-                                                "width": "30%",
+                                                "width": "40%",
                                                 "padding": "4",
                                                 "height": "6%",
                                                 "padding_left": "2%",
                                                 "size": "16"
                                             }
 
-                                        }, {
-                                            "type": "label",
-                                            "text": "9",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
                                         },
                                         {
-                                            "type":"horizontal",
-                                            "style":{
+                                            "type": "horizontal",
+                                            "style": {
                                                 "width": "20%"
+
                                             },
-                                            "components":[
-                                                {
-                                                    "type": "textfield",
-                                                    "name": "so2_screen2_storage_tank_1_level",
-                                                    "value": "{{$global.so2_screen2_storage_tank_1_level || ''}}",
-                                                    "class": "content_style_odd",
-                                                    "contentDescription": "nine",
-                                                    "style": {
-        
-                                                        
-                                                        "padding": "4"
-        
-        
-        
-                                                    }
-        
-                                                }
-                                            ]
-                                        }
-                                        ,
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        },
                                         {
-                                            "type": "label",
-                                            "text": "10",
-                                            "class": "content_style_odd center_align label_description_style",
+                                            "type": "horizontal",
                                             "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
+                                                "width": "20%"
 
-                                        },
-                                        {
-
-                                            "type": "switch",
-                                            "name": "so2_screen2_storage_tank_1",
-                                            "value": "{{$global.so2_screen2_storage_tank_1 || 'true'}}",
-                                            "class": "content_style_odd switch_styles",
-                                            "contentDescription": "ten",
-                                            "action": {
-                                                "type": "$global.set",
-                                                "options": {
-                                                    "so2_screen2_storage_tank_1": "{{$get.so2_screen2_storage_tank_1}}"
-                                                }
-                                            }
-
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "11",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
-                                        },
-                                        {
-                                            "type":"horizontal",
-                                            "style":{
-                                                "width":"25%"
                                             },
-                                            "components":[
-                                                {
-                                                    "type": "textfield",
-                                                    "name": "so2_screen2_storage_tank_1_comments",
-                                                    "value": "{{$global.so2_screen2_storage_tank_1_comments || ''}}",
-                                                    "class": "content_style_odd",
-                                                    "contentDescription": "eleven",
-                                                    "style": {
-                                                        "padding": "4"
-        
-                                                    }
-        
-                                                }
-                                            ]
-                                        }
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        },
                                         
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "20%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        }
                                     ],
                                     "class": "no_padding"
                                 },
