@@ -83,7 +83,7 @@
           "background": "rgb(204,206,213)"
         },
         "table_row_height": {
-          "height": "7%"
+          "height": "6%"
         },
         "table_body_label_width": {
           "width": "3%"
@@ -466,6 +466,7 @@
           },
           {
             "row_name": "Clean Pump Box Level Probe",
+            "height": "7%",
             "row_styles": "center_align black_color table_body_name_styles table_fields_size",
             "row_values": [
               {
@@ -645,15 +646,24 @@
                             {
                               "type": "horizontal",
                               "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
                               "components": [
                                 {
                                   "type": "horizontal",
                                   "class": "table_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
                                   "components": [
                                     {
                                       "type": "label",
                                       "text": "{{this.row_name}}",
-                                      "class": "{{this.row_styles}}"
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "{{#? this.height}}"
+                                      }
                                     }
                                   ]
                                 },
@@ -670,13 +680,19 @@
                                             {
                                               "type": "label",
                                               "text": "{{label}}",
-                                              "class": "label_styles black_color center_align table_row_height"
+                                              "class": "label_styles black_color center_align table_row_height",
+                                              "style": {
+                                                "height": "{{#? this.height}}"
+                                              }
                                             }
                                           ]
                                         },
                                         {
                                           "type": "vertical",
-                                          "class": "table_body_textfield_width",
+                                          "class": "table_body_textfield_width table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          },
                                           "components": [
                                             {
                                               "type": "{{type}}",
@@ -740,15 +756,24 @@
                             {
                               "type": "horizontal",
                               "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
                               "components": [
                                 {
                                   "type": "horizontal",
                                   "class": "table_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
                                   "components": [
                                     {
                                       "type": "label",
                                       "text": "{{this.row_name}}",
-                                      "class": "{{this.row_styles}}"
+                                      "class": "{{this.row_styles}}",
+                                      "style": {
+                                        "height": "{{#? this.height}}"
+                                      }
                                     }
                                   ]
                                 },
@@ -765,13 +790,19 @@
                                             {
                                               "type": "label",
                                               "text": "{{label}}",
-                                              "class": "label_styles black_color center_align table_row_height"
+                                              "class": "label_styles black_color center_align table_row_height",
+                                              "style": {
+                                                "height": "{{#? this.height}}"
+                                              }
                                             }
                                           ]
                                         },
                                         {
                                           "type": "vertical",
-                                          "class": "table_body_textfield_width",
+                                          "class": "table_body_textfield_width table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          },
                                           "components": [
                                             {
                                               "type": "{{type}}",

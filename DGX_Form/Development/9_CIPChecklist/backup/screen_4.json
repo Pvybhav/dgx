@@ -496,24 +496,15 @@
                             {
                               "type": "horizontal",
                               "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
-                              "style": {
-                                "height": "{{#? this.height}}"
-                              },
                               "components": [
                                 {
                                   "type": "horizontal",
-                                  "class": "table_body_name_styles table_row_height",
-                                  "style": {
-                                    "height": "{{#? this.height}}"
-                                  },
+                                  "class": "table_body_name_styles",
                                   "components": [
                                     {
                                       "type": "label",
                                       "text": "{{this.row_name}}",
-                                      "class": "{{this.row_styles}} table_row_height",
-                                      "style": {
-                                        "height": "{{#? this.height}}"
-                                      }
+                                      "class": "{{this.row_styles}}"
                                     }
                                   ]
                                 },
@@ -530,29 +521,20 @@
                                             {
                                               "type": "label",
                                               "text": "{{label}}",
-                                              "class": "label_styles black_color center_align table_row_height",
-                                              "style": {
-                                                "height": "{{#? this.height}}"
-                                              }
+                                              "class": "label_styles black_color center_align table_row_height"
                                             }
                                           ]
                                         },
                                         {
                                           "type": "vertical",
-                                          "class": "table_body_textfield_width table_row_height",
-                                          "style": {
-                                            "height": "{{#? this.height}}"
-                                          },
+                                          "class": "table_body_textfield_width",
                                           "components": [
                                             {
                                               "type": "{{type}}",
                                               "name": "{{name}}",
                                               "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
                                               "class": "center_align black_color table_body_textfield_styles",
-                                              "contentDescription": "{{contentDescription}}",
-                                              "style": {
-                                                "height": "{{#? this.height}}"
-                                              }
+                                              "contentDescription": "{{contentDescription}}"
                                             }
                                           ]
                                         }

@@ -121,7 +121,7 @@
           "corner_radius": "1%"
         },
         "table_row_height": {
-          "height": "6%"
+          "height": "7%"
         },
         "table_body_label_width": {
           "width": "3%"
@@ -662,7 +662,6 @@
           },
           {
             "row_name": "0640-M221-012 Secondary Safety Screen",
-            "height": "8%",
             "row_styles": "center_align black_color table_body_name_styles table_fields_size",
             "row_values": [
               {
@@ -975,24 +974,15 @@
                             {
                               "type": "horizontal",
                               "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
-                              "style": {
-                                "height": "{{#? this.height}}"
-                              },
                               "components": [
                                 {
                                   "type": "horizontal",
                                   "class": "table_body_name_styles table_row_height",
-                                  "style": {
-                                    "height": "{{#? this.height}}"
-                                  },
                                   "components": [
                                     {
                                       "type": "label",
                                       "text": "{{this.row_name}}",
-                                      "class": "{{this.row_styles}} table_row_height",
-                                      "style": {
-                                        "height": "{{#? this.height}}"
-                                      }
+                                      "class": "{{this.row_styles}}"
                                     }
                                   ]
                                 },
@@ -1009,10 +999,7 @@
                                             {
                                               "type": "label",
                                               "text": "{{label}}",
-                                              "class": "label_styles black_color center_align table_row_height",
-                                              "style": {
-                                                "height": "{{#? this.height}}"
-                                              }
+                                              "class": "label_styles black_color center_align table_row_height"
                                             }
                                           ]
                                         },
