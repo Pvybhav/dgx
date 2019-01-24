@@ -302,50 +302,7 @@
                                     ],
                                     "class": "no_padding label_description_style"
                                 },
-                                {
-                                    "type": "horizontal",
-                                    "style": {
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "6%"
-
-                                    },
-                                    "components": [{
-                                            "type": "label",
-                                            "text": "HCN gas detector reading 675-AIT-8090A",
-                                            "class": "content_style_odd title_styles",
-                                            "style": {
-                                                "width": "60%",
-                                                "padding": "4",
-                                                "height": "6%",
-                                                "padding_left": "2%",
-                                                "size": "16"
-                                            }
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "PPM",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "20%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": " ",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "20%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
-                                        }
-                                        ]
-                                        },
+                            
 
 
                                 
@@ -360,7 +317,7 @@
                                             "text": "HCN gas detector reading 675-AIT-8090A",
                                             "class": "content_style_even title_styles",
                                             "style": {
-                                                "width": "55%",
+                                                "width": "60%",
                                                 "padding": "4",
                                                 "height": "6%",
                                                 "padding_left": "2%",
@@ -379,54 +336,18 @@
                                             }
 
                                         },
-                                        {
-
-                                            "type": "switch",
-                                            "name": "so2_screen2_truck_wheels_choked",
-                                            "value": "{{$global.so2_screen2_truck_wheels_choked || 'true'}}",
-                                            "class": "content_style_even switch_styles",
-                                            "contentDescription": "three",
-                                            "action": {
-                                                "type": "$global.set",
-                                                "options": {
-                                                    "so2_screen2_truck_wheels_choked": "{{$get.so2_screen2_truck_wheels_choked}}"
-                                                }
-                                            }
-
-
-                                        },
+                                        
                                         {
                                             "type": "label",
-                                            "text": "4",
-                                            "class": "content_style_even center_align textarea_style label_description_style",
+                                            "text": "",
+                                            "class": "content_style_even center_align label_description_style",
                                             "style": {
-                                                "width": "5%",
+                                                "width": "20%",
                                                 "padding": "4",
                                                 "height": "6%"
                                             }
 
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "25%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "so2_screen2_truck_wheels_choked_comments",
-                                                "value": "{{$global.so2_screen2_truck_wheels_choked_comments || ''}}",
-                                                "class": "content_style_even",
-                                                "contentDescription": "four",
-                                                "style": {
-                                                    "padding": "4"
-
-                                                }
-
-
-                                            }]
                                         }
-
                                     ],
                                     "class": "no_padding"
                                 },
