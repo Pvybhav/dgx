@@ -740,112 +740,71 @@
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "Tank 3",
+                                            "text": "Pressure test successfully completed:",
                                             "class": "content_style_odd title_styles",
                                             "style": {
-                                                "width": "30%",
+                                                "width": "60%",
                                                 "padding": "4",
                                                 "height": "6%",
                                                 "padding_left": "2%",
                                                 "size": "16"
                                             }
 
-                                        }, {
-                                            "type": "label",
-                                            "text": "15",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
                                         },
                                         {
-                                            "type":"horizontal",
-                                            "style":{
-                                                "width": "20%"
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "40%"
+
                                             },
-                                            "components":[
+                                            "components": [
                                                 {
-                                                    "type": "textfield",
-                                                    "name": "so2_screen2_storage_tank_3_level",
-                                                    "value": "{{$global.so2_screen2_storage_tank_3_level || ''}}",
-                                                    "class": "content_style_odd",
-                                                    "contentDescription": "fifteen",
+                                                    "type": "label",
+                                                    "text": "Time",
+                                                    "class": "content_style_odd title_styles",
                                                     "style": {
-        
-                                                        
-                                                        "padding": "4"
-        
-        
-        
+                                                        "width": "20%",
+                                                        "padding": "4",
+                                                        "height": "6%",
+                                                        "padding_left": "2%",
+                                                        "size": "16"
                                                     }
         
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "16",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
-                                        },
-                                        {
-
-                                            "type": "switch",
-                                            "name": "so2_screen2_storage_tank_3",
-                                            "value": "{{$global.so2_screen2_storage_tank_3 || 'true'}}",
-                                            "class": "content_style_odd switch_styles",
-                                            "contentDescription": "sixteen",
-                                            "action": {
-                                                "type": "$global.set",
-                                                "options": {
-                                                    "so2_screen2_storage_tank_3": "{{$get.so2_screen2_storage_tank_3}}"
                                                 },
-                                                "style": {
-                                                    "height": "5%"
-                                                }
-                                            }
-
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "17",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
-                                        },
-                                        {
-                                            "type":"horizontal",
-                                            "style": {
-                                                "width": "25%"
-                                            },
-                                            "components":[
                                                 {
-                                                    "type": "textfield",
-                                                    "name": "so2_screen2_storage_tank_3_comments",
-                                                    "value": "{{$global.so2_screen2_storage_tank_3_comments || ''}}",
-                                                    "class": "content_style_odd",
-                                                    "contentDescription": "seventeen",
-                                                    "style": {
-                                                        "padding": "4"
-                                                    }
-        
-                                                }  
-                                            ]
-                                        }
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        },
                                         
+                                        
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "20%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        }
                                     ],
                                     "class": "no_padding"
                                 },
