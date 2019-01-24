@@ -679,109 +679,56 @@
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "Tank 2",
+                                            "text": "Replace gasket on hose once per week (Sunday D/S)",
                                             "class": "content_style_even title_styles",
                                             "style": {
-                                                "width": "30%",
+                                                "width": "60%",
                                                 "padding": "4",
                                                 "height": "6%",
                                                 "padding_left": "2%",
                                                 "size": "16"
                                             }
 
-                                        }, {
-                                            "type": "label",
-                                            "text": "12",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
                                         },
                                         {
-                                            "type":"horizontal",
-                                            "style":{
+                                            "type": "horizontal",
+                                            "style": {
                                                 "width": "20%"
+
                                             },
-                                            "components":[
-                                                {
-                                                    "type": "textfield",
-                                                    "name": "so2_screen2_storage_tank_2_level",
-                                                    "value": "{{$global.so2_screen2_storage_tank_2_level || ''}}",
-                                                    "class": "content_style_even",
-                                                    "contentDescription": "twelve",
-                                                    "style": {
-        
-                                                        
-                                                        "padding": "4"
-        
-        
-        
-                                                    }
-        
-                                                }
-                                            ]
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
                                         },
-                                        {
-                                            "type": "label",
-                                            "text": "13",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
-                                        },
-                                        {
-
-                                            "type": "switch",
-                                            "name": "so2_screen2_storage_tank_2",
-                                            "value": "{{$global.so2_screen2_storage_tank_2 || 'true'}}",
-                                            "class": "content_style_even switch_styles",
-                                            "contentDescription": "thirteen",
-                                            "action": {
-                                                "type": "$global.set",
-                                                "options": {
-                                                    "so2_screen2_storage_tank_2": "{{$get.so2_screen2_storage_tank_2}}"
-                                                }
-                                            }
-
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "14",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-
-                                        },
-                                        {
-                                            "type":"horizontal",
-                                            "style": {
-                                                "width": "25%"
-                                            },
-                                            "components":[
-                                                {
-                                                    "type": "textfield",
-                                                    "name": "so2_screen2_storage_tank_2_comments",
-                                                    "value": "{{$global.so2_screen2_storage_tank_2_comments || ''}}",
-                                                    "class": "content_style_even",
-                                                    "contentDescription": "fourteen",
-                                                    "style": {
-                                                        "padding": "4"
-                                                    }
-        
-                                                }
-                                            ]
-                                        }
                                         
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "20%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "so2_screen2_safety_shower_comments",
+                                                "value": "{{$global.so2_screen2_safety_shower_comments || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "4"
+
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        }
                                     ],
                                     "class": "no_padding"
                                 },
