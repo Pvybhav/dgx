@@ -537,7 +537,29 @@
               }
             ]
           }
-        ]
+        ],
+        "Footer_Buttons": {
+          "previous": {
+            "displayName": "Previous",
+            "contentDescription": "previous",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_2.json"
+          },
+          "home": {
+            "displayName": "Home",
+            "contentDescription": "home",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+          },
+          "next": {
+            "displayName": "Next",
+            "contentDescription": "next",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_4.json"
+          },
+          "save": {
+            "displayName": "Save",
+            "contentDescription": "save",
+            "url": ""
+          }
+        }
       },
       "actions": {
         "$load": {
@@ -873,41 +895,31 @@
               "items": [
                 {
                   "type": "horizontal",
-                  "class": "no_padding center_align",
-                  "style": {
-                    "padding_top": "1%",
-                    "padding_bottom": "1%"
-                  },
+                  "class": "no_padding center_align footer_styles footer_buttons_spacing",
                   "components": [
                     {
                       "type": "space",
                       "style": {
-                        "width": "20%"
+                        "width": "{{(100 % (Object.keys(Footer_Buttons).length*20))-5}}%"
                       }
                     },
                     {
                       "type": "button",
-                      "name": "previous",
-                      "text": "Previous",
+                      "name": "{{Footer_Buttons.previous.contentDescription}}",
+                      "text": "{{Footer_Buttons.previous.displayName}}",
                       "class": "button_styles center_align",
+                      "contentDescription": "{{Footer_Buttons.previous.contentDescription}}",
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_2.json",
+                          "url": "{{Footer_Buttons.previous.url}}",
                           "preload": {
-                            "style": {
-                              "background": "#ff0000"
-                            },
+                            "class": "preload_styles",
                             "layers": [
                               {
                                 "type": "image",
-                                "url": "file://infinit.gif",
-                                "style": {
-                                  "top": "50%-25",
-                                  "left": "50%-25",
-                                  "width": "50",
-                                  "height": "50"
-                                }
+                                "url": "{{loading_image_url}}",
+                                "class": "loading_image_styles"
                               }
                             ]
                           }
@@ -915,34 +927,22 @@
                       }
                     },
                     {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
                       "type": "button",
-                      "name": "home",
-                      "text": "Home",
+                      "name": "{{Footer_Buttons.home.contentDescription}}",
+                      "text": "{{Footer_Buttons.home.displayName}}",
                       "class": "button_styles center_align",
+                      "contentDescription": "{{Footer_Buttons.home.contentDescription}}",
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+                          "url": "{{Footer_Buttons.home.url}}",
                           "preload": {
-                            "style": {
-                              "background": "#ff0000"
-                            },
+                            "class": "preload_styles",
                             "layers": [
                               {
                                 "type": "image",
-                                "url": "file://infinit.gif",
-                                "style": {
-                                  "top": "50%-25",
-                                  "left": "50%-25",
-                                  "width": "50",
-                                  "height": "50"
-                                }
+                                "url": "{{loading_image_url}}",
+                                "class": "loading_image_styles"
                               }
                             ]
                           }
@@ -950,34 +950,22 @@
                       }
                     },
                     {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
                       "type": "button",
-                      "name": "next",
-                      "text": "Next",
+                      "name": "{{Footer_Buttons.next.contentDescription}}",
+                      "text": "{{Footer_Buttons.next.displayName}}",
                       "class": "button_styles center_align",
+                      "contentDescription": "{{Footer_Buttons.next.contentDescription}}",
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_4.json",
+                          "url": "{{Footer_Buttons.next.url}}",
                           "preload": {
-                            "style": {
-                              "background": "#ff0000"
-                            },
+                            "class": "preload_styles",
                             "layers": [
                               {
                                 "type": "image",
-                                "url": "file://infinit.gif",
-                                "style": {
-                                  "top": "50%-25",
-                                  "left": "50%-25",
-                                  "width": "50",
-                                  "height": "50"
-                                }
+                                "url": "{{loading_image_url}}",
+                                "class": "loading_image_styles"
                               }
                             ]
                           }
@@ -985,24 +973,13 @@
                       }
                     },
                     {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
                       "type": "button",
-                      "name": "save",
-                      "text": "Save",
+                      "name": "{{Footer_Buttons.save.contentDescription}}",
+                      "text": "{{Footer_Buttons.save.displayName}}",
                       "class": "button_styles center_align",
+                      "contentDescription": "{{Footer_Buttons.save.contentDescription}}",
                       "action": {
                         "trigger": "handleSave"
-                      }
-                    },
-                    {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
                       }
                     }
                   ]
