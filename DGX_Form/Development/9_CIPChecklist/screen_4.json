@@ -197,28 +197,30 @@
             ]
           }
         ],
-        "Footer_Buttons": {
-          "previous": {
+        "Footer_Buttons": [
+          {
             "displayName": "Previous",
             "contentDescription": "previous",
-            "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_3.json"
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_3.json",
+            "trigger": "handleNavigation"
           },
-          "home": {
+          {
             "displayName": "Home",
             "contentDescription": "home",
-            "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+            "trigger": "handleNavigation"
           },
-          "save": {
+          {
             "displayName": "Save",
             "contentDescription": "save",
-            "url": ""
+            "trigger": "handleSave"
           },
-          "submit": {
+          {
             "displayName": "Submit",
             "contentDescription": "submit",
-            "url": ""
+            "trigger": "handleSubmit"
           }
-        }
+        ]
       },
       "actions": {
         "$load": {
@@ -248,6 +250,22 @@
           "options": {
             "text": "{{$jason.message}}",
             "type": "warning"
+          }
+        },
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "class": "loading_image_styles"
+                }
+              ]
+            }
           }
         },
         "handleSave": {
@@ -645,7 +663,7 @@
               "items": [
                 {
                   "type": "horizontal",
-                  "class": "no_padding center_align footer_styles footer_buttons_spacing",
+                  "class": "no_padding center_align footer_styles",
                   "components": [
                     {
                       "type": "space",
@@ -654,69 +672,22 @@
                       }
                     },
                     {
-                      "type": "button",
-                      "name": "{{Footer_Buttons.previous.contentDescription}}",
-                      "text": "{{Footer_Buttons.previous.displayName}}",
-                      "class": "button_styles center_align",
-                      "contentDescription": "{{Footer_Buttons.previous.contentDescription}}",
-                      "action": {
-                        "type": "$href",
-                        "options": {
-                          "url": "{{Footer_Buttons.previous.url}}",
-                          "preload": {
-                            "class": "preload_styles",
-                            "layers": [
-                              {
-                                "type": "image",
-                                "url": "{{loading_image_url}}",
-                                "class": "loading_image_styles"
-                              }
-                            ]
+                      "type": "horizontal",
+                      "class": "footer_buttons_spacing",
+                      "components": {
+                        "{{#each Footer_Buttons}}": {
+                          "type": "button",
+                          "name": "{{this.contentDescription}}",
+                          "text": "{{this.displayName}}",
+                          "class": "button_styles center_align",
+                          "contentDescription": "{{this.contentDescription}}",
+                          "action": {
+                            "trigger": "{{#? this.trigger}}",
+                            "options": {
+                              "url": "{{#? this.url}}"
+                            }
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "{{Footer_Buttons.home.contentDescription}}",
-                      "text": "{{Footer_Buttons.home.displayName}}",
-                      "class": "button_styles center_align",
-                      "contentDescription": "{{Footer_Buttons.home.contentDescription}}",
-                      "action": {
-                        "type": "$href",
-                        "options": {
-                          "url": "{{Footer_Buttons.home.url}}",
-                          "preload": {
-                            "class": "preload_styles",
-                            "layers": [
-                              {
-                                "type": "image",
-                                "url": "{{loading_image_url}}",
-                                "class": "loading_image_styles"
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "{{Footer_Buttons.save.contentDescription}}",
-                      "text": "{{Footer_Buttons.save.displayName}}",
-                      "class": "button_styles center_align",
-                      "contentDescription": "{{Footer_Buttons.save.contentDescription}}",
-                      "action": {
-                        "trigger": "handleSave"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "{{Footer_Buttons.submit.contentDescription}}",
-                      "text": "{{Footer_Buttons.submit.displayName}}",
-                      "class": "button_styles center_align",
-                      "contentDescription": "{{Footer_Buttons.submit.contentDescription}}",
-                      "action": {
-                        "trigger": "handleSubmit"
                       }
                     }
                   ]
