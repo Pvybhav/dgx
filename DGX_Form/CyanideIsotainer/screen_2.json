@@ -1488,110 +1488,206 @@
                         {
                             "type": "horizontal",
                             "items": [{
-                              "type": "horizontal",
-                              "class": "no_padding center_align",
-                              "style": {
-                                "padding_top": "1%",
-                                "padding_bottom": "1%"
-                              },
-                              "components": [{
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "black_color",
-                                  "style": {
-                                    "width": "40%"
-                                  }
+                                "type": "horizontal",
+                                "class": "no_padding center_align",
+                                "style": {
+                                    "padding_top": "1%",
+                                    "padding_bottom": "1%"
                                 },
-                                {
-                                  "type": "button",
-                                  "name": "home",
-                                  "text": "Home",
-                                  "class": "home_button_styles center_align",
-                                  "action": {
-                                    "type": "$href",
-                                    "options": {
-                                      "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms-static/home.json",
-                                      "preload": {
+                                "components": [{
+                                        "type": "label",
+                                        "text": "",
+                                        "class": "black_color",
                                         "style": {
-                                          "background": "#ff0000"
-                                        },
-                                        "layers": [{
-                                          "type": "image",
-                                          "url": "file://infinit.gif",
-                                          "style": {
-                                            "top": "50%-25",
-                                            "left": "50%-25",
-                                            "width": "50",
-                                            "height": "50"
-                                          }
-                                        }]
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "black_color",
-                                  "style": {
-                                    "width": "5%"
-                                  }
-                                },
-                                {
-                                  "type": "button",
-                                  "name": "next",
-                                  "text": "Next",
-                                  "class": "next_button_styles center_align",
-                                  "action": {
-                                    "type": "$href",
-                                    "options": {
-                                      "url": "https://pvybhav.github.io/DGX_Form/CyanideIsotainer/screen_2.json",
-                                      "preload": {
+                                            "width": "20%"
+                                        }
+                                    },
+                                    {
+                                        "type": "button",
+                                        "name": "home",
+                                        "text": "Home",
+                                        "class": "home_button_styles center_align",
+                                        "action": {
+                                            "type": "$href",
+                                            "options": {
+                                                "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms-static/home.json",
+                                                "preload": {
+                                                    "style": {
+                                                        "background": "#ff0000"
+                                                    },
+                                                    "layers": [{
+                                                        "type": "image",
+                                                        "url": "file://infinit.gif",
+                                                        "style": {
+                                                            "top": "50%-25",
+                                                            "left": "50%-25",
+                                                            "width": "50",
+                                                            "height": "50"
+                                                        }
+                                                    }]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "label",
+                                        "text": "",
+                                        "class": "black_color",
                                         "style": {
-                                          "background": "#ff0000"
-                                        },
-                                        "layers": [{
-                                          "type": "image",
-                                          "url": "file://infinit.gif",
-                                          "style": {
-                                            "top": "50%-25",
-                                            "left": "50%-25",
-                                            "width": "50",
-                                            "height": "50"
-                                          }
-                                        }]
-                                      }
+                                            "width": "5%"
+                                        }
+                                    },
+                                    {
+                                        "type": "button",
+                                        "name": "previous",
+                                        "text": "Previous",
+                                        "class": "previous_button_styles center_align",
+                                        "action": {
+                                            "type": "$href",
+                                            "options": {
+                                                "url": "https://pvybhav.github.io/DGX_Form/CyanideIsotainer/screen_1.json",
+                                                "preload": {
+                                                    "style": {
+                                                        "background": "#ff0000"
+                                                    },
+                                                    "layers": [{
+                                                        "type": "image",
+                                                        "url": "file://infinit.gif",
+                                                        "style": {
+                                                            "top": "50%-25",
+                                                            "left": "50%-25",
+                                                            "width": "50",
+                                                            "height": "50"
+                                                        }
+                                                    }]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "label",
+                                        "text": "",
+                                        "class": "black_color",
+                                        "style": {
+                                            "width": "5%"
+                                        }
+                                    },
+
+
+                                    {
+                                        "type": "button",
+                                        "name": "save",
+                                        "text": "Save",
+                                        "class": "save_button_styles center_align",
+                                        "action": {
+                                            "trigger": "handleSave"
+                                        }
+                                    },
+                                    {
+                                        "type": "label",
+                                        "text": "",
+                                        "class": "black_color",
+                                        "style": {
+                                            "width": "5%"
+                                        }
+                                    },
+                                    {
+                                        "type": "button",
+                                        "name": "submit",
+                                        "text": "submit",
+                                        "class": "center_align submit_button_styles",
+                                        "contentDescription": "submit",
+                                        "action": {
+                                            "type": "$global.reset",
+                                            "options": {
+                                                "items": [
+                                                    "distribution_pump_14_text1",
+                                                    "distribution_pump_14_text2",
+                                                    "distribution_pump_15_text1",
+                                                    "distribution_pump_15_text2",
+                                                    "holding_tank_text1",
+                                                    "holding_tank_text2",
+                                                    "holding_tank_text3",
+                                                    "distribution_lines_text1",
+                                                    "distribution_lines_text2",
+                                                    "distribution_lines_text3",
+                                                    "mix_pump_12_text1",
+                                                    "mix_pump_12_text2",
+                                                    "mix_pump_12_text3",
+                                                    "mix_pump_13_text1",
+                                                    "mix_pump_13_text2",
+                                                    "mix_pump_13_text3",
+                                                    "transfer_lines_text1",
+                                                    "transfer_lines_text2",
+                                                    "transfer_lines_text3",
+                                                    "transfer_tank_text1",
+                                                    "transfer_tank_text2",
+                                                    "transfer_tank_text3",
+                                                    "sump_pump_working_text1",
+                                                    "sump_pump_working_text2",
+                                                    "sump_pump_working_text3",
+                                                    "exhaust_fans_text1",
+                                                    "exhaust_fans_text2",
+                                                    "exhaust_fans_text3",
+                                                    "berm_clean_of_debris_text1",
+                                                    "berm_clean_of_debris_text2",
+                                                    "seal_pot_text",
+                                                    "eye_wash_lower_floor_text1",
+                                                    "eye_wash_lower_floor_text2",
+                                                    "eye_wash_upper_floor_text1",
+                                                    "eye_wash_upper_floor_text2",
+                                                    "inspect_iso_for_damage_text1",
+                                                    "inspect_iso_for_damage_text2",
+                                                    "inspection_hashes_secured_text1",
+                                                    "inspection_hashes_secured_text2",
+                                                    "condition_of_hoses_text1",
+                                                    "condition_of_hoses_text2",
+                                                    "condition_of_hoses_text3",
+                                                    "replace_gasket_on_hose_text1",
+                                                    "replace_gasket_on_hose_text2",
+                                                    "pressure_completed_time",
+                                                    "pressure_check_across_shifts",
+                                                    "flip_placards",
+                                                    "iso_washed",
+                                                    "mix_started_time",
+                                                    "mix_end_time",
+                                                    "sign",
+                                                    "date",
+                                                    "month",
+                                                    "year",
+                                                    "shift",
+                                                    "operator"
+                                                    
+                                                ],
+                                                "save": "true",
+                                                "filename": "ReagentOperatorSO2Offload"
+                                            },
+                                            "success": {
+                                                "type": "$util.toast",
+                                                "options": {
+                                                    "text": "Data Submitted successfully",
+                                                    "type": "warning",
+                                                    "success": {
+                                                        "type": "$reload"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+
+
+
+                                    {
+                                        "type": "label",
+                                        "text": "",
+                                        "class": "black_color",
+                                        "style": {
+                                            "width": "5%"
+                                        }
                                     }
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "black_color",
-                                  "style": {
-                                    "width": "5%"
-                                  }
-                                },
-                                {
-                                  "type": "button",
-                                  "name": "save",
-                                  "text": "Save",
-                                  "class": "save_button_styles center_align",
-                                  "action": {
-                                    "trigger": "handleSave"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "black_color",
-                                  "style": {
-                                    "width": "5%"
-                                  }
-                                }
-                              ]
+                                ]
                             }]
-                          }
+                        }
                     ],
                     "class": "no_padding"
                 }
