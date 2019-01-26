@@ -213,15 +213,6 @@
                 "$load": {
                     "type": "$global.set",
                     "options": {
-                        "so2_screen2_safety_perimeter_cones": "{{$global.so2_screen2_safety_perimeter_cones || 'true'}}",
-                        "so2_screen2_truck_wheels_choked": "{{$global.so2_screen2_truck_wheels_choked || 'true'}}",
-                        "so2_screen2_safety_shower": "{{$global.so2_screen2_safety_shower || 'true'}}",
-                        "so2_screen2_escape_packs_inspection": "{{$global.so2_screen2_escape_packs_inspection || 'true'}}",
-                        "so2_screen2_storage_tank_1": "{{$global.so2_screen2_storage_tank_1_level || 'true'}}",
-                        "so2_screen2_storage_tank_2": "{{$global.so2_screen2_storage_tank_2 || 'true'}}",
-                        "so2_screen2_storage_tank_3": "{{$global.so2_screen2_storage_tank_3 || 'true'}}",
-                        "so2_screen2_storage_tank_4": "{{$global.so2_screen2_storage_tank_4 || 'true'}}"
-
 
                     }
                 },
@@ -234,7 +225,7 @@
                 "handleSave": {
                     "type": "$global.set",
                     "options": {
-                        "section_id": "Reagent_Operator",
+                        "section_id": "form10_page1",
                         "eye_wash_lower_floor_text1": "{{$get.eye_wash_lower_floor_text1}}",
                         "eye_wash_lower_floor_text2": "{{$get.eye_wash_lower_floor_text2}}",
                         "eye_wash_upper_floor_text1": "{{$get.eye_wash_upper_floor_text1}}",
