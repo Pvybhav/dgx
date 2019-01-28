@@ -225,24 +225,24 @@
                 "handleSave": {
                     "type": "$global.set",
                     "options": {
-                        "section_id": "form10_page2",
-                        "distribution_pump_14_text1": "{{$get.distribution_pump_14_text1|| ''}}",
-                        "distribution_pump_14_text2": "{{$get.distribution_pump_14_text2|| ''}}",
-                        "distribution_pump_15_text1": "{{$get.distribution_pump_15_text1|| ''}}",
-                        "distribution_pump_15_text2": "{{$get.distribution_pump_15_text2|| ''}}",
-                        "holding_tank_text1": "{{$get.holding_tank_text1|| ''}}",
-                        "holding_tank_text2": "{{$get.holding_tank_text2|| ''}}",
-                        "holding_tank_text3": "{{$get.holding_tank_text3|| ''}}",
-                        "distribution_lines_text1": "{{$get.distribution_lines_text1|| ''}}",
-                        "distribution_lines_text2": "{{$get.distribution_lines_text2|| ''}}",
-                        "distribution_lines_text3": "{{$get.distribution_lines_text3|| ''}}",
-                        "mix_pump_12_text1": "{{$get.mix_pump_12_text1|| ''}}",
-                        "mix_pump_12_text2": "{{$get.mix_pump_12_text2|| ''}}",
-                        "mix_pump_12_text3": "{{$get.mix_pump_12_text3|| ''}}",
-                        "mix_pump_13_text1": "{{$get.mix_pump_13_text1|| ''}}",
-                        "mix_pump_13_text2": "{{$get.mix_pump_13_text2|| ''}}",
-                        "mix_pump_13_text3": "{{$get.mix_pump_13_text3|| ''}}"
-                      
+                        "section_id": "form10_page3",
+                        
+                        "transfer_lines_text1": "{{$get.transfer_lines_text1|| ''}}",
+                        "transfer_lines_text2": "{{$get.transfer_lines_text2|| ''}}",
+                        "transfer_lines_text3": "{{$get.transfer_lines_text3|| ''}}",
+                        "transfer_tank_text1": "{{$get.transfer_tank_text1|| ''}}",
+                        "transfer_tank_text2": "{{$get.transfer_tank_text2|| ''}}",
+                        "transfer_tank_text3": "{{$get.transfer_tank_text3|| ''}}",
+                        "sump_pump_working_text1": "{{$get.sump_pump_working_text1|| ''}}",
+                        "sump_pump_working_text2": "{{$get.sump_pump_working_text2|| ''}}",
+                        "sump_pump_working_text3": "{{$get.sump_pump_working_text3|| ''}}",
+                        "exhaust_fans_text1": "{{$get.exhaust_fans_text1|| ''}}",
+                        "exhaust_fans_text2": "{{$get.exhaust_fans_text2|| ''}}",
+                        "exhaust_fans_text3": "{{$get.exhaust_fans_text3|| ''}}",
+                        "berm_clean_of_debris_text1": "{{$get.berm_clean_of_debris_text1|| ''}}",
+                        "berm_clean_of_debris_text2": "{{$get.berm_clean_of_debris_text2|| ''}}",
+                        "seal_pot_text": "{{$get.seal_pot_text|| ''}}",
+                        "comments_text": "{{$get.comments_text || ''}}"
 
 
                     },
@@ -281,7 +281,7 @@
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "Cyanide Berm Check List",
+                                            "text": "Cyanide Berm Check List (2/2)",
                                             "style": {
                                                 "width": "100%"
                                             },
@@ -289,6 +289,117 @@
                                         }
                                     ],
                                     "class": "no_padding label_description_style"
+                                },
+                                
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "5%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Transfer Lines",
+                                            "class": "content_style_odd title_styles",
+                                            "style": {
+                                                "width": "40%",
+                                                "padding": "2",
+                                                "height": "5%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "17",
+                                            "class": "content_style_odd center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "transfer_lines_text1",
+                                                "value": "{{$global.transfer_lines_text1 || ''}}",
+                                                "contentDescription": "seventeen",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "18",
+                                            "class": "content_style_odd center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "transfer_lines_text2",
+                                                "value": "{{$global.transfer_lines_text2 || ''}}",
+                                                "contentDescription": "eighteen",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        },
+                                        
+                                        {
+                                            "type": "label",
+                                            "text": "19",
+                                            "class": "content_style_odd center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "transfer_lines_text3",
+                                                "value": "{{$global.transfer_lines_text3 || ''}}",
+                                                "contentDescription": "nineteen",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        }
+                                    ],
+                                    "class": "no_padding"
                                 },
                                 {
                                     "type": "horizontal",
@@ -298,7 +409,337 @@
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "Distribution Pump 014",
+                                            "text": "Transfer Tank",
+                                            "class": "content_style_even title_styles",
+                                            "style": {
+                                                "width": "40%",
+                                                "padding": "2",
+                                                "height": "5%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "20",
+                                            "class": "content_style_even center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "transfer_tank_text1",
+                                                "value": "{{$global.transfer_tank_text1 || ''}}",
+                                                "contentDescription": "twenty",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "21",
+                                            "class": "content_style_even center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "transfer_tank_text2",
+                                                "value": "{{$global.transfer_tank_text2 || ''}}",
+                                                "contentDescription": "twenty-one",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        },
+                                        
+                                        {
+                                            "type": "label",
+                                            "text": "22",
+                                            "class": "content_style_even center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "transfer_tank_text3",
+                                                "value": "{{$global.transfer_tank_text3 || ''}}",
+                                                "contentDescription": "twenty-two",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "5%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Sump Pump Working",
+                                            "class": "content_style_odd title_styles",
+                                            "style": {
+                                                "width": "40%",
+                                                "padding": "2",
+                                                "height": "5%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "23",
+                                            "class": "content_style_odd center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "sump_pump_working_text1",
+                                                "value": "{{$global.condition_of_hoses_text1 || ''}}",
+                                                "contentDescription": "twenty-three",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "24",
+                                            "class": "content_style_odd center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "sump_pump_working_text2",
+                                                "value": "{{$global.sump_pump_working_text2 || ''}}",
+                                                "contentDescription": "twenty-four",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        },
+                                        
+                                        {
+                                            "type": "label",
+                                            "text": "25",
+                                            "class": "content_style_odd center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "sump_pump_working_text3",
+                                                "value": "{{$global.sump_pump_working_text3 || ''}}",
+                                                "contentDescription": "twenty-five",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "5%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Exhaust Fans Running",
+                                            "class": "content_style_even title_styles",
+                                            "style": {
+                                                "width": "40%",
+                                                "padding": "2",
+                                                "height": "5%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "26",
+                                            "class": "content_style_even center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "exhaust_fans_text1",
+                                                "value": "{{$global.exhaust_fans_text1 || ''}}",
+                                                "contentDescription": "twenty-six",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "27",
+                                            "class": "content_style_even center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "exhaust_fans_text2",
+                                                "value": "{{$global.exhaust_fans_text2 || ''}}",
+                                                "contentDescription": "twenty-seven",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        },
+                                        
+                                        {
+                                            "type": "label",
+                                            "text": "28",
+                                            "class": "content_style_even center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "exhaust_fans_text3",
+                                                "value": "{{$global.exhaust_fans_text3 || ''}}",
+                                                "contentDescription": "twenty-eight",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "5%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Is the Berm clean of Debris",
                                             "class": "content_style_odd title_styles",
                                             "style": {
                                                 "width": "60%",
@@ -311,7 +752,7 @@
                                         },
                                         {
                                             "type": "label",
-                                            "text": "1",
+                                            "text": "29",
                                             "class": "content_style_odd center_align label_description_style",
                                             "style": {
                                                 "width": "5%",
@@ -327,9 +768,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "distribution_pump_14_text1",
-                                                "value": "{{$global.distribution_pump_14_text1 || ''}}",
-                                                "contentDescription": "one",
+                                                "name": "berm_clean_of_debris_text1",
+                                                "value": "{{$global.berm_clean_of_debris_text1 || ''}}",
+                                                "contentDescription": "twenty-nine",
                                                 "style": {
                                                     "padding": "2"
 
@@ -340,7 +781,7 @@
                                         },
                                         {
                                             "type": "label",
-                                            "text": "2",
+                                            "text": "30",
                                             "class": "content_style_odd center_align label_description_style",
                                             "style": {
                                                 "width": "5%",
@@ -356,9 +797,9 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "distribution_pump_14_text2",
-                                                "value": "{{$global.distribution_pump_14_text2 || ''}}",
-                                                "contentDescription": "two",
+                                                "name": "berm_clean_of_debris_text2",
+                                                "value": "{{$global.berm_clean_of_debris_text2 || ''}}",
+                                                "contentDescription": "thirty",
                                                 "style": {
                                                     "padding": "2"
 
@@ -370,6 +811,7 @@
                                     ],
                                     "class": "no_padding"
                                 },
+
                                 {
                                     "type": "horizontal",
                                     "style": {
@@ -378,7 +820,7 @@
                                     },
                                     "components": [{
                                             "type": "label",
-                                            "text": "distribution Pump 015",
+                                            "text": "Seal Pot",
                                             "class": "content_style_even title_styles",
                                             "style": {
                                                 "width": "60%",
@@ -389,39 +831,10 @@
                                             }
 
                                         },
-                                        {
-                                            "type": "label",
-                                            "text": "3",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "distribution_pump_15_text1",
-                                                "value": "{{$global.distribution_pump_15_text1 || ''}}",
-                                                "contentDescription": "three",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_even"
-
-                                            }]
-                                        },
                                         
                                         {
                                             "type": "label",
-                                            "text": "4",
+                                            "text": "31",
                                             "class": "content_style_even center_align label_description_style",
                                             "style": {
                                                 "width": "5%",
@@ -432,14 +845,16 @@
                                         {
                                             "type": "horizontal",
                                             "style": {
-                                                "width": "15%"
+                                                "width": "35%"
 
                                             },
-                                            "components": [{
+                                            "components": [
+                                                
+                                                {
                                                 "type": "textfield",
-                                                "name": "distribution_pump_15_text2",
-                                                "value": "{{$global.distribution_pump_15_text2 || ''}}",
-                                                "contentDescription": "four",
+                                                "name": "seal_pot_text",
+                                                "value": "{{$global.seal_pot_text || ''}}",
+                                                "contentDescription": "thirty-one",
                                                 "style": {
                                                     "padding": "2"
 
@@ -452,447 +867,39 @@
                                     "class": "no_padding"
                                 },
                                 {
-                                    "type": "horizontal",
+                                    "type":"vertical",
                                     "style": {
                                         "color": "rgb(255, 255, 255)",
-                                        "height": "5%"
-                                    },
-                                    "components": [{
-                                            "type": "label",
-                                            "text": "Holding Tank",
-                                            "class": "content_style_odd title_styles",
-                                            "style": {
-                                                "width": "40%",
-                                                "padding": "2",
-                                                "height": "5%",
-                                                "padding_left": "2%",
-                                                "size": "16"
-                                            }
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "5",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "holding_tank_text1",
-                                                "value": "{{$global.holding_tank_text1 || ''}}",
-                                                "contentDescription": "five",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_odd"
-
-                                            }]
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "6",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "holding_tank_text2",
-                                                "value": "{{$global.holding_tank_text2 || ''}}",
-                                                "contentDescription": "six",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_odd"
-
-                                            }]
-                                        },
-                                        
-                                        {
-                                            "type": "label",
-                                            "text": "7",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "holding_tank_text3",
-                                                "value": "{{$global.holding_tank_text3 || ''}}",
-                                                "contentDescription": "seven",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_odd"
-
-                                            }]
-                                        }
-                                    ],
-                                    "class": "no_padding"
+                                        "padding_bottom":"1%"
+                                      },
+                                    "components":[
+                                    {
+                                  "type":"label",
+                                  "text":"Comments",
+                                  "style":{
+                                    "background": "rgb(14, 53, 112)",
+                                        "color": "rgb(255, 255, 255)",
+                                        "height":"6%"
+                                  },
+                                  "class":"label_description_style"
                                 },
                                 {
-                                    "type": "horizontal",
+                                    "type": "textarea",
+                                    "value": "{{$global.comments_text || ''}}",
+                                    "name": "comments_text",
+                                    "contentDescription": "one",
                                     "style": {
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "5%"
-                                    },
-                                    "components": [{
-                                            "type": "label",
-                                            "text": "Distribution Lines",
-                                            "class": "content_style_even title_styles",
-                                            "style": {
-                                                "width": "40%",
-                                                "padding": "2",
-                                                "height": "5%",
-                                                "padding_left": "2%",
-                                                "size": "16"
-                                            }
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "8",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "distribution_lines_text1",
-                                                "value": "{{$global.distribution_lines_text1 || ''}}",
-                                                "contentDescription": "eight",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_even"
-
-                                            }]
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "9",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "distribution_lines_text2",
-                                                "value": "{{$global.distribution_lines_text2 || ''}}",
-                                                "contentDescription": "nine",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_even"
-
-                                            }]
-                                        },
-                                        
-                                        {
-                                            "type": "label",
-                                            "text": "10",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "distribution_lines_text3",
-                                                "value": "{{$global.distribution_lines_text3 || ''}}",
-                                                "contentDescription": "ten",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_even"
-
-                                            }]
-                                        }
-                                    ],
-                                    "class": "no_padding"
-                                },
-                                {
-                                    "type": "horizontal",
-                                    "style": {
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "5%"
-                                    },
-                                    "components": [{
-                                            "type": "label",
-                                            "text": "Mix Pump 012",
-                                            "class": "content_style_odd title_styles",
-                                            "style": {
-                                                "width": "40%",
-                                                "padding": "2",
-                                                "height": "5%",
-                                                "padding_left": "2%",
-                                                "size": "16"
-                                            }
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "11",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "mix_pump_12_text1",
-                                                "value": "{{$global.mix_pump_12_text1 || ''}}",
-                                                "contentDescription": "eleven",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_odd"
-
-                                            }]
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "12",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "mix_pump_12_text2",
-                                                "value": "{{$global.mix_pump_12_text2 || ''}}",
-                                                "contentDescription": "twelve",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_odd"
-
-                                            }]
-                                        },
-                                        
-                                        {
-                                            "type": "label",
-                                            "text": "13",
-                                            "class": "content_style_odd center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "mix_pump_12_text3",
-                                                "value": "{{$global.mix_pump_12_text3 || ''}}",
-                                                "contentDescription": "thirteen",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_odd"
-
-                                            }]
-                                        }
-                                    ],
-                                    "class": "no_padding"
-                                },
-                                {
-                                    "type": "horizontal",
-                                    "style": {
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "5%"
-                                    },
-                                    "components": [{
-                                            "type": "label",
-                                            "text": "Mix Pump 013",
-                                            "class": "content_style_even title_styles",
-                                            "style": {
-                                                "width": "40%",
-                                                "padding": "2",
-                                                "height": "5%",
-                                                "padding_left": "2%",
-                                                "size": "16"
-                                            }
-
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "14",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "mix_pump_13_text1",
-                                                "value": "{{$global.mix_pump_13_text1 || ''}}",
-                                                "contentDescription": "fourteen",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_even"
-
-                                            }]
-                                        },
-                                        {
-                                            "type": "label",
-                                            "text": "15",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "mix_pump_13_text2",
-                                                "value": "{{$global.mix_pump_13_text2 || ''}}",
-                                                "contentDescription": "fifteen",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_even"
-
-                                            }]
-                                        },
-                                        
-                                        {
-                                            "type": "label",
-                                            "text": "16",
-                                            "class": "content_style_even center_align label_description_style",
-                                            "style": {
-                                                "width": "5%",
-                                                "padding": "4",
-                                                "height": "6%"
-                                            }
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "15%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "mix_pump_13_text3",
-                                                "value": "{{$global.mix_pump_13_text3 || ''}}",
-                                                "contentDescription": "sixteen",
-                                                "style": {
-                                                    "padding": "2"
-
-                                                },
-                                                "class": "content_style_even"
-
-                                            }]
-                                        }
-                                    ],
-                                    "class": "no_padding"
+                                      "height": "20%",
+                                      "size": "16",
+                                      "width":"100%",
+                                      "background":"rgb(204,206,213)",
+                                      "border": "rgb(255, 255, 255)"
+                
+                                    }
+                                  }],
+                                  "class":"no_padding"
                                 }
-                               
-                                  
+
                                 
                             ],
                             "class": "no_padding"
@@ -1005,31 +1012,87 @@
                                     },
                                     {
                                         "type": "button",
-                                        "name": "next",
-                                        "text": "Next",
-                                        "class": "next_button_styles center_align",
+                                        "name": "submit",
+                                        "text": "submit",
+                                        "class": "center_align submit_button_styles",
+                                        "contentDescription": "submit",
                                         "action": {
-                                          "type": "$href",
-                                          "options": {
-                                            "url": "https://pvybhav.github.io/DGX_Form/CyanideIsotainer/screen_3.json",
-                                            "preload": {
-                                              "style": {
-                                                "background": "#ff0000"
-                                              },
-                                              "layers": [{
-                                                "type": "image",
-                                                "url": "file://infinit.gif",
-                                                "style": {
-                                                  "top": "50%-25",
-                                                  "left": "50%-25",
-                                                  "width": "50",
-                                                  "height": "50"
+                                            "type": "$global.reset",
+                                            "options": {
+                                                "items": [
+                                                    "distribution_pump_14_text1",
+                                                    "distribution_pump_14_text2",
+                                                    "distribution_pump_15_text1",
+                                                    "distribution_pump_15_text2",
+                                                    "holding_tank_text1",
+                                                    "holding_tank_text2",
+                                                    "holding_tank_text3",
+                                                    "distribution_lines_text1",
+                                                    "distribution_lines_text2",
+                                                    "distribution_lines_text3",
+                                                    "mix_pump_12_text1",
+                                                    "mix_pump_12_text2",
+                                                    "mix_pump_12_text3",
+                                                    "mix_pump_13_text1",
+                                                    "mix_pump_13_text2",
+                                                    "mix_pump_13_text3",
+                                                    "transfer_lines_text1",
+                                                    "transfer_lines_text2",
+                                                    "transfer_lines_text3",
+                                                    "transfer_tank_text1",
+                                                    "transfer_tank_text2",
+                                                    "transfer_tank_text3",
+                                                    "sump_pump_working_text1",
+                                                    "sump_pump_working_text2",
+                                                    "sump_pump_working_text3",
+                                                    "exhaust_fans_text1",
+                                                    "exhaust_fans_text2",
+                                                    "exhaust_fans_text3",
+                                                    "berm_clean_of_debris_text1",
+                                                    "berm_clean_of_debris_text2",
+                                                    "seal_pot_text",
+                                                    "eye_wash_lower_floor_text1",
+                                                    "eye_wash_lower_floor_text2",
+                                                    "eye_wash_upper_floor_text1",
+                                                    "eye_wash_upper_floor_text2",
+                                                    "inspect_iso_for_damage_text1",
+                                                    "inspect_iso_for_damage_text2",
+                                                    "inspection_hashes_secured_text1",
+                                                    "inspection_hashes_secured_text2",
+                                                    "condition_of_hoses_text1",
+                                                    "condition_of_hoses_text2",
+                                                    "condition_of_hoses_text3",
+                                                    "replace_gasket_on_hose_text1",
+                                                    "replace_gasket_on_hose_text2",
+                                                    "pressure_completed_time",
+                                                    "pressure_check_across_shifts",
+                                                    "flip_placards",
+                                                    "iso_washed",
+                                                    "mix_started_time",
+                                                    "mix_end_time",
+                                                    "sign",
+                                                    "date",
+                                                    "month",
+                                                    "year",
+                                                    "shift",
+                                                    "operator"
+                                                    
+                                                ],
+                                                "save": "true",
+                                                "filename": "CyanideIsonatorAndEquipmentChecklist"
+                                            },
+                                            "success": {
+                                                "type": "$util.toast",
+                                                "options": {
+                                                    "text": "Data Submitted successfully",
+                                                    "type": "warning",
+                                                    "success": {
+                                                        "type": "$reload"
+                                                    }
                                                 }
-                                              }]
                                             }
-                                          }
                                         }
-                                      },
+                                    },
 
 
 
