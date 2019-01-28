@@ -274,7 +274,249 @@
 
                         {
                             "type": "vertical",
-                            "items": [{
+                            "items": [
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "5%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Flip 3 placards (from 1689 to 3414) & 2 indicator plates from solid to solution",
+                                            "class": "content_style_odd title_styles",
+                                            "style": {
+                                                "width": "80%",
+                                                "padding": "2",
+                                                "height": "5%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
+                                        },
+                                       
+                                        {
+                                            "type": "label",
+                                            "text": "16",
+                                            "class": "content_style_odd center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [
+                                                
+                                                {
+                                                "type": "textfield",
+                                                "name": "flip_placards",
+                                                "value": "{{$global.flip_placards || ''}}",
+                                                "contentDescription": "sixteen",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "5%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "ISO washed before bringing outside",
+                                            "class": "content_style_even title_styles",
+                                            "style": {
+                                                "width": "80%",
+                                                "padding": "2",
+                                                "height": "5%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
+                                        },
+                                        
+                                        
+                                        {
+                                            "type": "label",
+                                            "text": "17",
+                                            "class": "content_style_even center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "iso_washed",
+                                                "value": "{{$global.iso_washed || ''}}",
+                                                "contentDescription": "seventeen",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "5%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Mix started at",
+                                            "class": "content_style_odd title_styles",
+                                            "style": {
+                                                "width": "60%",
+                                                "padding": "2",
+                                                "height": "5%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "Time",
+                                            "class": "content_style_odd title_styles",
+                                            "style": {
+                                                "width": "20%",
+                                                "padding": "2",
+                                                "height": "5%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "18",
+                                            "class": "content_style_odd center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [
+                                                
+                                                {
+                                                "type": "textfield",
+                                                "name": "mix_started_time",
+                                                "value": "{{$global.mix_started_time || ''}}",
+                                                "contentDescription": "eighteen",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        }
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "style": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "5%"
+                                    },
+                                    "components": [{
+                                            "type": "label",
+                                            "text": "Mix ended at",
+                                            "class": "content_style_even title_styles",
+                                            "style": {
+                                                "width": "60%",
+                                                "padding": "2",
+                                                "height": "5%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "Time",
+                                            "class": "content_style_even title_styles",
+                                            "style": {
+                                                "width": "20%",
+                                                "padding": "2",
+                                                "height": "5%",
+                                                "padding_left": "2%",
+                                                "size": "16"
+                                            }
+
+                                        },
+                                        
+                                        
+                                        {
+                                            "type": "label",
+                                            "text": "19",
+                                            "class": "content_style_even center_align label_description_style",
+                                            "style": {
+                                                "width": "5%",
+                                                "padding": "4",
+                                                "height": "6%"
+                                            }
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "style": {
+                                                "width": "15%"
+
+                                            },
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "mix_end_time",
+                                                "value": "{{$global.mix_end_time || ''}}",
+                                                "contentDescription": "nineteen",
+                                                "style": {
+                                                    "padding": "2"
+
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        }
+
+                                        
+                                    ],
+                                    "class": "no_padding"
+                                },
+                                {
                                     "type": "horizontal",
                                     "style": {
                                         "color": "rgb(255, 255, 255)"
