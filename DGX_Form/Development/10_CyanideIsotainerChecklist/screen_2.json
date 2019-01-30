@@ -201,8 +201,14 @@
       },
       "actions": {
         "$load": {
-          "type": "$global.set",
-          "options": {}
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
         },
         "$pull": {
           "type": "$reload",
