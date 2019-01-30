@@ -26,7 +26,7 @@
           "background": "rgb(0, 102, 204)"
         },
         "table_row_odd_styles": {
-          "background": "rgb(204,206,213)"
+         "background": "rgb(239,240,242)"
         },
         "table_row_even_styles": {
           "background": "rgb(231,232,235)"
@@ -111,23 +111,23 @@
           "size":15,
           "font": "HelveticaHeader"
         },
-        "header_style2":{
-          "border": "#FFFFFF",
-          "border_width": "2",
-          "background": "rgb(14, 53, 112)",
-          "height": "5%",
-          "align": "center",
-          "color":"rgb(255,255,255)",
-          "size":15,
-          "font": "HelveticaHeader"
-        },
         "header_textfield":{
           "border": "#FFFFFF",
           "border_width": "2",
           "color":"rgb(0,0,0)",
           "size":15,
           "font": "HelveticaHeader",
-          "background": "rgb(204,206,213)"
+         "background": "rgb(239,240,242)"
+        },
+        "header_style3":{
+          "border": "#FFFFFF",
+          "border_width": "2",
+         "background": "rgb(204,206,213)",
+          "height": "5%",
+          "align": "center",
+          "color":"rgb(255,255,255)",
+          "size":15,
+          "font": "HelveticaHeader"
         }
       },
       "actions": {
@@ -924,7 +924,7 @@
                         {
                           "type": "label",
                           "text": "",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "12%"
                           }
@@ -938,7 +938,7 @@
                         {
                           "type":"label",
                           "text":"1",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"10%"
                           }
@@ -952,7 +952,7 @@
                         {
                           "type":"label",
                           "text":"2",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"12%"
                           }
@@ -966,7 +966,7 @@
                         {
                           "type":"label",
                           "text":"3",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"8%"
                           }
@@ -980,7 +980,7 @@
                         {
                           "type":"label",
                           "text":"4",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"8%"
                           }
@@ -1000,7 +1000,7 @@
                         {
                           "type": "label",
                           "text": "5",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1014,7 +1014,7 @@
                         {
                           "type":"label",
                           "text":"6",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1028,7 +1028,7 @@
                         {
                           "type":"label",
                           "text":"7",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1042,7 +1042,7 @@
                         {
                           "type":"label",
                           "text":"8",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1070,7 +1070,8 @@
                                 "width": "12%",
                                 "align": "center",
                                 "height":"7%",
-                                "color":"rgb(0,0,0)"
+                                "color":"#FFFFFF",
+                                "background": "rgb(14, 53, 112)"
                               }
                     },
                     {
@@ -1078,8 +1079,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"horizontal",
-                          "components":[{
+                          "type":"vertical",
+                          "components":[
+                            {
                             "type":"textfield",
                             "name":"textfield1",
                             "contentDescription": "one",
@@ -1154,7 +1156,7 @@
                     }
                   ],
                   "style":{
-                    "background": "rgb(204,206,213)"
+                    "background": "rgb(14, 53, 112)"
                   }
                 },
                 {
@@ -1244,13 +1246,10 @@
                   ],
                   "style":{
                     "width":"50%",
-                    "background": "rgb(204,206,213)"
+                    "background": "rgb(239,240,242)"
                   }
                 }
-              ],
-              "style":{
-                "background": "rgb(204,206,213)"
-              }
+              ]
             },
             {
               "type":"horizontal",
@@ -1266,7 +1265,7 @@
                         {
                           "type": "label",
                           "text": "",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "12%"
                           }
@@ -1280,7 +1279,7 @@
                         {
                           "type":"label",
                           "text":"9",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"10%"
                           }
@@ -1294,7 +1293,7 @@
                         {
                           "type":"label",
                           "text":"10",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"12%"
                           }
@@ -1308,7 +1307,7 @@
                         {
                           "type":"label",
                           "text":"11",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"8%"
                           }
@@ -1322,7 +1321,7 @@
                         {
                           "type":"label",
                           "text":"12",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"8%"
                           }
@@ -1342,7 +1341,7 @@
                         {
                           "type": "label",
                           "text": "13",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1356,7 +1355,7 @@
                         {
                           "type":"label",
                           "text":"14",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1370,7 +1369,7 @@
                         {
                           "type":"label",
                           "text":"15",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1384,7 +1383,7 @@
                         {
                           "type":"label",
                           "text":"16",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1412,7 +1411,8 @@
                             "width": "12%",
                             "align": "center",
                             "height":"7%",
-                            "color":"rgb(0,0,0)"
+                            "color":"#FFFFFF",
+                            "background": "rgb(14, 53, 112)"
                           }
                     },
                     {
@@ -1481,7 +1481,7 @@
                     }
                   ],
                   "style":{
-                    "background": "rgb(204,206,213)"
+                    "background": "rgb(14, 53, 112)"
                   }
                 },
                 {
@@ -1555,13 +1555,10 @@
                   ],
                   "style":{
                     "width":"50%",
-                    "background": "rgb(204,206,213)"
+                     "background": "rgb(239,240,242)"
                   }
                 }
-              ],
-              "style":{
-                "background": "rgb(204,206,213)"
-              }
+              ]
             },
             {
               "type":"horizontal",
@@ -1577,7 +1574,7 @@
                         {
                           "type": "label",
                           "text": "",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "12%"
                           }
@@ -1591,7 +1588,7 @@
                         {
                           "type":"label",
                           "text":"17",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"10%"
                           }
@@ -1605,7 +1602,7 @@
                         {
                           "type":"label",
                           "text":"18",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"12%"
                           }
@@ -1619,7 +1616,7 @@
                         {
                           "type":"label",
                           "text":"19",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"8%"
                           }
@@ -1633,7 +1630,7 @@
                         {
                           "type":"label",
                           "text":"20",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style":{
                             "width":"8%"
                           }
@@ -1653,7 +1650,7 @@
                         {
                           "type": "label",
                           "text": "21",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1667,7 +1664,7 @@
                         {
                           "type":"label",
                           "text":"22",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1681,7 +1678,7 @@
                         {
                           "type":"label",
                           "text":"23",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1695,7 +1692,7 @@
                         {
                           "type":"label",
                           "text":"24",
-                          "class":"header_style2",
+                          "class":"header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1723,7 +1720,8 @@
                             "width": "12%",
                             "align":"center",
                             "height":"7%",
-                            "color":"rgb(0,0,0)"
+                            "color":"#FFFFFF",
+                            "background": "rgb(14, 53, 112)"
                           }
                     },
                     {
@@ -1792,7 +1790,7 @@
                     }
                   ],
                   "style":{
-                    "background": "rgb(204,206,213)"
+                    "background": "rgb(14, 53, 112)"
                   }
                 },
                 {
@@ -1866,13 +1864,10 @@
                   ],
                   "style":{
                     "width":"50%",
-                    "background": "rgb(204,206,213)"
+                    "background": "rgb(239,240,242)"
                   }
                 }
-              ],
-              "style":{
-                "background": "rgb(204,206,213)"
-              }
+              ]
             },
             {
               "type": "horizontal",
