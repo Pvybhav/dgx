@@ -36,7 +36,8 @@
           {
             "form_name": "Leach Area Shift Report",
             "voicetag_name": "Form1",
-            "url": "https://s3.amazonaws.com/enu-digital-ips/development/1_LeachAreaShiftReport/screen_1.json"
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/1_LeachAreaShiftReport/screen_1.json",
+            "defaultSelected": "true"
           },
           {
             "form_name": "Safety Screen Shift Report",
@@ -77,6 +78,11 @@
             "form_name": "CIP Checklist",
             "voicetag_name": "Form9",
             "url": "https://s3.amazonaws.com/enu-digital-ips/development/9_CIPChecklist/screen_1.json"
+          },
+          {
+            "form_name": "Cyanide Isotainer Checklist",
+            "voicetag_name": "Form10",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/10_CyanideIsotainerChecklist/screen_1.json"
           },
           {
             "form_name": "Elution Area Checklist",
@@ -139,6 +145,35 @@
             }
           },
           "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "dropdown",
+                          "name": "home_forms_dropdown",
+                          "value": "",
+                          "contentDescription": "forms",
+                          "class": "center_align",
+                          "options": {
+                            "{{#each forms}}": {
+                              "value": "{{form_name}}",
+                              "defaultSelected": "{{#? defaultSelected}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "type": "vertical",
               "items": [
