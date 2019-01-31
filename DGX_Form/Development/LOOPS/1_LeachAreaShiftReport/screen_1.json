@@ -819,6 +819,12 @@
             "type": "$global.set",
             "options": {
               "section_id": "form1_page1",
+              "f1_s1_sign": "{{$global.f1_s1_sign || ''}}",
+              "f1_s1_day": "{{$global.f1_s1_day || ''}}",
+              "f1_s1_month": "{{$global.f1_s1_month || ''}}",
+              "f1_s1_year": "{{$global.f1_s1_year || ''}}",
+              "f1_s1_shift": "{{$global.f1_s1_shift || ''}}",
+              "f1_s1_operator": "{{$global.f1_s1_operator || ''}}",
               "agitator_shaft_l1_101": "{{$global.agitator_shaft_l1_101 == null ? true : $global.agitator_shaft_l1_101}}",
               "agitator_shaft_l1_102": "{{$global.agitator_shaft_l1_102 == null ? true : $global.agitator_shaft_l1_102}}",
               "agitator_shaft_l1_103": "{{$global.agitator_shaft_l1_103 == null ? true : $global.agitator_shaft_l1_103}}",
@@ -919,7 +925,7 @@
           "type": "$global.set",
           "options": {
             "section_id": "form1_page1",
-            "f1_s1_sign": "{{$get.sign || ''}}",
+            "f1_s1_sign": "{{$get.sign}}",
             "f1_s1_day": "{{$get.day}}",
             "f1_s1_month": "{{$get.month}}",
             "f1_s1_year": "{{$get.year}}",

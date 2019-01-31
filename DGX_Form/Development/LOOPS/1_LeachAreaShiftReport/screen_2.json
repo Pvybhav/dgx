@@ -833,6 +833,7 @@
             "type": "$global.set",
             "options": {
               "section_id": "form1_page2",
+              "f1_s2_description": "{{$global.f1_s2_description || ''}}",
               "agitator_shaft_l2_101": "{{$global.agitator_shaft_l2_101 == null ? true : $global.agitator_shaft_l2_101}}",
               "agitator_shaft_l2_102": "{{$global.agitator_shaft_l2_102 == null ? true : $global.agitator_shaft_l2_102}}",
               "agitator_shaft_l2_103": "{{$global.agitator_shaft_l2_103 == null ? true : $global.agitator_shaft_l2_103}}",
@@ -933,7 +934,7 @@
           "type": "$global.set",
           "options": {
             "section_id": "form1_page2",
-            "f1_s2_description": "{{$get.description || ''}}"
+            "f1_s2_description": "{{$get.description}}"
           },
           "success": {
             "trigger": "displayToaster",
