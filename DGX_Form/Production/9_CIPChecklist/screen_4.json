@@ -28,14 +28,13 @@
         "table_body_name_styles": {
           "width": "20%"
         },
-        
         "table_body_label_width": {
           "width": "3%"
         },
         "table_body_textfield_styles": {
           "width": "13%",
           "height": "4%",
-          "size": "14"
+          "size": "13"
         },
         "label_styles": {
           "font": "HelveticaNeue-Bold",
@@ -93,6 +92,7 @@
         }
       },
       "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/9_CIPChecklist/screen_1.json",
         "Page_Heading": "CIP Report",
         "loading_image_url": "file://infinit.gif",
         "Table_Headers": [
@@ -449,9 +449,9 @@
               ]
             },
             "success": {
-              "trigger": "displayToaster",
+              "type": "$href",
               "options": {
-                "message": "Data Submitted successfully"
+                "url": "{{redirect_url}}"
               }
             }
           }

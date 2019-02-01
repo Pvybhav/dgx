@@ -197,6 +197,7 @@
         }
       },
       "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/10_CyanideIsotainerChecklist/screen_1.json",
         "Page_Heading": "Cyanide Isotainer and Equipment Check List"
       },
       "actions": {
@@ -1052,13 +1053,9 @@
                           "filename": "CyanideIsonatorAndEquipmentChecklist"
                         },
                         "success": {
-                          "type": "$util.toast",
+                          "type": "$href",
                           "options": {
-                            "text": "Data Submitted successfully",
-                            "type": "warning",
-                            "success": {
-                              "type": "$reload"
-                            }
+                            "url": "{{redirect_url}}"
                           }
                         }
                       }

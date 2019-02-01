@@ -120,7 +120,8 @@
         "switch_styles": {
           "color": "rgb(0,255,0)",
           "color:disabled": "rgb(255,0,0)",
-          "height": "6%"
+          "height": "2%",
+          "width": "5%"
         },
         "switch_legend_styles": {
           "color": "rgb(0,255,0)",
@@ -197,47 +198,44 @@
         }
       },
       "data": {
-        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/8_OffloadChecklist/screen_1.json",
         "Page_Heading": "Reagent Operator - SO2 Offload Checklist"
       },
       "actions": {
         "$load": {
           "type": "$global.set",
           "options": {
-            "section_id": "form8_page3",
-            "so2_screen3_liquid_so2": "{{$global.so2_screen3_liquid_so2 == null ? true : $global.so2_screen3_liquid_so2}}",
-            "so2_screen3_so2_value_at_offload": "{{$global.so2_screen3_so2_value_at_offload == null ? true : $global.so2_screen3_so2_value_at_offload}}",
-            "so2_screen3_respirator_mask": "{{$global.so2_screen3_respirator_mask == null ? true : $global.so2_screen3_respirator_mask}}",
-            "so2_screen3_chemical_resistant_suit": "{{$global.so2_screen3_chemical_resistant_suit == null ? true : $global.so2_screen3_chemical_resistant_suit}}",
-            "so2_screen3_chemical_resistant_gloves": "{{$global.so2_screen3_chemical_resistant_gloves == null ? true : $global.so2_screen3_chemical_resistant_gloves}}",
-            "so2_screen3_chemical_boots": "{{$global.so2_screen3_chemical_boots == null ? true : $global.so2_screen3_chemical_boots}}"
-          },
-          "success": {
-            "type": "$render",
-            "success": {
-              "type": "$util.toast",
-              "options": {
-                "text": "Page loaded successfully",
-                "type": "warning"
-              }
-            }
+            "so2_screen3_liquid_so2": "{{$global.so2_screen3_liquid_so2  || 'true' }}",
+            "so2_screen3_so2_value_at_offload": "{{$global.so2_screen3_so2_value_at_offload  || 'true'}}",
+            "so2_screen3_respirator_mask": "{{$global.so2_screen3_respirator_mask  || 'true'}}",
+            "so2_screen3_chemical_resistant_suit": "{{$global.so2_screen3_chemical_resistant_suit || 'true'}}",
+            "so2_screen3_chemical_resistant_gloves": "{{$global.so2_screen3_chemical_resistant_gloves || 'true'}}",
+            "so2_screen3_chemical_boots": "{{$global.so2_screen3_chemical_boots || 'true'}}"
           }
         },
         "$pull": {
-          "type": "$reload"
+          "type": "$reload",
+          "success": {
+            "type": "$render"
+          }
         },
         "handleSave": {
           "type": "$global.set",
           "options": {
-            "section_id": "form8_page3",
-            "so2_screen3_liquid_so2_level": "{{$get.so2_screen3_liquid_so2_level || ' '}}",
-            "so2_screen3_liquid_so2_level_comments": "{{$get.so2_screen3_liquid_so2_level_comments || ' '}}",
-            "so2_screen3_so2_value_at_offload_value": "{{$get.so2_screen3_so2_value_at_offload_value || ' '}}",
-            "so2_screen3_so2_value_at_offload_comments": "{{$get.so2_screen3_so2_value_at_offload_comments || ' '}}",
-            "so2_screen3_respirator_mask_comments": "{{$get.so2_screen3_respirator_mask_comments || ' '}}",
-            "so2_screen3_chemical_resistant_suit_comments": "{{$get.so2_screen3_chemical_resistant_suit_comments || ' '}}",
-            "so2_screen3_chemical_resistant_gloves_comments": "{{$get.so2_screen3_chemical_resistant_gloves_comments || ' '}}",
-            "so2_screen3_chemical_boots_comments": "{{$get.so2_screen3_chemical_boots_comments || ' '}}",
+            "section_id": "Reagent_Operator",
+            "so2_screen3_liquid_so2": "{{$global.so2_screen3_liquid_so2}}",
+            "so2_screen3_liquid_so2_level": "{{$get.so2_screen3_liquid_so2_level}}",
+            "so2_screen3_liquid_so2_level_comments": "{{$get.so2_screen3_liquid_so2_level_comments}}",
+            "so2_screen3_so2_value_at_offload": "{{$global.so2_screen3_so2_value_at_offload}}",
+            "so2_screen3_so2_value_at_offload_value": "{{$get.so2_screen3_so2_value_at_offload_value}}",
+            "so2_screen3_so2_value_at_offload_comments": "{{$get.so2_screen3_so2_value_at_offload_comments}}",
+            "so2_screen3_respirator_mask": "{{$global.so2_screen3_respirator_mask}}",
+            "so2_screen3_respirator_mask_comments": "{{$get.so2_screen3_respirator_mask_comments}}",
+            "so2_screen3_chemical_resistant_suit": "{{$global.so2_screen3_chemical_resistant_suit}}",
+            "so2_screen3_chemical_resistant_suit_comments": "{{$get.so2_screen3_chemical_resistant_suit_comments}}",
+            "so2_screen3_chemical_resistant_gloves": "{{$global.so2_screen3_chemical_resistant_gloves}}",
+            "so2_screen3_chemical_resistant_gloves_comments": "{{$get.so2_screen3_chemical_resistant_gloves_comments}}",
+            "so2_screen3_chemical_boots": "{{$get.so2_screen3_chemical_boots}}",
+            "so2_screen3_chemical_boots_comments": "{{$get.so2_screen3_chemical_boots_comments}}",
             "so2_screen3_operator_sign": "{{$get.so2_screen3_operator_sign}}",
             "so2_screen3_truck_driver_sign": "{{$get.so2_screen3_truck_driver_sign}}"
           },
@@ -367,13 +365,12 @@
                     {
                       "type": "switch",
                       "name": "so2_screen3_liquid_so2",
-                      "value": "{{$global.so2_screen3_liquid_so2}}",
+                      "value": "{{$global.so2_screen3_liquid_so2 || 'true'}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "two",
                       "action": {
                         "type": "$global.set",
                         "options": {
-                          "section_id": "form8_page3",
                           "so2_screen3_liquid_so2": "{{$get.so2_screen3_liquid_so2}}"
                         }
                       }
@@ -469,13 +466,12 @@
                     {
                       "type": "switch",
                       "name": "so2_screen3_so2_value_at_offload",
-                      "value": "{{$global.so2_screen3_so2_value_at_offload}}",
+                      "value": "{{$global.so2_screen3_so2_value_at_offload || 'true'}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "five",
                       "action": {
                         "type": "$global.set",
                         "options": {
-                          "section_id": "form8_page3",
                           "so2_screen3_so2_value_at_offload": "{{$get.so2_screen3_so2_value_at_offload}}"
                         }
                       }
@@ -576,13 +572,12 @@
                     {
                       "type": "switch",
                       "name": "so2_screen3_respirator_mask",
-                      "value": "{{$global.so2_screen3_respirator_mask}}",
+                      "value": "{{$global.so2_screen3_respirator_mask || 'true'}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "seven",
                       "action": {
                         "type": "$global.set",
                         "options": {
-                          "section_id": "form8_page3",
                           "so2_screen3_respirator_mask": "{{$get.so2_screen3_respirator_mask}}"
                         }
                       }
@@ -650,13 +645,12 @@
                     {
                       "type": "switch",
                       "name": "so2_screen3_chemical_resistant_suit",
-                      "value": "{{$global.so2_screen3_chemical_resistant_suit}}",
+                      "value": "{{$global.so2_screen3_chemical_resistant_suit || 'true'}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "nine",
                       "action": {
                         "type": "$global.set",
                         "options": {
-                          "section_id": "form8_page3",
                           "so2_screen3_chemical_resistant_suit": "{{$get.so2_screen3_chemical_resistant_suit}}"
                         }
                       }
@@ -724,13 +718,12 @@
                     {
                       "type": "switch",
                       "name": "so2_screen3_chemical_resistant_gloves",
-                      "value": "{{$global.so2_screen3_chemical_resistant_gloves}}",
+                      "value": "{{$global.so2_screen3_chemical_resistant_gloves || 'true'}}",
                       "class": "content_style_even switch_styles",
                       "contentDescription": "eleven",
                       "action": {
                         "type": "$global.set",
                         "options": {
-                          "section_id": "form8_page3",
                           "so2_screen3_chemical_resistant_gloves": "{{$get.so2_screen3_chemical_resistant_gloves}}"
                         }
                       }
@@ -798,13 +791,12 @@
                     {
                       "type": "switch",
                       "name": "so2_screen3_chemical_boots",
-                      "value": "{{$global.so2_screen3_chemical_boots}}",
+                      "value": "{{$global.so2_screen3_chemical_boots || 'true'}}",
                       "class": "content_style_odd switch_styles",
                       "contentDescription": "thirteen",
                       "action": {
                         "type": "$global.set",
                         "options": {
-                          "section_id": "form8_page3",
                           "so2_screen3_chemical_boots": "{{$get.so2_screen3_chemical_boots}}"
                         }
                       }
@@ -1075,77 +1067,10 @@
                           "filename": "ReagentOperatorSO2Offload"
                         },
                         "success": {
-                          "type": "$global.reset",
+                          "type": "$util.toast",
                           "options": {
-                            "items": [
-                              "so2_screen3_liquid_so2",
-                              "so2_screen3_so2_value_at_offload",
-                              "so2_screen3_respirator_mask",
-                              "so2_screen3_chemical_resistant_suit",
-                              "so2_screen3_chemical_resistant_gloves",
-                              "so2_screen3_chemical_boots",
-                              "so2_screen3_liquid_so2",
-                              "so2_screen3_liquid_so2_level",
-                              "so2_screen3_liquid_so2_level_comments",
-                              "so2_screen3_so2_value_at_offload",
-                              "so2_screen3_so2_value_at_offload_value",
-                              "so2_screen3_so2_value_at_offload_comments",
-                              "so2_screen3_respirator_mask",
-                              "so2_screen3_respirator_mask_comments",
-                              "so2_screen3_chemical_resistant_suit",
-                              "so2_screen3_chemical_resistant_suit_comments",
-                              "so2_screen3_chemical_resistant_gloves",
-                              "so2_screen3_chemical_resistant_gloves_comments",
-                              "so2_screen3_chemical_boots",
-                              "so2_screen3_chemical_boots_comments",
-                              "so2_screen3_operator_sign",
-                              "so2_screen3_truck_driver_sign",
-                              "so2_screen2_safety_perimeter_cones",
-                              "so2_screen2_truck_wheels_choked",
-                              "so2_screen2_safety_shower",
-                              "so2_screen2_escape_packs_inspection",
-                              "so2_screen2_storage_tank_1",
-                              "so2_screen2_storage_tank_2",
-                              "so2_screen2_storage_tank_3",
-                              "so2_screen2_storage_tank_4",
-                              "so2_screen2_safety_perimeter_cones",
-                              "so2_screen2_safety_perimeter_cones_comments",
-                              "so2_screen2_truck_wheels_choked",
-                              "so2_screen2_truck_wheels_choked_comments",
-                              "so2_screen2_safety_shower",
-                              "so2_screen2_safety_shower_comments",
-                              "so2_screen2_escape_packs_inspection",
-                              "so2_screen2_escape_packs_inspection_comments",
-                              "so2_screen2_storage_tank_1_level",
-                              "so2_screen2_storage_tank_1",
-                              "so2_screen2_storage_tank_1_comments",
-                              "so2_screen2_storage_tank_2_level",
-                              "so2_screen2_storage_tank_2",
-                              "so2_screen2_storage_tank_2_comments",
-                              "so2_screen2_storage_tank_3_level",
-                              "so2_screen2_storage_tank_3",
-                              "so2_screen2_storage_tank_3_comments",
-                              "so2_screen2_storage_tank_4_level",
-                              "so2_screen2_storage_tank_4",
-                              "so2_screen2_storage_tank_4_comments",
-                              "sign",
-                              "date",
-                              "month",
-                              "year",
-                              "shift",
-                              "operator",
-                              "company",
-                              "truck_driver_name",
-                              "BOL",
-                              "Safety_concerns",
-                              "warehouse_tech_name"
-                            ]
-                          },
-                          "success": {
-                            "type": "$href",
-                            "options": {
-                              "url": "{{redirect_url}}"
-                            }
+                            "text": "Data Submitted successfully",
+                            "type": "warning"
                           }
                         }
                       }
