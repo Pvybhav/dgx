@@ -104,6 +104,7 @@
         }
       },
       "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/1_LeachAreaShiftReport/screen_1.json",
         "Page_Heading": "Leach Area Shift Report",
         "Table_Headers": [
           {
@@ -2122,10 +2123,9 @@
                             ]
                           },
                           "success": {
-                            "type": "$util.toast",
+                            "type": "$href",
                             "options": {
-                              "text": "Data Submitted successfully",
-                              "type": "warning"
+                              "url": "{{redirect_url}}"
                             }
                           }
                         }

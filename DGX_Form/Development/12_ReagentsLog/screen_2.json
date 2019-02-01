@@ -124,7 +124,7 @@
           "type": "$global.set",
           "options": {
             "section_id": "form12_page2",
-            "comments":"{{$get.comments || ''}}"
+            "comments": "{{$get.comments || ''}}"
           },
           "success": {
             "type": "$util.toast",
@@ -136,6 +136,7 @@
         }
       },
       "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/12_ReagentsLog/screen_1.json",
         "Page_Heading": "Reagents Log Sheet"
       },
       "templates": {
@@ -158,45 +159,53 @@
           },
           "sections": [
             {
-              "type":"horizontal",
-              "items":[{
-                "type":"horizontal",
-                "class": "no_padding",
-                "components":[{
-                  "type":"label",
-                  "text":"Comments(1)",
-                  "style":{
-                    "background": "rgb(14, 53, 112)",
-                    "width": "100%",
-                    "height": "8%",
-                    "color":"rgb(255,255,255)",
-                    "padding":"1",
-                    "font": "HelveticaNeue-Bold",
-                    "size":15
-                  }
-                }]
-              }]
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Comments(1)",
+                      "style": {
+                        "background": "rgb(14, 53, 112)",
+                        "width": "100%",
+                        "height": "8%",
+                        "color": "rgb(255,255,255)",
+                        "padding": "1",
+                        "font": "HelveticaNeue-Bold",
+                        "size": 15
+                      }
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "type":"horizontal",
-              "items":[{
-                "type":"horizontal",
-                "class": "no_padding",
-                "components":[{
-                  "type":"textarea",
-                  "name":"comments",
-                  "contentDescription": "one",
-                  "value":"{{$global.comments || ''}}",
-                  "style":{
-                    "background": "rgb(204,206,213)",
-                    "width": "100%",
-                    "height": "50%",
-                    "color":"rgb(0,0,0)",
-                    "padding":"1",
-                    "font": "HelveticaNeue"
-                  }
-                }]
-              }]
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "comments",
+                      "contentDescription": "one",
+                      "value": "{{$global.comments || ''}}",
+                      "style": {
+                        "background": "rgb(204,206,213)",
+                        "width": "100%",
+                        "height": "50%",
+                        "color": "rgb(0,0,0)",
+                        "padding": "1",
+                        "font": "HelveticaNeue"
+                      }
+                    }
+                  ]
+                }
+              ]
             },
             {
               "type": "horizontal",
@@ -351,10 +360,9 @@
                             ]
                           },
                           "success": {
-                            "type": "$util.toast",
+                            "type": "$href",
                             "options": {
-                              "text": "Data Submitted successfully",
-                              "type": "warning"
+                              "url": "{{redirect_url}}"
                             }
                           }
                         }

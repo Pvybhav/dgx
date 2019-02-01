@@ -86,6 +86,9 @@
           "corner_radius": "1%"
         }
       },
+      "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/3_LimeAreaShiftReport/screen_1.json"
+      },
       "actions": {
         "$load": {
           "type": "$render"
@@ -400,10 +403,9 @@
                             ]
                           },
                           "success": {
-                            "type": "$util.toast",
+                            "type": "$href",
                             "options": {
-                              "text": "Data Submitted successfully",
-                              "type": "warning"
+                              "url": "{{redirect_url}}"
                             }
                           }
                         }

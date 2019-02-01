@@ -197,6 +197,7 @@
         }
       },
       "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/8_OffloadChecklist/screen_1.json",
         "Page_Heading": "Reagent Operator - SO2 Offload Checklist"
       },
       "actions": {
@@ -1141,10 +1142,9 @@
                             ]
                           },
                           "success": {
-                            "type": "$util.toast",
+                            "type": "$href",
                             "options": {
-                              "text": "Data Submitted successfully",
-                              "type": "warning"
+                              "url": "{{redirect_url}}"
                             }
                           }
                         }

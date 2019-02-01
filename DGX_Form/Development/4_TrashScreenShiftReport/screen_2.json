@@ -164,6 +164,7 @@
         }
       },
       "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/4_TrashScreenShiftReport/screen_1.json",
         "Page_Heading": "Trash Screens Shift Report",
         "Table1_Headers": [
           {
@@ -1928,10 +1929,9 @@
                             ]
                           },
                           "success": {
-                            "type": "$util.toast",
+                            "type": "$href",
                             "options": {
-                              "text": "Data Submitted successfully",
-                              "type": "warning"
+                              "url": "{{redirect_url}}"
                             }
                           }
                         }
