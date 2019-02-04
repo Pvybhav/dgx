@@ -207,21 +207,37 @@
             "data": {
                 "Page_Heading": "Primary Crusher Operator Shift Report",
                 "Table1_Headers": [
-                  {
-                    "type": "label",
-                    "name": "Time",
-                    "value": "Time",
-                    "col_type": "col_name",
-                    "styles": "table_header_styles center_align"
-                  },
-                  {
-                    "type": "label",
-                    "name": "Dome_level",
-                    "value": "Dome Level",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align"
-                  }
-                ],
+                    {
+                      "type": "label",
+                      "value": "Safety Showers",
+                      "col_type": "col_name",
+                      "styles": "table_header_styles center_align table_header_name_styles"
+                    },
+                    {
+                      "type": "label",
+                      "value": "",
+                      "col_type": "col_value",
+                      "styles": "table_header_styles center_align table_header_description_styles"
+                    },
+                    {
+                      "type": "label",
+                      "value": "07:00 OK",
+                      "col_type": "col_value",
+                      "styles": "table_header_styles center_align table_header_value_styles"
+                    },
+                    {
+                      "type": "label",
+                      "value": "11:00 OK",
+                      "col_type": "col_value",
+                      "styles": "table_header_styles center_align table_header_value_styles"
+                    },
+                    {
+                      "type": "label",
+                      "value": "15:00 OK",
+                      "col_type": "col_value",
+                      "styles": "table_header_styles center_align table_header_value_styles"
+                    }
+                  ],
                 "Table2_Headers": [
                   {
                     "type": "textfield",
@@ -714,11 +730,11 @@
                                       "{{#each Table1_Headers}}": {
                                         "type": "label",
                                         "text": "{{value}}",
-                                        "class": "{{styles}}",
-                                        "style": {
-                                          "background": "rgb(14, 53, 112)"
-                                        }
+                                        "class": "{{styles}}"
                                       }
+                                    },
+                                    "style": {
+                                      "padding_top": "1%"
                                     }
                                   }
                                 ]
