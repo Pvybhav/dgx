@@ -211,11 +211,15 @@
             },
             "actions": {
                 "$load": {
-                    "type": "$global.set",
-                    "options": {
-
+                    "type": "$render",
+                    "success": {
+                      "type": "$util.toast",
+                      "options": {
+                        "text": "Page loaded successfully",
+                        "type": "warning"
+                      }
                     }
-                },
+                  },
                 "$pull": {
                     "type": "$reload",
                     "success": {
@@ -549,7 +553,7 @@
                                             "components": [{
                                                 "type": "textfield",
                                                 "name": "sump_pump_working_text1",
-                                                "value": "{{$global.condition_of_hoses_text1 || ''}}",
+                                                "value": "{{$global.sump_pump_working_text1 || ''}}",
                                                 "contentDescription": "seven",
                                                 "style": {
                                                     "padding": "2"
@@ -1070,12 +1074,13 @@
                                                     "iso_washed",
                                                     "mix_started_time",
                                                     "mix_end_time",
-                                                    "sign",
-                                                    "date",
-                                                    "month",
-                                                    "year",
-                                                    "shift",
-                                                    "operator"
+                                                    "form10_sign",
+                                                    "form10_day",
+                                                    "form10_month",
+                                                    "form10_year",
+                                                    "form10_shift",
+                                                    "form10_operator",
+                                                    "comments_text"
                                                     
                                                 ],
                                                 "save": "true",
