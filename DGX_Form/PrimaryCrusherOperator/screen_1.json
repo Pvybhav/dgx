@@ -696,34 +696,35 @@
                                         "contentDescription": "Sign"
                                       }
                                     ]
-                                  },
-                                  {
-                                    "type": "horizontal",
-                                    "items": [
-                                      {
-                                        "type": "vertical",
-                                        "class": "no_padding",
-                                        "components": [
-                                          {
-                                            "type": "horizontal",
-                                            "components": {
-                                              "{{#each Table1_Headers}}": {
-                                                "type": "label",
-                                                "text": "{{value}}",
-                                                "class": "{{styles}}",
-                                                "style": {
-                                                  "background": "rgb(14, 53, 112)"
-                                                }
-                                              }
-                                            }
-                                          }
-                                        ]
-                                      }
-                                    ]
                                   }
+                                  
                             ],
                             "class": "no_padding"
                         },
+                        {
+                            "type": "horizontal",
+                            "items": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "components": {
+                                      "{{#each Table1_Headers}}": {
+                                        "type": "label",
+                                        "text": "{{value}}",
+                                        "class": "{{styles}}",
+                                        "style": {
+                                          "background": "rgb(14, 53, 112)"
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
                         {
                             "type": "horizontal",
                             "items": [{
