@@ -32,14 +32,14 @@
                     "height": "8%",
                     "border": "#ffffff",
                     "padding_left": "2%",
-                    "align":"center"
+                    "align": "center"
 
                 },
-                "row_style":{
+                "row_style": {
                     "color": "rgb(255, 255, 255)",
                     "height": "6%"
                 },
-                "column_label_style":{
+                "column_label_style": {
                     "width": "10%",
                     "padding": "4",
                     "height": "6%",
@@ -66,7 +66,7 @@
                     "border": "#ffffff"
 
                 },
-                "label_description_style":{
+                "label_description_style": {
                     "font": "HelveticaNeue-Bold",
                     "size": "16"
                 },
@@ -218,115 +218,112 @@
             },
             "data": {
                 "Page_Heading": "Primary Crusher Operator Shift Report",
-                "Table1_Headers": [
-                    {
-                      "type": "label",
-                      "value": "Time",
-                      "col_type": "col_name",
-                      "styles": "table_header_styles center_align table_header_name_styles"
+                "Table1_Headers": [{
+                        "type": "label",
+                        "value": "Time",
+                        "col_type": "col_name",
+                        "styles": "table_header_styles center_align table_header_name_styles"
                     },
                     {
-                      "type": "label",
-                      "value": "Dome Level",
-                      "col_type": "col_value",
-                      "styles": "table_header_styles center_align table_header_value_styles"
+                        "type": "label",
+                        "value": "Dome Level",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles center_align table_header_value_styles"
                     },
                     {
-                      "type": "label",
-                      "value": "Apron Feeder Speed",
-                      "col_type": "col_value",
-                      "styles": "table_header_styles center_align table_header_value_styles"
+                        "type": "label",
+                        "value": "Apron Feeder Speed",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles center_align table_header_value_styles"
                     },
                     {
-                      "type": "label",
-                      "value": "430 Conveyor Weightomeer",
-                      "col_type": "col_value",
-                      "styles": "table_header_styles center_align table_header_value_styles"
+                        "type": "label",
+                        "value": "430 Conveyor Weightomeer",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles center_align table_header_value_styles"
                     },
                     {
-                      "type": "label",
-                      "value": "Mantle Position",
-                      "col_type": "col_value",
-                      "styles": "table_header_styles center_align table_header_value_styles"
+                        "type": "label",
+                        "value": "Mantle Position",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles center_align table_header_value_styles"
                     },
-                    
-                      {
+
+                    {
                         "type": "label",
                         "value": "Crusher Power",
                         "col_type": "col_value",
                         "styles": "table_header_styles center_align table_header_value_styles"
-                      },
-                      {
+                    },
+                    {
                         "type": "label",
                         "value": "Lube Oil Flow (FIT-2005)",
                         "col_type": "col_value",
                         "styles": "table_header_styles center_align table_header_value_styles"
-                      }
-                  ],
-                "Table2_Headers": [
-                  {
-                    "type": "textfield",
-                    "name": "Sop_title",
-                    "value": "{{$global.f5_Sop_title || ''}}",
-                    "placeholder": "Title",
-                    "col_type": "col_name",
-                    "contentDescription": "Title",
-                    "styles": "table_header1_styles center_align table_row_odd_styles"
-                  },
-                  {
-                    "type": "textfield",
-                    "name": "Sop_number",
-                    "value": "{{$global.f5_Sop_number || ''}}",
-                    "placeholder": "Number",
-                    "col_type": "col_value",
-                    "contentDescription": "Number",
-                    "styles": "table_header1_styles center_align table_header_description_styles table_row_odd_styles"
-                  }
+                    }
                 ],
-                "Table3_Headers": [
-                  {
-                    "type": "label",
-                    "value": "#",
-                    "col_type": "col_name",
-                    "styles": "table_header_styles2 center_align hash_width"
-                  },
-                  {
-                    "type": "label",
-                    "value": "Name",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles2 center_align name_width"
-                  },
-                  {
-                    "type": "label",
-                    "value": "ID#",
-                    "col_type": "col_name",
-                    "styles": "table_header_styles2 center_align id_width"
-                  },
-                  {
-                    "type": "label",
-                    "value": "Date",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles2 center_align date_width"
-                  },
-                  {
-                    "type": "label",
-                    "value": "Name as signature",
-                    "col_type": "col_name",
-                    "styles": "table_header_styles2 center_align name_width"
-                  }
+                "Table2_Headers": [{
+                        "type": "textfield",
+                        "name": "Sop_title",
+                        "value": "{{$global.f5_Sop_title || ''}}",
+                        "placeholder": "Title",
+                        "col_type": "col_name",
+                        "contentDescription": "Title",
+                        "styles": "table_header1_styles center_align table_row_odd_styles"
+                    },
+                    {
+                        "type": "textfield",
+                        "name": "Sop_number",
+                        "value": "{{$global.f5_Sop_number || ''}}",
+                        "placeholder": "Number",
+                        "col_type": "col_value",
+                        "contentDescription": "Number",
+                        "styles": "table_header1_styles center_align table_header_description_styles table_row_odd_styles"
+                    }
+                ],
+                "Table3_Headers": [{
+                        "type": "label",
+                        "value": "#",
+                        "col_type": "col_name",
+                        "styles": "table_header_styles2 center_align hash_width"
+                    },
+                    {
+                        "type": "label",
+                        "value": "Name",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles2 center_align name_width"
+                    },
+                    {
+                        "type": "label",
+                        "value": "ID#",
+                        "col_type": "col_name",
+                        "styles": "table_header_styles2 center_align id_width"
+                    },
+                    {
+                        "type": "label",
+                        "value": "Date",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles2 center_align date_width"
+                    },
+                    {
+                        "type": "label",
+                        "value": "Name as signature",
+                        "col_type": "col_name",
+                        "styles": "table_header_styles2 center_align name_width"
+                    }
                 ]
-              },
+            },
             "actions": {
                 "$load": {
                     "type": "$render",
                     "success": {
-                      "type": "$util.toast",
-                      "options": {
-                        "text": "Page loaded successfully",
-                        "type": "warning"
-                      }
+                        "type": "$util.toast",
+                        "options": {
+                            "text": "Page loaded successfully",
+                            "type": "warning"
+                        }
                     }
-                  },
+                },
                 "$pull": {
                     "type": "$reload",
                     "success": {
@@ -358,7 +355,7 @@
                         "replace_gasket_on_hose_text2": "{{$get.replace_gasket_on_hose_text2|| ''}}",
                         "pressure_completed_time": "{{$get.pressure_completed_time|| ''}}",
                         "pressure_check_across_shifts": "{{$get.pressure_check_across_shifts|| ''}}"
-                        
+
 
 
                     },
@@ -391,405 +388,397 @@
                         {
                             "type": "vertical",
                             "items": [
-                               
-                                
+
+
                                 {
                                     "type": "horizontal",
                                     "class": "no_padding center_align",
                                     "style": {
-                                      "padding_left": "1%",
-                                      "padding_right": "1%",
-                                      "height": "6%"
+                                        "padding_left": "1%",
+                                        "padding_right": "1%",
+                                        "height": "6%"
                                     },
                                     "components": [{
-                                        "type": "dropdown",
-                                        "name": "form10_day",
-                                        "value": "{{$global.form10_day}}",
-                                        "contentDescription": "day",
-                                        "class": "dropdown_date_style center_align",
-                                        "options": [{
-                                            "value": "Day",
-                                            "defaultSelected": "true"
-                                          },
-                                          {
-                                            "value": "1",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "2",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "3",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "4",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "5",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "6",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "7",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "8",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "9",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "10",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "11",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "12",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "13",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "14",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "15",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "16",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "17",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "18",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "19",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "20",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "21",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "22",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "23",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "24",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "25",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "26",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "27",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "28",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "29",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "30",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "31",
-                                            "defaultSelected": "false"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "type": "label",
-                                        "text": "▼",
-                                        "class": "right_padding"
-                                      },
-                                      {
-                                        "type": "dropdown",
-                                        "name": "form10_month",
-                                        "value": "{{$global.form10_month}}",
-                                        "contentDescription": "month",
-                                        "class": "dropdown_date_style center_align",
-                                        "options": [{
-                                            "value": "Month",
-                                            "defaultSelected": "true"
-                                          },
-                                          {
-                                            "value": "1",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "2",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "3",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "4",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "5",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "6",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "7",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "8",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "9",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "10",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "11",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "12",
-                                            "defaultSelected": "false"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "type": "label",
-                                        "text": "▼",
-                                        "class": "right_padding"
-                                      },
-                                      {
-                                        "type": "dropdown",
-                                        "name": "form10_year",
-                                        "contentDescription": "year",
-                                        "value": "{{$global.form10_year}}",
-                                        "class": "dropdown_date_style center_align",
-                                        "options": [{
-                                            "value": "Year",
-                                            "defaultSelected": "true"
-                                          },
-                                          {
-                                            "value": "2019",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "2020",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "2021",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "2022",
-                                            "defaultSelected": "false"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "type": "label",
-                                        "text": "▼",
-                                        "class": "right_padding"
-                                      },
-                                      {
-                                        "type": "space",
-                                        "style": {
-                                          "width": "2%"
+                                            "type": "dropdown",
+                                            "name": "form10_day",
+                                            "value": "{{$global.form10_day}}",
+                                            "contentDescription": "day",
+                                            "class": "dropdown_date_style center_align",
+                                            "options": [{
+                                                    "value": "Day",
+                                                    "defaultSelected": "true"
+                                                },
+                                                {
+                                                    "value": "1",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "2",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "3",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "4",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "5",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "6",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "7",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "8",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "9",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "10",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "11",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "12",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "13",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "14",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "15",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "16",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "17",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "18",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "19",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "20",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "21",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "22",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "23",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "24",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "25",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "26",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "27",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "28",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "29",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "30",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "31",
+                                                    "defaultSelected": "false"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "▼",
+                                            "class": "right_padding"
+                                        },
+                                        {
+                                            "type": "dropdown",
+                                            "name": "form10_month",
+                                            "value": "{{$global.form10_month}}",
+                                            "contentDescription": "month",
+                                            "class": "dropdown_date_style center_align",
+                                            "options": [{
+                                                    "value": "Month",
+                                                    "defaultSelected": "true"
+                                                },
+                                                {
+                                                    "value": "1",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "2",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "3",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "4",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "5",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "6",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "7",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "8",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "9",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "10",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "11",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "12",
+                                                    "defaultSelected": "false"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "▼",
+                                            "class": "right_padding"
+                                        },
+                                        {
+                                            "type": "dropdown",
+                                            "name": "form10_year",
+                                            "contentDescription": "year",
+                                            "value": "{{$global.form10_year}}",
+                                            "class": "dropdown_date_style center_align",
+                                            "options": [{
+                                                    "value": "Year",
+                                                    "defaultSelected": "true"
+                                                },
+                                                {
+                                                    "value": "2019",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "2020",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "2021",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "2022",
+                                                    "defaultSelected": "false"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "▼",
+                                            "class": "right_padding"
+                                        },
+                                        {
+                                            "type": "space",
+                                            "style": {
+                                                "width": "2%"
+                                            }
+                                        },
+                                        {
+                                            "type": "dropdown",
+                                            "name": "form10_shift",
+                                            "value": "{{$global.form10_shift}}",
+                                            "contentDescription": "shift",
+                                            "class": "center_align black_color dropdown_shift_style",
+                                            "options": [{
+                                                    "value": "Shift",
+                                                    "defaultSelected": "true"
+                                                },
+                                                {
+                                                    "value": "Night Shift",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "Day Shift",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "Regular Shift",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "Rotating Shift",
+                                                    "defaultSelected": "false"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "▼",
+                                            "class": "right_padding"
+                                        },
+                                        {
+                                            "type": "space",
+                                            "style": {
+                                                "width": "2%"
+                                            }
+                                        },
+                                        {
+                                            "type": "dropdown",
+                                            "name": "form10_operator",
+                                            "value": "{{$global.form10_operator}}",
+                                            "contentDescription": "operator",
+                                            "class": "center_align black_color dropdown_operator_style",
+                                            "options": [{
+                                                    "value": "Operator",
+                                                    "defaultSelected": "true"
+                                                },
+                                                {
+                                                    "value": "John",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "Smith",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "Michael",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "Federer",
+                                                    "defaultSelected": "false"
+                                                },
+                                                {
+                                                    "value": "David",
+                                                    "defaultSelected": "false"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "label",
+                                            "text": "▼",
+                                            "class": "right_padding"
+                                        },
+                                        {
+                                            "type": "space",
+                                            "style": {
+                                                "width": "2%"
+                                            }
+                                        },
+                                        {
+                                            "type": "textfield",
+                                            "value": "{{$global.form10_sign || ''}}",
+                                            "name": "form10_sign",
+                                            "placeholder": "Sign",
+                                            "class": "sign_style center_align black_color",
+                                            "contentDescription": "Sign"
                                         }
-                                      },
-                                      {
-                                        "type": "dropdown",
-                                        "name": "form10_shift",
-                                        "value": "{{$global.form10_shift}}",
-                                        "contentDescription": "shift",
-                                        "class": "center_align black_color dropdown_shift_style",
-                                        "options": [{
-                                            "value": "Shift",
-                                            "defaultSelected": "true"
-                                          },
-                                          {
-                                            "value": "Night Shift",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "Day Shift",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "Regular Shift",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "Rotating Shift",
-                                            "defaultSelected": "false"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "type": "label",
-                                        "text": "▼",
-                                        "class": "right_padding"
-                                      },
-                                      {
-                                        "type": "space",
-                                        "style": {
-                                          "width": "2%"
-                                        }
-                                      },
-                                      {
-                                        "type": "dropdown",
-                                        "name": "form10_operator",
-                                        "value": "{{$global.form10_operator}}",
-                                        "contentDescription": "operator",
-                                        "class": "center_align black_color dropdown_operator_style",
-                                        "options": [{
-                                            "value": "Operator",
-                                            "defaultSelected": "true"
-                                          },
-                                          {
-                                            "value": "John",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "Smith",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "Michael",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "Federer",
-                                            "defaultSelected": "false"
-                                          },
-                                          {
-                                            "value": "David",
-                                            "defaultSelected": "false"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "type": "label",
-                                        "text": "▼",
-                                        "class": "right_padding"
-                                      },
-                                      {
-                                        "type": "space",
-                                        "style": {
-                                          "width": "2%"
-                                        }
-                                      },
-                                      {
-                                        "type": "textfield",
-                                        "value": "{{$global.form10_sign || ''}}",
-                                        "name": "form10_sign",
-                                        "placeholder": "Sign",
-                                        "class": "sign_style center_align black_color",
-                                        "contentDescription": "Sign"
-                                      }
                                     ]
-                                  }
-                                  
+                                }
+
                             ],
                             "class": "no_padding"
                         },
                         {
                             "type": "horizontal",
-                            "items": [
-                              {
+                            "items": [{
                                 "type": "vertical",
                                 "class": "no_padding",
-                                "components": [
-                                  {
+                                "components": [{
                                     "type": "horizontal",
                                     "components": {
-                                      "{{#each Table1_Headers}}": {
-                                          "type":"vertical",
-                                        "components":[  
-                                        {
-                                        "type": "label",
-                                        "text": "{{value}}",
-                                        "class": "{{styles}}"
-                                      }
-                                    ]
-                                    }
+                                        "{{#each Table1_Headers}}": {
+                                            "type": "vertical",
+                                            "components": [{
+                                                "type": "label",
+                                                "text": "{{value}}",
+                                                "class": "{{styles}}"
+                                            }]
+                                        }
                                     },
                                     "style": {
-                                      "padding_top": "1%"
+                                        "padding_top": "1%"
                                     }
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
+                                }]
+                            }]
+                        },
+                        {
                             "type": "horizontal",
-                            "items": [
-                                {
-                                "type":"vertical",
-                                "components":[
-                                    {
-                                        "type":"horizontal",
-                                        "components": [{
+                            "items": [{
+                                "type": "vertical",
+                                "components": [{
+                                    "type": "horizontal",
+                                    "components": [{
                                             "type": "label",
                                             "text": "0700",
-                                            "class": "content_style_odd title_styles column_label_style"   
-        
+                                            "class": "content_style_odd title_styles column_label_style"
+
                                         },
                                         {
                                             "type": "horizontal",
                                             "style": {
                                                 "width": "15%"
-        
+
                                             },
                                             "components": [{
                                                 "type": "textfield",
@@ -798,17 +787,17 @@
                                                 "contentDescription": "five",
                                                 "style": {
                                                     "padding": "2"
-        
+
                                                 },
                                                 "class": "content_style_odd"
-        
+
                                             }]
                                         },
                                         {
                                             "type": "horizontal",
                                             "style": {
                                                 "width": "15%"
-        
+
                                             },
                                             "components": [{
                                                 "type": "textfield",
@@ -817,18 +806,18 @@
                                                 "contentDescription": "five",
                                                 "style": {
                                                     "padding": "2"
-        
+
                                                 },
                                                 "class": "content_style_odd"
-        
+
                                             }]
                                         },
-                                        
+
                                         {
                                             "type": "horizontal",
                                             "style": {
                                                 "width": "15%"
-        
+
                                             },
                                             "components": [{
                                                 "type": "textfield",
@@ -837,17 +826,17 @@
                                                 "contentDescription": "five",
                                                 "style": {
                                                     "padding": "2"
-        
+
                                                 },
                                                 "class": "content_style_odd"
-        
+
                                             }]
                                         },
                                         {
                                             "type": "horizontal",
                                             "style": {
                                                 "width": "15%"
-        
+
                                             },
                                             "components": [{
                                                 "type": "textfield",
@@ -856,17 +845,17 @@
                                                 "contentDescription": "six",
                                                 "style": {
                                                     "padding": "2"
-        
+
                                                 },
                                                 "class": "content_style_odd"
-        
+
                                             }]
                                         },
                                         {
                                             "type": "horizontal",
                                             "style": {
                                                 "width": "15%"
-        
+
                                             },
                                             "components": [{
                                                 "type": "textfield",
@@ -875,17 +864,17 @@
                                                 "contentDescription": "five",
                                                 "style": {
                                                     "padding": "2"
-        
+
                                                 },
                                                 "class": "content_style_odd"
-        
+
                                             }]
                                         },
                                         {
                                             "type": "horizontal",
                                             "style": {
                                                 "width": "15%"
-        
+
                                             },
                                             "components": [{
                                                 "type": "textfield",
@@ -894,130 +883,128 @@
                                                 "contentDescription": "five",
                                                 "style": {
                                                     "padding": "2"
-        
+
                                                 },
                                                 "class": "content_style_odd"
-        
+
                                             }]
                                         }
                                     ]
-                                    }
-                                ]
-                                }
-                            ]
-                          },
+                                }]
+                            }]
+                        },
                         {
                             "type": "horizontal",
                             "items": [{
-                              "type": "horizontal",
-                              "class": "no_padding center_align",
-                              "style": {
-                                "padding_top": "1%",
-                                "padding_bottom": "1%"
-                              },
-                              "components": [{
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "black_color",
-                                  "style": {
-                                    "width": "40%"
-                                  }
+                                "type": "horizontal",
+                                "class": "no_padding center_align",
+                                "style": {
+                                    "padding_top": "1%",
+                                    "padding_bottom": "1%"
                                 },
-                                {
-                                  "type": "button",
-                                  "name": "home",
-                                  "text": "Home",
-                                  "class": "home_button_styles center_align",
-                                  "action": {
-                                    "type": "$href",
-                                    "options": {
-                                      "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms-static/home.json",
-                                      "preload": {
+                                "components": [{
+                                        "type": "label",
+                                        "text": "",
+                                        "class": "black_color",
                                         "style": {
-                                          "background": "#ff0000"
-                                        },
-                                        "layers": [{
-                                          "type": "image",
-                                          "url": "file://infinit.gif",
-                                          "style": {
-                                            "top": "50%-25",
-                                            "left": "50%-25",
-                                            "width": "50",
-                                            "height": "50"
-                                          }
-                                        }]
-                                      }
-                                    }
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "black_color",
-                                  "style": {
-                                    "width": "5%"
-                                  }
-                                },
-                                {
-                                  "type": "button",
-                                  "name": "next",
-                                  "text": "Next",
-                                  "class": "next_button_styles center_align",
-                                  "action": {
-                                    "type": "$href",
-                                    "options": {
-                                      "url": "https://pvybhav.github.io/DGX_Form/CyanideIsotainer/screen_2.json",
-                                      "preload": {
+                                            "width": "40%"
+                                        }
+                                    },
+                                    {
+                                        "type": "button",
+                                        "name": "home",
+                                        "text": "Home",
+                                        "class": "home_button_styles center_align",
+                                        "action": {
+                                            "type": "$href",
+                                            "options": {
+                                                "url": "https://s3.amazonaws.com/enu-digital-ips/dg-forms-static/home.json",
+                                                "preload": {
+                                                    "style": {
+                                                        "background": "#ff0000"
+                                                    },
+                                                    "layers": [{
+                                                        "type": "image",
+                                                        "url": "file://infinit.gif",
+                                                        "style": {
+                                                            "top": "50%-25",
+                                                            "left": "50%-25",
+                                                            "width": "50",
+                                                            "height": "50"
+                                                        }
+                                                    }]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "label",
+                                        "text": "",
+                                        "class": "black_color",
                                         "style": {
-                                          "background": "#ff0000"
-                                        },
-                                        "layers": [{
-                                          "type": "image",
-                                          "url": "file://infinit.gif",
-                                          "style": {
-                                            "top": "50%-25",
-                                            "left": "50%-25",
-                                            "width": "50",
-                                            "height": "50"
-                                          }
-                                        }]
-                                      }
+                                            "width": "5%"
+                                        }
+                                    },
+                                    {
+                                        "type": "button",
+                                        "name": "next",
+                                        "text": "Next",
+                                        "class": "next_button_styles center_align",
+                                        "action": {
+                                            "type": "$href",
+                                            "options": {
+                                                "url": "https://pvybhav.github.io/DGX_Form/CyanideIsotainer/screen_2.json",
+                                                "preload": {
+                                                    "style": {
+                                                        "background": "#ff0000"
+                                                    },
+                                                    "layers": [{
+                                                        "type": "image",
+                                                        "url": "file://infinit.gif",
+                                                        "style": {
+                                                            "top": "50%-25",
+                                                            "left": "50%-25",
+                                                            "width": "50",
+                                                            "height": "50"
+                                                        }
+                                                    }]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "label",
+                                        "text": "",
+                                        "class": "black_color",
+                                        "style": {
+                                            "width": "5%"
+                                        }
+                                    },
+                                    {
+                                        "type": "button",
+                                        "name": "save",
+                                        "text": "Save",
+                                        "class": "save_button_styles center_align",
+                                        "action": {
+                                            "trigger": "handleSave"
+                                        }
+                                    },
+                                    {
+                                        "type": "label",
+                                        "text": "",
+                                        "class": "black_color",
+                                        "style": {
+                                            "width": "5%"
+                                        }
                                     }
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "black_color",
-                                  "style": {
-                                    "width": "5%"
-                                  }
-                                },
-                                {
-                                  "type": "button",
-                                  "name": "save",
-                                  "text": "Save",
-                                  "class": "save_button_styles center_align",
-                                  "action": {
-                                    "trigger": "handleSave"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "black_color",
-                                  "style": {
-                                    "width": "5%"
-                                  }
-                                }
-                              ]
+                                ]
                             }]
-                          }
+                        }
                     ],
                     "class": "no_padding"
                 }
-                      
-                }
+
             }
         }
     }
+}
