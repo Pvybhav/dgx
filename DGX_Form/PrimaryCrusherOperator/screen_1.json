@@ -745,14 +745,18 @@
                                     "type": "horizontal",
                                     "components": {
                                       "{{#each Table1_Headers}}": {
+                                          "type":"vertical",
+                                        "components":[  
+                                        {
                                         "type": "label",
                                         "text": "{{value}}",
                                         "class": "{{styles}}"
                                       }
+                                    ]
+                                    }
                                     },
                                     "style": {
-                                      "padding_top": "1%",
-                                      "height": "10%"
+                                      "padding_top": "1%"
                                     }
                                   }
                                 ]
