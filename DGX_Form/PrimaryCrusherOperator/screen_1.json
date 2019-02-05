@@ -354,7 +354,38 @@
                         "col_type": "col_value",
                         "styles": "table_header_styles center_align table_header_value_styles2"
                     }
-                ]
+                ],
+                "Table4_Headers": [{
+                    "type": "label",
+                    "value": "Loop #",
+                    "col_type": "col_name",
+                    "styles": "table_header_styles center_align table_header_name_styles"
+                },
+                {
+                    "type": "label",
+                    "value": "Description",
+                    "col_type": "col_value",
+                    "styles": "table_header_styles center_align table_header_value_styles2"
+                },
+                {
+                    "type": "label",
+                    "value": "Reason",
+                    "col_type": "col_value",
+                    "styles": "table_header_styles center_align table_header_value_styles2"
+                },
+                {
+                    "type": "label",
+                    "value": "Authorized by supervisor",
+                    "col_type": "col_value",
+                    "styles": "table_header_styles center_align table_header_value_styles2"
+                },
+                {
+                    "type": "label",
+                    "value": "Time in",
+                    "col_type": "col_value",
+                    "styles": "Time out"
+                }
+            ]
             },
             "actions": {
                 "$load": {
@@ -6104,6 +6135,35 @@
                                             }]
                                         }
                                     ]
+                                }]
+                            }]
+                        },
+                        {
+                            "type": "horizontal",
+                            "class": "no_padding",
+                            "items": [{
+                                "type": "horizontal",
+                                "class": "no_padding",
+                                "components": [{
+                                    "type": "horizontal",
+                                    "class": "no_padding table_row",
+                                    "components": {
+                                        "{{#each Table4_Headers}}": {
+                                            "type": "vertical",
+                                            "components": [
+
+                                                {
+                                                    "type": "label",
+                                                    "text": "{{value}}",
+                                                    "class": "{{styles}} center_align"
+                                                }
+                                            ]
+                                        }
+
+                                    },
+                                    "style": {
+                                        "padding_top": "1%"
+                                    }
                                 }]
                             }]
                         },
