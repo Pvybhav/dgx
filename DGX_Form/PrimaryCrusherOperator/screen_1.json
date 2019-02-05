@@ -1260,12 +1260,12 @@
                                                 "components": {
                                                   "{{#each row_values}}": {
                                                     "type": "horizontal",
-                                                    "class": "row_style {{ row_index % 2 == 0 ? 'content_style_even' : 'content_style_odd'}}",
+                                                    "class": "row_style {{styles}}",
                                                     "components": [
                                                       
                                                       {
                                                         "type": "vertical",
-                                                        "class": "row_style {{ row_index % 2 == 0 ? 'content_style_even' : 'content_style_odd'}}",
+                                                        "class": "row_style {{styles}}",
                                                         "components": [
                                                           { 
                                                             "type": "{{type}}",
