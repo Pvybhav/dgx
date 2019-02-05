@@ -325,8 +325,7 @@
                         "styles": "table_header_styles  table_header_value_styles"
                     }
                 ],
-                "Table3_Headers": [
-                    {
+                "Table3_Headers": [{
                         "type": "label",
                         "value": "Time",
                         "col_type": "col_name",
@@ -365,45 +364,44 @@
                     }
                 ],
                 "Table4_Headers": [{
-                    "type": "label",
-                    "value": "Loop #",
-                    "col_type": "col_name",
-                    "styles": "table_header_styles center_align table_header_name_styles"
-                },
-                {
-                    "type": "label",
-                    "value": "Description",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align table_header_value_styles2"
-                },
-                {
-                    "type": "label",
-                    "value": "Reason",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align table_header_value_styles2"
-                },
-                {
-                    "type": "label",
-                    "value": "Authorized by supervisor",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align table_header_value_styles2"
-                },
-                {
-                    "type": "label",
-                    "value": "Time in",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align table_header_value_styles2"
-                },
-
-                {
-                    "type": "label",
-                    "value": "Time out",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align table_header_value_styles2"
-                }
-            ],
-                "Table5_Headers":  [
+                        "type": "label",
+                        "value": "Loop #",
+                        "col_type": "col_name",
+                        "styles": "table_header_styles center_align table_header_name_styles"
+                    },
                     {
+                        "type": "label",
+                        "value": "Description",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles center_align table_header_value_styles2"
+                    },
+                    {
+                        "type": "label",
+                        "value": "Reason",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles center_align table_header_value_styles2"
+                    },
+                    {
+                        "type": "label",
+                        "value": "Authorized by supervisor",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles center_align table_header_value_styles2"
+                    },
+                    {
+                        "type": "label",
+                        "value": "Time in",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles center_align table_header_value_styles2"
+                    },
+
+                    {
+                        "type": "label",
+                        "value": "Time out",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles center_align table_header_value_styles2"
+                    }
+                ],
+                "Table5_Headers": [{
                         "type": "label",
                         "value": "Notifications Number",
                         "col_type": "col_name",
@@ -419,7 +417,13 @@
             },
             "actions": {
                 "$load": {
-                    "type": "$render",
+                    "type": "$global.set",
+                    "options": {
+                        "section_id": "form10_page1",
+                        "authorized_by_supervisor_switch1": "{{$global.authorized_by_supervisor_switch1 == null ? true : $global.authorized_by_supervisor_switch1}}",
+                        "authorized_by_supervisor_switch2": "{{$global.authorized_by_supervisor_switch2 == null ? true : $global.authorized_by_supervisor_switch2}}",
+                        "authorized_by_supervisor_switch3": "{{$global.authorized_by_supervisor_switch3 == null ? true : $global.authorized_by_supervisor_switch3}}"
+                    },
                     "success": {
                         "type": "$util.toast",
                         "options": {
@@ -456,61 +460,61 @@
                         "primary_crusher_screen1_0800_text4": "{{$get.primary_crusher_screen1_0800_text4|| ''}}",
                         "primary_crusher_screen1_0800_text5": "{{$get.primary_crusher_screen1_0800_text5|| ''}}",
                         "primary_crusher_screen1_0800_text6": "{{$get.primary_crusher_screen1_0800_text6|| ''}}",
-                         "primary_crusher_screen1_0900_text1": "{{$get.primary_crusher_screen1_0900_text1|| ''}}",
+                        "primary_crusher_screen1_0900_text1": "{{$get.primary_crusher_screen1_0900_text1|| ''}}",
                         "primary_crusher_screen1_0900_text2": "{{$get.primary_crusher_screen1_0900_text2|| ''}}",
                         "primary_crusher_screen1_0900_text3": "{{$get.primary_crusher_screen1_0900_text3|| ''}}",
                         "primary_crusher_screen1_0900_text4": "{{$get.primary_crusher_screen1_0900_text4|| ''}}",
                         "primary_crusher_screen1_0900_text5": "{{$get.primary_crusher_screen1_0900_text5|| ''}}",
                         "primary_crusher_screen1_0900_text6": "{{$get.primary_crusher_screen1_0900_text6|| ''}}",
-                         "primary_crusher_screen1_1000_text1": "{{$get.primary_crusher_screen1_1000_text1|| ''}}",
+                        "primary_crusher_screen1_1000_text1": "{{$get.primary_crusher_screen1_1000_text1|| ''}}",
                         "primary_crusher_screen1_1000_text2": "{{$get.primary_crusher_screen1_1000_text2|| ''}}",
                         "primary_crusher_screen1_1000_text3": "{{$get.primary_crusher_screen1_1000_text3|| ''}}",
                         "primary_crusher_screen1_1000_text4": "{{$get.primary_crusher_screen1_1000_text4|| ''}}",
                         "primary_crusher_screen1_1000_text5": "{{$get.primary_crusher_screen1_1000_text5|| ''}}",
                         "primary_crusher_screen1_1000_text6": "{{$get.primary_crusher_screen1_1000_text6|| ''}}",
-                         "primary_crusher_screen1_1100_text1": "{{$get.primary_crusher_screen1_1100_text1|| ''}}",
+                        "primary_crusher_screen1_1100_text1": "{{$get.primary_crusher_screen1_1100_text1|| ''}}",
                         "primary_crusher_screen1_1100_text2": "{{$get.primary_crusher_screen1_1100_text2|| ''}}",
                         "primary_crusher_screen1_1100_text3": "{{$get.primary_crusher_screen1_1100_text3|| ''}}",
                         "primary_crusher_screen1_1100_text4": "{{$get.primary_crusher_screen1_1100_text4|| ''}}",
                         "primary_crusher_screen1_1100_text5": "{{$get.primary_crusher_screen1_1100_text5|| ''}}",
                         "primary_crusher_screen1_1100_text6": "{{$get.primary_crusher_screen1_1100_text6|| ''}}",
-                         "primary_crusher_screen1_1200_text1": "{{$get.primary_crusher_screen1_1200_text1|| ''}}",
+                        "primary_crusher_screen1_1200_text1": "{{$get.primary_crusher_screen1_1200_text1|| ''}}",
                         "primary_crusher_screen1_1200_text2": "{{$get.primary_crusher_screen1_1200_text2|| ''}}",
                         "primary_crusher_screen1_1200_text3": "{{$get.primary_crusher_screen1_1200_text3|| ''}}",
                         "primary_crusher_screen1_1200_text4": "{{$get.primary_crusher_screen1_1200_text4|| ''}}",
                         "primary_crusher_screen1_1200_text5": "{{$get.primary_crusher_screen1_1200_text5|| ''}}",
                         "primary_crusher_screen1_1200_text6": "{{$get.primary_crusher_screen1_1200_text6|| ''}}",
-                         "primary_crusher_screen1_1300_text1": "{{$get.primary_crusher_screen1_1300_text1|| ''}}",
+                        "primary_crusher_screen1_1300_text1": "{{$get.primary_crusher_screen1_1300_text1|| ''}}",
                         "primary_crusher_screen1_1300_text2": "{{$get.primary_crusher_screen1_1300_text2|| ''}}",
                         "primary_crusher_screen1_1300_text3": "{{$get.primary_crusher_screen1_1300_text3|| ''}}",
                         "primary_crusher_screen1_1300_text4": "{{$get.primary_crusher_screen1_1300_text4|| ''}}",
                         "primary_crusher_screen1_1300_text5": "{{$get.primary_crusher_screen1_1300_text5|| ''}}",
                         "primary_crusher_screen1_1300_text6": "{{$get.primary_crusher_screen1_1300_text6|| ''}}",
-                         "primary_crusher_screen1_1400_text1": "{{$get.primary_crusher_screen1_1400_text1|| ''}}",
+                        "primary_crusher_screen1_1400_text1": "{{$get.primary_crusher_screen1_1400_text1|| ''}}",
                         "primary_crusher_screen1_1400_text2": "{{$get.primary_crusher_screen1_1400_text2|| ''}}",
                         "primary_crusher_screen1_1400_text3": "{{$get.primary_crusher_screen1_1400_text3|| ''}}",
                         "primary_crusher_screen1_1400_text4": "{{$get.primary_crusher_screen1_1400_text4|| ''}}",
                         "primary_crusher_screen1_1400_text5": "{{$get.primary_crusher_screen1_1400_text5|| ''}}",
                         "primary_crusher_screen1_1400_text6": "{{$get.primary_crusher_screen1_1400_text6|| ''}}",
-                         "primary_crusher_screen1_1500_text1": "{{$get.primary_crusher_screen1_1500_text1|| ''}}",
+                        "primary_crusher_screen1_1500_text1": "{{$get.primary_crusher_screen1_1500_text1|| ''}}",
                         "primary_crusher_screen1_1500_text2": "{{$get.primary_crusher_screen1_1500_text2|| ''}}",
                         "primary_crusher_screen1_1500_text3": "{{$get.primary_crusher_screen1_1500_text3|| ''}}",
                         "primary_crusher_screen1_1500_text4": "{{$get.primary_crusher_screen1_1500_text4|| ''}}",
                         "primary_crusher_screen1_1500_text5": "{{$get.primary_crusher_screen1_1500_text5|| ''}}",
                         "primary_crusher_screen1_1500_text6": "{{$get.primary_crusher_screen1_1500_text6|| ''}}",
-                         "primary_crusher_screen1_1600_text1": "{{$get.primary_crusher_screen1_1600_text1|| ''}}",
+                        "primary_crusher_screen1_1600_text1": "{{$get.primary_crusher_screen1_1600_text1|| ''}}",
                         "primary_crusher_screen1_1600_text2": "{{$get.primary_crusher_screen1_1600_text2|| ''}}",
                         "primary_crusher_screen1_1600_text3": "{{$get.primary_crusher_screen1_1600_text3|| ''}}",
                         "primary_crusher_screen1_1600_text4": "{{$get.primary_crusher_screen1_1600_text4|| ''}}",
                         "primary_crusher_screen1_1600_text5": "{{$get.primary_crusher_screen1_1600_text5|| ''}}",
                         "primary_crusher_screen1_1600_text6": "{{$get.primary_crusher_screen1_1600_text6|| ''}}",
-                         "primary_crusher_screen1_1700_text1": "{{$get.primary_crusher_screen1_1700_text1|| ''}}",
+                        "primary_crusher_screen1_1700_text1": "{{$get.primary_crusher_screen1_1700_text1|| ''}}",
                         "primary_crusher_screen1_1700_text2": "{{$get.primary_crusher_screen1_1700_text2|| ''}}",
                         "primary_crusher_screen1_1700_text3": "{{$get.primary_crusher_screen1_1700_text3|| ''}}",
                         "primary_crusher_screen1_1700_text4": "{{$get.primary_crusher_screen1_1700_text4|| ''}}",
                         "primary_crusher_screen1_1700_text5": "{{$get.primary_crusher_screen1_1700_text5|| ''}}",
                         "primary_crusher_screen1_1700_text6": "{{$get.primary_crusher_screen1_1700_text6|| ''}}",
-                         "primary_crusher_screen1_1800_text1": "{{$get.primary_crusher_screen1_1800_text1|| ''}}",
+                        "primary_crusher_screen1_1800_text1": "{{$get.primary_crusher_screen1_1800_text1|| ''}}",
                         "primary_crusher_screen1_1800_text2": "{{$get.primary_crusher_screen1_1800_text2|| ''}}",
                         "primary_crusher_screen1_1800_text3": "{{$get.primary_crusher_screen1_1800_text3|| ''}}",
                         "primary_crusher_screen1_1800_text4": "{{$get.primary_crusher_screen1_1800_text4|| ''}}",
@@ -528,61 +532,61 @@
                         "primary_crusher_screen2_0800_text4": "{{$get.primary_crusher_screen2_0800_text4|| ''}}",
                         "primary_crusher_screen2_0800_text5": "{{$get.primary_crusher_screen2_0800_text5|| ''}}",
                         "primary_crusher_screen2_0800_text6": "{{$get.primary_crusher_screen2_0800_text6|| ''}}",
-                         "primary_crusher_screen2_0900_text1": "{{$get.primary_crusher_screen2_0900_text1|| ''}}",
+                        "primary_crusher_screen2_0900_text1": "{{$get.primary_crusher_screen2_0900_text1|| ''}}",
                         "primary_crusher_screen2_0900_text2": "{{$get.primary_crusher_screen2_0900_text2|| ''}}",
                         "primary_crusher_screen2_0900_text3": "{{$get.primary_crusher_screen2_0900_text3|| ''}}",
                         "primary_crusher_screen2_0900_text4": "{{$get.primary_crusher_screen2_0900_text4|| ''}}",
                         "primary_crusher_screen2_0900_text5": "{{$get.primary_crusher_screen2_0900_text5|| ''}}",
                         "primary_crusher_screen2_0900_text6": "{{$get.primary_crusher_screen2_0900_text6|| ''}}",
-                         "primary_crusher_screen2_1000_text1": "{{$get.primary_crusher_screen2_1000_text1|| ''}}",
+                        "primary_crusher_screen2_1000_text1": "{{$get.primary_crusher_screen2_1000_text1|| ''}}",
                         "primary_crusher_screen2_1000_text2": "{{$get.primary_crusher_screen2_1000_text2|| ''}}",
                         "primary_crusher_screen2_1000_text3": "{{$get.primary_crusher_screen2_1000_text3|| ''}}",
                         "primary_crusher_screen2_1000_text4": "{{$get.primary_crusher_screen2_1000_text4|| ''}}",
                         "primary_crusher_screen2_1000_text5": "{{$get.primary_crusher_screen2_1000_text5|| ''}}",
                         "primary_crusher_screen2_1000_text6": "{{$get.primary_crusher_screen2_1000_text6|| ''}}",
-                         "primary_crusher_screen2_1100_text1": "{{$get.primary_crusher_screen2_1100_text1|| ''}}",
+                        "primary_crusher_screen2_1100_text1": "{{$get.primary_crusher_screen2_1100_text1|| ''}}",
                         "primary_crusher_screen2_1100_text2": "{{$get.primary_crusher_screen2_1100_text2|| ''}}",
                         "primary_crusher_screen2_1100_text3": "{{$get.primary_crusher_screen2_1100_text3|| ''}}",
                         "primary_crusher_screen2_1100_text4": "{{$get.primary_crusher_screen2_1100_text4|| ''}}",
                         "primary_crusher_screen2_1100_text5": "{{$get.primary_crusher_screen2_1100_text5|| ''}}",
                         "primary_crusher_screen2_1100_text6": "{{$get.primary_crusher_screen2_1100_text6|| ''}}",
-                         "primary_crusher_screen2_1200_text1": "{{$get.primary_crusher_screen2_1200_text1|| ''}}",
+                        "primary_crusher_screen2_1200_text1": "{{$get.primary_crusher_screen2_1200_text1|| ''}}",
                         "primary_crusher_screen2_1200_text2": "{{$get.primary_crusher_screen2_1200_text2|| ''}}",
                         "primary_crusher_screen2_1200_text3": "{{$get.primary_crusher_screen2_1200_text3|| ''}}",
                         "primary_crusher_screen2_1200_text4": "{{$get.primary_crusher_screen2_1200_text4|| ''}}",
                         "primary_crusher_screen2_1200_text5": "{{$get.primary_crusher_screen2_1200_text5|| ''}}",
                         "primary_crusher_screen2_1200_text6": "{{$get.primary_crusher_screen2_1200_text6|| ''}}",
-                         "primary_crusher_screen2_1300_text1": "{{$get.primary_crusher_screen2_1300_text1|| ''}}",
+                        "primary_crusher_screen2_1300_text1": "{{$get.primary_crusher_screen2_1300_text1|| ''}}",
                         "primary_crusher_screen2_1300_text2": "{{$get.primary_crusher_screen2_1300_text2|| ''}}",
                         "primary_crusher_screen2_1300_text3": "{{$get.primary_crusher_screen2_1300_text3|| ''}}",
                         "primary_crusher_screen2_1300_text4": "{{$get.primary_crusher_screen2_1300_text4|| ''}}",
                         "primary_crusher_screen2_1300_text5": "{{$get.primary_crusher_screen2_1300_text5|| ''}}",
                         "primary_crusher_screen2_1300_text6": "{{$get.primary_crusher_screen2_1300_text6|| ''}}",
-                         "primary_crusher_screen2_1400_text1": "{{$get.primary_crusher_screen2_1400_text1|| ''}}",
+                        "primary_crusher_screen2_1400_text1": "{{$get.primary_crusher_screen2_1400_text1|| ''}}",
                         "primary_crusher_screen2_1400_text2": "{{$get.primary_crusher_screen2_1400_text2|| ''}}",
                         "primary_crusher_screen2_1400_text3": "{{$get.primary_crusher_screen2_1400_text3|| ''}}",
                         "primary_crusher_screen2_1400_text4": "{{$get.primary_crusher_screen2_1400_text4|| ''}}",
                         "primary_crusher_screen2_1400_text5": "{{$get.primary_crusher_screen2_1400_text5|| ''}}",
                         "primary_crusher_screen2_1400_text6": "{{$get.primary_crusher_screen2_1400_text6|| ''}}",
-                         "primary_crusher_screen2_1500_text1": "{{$get.primary_crusher_screen2_1500_text1|| ''}}",
+                        "primary_crusher_screen2_1500_text1": "{{$get.primary_crusher_screen2_1500_text1|| ''}}",
                         "primary_crusher_screen2_1500_text2": "{{$get.primary_crusher_screen2_1500_text2|| ''}}",
                         "primary_crusher_screen2_1500_text3": "{{$get.primary_crusher_screen2_1500_text3|| ''}}",
                         "primary_crusher_screen2_1500_text4": "{{$get.primary_crusher_screen2_1500_text4|| ''}}",
                         "primary_crusher_screen2_1500_text5": "{{$get.primary_crusher_screen2_1500_text5|| ''}}",
                         "primary_crusher_screen2_1500_text6": "{{$get.primary_crusher_screen2_1500_text6|| ''}}",
-                         "primary_crusher_screen2_1600_text1": "{{$get.primary_crusher_screen2_1600_text1|| ''}}",
+                        "primary_crusher_screen2_1600_text1": "{{$get.primary_crusher_screen2_1600_text1|| ''}}",
                         "primary_crusher_screen2_1600_text2": "{{$get.primary_crusher_screen2_1600_text2|| ''}}",
                         "primary_crusher_screen2_1600_text3": "{{$get.primary_crusher_screen2_1600_text3|| ''}}",
                         "primary_crusher_screen2_1600_text4": "{{$get.primary_crusher_screen2_1600_text4|| ''}}",
                         "primary_crusher_screen2_1600_text5": "{{$get.primary_crusher_screen2_1600_text5|| ''}}",
                         "primary_crusher_screen2_1600_text6": "{{$get.primary_crusher_screen2_1600_text6|| ''}}",
-                         "primary_crusher_screen2_1700_text1": "{{$get.primary_crusher_screen2_1700_text1|| ''}}",
+                        "primary_crusher_screen2_1700_text1": "{{$get.primary_crusher_screen2_1700_text1|| ''}}",
                         "primary_crusher_screen2_1700_text2": "{{$get.primary_crusher_screen2_1700_text2|| ''}}",
                         "primary_crusher_screen2_1700_text3": "{{$get.primary_crusher_screen2_1700_text3|| ''}}",
                         "primary_crusher_screen2_1700_text4": "{{$get.primary_crusher_screen2_1700_text4|| ''}}",
                         "primary_crusher_screen2_1700_text5": "{{$get.primary_crusher_screen2_1700_text5|| ''}}",
                         "primary_crusher_screen2_1700_text6": "{{$get.primary_crusher_screen2_1700_text6|| ''}}",
-                         "primary_crusher_screen2_1800_text1": "{{$get.primary_crusher_screen2_1800_text1|| ''}}",
+                        "primary_crusher_screen2_1800_text1": "{{$get.primary_crusher_screen2_1800_text1|| ''}}",
                         "primary_crusher_screen2_1800_text2": "{{$get.primary_crusher_screen2_1800_text2|| ''}}",
                         "primary_crusher_screen2_1800_text3": "{{$get.primary_crusher_screen2_1800_text3|| ''}}",
                         "primary_crusher_screen2_1800_text4": "{{$get.primary_crusher_screen2_1800_text4|| ''}}",
@@ -598,52 +602,52 @@
                         "primary_crusher_screen3_0800_text3": "{{$get.primary_crusher_screen3_0800_text3|| ''}}",
                         "primary_crusher_screen3_0800_text4": "{{$get.primary_crusher_screen3_0800_text4|| ''}}",
                         "primary_crusher_screen3_0800_text5": "{{$get.primary_crusher_screen3_0800_text5|| ''}}",
-                         "primary_crusher_screen3_0900_text1": "{{$get.primary_crusher_screen3_0900_text1|| ''}}",
+                        "primary_crusher_screen3_0900_text1": "{{$get.primary_crusher_screen3_0900_text1|| ''}}",
                         "primary_crusher_screen3_0900_text2": "{{$get.primary_crusher_screen3_0900_text2|| ''}}",
                         "primary_crusher_screen3_0900_text3": "{{$get.primary_crusher_screen3_0900_text3|| ''}}",
                         "primary_crusher_screen3_0900_text4": "{{$get.primary_crusher_screen3_0900_text4|| ''}}",
                         "primary_crusher_screen3_0900_text5": "{{$get.primary_crusher_screen3_0900_text5|| ''}}",
-                         "primary_crusher_screen3_1000_text1": "{{$get.primary_crusher_screen3_1000_text1|| ''}}",
+                        "primary_crusher_screen3_1000_text1": "{{$get.primary_crusher_screen3_1000_text1|| ''}}",
                         "primary_crusher_screen3_1000_text2": "{{$get.primary_crusher_screen3_1000_text2|| ''}}",
                         "primary_crusher_screen3_1000_text3": "{{$get.primary_crusher_screen3_1000_text3|| ''}}",
                         "primary_crusher_screen3_1000_text4": "{{$get.primary_crusher_screen3_1000_text4|| ''}}",
                         "primary_crusher_screen3_1000_text5": "{{$get.primary_crusher_screen3_1000_text5|| ''}}",
-                         "primary_crusher_screen3_1100_text1": "{{$get.primary_crusher_screen3_1100_text1|| ''}}",
+                        "primary_crusher_screen3_1100_text1": "{{$get.primary_crusher_screen3_1100_text1|| ''}}",
                         "primary_crusher_screen3_1100_text2": "{{$get.primary_crusher_screen3_1100_text2|| ''}}",
                         "primary_crusher_screen3_1100_text3": "{{$get.primary_crusher_screen3_1100_text3|| ''}}",
                         "primary_crusher_screen3_1100_text4": "{{$get.primary_crusher_screen3_1100_text4|| ''}}",
                         "primary_crusher_screen3_1100_text5": "{{$get.primary_crusher_screen3_1100_text5|| ''}}",
-                         "primary_crusher_screen3_1200_text1": "{{$get.primary_crusher_screen3_1200_text1|| ''}}",
+                        "primary_crusher_screen3_1200_text1": "{{$get.primary_crusher_screen3_1200_text1|| ''}}",
                         "primary_crusher_screen3_1200_text2": "{{$get.primary_crusher_screen3_1200_text2|| ''}}",
                         "primary_crusher_screen3_1200_text3": "{{$get.primary_crusher_screen3_1200_text3|| ''}}",
                         "primary_crusher_screen3_1200_text4": "{{$get.primary_crusher_screen3_1200_text4|| ''}}",
                         "primary_crusher_screen3_1200_text5": "{{$get.primary_crusher_screen3_1200_text5|| ''}}",
-                         "primary_crusher_screen3_1300_text1": "{{$get.primary_crusher_screen3_1300_text1|| ''}}",
+                        "primary_crusher_screen3_1300_text1": "{{$get.primary_crusher_screen3_1300_text1|| ''}}",
                         "primary_crusher_screen3_1300_text2": "{{$get.primary_crusher_screen3_1300_text2|| ''}}",
                         "primary_crusher_screen3_1300_text3": "{{$get.primary_crusher_screen3_1300_text3|| ''}}",
                         "primary_crusher_screen3_1300_text4": "{{$get.primary_crusher_screen3_1300_text4|| ''}}",
                         "primary_crusher_screen3_1300_text5": "{{$get.primary_crusher_screen3_1300_text5|| ''}}",
-                         "primary_crusher_screen3_1400_text1": "{{$get.primary_crusher_screen3_1400_text1|| ''}}",
+                        "primary_crusher_screen3_1400_text1": "{{$get.primary_crusher_screen3_1400_text1|| ''}}",
                         "primary_crusher_screen3_1400_text2": "{{$get.primary_crusher_screen3_1400_text2|| ''}}",
                         "primary_crusher_screen3_1400_text3": "{{$get.primary_crusher_screen3_1400_text3|| ''}}",
                         "primary_crusher_screen3_1400_text4": "{{$get.primary_crusher_screen3_1400_text4|| ''}}",
                         "primary_crusher_screen3_1400_text5": "{{$get.primary_crusher_screen3_1400_text5|| ''}}",
-                         "primary_crusher_screen3_1500_text1": "{{$get.primary_crusher_screen3_1500_text1|| ''}}",
+                        "primary_crusher_screen3_1500_text1": "{{$get.primary_crusher_screen3_1500_text1|| ''}}",
                         "primary_crusher_screen3_1500_text2": "{{$get.primary_crusher_screen3_1500_text2|| ''}}",
                         "primary_crusher_screen3_1500_text3": "{{$get.primary_crusher_screen3_1500_text3|| ''}}",
                         "primary_crusher_screen3_1500_text4": "{{$get.primary_crusher_screen3_1500_text4|| ''}}",
                         "primary_crusher_screen3_1500_text5": "{{$get.primary_crusher_screen3_1500_text5|| ''}}",
-                         "primary_crusher_screen3_1600_text1": "{{$get.primary_crusher_screen3_1600_text1|| ''}}",
+                        "primary_crusher_screen3_1600_text1": "{{$get.primary_crusher_screen3_1600_text1|| ''}}",
                         "primary_crusher_screen3_1600_text2": "{{$get.primary_crusher_screen3_1600_text2|| ''}}",
                         "primary_crusher_screen3_1600_text3": "{{$get.primary_crusher_screen3_1600_text3|| ''}}",
                         "primary_crusher_screen3_1600_text4": "{{$get.primary_crusher_screen3_1600_text4|| ''}}",
                         "primary_crusher_screen3_1600_text5": "{{$get.primary_crusher_screen3_1600_text5|| ''}}",
-                         "primary_crusher_screen3_1700_text1": "{{$get.primary_crusher_screen3_1700_text1|| ''}}",
+                        "primary_crusher_screen3_1700_text1": "{{$get.primary_crusher_screen3_1700_text1|| ''}}",
                         "primary_crusher_screen3_1700_text2": "{{$get.primary_crusher_screen3_1700_text2|| ''}}",
                         "primary_crusher_screen3_1700_text3": "{{$get.primary_crusher_screen3_1700_text3|| ''}}",
                         "primary_crusher_screen3_1700_text4": "{{$get.primary_crusher_screen3_1700_text4|| ''}}",
                         "primary_crusher_screen3_1700_text5": "{{$get.primary_crusher_screen3_1700_text5|| ''}}",
-                         "primary_crusher_screen3_1800_text1": "{{$get.primary_crusher_screen3_1800_text1|| ''}}",
+                        "primary_crusher_screen3_1800_text1": "{{$get.primary_crusher_screen3_1800_text1|| ''}}",
                         "primary_crusher_screen3_1800_text2": "{{$get.primary_crusher_screen3_1800_text2|| ''}}",
                         "primary_crusher_screen3_1800_text3": "{{$get.primary_crusher_screen3_1800_text3|| ''}}",
                         "primary_crusher_screen3_1800_text4": "{{$get.primary_crusher_screen3_1800_text4|| ''}}",
@@ -671,7 +675,7 @@
                         "primary_crusher_screen4_deficiency_description_text3": "{{$get.primary_crusher_screen4_deficiency_description_text3|| ''}}"
 
 
-                        
+
 
 
 
@@ -6230,26 +6234,26 @@
                                     "type": "horizontal",
                                     "class": "no_padding row_style",
                                     "components": [{
-                                        "type": "horizontal",
-                                        "style": {
-                                            "width": "10%"
-
-                                        },
-                                        "components": [{
-                                            "type": "textfield",
-                                            "name": "primary_crusher_screen4_loop_text1",
-                                            "value": "{{$global.primary_crusher_screen4_loop_text1 || ''}}",
-                                            "contentDescription": "six",
+                                            "type": "horizontal",
                                             "style": {
-                                                "padding": "0",
-                                                "height": "6%",
                                                 "width": "10%"
 
                                             },
-                                            "class": "content_style_even"
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "primary_crusher_screen4_loop_text1",
+                                                "value": "{{$global.primary_crusher_screen4_loop_text1 || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "0",
+                                                    "height": "6%",
+                                                    "width": "10%"
 
-                                        }]
-                                    },
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        },
                                         {
                                             "type": "horizontal",
                                             "style": {
@@ -6300,13 +6304,13 @@
                                             "class": "switch_styles table_row_odd_styles",
                                             "contentDescription": "one",
                                             "action": {
-                                              "type": "$global.set",
-                                              "options": {
-                                                "section_id": "form7_page1",
-                                                "authorized_by_supervisor_switch1": "{{$get.authorized_by_supervisor_switch1}}"
-                                              }
+                                                "type": "$global.set",
+                                                "options": {
+                                                    "section_id": "form10_page1",
+                                                    "authorized_by_supervisor_switch1": "{{$get.authorized_by_supervisor_switch1}}"
+                                                }
                                             }
-                                          },
+                                        },
                                         {
                                             "type": "horizontal",
                                             "style": {
@@ -6364,26 +6368,26 @@
                                     "type": "horizontal",
                                     "class": "no_padding row_style",
                                     "components": [{
-                                        "type": "horizontal",
-                                        "style": {
-                                            "width": "10%"
-
-                                        },
-                                        "components": [{
-                                            "type": "textfield",
-                                            "name": "primary_crusher_screen4_loop_text2",
-                                            "value": "{{$global.primary_crusher_screen4_loop_text2 || ''}}",
-                                            "contentDescription": "six",
+                                            "type": "horizontal",
                                             "style": {
-                                                "padding": "0",
-                                                "height": "6%",
                                                 "width": "10%"
 
                                             },
-                                            "class": "content_style_odd"
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "primary_crusher_screen4_loop_text2",
+                                                "value": "{{$global.primary_crusher_screen4_loop_text2 || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "0",
+                                                    "height": "6%",
+                                                    "width": "10%"
 
-                                        }]
-                                    },
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        },
                                         {
                                             "type": "horizontal",
                                             "style": {
@@ -6434,13 +6438,13 @@
                                             "class": "switch_styles table_row_odd_styles",
                                             "contentDescription": "one",
                                             "action": {
-                                              "type": "$global.set",
-                                              "options": {
-                                                "section_id": "form7_page1",
-                                                "authorized_by_supervisor_switch2": "{{$get.authorized_by_supervisor_switch2}}"
-                                              }
+                                                "type": "$global.set",
+                                                "options": {
+                                                    "section_id": "form10_page1",
+                                                    "authorized_by_supervisor_switch2": "{{$get.authorized_by_supervisor_switch2}}"
+                                                }
                                             }
-                                          },
+                                        },
                                         {
                                             "type": "horizontal",
                                             "style": {
@@ -6494,32 +6498,30 @@
                             "items": [{
                                 "type": "vertical",
                                 "class": "no_padding",
-                                "components": [
-                                    {
+                                "components": [{
                                     "type": "horizontal",
                                     "class": "no_padding row_style",
-                                    "components": [
-                                        {
-                                        "type": "horizontal",
-                                        "style": {
-                                            "width": "10%"
-
-                                        },
-                                        "components": [{
-                                            "type": "textfield",
-                                            "name": "primary_crusher_screen4_loop_text3",
-                                            "value": "{{$global.primary_crusher_screen4_loop_text3 || ''}}",
-                                            "contentDescription": "six",
+                                    "components": [{
+                                            "type": "horizontal",
                                             "style": {
-                                                "padding": "0",
-                                                "height": "6%",
                                                 "width": "10%"
 
                                             },
-                                            "class": "content_style_even"
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "primary_crusher_screen4_loop_text3",
+                                                "value": "{{$global.primary_crusher_screen4_loop_text3 || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "0",
+                                                    "height": "6%",
+                                                    "width": "10%"
 
-                                        }]
-                                    },
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        },
                                         {
                                             "type": "horizontal",
                                             "style": {
@@ -6570,13 +6572,13 @@
                                             "class": "switch_styles table_row_odd_styles",
                                             "contentDescription": "one",
                                             "action": {
-                                              "type": "$global.set",
-                                              "options": {
-                                                "section_id": "form7_page1",
-                                                "authorized_by_supervisor_switch3": "{{$get.authorized_by_supervisor_switch3}}"
-                                              }
+                                                "type": "$global.set",
+                                                "options": {
+                                                    "section_id": "form10_page1",
+                                                    "authorized_by_supervisor_switch3": "{{$get.authorized_by_supervisor_switch3}}"
+                                                }
                                             }
-                                          },
+                                        },
                                         {
                                             "type": "horizontal",
                                             "style": {
@@ -6659,32 +6661,30 @@
                             "items": [{
                                 "type": "vertical",
                                 "class": "no_padding",
-                                "components": [
-                                    {
+                                "components": [{
                                     "type": "horizontal",
                                     "class": "no_padding row_style",
-                                    "components": [
-                                        {
-                                        "type": "horizontal",
-                                        "style": {
-                                            "width": "50%"
-
-                                        },
-                                        "components": [{
-                                            "type": "textfield",
-                                            "name": "primary_crusher_screen4_notification_text1",
-                                            "value": "{{$global.primary_crusher_screen4_notification_text1 || ''}}",
-                                            "contentDescription": "six",
+                                    "components": [{
+                                            "type": "horizontal",
                                             "style": {
-                                                "padding": "0",
-                                                "height": "6%",
                                                 "width": "50%"
 
                                             },
-                                            "class": "content_style_even"
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "primary_crusher_screen4_notification_text1",
+                                                "value": "{{$global.primary_crusher_screen4_notification_text1 || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "0",
+                                                    "height": "6%",
+                                                    "width": "50%"
 
-                                        }]
-                                    },
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        },
                                         {
                                             "type": "horizontal",
                                             "style": {
@@ -6717,32 +6717,30 @@
                             "items": [{
                                 "type": "vertical",
                                 "class": "no_padding",
-                                "components": [
-                                    {
+                                "components": [{
                                     "type": "horizontal",
                                     "class": "no_padding row_style",
-                                    "components": [
-                                        {
-                                        "type": "horizontal",
-                                        "style": {
-                                            "width": "50%"
-
-                                        },
-                                        "components": [{
-                                            "type": "textfield",
-                                            "name": "primary_crusher_screen4_notification_text2",
-                                            "value": "{{$global.primary_crusher_screen4_notification_text2 || ''}}",
-                                            "contentDescription": "six",
+                                    "components": [{
+                                            "type": "horizontal",
                                             "style": {
-                                                "padding": "0",
-                                                "height": "6%",
                                                 "width": "50%"
 
                                             },
-                                            "class": "content_style_odd"
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "primary_crusher_screen4_notification_text2",
+                                                "value": "{{$global.primary_crusher_screen4_notification_text2 || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "0",
+                                                    "height": "6%",
+                                                    "width": "50%"
 
-                                        }]
-                                    },
+                                                },
+                                                "class": "content_style_odd"
+
+                                            }]
+                                        },
                                         {
                                             "type": "horizontal",
                                             "style": {
@@ -6775,32 +6773,30 @@
                             "items": [{
                                 "type": "vertical",
                                 "class": "no_padding",
-                                "components": [
-                                    {
+                                "components": [{
                                     "type": "horizontal",
                                     "class": "no_padding row_style",
-                                    "components": [
-                                        {
-                                        "type": "horizontal",
-                                        "style": {
-                                            "width": "50%"
-
-                                        },
-                                        "components": [{
-                                            "type": "textfield",
-                                            "name": "primary_crusher_screen4_notification_text3",
-                                            "value": "{{$global.primary_crusher_screen4_notification_text3 || ''}}",
-                                            "contentDescription": "six",
+                                    "components": [{
+                                            "type": "horizontal",
                                             "style": {
-                                                "padding": "0",
-                                                "height": "6%",
                                                 "width": "50%"
 
                                             },
-                                            "class": "content_style_even"
+                                            "components": [{
+                                                "type": "textfield",
+                                                "name": "primary_crusher_screen4_notification_text3",
+                                                "value": "{{$global.primary_crusher_screen4_notification_text3 || ''}}",
+                                                "contentDescription": "six",
+                                                "style": {
+                                                    "padding": "0",
+                                                    "height": "6%",
+                                                    "width": "50%"
 
-                                        }]
-                                    },
+                                                },
+                                                "class": "content_style_even"
+
+                                            }]
+                                        },
                                         {
                                             "type": "horizontal",
                                             "style": {
