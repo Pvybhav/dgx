@@ -52,18 +52,21 @@
                     "background": "rgb(204, 216, 213)",
                     "color": "rgb(0, 0, 0)",
                     "border": "#ffffff"
-
+                },
+                "content_style_odd_switch": {
+                    "background": "rgb(204, 216, 213)"
+                },
+                "content_style_even_switch": {
+                    "background": "rgb(231, 232, 235)"
                 },
                 "content_style_odd_textfield": {
                     "background": "rgb(204, 216, 213)",
                     "color": "rgb(0, 0, 0)"
-
                 },
                 "content_style_even": {
                     "background": "rgb(231, 232, 235)",
                     "color": "rgb(0, 0, 0)",
                     "border": "#ffffff"
-
                 },
                 "label_description_style": {
                     "font": "HelveticaNeue-Bold",
@@ -6302,7 +6305,7 @@
                                             "type": "switch",
                                             "name": "authorized_by_supervisor_switch1",
                                             "value": "{{$global.authorized_by_supervisor_switch1}}",
-                                            "class": "switch_styles content_style_even center_align",
+                                            "class": "switch_styles content_style_even_switch center_align",
                                             "contentDescription": "one",
                                             "action": {
                                                 "type": "$global.set",
@@ -6436,7 +6439,7 @@
                                             "type": "switch",
                                             "name": "authorized_by_supervisor_switch2",
                                             "value": "{{$global.authorized_by_supervisor_switch2}}",
-                                            "class": "switch_styles content_style_odd center_align",
+                                            "class": "switch_styles content_style_odd_switch center_align",
                                             "contentDescription": "one",
                                             "action": {
                                                 "type": "$global.set",
@@ -6570,7 +6573,7 @@
                                             "type": "switch",
                                             "name": "authorized_by_supervisor_switch3",
                                             "value": "{{$global.authorized_by_supervisor_switch3}}",
-                                            "class": "switch_styles content_style_even center_align",
+                                            "class": "switch_styles content_style_even_switch center_align",
                                             "contentDescription": "one",
                                             "action": {
                                                 "type": "$global.set",
