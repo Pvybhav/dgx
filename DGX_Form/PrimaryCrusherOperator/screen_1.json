@@ -1213,7 +1213,7 @@
                                             "components": [
                                               {
                                                 "type": "horizontal",
-                                                "class": "table_body_name_styles row_style",
+                                                "class": "table_body_name_styles row_style {{ row_index % 2 == 0 ? 'content_style_even' : 'content_style_odd'}}",
                                                 "style": {
                                                   "height": "{{#? this.height}}"
                                                 },
@@ -1233,13 +1233,14 @@
                                                 "components": {
                                                   "{{#each row_values}}": {
                                                     "type": "horizontal",
+                                                    "class": "row_style {{ row_index % 2 == 0 ? 'content_style_even' : 'content_style_odd'}}",
                                                     "components": [
                                                       
                                                       {
                                                         "type": "vertical",
-                                                        "class": "row_style",
+                                                        "class": "row_style {{ row_index % 2 == 0 ? 'content_style_even' : 'content_style_odd'}}",
                                                         "components": [
-                                                          {
+                                                          { 
                                                             "type": "{{type}}",
                                                             "name": "{{name}}",
                                                             "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
