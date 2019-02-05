@@ -4371,20 +4371,26 @@
                         },
                         {
                             "type": "horizontal",
+                            "class": "no_padding",
                             "items": [{
-                                "type": "vertical",
+                                "type": "horizontal",
                                 "class": "no_padding",
                                 "components": [{
                                     "type": "horizontal",
+                                    "class": "no_padding table_row",
                                     "components": {
                                         "{{#each Table3_Headers}}": {
-                                            "type": "horizontal",
-                                            "components": [{
-                                                "type": "label",
-                                                "text": "{{value}}",
-                                                "class": "{{styles}}"
-                                            }]
+                                            "type": "vertical",
+                                            "components": [
+
+                                                {
+                                                    "type": "label",
+                                                    "text": "{{value}}",
+                                                    "class": "{{styles}} center_align"
+                                                }
+                                            ]
                                         }
+
                                     },
                                     "style": {
                                         "padding_top": "1%"
