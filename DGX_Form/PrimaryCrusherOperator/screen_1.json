@@ -6880,31 +6880,91 @@
                                     },
                                     {
                                         "type": "button",
-                                        "name": "next",
-                                        "text": "Next",
-                                        "class": "next_button_styles center_align",
+                                        "name": "submit",
+                                        "text": "submit",
+                                        "class": "center_align submit_button_styles",
+                                        "contentDescription": "submit",
                                         "action": {
-                                            "type": "$href",
+                                          "type": "$global.reset",
+                                          "options": {
+                                            "save": "true",
+                                            "filename": "LimeAreaShiftReport"
+                                          },
+                                          "success": {
+                                            "type": "$global.reset",
                                             "options": {
-                                                "url": "https://pvybhav.github.io/DGX_Form/CyanideIsotainer/screen_2.json",
-                                                "preload": {
-                                                    "style": {
-                                                        "background": "#ff0000"
-                                                    },
-                                                    "layers": [{
-                                                        "type": "image",
-                                                        "url": "file://infinit.gif",
-                                                        "style": {
-                                                            "top": "50%-25",
-                                                            "left": "50%-25",
-                                                            "width": "50",
-                                                            "height": "50"
-                                                        }
-                                                    }]
-                                                }
+                                              "items": [
+                                                "section_id",
+                                                "f3_s1_sign",
+                                                "f3_s1_day",
+                                                "f3_s1_month",
+                                                "f3_s1_year",
+                                                "f3_s1_shift",
+                                                "f3_s1_operator",
+                                                "safety_showers_row1_0700",
+                                                "safety_showers_row1_1100",
+                                                "safety_showers_row1_1500",
+                                                "safety_showers_row2_0700",
+                                                "safety_showers_row2_1100",
+                                                "safety_showers_row2_1500",
+                                                "lime_silo_cone_0700",
+                                                "lime_silo_cone_1100",
+                                                "lime_silo_cone_1500",
+                                                "actuator_0700",
+                                                "actuator_1100",
+                                                "actuator_1500",
+                                                "manual_valves_0700",
+                                                "manual_valves_1100",
+                                                "manual_valves_1500",
+                                                "auto_valves_0700",
+                                                "auto_valves_1100",
+                                                "auto_valves_1500",
+                                                "square_piping_0700",
+                                                "square_piping_1100",
+                                                "square_piping_1500",
+                                                "rotary_valves_0700",
+                                                "rotary_valves_1100",
+                                                "rotary_valves_1500",
+                                                "screw_conveyers_0700",
+                                                "screw_conveyers_1100",
+                                                "screw_conveyers_1500",
+                                                "ventary_conveyers_0700",
+                                                "ventary_conveyers_1100",
+                                                "ventary_conveyers_1500",
+                                                "blower_piping_0700",
+                                                "blower_piping_1100",
+                                                "blower_piping_1500",
+                                                "slater_top_floor_row4_0700",
+                                                "slater_top_floor_row4_1100",
+                                                "slater_top_floor_row4_1500",
+                                                "slater_0700",
+                                                "slater_1100",
+                                                "slater_1500",
+                                                "slater_level_row2_0700",
+                                                "slater_level_row2_1100",
+                                                "slater_level_row2_1500",
+                                                "agitator_0700",
+                                                "agitator_1100",
+                                                "agitator_1500",
+                                                "pumps_0700",
+                                                "pumps_1100",
+                                                "pumps_1500",
+                                                "slater_level_row5_0700",
+                                                "slater_level_row5_1100",
+                                                "slater_level_row5_1500",
+                                                "description_of_deficiency",
+                                                "comments_operator_description"
+                                              ]
+                                            },
+                                            "success": {
+                                              "type": "$href",
+                                              "options": {
+                                                "url": "{{redirect_url}}"
+                                              }
                                             }
+                                          }
                                         }
-                                    },
+                                      },
                                     {
                                         "type": "label",
                                         "text": "",
