@@ -1271,7 +1271,7 @@
                                                             "type": "{{type}}",
                                                             "name": "{{name}}",
                                                             "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                            "class": "center_align black_color table_body_textfield_styles {{ row_index % 2 == 0 ? 'content_style_even' : 'content_style_odd'}}",
+                                                            "class": "center_align black_color table_body_textfield_styles {{styles}}",
                                                             "style": {
                                                                 "padding_bottom": "5%",
                                                                 "height": "6%",
