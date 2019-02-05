@@ -178,6 +178,11 @@
                     "border": "rgb(255, 255, 255)",
                     "height": "15%"
                 },
+                "table_header_value_styles3": {
+                    "width": "50%",
+                    "border": "rgb(255, 255, 255)",
+                    "height": "10%"
+                },
                 "table_row": {
                     "height": "15%"
                 },
@@ -317,7 +322,8 @@
                         "styles": "table_header_styles  table_header_value_styles"
                     }
                 ],
-                "Table3_Headers": [{
+                "Table3_Headers": [
+                    {
                         "type": "label",
                         "value": "Time",
                         "col_type": "col_name",
@@ -355,44 +361,20 @@
                         "styles": "table_header_styles center_align table_header_value_styles2"
                     }
                 ],
-                "Table4_Headers": [{
-                    "type": "label",
-                    "value": "Loop #",
-                    "col_type": "col_name",
-                    "styles": "table_header_styles center_align table_header_name_styles"
-                },
-                {
-                    "type": "label",
-                    "value": "Description",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align table_header_value_styles2"
-                },
-                {
-                    "type": "label",
-                    "value": "Reason",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align table_header_value_styles2"
-                },
-                {
-                    "type": "label",
-                    "value": "Authorized by supervisor",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align table_header_value_styles2"
-                },
-                {
-                    "type": "label",
-                    "value": "Time in",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align table_header_value_styles2"
-                },
-
-                {
-                    "type": "label",
-                    "value": "Time out",
-                    "col_type": "col_value",
-                    "styles": "table_header_styles center_align table_header_value_styles2"
-                }
-            ]
+                "Table4_Headers":  [
+                    {
+                        "type": "label",
+                        "value": "Notifications Number",
+                        "col_type": "col_name",
+                        "styles": "table_header_styles center_align table_header_value_styles3"
+                    },
+                    {
+                        "type": "label",
+                        "value": "Description of Deficiency",
+                        "col_type": "col_value",
+                        "styles": "table_header_styles center_align table_header_value_styles3"
+                    }
+                ]
             },
             "actions": {
                 "$load": {
@@ -624,7 +606,23 @@
                         "primary_crusher_screen3_1800_text2": "{{$get.primary_crusher_screen3_1800_text2|| ''}}",
                         "primary_crusher_screen3_1800_text3": "{{$get.primary_crusher_screen3_1800_text3|| ''}}",
                         "primary_crusher_screen3_1800_text4": "{{$get.primary_crusher_screen3_1800_text4|| ''}}",
-                        "primary_crusher_screen3_1800_text5": "{{$get.primary_crusher_screen3_1800_text5|| ''}}"
+                        "primary_crusher_screen3_1800_text5": "{{$get.primary_crusher_screen3_1800_text5|| ''}}",
+                        "primary_crusher_screen4_loop_text2": "{{$get.primary_crusher_screen4_loop_text2|| ''}}",
+                        "primary_crusher_screen4_description_text2": "{{$get.primary_crusher_screen4_description_text2|| ''}}",
+                        "primary_crusher_screen4_reason_text2": "{{$get.primary_crusher_screen4_reason_text2|| ''}}",
+                        "primary_crusher_screen4_timein_text2": "{{$get.primary_crusher_screen4_timein_text2|| ''}}",
+                        "primary_crusher_screen4_timeout_text2": "{{$get.primary_crusher_screen4_timeout_text2|| ''}}",
+                        "primary_crusher_screen4_loop_text1": "{{$get.primary_crusher_screen4_loop_text1|| ''}}",
+                        "primary_crusher_screen4_description_text1": "{{$get.primary_crusher_screen4_description_text1|| ''}}",
+                        "primary_crusher_screen4_reason_text1": "{{$get.primary_crusher_screen4_reason_text1|| ''}}",
+                        "primary_crusher_screen4_timein_text1": "{{$get.primary_crusher_screen4_timein_text1|| ''}}",
+                        "primary_crusher_screen4_timeout_text1": "{{$get.primary_crusher_screen4_timeout_text1|| ''}}",
+                        "primary_crusher_screen4_loop_text3": "{{$get.primary_crusher_screen4_loop_text3|| ''}}",
+                        "primary_crusher_screen4_description_text3": "{{$get.primary_crusher_screen4_description_text3|| ''}}",
+                        "primary_crusher_screen4_reason_text3": "{{$get.primary_crusher_screen4_reason_text3|| ''}}",
+                        "primary_crusher_screen4_timein_text3": "{{$get.primary_crusher_screen4_timein_text3|| ''}}",
+                        "primary_crusher_screen4_timeout_text3": "{{$get.primary_crusher_screen4_timeout_text3|| ''}}"
+
 
                         
 
@@ -6298,7 +6296,7 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "c",
+                                                "name": "primary_crusher_screen4_timeout_text1",
                                                 "value": "{{$global.primary_crusher_screen4_timeout_text1 || ''}}",
                                                 "contentDescription": "five",
                                                 "style": {
@@ -6439,8 +6437,8 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "primary_crusher_screen4_timein_text2",
-                                                "value": "{{$global.primary_crusher_screen4_timein_text2 || ''}}",
+                                                "name": "primary_crusher_screen4_timeout_text2",
+                                                "value": "{{$global.primary_crusher_screen4_timeout_text2 || ''}}",
                                                 "contentDescription": "five",
                                                 "style": {
                                                     "padding": "0",
@@ -6582,8 +6580,8 @@
                                             },
                                             "components": [{
                                                 "type": "textfield",
-                                                "name": "primary_crusher_screen4_timein_text3",
-                                                "value": "{{$global.primary_crusher_screen4_timein_text3 || ''}}",
+                                                "name": "primary_crusher_screen4_timeout_text3",
+                                                "value": "{{$global.primary_crusher_screen4_timeout_text3 || ''}}",
                                                 "contentDescription": "five",
                                                 "style": {
                                                     "padding": "0",
@@ -6596,6 +6594,35 @@
                                             }]
                                         }
                                     ]
+                                }]
+                            }]
+                        },
+                        {
+                            "type": "horizontal",
+                            "class": "no_padding",
+                            "items": [{
+                                "type": "horizontal",
+                                "class": "no_padding",
+                                "components": [{
+                                    "type": "horizontal",
+                                    "class": "no_padding table_row",
+                                    "components": {
+                                        "{{#each Table4_Headers}}": {
+                                            "type": "vertical",
+                                            "components": [
+
+                                                {
+                                                    "type": "label",
+                                                    "text": "{{value}}",
+                                                    "class": "{{styles}} center_align"
+                                                }
+                                            ]
+                                        }
+
+                                    },
+                                    "style": {
+                                        "padding_top": "1%"
+                                    }
                                 }]
                             }]
                         },
