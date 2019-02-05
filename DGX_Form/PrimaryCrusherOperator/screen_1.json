@@ -288,7 +288,7 @@
                 "Table2_Rows": [
                     {
                       "row_name": "0645-M221-021 Derrick Screen",
-                      "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+                      "row_styles": "content_style_odd title_styles column_label_style",
                       "row_values": [
                         {
                           "type": "textfield",
@@ -318,7 +318,7 @@
                     },
                     {
                       "row_name": "0645-M221-011 Secondary Loaded Carbon Screen",
-                      "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+                      "row_styles": "content_style_odd title_styles column_label_style",
                       "row_values": [
                         {
                           "type": "textfield",
@@ -348,7 +348,7 @@
                     },
                     {
                       "row_name": "0650-M221-001 Carbon Dewatering Screen",
-                      "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+                      "row_styles": "content_style_odd title_styles column_label_style",
                       "row_values": [
                         {
                           "type": "textfield",
@@ -378,7 +378,7 @@
                     },
                     {
                       "row_name": "0650-M221-002 Carbon Dewatering Screen",
-                      "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+                      "row_styles": "content_style_odd title_styles column_label_style",
                       "row_values": [
                         {
                           "type": "textfield",
@@ -1206,14 +1206,14 @@
                                           },
                                           {
                                             "type": "horizontal",
-                                            "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                                            "class": "center_align row_style {{ row_index % 2 == 0 ? 'content_style_even' : 'content_style_odd'}}",
                                             "style": {
                                               "height": "{{#? this.height}}"
                                             },
                                             "components": [
                                               {
                                                 "type": "horizontal",
-                                                "class": "table_body_name_styles table_row_height",
+                                                "class": "table_body_name_styles row_style",
                                                 "style": {
                                                   "height": "{{#? this.height}}"
                                                 },
@@ -1221,7 +1221,7 @@
                                                   {
                                                     "type": "label",
                                                     "text": "{{this.row_name}}",
-                                                    "class": "{{this.row_styles}} table_row_height",
+                                                    "class": "{{this.row_styles}} row_style",
                                                     "style": {
                                                       "height": "{{#? this.height}}"
                                                     }
@@ -1234,30 +1234,22 @@
                                                   "{{#each row_values}}": {
                                                     "type": "horizontal",
                                                     "components": [
+                                                      
                                                       {
                                                         "type": "vertical",
-                                                        "class": "table_body_label_width",
-                                                        "components": [
-                                                          {
-                                                            "type": "label",
-                                                            "text": "{{label}}",
-                                                            "class": "label_styles black_color center_align table_row_height",
-                                                            "style": {
-                                                              "height": "{{#? this.height}}"
-                                                            }
-                                                          }
-                                                        ]
-                                                      },
-                                                      {
-                                                        "type": "vertical",
-                                                        "class": "table_row_height",
+                                                        "class": "row_style",
                                                         "components": [
                                                           {
                                                             "type": "{{type}}",
                                                             "name": "{{name}}",
                                                             "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
                                                             "class": "center_align black_color table_body_textfield_styles",
-                                                            "contentDescription": "{{contentDescription}}"
+                                                            "style": {
+                                                                "padding_bottom": "5%",
+                                                                "height": "6%",
+                                                                "width": "15%"
+            
+                                                            }
                                                           }
                                                         ]
                                                       }
