@@ -817,7 +817,8 @@
                                 "components": [{
                                     "type": "horizontal",
                                     "class": "no_padding row_style",
-                                    "components": [{
+                                    "components": [
+                                        {
                                             "type": "label",
                                             "text": "0700",
                                             "class": "content_style_odd title_styles column_label_style"
@@ -825,9 +826,10 @@
                                         },
                                         {
                                             "type": "horizontal",
-                                            "class": "no_padding row_style",
+                                            "class": "row_style",
                                             "style": {
-                                                "width": "15%"
+                                                "width": "15%",
+                                                "height":"6%"
 
                                             },
                                             "components": [{
@@ -836,7 +838,8 @@
                                                 "value": "{{$global.primary_crusher_screen1_0700_text1 || ''}}",
                                                 "contentDescription": "five",
                                                 "style": {
-                                                    "padding": "2"
+                                                    "padding": "2",
+                                                    "height":"6%"
 
                                                 },
                                                 "class": "content_style_odd"
