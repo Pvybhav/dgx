@@ -789,10 +789,17 @@
                                     "components": {
                                         "{{#each Table1_Headers}}": 
                                         {
-                                            "type": "label",
-                                            "text": "{{value}}",
-                                            "class": "{{styles}}"     
-                                    }
+                                            "type":"vertical",
+                                            "components":[
+
+                                                {
+                                                    "type": "label",
+                                                    "text": "{{value}}",
+                                                    "class": "{{styles}} center_align"     
+                                            }
+                                            ]
+                                        }
+                                        
                                     },
                                     "style": {
                                         "padding_top": "1%"
