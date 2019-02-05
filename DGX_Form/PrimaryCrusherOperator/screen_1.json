@@ -136,7 +136,7 @@
                     "color": "rgb(0,255,0)",
                     "color:disabled": "rgb(255,0,0)",
                     "align": "center",
-                    "height": "5%"
+                    "height": "6%"
 
                 },
                 "switch_legend_styles": {
@@ -6294,26 +6294,19 @@
                                         },
 
                                         {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "18%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "primary_crusher_screen3_1800_text3",
-                                                "value": "{{$global.primary_crusher_screen3_1800_text3 || ''}}",
-                                                "contentDescription": "five",
-                                                "style": {
-                                                    "padding": "0",
-                                                    "height": "6%",
-                                                    "width": "18%"
-
-                                                },
-                                                "class": "content_style_even"
-
-                                            }]
-                                        },
+                                            "type": "switch",
+                                            "name": "authorized_by_supervisor_switch1",
+                                            "value": "{{$global.authorized_by_supervisor_switch1}}",
+                                            "class": "switch_styles table_row_odd_styles",
+                                            "contentDescription": "one",
+                                            "action": {
+                                              "type": "$global.set",
+                                              "options": {
+                                                "section_id": "form7_page1",
+                                                "authorized_by_supervisor_switch1": "{{$get.authorized_by_supervisor_switch1}}"
+                                              }
+                                            }
+                                          },
                                         {
                                             "type": "horizontal",
                                             "style": {
