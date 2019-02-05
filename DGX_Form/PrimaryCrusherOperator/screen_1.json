@@ -285,6 +285,128 @@
                         "styles": "table_header_styles table_header_value_styles"
                     }
                 ],
+                "Table2_Rows": [
+                    {
+                      "row_name": "0645-M221-021 Derrick Screen",
+                      "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+                      "row_values": [
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_derrick_screen_0645_M221_021_holed",
+                          "label": "5",
+                          "contentDescription": "five"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_derrick_screen_0645_M221_021_blinded",
+                          "label": "6",
+                          "contentDescription": "six"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_derrick_screen_0645_M221_021_clean",
+                          "label": "7",
+                          "contentDescription": "seven"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_derrick_screen_0645_M221_021_good",
+                          "label": "8",
+                          "contentDescription": "eight"
+                        }
+                      ]
+                    },
+                    {
+                      "row_name": "0645-M221-011 Secondary Loaded Carbon Screen",
+                      "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+                      "row_values": [
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_holed",
+                          "label": "9",
+                          "contentDescription": "nine"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_blinded",
+                          "label": "10",
+                          "contentDescription": "ten"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_cleaned",
+                          "label": "11",
+                          "contentDescription": "eleven"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_good",
+                          "label": "12",
+                          "contentDescription": "twelve"
+                        }
+                      ]
+                    },
+                    {
+                      "row_name": "0650-M221-001 Carbon Dewatering Screen",
+                      "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+                      "row_values": [
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_carbon_dewatering_screen_0650_M221_001_holed",
+                          "label": "13",
+                          "contentDescription": "thirteen"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_carbon_dewatering_screen_0650_M221_001_blinded",
+                          "label": "14",
+                          "contentDescription": "fourteen"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_carbon_dewatering_screen_0650_M221_001_cleaned",
+                          "label": "15",
+                          "contentDescription": "fifteen"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_carbon_dewatering_screen_0650_M221_001_good",
+                          "label": "16",
+                          "contentDescription": "sixteen"
+                        }
+                      ]
+                    },
+                    {
+                      "row_name": "0650-M221-002 Carbon Dewatering Screen",
+                      "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+                      "row_values": [
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_carbon_dewatering_screen_0650_M221_002_holed",
+                          "label": "17",
+                          "contentDescription": "seventeen"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_carbon_dewatering_screen_0650_M221_002_blinded",
+                          "label": "18",
+                          "contentDescription": "eighteen"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_carbon_dewatering_screen_0650_M221_002_cleaned",
+                          "label": "19",
+                          "contentDescription": "nineteen"
+                        },
+                        {
+                          "type": "textfield",
+                          "name": "fine_carbon_carbon_dewatering_screen_0650_M221_002_good",
+                          "label": "20",
+                          "contentDescription": "twenty"
+                        }
+                      ]
+                    }
+                  ],
                 "Table2_Headers": [{
                         "type": "label",
                         "value": "Time",
@@ -1066,6 +1188,93 @@
                             ],
                             "class": "no_padding"
                         },
+
+                        {
+                            "type": "vertical",
+                            "items": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "vertical",
+                                    "components": {
+                                      "{{#each Table2_Rows}}": {
+                                        "{{#let}}": [
+                                          {
+                                            "row_index": "{{$index}}"
+                                          },
+                                          {
+                                            "type": "horizontal",
+                                            "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                                            "style": {
+                                              "height": "{{#? this.height}}"
+                                            },
+                                            "components": [
+                                              {
+                                                "type": "horizontal",
+                                                "class": "table_body_name_styles table_row_height",
+                                                "style": {
+                                                  "height": "{{#? this.height}}"
+                                                },
+                                                "components": [
+                                                  {
+                                                    "type": "label",
+                                                    "text": "{{this.row_name}}",
+                                                    "class": "{{this.row_styles}} table_row_height",
+                                                    "style": {
+                                                      "height": "{{#? this.height}}"
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "type": "horizontal",
+                                                "components": {
+                                                  "{{#each row_values}}": {
+                                                    "type": "horizontal",
+                                                    "components": [
+                                                      {
+                                                        "type": "vertical",
+                                                        "class": "table_body_label_width",
+                                                        "components": [
+                                                          {
+                                                            "type": "label",
+                                                            "text": "{{label}}",
+                                                            "class": "label_styles black_color center_align table_row_height",
+                                                            "style": {
+                                                              "height": "{{#? this.height}}"
+                                                            }
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "type": "vertical",
+                                                        "class": "table_row_height",
+                                                        "components": [
+                                                          {
+                                                            "type": "{{type}}",
+                                                            "name": "{{name}}",
+                                                            "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                            "class": "center_align black_color table_body_textfield_styles",
+                                                            "contentDescription": "{{contentDescription}}"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
                         {
                             "type": "horizontal",
                             "class": "no_padding",
