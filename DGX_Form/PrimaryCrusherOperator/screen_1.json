@@ -121,8 +121,7 @@
                     "font": "HelveticaHeader",
                     "background": "rgb(14, 53, 112)",
                     "color": "rgb(255, 255, 255)",
-                    "border": "rgb(255, 255, 255)",
-                    "height": "15%"
+                    "border": "rgb(255, 255, 255)"
 
                 },
                 "roller_header_style": {
@@ -171,6 +170,9 @@
                 "table_header_value_styles": {
                     "width": "15%",
                     "border": "rgb(255, 255, 255)"
+                },
+                "table_row":{
+                    "height":"15%"
                 },
                 "table_header_width_styles": {
                     "width": "15%"
@@ -780,7 +782,7 @@
                                 "class": "no_padding",
                                 "components": [{
                                     "type": "horizontal",
-                                    "class":"no_padding row_style",
+                                    "class":"no_padding table_row",
                                     "components": {
                                         "{{#each Table1_Headers}}": {
                                             "type": "label",
