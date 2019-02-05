@@ -6428,26 +6428,19 @@
                                         },
 
                                         {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "18%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "primary_crusher_screen3_1800_text3",
-                                                "value": "{{$global.primary_crusher_screen3_1800_text3 || ''}}",
-                                                "contentDescription": "five",
-                                                "style": {
-                                                    "padding": "0",
-                                                    "height": "6%",
-                                                    "width": "18%"
-
-                                                },
-                                                "class": "content_style_odd"
-
-                                            }]
-                                        },
+                                            "type": "switch",
+                                            "name": "authorized_by_supervisor_switch2",
+                                            "value": "{{$global.authorized_by_supervisor_switch2}}",
+                                            "class": "switch_styles table_row_odd_styles",
+                                            "contentDescription": "one",
+                                            "action": {
+                                              "type": "$global.set",
+                                              "options": {
+                                                "section_id": "form7_page1",
+                                                "authorized_by_supervisor_switch2": "{{$get.authorized_by_supervisor_switch2}}"
+                                              }
+                                            }
+                                          },
                                         {
                                             "type": "horizontal",
                                             "style": {
@@ -6571,26 +6564,19 @@
                                         },
 
                                         {
-                                            "type": "horizontal",
-                                            "style": {
-                                                "width": "18%"
-
-                                            },
-                                            "components": [{
-                                                "type": "textfield",
-                                                "name": "primary_crusher_screen3_1800_text3",
-                                                "value": "{{$global.primary_crusher_screen3_1800_text3 || ''}}",
-                                                "contentDescription": "five",
-                                                "style": {
-                                                    "padding": "0",
-                                                    "height": "6%",
-                                                    "width": "18%"
-
-                                                },
-                                                "class": "content_style_even"
-
-                                            }]
-                                        },
+                                            "type": "switch",
+                                            "name": "authorized_by_supervisor_switch3",
+                                            "value": "{{$global.authorized_by_supervisor_switch3}}",
+                                            "class": "switch_styles table_row_odd_styles",
+                                            "contentDescription": "one",
+                                            "action": {
+                                              "type": "$global.set",
+                                              "options": {
+                                                "section_id": "form7_page1",
+                                                "authorized_by_supervisor_switch3": "{{$get.authorized_by_supervisor_switch3}}"
+                                              }
+                                            }
+                                          },
                                         {
                                             "type": "horizontal",
                                             "style": {
