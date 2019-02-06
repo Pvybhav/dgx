@@ -1189,77 +1189,7 @@
                             "class": "no_padding"
                         },     
                         
-                        {
-                            "type": "vertical",
-                            "items": [
-                              {
-                                "type": "vertical",
-                                "class": "no_padding",
-                                "components": [
-                                  {
-                                    "type": "vertical",
-                                    "components": {
-                                      "{{#each Table2_Rows}}": {
-                                        "{{#let}}": [
-                                          {
-                                            "row_index": "{{$index}}"
-                                          },
-                                          {
-                                            "type": "horizontal",
-                                            "class": "center_align {{this.row_styles}}",
-                                            "style": {
-                                              "height": "6%"
-                                            },
-                                            "components": [
-                                                {
-                                                    "type": "horizontal",
-                                                    "class": "table_body_name_styles table_row_height",
-                                                    
-                                                    "components": [
-                                                      {
-                                                        "type": "label",
-                                                        "text": "{{this.row_name}}",
-                                                        "class": "{{this.row_styles}} table_row_height",
-                                                        "style": {
-                                                          "height": "6%"
-                                                        }
-                                                      }
-                                                    ]
-                                                  },
-                                              {
-                                                "type": "horizontal",
-                                                "components": {
-                                                  "{{#each row_values}}": {
-                                                    "type": "horizontal",
-                                                    "components": [
-                                                     
-                                                      {
-                                                        "type": "vertical",
-                                                        "class": "table_row_height",
-                                                        "components": [
-                                                          {
-                                                            "type": "{{type}}",
-                                                            "name": "{{name}}",
-                                                            "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                            "class": "{{styles}}"
-                                                           
-                                                          }
-                                                        ]
-                                                      }
-                                                    ]
-                                                  }
-                                                }
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  }
-                                ]
-                              }
-                            ]
-                          },
+                      
                         {
                             "type": "horizontal",
                             "class": "no_padding",
