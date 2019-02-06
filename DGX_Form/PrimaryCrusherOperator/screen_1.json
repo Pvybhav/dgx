@@ -1223,23 +1223,20 @@
                                                                 },
                                                                 {
                                                                     "{{#each row_values}}": {
-                                                                                "type": "vertical",
-                                                                                "style": {
-                                                                                    "height": "6%"
-                                                                                },
-                                                                                "components": [{
-                                                                                    "type": "{{type}}",
-                                                                                    "name": "{{name}}",
-                                                                                    "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                                                    "style": {
-                                                                                        "padding_bottom": "5%",
-                                                                                        "height": "6%",
-                                                                                        "width": "15%"
+                                                                        "type": "vertical",
+                                                                        "components": [{
+                                                                            "type": "{{type}}",
+                                                                            "name": "{{name}}",
+                                                                            "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                                            "style": {
+                                                                                "padding_bottom": "5%",
+                                                                                "height": "6%",
+                                                                                "width": "15%"
 
-                                                                                    },
-                                                                                    "class": "{{styles}}"
-                                                                                }]
-                                                                            
+                                                                            },
+                                                                            "class": "{{styles}}"
+                                                                        }]
+
                                                                     }
                                                                 }
                                                             ]
