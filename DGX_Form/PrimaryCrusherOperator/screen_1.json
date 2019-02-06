@@ -401,8 +401,6 @@
                         "row_values": [{
                                 "type": "textfield",
                                 "name": "fine_carbon_carbon_dewatering_screen_0650_M221_002_holed",
-                                "label": "17",
-                                "contentDescription": "seventeen",
                                 "styles": "content_style_even"
                             },
                             {
@@ -1238,28 +1236,12 @@
                                           },
                                           {
                                             "type": "horizontal",
-                                            "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                                            "class": "center_align table_row_height {{this.row_styles}}",
                                             "style": {
                                               "height": "{{#? this.height}}"
                                             },
                                             "components": [
-                                              {
-                                                "type": "horizontal",
-                                                "class": "table_body_name_styles table_row_height",
-                                                "style": {
-                                                  "height": "{{#? this.height}}"
-                                                },
-                                                "components": [
-                                                  {
-                                                    "type": "label",
-                                                    "text": "{{this.row_name}}",
-                                                    "class": "{{this.row_styles}} table_row_height",
-                                                    "style": {
-                                                      "height": "{{#? this.height}}"
-                                                    }
-                                                  }
-                                                ]
-                                              },
+                                            
                                               {
                                                 "type": "horizontal",
                                                 "components": {
@@ -1288,7 +1270,7 @@
                                                             "type": "{{type}}",
                                                             "name": "{{name}}",
                                                             "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                            "class": "center_align black_color table_body_textfield_styles",
+                                                            "class": "center_align black_color table_body_textfield_styles {{styles}}",
                                                             "contentDescription": "{{contentDescription}}"
                                                           }
                                                         ]
@@ -7418,4 +7400,4 @@
             }
         }
     }
-}
+}                                                                                                                    
