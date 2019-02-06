@@ -1208,14 +1208,14 @@
                                             "type": "horizontal",
                                             "class": "center_align table_row_height {{this.row_styles}}",
                                             "style": {
-                                              "height": "{{#? this.height}}"
+                                              "height": "6%"
                                             },
                                             "components": [
                                                 {
                                                     "type": "horizontal",
                                                     "class": "table_body_name_styles table_row_height",
                                                     "style": {
-                                                      "height": "{{#? this.height}}"
+                                                        "height": "6%"
                                                     },
                                                     "components": [
                                                       {
@@ -1223,40 +1223,38 @@
                                                         "text": "{{this.row_name}}",
                                                         "class": "{{this.row_styles}} table_row_height",
                                                         "style": {
-                                                          "height": "{{#? this.height}}"
+                                                            "height": "6%"
+                                                        }
+                                                      },
+                                                      {
+                                                        "{{#each row_values}}": {
+                                                          "type": "horizontal",
+                                                          "components": [
+                                                           
+                                                            {
+                                                              "type": "vertical",
+                                                              "class": "table_row_height",
+                                                              "components": [
+                                                                {
+                                                                  "type": "{{type}}",
+                                                                  "name": "{{name}}",
+                                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                                  "style": {
+                                                                      "padding_bottom": "5%",
+                                                                      "height": "6%",
+                                                                      "width": "15%"
+                  
+                                                                  },
+                                                                  "class": "content_style_odd"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
                                                         }
                                                       }
                                                     ]
-                                                  },
-                                              {
-                                                "type": "horizontal",
-                                                "components": {
-                                                  "{{#each row_values}}": {
-                                                    "type": "horizontal",
-                                                    "components": [
-                                                     
-                                                      {
-                                                        "type": "vertical",
-                                                        "class": "table_row_height",
-                                                        "components": [
-                                                          {
-                                                            "type": "{{type}}",
-                                                            "name": "{{name}}",
-                                                            "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                            "style": {
-                                                                "padding_bottom": "5%",
-                                                                "height": "6%",
-                                                                "width": "15%"
-            
-                                                            },
-                                                            "class": "content_style_odd"
-                                                          }
-                                                        ]
-                                                      }
-                                                    ]
                                                   }
-                                                }
-                                              }
+                                              
                                             ]
                                           }
                                         ]
