@@ -211,11 +211,15 @@
             },
             "actions": {
                 "$load": {
-                    "type": "$global.set",
-                    "options": {
-
+                    "type": "$render",
+                    "success": {
+                      "type": "$util.toast",
+                      "options": {
+                        "text": "Page loaded successfully",
+                        "type": "warning"
+                      }
                     }
-                },
+                  },
                 "$pull": {
                     "type": "$reload",
                     "success": {
@@ -226,12 +230,12 @@
                     "type": "$global.set",
                     "options": {
                         "section_id": "form10_page1",
-                        "sign": "{{$get.sign || ''}}",
-                        "date": "{{$get.date}}",
-                        "month": "{{$get.month}}",
-                        "year": "{{$get.year}}",
-                        "shift": "{{$get.shift}}",
-                        "operator": "{{$get.operator}}",
+                        "form10_sign": "{{$get.form10_sign || ''}}",
+                        "form10_day": "{{$get.form10_day}}",
+                        "form10_month": "{{$get.form10_month}}",
+                        "form10_year": "{{$get.form10_year}}",
+                        "form10_shift": "{{$get.form10_shift}}",
+                        "form10_operator": "{{$get.form10_operator}}",
                         "eye_wash_lower_floor_text1": "{{$get.eye_wash_lower_floor_text1|| ''}}",
                         "eye_wash_lower_floor_text2": "{{$get.eye_wash_lower_floor_text2|| ''}}",
                         "eye_wash_upper_floor_text1": "{{$get.eye_wash_upper_floor_text1|| ''}}",
@@ -292,12 +296,12 @@
                                     },
                                     "components": [{
                                         "type": "dropdown",
-                                        "name": "date",
-                                        "value": "{{$global.date}}",
-                                        "contentDescription": "date",
+                                        "name": "form10_day",
+                                        "value": "{{$global.form10_day}}",
+                                        "contentDescription": "day",
                                         "class": "dropdown_date_style center_align",
                                         "options": [{
-                                            "value": "Date",
+                                            "value": "Day",
                                             "defaultSelected": "true"
                                           },
                                           {
@@ -433,8 +437,8 @@
                                       },
                                       {
                                         "type": "dropdown",
-                                        "name": "month",
-                                        "value": "{{$global.month}}",
+                                        "name": "form10_month",
+                                        "value": "{{$global.form10_month}}",
                                         "contentDescription": "month",
                                         "class": "dropdown_date_style center_align",
                                         "options": [{
@@ -498,9 +502,9 @@
                                       },
                                       {
                                         "type": "dropdown",
-                                        "name": "year",
+                                        "name": "form10_year",
                                         "contentDescription": "year",
-                                        "value": "{{$global.year}}",
+                                        "value": "{{$global.form10_year}}",
                                         "class": "dropdown_date_style center_align",
                                         "options": [{
                                             "value": "Year",
@@ -537,8 +541,8 @@
                                       },
                                       {
                                         "type": "dropdown",
-                                        "name": "shift",
-                                        "value": "{{$global.shift}}",
+                                        "name": "form10_shift",
+                                        "value": "{{$global.form10_shift}}",
                                         "contentDescription": "shift",
                                         "class": "center_align black_color dropdown_shift_style",
                                         "options": [{
@@ -576,8 +580,8 @@
                                       },
                                       {
                                         "type": "dropdown",
-                                        "name": "operator",
-                                        "value": "{{$global.operator}}",
+                                        "name": "form10_operator",
+                                        "value": "{{$global.form10_operator}}",
                                         "contentDescription": "operator",
                                         "class": "center_align black_color dropdown_operator_style",
                                         "options": [{
@@ -619,8 +623,8 @@
                                       },
                                       {
                                         "type": "textfield",
-                                        "value": "{{$global.sign || ''}}",
-                                        "name": "sign",
+                                        "value": "{{$global.form10_sign || ''}}",
+                                        "name": "form10_sign",
                                         "placeholder": "Sign",
                                         "class": "sign_style center_align black_color",
                                         "contentDescription": "Sign"
