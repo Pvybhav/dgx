@@ -1213,27 +1213,30 @@
                                               "height": "{{#? this.height}}"
                                             },
                                             "components": [
-                                            
+                                                {
+                                                    "type": "horizontal",
+                                                    "class": "table_body_name_styles table_row_height",
+                                                    "style": {
+                                                      "height": "{{#? this.height}}"
+                                                    },
+                                                    "components": [
+                                                      {
+                                                        "type": "label",
+                                                        "text": "{{this.row_name}}",
+                                                        "class": "{{this.row_styles}} table_row_height",
+                                                        "style": {
+                                                          "height": "{{#? this.height}}"
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
                                               {
                                                 "type": "horizontal",
                                                 "components": {
                                                   "{{#each row_values}}": {
                                                     "type": "horizontal",
                                                     "components": [
-                                                      {
-                                                        "type": "vertical",
-                                                        "class": "table_body_label_width",
-                                                        "components": [
-                                                          {
-                                                            "type": "label",
-                                                            "text": "{{label}}",
-                                                            "class": "label_styles black_color center_align table_row_height",
-                                                            "style": {
-                                                              "height": "{{#? this.height}}"
-                                                            }
-                                                          }
-                                                        ]
-                                                      },
+                                                     
                                                       {
                                                         "type": "vertical",
                                                         "class": "table_row_height",
