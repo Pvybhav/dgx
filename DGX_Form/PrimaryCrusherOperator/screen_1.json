@@ -40,7 +40,6 @@
                     "height": "6%"
                 },
                 "column_label_style": {
-                    "width": "10%",
                     "height": "6%",
                     "size": "16"
                 },
@@ -1206,20 +1205,25 @@
                                           },
                                           {
                                             "type": "horizontal",
-                                            "class": "center_align {{this.row_styles}}",
+                                            "class": "center_align table_row_height {{this.row_styles}}",
                                             "style": {
+                                              "height": "6%"
                                             },
                                             "components": [
                                                 {
                                                     "type": "horizontal",
                                                     "class": "table_body_name_styles table_row_height",
-                                                    
+                                                    "style": {
+                                                      "height": "6%"
+                                                    },
                                                     "components": [
                                                       {
                                                         "type": "label",
                                                         "text": "{{this.row_name}}",
                                                         "class": "{{this.row_styles}} table_row_height",
                                                         "style": {
+                                                          "height": "6%",
+                                                          "width":"10%"
                                                         }
                                                       }
                                                     ]
@@ -1239,8 +1243,12 @@
                                                             "type": "{{type}}",
                                                             "name": "{{name}}",
                                                             "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                            "class": "{{styles}}"
-                                                           
+                                                            "class": "{{styles}}",
+                                                            "style": {
+                                                                "padding_bottom": "5%",
+                                                                "width": "15%"
+            
+                                                            }
                                                           }
                                                         ]
                                                       }
