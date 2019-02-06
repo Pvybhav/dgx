@@ -291,26 +291,26 @@
                         "row_values": [{
                                 "type": "textfield",
                                 "name": "primary_crusher_screen1_0700_text1",
-                                "text_styles": "content_style_odd"
+                                "styles": "content_style_odd"
 
                             },
                             {
                                 "type": "textfield",
                                 "name": "primary_crusher_screen1_0700_text1",
-                                "text_styles": "content_style_odd"
+                                "styles": "content_style_odd"
 
                             },
                             {
                                 "type": "textfield",
                                 "name": "primary_crusher_screen1_0700_text2",
-                                "text_styles": "content_style_odd"
+                                "styles": "content_style_odd"
 
                             },
 
                             {
                                 "type": "textfield",
                                 "name": "primary_crusher_screen1_0700_text3",
-                                "text_styles": "content_style_odd"
+                                "styles": "content_style_odd"
 
 
 
@@ -323,25 +323,25 @@
                         "row_values": [{
                                 "type": "textfield",
                                 "name": "primary_crusher_screen1_0700_text1",
-                                "text_styles": "content_style_even"
+                                "styles": "content_style_even"
 
                             },
                             {
                                 "type": "textfield",
                                 "name": "primary_crusher_screen1_0700_text1",
-                                "text_styles": "content_style_even"
+                                "styles": "content_style_even"
 
                             },
                             {
                                 "type": "textfield",
                                 "name": "primary_crusher_screen1_0700_text1",
-                                "text_styles": "content_style_even"
+                                "styles": "content_style_even"
 
                             },
                             {
                                 "type": "textfield",
                                 "name": "primary_crusher_screen1_0700_text1",
-                                "text_styles": "content_style_even"
+                                "styles": "content_style_even"
 
                             }
                         ]
@@ -352,22 +352,22 @@
                         "row_values": [{
                                 "type": "textfield",
                                 "name": "fine_carbon_carbon_dewatering_screen_0650_M221_001_holed",
-                                "text_styles": "content_style_odd"
+                                "styles": "content_style_odd"
                             },
                             {
                                 "type": "textfield",
                                 "name": "fine_carbon_carbon_dewatering_screen_0650_M221_001_blinded",
-                                "text_styles": "content_style_odd"
+                                "styles": "content_style_odd"
                             },
                             {
                                 "type": "textfield",
                                 "name": "fine_carbon_carbon_dewatering_screen_0650_M221_001_cleaned",
-                                "text_styles": "content_style_odd"
+                                "styles": "content_style_odd"
                             },
                             {
                                 "type": "textfield",
                                 "name": "fine_carbon_carbon_dewatering_screen_0650_M221_001_good",
-                                "text_styles": "content_style_odd"
+                                "styles": "content_style_odd"
                             }
                         ]
                     },
@@ -377,22 +377,22 @@
                         "row_values": [{
                                 "type": "textfield",
                                 "name": "fine_carbon_carbon_dewatering_screen_0650_M221_002_holed",
-                                "text_styles": "content_style_even"
+                                "styles": "content_style_even"
                             },
                             {
                                 "type": "textfield",
                                 "name": "fine_carbon_carbon_dewatering_screen_0650_M221_002_blinded",
-                                "text_styles": "content_style_even"
+                                "styles": "content_style_even"
                             },
                             {
                                 "type": "textfield",
                                 "name": "fine_carbon_carbon_dewatering_screen_0650_M221_002_cleaned",
-                                "text_styles": "content_style_even"
+                                "styles": "content_style_even"
                             },
                             {
                                 "type": "textfield",
                                 "name": "fine_carbon_carbon_dewatering_screen_0650_M221_002_good",
-                                "text_styles": "content_style_even"
+                                "styles": "content_style_even"
                             }
                         ]
                     }
@@ -1187,68 +1187,83 @@
 
                             ],
                             "class": "no_padding"
-                        },
-
+                        },     
+                        
                         {
                             "type": "vertical",
-                            "items": [{
+                            "items": [
+                              {
                                 "type": "vertical",
                                 "class": "no_padding",
-                                "components": [{
+                                "components": [
+                                  {
                                     "type": "vertical",
                                     "components": {
-                                        "{{#each Table2_Rows}}": {
-                                            "{{#let}}": [{
-                                                    "row_index": "{{$index}}"
-                                                },
+                                      "{{#each Table2_Rows}}": {
+                                        "{{#let}}": [
+                                          {
+                                            "row_index": "{{$index}}"
+                                          },
+                                          {
+                                            "type": "horizontal",
+                                            "class": "center_align {{this.row_styles}}",
+                                            "style": {
+                                              "height": "6%"
+                                            },
+                                            "components": [
                                                 {
                                                     "type": "horizontal",
-                                                    "class": "center_align {{this.row_styles}}",
+                                                    "class": "table_body_name_styles",
                                                     "style": {
                                                         "height": "6%"
                                                     },
-                                                    "components": [{
-                                                            "type": "horizontal",
-                                                            "class": "table_body_name_styles",
-                                                            "style": {
-                                                                "height": "6%"
-                                                            },
-                                                            "components": [{
-                                                                    "type": "label",
-                                                                    "text": "{{this.row_name}}",
-                                                                    "class": "{{this.row_styles}}",
-                                                                    "style": {
-                                                                        "height": "6%"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "{{#each row_values}}": {
-                                                                        "type": "vertical",
-                                                                        "components": [{
-                                                                            "type": "{{type}}",
-                                                                            "name": "{{name}}",
-                                                                            "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                                            "style": {
-                                                                                "padding_bottom": "5%",
-                                                                                "height": "6%",
-                                                                                "width": "15%"
-                                                                            },
-                                                                            "class": "{{text_styles}}"
-                                                                        }]
-
-                                                                    }
-                                                                }
-                                                            ]
+                                                    "components": [
+                                                      {
+                                                        "type": "label",
+                                                        "text": "{{this.row_name}}",
+                                                        "class": "{{this.row_styles}}",
+                                                        "style": {
+                                                            "height": "6%"
                                                         }
-
+                                                      },
+                                                      {
+                                                        "{{#each row_values}}": {
+                                                          "type": "horizontal",
+                                                          "components": [
+                                                           
+                                                            {
+                                                              "type": "vertical",
+                                                              "components": [
+                                                                {
+                                                                  "type": "{{type}}",
+                                                                  "name": "{{name}}",
+                                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                                  "style": {
+                                                                      "padding_bottom": "5%",
+                                                                      "height": "6%",
+                                                                      "width": "15%"
+                  
+                                                                  },
+                                                                  "class": "content_style_odd"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
                                                     ]
-                                                }
+                                                  }
+                                              
                                             ]
-                                        }
+                                          }
+                                        ]
+                                      }
                                     }
-                                }]
-                            }]
-                        },
+                                  }
+                                ]
+                              }
+                            ]
+                          },
                         {
                             "type": "horizontal",
                             "class": "no_padding",
