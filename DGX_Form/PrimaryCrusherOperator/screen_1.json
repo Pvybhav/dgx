@@ -367,8 +367,6 @@
                             {
                                 "type": "textfield",
                                 "name": "fine_carbon_carbon_dewatering_screen_0650_M221_001_good",
-                                "label": "16",
-                                "contentDescription": "sixteen",
                                 "styles": "content_style_odd"
                             }
                         ]
@@ -1245,8 +1243,7 @@
                                                             "type": "{{type}}",
                                                             "name": "{{name}}",
                                                             "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                            "class": "center_align black_color table_body_textfield_styles {{styles}}",
-                                                            "contentDescription": "{{contentDescription}}"
+                                                            "class": "{{styles}}"
                                                           }
                                                         ]
                                                       }
