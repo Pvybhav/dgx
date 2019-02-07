@@ -925,7 +925,7 @@
           "type": "$global.set",
           "options": {
             "section_id": "form1_page1",
-            "f1_s1_sign": "{{$get.sign}}",
+            "f1_s1_sign": "{{$get.sign || ''}}",
             "f1_s1_day": "{{$get.day}}",
             "f1_s1_month": "{{$get.month}}",
             "f1_s1_year": "{{$get.year}}",
@@ -945,7 +945,7 @@
           "header": {
             "title": {
               "type": "label",
-              "text": "{{Page_Heading}}"
+              "text": "Form-1"
             },
             "style": {
               "font": "HelveticaHeader",
