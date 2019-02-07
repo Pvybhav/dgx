@@ -15,26 +15,29 @@
           "color": "rgb(0,0,0)"
         },
         "table_header_name_styles": {
-          "width": "20%",
+          "width": "25%",
           "border": "rgb(255, 255, 255)"
         },
         "table_header_value_styles": {
-          "width": "16%",
+          "width": "25%",
           "border": "rgb(255, 255, 255)"
         },
         "table_row_height": {
-          "height": "6%"
+          "height": "7%"
         },
         "table_body_name_styles": {
-          "width": "20%"
+          "width": "25%"
+        },
+        "table_body_value_styles": {
+          "width": "25%"
         },
         "table_body_label_width": {
           "width": "3%"
         },
         "table_body_textfield_styles": {
-          "width": "13%",
+          "width": "22%",
           "height": "4%",
-          "size": "13"
+          "size": "14"
         },
         "label_styles": {
           "font": "HelveticaNeue-Bold",
@@ -79,21 +82,12 @@
         "preload_styles": {
           "background": "rgb(255, 0, 0)"
         },
-        "comments_title_styles": {
-          "width": "100%"
-        },
-        "comments_styles": {
-          "width": "100%",
-          "height": "5%",
-          "size": "15"
-        },
         "footer_buttons_spacing": {
           "spacing": "5%"
         }
       },
       "data": {
-        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/11_ElutionAreaChecklist/screen_1.json",
-        "Page_Heading": "Elution Area Checklist",
+        "Page_Heading": "Elution Area Checklist (4/5)",
         "loading_image_url": "file://infinit.gif",
         "Table_Headers": [
           {
@@ -109,15 +103,7 @@
             "styles": "table_header_styles table_header_value_styles"
           },
           {
-            "value": "Gland m3/hr",
-            "styles": "table_header_styles table_header_value_styles"
-          },
-          {
             "value": "Packing",
-            "styles": "table_header_styles table_header_value_styles"
-          },
-          {
-            "value": "Oil Level",
             "styles": "table_header_styles table_header_value_styles"
           }
         ],
@@ -140,21 +126,9 @@
               },
               {
                 "type": "textfield",
-                "name": "circuit_pumps_aw_pump_004_gland_m3hr",
+                "name": "circuit_pumps_aw_pump_004_packing",
                 "label": "3",
                 "contentDescription": "three"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_aw_pump_004_packing",
-                "label": "4",
-                "contentDescription": "four"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_aw_pump_004_oil_level",
-                "label": "5",
-                "contentDescription": "five"
               }
             ]
           },
@@ -165,32 +139,20 @@
               {
                 "type": "textfield",
                 "name": "circuit_pumps_quench_pump_001_running",
-                "label": "6",
-                "contentDescription": "six"
+                "label": "4",
+                "contentDescription": "four"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_quench_pump_001_valves",
-                "label": "7",
-                "contentDescription": "seven"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_quench_pump_001_gland_m3hr",
-                "label": "8",
-                "contentDescription": "eight"
+                "label": "5",
+                "contentDescription": "five"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_quench_pump_001_packing",
-                "label": "9",
-                "contentDescription": "nine"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_quench_pump_001_oil_level",
-                "label": "10",
-                "contentDescription": "ten"
+                "label": "6",
+                "contentDescription": "six"
               }
             ]
           },
@@ -201,32 +163,20 @@
               {
                 "type": "textfield",
                 "name": "circuit_pumps_quench_pump_002_running",
-                "label": "11",
-                "contentDescription": "eleven"
+                "label": "7",
+                "contentDescription": "seven"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_quench_pump_002_valves",
-                "label": "12",
-                "contentDescription": "twelve"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_quench_pump_002_gland_m3hr",
-                "label": "13",
-                "contentDescription": "thirteen"
+                "label": "8",
+                "contentDescription": "eight"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_quench_pump_002_packing",
-                "label": "14",
+                "label": "9",
                 "contentDescription": "fourteen"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_quench_pump_002_oil_level",
-                "label": "15",
-                "contentDescription": "fifteen"
               }
             ]
           },
@@ -237,32 +187,20 @@
               {
                 "type": "textfield",
                 "name": "circuit_pumps_carbon_water_transfer_004_running",
-                "label": "16",
-                "contentDescription": "sixteen"
+                "label": "10",
+                "contentDescription": "nine"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_carbon_water_transfer_004_valves",
-                "label": "17",
-                "contentDescription": "seventeen"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_carbon_water_transfer_004_gland_m3hr",
-                "label": "18",
-                "contentDescription": "eighteen"
+                "label": "11",
+                "contentDescription": "ten"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_carbon_water_transfer_004_packing",
-                "label": "19",
-                "contentDescription": "nineteen"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_carbon_water_transfer_004_oil_level",
-                "label": "20",
-                "contentDescription": "twenty"
+                "label": "12",
+                "contentDescription": "eleven"
               }
             ]
           },
@@ -273,32 +211,20 @@
               {
                 "type": "textfield",
                 "name": "circuit_pumps_carbon_water_transfer_005_running",
-                "label": "21",
-                "contentDescription": "twenty-one"
+                "label": "13",
+                "contentDescription": "twelve"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_carbon_water_transfer_005_valves",
-                "label": "22",
-                "contentDescription": "twenty-two"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_carbon_water_transfer_005_gland_m3hr",
-                "label": "23",
-                "contentDescription": "twenty-three"
+                "label": "14",
+                "contentDescription": "thirteen"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_carbon_water_transfer_005_packing",
-                "label": "24",
-                "contentDescription": "twenty-four"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_carbon_water_transfer_005_oil_level",
-                "label": "25",
-                "contentDescription": "twenty-five"
+                "label": "15",
+                "contentDescription": "fourteen"
               }
             ]
           },
@@ -309,32 +235,20 @@
               {
                 "type": "textfield",
                 "name": "circuit_pumps_barren_007_running",
-                "label": "26",
-                "contentDescription": "twenty-six"
+                "label": "16",
+                "contentDescription": "fifteen"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_barren_007_valves",
-                "label": "27",
-                "contentDescription": "twenty-seven"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_barren_007_gland_m3hr",
-                "label": "28",
-                "contentDescription": "twenty-eight"
+                "label": "17",
+                "contentDescription": "sixteen"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_barren_007_packing",
-                "label": "29",
-                "contentDescription": "twenty-nine"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_barren_007_oil_level",
-                "label": "30",
-                "contentDescription": "thirty"
+                "label": "18",
+                "contentDescription": "seventeen"
               }
             ]
           },
@@ -345,32 +259,20 @@
               {
                 "type": "textfield",
                 "name": "circuit_pumps_barren_008_running",
-                "label": "31",
-                "contentDescription": "thirty-one"
+                "label": "19",
+                "contentDescription": "nineteen"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_barren_008_valves",
-                "label": "32",
-                "contentDescription": "thirty-two"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_barren_008_gland_m3hr",
-                "label": "33",
-                "contentDescription": "thirty-three"
+                "label": "20",
+                "contentDescription": "twenty"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_barren_008_packing",
-                "label": "34",
-                "contentDescription": "thirty-four"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_barren_008_oil_level",
-                "label": "35",
-                "contentDescription": "thirty-five"
+                "label": "21",
+                "contentDescription": "twenty-one"
               }
             ]
           },
@@ -381,32 +283,20 @@
               {
                 "type": "textfield",
                 "name": "circuit_pumps_loaded_carbon_101_running",
-                "label": "36",
-                "contentDescription": "thirty-six"
+                "label": "22",
+                "contentDescription": "twenty-two"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_loaded_carbon_101_valves",
-                "label": "37",
-                "contentDescription": "thirty-seven"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_loaded_carbon_101_gland_m3hr",
-                "label": "38",
-                "contentDescription": "thirty-eight"
+                "label": "23",
+                "contentDescription": "twenty-three"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_loaded_carbon_101_packing",
-                "label": "39",
-                "contentDescription": "thirty-nine"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_loaded_carbon_101_oil_level",
-                "label": "40",
-                "contentDescription": "forty"
+                "label": "24",
+                "contentDescription": "twenty-four"
               }
             ]
           },
@@ -417,32 +307,20 @@
               {
                 "type": "textfield",
                 "name": "circuit_pumps_loaded_carbon_201_running",
-                "label": "41",
-                "contentDescription": "forty-one"
+                "label": "25",
+                "contentDescription": "twenty-five"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_loaded_carbon_201_valves",
-                "label": "42",
-                "contentDescription": "forty-two"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_loaded_carbon_201_gland_m3hr",
-                "label": "43",
-                "contentDescription": "forty-three"
+                "label": "26",
+                "contentDescription": "twenty-six"
               },
               {
                 "type": "textfield",
                 "name": "circuit_pumps_loaded_carbon_201_packing",
-                "label": "44",
-                "contentDescription": "forty-four"
-              },
-              {
-                "type": "textfield",
-                "name": "circuit_pumps_loaded_carbon_201_oil_level",
-                "label": "45",
-                "contentDescription": "forty-five"
+                "label": "27",
+                "contentDescription": "twenty-seven"
               }
             ]
           }
@@ -461,14 +339,15 @@
             "trigger": "handleNavigation"
           },
           {
+            "displayName": "Next",
+            "contentDescription": "next",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/development/11_ElutionAreaChecklist/screen_5.json",
+            "trigger": "handleNavigation"
+          },
+          {
             "displayName": "Save",
             "contentDescription": "save",
             "trigger": "handleSave"
-          },
-          {
-            "displayName": "Submit",
-            "contentDescription": "submit",
-            "trigger": "handleSubmit"
           }
         ]
       },
@@ -524,214 +403,36 @@
             "section_id": "form11_page4",
             "circuit_pumps_aw_pump_004_running": "{{ $get.circuit_pumps_aw_pump_004_running || '' }}",
             "circuit_pumps_aw_pump_004_valves": "{{ $get.circuit_pumps_aw_pump_004_valves || '' }}",
-            "circuit_pumps_aw_pump_004_gland_m3hr": "{{ $get.circuit_pumps_aw_pump_004_gland_m3hr || '' }}",
             "circuit_pumps_aw_pump_004_packing": "{{ $get.circuit_pumps_aw_pump_004_packing || '' }}",
-            "circuit_pumps_aw_pump_004_oil_level": "{{ $get.circuit_pumps_aw_pump_004_oil_level || '' }}",
             "circuit_pumps_quench_pump_001_running": "{{ $get.circuit_pumps_quench_pump_001_running || '' }}",
             "circuit_pumps_quench_pump_001_valves": "{{ $get.circuit_pumps_quench_pump_001_valves || '' }}",
-            "circuit_pumps_quench_pump_001_gland_m3hr": "{{ $get.circuit_pumps_quench_pump_001_gland_m3hr || '' }}",
             "circuit_pumps_quench_pump_001_packing": "{{ $get.circuit_pumps_quench_pump_001_packing || '' }}",
-            "circuit_pumps_quench_pump_001_oil_level": "{{ $get.circuit_pumps_quench_pump_001_oil_level || '' }}",
             "circuit_pumps_quench_pump_002_running": "{{ $get.circuit_pumps_quench_pump_002_running || '' }}",
             "circuit_pumps_quench_pump_002_valves": "{{ $get.circuit_pumps_quench_pump_002_valves || '' }}",
-            "circuit_pumps_quench_pump_002_gland_m3hr": "{{ $get.circuit_pumps_quench_pump_002_gland_m3hr || '' }}",
             "circuit_pumps_quench_pump_002_packing": "{{ $get.circuit_pumps_quench_pump_002_packing || '' }}",
-            "circuit_pumps_quench_pump_002_oil_level": "{{ $get.circuit_pumps_quench_pump_002_oil_level || '' }}",
             "circuit_pumps_carbon_water_transfer_004_running": "{{ $get.circuit_pumps_carbon_water_transfer_004_running || '' }}",
             "circuit_pumps_carbon_water_transfer_004_valves": "{{ $get.circuit_pumps_carbon_water_transfer_004_valves || '' }}",
-            "circuit_pumps_carbon_water_transfer_004_gland_m3hr": "{{ $get.circuit_pumps_carbon_water_transfer_004_gland_m3hr || '' }}",
             "circuit_pumps_carbon_water_transfer_004_packing": "{{ $get.circuit_pumps_carbon_water_transfer_004_packing || '' }}",
-            "circuit_pumps_carbon_water_transfer_004_oil_level": "{{ $get.circuit_pumps_carbon_water_transfer_004_oil_level || '' }}",
             "circuit_pumps_carbon_water_transfer_005_running": "{{ $get.circuit_pumps_carbon_water_transfer_005_running || '' }}",
             "circuit_pumps_carbon_water_transfer_005_valves": "{{ $get.circuit_pumps_carbon_water_transfer_005_valves || '' }}",
-            "circuit_pumps_carbon_water_transfer_005_gland_m3hr": "{{ $get.circuit_pumps_carbon_water_transfer_005_gland_m3hr || '' }}",
             "circuit_pumps_carbon_water_transfer_005_packing": "{{ $get.circuit_pumps_carbon_water_transfer_005_packing || '' }}",
-            "circuit_pumps_carbon_water_transfer_005_oil_level": "{{ $get.circuit_pumps_carbon_water_transfer_005_oil_level || '' }}",
             "circuit_pumps_barren_007_running": "{{ $get.circuit_pumps_barren_007_running || '' }}",
             "circuit_pumps_barren_007_valves": "{{ $get.circuit_pumps_barren_007_valves || '' }}",
-            "circuit_pumps_barren_007_gland_m3hr": "{{ $get.circuit_pumps_barren_007_gland_m3hr || '' }}",
             "circuit_pumps_barren_007_packing": "{{ $get.circuit_pumps_barren_007_packing || '' }}",
-            "circuit_pumps_barren_007_oil_level": "{{ $get.circuit_pumps_barren_007_oil_level || '' }}",
             "circuit_pumps_barren_008_running": "{{ $get.circuit_pumps_barren_008_running || '' }}",
             "circuit_pumps_barren_008_valves": "{{ $get.circuit_pumps_barren_008_valves || '' }}",
-            "circuit_pumps_barren_008_gland_m3hr": "{{ $get.circuit_pumps_barren_008_gland_m3hr || '' }}",
             "circuit_pumps_barren_008_packing": "{{ $get.circuit_pumps_barren_008_packing || '' }}",
-            "circuit_pumps_barren_008_oil_level": "{{ $get.circuit_pumps_barren_008_oil_level || '' }}",
             "circuit_pumps_loaded_carbon_101_running": "{{ $get.circuit_pumps_loaded_carbon_101_running || '' }}",
             "circuit_pumps_loaded_carbon_101_valves": "{{ $get.circuit_pumps_loaded_carbon_101_valves || '' }}",
-            "circuit_pumps_loaded_carbon_101_gland_m3hr": "{{ $get.circuit_pumps_loaded_carbon_101_gland_m3hr || '' }}",
             "circuit_pumps_loaded_carbon_101_packing": "{{ $get.circuit_pumps_loaded_carbon_101_packing || '' }}",
-            "circuit_pumps_loaded_carbon_101_oil_level": "{{ $get.circuit_pumps_loaded_carbon_101_oil_level || '' }}",
             "circuit_pumps_loaded_carbon_201_running": "{{ $get.circuit_pumps_loaded_carbon_201_running || '' }}",
             "circuit_pumps_loaded_carbon_201_valves": "{{ $get.circuit_pumps_loaded_carbon_201_valves || '' }}",
-            "circuit_pumps_loaded_carbon_201_gland_m3hr": "{{ $get.circuit_pumps_loaded_carbon_201_gland_m3hr || '' }}",
-            "circuit_pumps_loaded_carbon_201_packing": "{{ $get.circuit_pumps_loaded_carbon_201_packing || '' }}",
-            "circuit_pumps_loaded_carbon_201_oil_level": "{{ $get.circuit_pumps_loaded_carbon_201_oil_level || '' }}",
-            "f11_s4_notifications": "{{ $get.notifications || '' }}",
-            "f11_s4_comments": "{{ $get.comments || '' }}"
+            "circuit_pumps_loaded_carbon_201_packing": "{{ $get.circuit_pumps_loaded_carbon_201_packing || '' }}"
           },
           "success": {
             "trigger": "displayToaster",
             "options": {
               "message": "Saved Successfully"
-            }
-          }
-        },
-        "handleSubmit": {
-          "type": "$global.reset",
-          "options": {
-            "save": "true",
-            "filename": "ElutionAreaChecklist"
-          },
-          "success": {
-            "type": "$global.reset",
-            "options": {
-              "items": [
-                "section_id",
-                "f11_s1_sign",
-                "f11_s1_day",
-                "f11_s1_month",
-                "f11_s1_year",
-                "f11_s1_shift",
-                "f11_s1_operator",
-                "f11_s4_notifications",
-                "f11_s4_comments",
-                "fine_carbon_has_the_fine_carbon_tank_been_drained_yes",
-                "fine_carbon_has_the_fine_carbon_tank_been_drained_no",
-                "fine_carbon_has_the_fine_carbon_tank_been_drained_clean",
-                "fine_carbon_has_the_fine_carbon_tank_been_drained_good",
-                "fine_carbon_derrick_screen_0645_M221_021_holed",
-                "fine_carbon_derrick_screen_0645_M221_021_blinded",
-                "fine_carbon_derrick_screen_0645_M221_021_clean",
-                "fine_carbon_derrick_screen_0645_M221_021_good",
-                "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_holed",
-                "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_blinded",
-                "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_cleaned",
-                "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_good",
-                "fine_carbon_carbon_dewatering_screen_0650_M221_001_holed",
-                "fine_carbon_carbon_dewatering_screen_0650_M221_001_blinded",
-                "fine_carbon_carbon_dewatering_screen_0650_M221_001_cleaned",
-                "fine_carbon_carbon_dewatering_screen_0650_M221_001_good",
-                "fine_carbon_carbon_dewatering_screen_0650_M221_002_holed",
-                "fine_carbon_carbon_dewatering_screen_0650_M221_002_blinded",
-                "fine_carbon_carbon_dewatering_screen_0650_M221_002_cleaned",
-                "fine_carbon_carbon_dewatering_screen_0650_M221_002_good",
-                "heaters_immersed_heater_0645_M400_001_plugged",
-                "heaters_immersed_heater_0645_M400_001_leaks",
-                "heaters_immersed_heater_0645_M400_001_good",
-                "heaters_immersed_heater_0645_M400_002_plugged",
-                "heaters_immersed_heater_0645_M400_002_leaks",
-                "heaters_immersed_heater_0645_M400_002_good",
-                "heaters_immersed_heater_0645_M400_003_plugged",
-                "heaters_immersed_heater_0645_M400_003_leaks",
-                "heaters_immersed_heater_0645_M400_003_good",
-                "heaters_immersed_heater_0645_M400_004_plugged",
-                "heaters_immersed_heater_0645_M400_004_leaks",
-                "heaters_immersed_heater_0645_M400_004_good",
-                "plate_hx_loaded_trim_exchanger_0645_M405_001_plugged",
-                "plate_hx_loaded_trim_exchanger_0645_M405_001_leaks",
-                "plate_hx_loaded_trim_exchanger_0645_M405_001_good",
-                "plate_hx_cooling_exchanger_0645_M405_003_plugged",
-                "plate_hx_cooling_exchanger_0645_M405_003_leaks",
-                "plate_hx_cooling_exchanger_0645_M405_003_good",
-                "strip_solution_strip_solution_strainer_001_plugged",
-                "strip_solution_strip_solution_strainer_001_leaks",
-                "strip_solution_strip_solution_strainer_001_cleaned",
-                "strip_solution_strip_solution_strainer_002_plugged",
-                "strip_solution_strip_solution_strainer_002_leaks",
-                "strip_solution_strip_solution_strainer_002_cleaned",
-                "fresh_water_pumps_pump001_running",
-                "fresh_water_pumps_pump001_valves",
-                "fresh_water_pumps_pump001_gland_m3hr",
-                "fresh_water_pumps_pump001_packing",
-                "fresh_water_pumps_pump001_oil_level",
-                "fresh_water_pumps_pump002_running",
-                "fresh_water_pumps_pump002_valves",
-                "fresh_water_pumps_pump002_gland_m3hr",
-                "fresh_water_pumps_pump002_packing",
-                "fresh_water_pumps_pump002_oil_level",
-                "gland_water_pump001_running",
-                "gland_water_pump001_valves",
-                "gland_water_pump001_gland_m3hr",
-                "gland_water_pump001_packing",
-                "gland_water_pump001_oil_level",
-                "gland_water_pump002_running",
-                "gland_water_pump002_valves",
-                "gland_water_pump002_gland_m3hr",
-                "gland_water_pump002_packing",
-                "gland_water_pump002_oil_level",
-                "gland_water_pump003_running",
-                "gland_water_pump003_valves",
-                "gland_water_pump003_gland_m3hr",
-                "gland_water_pump003_packing",
-                "gland_water_pump003_oil_level",
-                "gland_water_pump004_running",
-                "gland_water_pump004_valves",
-                "gland_water_pump004_gland_m3hr",
-                "gland_water_pump004_packing",
-                "gland_water_pump004_oil_level",
-                "gland_water_pump005_running",
-                "gland_water_pump005_valves",
-                "gland_water_pump005_gland_m3hr",
-                "gland_water_pump005_packing",
-                "gland_water_pump005_oil_level",
-                "gland_water_pump006_running",
-                "gland_water_pump006_valves",
-                "gland_water_pump006_gland_m3hr",
-                "gland_water_pump006_packing",
-                "gland_water_pump006_oil_level",
-                "circuit_pumps_aw_pump_004_running",
-                "circuit_pumps_aw_pump_004_valves",
-                "circuit_pumps_aw_pump_004_gland_m3hr",
-                "circuit_pumps_aw_pump_004_packing",
-                "circuit_pumps_aw_pump_004_oil_level",
-                "circuit_pumps_quench_pump_001_running",
-                "circuit_pumps_quench_pump_001_valves",
-                "circuit_pumps_quench_pump_001_gland_m3hr",
-                "circuit_pumps_quench_pump_001_packing",
-                "circuit_pumps_quench_pump_001_oil_level",
-                "circuit_pumps_quench_pump_002_running",
-                "circuit_pumps_quench_pump_002_valves",
-                "circuit_pumps_quench_pump_002_gland_m3hr",
-                "circuit_pumps_quench_pump_002_packing",
-                "circuit_pumps_quench_pump_002_oil_level",
-                "circuit_pumps_carbon_water_transfer_004_running",
-                "circuit_pumps_carbon_water_transfer_004_valves",
-                "circuit_pumps_carbon_water_transfer_004_gland_m3hr",
-                "circuit_pumps_carbon_water_transfer_004_packing",
-                "circuit_pumps_carbon_water_transfer_004_oil_level",
-                "circuit_pumps_carbon_water_transfer_005_running",
-                "circuit_pumps_carbon_water_transfer_005_valves",
-                "circuit_pumps_carbon_water_transfer_005_gland_m3hr",
-                "circuit_pumps_carbon_water_transfer_005_packing",
-                "circuit_pumps_carbon_water_transfer_005_oil_level",
-                "circuit_pumps_barren_007_running",
-                "circuit_pumps_barren_007_valves",
-                "circuit_pumps_barren_007_gland_m3hr",
-                "circuit_pumps_barren_007_packing",
-                "circuit_pumps_barren_007_oil_level",
-                "circuit_pumps_barren_008_running",
-                "circuit_pumps_barren_008_valves",
-                "circuit_pumps_barren_008_gland_m3hr",
-                "circuit_pumps_barren_008_packing",
-                "circuit_pumps_barren_008_oil_level",
-                "circuit_pumps_loaded_carbon_101_running",
-                "circuit_pumps_loaded_carbon_101_valves",
-                "circuit_pumps_loaded_carbon_101_gland_m3hr",
-                "circuit_pumps_loaded_carbon_101_packing",
-                "circuit_pumps_loaded_carbon_101_oil_level",
-                "circuit_pumps_loaded_carbon_201_running",
-                "circuit_pumps_loaded_carbon_201_valves",
-                "circuit_pumps_loaded_carbon_201_gland_m3hr",
-                "circuit_pumps_loaded_carbon_201_packing",
-                "circuit_pumps_loaded_carbon_201_oil_level"
-              ]
-            },
-            "success": {
-              "type": "$href",
-              "options": {
-                "url": "{{redirect_url}}"
-              }
             }
           }
         }
@@ -817,6 +518,7 @@
                                   "components": {
                                     "{{#each row_values}}": {
                                       "type": "horizontal",
+                                      "class": "table_body_value_styles",
                                       "components": [
                                         {
                                           "type": "vertical",
@@ -862,76 +564,6 @@
                       }
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "Notifications.",
-                      "class": "table_header_styles comments_title_styles"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "textarea",
-                      "name": "notifications",
-                      "class": "comments_styles",
-                      "value": "{{$global.f11_s4_notifications || ''}}",
-                      "placeholder": "Enter Notifications",
-                      "contentDescription": "notifications"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "Comments.",
-                      "class": "table_header_styles comments_title_styles"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "horizontal",
-                  "components": [
-                    {
-                      "type": "textarea",
-                      "name": "comments",
-                      "class": "comments_styles",
-                      "value": "{{$global.f11_s4_comments || ''}}",
-                      "placeholder": "Enter Comments",
-                      "contentDescription": "comments"
-                    }
-                  ],
-                  "class": "no_padding"
                 }
               ]
             },

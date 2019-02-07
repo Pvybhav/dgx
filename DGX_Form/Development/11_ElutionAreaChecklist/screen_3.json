@@ -25,6 +25,20 @@
         "table_body_name_styles": {
           "width": "20%"
         },
+        "table2_header_name_styles": {
+          "width": "25%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table2_header_value_styles": {
+          "width": "25%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table2_body_name_styles": {
+          "width": "25%"
+        },
+        "table2_body_value_styles": {
+          "width": "25%"
+        },
         "label_styles": {
           "font": "HelveticaNeue-Bold",
           "width": "3%"
@@ -56,13 +70,18 @@
           "background": "rgb(204,206,213)"
         },
         "table_row_height": {
-          "height": "6%"
+          "height": "7%"
         },
         "table_body_label_width": {
           "width": "3%"
         },
         "table_body_textfield_styles": {
           "width": "13%",
+          "height": "4%",
+          "size": "14"
+        },
+        "table2_body_textfield_styles": {
+          "width": "22%",
           "height": "4%",
           "size": "13"
         },
@@ -84,7 +103,7 @@
         }
       },
       "data": {
-        "Page_Heading": "Elution Area Checklist",
+        "Page_Heading": "Elution Area Checklist (3/5)",
         "loading_image_url": "file://infinit.gif",
         "Table1_Headers": [
           {
@@ -115,27 +134,19 @@
         "Table2_Headers": [
           {
             "value": "Gland Water",
-            "styles": "table_header_styles center_align table_header_name_styles"
+            "styles": "table_header_styles center_align table2_header_name_styles"
           },
           {
             "value": "Running",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles center_align table2_header_value_styles"
           },
           {
             "value": "Valves",
-            "styles": "table_header_styles center_align table_header_value_styles"
-          },
-          {
-            "value": "Gland m3/hr",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles center_align table2_header_value_styles"
           },
           {
             "value": "Packing",
-            "styles": "table_header_styles center_align table_header_value_styles"
-          },
-          {
-            "value": "Oil Level",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles center_align table2_header_value_styles"
           }
         ],
         "Table1_Rows": [
@@ -215,7 +226,7 @@
         "Table2_Rows": [
           {
             "row_name": "Pump 001",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table2_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -231,201 +242,129 @@
               },
               {
                 "type": "textfield",
-                "name": "gland_water_pump001_gland_m3hr",
+                "name": "gland_water_pump001_packing",
                 "label": "13",
                 "contentDescription": "thirteen"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump001_packing",
-                "label": "14",
-                "contentDescription": "fourteen"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump001_oil_level",
-                "label": "15",
-                "contentDescription": "fifteen"
               }
             ]
           },
           {
             "row_name": "Pump 002",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table2_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
                 "name": "gland_water_pump002_running",
-                "label": "16",
-                "contentDescription": "sixteen"
+                "label": "14",
+                "contentDescription": "fourteen"
               },
               {
                 "type": "textfield",
                 "name": "gland_water_pump002_valves",
-                "label": "17",
-                "contentDescription": "seventeen"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump002_gland_m3hr",
-                "label": "18",
-                "contentDescription": "eighteen"
+                "label": "15",
+                "contentDescription": "fifteen"
               },
               {
                 "type": "textfield",
                 "name": "gland_water_pump002_packing",
-                "label": "19",
-                "contentDescription": "nineteen"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump002_oil_level",
-                "label": "20",
-                "contentDescription": "twenty"
+                "label": "16",
+                "contentDescription": "sixteen"
               }
             ]
           },
           {
             "row_name": "Pump 003",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table2_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
                 "name": "gland_water_pump003_running",
+                "label": "17",
+                "contentDescription": "seventeen"
+              },
+              {
+                "type": "textfield",
+                "name": "gland_water_pump003_valves",
+                "label": "18",
+                "contentDescription": "eighteen"
+              },
+              {
+                "type": "textfield",
+                "name": "gland_water_pump003_packing",
+                "label": "19",
+                "contentDescription": "nineteen"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 004",
+            "row_styles": "center_align black_color table2_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "gland_water_pump004_running",
+                "label": "20",
+                "contentDescription": "twenty"
+              },
+              {
+                "type": "textfield",
+                "name": "gland_water_pump004_valves",
                 "label": "21",
                 "contentDescription": "twenty-one"
               },
               {
                 "type": "textfield",
-                "name": "gland_water_pump003_valves",
+                "name": "gland_water_pump004_packing",
                 "label": "22",
                 "contentDescription": "twenty-two"
-              },
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 005",
+            "row_styles": "center_align black_color table2_body_name_styles table_fields_size",
+            "row_values": [
               {
                 "type": "textfield",
-                "name": "gland_water_pump003_gland_m3hr",
+                "name": "gland_water_pump005_running",
                 "label": "23",
                 "contentDescription": "twenty-three"
               },
               {
                 "type": "textfield",
-                "name": "gland_water_pump003_packing",
+                "name": "gland_water_pump005_valves",
                 "label": "24",
                 "contentDescription": "twenty-four"
               },
               {
                 "type": "textfield",
-                "name": "gland_water_pump003_oil_level",
+                "name": "gland_water_pump005_packing",
                 "label": "25",
                 "contentDescription": "twenty-five"
               }
             ]
           },
           {
-            "row_name": "Pump 004",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_name": "Pump 006",
+            "row_styles": "center_align black_color table2_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
-                "name": "gland_water_pump004_running",
+                "name": "gland_water_pump006_running",
                 "label": "26",
                 "contentDescription": "twenty-six"
               },
               {
                 "type": "textfield",
-                "name": "gland_water_pump004_valves",
+                "name": "gland_water_pump006_valves",
                 "label": "27",
                 "contentDescription": "twenty-seven"
               },
               {
                 "type": "textfield",
-                "name": "gland_water_pump004_gland_m3hr",
+                "name": "gland_water_pump006_packing",
                 "label": "28",
                 "contentDescription": "twenty-eight"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump004_packing",
-                "label": "29",
-                "contentDescription": "twenty-nine"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump004_oil_level",
-                "label": "30",
-                "contentDescription": "thirty"
-              }
-            ]
-          },
-          {
-            "row_name": "Pump 005",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
-            "row_values": [
-              {
-                "type": "textfield",
-                "name": "gland_water_pump005_running",
-                "label": "31",
-                "contentDescription": "thirty-one"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump005_valves",
-                "label": "32",
-                "contentDescription": "thirty-two"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump005_gland_m3hr",
-                "label": "33",
-                "contentDescription": "thirty-three"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump005_packing",
-                "label": "34",
-                "contentDescription": "thirty-four"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump005_oil_level",
-                "label": "35",
-                "contentDescription": "thirty-five"
-              }
-            ]
-          },
-          {
-            "row_name": "Pump 006",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
-            "row_values": [
-              {
-                "type": "textfield",
-                "name": "gland_water_pump006_running",
-                "label": "36",
-                "contentDescription": "thirty-six"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump006_valves",
-                "label": "37",
-                "contentDescription": "thirty-seven"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump006_gland_m3hr",
-                "label": "38",
-                "contentDescription": "thirty-eight"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump006_packing",
-                "label": "39",
-                "contentDescription": "thirty-nine"
-              },
-              {
-                "type": "textfield",
-                "name": "gland_water_pump006_oil_level",
-                "label": "40",
-                "contentDescription": "forty"
               }
             ]
           }
@@ -518,34 +457,22 @@
             "fresh_water_pumps_pump002_oil_level": "{{ $get.fresh_water_pumps_pump002_oil_level || '' }}",
             "gland_water_pump001_running": "{{ $get.gland_water_pump001_running || '' }}",
             "gland_water_pump001_valves": "{{ $get.gland_water_pump001_valves || '' }}",
-            "gland_water_pump001_gland_m3hr": "{{ $get.gland_water_pump001_gland_m3hr || '' }}",
             "gland_water_pump001_packing": "{{ $get.gland_water_pump001_packing || '' }}",
-            "gland_water_pump001_oil_level": "{{ $get.gland_water_pump001_oil_level || '' }}",
             "gland_water_pump002_running": "{{ $get.gland_water_pump002_running || '' }}",
             "gland_water_pump002_valves": "{{ $get.gland_water_pump002_valves || '' }}",
-            "gland_water_pump002_gland_m3hr": "{{ $get.gland_water_pump002_gland_m3hr || '' }}",
             "gland_water_pump002_packing": "{{ $get.gland_water_pump002_packing || '' }}",
-            "gland_water_pump002_oil_level": "{{ $get.gland_water_pump002_oil_level || '' }}",
             "gland_water_pump003_running": "{{ $get.gland_water_pump003_running || '' }}",
             "gland_water_pump003_valves": "{{ $get.gland_water_pump003_valves || '' }}",
-            "gland_water_pump003_gland_m3hr": "{{ $get.gland_water_pump003_gland_m3hr || '' }}",
             "gland_water_pump003_packing": "{{ $get.gland_water_pump003_packing || '' }}",
-            "gland_water_pump003_oil_level": "{{ $get.gland_water_pump003_oil_level || '' }}",
             "gland_water_pump004_running": "{{ $get.gland_water_pump004_running || '' }}",
             "gland_water_pump004_valves": "{{ $get.gland_water_pump004_valves || '' }}",
-            "gland_water_pump004_gland_m3hr": "{{ $get.gland_water_pump004_gland_m3hr || '' }}",
             "gland_water_pump004_packing": "{{ $get.gland_water_pump004_packing || '' }}",
-            "gland_water_pump004_oil_level": "{{ $get.gland_water_pump004_oil_level || '' }}",
             "gland_water_pump005_running": "{{ $get.gland_water_pump005_running || '' }}",
             "gland_water_pump005_valves": "{{ $get.gland_water_pump005_valves || '' }}",
-            "gland_water_pump005_gland_m3hr": "{{ $get.gland_water_pump005_gland_m3hr || '' }}",
             "gland_water_pump005_packing": "{{ $get.gland_water_pump005_packing || '' }}",
-            "gland_water_pump005_oil_level": "{{ $get.gland_water_pump005_oil_level || '' }}",
             "gland_water_pump006_running": "{{ $get.gland_water_pump006_running || '' }}",
             "gland_water_pump006_valves": "{{ $get.gland_water_pump006_valves || '' }}",
-            "gland_water_pump006_gland_m3hr": "{{ $get.gland_water_pump006_gland_m3hr || '' }}",
-            "gland_water_pump006_packing": "{{ $get.gland_water_pump006_packing || '' }}",
-            "gland_water_pump006_oil_level": "{{ $get.gland_water_pump006_oil_level || '' }}"
+            "gland_water_pump006_packing": "{{ $get.gland_water_pump006_packing || '' }}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -726,7 +653,7 @@
                               "components": [
                                 {
                                   "type": "horizontal",
-                                  "class": "table_body_name_styles table_row_height",
+                                  "class": "table2_body_name_styles table_row_height",
                                   "style": {
                                     "height": "{{#? this.height}}"
                                   },
@@ -746,6 +673,7 @@
                                   "components": {
                                     "{{#each row_values}}": {
                                       "type": "horizontal",
+                                      "class": "table2_body_value_styles",
                                       "components": [
                                         {
                                           "type": "vertical",
@@ -772,7 +700,7 @@
                                               "type": "{{type}}",
                                               "name": "{{name}}",
                                               "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                              "class": "center_align black_color table_body_textfield_styles",
+                                              "class": "center_align black_color table2_body_textfield_styles",
                                               "contentDescription": "{{contentDescription}}"
                                             }
                                           ]
