@@ -1867,20 +1867,21 @@
             },
             "actions": {
                 "$load": {
-                    "type": "$global.set",
+                    "type": "$script.include",
+                    "options": {
+                        "items": [{
+                            "text": "var getCurrentFieldValue = function(root, id, globalValues) {  for (var key in globalValues) { if(globalValues.hasOwnProperty(id)) return globalValues[id]; };}"
+                        }]
+                    },
+                   
+                    "success": {
+                        "type": "$global.set",
                     "options": {
                         "section_id": "form12_page1",
                         "authorized_by_supervisor_switch1": "{{$global.authorized_by_supervisor_switch1 == null ? true : $global.authorized_by_supervisor_switch1}}",
                         "authorized_by_supervisor_switch2": "{{$global.authorized_by_supervisor_switch2 == null ? true : $global.authorized_by_supervisor_switch2}}",
                         "authorized_by_supervisor_switch3": "{{$global.authorized_by_supervisor_switch3 == null ? true : $global.authorized_by_supervisor_switch3}}"
                     },
-                    "success": {
-                        "type": "$script.include",
-                        "options": {
-                            "items": [{
-                                "text": "var getCurrentFieldValue = function(root, id, globalValues) {  for (var key in globalValues) { if(globalValues.hasOwnProperty(id)) return globalValues[id]; };}"
-                            }]
-                        },
                         "success": {
                             "type": "$util.toast",
                             "options": {
