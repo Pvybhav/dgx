@@ -444,6 +444,70 @@
               ]
             }
            
+          ],
+          "Table3_Rows": [
+            {
+              "row_name": "Secondary",
+              "row_styles": "content_style_odd column_label_style",
+              "row_values": [
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen2_line1_secondary_clamping_press",
+                  "styles": "content_style_odd"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen2_line1_secondary_tramp_pressure",
+                  "styles": "content_style_odd"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen2_line1_secondary_oil_return_temp",
+                  "styles": "content_style_odd"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen2_line1_secondary_eccentric_temp",
+                  "styles": "content_style_odd"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen2_line1_secondary_gap_adjust_remaining",
+                  "styles": "content_style_odd"
+                }
+              ]
+            },
+            {
+              "row_name": "Pebble",
+              "row_styles": "content_style_even column_label_style",
+              "row_values": [
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen2_line1_pebble_clamping_press",
+                  "styles": "content_style_even"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen2_line1_pebble_tramp_pressure",
+                  "styles": "content_style_even"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen2_line1_pebble_oil_return_temp",
+                  "styles": "content_style_even"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen2_line1_pebble_eccentric_temp",
+                  "styles": "content_style_even"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen2_line1_pebble_gap_adjust_remaining",
+                  "styles": "content_style_even"
+                }
+              ]
+            }
           ]
         },
         "actions": {
@@ -1328,6 +1392,174 @@
                         },
                         "style": {
                           "padding_top": "1%"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "vertical",
+                "items": [
+                  {
+                    "type": "vertical",
+                    "class": "no_padding",
+                    "components": [
+                        {
+                            "type": "label",
+                            "text": "Line 1",
+                            "class":"content_style_even center_align line_style"
+                          },
+                        {
+                        "type": "vertical",
+                        "components": {
+                          "{{#each Table3_Rows}}": {
+                            "{{#let}}": [
+                              {
+                                "row_index": "{{$index}}"
+                              },
+                              {
+                                "type": "horizontal",
+                                "class": "center_align",
+                                "style": {
+                                  "height": "6%"
+                                },
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "table_body_name_styles",
+                                    "style": {
+                                      "height": "6%",
+                                      "width": "15%"
+                                    },
+                                    "components": [
+                                      {
+                                        "type": "label",
+                                        "text": "{{this.row_name}}",
+                                        "class": "{{this.row_styles}} table_row_height",
+                                        "style": {
+                                          "height": "6%"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "horizontal",
+                                    "style": {
+                                      "width": "85%"
+                                    },
+                                    "components": {
+                                      "{{#each row_values}}": {
+                                        "type": "horizontal",
+                                        "components": [
+                                          {
+                                            "type": "vertical",
+                                            "components": [
+                                              {
+                                                "type": "{{type}}",
+                                                "name": "{{name}}",
+                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                "class": "{{styles}}",
+                                                "style": {
+                                                  "width": "17%",
+                                                  "padding_bottom": "1%"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              
+             
+              {
+                "type": "vertical",
+                "items": [
+                  {
+                    "type": "vertical",
+                    "class": "no_padding",
+                    "components": [
+                        {
+                            "type": "label",
+                            "text": "Line 2",
+                            "class":"content_style_odd center_align line_style"
+                          },
+                        {
+                        "type": "vertical",
+                        "components": {
+                          "{{#each Table4_Rows}}": {
+                            "{{#let}}": [
+                              {
+                                "row_index": "{{$index}}"
+                              },
+                              {
+                                "type": "horizontal",
+                                "class": "center_align",
+                                "style": {
+                                  "height": "6%"
+                                },
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "table_body_name_styles",
+                                    "style": {
+                                      "height": "6%",
+                                      "width": "15%"
+                                    },
+                                    "components": [
+                                      {
+                                        "type": "label",
+                                        "text": "{{this.row_name}}",
+                                        "class": "{{this.row_styles}} table_row_height",
+                                        "style": {
+                                          "height": "6%"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "horizontal",
+                                    "style": {
+                                      "width": "85%"
+                                    },
+                                    "components": {
+                                      "{{#each row_values}}": {
+                                        "type": "horizontal",
+                                        "components": [
+                                          {
+                                            "type": "vertical",
+                                            "components": [
+                                              {
+                                                "type": "{{type}}",
+                                                "name": "{{name}}",
+                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                "class": "{{styles}}",
+                                                "style": {
+                                                  "width": "17%",
+                                                  "padding_bottom": "1%"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
                         }
                       }
                     ]
