@@ -1026,24 +1026,7 @@
                   }
                 ]
               },
-              {
-                "type": "vertical",
-                "style":{
-                    "height":"6%",
-                    "width":"100%"
-                },
-                "components": [
-                  {
-                    "type": "label",
-                    "text": "Line 1",
-                    "style":{
-                        "width":"100%",
-                        "height":"6%"
-                    },
-                    "class":"content_style_even"
-                  }
-                ]
-            },
+             
               {
                 "type": "vertical",
                 "items": [
@@ -1051,7 +1034,16 @@
                     "type": "vertical",
                     "class": "no_padding",
                     "components": [
-                      {
+                        {
+                            "type": "label",
+                            "text": "Line 1",
+                            "style":{
+                                "width":"100%",
+                                "height":"6%"
+                            },
+                            "class":"content_style_even"
+                          },
+                        {
                         "type": "vertical",
                         "components": {
                           "{{#each Table1_Rows}}": {
