@@ -285,27 +285,27 @@
               "row_values": [
                 {
                   "type": "textfield",
-                  "name": "primary_crusher_screen1_0700_text1",
+                  "name": "secondary_crusher_screen1_line1_secondary_lube_oil_level",
                   "styles": "content_style_odd"
                 },
                 {
                   "type": "textfield",
-                  "name": "primary_crusher_screen1_0700_text2",
+                  "name": "secondary_crusher_screen1_line1_secondary_hydraulic_oil_level",
                   "styles": "content_style_odd"
                 },
                 {
                   "type": "textfield",
-                  "name": "primary_crusher_screen1_0700_text3",
+                  "name": "secondary_crusher_screen1_line1_secondary_oil_filter_pressure",
                   "styles": "content_style_odd"
                 },
                 {
                   "type": "textfield",
-                  "name": "primary_crusher_screen1_0700_text4",
+                  "name": "secondary_crusher_screen1_line1_secondary_lube_oil_pressure_at_tank",
                   "styles": "content_style_odd"
                 },
                 {
                   "type": "textfield",
-                  "name": "primary_crusher_screen1_0700_text5",
+                  "name": "secondary_crusher_screen1_line1_secondary_lube_oil_pressure_at_crusher",
                   "styles": "content_style_odd"
                 }
               ]
@@ -316,32 +316,134 @@
               "row_values": [
                 {
                   "type": "textfield",
-                  "name": "primary_crusher_screen1_0800_text1",
+                  "name": "secondary_crusher_screen1_line1_pebble_lube_oil_level",
                   "styles": "content_style_even"
                 },
                 {
                   "type": "textfield",
-                  "name": "primary_crusher_screen1_0800_text2",
+                  "name": "secondary_crusher_screen1_line1_pebble_hydraulic_oil_level",
                   "styles": "content_style_even"
                 },
                 {
                   "type": "textfield",
-                  "name": "primary_crusher_screen1_0800_text3",
+                  "name": "secondary_crusher_screen1_line1_pebble_oil_filter_pressure",
                   "styles": "content_style_even"
                 },
                 {
                   "type": "textfield",
-                  "name": "primary_crusher_screen1_0800_text4",
+                  "name": "secondary_crusher_screen1_line1_pebble_lube_oil_pressure_at_tank",
                   "styles": "content_style_even"
                 },
                 {
                   "type": "textfield",
-                  "name": "primary_crusher_screen1_0800_text5",
+                  "name": "secondary_crusher_screen1_line1_pebble_lube_oil_pressure_at_crusher",
                   "styles": "content_style_even"
                 }
               ]
             }
-          ]
+          ],
+          "Table2_Headers": [
+            {
+              "type": "label",
+              "value": "Crushers",
+              "col_type": "col_name",
+              "styles": "table_header_styles  table_header_name_styles"
+            },
+            {
+              "type": "label",
+              "value": "Clamping Press",
+              "col_type": "col_value",
+              "styles": "table_header_styles  table_header_value_styles"
+            },
+            {
+              "type": "label",
+              "value": "Tramp Press",
+              "col_type": "col_value",
+              "styles": "table_header_styles  table_header_value_styles"
+            },
+            {
+              "type": "label",
+              "value": "Oil Return Temp.",
+              "col_type": "col_value",
+              "styles": "table_header_styles  table_header_value_styles"
+            },
+            {
+              "type": "label",
+              "value": "Eccentric Temp.",
+              "col_type": "col_value",
+              "styles": "table_header_styles  table_header_value_styles"
+            },
+            {
+              "type": "label",
+              "value": "Gap Adjust. Remaining",
+              "col_type": "col_value",
+              "styles": "table_header_styles  table_header_value_styles"
+            }
+          ],
+          "Table2_Rows": [
+            {
+              "row_name": "Secondary",
+              "row_styles": "content_style_odd column_label_style",
+              "row_values": [
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen1_line2_secondary_lube_oil_level",
+                  "styles": "content_style_odd"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen1_line2_secondary_hydraulic_oil_level",
+                  "styles": "content_style_odd"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen1_line2_secondary_oil_filter_pressure",
+                  "styles": "content_style_odd"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen1_line2_secondary_lube_oil_pressure_at_tank",
+                  "styles": "content_style_odd"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen1_line2_secondary_lube_oil_pressure_at_crusher",
+                  "styles": "content_style_odd"
+                }
+              ]
+            },
+            {
+              "row_name": "Pebble",
+              "row_styles": "content_style_even column_label_style",
+              "row_values": [
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen1_line2_pebble_lube_oil_level",
+                  "styles": "content_style_even"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen1_line2_pebble_hydraulic_oil_level",
+                  "styles": "content_style_even"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen1_line2_pebble_oil_filter_pressure",
+                  "styles": "content_style_even"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen1_line2_pebble_lube_oil_pressure_at_tank",
+                  "styles": "content_style_even"
+                },
+                {
+                  "type": "textfield",
+                  "name": "secondary_crusher_screen1_line2_pebble_lube_oil_pressure_at_crusher",
+                  "styles": "content_style_even"
+                }
+              ]
+            }
+          ],
         },
         "actions": {
           "$load": {
@@ -1093,6 +1195,121 @@
                                                 "type": "{{type}}",
                                                 "name": "{{name}}",
                                                 "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                "class": "{{styles}}",
+                                                "style": {
+                                                  "width": "17%",
+                                                  "padding_bottom": "1%"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "horizontal",
+                "class": "no_padding",
+                "items": [
+                  {
+                    "type": "horizontal",
+                    "class": "no_padding",
+                    "components": [
+                      {
+                        "type": "horizontal",
+                        "class": "no_padding table_row",
+                        "components": {
+                          "{{#each Table2_Headers}}": {
+                            "type": "vertical",
+                            "components": [
+                              {
+                                "type": "label",
+                                "text": "{{value}}",
+                                "class": "{{styles}} center_align"
+                              }
+                            ]
+                          }
+                        },
+                        "style": {
+                          "padding_top": "1%"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+             
+              {
+                "type": "vertical",
+                "items": [
+                  {
+                    "type": "vertical",
+                    "class": "no_padding",
+                    "components": [
+                        {
+                            "type": "label",
+                            "text": "Line 2",
+                            "class":"content_style_even center_align line_style"
+                          },
+                        {
+                        "type": "vertical",
+                        "components": {
+                          "{{#each Table2_Rows}}": {
+                            "{{#let}}": [
+                              {
+                                "row_index": "{{$index}}"
+                              },
+                              {
+                                "type": "horizontal",
+                                "class": "center_align",
+                                "style": {
+                                  "height": "6%"
+                                },
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "table_body_name_styles",
+                                    "style": {
+                                      "height": "6%",
+                                      "width": "15%"
+                                    },
+                                    "components": [
+                                      {
+                                        "type": "label",
+                                        "text": "{{this.row_name}}",
+                                        "class": "{{this.row_styles}} table_row_height",
+                                        "style": {
+                                          "height": "6%"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "horizontal",
+                                    "style": {
+                                      "width": "85%"
+                                    },
+                                    "components": {
+                                      "{{#each row_values}}": {
+                                        "type": "horizontal",
+                                        "components": [
+                                          {
+                                            "type": "vertical",
+                                            "components": [
+                                              {
+                                                "type": "{{type}}",
+                                                "name": "{{name}}",
+                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
                                                 "class": "{{styles}}",
                                                 "style": {
                                                   "width": "17%",
