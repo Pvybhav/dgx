@@ -346,37 +346,37 @@
         ],
         "Table2_Headers": [{
             "type": "label",
-            "value": "Crushers",
+            "value": "Feeders",
             "col_type": "col_name",
             "styles": "table_header_styles  table_header_name_styles"
           },
           {
             "type": "label",
-            "value": "Clamping Press",
+            "value": "Scrapers",
             "col_type": "col_value",
             "styles": "table_header_styles  table_header_value_styles"
           },
           {
             "type": "label",
-            "value": "Tramp Press",
+            "value": "Head/Tail Pulleys",
             "col_type": "col_value",
             "styles": "table_header_styles  table_header_value_styles"
           },
           {
             "type": "label",
-            "value": "Oil Return Temp.",
+            "value": "Troughing Rollers",
             "col_type": "col_value",
             "styles": "table_header_styles  table_header_value_styles"
           },
           {
             "type": "label",
-            "value": "Eccentric Temp.",
+            "value": "Return Rollers",
             "col_type": "col_value",
             "styles": "table_header_styles  table_header_value_styles"
           },
           {
             "type": "label",
-            "value": "Gap Adjust. Remaining",
+            "value": "Idlers",
             "col_type": "col_value",
             "styles": "table_header_styles  table_header_value_styles"
           }
@@ -949,6 +949,31 @@
                     ]
                   }
                 ]
+              },
+              {
+                "type": "horizontal",
+                "class": "no_padding",
+                "items": [{
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [{
+                    "type": "horizontal",
+                    "class": "no_padding table_row",
+                    "components": {
+                      "{{#each Table2_Headers}}": {
+                        "type": "vertical",
+                        "components": [{
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}} center_align"
+                        }]
+                      }
+                    },
+                    "style": {
+                      "padding_top": "1%"
+                    }
+                  }]
+                }]
               },
               {
                 "type":"horizontal",
