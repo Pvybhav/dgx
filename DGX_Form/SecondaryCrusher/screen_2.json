@@ -1279,6 +1279,64 @@
                           "height": "6%",
                           "width": "17%"
                         }
+                      },
+                      {
+                        "type": "horizontal",
+                        "class": "table_header_styles center_align",
+                        "style": {
+                          "height": "6%",
+                          "width": "17%"
+                        },
+                        "components":[
+                          {
+                            "type": "horizontal",
+                            "style":{
+                              "background": "rgb(231,232,235)",
+                              "color":"rgb(0, 0, 0)"
+                              
+                            },
+                            "class": "center_align",
+                            "components": [{
+                                "type": "switch",
+                                "name": "shift",
+                                "value": "true",
+                                "class": "switch_legend_styles",
+                                "isClickable": "false"
+                                
+                              },
+                              {
+                                "type": "label",
+                                "name": "AgitatorShaft_true",
+                                "text": "= Turning",
+                                "class": "black_color"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "style":{
+                              "background": "rgb(231,232,235)",
+                              "color":"rgb(0, 0, 0)"
+                            },
+                            "class": "center_align",
+                            "components": [{
+                                "type": "switch",
+                                "name": "shift",
+                                "value": "false",
+                                "class": "switch_legend_styles",
+                                "isClickable": "false"
+                              },
+                              {
+                                "type": "label",
+                                "name": "AgitatorShaft_false",
+                                "text": "= Stopped",
+                                "class": "black_color"
+                              }
+                            ]
+    
+    
+                          }
+                        ]
                       }
                     ]
                   }]
