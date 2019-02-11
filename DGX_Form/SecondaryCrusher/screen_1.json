@@ -863,7 +863,8 @@
               "primary_crusher_screen4_deficiency_description_text3": "{{$get.primary_crusher_screen4_deficiency_description_text3|| ''}}",
               "authorized_by_supervisor_switch1": "{{$global.authorized_by_supervisor_switch1 == null ? true : $global.authorized_by_supervisor_switch1}}",
               "authorized_by_supervisor_switch2": "{{$global.authorized_by_supervisor_switch2 == null ? true : $global.authorized_by_supervisor_switch2}}",
-              "authorized_by_supervisor_switch3": "{{$global.authorized_by_supervisor_switch3 == null ? true : $global.authorized_by_supervisor_switch3}}"
+              "authorized_by_supervisor_switch3": "{{$global.authorized_by_supervisor_switch3 == null ? true : $global.authorized_by_supervisor_switch3}}",
+              "form15_screen1_comments":"{{$get.form15_screen1_comments || ''}}"
             },
             "success": {
               "type": "$util.toast",
@@ -1652,7 +1653,7 @@
                 "items":[
                   {
                     "type": "textarea",
-                    "value": "{{$global.form15_screen1_comments}}",
+                    "value": "{{$global.form15_screen1_comments || ''}}",
                     "name": "comments",
                     "placeholder": "Comments",
                     "contentDescription": "Comments",
