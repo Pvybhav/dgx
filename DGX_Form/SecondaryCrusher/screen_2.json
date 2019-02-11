@@ -171,6 +171,11 @@
             "height":"6%",
             "font": "HelveticaNeue-Bold"
         },
+        "table_header_value_styles_two_rows": {
+          "width": "34%",
+          "border": "rgb(255, 255, 255)",
+          "height": "15%"
+        },
           "table_header_value_styles": {
             "width": "17%",
             "border": "rgb(255, 255, 255)",
@@ -243,37 +248,31 @@
           "Table1_Headers": [
             {
               "type": "label",
-              "value": "Crushers",
+              "value": "Feeders",
               "col_type": "col_name",
               "styles": "table_header_styles  table_header_name_styles"
             },
             {
               "type": "label",
-              "value": "Lube Oil Level",
+              "value": "Feeder Status",
+              "col_type": "col_value",
+              "styles": "table_header_styles  table_header_value_styles_two_rows"
+            },
+            {
+              "type": "label",
+              "value": "Pans",
               "col_type": "col_value",
               "styles": "table_header_styles  table_header_value_styles"
             },
             {
               "type": "label",
-              "value": "Hydraulic Oil Level",
+              "value": "Bolts",
               "col_type": "col_value",
               "styles": "table_header_styles  table_header_value_styles"
             },
             {
               "type": "label",
-              "value": "Oil Filter Pressure",
-              "col_type": "col_value",
-              "styles": "table_header_styles  table_header_value_styles"
-            },
-            {
-              "type": "label",
-              "value": "Lube Oil Press at Tank",
-              "col_type": "col_value",
-              "styles": "table_header_styles  table_header_value_styles"
-            },
-            {
-              "type": "label",
-              "value": "Lube Oil Press at Crusher",
+              "value": "Skirts",
               "col_type": "col_value",
               "styles": "table_header_styles  table_header_value_styles"
             }
@@ -1277,376 +1276,9 @@
                     ]
                   }
                 ]
-              },
-             
-              {
-                "type": "vertical",
-                "items": [
-                  {
-                    "type": "vertical",
-                    "class": "no_padding",
-                    "components": [
-                        {
-                            "type": "label",
-                            "text": "Line 1",
-                            "class":"content_style_even center_align line_style"
-                          },
-                        {
-                        "type": "vertical",
-                        "components": {
-                          "{{#each Table1_Rows}}": {
-                            "{{#let}}": [
-                              {
-                                "row_index": "{{$index}}"
-                              },
-                              {
-                                "type": "horizontal",
-                                "class": "center_align",
-                                "style": {
-                                  "height": "6%"
-                                },
-                                "components": [
-                                  {
-                                    "type": "horizontal",
-                                    "class": "table_body_name_styles",
-                                    "style": {
-                                      "height": "6%",
-                                      "width": "15%"
-                                    },
-                                    "components": [
-                                      {
-                                        "type": "label",
-                                        "text": "{{this.row_name}}",
-                                        "class": "{{this.row_styles}} table_row_height",
-                                        "style": {
-                                          "height": "6%"
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "horizontal",
-                                    "style": {
-                                      "width": "85%"
-                                    },
-                                    "components": {
-                                      "{{#each row_values}}": {
-                                        "type": "horizontal",
-                                        "components": [
-                                          {
-                                            "type": "vertical",
-                                            "components": [
-                                              {
-                                                "type": "{{type}}",
-                                                "name": "{{name}}",
-                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                "class": "{{styles}}",
-                                                "style": {
-                                                  "width": "17%",
-                                                  "padding_bottom": "1%"
-                                                }
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              
-             
-              {
-                "type": "vertical",
-                "items": [
-                  {
-                    "type": "vertical",
-                    "class": "no_padding",
-                    "components": [
-                        {
-                            "type": "label",
-                            "text": "Line 2",
-                            "class":"content_style_odd center_align line_style"
-                          },
-                        {
-                        "type": "vertical",
-                        "components": {
-                          "{{#each Table2_Rows}}": {
-                            "{{#let}}": [
-                              {
-                                "row_index": "{{$index}}"
-                              },
-                              {
-                                "type": "horizontal",
-                                "class": "center_align",
-                                "style": {
-                                  "height": "6%"
-                                },
-                                "components": [
-                                  {
-                                    "type": "horizontal",
-                                    "class": "table_body_name_styles",
-                                    "style": {
-                                      "height": "6%",
-                                      "width": "15%"
-                                    },
-                                    "components": [
-                                      {
-                                        "type": "label",
-                                        "text": "{{this.row_name}}",
-                                        "class": "{{this.row_styles}} table_row_height",
-                                        "style": {
-                                          "height": "6%"
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "horizontal",
-                                    "style": {
-                                      "width": "85%"
-                                    },
-                                    "components": {
-                                      "{{#each row_values}}": {
-                                        "type": "horizontal",
-                                        "components": [
-                                          {
-                                            "type": "vertical",
-                                            "components": [
-                                              {
-                                                "type": "{{type}}",
-                                                "name": "{{name}}",
-                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                "class": "{{styles}}",
-                                                "style": {
-                                                  "width": "17%",
-                                                  "padding_bottom": "1%"
-                                                }
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "horizontal",
-                "class": "no_padding",
-                "items": [
-                  {
-                    "type": "horizontal",
-                    "class": "no_padding",
-                    "components": [
-                      {
-                        "type": "horizontal",
-                        "class": "no_padding table_row",
-                        "components": {
-                          "{{#each Table2_Headers}}": {
-                            "type": "vertical",
-                            "components": [
-                              {
-                                "type": "label",
-                                "text": "{{value}}",
-                                "class": "{{styles}} center_align"
-                              }
-                            ]
-                          }
-                        },
-                        "style": {
-                          "padding_top": "1%"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "vertical",
-                "items": [
-                  {
-                    "type": "vertical",
-                    "class": "no_padding",
-                    "components": [
-                        {
-                            "type": "label",
-                            "text": "Line 1",
-                            "class":"content_style_even center_align line_style"
-                          },
-                        {
-                        "type": "vertical",
-                        "components": {
-                          "{{#each Table3_Rows}}": {
-                            "{{#let}}": [
-                              {
-                                "row_index": "{{$index}}"
-                              },
-                              {
-                                "type": "horizontal",
-                                "class": "center_align",
-                                "style": {
-                                  "height": "6%"
-                                },
-                                "components": [
-                                  {
-                                    "type": "horizontal",
-                                    "class": "table_body_name_styles",
-                                    "style": {
-                                      "height": "6%",
-                                      "width": "15%"
-                                    },
-                                    "components": [
-                                      {
-                                        "type": "label",
-                                        "text": "{{this.row_name}}",
-                                        "class": "{{this.row_styles}} table_row_height",
-                                        "style": {
-                                          "height": "6%"
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "horizontal",
-                                    "style": {
-                                      "width": "85%"
-                                    },
-                                    "components": {
-                                      "{{#each row_values}}": {
-                                        "type": "horizontal",
-                                        "components": [
-                                          {
-                                            "type": "vertical",
-                                            "components": [
-                                              {
-                                                "type": "{{type}}",
-                                                "name": "{{name}}",
-                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                "class": "{{styles}}",
-                                                "style": {
-                                                  "width": "17%",
-                                                  "padding_bottom": "1%"
-                                                }
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              
-             
-              {
-                "type": "vertical",
-                "items": [
-                  {
-                    "type": "vertical",
-                    "class": "no_padding",
-                    "components": [
-                        {
-                            "type": "label",
-                            "text": "Line 2",
-                            "class":"content_style_odd center_align line_style"
-                          },
-                        {
-                        "type": "vertical",
-                        "components": {
-                          "{{#each Table4_Rows}}": {
-                            "{{#let}}": [
-                              {
-                                "row_index": "{{$index}}"
-                              },
-                              {
-                                "type": "horizontal",
-                                "class": "center_align",
-                                "style": {
-                                  "height": "6%"
-                                },
-                                "components": [
-                                  {
-                                    "type": "horizontal",
-                                    "class": "table_body_name_styles",
-                                    "style": {
-                                      "height": "6%",
-                                      "width": "15%"
-                                    },
-                                    "components": [
-                                      {
-                                        "type": "label",
-                                        "text": "{{this.row_name}}",
-                                        "class": "{{this.row_styles}} table_row_height",
-                                        "style": {
-                                          "height": "6%"
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "horizontal",
-                                    "style": {
-                                      "width": "85%"
-                                    },
-                                    "components": {
-                                      "{{#each row_values}}": {
-                                        "type": "horizontal",
-                                        "components": [
-                                          {
-                                            "type": "vertical",
-                                            "components": [
-                                              {
-                                                "type": "{{type}}",
-                                                "name": "{{name}}",
-                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                "class": "{{styles}}",
-                                                "style": {
-                                                  "width": "17%",
-                                                  "padding_bottom": "1%"
-                                                }
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    ]
-                  }
-                ]
               }
              
+            
             ],
             "class": "no_padding",
             "layers": [
