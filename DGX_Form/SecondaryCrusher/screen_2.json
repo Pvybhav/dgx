@@ -1128,8 +1128,93 @@
                     "components": [
                         {
                             "type": "label",
-                            "text": "Line 2",
-                            "class":"content_style_odd center_align line_style"
+                            "text": "Line 1",
+                            "class":"content_style_even center_align line_style"
+                          },
+                        {
+                        "type": "vertical",
+                        "components": {
+                          "{{#each Table1_Rows}}": {
+                            "{{#let}}": [
+                              {
+                                "row_index": "{{$index}}"
+                              },
+                              {
+                                "type": "horizontal",
+                                "class": "center_align",
+                                "style": {
+                                  "height": "6%"
+                                },
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "table_body_name_styles",
+                                    "style": {
+                                      "height": "6%",
+                                      "width": "15%"
+                                    },
+                                    "components": [
+                                      {
+                                        "type": "label",
+                                        "text": "{{this.row_name}}",
+                                        "class": "{{this.row_styles}} table_row_height",
+                                        "style": {
+                                          "height": "6%"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "horizontal",
+                                    "style": {
+                                      "width": "85%"
+                                    },
+                                    "components": {
+                                      "{{#each row_values}}": {
+                                        "type": "horizontal",
+                                        "components": [
+                                          {
+                                            "type": "vertical",
+                                            "components": [
+                                              {
+                                                "type": "switch",
+                                                "name": "{{name}}",
+                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'false';}}",
+                                                "class": "{{styles}} switch_legend_styles",
+                                                "style": {
+                                                  "width": "17%",
+                                                  "padding_bottom": "1%"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                 
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      }
+                      
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "vertical",
+                "items": [
+                  {
+                    "type": "vertical",
+                    "class": "no_padding",
+                    "components": [
+                        {
+                            "type": "label",
+                            "text": "Line 1",
+                            "class":"content_style_even center_align line_style"
                           },
                         {
                         "type": "vertical",
