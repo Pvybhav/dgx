@@ -143,6 +143,12 @@
           "background": "rgb(14, 53, 112)",
           "width": "7%"
         },
+        "switch_legend_styles_table":
+        {
+            "color": "rgb(0,255,0)",
+            "color:disabled": "rgb(255,0,0)",
+            "width": "7%"
+        },
         "switch_table_styles": {
           "color": "rgb(0,255,0)",
           "color:disabled": "rgb(255,0,0)",
@@ -1265,7 +1271,7 @@
                                                 "type": "switch",
                                                 "name": "{{name}}",
                                                 "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'false';}}",
-                                                "class": "{{styles}} switch_legend_styles",
+                                                "class": "{{styles}} switch_legend_styles_table",
                                                 "style": {
                                                   "width": "17%",
                                                   "padding_bottom": "1%"
