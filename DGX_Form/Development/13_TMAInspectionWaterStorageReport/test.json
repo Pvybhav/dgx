@@ -1,0 +1,103 @@
+
+{
+    "type": "vertical",
+    "items": [
+        {
+            "type": "vertical",
+            "class": "no_padding",
+            "components": [
+                {
+                    "type": "vertical",
+                    "components": {
+                        "{{#each Table_A_Rows}}": {
+                            "{{#let}}": [
+                                {
+                                    "row_index": "{{$index}}"
+                                },
+                                {
+                                    "type": "horizontal",
+                                    "class": "center_align Table_a_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                                    "style": {
+                                        "height": "{{#? this.height}}"
+                                    },
+                                    "components": [
+                                        {
+                                            "type": "horizontal",
+                                            "class": "table_body_name_styles Table_a_row_height",
+                                            "style": {
+                                                "height": "{{#? this.height}}"
+                                            },
+                                            "components": [
+                                                {
+                                                    "type": "horizontal",
+                                                    "components": [
+                                                        {
+                                                            "type": "horizontal",
+                                                            "class": "table_row_no_styles",
+                                                            "components": [
+                                                                {
+                                                                    "type": "label",
+                                                                    "text": " {{this.row_no}}",
+                                                                    "class": "black_color Table_a_row_height row_no_styles",
+                                                                    "style": {
+                                                                        "height": "{{#? this.height}}"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "horizontal",
+                                                            "components": [
+                                                                {
+                                                                    "type": "label",
+                                                                    "text": "{{this.row_name}}",
+                                                                    "class": "{{this.row_styles}} Table_a_row_height",
+                                                                    "style": {
+                                                                        "height": "{{#? this.height}}",
+                                                                        "width": "37%"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "horizontal",
+                                            "components": {
+                                                "{{#each row_values}}": {
+                                                    "type": "horizontal",
+                                                    "components": [
+                                                        {
+                                                            "type": "vertical",
+                                                            "class": "Table_a_row_height",
+                                                            "components": [
+                                                                {
+                                                                    "type": "{{type}}",
+                                                                    "name": "{{name}}",
+                                                                    "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_A_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                                    "class": "center_align black_color table_body_textfield_styles",
+                                                                    "options": {
+                                                                        "{{#each $root.Table_A_Rows[row_index].dropdownOptions}}": {
+                                                                            "value": "{{option}}",
+                                                                            "defaultSelected": "{{defaultSelected}}"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
