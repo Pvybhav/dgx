@@ -83,13 +83,6 @@
         "table_even_row_styles": {
           "background": "rgb(204,206,213)"
         },
-        "button_styles": {
-          "width": "15%",
-          "height": "7%",
-          "color": "rgb(255,255,255)",
-          "background": "rgb(0,147,215)",
-          "corner_radius": "1%"
-        },
         "table_row_height": {
           "height": "6%"
         },
@@ -111,10 +104,6 @@
           "height": "4%",
           "size": "13"
         },
-        "footer_styles": {
-          "padding_top": "1%",
-          "padding_bottom": "1%"
-        },
         "loading_image_styles": {
           "top": "50%-25",
           "left": "50%-25",
@@ -123,9 +112,6 @@
         },
         "preload_styles": {
           "background": "rgb(255, 0, 0)"
-        },
-        "footer_buttons_spacing": {
-          "spacing": "5%"
         }
       },
       "data": {
@@ -383,28 +369,6 @@
           {
             "operator": "David",
             "defaultSelected": "false"
-          }
-        ],
-        "All_Table_Headers": [
-          {
-            "value": "",
-            "styles": "center_align table_header_name_styles"
-          },
-          {
-            "value": "1ST Round",
-            "styles": "table_header_styles center_align table_header_value_styles"
-          },
-          {
-            "value": "2ND Round",
-            "styles": "table_header_styles center_align table_header_value_styles"
-          },
-          {
-            "value": "3RD Round",
-            "styles": "table_header_styles center_align table_header_value_styles"
-          },
-          {
-            "value": "4TH Round",
-            "styles": "table_header_styles center_align table_header_value_styles"
           }
         ],
         "Table_A_Headers": [
@@ -5369,7 +5333,7 @@
           "success": {
             "type": "$global.set",
             "options": {
-              "section_id": "form13_page1",
+              "section_id": "form13",
               "f13_s1_sign": "{{$global.f13_s1_sign || ''}}",
               "f13_s1_day": "{{$global.f13_s1_day || ''}}",
               "f13_s1_month": "{{$global.f13_s1_month || ''}}",
@@ -5706,19 +5670,10 @@
             }
           }
         },
-        "$pull": {
-          "type": "$reload",
-          "success": {
-            "trigger": "displayToaster",
-            "options": {
-              "message": "Page reloaded successfully"
-            }
-          }
-        },
         "handleSwitchValues": {
           "type": "$global.set",
           "options": {
-            "section_id": "form13_page1",
+            "section_id": "form13",
             "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}",
             "currentFieldValue": "{{$get[$jason.fieldName]}}"
           }
@@ -5758,10 +5713,10 @@
             }
           }
         },
-        "handleSave": {
+        "handleSave_screen1": {
           "type": "$global.set",
           "options": {
-            "section_id": "form13_page1",
+            "section_id": "form13",
             "f13_s1_sign": "{{ $get.sign || '' }}",
             "f13_s1_day": "{{ $get.day }}",
             "f13_s1_month": "{{ $get.month }}",
@@ -5783,7 +5738,19 @@
             "A_row4_1st_round": "{{ $get.A_row4_1st_round || '' }}",
             "A_row4_2nd_round": "{{ $get.A_row4_2nd_round || '' }}",
             "A_row4_3rd_round": "{{ $get.A_row4_3rd_round || '' }}",
-            "A_row4_4th_round": "{{ $get.A_row4_4th_round || '' }}",
+            "A_row4_4th_round": "{{ $get.A_row4_4th_round || '' }}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen1 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form13",
             "C_row1_1st_round": "{{ $get.C_row1_1st_round }}",
             "C_row1_2nd_round": "{{ $get.C_row1_2nd_round }}",
             "C_row1_3rd_round": "{{ $get.C_row1_3rd_round }}",
@@ -5827,7 +5794,19 @@
             "C_C1_row8_1st_round": "{{ $get.C_C1_row8_1st_round || '' }}",
             "C_C1_row8_2nd_round": "{{ $get.C_C1_row8_2nd_round || '' }}",
             "C_C1_row8_3rd_round": "{{ $get.C_C1_row8_3rd_round || '' }}",
-            "C_C1_row8_4th_round": "{{ $get.C_C1_row8_4th_round || '' }}",
+            "C_C1_row8_4th_round": "{{ $get.C_C1_row8_4th_round || '' }}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen2 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen3": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form13",
             "C_C2_row1_1st_round": "{{ $get.C_C2_row1_1st_round || '' }}",
             "C_C2_row1_2nd_round": "{{ $get.C_C2_row1_2nd_round || '' }}",
             "C_C2_row1_3rd_round": "{{ $get.C_C2_row1_3rd_round || '' }}",
@@ -5891,7 +5870,19 @@
             "D_row8_1st_round": "{{ $get.D_row8_1st_round || '' }}",
             "D_row8_2nd_round": "{{ $get.D_row8_2nd_round || '' }}",
             "D_row8_3rd_round": "{{ $get.D_row8_3rd_round || '' }}",
-            "D_row8_4th_round": "{{ $get.D_row8_4th_round || '' }}",
+            "D_row8_4th_round": "{{ $get.D_row8_4th_round || '' }}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen3 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen4": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form13",
             "E_row1_1st_round": "{{ $get.E_row1_1st_round || '' }}",
             "E_row1_2nd_round": "{{ $get.E_row1_2nd_round || '' }}",
             "E_row1_3rd_round": "{{ $get.E_row1_3rd_round || '' }}",
@@ -5939,7 +5930,19 @@
             "E7_row1_1st_round": "{{ $get.E7_row1_1st_round || '' }}",
             "E7_row1_2nd_round": "{{ $get.E7_row1_2nd_round || '' }}",
             "E7_row1_3rd_round": "{{ $get.E7_row1_3rd_round || '' }}",
-            "E7_row1_4th_round": "{{ $get.E7_row1_4th_round || '' }}",
+            "E7_row1_4th_round": "{{ $get.E7_row1_4th_round || '' }}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen4 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen5": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form13",
             "F1_row1_1st_round": "{{ $get.F1_row1_1st_round || '' }}",
             "F1_row1_2nd_round": "{{ $get.F1_row1_2nd_round || '' }}",
             "F1_row1_3rd_round": "{{ $get.F1_row1_3rd_round || '' }}",
@@ -6039,7 +6042,19 @@
             "F5_row10_1st_round": "{{ $get.F5_row10_1st_round || '' }}",
             "F5_row10_2nd_round": "{{ $get.F5_row10_2nd_round || '' }}",
             "F5_row10_3rd_round": "{{ $get.F5_row10_3rd_round || '' }}",
-            "F5_row10_4th_round": "{{ $get.F5_row10_4th_round || '' }}",
+            "F5_row10_4th_round": "{{ $get.F5_row10_4th_round || '' }}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen5 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen6": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form13",
             "G_row1_1st_round": "{{ $get.G_row1_1st_round || '' }}",
             "G_row1_2nd_round": "{{ $get.G_row1_2nd_round || '' }}",
             "G_row1_3rd_round": "{{ $get.G_row1_3rd_round || '' }}",
@@ -6107,7 +6122,19 @@
             "H2_row10_1st_round": "{{ $get.H2_row10_1st_round || '' }}",
             "H2_row10_2nd_round": "{{ $get.H2_row10_2nd_round || '' }}",
             "H2_row10_3rd_round": "{{ $get.H2_row10_3rd_round || '' }}",
-            "H2_row10_4th_round": "{{ $get.H2_row10_4th_round || '' }}",
+            "H2_row10_4th_round": "{{ $get.H2_row10_4th_round || '' }}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen6 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen7": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form13",
             "I_row2_1st_round": "{{ $get.I_row2_1st_round || '' }}",
             "I_row2_2nd_round": "{{ $get.I_row2_2nd_round || '' }}",
             "I_row2_3rd_round": "{{ $get.I_row2_3rd_round || '' }}",
@@ -6136,7 +6163,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen7 data Successfully"
             }
           }
         },
@@ -6659,6 +6686,7 @@
                 "F4_row3_4th_round",
                 "F4_row4_1st_round",
                 "F4_row4_2nd_round",
+                "F4_row4_3rd_round",
                 "F4_row4_4th_round",
                 "F4_row7_1st_round",
                 "F4_row7_2nd_round",
@@ -7335,7 +7363,7 @@
                 "height": "7%"
               },
               "action": {
-                "trigger": "handleSave"
+                "trigger": "handleSave_screen1"
               }
             }
           ]
@@ -7805,7 +7833,7 @@
                 "height": "7%"
               },
               "action": {
-                "trigger": "handleSave"
+                "trigger": "handleSave_screen2"
               }
             }
           ]
@@ -8281,7 +8309,7 @@
                 "height": "7%"
               },
               "action": {
-                "trigger": "handleSave"
+                "trigger": "handleSave_screen3"
               }
             }
           ]
@@ -9525,7 +9553,7 @@
                 "height": "7%"
               },
               "action": {
-                "trigger": "handleSave"
+                "trigger": "handleSave_screen4"
               }
             }
           ]
@@ -10487,7 +10515,7 @@
                 "height": "7%"
               },
               "action": {
-                "trigger": "handleSave"
+                "trigger": "handleSave_screen5"
               }
             }
           ]
@@ -11203,7 +11231,7 @@
                 "height": "7%"
               },
               "action": {
-                "trigger": "handleSave"
+                "trigger": "handleSave_screen6"
               }
             }
           ]
@@ -11780,7 +11808,7 @@
                 "height": "7%"
               },
               "action": {
-                "trigger": "handleSave"
+                "trigger": "handleSave_screen7"
               }
             },
             {
