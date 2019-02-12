@@ -739,8 +739,6 @@
                 "secondary_crusher_screen2_line2_610_conveyor_troughing_rollers": "{{$global.secondary_crusher_screen2_line2_610_conveyor_troughing_rollers  == null ? true : $global.secondary_crusher_screen2_line2_610_conveyor_troughing_rollers}}",
                 "secondary_crusher_screen2_line2_610_conveyor_return_rollers": "{{$global.secondary_crusher_screen2_line2_610_conveyor_return_rollers  == null ? true : $global.secondary_crusher_screen2_line2_610_conveyor_return_rollers}}", 
                 "secondary_crusher_screen2_line2_610_conveyor_idlers": "{{$global.secondary_crusher_screen2_line2_610_conveyor_idlers  == null ? true : $global.secondary_crusher_screen2_line2_610_conveyor_idlers}}",
-
-
                 "secondary_crusher_screen2_line1_510_conveyor_bend_pulleys": "{{$global.secondary_crusher_screen2_line1_510_conveyor_bend_pulleys  == null ? true : $global.secondary_crusher_screen2_line1_510_conveyor_bend_pulleys}}",
                 "secondary_crusher_screen2_line1_510_conveyor_belt_alignment": "{{$global.secondary_crusher_screen2_line1_510_conveyor_belt_alignment  == null ? true : $global.secondary_crusher_screen2_line1_510_conveyor_belt_alignment}}",
                 "secondary_crusher_screen2_line1_510_conveyor_chutes": "{{$global.secondary_crusher_screen2_line1_510_conveyor_chutes  == null ? true : $global.secondary_crusher_screen2_line1_510_conveyor_chutes}}", 
@@ -869,7 +867,7 @@
               "secondary_crusher_screen2_line2_610_conveyor_pull_chords": "{{$global.secondary_crusher_screen2_line2_610_conveyor_pull_chords  == null ? true : $global.secondary_crusher_screen2_line2_610_conveyor_pull_chords}}", 
               "secondary_crusher_screen2_line2_610_conveyor_skirting": "{{$global.secondary_crusher_screen2_line2_610_conveyor_skirting  == null ? true : $global.secondary_crusher_screen2_line2_610_conveyor_skirting}}",
              
-              "form15_screen2_comments":"{{$get.form15_screen2_comments || ''}}"
+              "form15_screen3_comments":"{{$get.form15_screen3_comments || ''}}"
             },
             "success": {
               "type": "$util.toast",
@@ -1292,8 +1290,8 @@
                   "items":[
                     {
                       "type": "textarea",
-                      "value": "{{$global.form15_screen1_comments || ''}}",
-                      "name": "comments",
+                      "value": "{{$global.form15_screen3_comments || ''}}",
+                      "name": "form15_screen3_comments",
                       "placeholder": "Comments",
                       "contentDescription": "Comments",
                       "style": {
