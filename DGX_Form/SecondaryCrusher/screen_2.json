@@ -52,12 +52,12 @@
         },
         "content_style_odd_switch": {
           "background": "rgb(204, 216, 213)",
-          "height":"5%"
+          "height": "5%"
 
         },
         "content_style_even_switch": {
           "background": "rgb(231, 232, 235)",
-          "height":"5%"
+          "height": "5%"
         },
         "content_style_even": {
           "background": "rgb(231, 232, 235)",
@@ -142,11 +142,10 @@
           "background": "rgb(14, 53, 112)",
           "width": "7%"
         },
-        "switch_legend_styles_table":
-        {
-            "color": "rgb(0,255,0)",
-            "color:disabled": "rgb(255,0,0)",
-            "width": "7%"
+        "switch_legend_styles_table": {
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "width": "7%"
         },
         "switch_table_styles": {
           "color": "rgb(0,255,0)",
@@ -281,68 +280,77 @@
             "styles": "table_header_styles  table_header_value_styles"
           }
         ],
-        "Table1_Rows": [
+        "Table1_Rows": [{
+            "row_name": "001",
+            "row_styles": "content_style_odd column_label_style",
+            "row_values": [{
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line1_001_feeder_status_running",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line1_001_feeder_status_plugged",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line1_001_pans",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line1_001_bolts",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line1_001_skirts",
+                "styles": "content_style_odd_switch"
+              }
+            ]
+          },
           {
-              "row_name": "001",
-              "row_styles": "content_style_odd column_label_style",
-              "row_values": [{
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line1_001_feeder_status_running",
-                  "styles": "content_style_odd_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line1_001_feeder_status_plugged",
-                  "styles": "content_style_odd_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line1_001_pans",
-                  "styles": "content_style_odd_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line1_001_bolts",
-                  "styles": "content_style_odd_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line1_001_skirts",
-                  "styles": "content_style_odd_switch"
-                }
-              ]
-            },
-            {
-              "row_name": "002",
-              "row_styles": "content_style_even column_label_style",
-              "row_values": [{
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line1_002_feeder_status_running",
-                  "styles": "content_style_even_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line1_002_feeder_status_plugged",
-                  "styles": "content_style_even_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line1_002_pans",
-                  "styles": "content_style_even_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line1_002_bolts",
-                  "styles": "content_style_even_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line1_002_skirts",
-                  "styles": "content_style_even_switch"
-                }
-              ]
-            }
-      ],
+            "row_name": "002",
+            "row_styles": "content_style_even column_label_style",
+            "row_values": [{
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line1_002_feeder_status_running",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line1_002_feeder_status_plugged",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line1_002_pans",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line1_002_bolts",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line1_002_skirts",
+                "styles": "content_style_even_switch"
+              }
+            ]
+          }
+        ],
         "Table2_Headers": [{
             "type": "label",
             "value": "Feeders",
@@ -380,192 +388,219 @@
             "styles": "table_header_styles  table_header_value_styles"
           }
         ],
-        "Table2_Rows":[
+        "Table2_Rows": [{
+            "row_name": "021",
+            "row_styles": "content_style_even column_label_style",
+            "row_values": [{
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line2_021_feeder_status_running",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line2_021_feeder_status_plugged",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line2_021_pans",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line2_021_bolts",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line2_021_skirts",
+                "styles": "content_style_even_switch"
+              }
+            ]
+          },
           {
-              "row_name": "021",
-              "row_styles": "content_style_even column_label_style",
-              "row_values": [{
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line2_021_feeder_status_running",
-                  "styles": "content_style_even_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line2_021_feeder_status_plugged",
-                  "styles": "content_style_even_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line2_021_pans",
-                  "styles": "content_style_even_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line2_021_bolts",
-                  "styles": "content_style_even_switch"
-                },
-                {
-                  "type": "switch",
-                  "name": "secondary_crusher_table1_line2_021_skirts",
-                  "styles": "content_style_even_switch"
-                }
-              ]
-            },
-        {
-          "row_name": "022",
-          "row_styles": "content_style_odd column_label_style",
-          "row_values": [{
-              "type": "switch",
-              "name": "secondary_crusher_table1_line2_022_feeder_status_running",
-              "styles": "content_style_odd_switch"
-            },
-            {
-              "type": "switch",
-              "name": "secondary_crusher_table1_line2_022_feeder_status_plugged",
-              "styles": "content_style_odd_switch"
-            },
-            {
-              "type": "switch",
-              "name": "secondary_crusher_table1_line2_022_pans",
-              "styles": "content_style_odd_switch"
-            },
-            {
-              "type": "switch",
-              "name": "secondary_crusher_table1_line2_022_bolts",
-              "styles": "content_style_odd_switch"
-            },
-            {
-              "type": "switch",
-              "name": "secondary_crusher_table1_line2_022_skirts",
-              "styles": "content_style_odd_switch"
-            }
-          ]
-        }
+            "row_name": "022",
+            "row_styles": "content_style_odd column_label_style",
+            "row_values": [{
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line2_022_feeder_status_running",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line2_022_feeder_status_plugged",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line2_022_pans",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line2_022_bolts",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table1_line2_022_skirts",
+                "styles": "content_style_odd_switch"
+              }
+            ]
+          }
 
-      ],
-        "Table3_Rows": [
-            {
-                "row_name": "001",
-                "row_styles": "content_style_odd column_label_style",
-                "row_values": [{
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line1_001_chutes",
-                    "styles": "content_style_odd_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line1_001_rock_breakers",
-                    "styles": "content_style_odd_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line1_001_pull_chords",
-                    "styles": "content_style_odd_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line1_001_guards",
-                    "styles": "content_style_odd_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line1_001_gear_box_oil_level",
-                    "styles": "content_style_odd_switch"
-                  }
-                ]
-              },
-              {
-                "row_name": "002",
-                "row_styles": "content_style_even column_label_style",
-                "row_values": [{
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line1_002_chutes",
-                    "styles": "content_style_even_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line1_002_rock_breakers",
-                    "styles": "content_style_even_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line1_002_pull_chords",
-                    "styles": "content_style_even_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line1_002_guards",
-                    "styles": "content_style_even_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line1_002_gear_box_oil_level",
-                    "styles": "content_style_even_switch"
-                  }
-                ]
-              }
         ],
-        "Table4_Rows": [
-            {
-                "row_name": "021",
-                "row_styles": "content_style_even column_label_style",
-                "row_values": [{
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line2_021_chutes",
-                    "styles": "content_style_even_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line2_021_rock_breakers",
-                    "styles": "content_style_even_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line2_021_pull_chords",
-                    "styles": "content_style_even_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line2_021_guards",
-                    "styles": "content_style_even_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line2_021_gear_box_oil_level",
-                    "styles": "content_style_even_switch"
-                  }
-                ]
+        "Table3_Rows": [{
+            "row_name": "001",
+            "row_styles": "content_style_odd column_label_style",
+            "row_values": [{
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line1_001_chutes",
+                "styles": "content_style_odd_switch"
               },
               {
-                "row_name": "022",
-                "row_styles": "content_style_odd column_label_style",
-                "row_values": [{
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line2_022_chutes",
-                    "styles": "content_style_odd_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line2_022_rock_breakers",
-                    "styles": "content_style_odd_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line2_022_pull_chords",
-                    "styles": "content_style_odd_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line2_022_guards",
-                    "styles": "content_style_odd_switch"
-                  },
-                  {
-                    "type": "switch",
-                    "name": "secondary_crusher_table2_line2_022_gear_box_oil_level",
-                    "styles": "content_style_odd_switch"
-                  }
-                ]
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line1_001_rock_breakers",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line1_001_pull_chords",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line1_001_guards",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line1_001_gear_box_oil_level",
+                "styles": "content_style_odd_switch"
               }
+            ]
+          },
+          {
+            "row_name": "002",
+            "row_styles": "content_style_even column_label_style",
+            "row_values": [{
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line1_002_chutes",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line1_002_rock_breakers",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line1_002_pull_chords",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line1_002_guards",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line1_002_gear_box_oil_level",
+                "styles": "content_style_even_switch"
+              }
+            ]
+          }
+        ],
+        "Table4_Rows": [{
+            "row_name": "021",
+            "row_styles": "content_style_even column_label_style",
+            "row_values": [{
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line2_021_chutes",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line2_021_rock_breakers",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line2_021_pull_chords",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line2_021_guards",
+                "styles": "content_style_even_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line2_021_gear_box_oil_level",
+                "styles": "content_style_even_switch"
+              }
+            ]
+          },
+          {
+            "row_name": "022",
+            "row_styles": "content_style_odd column_label_style",
+            "row_values": [{
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line2_022_chutes",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line2_022_rock_breakers",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line2_022_pull_chords",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line2_022_guards",
+                "styles": "content_style_odd_switch"
+              },
+              {
+                "type": "switch",
+                "trigger": "handleSwitchValues",
+                "name": "secondary_crusher_table2_line2_022_gear_box_oil_level",
+                "styles": "content_style_odd_switch"
+              }
+            ]
+          }
         ]
       },
       "actions": {
@@ -582,43 +617,43 @@
               "section_id": "form15_page2",
               "secondary_crusher_table1_line1_001_feeder_status_running": "{{$global.secondary_crusher_table1_line1_001_feeder_status_running == null ? true : $global.secondary_crusher_table1_line1_001_feeder_status_running}}",
               "secondary_crusher_table1_line1_001_feeder_status_plugged": "{{$global.secondary_crusher_table1_line1_001_feeder_status_plugged == null ? true : $global.secondary_crusher_table1_line1_001_feeder_status_plugged}}",
-              "secondary_crusher_table1_line1_001_pans": "{{$global.secondary_crusher_table1_line1_001_pans == null ? true : $global.secondary_crusher_table1_line1_001_pans}}", 
+              "secondary_crusher_table1_line1_001_pans": "{{$global.secondary_crusher_table1_line1_001_pans == null ? true : $global.secondary_crusher_table1_line1_001_pans}}",
               "secondary_crusher_table1_line1_001_bolts": "{{$global.secondary_crusher_table1_line1_001_bolts == null ? true : $global.secondary_crusher_table1_line1_001_bolts}}",
               "secondary_crusher_table1_line1_001_skirts": "{{$global.secondary_crusher_table1_line1_001_skirts == null ? true : $global.secondary_crusher_table1_line1_001_skirts}}",
-              "secondary_crusher_table1_line1_002_feeder_status_running": "{{$global.secondary_crusher_table1_line1_002_feeder_status_running == null ? true : $global.secondary_crusher_table1_line1_002_feeder_status_running}}", 
+              "secondary_crusher_table1_line1_002_feeder_status_running": "{{$global.secondary_crusher_table1_line1_002_feeder_status_running == null ? true : $global.secondary_crusher_table1_line1_002_feeder_status_running}}",
               "secondary_crusher_table1_line1_002_feeder_status_plugged": "{{$global.secondary_crusher_table1_line1_002_feeder_status_plugged == null ? true : $global.secondary_crusher_table1_line1_002_feeder_status_plugged}}",
               "secondary_crusher_table1_line1_002_pans": "{{$global.secondary_crusher_table1_line1_002_pans == null ? true : $global.secondary_crusher_table1_line1_002_pans}}",
-              "secondary_crusher_table1_line1_002_bolts": "{{$global.secondary_crusher_table1_line1_002_bolts == null ? true : $global.secondary_crusher_table1_line1_002_bolts}}", 
+              "secondary_crusher_table1_line1_002_bolts": "{{$global.secondary_crusher_table1_line1_002_bolts == null ? true : $global.secondary_crusher_table1_line1_002_bolts}}",
               "secondary_crusher_table1_line1_002_skirts": "{{$global.secondary_crusher_table1_line1_002_skirts == null ? true : $global.secondary_crusher_table1_line1_002_skirts}}",
               "secondary_crusher_table1_line2_021_feeder_status_running": "{{$global.secondary_crusher_table1_line2_021_feeder_status_running  == null ? true : $global.secondary_crusher_table1_line2_021_feeder_status_running}}",
               "secondary_crusher_table1_line2_021_feeder_status_plugged": "{{$global.secondary_crusher_table1_line2_021_feeder_status_plugged  == null ? true : $global.secondary_crusher_table1_line2_021_feeder_status_plugged}}",
-              "secondary_crusher_table1_line2_021_pans": "{{$global.secondary_crusher_table1_line2_021_pans  == null ? true : $global.secondary_crusher_table1_line2_021_pans}}", 
+              "secondary_crusher_table1_line2_021_pans": "{{$global.secondary_crusher_table1_line2_021_pans  == null ? true : $global.secondary_crusher_table1_line2_021_pans}}",
               "secondary_crusher_table1_line2_021_bolts": "{{$global.secondary_crusher_table1_line2_021_bolts  == null ? true : $global.secondary_crusher_table1_line2_021_bolts}}",
               "secondary_crusher_table1_line2_021_skirts": "{{$global.secondary_crusher_table1_line2_021_skirts  == null ? true : $global.secondary_crusher_table1_line2_021_skirts}}",
-              "secondary_crusher_table1_line2_022_feeder_status_running": "{{$global.secondary_crusher_table1_line2_022_feeder_status_running  == null ? true : $global.secondary_crusher_table1_line2_022_feeder_status_running}}", 
+              "secondary_crusher_table1_line2_022_feeder_status_running": "{{$global.secondary_crusher_table1_line2_022_feeder_status_running  == null ? true : $global.secondary_crusher_table1_line2_022_feeder_status_running}}",
               "secondary_crusher_table1_line2_022_feeder_status_plugged": "{{$global.secondary_crusher_table1_line2_022_feeder_status_plugged  == null ? true : $global.secondary_crusher_table1_line2_022_feeder_status_plugged}}",
               "secondary_crusher_table1_line2_022_pans": "{{$global.secondary_crusher_table1_line2_022_pans  == null ? true : $global.secondary_crusher_table1_line2_022_pans}}",
-              "secondary_crusher_table1_line2_022_bolts": "{{$global.secondary_crusher_table1_line2_022_bolts  == null ? true : $global.secondary_crusher_table1_line2_022_bolts}}", 
+              "secondary_crusher_table1_line2_022_bolts": "{{$global.secondary_crusher_table1_line2_022_bolts  == null ? true : $global.secondary_crusher_table1_line2_022_bolts}}",
               "secondary_crusher_table1_line2_022_skirts": "{{$global.secondary_crusher_table1_line2_022_skirts  == null ? true : $global.secondary_crusher_table1_line2_022_skirts}}",
               "secondary_crusher_table2_line1_001_chutes": "{{$global.secondary_crusher_table2_line1_001_chutes  == null ? true : $global.secondary_crusher_table2_line1_001_chutes}}",
               "secondary_crusher_table2_line1_001_rock_breakers": "{{$global.secondary_crusher_table2_line1_001_rock_breakers  == null ? true : $global.secondary_crusher_table2_line1_001_rock_breakers}}",
-              "secondary_crusher_table2_line1_001_pull_chords": "{{$global.secondary_crusher_table2_line1_001_pull_chords  == null ? true : $global.secondary_crusher_table2_line1_001_pull_chords}}", 
+              "secondary_crusher_table2_line1_001_pull_chords": "{{$global.secondary_crusher_table2_line1_001_pull_chords  == null ? true : $global.secondary_crusher_table2_line1_001_pull_chords}}",
               "secondary_crusher_table2_line1_001_guards": "{{$global.secondary_crusher_table2_line1_001_guards  == null ? true : $global.secondary_crusher_table2_line1_001_guards}}",
               "secondary_crusher_table2_line1_001_gear_box_oil_level": "{{$global.secondary_crusher_table2_line1_001_gear_box_oil_level  == null ? true : $global.secondary_crusher_table2_line1_001_gear_box_oil_level}}",
-              "secondary_crusher_table2_line1_002_chutes": "{{$global.secondary_crusher_table2_line1_002_chutes  == null ? true : $global.secondary_crusher_table2_line1_002_chutes}}", 
+              "secondary_crusher_table2_line1_002_chutes": "{{$global.secondary_crusher_table2_line1_002_chutes  == null ? true : $global.secondary_crusher_table2_line1_002_chutes}}",
               "secondary_crusher_table2_line1_002_rock_breakers": "{{$global.secondary_crusher_table2_line1_002_rock_breakers  == null ? true : $global.secondary_crusher_table2_line1_002_rock_breakers}}",
               "secondary_crusher_table2_line1_002_pull_chords": "{{$global.secondary_crusher_table2_line1_002_pull_chords  == null ? true : $global.secondary_crusher_table2_line1_002_pull_chords}}",
-              "secondary_crusher_table2_line1_002_guards": "{{$global.secondary_crusher_table2_line1_002_guards  == null ? true : $global.secondary_crusher_table2_line1_002_guards}}", 
+              "secondary_crusher_table2_line1_002_guards": "{{$global.secondary_crusher_table2_line1_002_guards  == null ? true : $global.secondary_crusher_table2_line1_002_guards}}",
               "secondary_crusher_table2_line1_002_gear_box_oil_level": "{{$global.secondary_crusher_table2_line1_002_gear_box_oil_level  == null ? true : $global.secondary_crusher_table2_line1_002_gear_box_oil_level}}",
               "secondary_crusher_table2_line2_021_chutes": "{{$global.secondary_crusher_table2_line2_021_chutes  == null ? true : $global.secondary_crusher_table2_line2_021_chutes}}",
               "secondary_crusher_table2_line2_021_rock_breakers": "{{$global.secondary_crusher_table2_line2_021_rock_breakers  == null ? true : $global.secondary_crusher_table2_line2_021_rock_breakers}}",
-              "secondary_crusher_table2_line2_021_pull_chords": "{{$global.secondary_crusher_table2_line2_021_pull_chords  == null ? true : $global.secondary_crusher_table2_line2_021_pull_chords}}", 
+              "secondary_crusher_table2_line2_021_pull_chords": "{{$global.secondary_crusher_table2_line2_021_pull_chords  == null ? true : $global.secondary_crusher_table2_line2_021_pull_chords}}",
               "secondary_crusher_table2_line2_021_guards": "{{$global.secondary_crusher_table2_line2_021_guards  == null ? true : $global.secondary_crusher_table2_line2_021_guards}}",
               "secondary_crusher_table2_line2_021_gear_box_oil_level": "{{$global.secondary_crusher_table2_line2_021_gear_box_oil_level  == null ? true : $global.secondary_crusher_table2_line2_021_gear_box_oil_level}}",
-              "secondary_crusher_table2_line2_022_chutes": "{{$global.secondary_crusher_table2_line2_022_chutes  == null ? true : $global.secondary_crusher_table2_line2_022_chutes}}", 
+              "secondary_crusher_table2_line2_022_chutes": "{{$global.secondary_crusher_table2_line2_022_chutes  == null ? true : $global.secondary_crusher_table2_line2_022_chutes}}",
               "secondary_crusher_table2_line2_022_rock_breakers": "{{$global.secondary_crusher_table2_line2_022_rock_breakers  == null ? true : $global.secondary_crusher_table2_line2_022_rock_breakers}}",
               "secondary_crusher_table2_line2_022_pull_chords": "{{$global.secondary_crusher_table2_line2_022_pull_chords  == null ? true : $global.secondary_crusher_table2_line2_022_pull_chords}}",
-              "secondary_crusher_table2_line2_022_guards": "{{$global.secondary_crusher_table2_line2_022_guards  == null ? true : $global.secondary_crusher_table2_line2_022_guards}}", 
+              "secondary_crusher_table2_line2_022_guards": "{{$global.secondary_crusher_table2_line2_022_guards  == null ? true : $global.secondary_crusher_table2_line2_022_guards}}",
               "secondary_crusher_table2_line2_022_gear_box_oil_level": "{{$global.secondary_crusher_table2_line2_022_gear_box_oil_level  == null ? true : $global.secondary_crusher_table2_line2_022_gear_box_oil_level}}"
             },
             "success": {
@@ -653,51 +688,59 @@
             }
           }
         },
+        "handleSwitchValues": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form13_page1",
+            "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}",
+            "currentFieldValue": "{{$get[$jason.fieldName]}}"
+          }
+        },
         "handleSave": {
           "type": "$global.set",
           "options": {
             "section_id": "form15_page2",
             "secondary_crusher_table1_line1_001_feeder_status_running": "{{$global.secondary_crusher_table1_line1_001_feeder_status_running == null ? true : $global.secondary_crusher_table1_line1_001_feeder_status_running}}",
             "secondary_crusher_table1_line1_001_feeder_status_plugged": "{{$global.secondary_crusher_table1_line1_001_feeder_status_plugged == null ? true : $global.secondary_crusher_table1_line1_001_feeder_status_plugged}}",
-            "secondary_crusher_table1_line1_001_pans": "{{$global.secondary_crusher_table1_line1_001_pans == null ? true : $global.secondary_crusher_table1_line1_001_pans}}", 
+            "secondary_crusher_table1_line1_001_pans": "{{$global.secondary_crusher_table1_line1_001_pans == null ? true : $global.secondary_crusher_table1_line1_001_pans}}",
             "secondary_crusher_table1_line1_001_bolts": "{{$global.secondary_crusher_table1_line1_001_bolts == null ? true : $global.secondary_crusher_table1_line1_001_bolts}}",
             "secondary_crusher_table1_line1_001_skirts": "{{$global.secondary_crusher_table1_line1_001_skirts == null ? true : $global.secondary_crusher_table1_line1_001_skirts}}",
-            "secondary_crusher_table1_line1_002_feeder_status_running": "{{$global.secondary_crusher_table1_line1_002_feeder_status_running == null ? true : $global.secondary_crusher_table1_line1_002_feeder_status_running}}", 
+            "secondary_crusher_table1_line1_002_feeder_status_running": "{{$global.secondary_crusher_table1_line1_002_feeder_status_running == null ? true : $global.secondary_crusher_table1_line1_002_feeder_status_running}}",
             "secondary_crusher_table1_line1_002_feeder_status_plugged": "{{$global.secondary_crusher_table1_line1_002_feeder_status_plugged == null ? true : $global.secondary_crusher_table1_line1_002_feeder_status_plugged}}",
             "secondary_crusher_table1_line1_002_pans": "{{$global.secondary_crusher_table1_line1_002_pans == null ? true : $global.secondary_crusher_table1_line1_002_pans}}",
-            "secondary_crusher_table1_line1_002_bolts": "{{$global.secondary_crusher_table1_line1_002_bolts == null ? true : $global.secondary_crusher_table1_line1_002_bolts}}", 
+            "secondary_crusher_table1_line1_002_bolts": "{{$global.secondary_crusher_table1_line1_002_bolts == null ? true : $global.secondary_crusher_table1_line1_002_bolts}}",
             "secondary_crusher_table1_line1_002_skirts": "{{$global.secondary_crusher_table1_line1_002_skirts == null ? true : $global.secondary_crusher_table1_line1_002_skirts}}",
             "secondary_crusher_table1_line2_021_feeder_status_running": "{{$global.secondary_crusher_table1_line2_021_feeder_status_running  == null ? true : $global.secondary_crusher_table1_line2_021_feeder_status_running}}",
             "secondary_crusher_table1_line2_021_feeder_status_plugged": "{{$global.secondary_crusher_table1_line2_021_feeder_status_plugged  == null ? true : $global.secondary_crusher_table1_line2_021_feeder_status_plugged}}",
-            "secondary_crusher_table1_line2_021_pans": "{{$global.secondary_crusher_table1_line2_021_pans  == null ? true : $global.secondary_crusher_table1_line2_021_pans}}", 
+            "secondary_crusher_table1_line2_021_pans": "{{$global.secondary_crusher_table1_line2_021_pans  == null ? true : $global.secondary_crusher_table1_line2_021_pans}}",
             "secondary_crusher_table1_line2_021_bolts": "{{$global.secondary_crusher_table1_line2_021_bolts  == null ? true : $global.secondary_crusher_table1_line2_021_bolts}}",
             "secondary_crusher_table1_line2_021_skirts": "{{$global.secondary_crusher_table1_line2_021_skirts  == null ? true : $global.secondary_crusher_table1_line2_021_skirts}}",
-            "secondary_crusher_table1_line2_022_feeder_status_running": "{{$global.secondary_crusher_table1_line2_022_feeder_status_running  == null ? true : $global.secondary_crusher_table1_line2_022_feeder_status_running}}", 
+            "secondary_crusher_table1_line2_022_feeder_status_running": "{{$global.secondary_crusher_table1_line2_022_feeder_status_running  == null ? true : $global.secondary_crusher_table1_line2_022_feeder_status_running}}",
             "secondary_crusher_table1_line2_022_feeder_status_plugged": "{{$global.secondary_crusher_table1_line2_022_feeder_status_plugged  == null ? true : $global.secondary_crusher_table1_line2_022_feeder_status_plugged}}",
             "secondary_crusher_table1_line2_022_pans": "{{$global.secondary_crusher_table1_line2_022_pans  == null ? true : $global.secondary_crusher_table1_line2_022_pans}}",
-            "secondary_crusher_table1_line2_022_bolts": "{{$global.secondary_crusher_table1_line2_022_bolts  == null ? true : $global.secondary_crusher_table1_line2_022_bolts}}", 
+            "secondary_crusher_table1_line2_022_bolts": "{{$global.secondary_crusher_table1_line2_022_bolts  == null ? true : $global.secondary_crusher_table1_line2_022_bolts}}",
             "secondary_crusher_table1_line2_022_skirts": "{{$global.secondary_crusher_table1_line2_022_skirts  == null ? true : $global.secondary_crusher_table1_line2_022_skirts}}",
             "secondary_crusher_table2_line1_001_chutes": "{{$global.secondary_crusher_table2_line1_001_chutes  == null ? true : $global.secondary_crusher_table2_line1_001_chutes}}",
             "secondary_crusher_table2_line1_001_rock_breakers": "{{$global.secondary_crusher_table2_line1_001_rock_breakers  == null ? true : $global.secondary_crusher_table2_line1_001_rock_breakers}}",
-            "secondary_crusher_table2_line1_001_pull_chords": "{{$global.secondary_crusher_table2_line1_001_pull_chords  == null ? true : $global.secondary_crusher_table2_line1_001_pull_chords}}", 
+            "secondary_crusher_table2_line1_001_pull_chords": "{{$global.secondary_crusher_table2_line1_001_pull_chords  == null ? true : $global.secondary_crusher_table2_line1_001_pull_chords}}",
             "secondary_crusher_table2_line1_001_guards": "{{$global.secondary_crusher_table2_line1_001_guards  == null ? true : $global.secondary_crusher_table2_line1_001_guards}}",
             "secondary_crusher_table2_line1_001_gear_box_oil_level": "{{$global.secondary_crusher_table2_line1_001_gear_box_oil_level  == null ? true : $global.secondary_crusher_table2_line1_001_gear_box_oil_level}}",
-            "secondary_crusher_table2_line1_002_chutes": "{{$global.secondary_crusher_table2_line1_002_chutes  == null ? true : $global.secondary_crusher_table2_line1_002_chutes}}", 
+            "secondary_crusher_table2_line1_002_chutes": "{{$global.secondary_crusher_table2_line1_002_chutes  == null ? true : $global.secondary_crusher_table2_line1_002_chutes}}",
             "secondary_crusher_table2_line1_002_rock_breakers": "{{$global.secondary_crusher_table2_line1_002_rock_breakers  == null ? true : $global.secondary_crusher_table2_line1_002_rock_breakers}}",
             "secondary_crusher_table2_line1_002_pull_chords": "{{$global.secondary_crusher_table2_line1_002_pull_chords  == null ? true : $global.secondary_crusher_table2_line1_002_pull_chords}}",
-            "secondary_crusher_table2_line1_002_guards": "{{$global.secondary_crusher_table2_line1_002_guards  == null ? true : $global.secondary_crusher_table2_line1_002_guards}}", 
+            "secondary_crusher_table2_line1_002_guards": "{{$global.secondary_crusher_table2_line1_002_guards  == null ? true : $global.secondary_crusher_table2_line1_002_guards}}",
             "secondary_crusher_table2_line1_002_gear_box_oil_level": "{{$global.secondary_crusher_table2_line1_002_gear_box_oil_level  == null ? true : $global.secondary_crusher_table2_line1_002_gear_box_oil_level}}",
             "secondary_crusher_table2_line2_021_chutes": "{{$global.secondary_crusher_table2_line2_021_chutes  == null ? true : $global.secondary_crusher_table2_line2_021_chutes}}",
             "secondary_crusher_table2_line2_021_rock_breakers": "{{$global.secondary_crusher_table2_line2_021_rock_breakers  == null ? true : $global.secondary_crusher_table2_line2_021_rock_breakers}}",
-            "secondary_crusher_table2_line2_021_pull_chords": "{{$global.secondary_crusher_table2_line2_021_pull_chords  == null ? true : $global.secondary_crusher_table2_line2_021_pull_chords}}", 
+            "secondary_crusher_table2_line2_021_pull_chords": "{{$global.secondary_crusher_table2_line2_021_pull_chords  == null ? true : $global.secondary_crusher_table2_line2_021_pull_chords}}",
             "secondary_crusher_table2_line2_021_guards": "{{$global.secondary_crusher_table2_line2_021_guards  == null ? true : $global.secondary_crusher_table2_line2_021_guards}}",
             "secondary_crusher_table2_line2_021_gear_box_oil_level": "{{$global.secondary_crusher_table2_line2_021_gear_box_oil_level  == null ? true : $global.secondary_crusher_table2_line2_021_gear_box_oil_level}}",
-            "secondary_crusher_table2_line2_022_chutes": "{{$global.secondary_crusher_table2_line2_022_chutes  == null ? true : $global.secondary_crusher_table2_line2_022_chutes}}", 
+            "secondary_crusher_table2_line2_022_chutes": "{{$global.secondary_crusher_table2_line2_022_chutes  == null ? true : $global.secondary_crusher_table2_line2_022_chutes}}",
             "secondary_crusher_table2_line2_022_rock_breakers": "{{$global.secondary_crusher_table2_line2_022_rock_breakers  == null ? true : $global.secondary_crusher_table2_line2_022_rock_breakers}}",
             "secondary_crusher_table2_line2_022_pull_chords": "{{$global.secondary_crusher_table2_line2_022_pull_chords  == null ? true : $global.secondary_crusher_table2_line2_022_pull_chords}}",
-            "secondary_crusher_table2_line2_022_guards": "{{$global.secondary_crusher_table2_line2_022_guards  == null ? true : $global.secondary_crusher_table2_line2_022_guards}}", 
+            "secondary_crusher_table2_line2_022_guards": "{{$global.secondary_crusher_table2_line2_022_guards  == null ? true : $global.secondary_crusher_table2_line2_022_guards}}",
             "secondary_crusher_table2_line2_022_gear_box_oil_level": "{{$global.secondary_crusher_table2_line2_022_gear_box_oil_level  == null ? true : $global.secondary_crusher_table2_line2_022_gear_box_oil_level}}",
-            "form15_screen2_comments":"{{$get.form15_screen2_comments || ''}}"
+            "form15_screen2_comments": "{{$get.form15_screen2_comments || ''}}"
           },
           "success": {
             "type": "$util.toast",
@@ -724,7 +767,7 @@
             }
           },
           "sections": [
-            
+
             {
               "type": "horizontal",
               "class": "no_padding",
@@ -792,8 +835,8 @@
                         "style": {
                           "height": "5%",
                           "width": "51%",
-                          "border":"#ffffff",
-                          "border_width":"1"
+                          "border": "#ffffff",
+                          "border_width": "1"
 
                         },
                         "components": [{
@@ -858,388 +901,366 @@
               }]
             },
             {
+              "type": "vertical",
+              "items": [{
                 "type": "vertical",
-                "items": [
+                "class": "no_padding",
+                "components": [{
+                    "type": "label",
+                    "text": "Line 1",
+                    "class": "content_style_even center_align line_style"
+                  },
                   {
                     "type": "vertical",
-                    "class": "no_padding",
-                    "components": [
-                        {
-                            "type": "label",
-                            "text": "Line 1",
-                            "class":"content_style_even center_align line_style"
+                    "components": {
+                      "{{#each Table1_Rows}}": {
+                        "{{#let}}": [{
+                            "row_index": "{{$index}}"
                           },
-                        {
-                        "type": "vertical",
-                        "components": {
-                          "{{#each Table1_Rows}}": {
-                            "{{#let}}": [
-                              {
-                                "row_index": "{{$index}}"
+                          {
+                            "type": "horizontal",
+                            "class": "center_align",
+                            "style": {
+                              "height": "6%"
+                            },
+                            "components": [{
+                                "type": "horizontal",
+                                "class": "table_body_name_styles",
+                                "style": {
+                                  "height": "6%",
+                                  "width": "15%"
+                                },
+                                "components": [{
+                                  "type": "label",
+                                  "text": "{{this.row_name}}",
+                                  "class": "{{this.row_styles}} table_row_height",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }]
                               },
                               {
                                 "type": "horizontal",
-                                "class": "center_align",
                                 "style": {
-                                  "height": "6%"
+                                  "width": "85%"
                                 },
-                                "components": [
-                                  {
+                                "components": {
+                                  "{{#each row_values}}": {
                                     "type": "horizontal",
-                                    "class": "table_body_name_styles",
-                                    "style": {
-                                      "height": "6%",
-                                      "width": "15%"
-                                    },
-                                    "components": [
-                                      {
-                                        "type": "label",
-                                        "text": "{{this.row_name}}",
-                                        "class": "{{this.row_styles}} table_row_height",
+                                    "components": [{
+                                      "type": "vertical",
+                                      "components": [{
+                                        "type": "switch",
+                                        "name": "{{name}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
-                                          "height": "6%"
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "horizontal",
-                                    "style": {
-                                      "width": "85%"
-                                    },
-                                    "components": {
-                                      "{{#each row_values}}": {
-                                        "type": "horizontal",
-                                        "components": [
-                                          {
-                                            "type": "vertical",
-                                            "components": [
-                                              {
-                                                "type": "switch",
-                                                "name": "{{name}}",
-                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                "class": "{{styles}} switch_legend_styles_table",
-                                                "style": {
-                                                  "width": "17%",
-                                                  "padding_bottom": "1%"
-                                                }
-                                              }
-                                            ]
+                                          "width": "17%",
+                                          "padding_bottom": "1%"
+                                        },
+                                        "action": {
+                                          "trigger": "{{#? trigger}}",
+                                          "options": {
+                                            "fieldName": "{{name}}"
                                           }
-                                        ]
-                                      }
-                                    }
+                                        }
+                                      }]
+                                    }]
                                   }
-                                 
-                                ]
+                                }
                               }
+
                             ]
                           }
-                        }
+                        ]
                       }
-                      
-                    ]
+                    }
                   }
+
                 ]
-              },
-              {
+              }]
+            },
+            {
+              "type": "vertical",
+              "items": [{
                 "type": "vertical",
-                "items": [
+                "class": "no_padding",
+                "components": [{
+                    "type": "label",
+                    "text": "Line 2",
+                    "class": "content_style_odd center_align line_style"
+                  },
                   {
                     "type": "vertical",
-                    "class": "no_padding",
-                    "components": [
-                        {
-                            "type": "label",
-                            "text": "Line 2",
-                            "class":"content_style_odd center_align line_style"
+                    "components": {
+                      "{{#each Table2_Rows}}": {
+                        "{{#let}}": [{
+                            "row_index": "{{$index}}"
                           },
-                        {
-                        "type": "vertical",
-                        "components": {
-                          "{{#each Table2_Rows}}": {
-                            "{{#let}}": [
-                              {
-                                "row_index": "{{$index}}"
+                          {
+                            "type": "horizontal",
+                            "class": "center_align",
+                            "style": {
+                              "height": "6%"
+                            },
+                            "components": [{
+                                "type": "horizontal",
+                                "class": "table_body_name_styles",
+                                "style": {
+                                  "height": "6%",
+                                  "width": "15%"
+                                },
+                                "components": [{
+                                  "type": "label",
+                                  "text": "{{this.row_name}}",
+                                  "class": "{{this.row_styles}} table_row_height",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }]
                               },
                               {
                                 "type": "horizontal",
-                                "class": "center_align",
                                 "style": {
-                                  "height": "6%"
+                                  "width": "85%"
                                 },
-                                "components": [
-                                  {
+                                "components": {
+                                  "{{#each row_values}}": {
                                     "type": "horizontal",
-                                    "class": "table_body_name_styles",
-                                    "style": {
-                                      "height": "6%",
-                                      "width": "15%"
-                                    },
-                                    "components": [
-                                      {
-                                        "type": "label",
-                                        "text": "{{this.row_name}}",
-                                        "class": "{{this.row_styles}} table_row_height",
+                                    "components": [{
+                                      "type": "vertical",
+                                      "components": [{
+                                        "type": "switch",
+                                        "name": "{{name}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
-                                          "height": "6%"
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "horizontal",
-                                    "style": {
-                                      "width": "85%"
-                                    },
-                                    "components": {
-                                      "{{#each row_values}}": {
-                                        "type": "horizontal",
-                                        "components": [
-                                          {
-                                            "type": "vertical",
-                                            "components": [
-                                              {
-                                                "type": "switch",
-                                                "name": "{{name}}",
-                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                "class": "{{styles}} switch_legend_styles_table",
-                                                "style": {
-                                                  "width": "17%",
-                                                  "padding_bottom": "1%"
-                                                }
-                                              }
-                                            ]
+                                          "width": "17%",
+                                          "padding_bottom": "1%"
+                                        },
+                                        "action": {
+                                          "trigger": "{{#? trigger}}",
+                                          "options": {
+                                            "fieldName": "{{name}}"
                                           }
-                                        ]
-                                      }
-                                    }
+                                        }
+                                      }]
+                                    }]
                                   }
-                                 
-                                ]
+                                }
                               }
+
                             ]
                           }
-                        }
+                        ]
                       }
-                      
-                    ]
+                    }
                   }
+
                 ]
-              },
-              {
+              }]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [{
                 "type": "horizontal",
                 "class": "no_padding",
-                "items": [{
+                "components": [{
                   "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [{
-                    "type": "horizontal",
-                    "class": "no_padding table_row",
-                    "components": {
-                      "{{#each Table2_Headers}}": {
-                        "type": "vertical",
-                        "components": [{
-                          "type": "label",
-                          "text": "{{value}}",
-                          "class": "{{styles}} center_align"
-                        }]
-                      }
-                    },
-                    "style": {
-                      "padding_top": "1%"
+                  "class": "no_padding table_row",
+                  "components": {
+                    "{{#each Table2_Headers}}": {
+                      "type": "vertical",
+                      "components": [{
+                        "type": "label",
+                        "text": "{{value}}",
+                        "class": "{{styles}} center_align"
+                      }]
                     }
-                  }]
+                  },
+                  "style": {
+                    "padding_top": "1%"
+                  }
                 }]
-              },
-              {
+              }]
+            },
+            {
+              "type": "vertical",
+              "items": [{
                 "type": "vertical",
-                "items": [
+                "class": "no_padding",
+                "components": [{
+                    "type": "label",
+                    "text": "Line 1",
+                    "class": "content_style_even center_align line_style"
+                  },
                   {
                     "type": "vertical",
-                    "class": "no_padding",
-                    "components": [
-                        {
-                            "type": "label",
-                            "text": "Line 1",
-                            "class":"content_style_even center_align line_style"
+                    "components": {
+                      "{{#each Table3_Rows}}": {
+                        "{{#let}}": [{
+                            "row_index": "{{$index}}"
                           },
-                        {
-                        "type": "vertical",
-                        "components": {
-                          "{{#each Table3_Rows}}": {
-                            "{{#let}}": [
-                              {
-                                "row_index": "{{$index}}"
+                          {
+                            "type": "horizontal",
+                            "class": "center_align",
+                            "style": {
+                              "height": "6%"
+                            },
+                            "components": [{
+                                "type": "horizontal",
+                                "class": "table_body_name_styles",
+                                "style": {
+                                  "height": "6%",
+                                  "width": "15%"
+                                },
+                                "components": [{
+                                  "type": "label",
+                                  "text": "{{this.row_name}}",
+                                  "class": "{{this.row_styles}} table_row_height",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }]
                               },
                               {
                                 "type": "horizontal",
-                                "class": "center_align",
                                 "style": {
-                                  "height": "6%"
+                                  "width": "85%"
                                 },
-                                "components": [
-                                  {
+                                "components": {
+                                  "{{#each row_values}}": {
                                     "type": "horizontal",
-                                    "class": "table_body_name_styles",
-                                    "style": {
-                                      "height": "6%",
-                                      "width": "15%"
-                                    },
-                                    "components": [
-                                      {
-                                        "type": "label",
-                                        "text": "{{this.row_name}}",
-                                        "class": "{{this.row_styles}} table_row_height",
+                                    "components": [{
+                                      "type": "vertical",
+                                      "components": [{
+                                        "type": "switch",
+                                        "name": "{{name}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
-                                          "height": "6%"
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "horizontal",
-                                    "style": {
-                                      "width": "85%"
-                                    },
-                                    "components": {
-                                      "{{#each row_values}}": {
-                                        "type": "horizontal",
-                                        "components": [
-                                          {
-                                            "type": "vertical",
-                                            "components": [
-                                              {
-                                                "type": "switch",
-                                                "name": "{{name}}",
-                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                "class": "{{styles}} switch_legend_styles_table",
-                                                "style": {
-                                                  "width": "17%",
-                                                  "padding_bottom": "1%"
-                                                }
-                                              }
-                                            ]
+                                          "width": "17%",
+                                          "padding_bottom": "1%"
+                                        },
+                                        "action": {
+                                          "trigger": "{{#? trigger}}",
+                                          "options": {
+                                            "fieldName": "{{name}}"
                                           }
-                                        ]
-                                      }
-                                    }
+                                        }
+                                      }]
+                                    }]
                                   }
-                                 
-                                ]
+                                }
                               }
+
                             ]
                           }
-                        }
+                        ]
                       }
-                      
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "vertical",
-                "items": [
-                  {
-                    "type": "vertical",
-                    "class": "no_padding",
-                    "components": [
-                        {
-                            "type": "label",
-                            "text": "Line 2",
-                            "class":"content_style_odd center_align line_style"
-                          },
-                        {
-                        "type": "vertical",
-                        "components": {
-                          "{{#each Table4_Rows}}": {
-                            "{{#let}}": [
-                              {
-                                "row_index": "{{$index}}"
-                              },
-                              {
-                                "type": "horizontal",
-                                "class": "center_align",
-                                "style": {
-                                  "height": "6%"
-                                },
-                                "components": [
-                                  {
-                                    "type": "horizontal",
-                                    "class": "table_body_name_styles",
-                                    "style": {
-                                      "height": "6%",
-                                      "width": "15%"
-                                    },
-                                    "components": [
-                                      {
-                                        "type": "label",
-                                        "text": "{{this.row_name}}",
-                                        "class": "{{this.row_styles}} table_row_height",
-                                        "style": {
-                                          "height": "6%"
-                                        }
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "type": "horizontal",
-                                    "style": {
-                                      "width": "85%"
-                                    },
-                                    "components": {
-                                      "{{#each row_values}}": {
-                                        "type": "horizontal",
-                                        "components": [
-                                          {
-                                            "type": "vertical",
-                                            "components": [
-                                              {
-                                                "type": "switch",
-                                                "name": "{{name}}",
-                                                "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                "class": "{{styles}} switch_legend_styles_table",
-                                                "style": {
-                                                  "width": "17%",
-                                                  "padding_bottom": "1%"
-                                                }
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  }
-                                 
-                                ]
-                              }
-                            ]
-                          }
-                        }
-                      }
-                      
-                    ]
-                  }
-                ]
-              },
-              {
-                "type":"horizontal",
-                "items":[
-                  {
-                    "type": "textarea",
-                    "value": "{{$global.form15_screen2_comments || ''}}",
-                    "name": "form15_screen2_comments",
-                    "placeholder": "Comments",
-                    "contentDescription": "Comments",
-                    "style": {
-                      "width": "100%",
-                      "height": "15%",
-                      "size": "15",
-                      "border": "#000000"
                     }
                   }
+
                 ]
-              } 
+              }]
+            },
+            {
+              "type": "vertical",
+              "items": [{
+                "type": "vertical",
+                "class": "no_padding",
+                "components": [{
+                    "type": "label",
+                    "text": "Line 2",
+                    "class": "content_style_odd center_align line_style"
+                  },
+                  {
+                    "type": "vertical",
+                    "components": {
+                      "{{#each Table4_Rows}}": {
+                        "{{#let}}": [{
+                            "row_index": "{{$index}}"
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "center_align",
+                            "style": {
+                              "height": "6%"
+                            },
+                            "components": [{
+                                "type": "horizontal",
+                                "class": "table_body_name_styles",
+                                "style": {
+                                  "height": "6%",
+                                  "width": "15%"
+                                },
+                                "components": [{
+                                  "type": "label",
+                                  "text": "{{this.row_name}}",
+                                  "class": "{{this.row_styles}} table_row_height",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }]
+                              },
+                              {
+                                "type": "horizontal",
+                                "style": {
+                                  "width": "85%"
+                                },
+                                "components": {
+                                  "{{#each row_values}}": {
+                                    "type": "horizontal",
+                                    "components": [{
+                                      "type": "vertical",
+                                      "components": [{
+                                        "type": "switch",
+                                        "name": "{{name}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "class": "{{styles}} switch_legend_styles_table",
+                                        "style": {
+                                          "width": "17%",
+                                          "padding_bottom": "1%"
+                                        },
+                                        "action": {
+                                          "trigger": "{{#? trigger}}",
+                                          "options": {
+                                            "fieldName": "{{name}}"
+                                          }
+                                        }
+                                      }]
+                                    }]
+                                  }
+                                }
+                              }
+
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+
+                ]
+              }]
+            },
+            {
+              "type": "horizontal",
+              "items": [{
+                "type": "textarea",
+                "value": "{{$global.form15_screen2_comments || ''}}",
+                "name": "form15_screen2_comments",
+                "placeholder": "Comments",
+                "contentDescription": "Comments",
+                "style": {
+                  "width": "100%",
+                  "height": "15%",
+                  "size": "15",
+                  "border": "#000000"
+                }
+              }]
+            }
 
 
 
@@ -1277,7 +1298,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                    "url": "https://pvybhav.github.io/DGX_Form/SecondaryCrusher/screen_1.json"
+                  "url": "https://pvybhav.github.io/DGX_Form/SecondaryCrusher/screen_1.json"
                 }
               }
             },
@@ -1317,7 +1338,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                    "url": "https://pvybhav.github.io/DGX_Form/SecondaryCrusher/screen_3.json"
+                  "url": "https://pvybhav.github.io/DGX_Form/SecondaryCrusher/screen_3.json"
                 }
               }
             },
@@ -1337,7 +1358,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                    "url": "https://pvybhav.github.io/DGX_Form/SecondaryCrusher/screen_4.json"
+                  "url": "https://pvybhav.github.io/DGX_Form/SecondaryCrusher/screen_4.json"
                 }
               }
             },
@@ -1353,7 +1374,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                    "url": "https://pvybhav.github.io/DGX_Form/SecondaryCrusher/screen_3.json"
+                  "url": "https://pvybhav.github.io/DGX_Form/SecondaryCrusher/screen_3.json"
                 }
               }
             },
