@@ -585,17 +585,12 @@
               ]
             },
             "success": {
-              "type": "$global.set",
-              "options": {
-              },
+              "type": "$render",
               "success": {
-                "type": "$render",
-                "success": {
-                  "type": "$util.toast",
-                  "options": {
-                    "text": "Page loaded successfully",
-                    "type": "warning"
-                  }
+                "type": "$util.toast",
+                "options": {
+                  "text": "Page loaded successfully",
+                  "type": "warning"
                 }
               }
             }
