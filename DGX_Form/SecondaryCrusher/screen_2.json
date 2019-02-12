@@ -580,7 +580,7 @@
           "success": {
             "type": "$global.set",
             "options": {
-              "section_id": "form15_page1",
+              "section_id": "form15_page2",
               "secondary_crusher_table1_line1_001_feeder_status_running": "{{$global.secondary_crusher_table1_line1_001_feeder_status_running == null ? true : $global.secondary_crusher_table1_line1_001_feeder_status_running}}",
               "secondary_crusher_table1_line1_001_feeder_status_plugged": "{{$global.secondary_crusher_table1_line1_001_feeder_status_plugged == null ? true : $global.secondary_crusher_table1_line1_001_feeder_status_plugged}}",
               "secondary_crusher_table1_line1_001_pans": "{{$global.secondary_crusher_table1_line1_001_pans == null ? true : $global.secondary_crusher_table1_line1_001_pans}}", 
@@ -1229,7 +1229,7 @@
                   {
                     "type": "textarea",
                     "value": "{{$global.form15_screen2_comments || ''}}",
-                    "name": "comments",
+                    "name": "form15_screen2_comments",
                     "placeholder": "Comments",
                     "contentDescription": "Comments",
                     "style": {
