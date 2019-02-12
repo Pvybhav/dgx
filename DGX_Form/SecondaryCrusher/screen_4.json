@@ -324,27 +324,27 @@
                 "row_styles": "content_style_even column_label_style",
                 "row_values": [{
                     "type": "switch",
-                    "name": "secondary_crusher_screen2_line1_water_feed_pressure",
+                    "name": "secondary_crusher_screen2_line2_water_feed_pressure",
                     "styles": "content_style_even"
                   },
                   {
                     "type": "switch",
-                    "name": "secondary_crusher_screen2_line1_spray_nozzle",
+                    "name": "secondary_crusher_screen2_line2_spray_nozzle",
                     "styles": "content_style_even"
                   },
                   {
                     "type": "switch",
-                    "name": "secondary_crusher_screen2_line1spray_bars",
+                    "name": "secondary_crusher_screen2_line2_spray_bars",
                     "styles": "content_style_even"
                   },
                   {
                     "type": "switch",
-                    "name": "secondary_crusher_screen2_line1demisters",
+                    "name": "secondary_crusher_screen2_line2_demisters",
                     "styles": "content_style_even"
                   },
                   {
                     "type": "switch",
-                    "name": "secondary_crusher_screen2_line1dust_collector",
+                    "name": "secondary_crusher_screen2_line2_dust_collector",
                     "styles": "content_style_even"
                   }
                 ]
@@ -424,27 +424,27 @@
                 "row_styles": "content_style_even column_label_style",
                 "row_values": [{
                     "type": "switch",
-                    "name": "secondary_crusher_screen2_line1_water_leaks_present",
+                    "name": "secondary_crusher_screen2_line2_water_leaks_present",
                     "styles": "content_style_even"
                   },
                   {
                     "type": "switch",
-                    "name": "secondary_crusher_screen2_line1_autolubers_installed",
+                    "name": "secondary_crusher_screen2_line2_autolubers_installed",
                     "styles": "content_style_even"
                   },
                   {
                     "type": "switch",
-                    "name": "secondary_crusher_screen2_line1_inspect_for_vibrations",
+                    "name": "secondary_crusher_screen2_line2_inspect_for_vibrations",
                     "styles": "content_style_even"
                   },
                   {
                     "type": "switch",
-                    "name": "secondary_crusher_screen2_line1_inspect_ducts",
+                    "name": "secondary_crusher_screen2_line2_inspect_ducts",
                     "styles": "content_style_even"
                   },
                   {
                     "type": "switch",
-                    "name": "secondary_crusher_screen2_line1_all_doors_inspection",
+                    "name": "secondary_crusher_screen2_line2_all_doors_inspection",
                     "styles": "content_style_even"
                   }
                 ]
@@ -463,10 +463,28 @@
             "success": {
               "type": "$global.set",
               "options": {
-                "section_id": "form15_page1",
-                "authorized_by_supervisor_switch1": "{{$global.authorized_by_supervisor_switch1 == null ? true : $global.authorized_by_supervisor_switch1}}",
-                "authorized_by_supervisor_switch2": "{{$global.authorized_by_supervisor_switch2 == null ? true : $global.authorized_by_supervisor_switch2}}",
-                "authorized_by_supervisor_switch3": "{{$global.authorized_by_supervisor_switch3 == null ? true : $global.authorized_by_supervisor_switch3}}"
+                "section_id": "form15_page4",
+              "secondary_crusher_screen2_line1_water_feed_pressure": "{{$global.secondary_crusher_screen2_line1_water_feed_pressure == null ? true : $global.secondary_crusher_screen2_line1_water_feed_pressure}}",
+              "secondary_crusher_screen2_line1_spray_nozzle": "{{$global.secondary_crusher_screen2_line1_spray_nozzle == null ? true : $global.secondary_crusher_screen2_line1_spray_nozzle}}",
+              "secondary_crusher_screen2_line1_spray_bars": "{{$global.secondary_crusher_screen2_line1_spray_bars == null ? true : $global.secondary_crusher_screen2_line1_spray_bars}}", 
+              "secondary_crusher_screen2_line1_demisters": "{{$global.secondary_crusher_screen2_line1_demisters == null ? true : $global.secondary_crusher_screen2_line1_demisters}}",
+              "secondary_crusher_screen2_line1_dust_collector": "{{$global.secondary_crusher_screen2_line1_dust_collector == null ? true : $global.secondary_crusher_screen2_line1_dust_collector}}",
+              "secondary_crusher_screen2_line2_water_feed_pressure": "{{$global.secondary_crusher_screen2_line2_water_feed_pressure == null ? true : $global.secondary_crusher_screen2_line2_water_feed_pressure}}", 
+              "secondary_crusher_screen2_line2_spray_nozzle": "{{$global.secondary_crusher_screen2_line2_spray_nozzle == null ? true : $global.secondary_crusher_screen2_line2_spray_nozzle}}",
+              "secondary_crusher_screen2_line2_spray_bars": "{{$global.secondary_crusher_screen2_line2_spray_bars == null ? true : $global.secondary_crusher_screen2_line2_spray_bars}}",
+              "secondary_crusher_screen2_line2_demisters": "{{$global.secondary_crusher_screen2_line2_demisters == null ? true : $global.secondary_crusher_screen2_line2_demisters}}", 
+              "secondary_crusher_screen2_line2_dust_collector": "{{$global.secondary_crusher_screen2_line2_dust_collector == null ? true : $global.secondary_crusher_screen2_line2_dust_collector}}",
+              "secondary_crusher_screen2_line1_water_leaks_present": "{{$global.secondary_crusher_screen2_line1_water_leaks_present  == null ? true : $global.secondary_crusher_screen2_line1_water_leaks_present}}",
+              "secondary_crusher_screen2_line1_autolubers_installed": "{{$global.secondary_crusher_screen2_line1_autolubers_installed  == null ? true : $global.secondary_crusher_screen2_line1_autolubers_installed}}",
+              "secondary_crusher_screen2_line1_inspect_for_vibrations": "{{$global.secondary_crusher_screen2_line1_inspect_for_vibrations  == null ? true : $global.secondary_crusher_screen2_line1_inspect_for_vibrations}}", 
+              "secondary_crusher_screen2_line1_inspect_ducts": "{{$global.secondary_crusher_screen2_line1_inspect_ducts  == null ? true : $global.secondary_crusher_screen2_line1_inspect_ducts}}",
+              "secondary_crusher_screen2_line1_all_doors_inspection": "{{$global.secondary_crusher_screen2_line1_all_doors_inspection  == null ? true : $global.secondary_crusher_screen2_line1_all_doors_inspection}}",
+              "secondary_crusher_screen2_line2_water_leaks_present": "{{$global.secondary_crusher_screen2_line2_water_leaks_present  == null ? true : $global.secondary_crusher_screen2_line2_water_leaks_present}}", 
+              "secondary_crusher_screen2_line2_autolubers_installed": "{{$global.secondary_crusher_screen2_line2_autolubers_installed  == null ? true : $global.secondary_crusher_screen2_line2_autolubers_installed}}",
+              "secondary_crusher_screen2_line2_inspect_for_vibrations": "{{$global.secondary_crusher_screen2_line2_inspect_for_vibrations  == null ? true : $global.secondary_crusher_screen2_line2_inspect_for_vibrations}}",
+              "secondary_crusher_screen2_line2_inspect_ducts": "{{$global.secondary_crusher_screen2_line2_inspect_ducts  == null ? true : $global.secondary_crusher_screen2_line2_inspect_ducts}}", 
+              "secondary_crusher_screen2_line2_all_doors_inspection": "{{$global.secondary_crusher_screen2_line2_all_doors_inspection  == null ? true : $global.secondary_crusher_screen2_line2_all_doors_inspection}}"
+           
               },
               "success": {
                 "type": "$render",
@@ -503,10 +521,28 @@
           "handleSave": {
             "type": "$global.set",
             "options": {
-              "section_id": "form15_page1",
-              "authorized_by_supervisor_switch1": "{{$global.authorized_by_supervisor_switch1 == null ? true : $global.authorized_by_supervisor_switch1}}",
-              "authorized_by_supervisor_switch2": "{{$global.authorized_by_supervisor_switch2 == null ? true : $global.authorized_by_supervisor_switch2}}",
-              "authorized_by_supervisor_switch3": "{{$global.authorized_by_supervisor_switch3 == null ? true : $global.authorized_by_supervisor_switch3}}"
+              "section_id": "form15_page4",
+              "secondary_crusher_screen2_line1_water_feed_pressure": "{{$global.secondary_crusher_screen2_line1_water_feed_pressure == null ? true : $global.secondary_crusher_screen2_line1_water_feed_pressure}}",
+              "secondary_crusher_screen2_line1_spray_nozzle": "{{$global.secondary_crusher_screen2_line1_spray_nozzle == null ? true : $global.secondary_crusher_screen2_line1_spray_nozzle}}",
+              "secondary_crusher_screen2_line1_spray_bars": "{{$global.secondary_crusher_screen2_line1_spray_bars == null ? true : $global.secondary_crusher_screen2_line1_spray_bars}}", 
+              "secondary_crusher_screen2_line1_demisters": "{{$global.secondary_crusher_screen2_line1_demisters == null ? true : $global.secondary_crusher_screen2_line1_demisters}}",
+              "secondary_crusher_screen2_line1_dust_collector": "{{$global.secondary_crusher_screen2_line1_dust_collector == null ? true : $global.secondary_crusher_screen2_line1_dust_collector}}",
+              "secondary_crusher_screen2_line2_water_feed_pressure": "{{$global.secondary_crusher_screen2_line2_water_feed_pressure == null ? true : $global.secondary_crusher_screen2_line2_water_feed_pressure}}", 
+              "secondary_crusher_screen2_line2_spray_nozzle": "{{$global.secondary_crusher_screen2_line2_spray_nozzle == null ? true : $global.secondary_crusher_screen2_line2_spray_nozzle}}",
+              "secondary_crusher_screen2_line2_spray_bars": "{{$global.secondary_crusher_screen2_line2_spray_bars == null ? true : $global.secondary_crusher_screen2_line2_spray_bars}}",
+              "secondary_crusher_screen2_line2_demisters": "{{$global.secondary_crusher_screen2_line2_demisters == null ? true : $global.secondary_crusher_screen2_line2_demisters}}", 
+              "secondary_crusher_screen2_line2_dust_collector": "{{$global.secondary_crusher_screen2_line2_dust_collector == null ? true : $global.secondary_crusher_screen2_line2_dust_collector}}",
+              "secondary_crusher_screen2_line1_water_leaks_present": "{{$global.secondary_crusher_screen2_line1_water_leaks_present  == null ? true : $global.secondary_crusher_screen2_line1_water_leaks_present}}",
+              "secondary_crusher_screen2_line1_autolubers_installed": "{{$global.secondary_crusher_screen2_line1_autolubers_installed  == null ? true : $global.secondary_crusher_screen2_line1_autolubers_installed}}",
+              "secondary_crusher_screen2_line1_inspect_for_vibrations": "{{$global.secondary_crusher_screen2_line1_inspect_for_vibrations  == null ? true : $global.secondary_crusher_screen2_line1_inspect_for_vibrations}}", 
+              "secondary_crusher_screen2_line1_inspect_ducts": "{{$global.secondary_crusher_screen2_line1_inspect_ducts  == null ? true : $global.secondary_crusher_screen2_line1_inspect_ducts}}",
+              "secondary_crusher_screen2_line1_all_doors_inspection": "{{$global.secondary_crusher_screen2_line1_all_doors_inspection  == null ? true : $global.secondary_crusher_screen2_line1_all_doors_inspection}}",
+              "secondary_crusher_screen2_line2_water_leaks_present": "{{$global.secondary_crusher_screen2_line2_water_leaks_present  == null ? true : $global.secondary_crusher_screen2_line2_water_leaks_present}}", 
+              "secondary_crusher_screen2_line2_autolubers_installed": "{{$global.secondary_crusher_screen2_line2_autolubers_installed  == null ? true : $global.secondary_crusher_screen2_line2_autolubers_installed}}",
+              "secondary_crusher_screen2_line2_inspect_for_vibrations": "{{$global.secondary_crusher_screen2_line2_inspect_for_vibrations  == null ? true : $global.secondary_crusher_screen2_line2_inspect_for_vibrations}}",
+              "secondary_crusher_screen2_line2_inspect_ducts": "{{$global.secondary_crusher_screen2_line2_inspect_ducts  == null ? true : $global.secondary_crusher_screen2_line2_inspect_ducts}}", 
+              "secondary_crusher_screen2_line2_all_doors_inspection": "{{$global.secondary_crusher_screen2_line2_all_doors_inspection  == null ? true : $global.secondary_crusher_screen2_line2_all_doors_inspection}}",
+              "form15_screen4_comments": "{{$get.form15_screen4_comments || ''}}"
             },
             "success": {
               "type": "$util.toast",
@@ -858,8 +894,8 @@
                   "items":[
                     {
                       "type": "textarea",
-                      "value": "{{$global.form15_screen1_comments || ''}}",
-                      "name": "comments",
+                      "value": "{{$global.form15_screen4_comments || ''}}",
+                      "name": "form15_screen4_comments",
                       "placeholder": "Comments",
                       "contentDescription": "Comments",
                       "style": {
