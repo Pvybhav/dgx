@@ -1,8 +1,8 @@
 {
   "$jason": {
     "head": {
-      "title": "Screen-1",
-      "description": "Elution Area Checklist",
+      "title": "Process Plant TMA Inspection Water Storage Report",
+      "description": "Form-13",
       "offline": "true",
       "icon": "https://s3.amazonaws.com/enu-digital-ips/development/DG_Logo.png",
       "styles": {
@@ -115,7 +115,7 @@
         }
       },
       "data": {
-        "Page_Heading": "TMA Inspection Water Storage Report",
+        "Page_Heading": "Process Plant TMA Inspection Water Storage Report",
         "loading_image_url": "file://infinit.gif",
         "Days": [
           {
@@ -5670,6 +5670,15 @@
             }
           }
         },
+        "$pull": {
+          "type": "$reload",
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
+          }
+        },
         "handleSwitchValues": {
           "type": "$global.set",
           "options": {
@@ -6171,7 +6180,7 @@
           "type": "$global.reset",
           "options": {
             "save": "true",
-            "filename": "TMAInspectionWaterStorageReport"
+            "filename": "ProcessPlantTMAInspectionWaterStorageReport"
           },
           "success": {
             "type": "$global.reset",
