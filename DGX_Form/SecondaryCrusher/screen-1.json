@@ -3364,41 +3364,41 @@
                                   }]
                                 },
                                 {
-                                  "type": "horizontal",
-                                  "style": {
-                                    "width": "85%"
-                                  },
-                                  "components": {
-                                    "{{#each row_values}}": {
-                                      "type": "horizontal",
-                                      "components": [{
-                                        "type": "vertical",
-                                        "style":{
-                                          "height":"6%"
-                                        },
-                                        "class":"{{styles}}",
+                                    "type": "horizontal",
+                                    "style": {
+                                      "width": "85%"
+                                    },
+                                    "components": {
+                                      "{{#each row_values}}": {
+                                        "type": "horizontal",
                                         "components": [{
-                                          "type": "switch",
-                                          "name": "{{name}}",
-                                          "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                          "class": "{{styles}} switch_legend_styles_table",
-                                          "style": {
-                                            "width": "17%",
-                                            "padding_bottom": "1%",
-                                            "border":"#ffffff",
+                                          "type": "vertical",
+                                          "style":{
                                             "height":"6%"
                                           },
-                                          "action": {
-                                            "trigger": "{{#? trigger}}",
-                                            "options": {
-                                              "fieldName": "{{name}}"
+                                          "class":"{{styles}}",
+                                          "components": [{
+                                            "type": "switch",
+                                            "name": "{{name}}",
+                                            "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                            "class": "{{styles}} switch_legend_styles_table",
+                                            "style": {
+                                              "width": "17%",
+                                              "padding_bottom": "1%",
+                                              "border":"#ffffff",
+                                              "height":"6%"
+                                            },
+                                            "action": {
+                                              "trigger": "{{#? trigger}}",
+                                              "options": {
+                                                "fieldName": "{{name}}"
+                                              }
                                             }
-                                          }
+                                          }]
                                         }]
-                                      }]
+                                      }
                                     }
                                   }
-                                }
   
                               ]
                             }
@@ -3428,66 +3428,41 @@
                               "row_index": "{{$index}}"
                             },
                             {
-                              "type": "horizontal",
-                              "class": "center_align",
-                              "style": {
-                                "height": "6%"
-                              },
-                              "components": [{
-                                  "type": "horizontal",
-                                  "class": "table_body_name_styles",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "15%"
-                                  },
-                                  "components": [{
-                                    "type": "label",
-                                    "text": "{{this.row_name}}",
-                                    "class": "{{this.row_styles}} table_row_height",
-                                    "style": {
-                                      "height": "6%"
-                                    }
-                                  }]
+                                "type": "horizontal",
+                                "style": {
+                                  "width": "85%"
                                 },
-                                {
-                                  "type": "horizontal",
-                                  "style": {
-                                    "width": "85%"
-                                  },
-                                  "components": {
-                                    "{{#each row_values}}": {
-                                      "type": "horizontal",
+                                "components": {
+                                  "{{#each row_values}}": {
+                                    "type": "horizontal",
+                                    "components": [{
+                                      "type": "vertical",
+                                      "style":{
+                                        "height":"6%"
+                                      },
+                                      "class":"{{styles}}",
                                       "components": [{
-                                        "type": "vertical",
-                                        "style":{
+                                        "type": "switch",
+                                        "name": "{{name}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "class": "{{styles}} switch_legend_styles_table",
+                                        "style": {
+                                          "width": "17%",
+                                          "padding_bottom": "1%",
+                                          "border":"#ffffff",
                                           "height":"6%"
                                         },
-                                        "class":"{{styles}}",
-                                        "components": [{
-                                          "type": "switch",
-                                          "name": "{{name}}",
-                                          "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                          "class": "{{styles}} switch_legend_styles_table",
-                                          "style": {
-                                            "width": "17%",
-                                            "padding_bottom": "1%",
-                                            "border":"#ffffff",
-                                            "height":"6%"
-                                          },
-                                          "action": {
-                                            "trigger": "{{#? trigger}}",
-                                            "options": {
-                                              "fieldName": "{{name}}"
-                                            }
+                                        "action": {
+                                          "trigger": "{{#? trigger}}",
+                                          "options": {
+                                            "fieldName": "{{name}}"
                                           }
-                                        }]
+                                        }
                                       }]
-                                    }
+                                    }]
                                   }
                                 }
-  
-                              ]
-                            }
+                              }
                           ]
                         }
                       }
@@ -3647,41 +3622,41 @@
                                   }]
                                 },
                                 {
-                                  "type": "horizontal",
-                                  "style": {
-                                    "width": "85%"
-                                  },
-                                  "components": {
-                                    "{{#each row_values}}": {
-                                      "type": "horizontal",
-                                      "components": [{
-                                        "type": "vertical",
-                                        "style":{
-                                          "height":"6%"
-                                        },
-                                        "class":"{{styles}} center_align",
+                                    "type": "horizontal",
+                                    "style": {
+                                      "width": "85%"
+                                    },
+                                    "components": {
+                                      "{{#each row_values}}": {
+                                        "type": "horizontal",
                                         "components": [{
-                                          "type": "switch",
-                                          "name": "{{name}}",
-                                          "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                          "class": "{{styles}} switch_legend_styles_table",
-                                          "style": {
-                                            "width": "17%",
-                                            "padding_bottom": "1%",
-                                            "border":"#ffffff",
+                                          "type": "vertical",
+                                          "style":{
                                             "height":"6%"
                                           },
-                                          "action": {
-                                            "trigger": "{{#? trigger}}",
-                                            "options": {
-                                              "fieldName": "{{name}}"
+                                          "class":"{{styles}}",
+                                          "components": [{
+                                            "type": "switch",
+                                            "name": "{{name}}",
+                                            "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                            "class": "{{styles}} switch_legend_styles_table",
+                                            "style": {
+                                              "width": "17%",
+                                              "padding_bottom": "1%",
+                                              "border":"#ffffff",
+                                              "height":"6%"
+                                            },
+                                            "action": {
+                                              "trigger": "{{#? trigger}}",
+                                              "options": {
+                                                "fieldName": "{{name}}"
+                                              }
                                             }
-                                          }
+                                          }]
                                         }]
-                                      }]
+                                      }
                                     }
                                   }
-                                }
   
                               ]
                             }
