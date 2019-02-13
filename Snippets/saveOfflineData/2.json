@@ -1,0 +1,82 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Global Test 2",
+      "offline": "true",
+      "actions": {
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload"
+        },
+        "save": {
+          "type": "$global.set",
+          "options": {
+            "something": "{{$get.something}}"
+          },
+          "success": {
+            "type": "$close"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "menu": {
+              "text": "Reset",
+              "style": {
+                "size": "15",
+                "font": "Helvetica",
+                "color": "#4f8ff7"
+              },
+              "action": {
+                "type": "$global.reset",
+                "options": {
+                  "items": [
+                    "something"
+                  ]
+                },
+                "success": {
+                  "type": "$close"
+                }
+              }
+            }
+          },
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "Global value is: {{$global.something || ''}}"
+                },
+                {
+                  "type": "vertical",
+                  "style": {
+                    "padding": "10"
+                  },
+                  "components": [
+                    {
+                      "type": "textfield",
+                      "name": "something",
+                      "value": "{{$global.something || ''}}",
+                      "placeholder": "Add something here"
+                    }
+                  ]
+                },
+                {
+                  "type": "button",
+                  "text": "Save Global Variable",
+                  "action": {
+                    "trigger": "save"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
