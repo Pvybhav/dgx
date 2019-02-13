@@ -125,6 +125,20 @@
         },
         "preload_styles": {
           "background": "rgb(255, 0, 0)"
+        },
+        "template_button_styles": {
+          "size": "18",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "layer_styles": {
+          "width": "5%",
+          "height": "8%",
+          "bottom": "1%"
         }
       },
       "data": {
@@ -4981,24 +4995,6 @@
               }
             ]
           }
-        ],
-        "Footer_Buttons": [
-          {
-            "displayName": "Home",
-            "contentDescription": "home",
-            "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
-            "trigger": "handleNavigation"
-          },
-          {
-            "displayName": "Save",
-            "contentDescription": "save",
-            "trigger": "handleSave"
-          },
-          {
-            "displayName": "Submit",
-            "contentDescription": "submit",
-            "trigger": "handleSubmit"
-          }
         ]
       },
       "actions": {
@@ -6488,7 +6484,7 @@
               ]
             },
             "success": {
-              "type": "$render",
+              "type": "$reload",
               "options": {
                 "template": "screen1"
               }
@@ -6904,11 +6900,9 @@
             {
               "type": "image",
               "url": "file://icons/home.png",
+              "class": "layer_styles",
               "style": {
-                "left": "10%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "8%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -6920,15 +6914,9 @@
             {
               "type": "button",
               "text": "1",
+              "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
-                "left": "18%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "left": "18%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -6940,15 +6928,9 @@
             {
               "type": "button",
               "text": "2",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "26%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "26%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -6960,15 +6942,9 @@
             {
               "type": "button",
               "text": "3",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "34%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "34%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -6980,15 +6956,9 @@
             {
               "type": "button",
               "text": "4",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "42%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "42%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7000,15 +6970,9 @@
             {
               "type": "button",
               "text": "5",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "50%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "50%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7020,15 +6984,9 @@
             {
               "type": "button",
               "text": "6",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "58%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "58%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7040,15 +6998,9 @@
             {
               "type": "button",
               "text": "7",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "66%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "66%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7060,11 +7012,9 @@
             {
               "type": "image",
               "url": "file://icons/next.png",
+              "class": "layer_styles",
               "style": {
-                "left": "74%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "74%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7076,11 +7026,9 @@
             {
               "type": "image",
               "url": "file://icons/save.png",
+              "class": "layer_styles",
               "style": {
-                "left": "82%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "82%"
               },
               "action": {
                 "trigger": "handleSave_screen1"
@@ -7186,7 +7134,14 @@
                                             {
                                               "type": "{{type}}",
                                               "name": "{{name}}",
-                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "value": [
+                                                {
+                                                  "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}"
+                                                }
+                                              ],
                                               "class": "center_align black_color table_body_textfield_styles {{ type == 'switch' ? styles : ''}}",
                                               "action": {
                                                 "trigger": "{{#? trigger}}",
@@ -7423,11 +7378,9 @@
             {
               "type": "image",
               "url": "file://icons/home.png",
+              "class": "layer_styles",
               "style": {
-                "left": "10%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "8%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -7439,11 +7392,9 @@
             {
               "type": "image",
               "url": "file://icons/previous.png",
+              "class": "layer_styles",
               "style": {
-                "left": "18%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "18%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7455,15 +7406,9 @@
             {
               "type": "button",
               "text": "1",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "26%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "26%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7475,15 +7420,9 @@
             {
               "type": "button",
               "text": "2",
+              "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
-                "left": "34%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "left": "34%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7495,15 +7434,9 @@
             {
               "type": "button",
               "text": "3",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "42%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "42%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7515,15 +7448,9 @@
             {
               "type": "button",
               "text": "4",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "50%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "50%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7535,15 +7462,9 @@
             {
               "type": "button",
               "text": "5",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "58%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "58%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7555,15 +7476,9 @@
             {
               "type": "button",
               "text": "6",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "66%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "66%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7575,15 +7490,9 @@
             {
               "type": "button",
               "text": "7",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "74%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0, 147, 215)",
-                "corner_radius": "1%"
+                "left": "74%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7595,11 +7504,9 @@
             {
               "type": "image",
               "url": "file://icons/next.png",
+              "class": "layer_styles",
               "style": {
-                "left": "82%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "82%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7611,11 +7518,9 @@
             {
               "type": "image",
               "url": "file://icons/save.png",
+              "class": "layer_styles",
               "style": {
-                "left": "90%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "90%"
               },
               "action": {
                 "trigger": "handleSave_screen2"
@@ -8283,11 +8188,9 @@
             {
               "type": "image",
               "url": "file://icons/home.png",
+              "class": "layer_styles",
               "style": {
-                "left": "10%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "8%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -8299,11 +8202,9 @@
             {
               "type": "image",
               "url": "file://icons/previous.png",
+              "class": "layer_styles",
               "style": {
-                "left": "18%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "18%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -8315,15 +8216,9 @@
             {
               "type": "button",
               "text": "1",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "26%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "26%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -8335,15 +8230,9 @@
             {
               "type": "button",
               "text": "2",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "34%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "34%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -8355,15 +8244,9 @@
             {
               "type": "button",
               "text": "3",
+              "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
-                "left": "42%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "left": "42%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -8375,15 +8258,9 @@
             {
               "type": "button",
               "text": "4",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "50%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "50%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -8395,15 +8272,9 @@
             {
               "type": "button",
               "text": "5",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "58%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "58%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -8415,15 +8286,9 @@
             {
               "type": "button",
               "text": "6",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "66%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "66%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -8435,15 +8300,9 @@
             {
               "type": "button",
               "text": "7",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "74%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0, 147, 215)",
-                "corner_radius": "1%"
+                "left": "74%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -8455,11 +8314,9 @@
             {
               "type": "image",
               "url": "file://icons/next.png",
+              "class": "layer_styles",
               "style": {
-                "left": "82%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "82%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -8471,11 +8328,9 @@
             {
               "type": "image",
               "url": "file://icons/save.png",
+              "class": "layer_styles",
               "style": {
-                "left": "90%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "90%"
               },
               "action": {
                 "trigger": "handleSave_screen3"
@@ -9032,11 +8887,9 @@
             {
               "type": "image",
               "url": "file://icons/home.png",
+              "class": "layer_styles",
               "style": {
-                "left": "10%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "8%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -9048,11 +8901,9 @@
             {
               "type": "image",
               "url": "file://icons/previous.png",
+              "class": "layer_styles",
               "style": {
-                "left": "18%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "18%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9064,15 +8915,9 @@
             {
               "type": "button",
               "text": "1",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "26%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "26%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9084,15 +8929,9 @@
             {
               "type": "button",
               "text": "2",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "34%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "34%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9104,15 +8943,9 @@
             {
               "type": "button",
               "text": "3",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "42%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "42%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9124,15 +8957,9 @@
             {
               "type": "button",
               "text": "4",
+              "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
-                "left": "50%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "left": "50%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9144,15 +8971,9 @@
             {
               "type": "button",
               "text": "5",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "58%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "58%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9164,15 +8985,9 @@
             {
               "type": "button",
               "text": "6",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "66%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "66%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9184,15 +8999,9 @@
             {
               "type": "button",
               "text": "7",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "74%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0, 147, 215)",
-                "corner_radius": "1%"
+                "left": "74%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9204,11 +9013,9 @@
             {
               "type": "image",
               "url": "file://icons/next.png",
+              "class": "layer_styles",
               "style": {
-                "left": "82%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "82%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9220,11 +9027,9 @@
             {
               "type": "image",
               "url": "file://icons/save.png",
+              "class": "layer_styles",
               "style": {
-                "left": "90%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "90%"
               },
               "action": {
                 "trigger": "handleSave_screen4"
@@ -9564,11 +9369,9 @@
             {
               "type": "image",
               "url": "file://icons/home.png",
+              "class": "layer_styles",
               "style": {
-                "left": "10%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "8%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -9580,11 +9383,9 @@
             {
               "type": "image",
               "url": "file://icons/previous.png",
+              "class": "layer_styles",
               "style": {
-                "left": "18%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "18%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9596,15 +9397,9 @@
             {
               "type": "button",
               "text": "1",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "26%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "26%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9616,15 +9411,9 @@
             {
               "type": "button",
               "text": "2",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "34%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "34%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9636,15 +9425,9 @@
             {
               "type": "button",
               "text": "3",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "42%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "42%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9656,15 +9439,9 @@
             {
               "type": "button",
               "text": "4",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "50%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "50%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9676,15 +9453,9 @@
             {
               "type": "button",
               "text": "5",
+              "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
-                "left": "58%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "left": "58%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9696,15 +9467,9 @@
             {
               "type": "button",
               "text": "6",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "66%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "66%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9716,15 +9481,9 @@
             {
               "type": "button",
               "text": "7",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "74%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0, 147, 215)",
-                "corner_radius": "1%"
+                "left": "74%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9736,11 +9495,9 @@
             {
               "type": "image",
               "url": "file://icons/next.png",
+              "class": "layer_styles",
               "style": {
-                "left": "82%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "82%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -9752,11 +9509,9 @@
             {
               "type": "image",
               "url": "file://icons/save.png",
+              "class": "layer_styles",
               "style": {
-                "left": "90%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "90%"
               },
               "action": {
                 "trigger": "handleSave_screen5"
@@ -10199,11 +9954,9 @@
             {
               "type": "image",
               "url": "file://icons/home.png",
+              "class": "layer_styles",
               "style": {
-                "left": "10%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "8%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -10215,11 +9968,9 @@
             {
               "type": "image",
               "url": "file://icons/previous.png",
+              "class": "layer_styles",
               "style": {
-                "left": "18%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "18%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10231,15 +9982,9 @@
             {
               "type": "button",
               "text": "1",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "26%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "26%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10251,15 +9996,9 @@
             {
               "type": "button",
               "text": "2",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "34%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "34%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10271,15 +10010,9 @@
             {
               "type": "button",
               "text": "3",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "42%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "42%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10291,15 +10024,9 @@
             {
               "type": "button",
               "text": "4",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "50%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "50%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10311,15 +10038,9 @@
             {
               "type": "button",
               "text": "5",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "58%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "58%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10331,15 +10052,9 @@
             {
               "type": "button",
               "text": "6",
+              "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
-                "left": "66%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "left": "66%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10351,15 +10066,9 @@
             {
               "type": "button",
               "text": "7",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "74%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0, 147, 215)",
-                "corner_radius": "1%"
+                "left": "74%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10371,11 +10080,9 @@
             {
               "type": "image",
               "url": "file://icons/next.png",
+              "class": "layer_styles",
               "style": {
-                "left": "82%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "82%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10387,11 +10094,9 @@
             {
               "type": "image",
               "url": "file://icons/save.png",
+              "class": "layer_styles",
               "style": {
-                "left": "90%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "90%"
               },
               "action": {
                 "trigger": "handleSave_screen6"
@@ -10722,11 +10427,9 @@
             {
               "type": "image",
               "url": "file://icons/home.png",
+              "class": "layer_styles",
               "style": {
-                "left": "10%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "8%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -10738,11 +10441,9 @@
             {
               "type": "image",
               "url": "file://icons/previous.png",
+              "class": "layer_styles",
               "style": {
-                "left": "18%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "18%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10754,15 +10455,9 @@
             {
               "type": "button",
               "text": "1",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "26%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "26%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10774,15 +10469,9 @@
             {
               "type": "button",
               "text": "2",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "34%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "34%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10794,15 +10483,9 @@
             {
               "type": "button",
               "text": "3",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "42%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "42%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10814,15 +10497,9 @@
             {
               "type": "button",
               "text": "4",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "50%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "50%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10834,15 +10511,9 @@
             {
               "type": "button",
               "text": "5",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "58%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "58%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10854,15 +10525,9 @@
             {
               "type": "button",
               "text": "6",
+              "class": "layer_styles template_button_styles",
               "style": {
-                "left": "66%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "left": "66%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10874,15 +10539,9 @@
             {
               "type": "button",
               "text": "7",
+              "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
-                "left": "74%",
-                "bottom": "1%",
-                "width": "5%",
-                "size": "18",
-                "height": "8%",
-                "color": "rgb(255,255,255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "left": "74%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -10894,11 +10553,9 @@
             {
               "type": "image",
               "url": "file://icons/save.png",
+              "class": "layer_styles",
               "style": {
-                "left": "82%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "82%"
               },
               "action": {
                 "trigger": "handleSave_screen7"
@@ -10907,11 +10564,9 @@
             {
               "type": "image",
               "url": "file://icons/submit.png",
+              "class": "layer_styles",
               "style": {
-                "left": "90%",
-                "width": "5%",
-                "bottom": "1%",
-                "height": "7%"
+                "left": "90%"
               },
               "action": {
                 "trigger": "handleSubmit"
