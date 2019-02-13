@@ -848,10 +848,14 @@
                       },
                       {
                         "type": "horizontal",
-                        "class": "table_header_styles center_align",
+                        "class": "center_align",
                         "style": {
                           "height": "6%",
-                          "width": "51%"
+                          "width": "51%",
+                          "size": 15,
+                          "font": "HelveticaHeader",
+                          "background": "rgb(14, 53, 112)",
+                          "color": "rgb(255, 255, 255)"
 
                         },
                         "components": [{
@@ -961,20 +965,20 @@
                                     "type": "horizontal",
                                     "components": [{
                                       "type": "vertical",
-                                     "style":{
-                                        "height":"6%"
+                                      "style": {
+                                        "height": "6%"
                                       },
-                                      "class":"{{styles}}",
+                                      "class": "{{styles}}",
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
                                         "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                       "class": "{{styles}} switch_legend_styles_table",
+                                        "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
                                           "padding_bottom": "1%",
-                                          "border":"#ffffff",
-                                          "height":"6%"
+                                          "border": "#ffffff",
+                                          "height": "6%"
                                         },
                                         "action": {
                                           "trigger": "{{#? trigger}}",
@@ -1069,20 +1073,20 @@
                                     "type": "horizontal",
                                     "components": [{
                                       "type": "vertical",
-                                     "style":{
-                                        "height":"6%"
+                                      "style": {
+                                        "height": "6%"
                                       },
-                                      "class":"{{styles}}",
+                                      "class": "{{styles}}",
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
                                         "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                       "class": "{{styles}} switch_legend_styles_table",
+                                        "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
                                           "padding_bottom": "1%",
-                                          "border":"#ffffff",
-                                          "height":"6%"
+                                          "border": "#ffffff",
+                                          "height": "6%"
                                         },
                                         "action": {
                                           "trigger": "{{#? trigger}}",
