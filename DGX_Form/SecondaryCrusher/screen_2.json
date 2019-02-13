@@ -826,7 +826,7 @@
                         "type": "horizontal",
                         "class": "table_header_styles center_align",
                         "style": {
-                          "height": "5%",
+                          "height": "6%",
                           "width": "51%",
                           "border": "#ffffff",
                           "border_width": "1"
@@ -836,7 +836,8 @@
                             "type": "horizontal",
                             "style": {
                               "background": "rgb(14, 53, 112)",
-                              "color": "rgb(255, 255, 255)"
+                              "color": "rgb(255, 255, 255)",
+                              "height":"6%"
 
                             },
                             "class": "center_align",
@@ -854,7 +855,8 @@
                                 "text": "= OK",
                                 "style": {
                                   "background": "rgb(14, 53, 112)",
-                                  "color": "rgb(255, 255, 255)"
+                                  "color": "rgb(255, 255, 255)",
+                                  "height":"6%"
                                 }
                               }
                             ]
@@ -942,11 +944,15 @@
                                     "type": "horizontal",
                                     "components": [{
                                       "type": "vertical",
+                                      "style":{
+                                        "height":"6%"
+                                      },
+                                      "class":"{{styles}}",
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
                                         "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                        "class": "{{styles}} switch_legend_styles_table",
+                                        "class": "switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
                                           "padding_bottom": "1%"
@@ -1022,11 +1028,15 @@
                                     "type": "horizontal",
                                     "components": [{
                                       "type": "vertical",
+                                      "style":{
+                                        "height":"6%"
+                                      },
+                                      "class":"{{styles}}",
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
                                         "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                        "class": "{{styles}} switch_legend_styles_table",
+                                        "class": "switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
                                           "padding_bottom": "1%"
@@ -1127,11 +1137,15 @@
                                     "type": "horizontal",
                                     "components": [{
                                       "type": "vertical",
+                                      "style":{
+                                        "height":"6%"
+                                      },
+                                      "class":"{{styles}}",
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
                                         "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                        "class": "{{styles}} switch_legend_styles_table",
+                                        "class": "switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
                                           "padding_bottom": "1%"
@@ -1207,14 +1221,19 @@
                                     "type": "horizontal",
                                     "components": [{
                                       "type": "vertical",
+                                      "style":{
+                                        "height":"6%"
+                                      },
+                                      "class":"{{styles}}",
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
                                         "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                        "class": "{{styles}} switch_legend_styles_table",
+                                        "class": "switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
-                                          "padding_bottom": "1%"
+                                          "padding_bottom": "1%",
+                                          "height":"6%"
                                         },
                                         "action": {
                                           "trigger": "{{#? trigger}}",
