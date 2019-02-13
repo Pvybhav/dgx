@@ -26,7 +26,7 @@
           "background": "rgb(0, 102, 204)"
         },
         "table_row_odd_styles": {
-         "background": "rgb(239,240,242)"
+          "background": "rgb(239,240,242)"
         },
         "table_row_even_styles": {
           "background": "rgb(231,232,235)"
@@ -86,47 +86,47 @@
           "color": "rgb(255, 255, 255)",
           "border": "#FFFFFF",
           "border_width": "2",
-          "height":"8%"
+          "height": "8%"
         },
-        "table_header_name_styles":{
-          "width":"50%"
+        "table_header_name_styles": {
+          "width": "50%"
         },
-        "header_style":{
+        "header_style": {
           "border": "#FFFFFF",
           "border_width": "2",
           "background": "rgb(27,142,197)",
           "height": "12%",
           "align": "center",
-          "color":"rgb(255,255,255)",
-          "size":15,
+          "color": "rgb(255,255,255)",
+          "size": 15,
           "font": "HelveticaHeader"
         },
-        "header_style1":{
+        "header_style1": {
           "border": "#FFFFFF",
           "border_width": "2",
           "background": "rgb(14, 53, 112)",
           "height": "5%",
           "align": "center",
-          "color":"rgb(255,255,255)",
-          "size":15,
+          "color": "rgb(255,255,255)",
+          "size": 15,
           "font": "HelveticaHeader"
         },
-        "header_textfield":{
+        "header_textfield": {
           "border": "#FFFFFF",
           "border_width": "2",
-          "color":"rgb(0,0,0)",
-          "size":15,
+          "color": "rgb(0,0,0)",
+          "size": 15,
           "font": "HelveticaHeader",
-         "background": "rgb(239,240,242)"
+          "background": "rgb(239,240,242)"
         },
-        "header_style3":{
+        "header_style3": {
           "border": "#FFFFFF",
           "border_width": "2",
-         "background": "rgb(204,206,213)",
+          "background": "rgb(204,206,213)",
           "height": "5%",
           "align": "center",
-          "color":"rgb(255,255,255)",
-          "size":15,
+          "color": "rgb(255,255,255)",
+          "size": 15,
           "font": "HelveticaHeader"
         }
       },
@@ -173,32 +173,31 @@
             "f12_s1_year": "{{$get.year}}",
             "f12_s1_shift": "{{$get.shift}}",
             "f12_s1_operator": "{{$get.operator}}",
-            "textfield1":"{{$get.textfield1 || ''}}",
-            "textfield2":"{{$get.textfield2 || ''}}",
-            "textfield3":"{{$get.textfield3 || ''}}",
-            "textfield4":"{{$get.textfield4 || ''}}",
-            "textfield5":"{{$get.textfield5 || ''}}",
-            "textfield6":"{{$get.textfield6 || ''}}",
-            "textfield7":"{{$get.textfield7 || ''}}",
-            "textfield8":"{{$get.textfield8 || ''}}",
-            "textfield9":"{{$get.textfield9 || ''}}",
-            "textfield10":"{{$get.textfield10 || ''}}",
-            "textfield11":"{{$get.textfield11 || ''}}",
-            "textfield12":"{{$get.textfield12 || ''}}",
-            "textfield13":"{{$get.textfield13 || ''}}",
-            "textfield14":"{{$get.textfield14 || ''}}",
-            "textfield15":"{{$get.textfield15 || ''}}",
-            "textfield16":"{{$get.textfield16 || ''}}",
-            "textfield17":"{{$get.textfield17 || ''}}",
-            "textfield18":"{{$get.textfield18 || ''}}",
-            "textfield19":"{{$get.textfield19 || ''}}",
-            "textfield20":"{{$get.textfield20 || ''}}",
-            "textfield21":"{{$get.textfield21 || ''}}",
-            "textfield22":"{{$get.textfield22 || ''}}",
-            "textfield23":"{{$get.textfield23 || ''}}",
-            "textfield24":"{{$get.textfield24 || ''}}"
-
-            },
+            "textfield1": "{{$get.textfield1 || ''}}",
+            "textfield2": "{{$get.textfield2 || ''}}",
+            "textfield3": "{{$get.textfield3 || ''}}",
+            "textfield4": "{{$get.textfield4 || ''}}",
+            "textfield5": "{{$get.textfield5 || ''}}",
+            "textfield6": "{{$get.textfield6 || ''}}",
+            "textfield7": "{{$get.textfield7 || ''}}",
+            "textfield8": "{{$get.textfield8 || ''}}",
+            "textfield9": "{{$get.textfield9 || ''}}",
+            "textfield10": "{{$get.textfield10 || ''}}",
+            "textfield11": "{{$get.textfield11 || ''}}",
+            "textfield12": "{{$get.textfield12 || ''}}",
+            "textfield13": "{{$get.textfield13 || ''}}",
+            "textfield14": "{{$get.textfield14 || ''}}",
+            "textfield15": "{{$get.textfield15 || ''}}",
+            "textfield16": "{{$get.textfield16 || ''}}",
+            "textfield17": "{{$get.textfield17 || ''}}",
+            "textfield18": "{{$get.textfield18 || ''}}",
+            "textfield19": "{{$get.textfield19 || ''}}",
+            "textfield20": "{{$get.textfield20 || ''}}",
+            "textfield21": "{{$get.textfield21 || ''}}",
+            "textfield22": "{{$get.textfield22 || ''}}",
+            "textfield23": "{{$get.textfield23 || ''}}",
+            "textfield24": "{{$get.textfield24 || ''}}"
+          },
           "success": {
             "type": "$util.toast",
             "options": {
@@ -608,23 +607,23 @@
                 {
                   "type": "horizontal",
                   "class": "no_padding",
-                      "components": {
-                        "{{#each Table1_Headers}}": {
-                          "type": "label",
-                          "text": "{{value}}",
-                          "class": "{{styles}}"
-                        }
-                      }
+                  "components": {
+                    "{{#each Table1_Headers}}": {
+                      "type": "label",
+                      "text": "{{value}}",
+                      "class": "{{styles}}"
+                    }
+                  }
                 }
               ]
             },
             {
-              "type":"horizontal",
-              "items":[
+              "type": "horizontal",
+              "items": [
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
                       "type": "vertical",
                       "class": "no_padding",
@@ -632,7 +631,7 @@
                         {
                           "type": "label",
                           "text": "Cyanide - Isotainers",
-                          "class":"header_style",
+                          "class": "header_style",
                           "style": {
                             "width": "12%"
                           }
@@ -644,11 +643,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"Carbon",
-                          "class":"header_style",
-                          "style":{
-                            "width":"10%"
+                          "type": "label",
+                          "text": "Carbon",
+                          "class": "header_style",
+                          "style": {
+                            "width": "10%"
                           }
                         }
                       ]
@@ -658,11 +657,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"Copper Sulphate",
-                          "class":"header_style",
-                          "style":{
-                            "width":"12%"
+                          "type": "label",
+                          "text": "Copper Sulphate",
+                          "class": "header_style",
+                          "style": {
+                            "width": "12%"
                           }
                         }
                       ]
@@ -672,11 +671,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"SMBS",
-                          "class":"header_style",
-                          "style":{
-                            "width":"8%"
+                          "type": "label",
+                          "text": "SMBS",
+                          "class": "header_style",
+                          "style": {
+                            "width": "8%"
                           }
                         }
                       ]
@@ -686,21 +685,21 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"Floc",
-                          "class":"header_style",
-                          "style":{
-                            "width":"8%"
+                          "type": "label",
+                          "text": "Floc",
+                          "class": "header_style",
+                          "style": {
+                            "width": "8%"
                           }
                         }
                       ]
                     }
-                    ]
-                    },
+                  ]
+                },
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
                       "type": "vertical",
                       "class": "no_padding",
@@ -708,9 +707,9 @@
                         {
                           "type": "label",
                           "text": "Cyanide - Trucks",
-                          "class":"header_style",
-                          "style":{
-                            "width":"13%"
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
                           }
                         }
                       ]
@@ -720,11 +719,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"SO2 - Trucks",
-                          "class":"header_style",
-                          "style":{
-                            "width":"13%"
+                          "type": "label",
+                          "text": "SO2 - Trucks",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
                           }
                         }
                       ]
@@ -734,11 +733,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"SMBS",
-                          "class":"header_style",
-                          "style":{
-                            "width":"13%"
+                          "type": "label",
+                          "text": "SMBS",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
                           }
                         }
                       ]
@@ -748,29 +747,29 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"Floc",
-                          "class":"header_style",
-                          "style":{
-                            "width":"13%"
+                          "type": "label",
+                          "text": "Floc",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
                           }
                         }
                       ]
                     }
                   ],
-                  "style":{
-                    "width":"50%"
+                  "style": {
+                    "width": "50%"
                   }
                 }
-                  ]
-                },
+              ]
+            },
             {
-              "type":"horizontal",
-              "items":[
+              "type": "horizontal",
+              "items": [
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
                       "type": "vertical",
                       "class": "no_padding",
@@ -778,7 +777,7 @@
                         {
                           "type": "label",
                           "text": "#",
-                          "class":"header_style1",
+                          "class": "header_style1",
                           "style": {
                             "width": "12%"
                           }
@@ -790,11 +789,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"Bags",
-                          "class":"header_style1",
-                          "style":{
-                            "width":"10%"
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "10%"
                           }
                         }
                       ]
@@ -804,11 +803,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"Bags",
-                          "class":"header_style1",
-                          "style":{
-                            "width":"12%"
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "12%"
                           }
                         }
                       ]
@@ -818,11 +817,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"Bags",
-                          "class":"header_style1",
-                          "style":{
-                            "width":"8%"
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "8%"
                           }
                         }
                       ]
@@ -832,11 +831,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"Bags",
-                          "class":"header_style1",
-                          "style":{
-                            "width":"8%"
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "8%"
                           }
                         }
                       ]
@@ -844,9 +843,9 @@
                   ]
                 },
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
                       "type": "vertical",
                       "class": "no_padding",
@@ -854,7 +853,7 @@
                         {
                           "type": "label",
                           "text": "tonnes",
-                          "class":"header_style1",
+                          "class": "header_style1",
                           "style": {
                             "width": "13%"
                           }
@@ -866,9 +865,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"tonnes",
-                          "class":"header_style1",
+                          "type": "label",
+                          "text": "tonnes",
+                          "class": "header_style1",
                           "style": {
                             "width": "13%"
                           }
@@ -880,9 +879,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"Bags",
-                          "class":"header_style1",
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
                           "style": {
                             "width": "13%"
                           }
@@ -894,9 +893,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"Bags",
-                          "class":"header_style1",
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
                           "style": {
                             "width": "13%"
                           }
@@ -904,19 +903,19 @@
                       ]
                     }
                   ],
-                  "style":{
-                    "width":"50%"
+                  "style": {
+                    "width": "50%"
                   }
                 }
               ]
             },
             {
-              "type":"horizontal",
-              "items":[
+              "type": "horizontal",
+              "items": [
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
                       "type": "vertical",
                       "class": "no_padding",
@@ -924,7 +923,7 @@
                         {
                           "type": "label",
                           "text": "",
-                          "class":"header_style3",
+                          "class": "header_style3",
                           "style": {
                             "width": "12%"
                           }
@@ -936,11 +935,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"1",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"10%"
+                          "type": "label",
+                          "text": "1",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "10%"
                           }
                         }
                       ]
@@ -950,11 +949,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"2",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"12%"
+                          "type": "label",
+                          "text": "2",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
                           }
                         }
                       ]
@@ -964,11 +963,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"3",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"8%"
+                          "type": "label",
+                          "text": "3",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
                           }
                         }
                       ]
@@ -978,11 +977,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"4",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"8%"
+                          "type": "label",
+                          "text": "4",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
                           }
                         }
                       ]
@@ -990,9 +989,9 @@
                   ]
                 },
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
                       "type": "vertical",
                       "class": "no_padding",
@@ -1000,7 +999,7 @@
                         {
                           "type": "label",
                           "text": "5",
-                          "class":"header_style3",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1012,9 +1011,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"6",
-                          "class":"header_style3",
+                          "type": "label",
+                          "text": "6",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1026,9 +1025,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"7",
-                          "class":"header_style3",
+                          "type": "label",
+                          "text": "7",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1040,9 +1039,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"8",
-                          "class":"header_style3",
+                          "type": "label",
+                          "text": "8",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1050,47 +1049,48 @@
                       ]
                     }
                   ],
-                  "style":{
-                    "width":"50%"
+                  "style": {
+                    "width": "50%"
                   }
                 }
               ]
             },
             {
-              "type":"horizontal",
-              "items":[
+              "type": "horizontal",
+              "items": [
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
-                              "type": "label",
-                              "text": "1",
-                              "style": {
-                                "width": "12%",
-                                "align": "center",
-                                "height":"7%",
-                                "color":"#FFFFFF",
-                                "background": "rgb(14, 53, 112)"
-                              }
+                      "type": "label",
+                      "text": "1",
+                      "style": {
+                        "width": "12%",
+                        "align": "center",
+                        "height": "7%",
+                        "color": "#FFFFFF",
+                        "background": "rgb(14, 53, 112)"
+                      }
                     },
                     {
                       "type": "vertical",
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"vertical",
-                          "components":[
+                          "type": "vertical",
+                          "components": [
                             {
-                            "type":"textfield",
-                            "name":"textfield1",
-                            "contentDescription": "one",
-                            "value":"{{$global.textfield1 || ''}}",
-                            "class":"header_textfield",
-                            "style":{
-                              "width":"10%"
+                              "type": "textfield",
+                              "name": "textfield1",
+                              "contentDescription": "one",
+                              "value": "{{$global.textfield1 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "10%"
+                              }
                             }
-                          }]
+                          ]
                         }
                       ]
                     },
@@ -1099,8 +1099,8 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"horizontal",
-                          "components":[
+                          "type": "horizontal",
+                          "components": [
                             {
                               "type": "textfield",
                               "name": "textfield2",
@@ -1110,7 +1110,8 @@
                               "style": {
                                 "width": "12%"
                               }
-                            }]
+                            }
+                          ]
                         }
                       ]
                     },
@@ -1119,8 +1120,8 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"horizontal",
-                          "components":[
+                          "type": "horizontal",
+                          "components": [
                             {
                               "type": "textfield",
                               "name": "textfield3",
@@ -1130,7 +1131,8 @@
                               "style": {
                                 "width": "8%"
                               }
-                            }]
+                            }
+                          ]
                         }
                       ]
                     },
@@ -1139,8 +1141,8 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"horizontal",
-                          "components":[
+                          "type": "horizontal",
+                          "components": [
                             {
                               "type": "textfield",
                               "name": "textfield4",
@@ -1150,26 +1152,27 @@
                               "style": {
                                 "width": "8%"
                               }
-                            }]
+                            }
+                          ]
                         }
                       ]
                     }
                   ],
-                  "style":{
+                  "style": {
                     "background": "rgb(14, 53, 112)"
                   }
                 },
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
                       "type": "vertical",
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"horizontal",
-                          "components":[
+                          "type": "horizontal",
+                          "components": [
                             {
                               "type": "textfield",
                               "name": "textfield5",
@@ -1179,7 +1182,8 @@
                               "style": {
                                 "width": "13%"
                               }
-                            }]
+                            }
+                          ]
                         }
                       ]
                     },
@@ -1188,8 +1192,8 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"horizontal",
-                          "components":[
+                          "type": "horizontal",
+                          "components": [
                             {
                               "type": "textfield",
                               "name": "textfield6",
@@ -1199,7 +1203,8 @@
                               "style": {
                                 "width": "13%"
                               }
-                            }]
+                            }
+                          ]
                         }
                       ]
                     },
@@ -1208,8 +1213,8 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"horizontal",
-                          "components":[
+                          "type": "horizontal",
+                          "components": [
                             {
                               "type": "textfield",
                               "name": "textfield7",
@@ -1219,7 +1224,8 @@
                               "style": {
                                 "width": "13%"
                               }
-                            }]
+                            }
+                          ]
                         }
                       ]
                     },
@@ -1228,8 +1234,8 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"horizontal",
-                          "components":[
+                          "type": "horizontal",
+                          "components": [
                             {
                               "type": "textfield",
                               "name": "textfield8",
@@ -1239,25 +1245,26 @@
                               "style": {
                                 "width": "13%"
                               }
-                            }]
+                            }
+                          ]
                         }
                       ]
                     }
                   ],
-                  "style":{
-                    "width":"50%",
+                  "style": {
+                    "width": "50%",
                     "background": "rgb(239,240,242)"
                   }
                 }
               ]
             },
             {
-              "type":"horizontal",
-              "items":[
+              "type": "horizontal",
+              "items": [
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
                       "type": "vertical",
                       "class": "no_padding",
@@ -1265,7 +1272,7 @@
                         {
                           "type": "label",
                           "text": "",
-                          "class":"header_style3",
+                          "class": "header_style3",
                           "style": {
                             "width": "12%"
                           }
@@ -1277,11 +1284,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"9",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"10%"
+                          "type": "label",
+                          "text": "9",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "10%"
                           }
                         }
                       ]
@@ -1291,11 +1298,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"10",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"12%"
+                          "type": "label",
+                          "text": "10",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
                           }
                         }
                       ]
@@ -1305,11 +1312,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"11",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"8%"
+                          "type": "label",
+                          "text": "11",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
                           }
                         }
                       ]
@@ -1319,11 +1326,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"12",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"8%"
+                          "type": "label",
+                          "text": "12",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
                           }
                         }
                       ]
@@ -1331,9 +1338,9 @@
                   ]
                 },
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
                       "type": "vertical",
                       "class": "no_padding",
@@ -1341,7 +1348,7 @@
                         {
                           "type": "label",
                           "text": "13",
-                          "class":"header_style3",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1353,9 +1360,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"14",
-                          "class":"header_style3",
+                          "type": "label",
+                          "text": "14",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1367,9 +1374,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"15",
-                          "class":"header_style3",
+                          "type": "label",
+                          "text": "15",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1381,9 +1388,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"16",
-                          "class":"header_style3",
+                          "type": "label",
+                          "text": "16",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1391,115 +1398,42 @@
                       ]
                     }
                   ],
-                  "style":{
-                    "width":"50%"
+                  "style": {
+                    "width": "50%"
                   }
                 }
               ]
             },
             {
-              "type":"horizontal",
-              "items":[
+              "type": "horizontal",
+              "items": [
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
-                          "type": "label",
-                          "text": "2",
-                          "style": {
-                            "width": "12%",
-                            "align": "center",
-                            "height":"7%",
-                            "color":"#FFFFFF",
-                            "background": "rgb(14, 53, 112)"
-                          }
+                      "type": "label",
+                      "text": "2",
+                      "style": {
+                        "width": "12%",
+                        "align": "center",
+                        "height": "7%",
+                        "color": "#FFFFFF",
+                        "background": "rgb(14, 53, 112)"
+                      }
                     },
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type":"textfield",
-                          "name":"textfield9",
-                          "contentDescription": "nine",
-                          "value":"{{$global.textfield9 || ''}}",
-                          "class":"header_textfield",
-                          "style":{
-                            "width":"10%"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type":"textfield",
-                          "name":"textfield10",
-                          "contentDescription": "ten",
-                          "value":"{{$global.textfield10 || ''}}",
-                          "class":"header_textfield",
-                          "style":{
-                            "width":"12%"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type":"textfield",
-                          "name":"textfield11",
-                          "contentDescription": "eleven",
-                          "value":"{{$global.textfield11 || ''}}",
-                          "class":"header_textfield",
-                          "style":{
-                            "width":"8%"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type":"textfield",
-                          "name":"textfield12",
-                          "contentDescription": "twelve",
-                          "value":"{{$global.textfield12 || ''}}",
-                          "class":"header_textfield",
-                          "style":{
-                            "width":"8%"
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  "style":{
-                    "background": "rgb(14, 53, 112)"
-                  }
-                },
-                {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
                     {
                       "type": "vertical",
                       "class": "no_padding",
                       "components": [
                         {
                           "type": "textfield",
-                          "name":"textfield13",
-                          "contentDescription": "thirteen",
-                          "value":"{{$global.textfield13 || ''}}",
-                          "class":"header_textfield",
+                          "name": "textfield9",
+                          "contentDescription": "nine",
+                          "value": "{{$global.textfield9 || ''}}",
+                          "class": "header_textfield",
                           "style": {
-                            "width": "13%"
+                            "width": "10%"
                           }
                         }
                       ]
@@ -1509,72 +1443,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"textfield",
-                          "name":"textfield14",
-                          "contentDescription": "fourteen",
-                          "value":"{{$global.textfield14 || ''}}",
-                          "class":"header_textfield",
-                          "style": {
-                            "width": "13%"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type":"textfield",
-                          "name":"textfield15",
-                          "contentDescription": "fifteen",
-                          "value":"{{$global.textfield15 || ''}}",
-                          "class":"header_textfield",
-                          "style": {
-                            "width": "13%"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type":"textfield",
-                          "name":"textfield16",
-                          "contentDescription": "sixteen",
-                          "value":"{{$global.textfield16 || ''}}",
-                          "class":"header_textfield",
-                          "style": {
-                            "width": "13%"
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  "style":{
-                    "width":"50%",
-                     "background": "rgb(239,240,242)"
-                  }
-                }
-              ]
-            },
-            {
-              "type":"horizontal",
-              "items":[
-                {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "",
-                          "class":"header_style3",
+                          "type": "textfield",
+                          "name": "textfield10",
+                          "contentDescription": "ten",
+                          "value": "{{$global.textfield10 || ''}}",
+                          "class": "header_textfield",
                           "style": {
                             "width": "12%"
                           }
@@ -1586,11 +1459,13 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"17",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"10%"
+                          "type": "textfield",
+                          "name": "textfield11",
+                          "contentDescription": "eleven",
+                          "value": "{{$global.textfield11 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
                           }
                         }
                       ]
@@ -1600,11 +1475,38 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"18",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"12%"
+                          "type": "textfield",
+                          "name": "textfield12",
+                          "contentDescription": "twelve",
+                          "value": "{{$global.textfield12 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "background": "rgb(14, 53, 112)"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield13",
+                          "contentDescription": "thirteen",
+                          "value": "{{$global.textfield13 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
                           }
                         }
                       ]
@@ -1614,11 +1516,13 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"19",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"8%"
+                          "type": "textfield",
+                          "name": "textfield14",
+                          "contentDescription": "fourteen",
+                          "value": "{{$global.textfield14 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
                           }
                         }
                       ]
@@ -1628,11 +1532,114 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"20",
-                          "class":"header_style3",
-                          "style":{
-                            "width":"8%"
+                          "type": "textfield",
+                          "name": "textfield15",
+                          "contentDescription": "fifteen",
+                          "value": "{{$global.textfield15 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield16",
+                          "contentDescription": "sixteen",
+                          "value": "{{$global.textfield16 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%",
+                    "background": "rgb(239,240,242)"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "17",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "18",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "19",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "20",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
                           }
                         }
                       ]
@@ -1640,9 +1647,9 @@
                   ]
                 },
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
                       "type": "vertical",
                       "class": "no_padding",
@@ -1650,7 +1657,7 @@
                         {
                           "type": "label",
                           "text": "21",
-                          "class":"header_style3",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1662,9 +1669,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"22",
-                          "class":"header_style3",
+                          "type": "label",
+                          "text": "22",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1676,9 +1683,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"23",
-                          "class":"header_style3",
+                          "type": "label",
+                          "text": "23",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1690,9 +1697,9 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"label",
-                          "text":"24",
-                          "class":"header_style3",
+                          "type": "label",
+                          "text": "24",
+                          "class": "header_style3",
                           "style": {
                             "width": "13%"
                           }
@@ -1700,113 +1707,113 @@
                       ]
                     }
                   ],
-                  "style":{
-                    "width":"50%"
+                  "style": {
+                    "width": "50%"
                   }
                 }
               ]
             },
             {
-              "type":"horizontal",
-              "items":[
+              "type": "horizontal",
+              "items": [
                 {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
                     {
-                          "type": "label",
-                          "text": "3",
-                          "style": {
-                            "width": "12%",
-                            "align":"center",
-                            "height":"7%",
-                            "color":"#FFFFFF",
-                            "background": "rgb(14, 53, 112)"
-                          }
+                      "type": "label",
+                      "text": "3",
+                      "style": {
+                        "width": "12%",
+                        "align": "center",
+                        "height": "7%",
+                        "color": "#FFFFFF",
+                        "background": "rgb(14, 53, 112)"
+                      }
                     },
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type":"textfield",
-                          "name":"textfield17",
-                          "contentDescription": "seventeen",
-                          "value":"{{$global.textfield17 || ''}}",
-                          "class":"header_textfield",
-                          "style":{
-                            "width":"10%"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type":"textfield",
-                          "name":"textfield18",
-                          "contentDescription": "eighteen",
-                          "value":"{{$global.textfield18 || ''}}",
-                          "class":"header_textfield",
-                          "style":{
-                            "width":"12%"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type":"textfield",
-                          "name":"textfield19",
-                          "contentDescription": "nineteen",
-                          "value":"{{$global.textfield19 || ''}}",
-                          "class":"header_textfield",
-                          "style":{
-                            "width":"8%"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type":"textfield",
-                          "name":"textfield20",
-                          "contentDescription": "twenty",
-                          "value":"{{$global.textfield20 || ''}}",
-                          "class":"header_textfield",
-                          "style":{
-                            "width":"8%"
-                          }
-                        }
-                      ]
-                    }
-                  ],
-                  "style":{
-                    "background": "rgb(14, 53, 112)"
-                  }
-                },
-                {
-                  "type":"horizontal",
-                  "class":"no_padding",
-                  "components":[
                     {
                       "type": "vertical",
                       "class": "no_padding",
                       "components": [
                         {
                           "type": "textfield",
-                          "name":"textfield21",
+                          "name": "textfield17",
+                          "contentDescription": "seventeen",
+                          "value": "{{$global.textfield17 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield18",
+                          "contentDescription": "eighteen",
+                          "value": "{{$global.textfield18 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield19",
+                          "contentDescription": "nineteen",
+                          "value": "{{$global.textfield19 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield20",
+                          "contentDescription": "twenty",
+                          "value": "{{$global.textfield20 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "background": "rgb(14, 53, 112)"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield21",
                           "contentDescription": "twenty-one",
-                          "value":"{{$global.textfield21 || ''}}",
-                          "class":"header_textfield ",
+                          "value": "{{$global.textfield21 || ''}}",
+                          "class": "header_textfield ",
                           "style": {
                             "width": "13%"
                           }
@@ -1818,11 +1825,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"textfield",
-                          "name":"textfield22",
+                          "type": "textfield",
+                          "name": "textfield22",
                           "contentDescription": "twenty-two",
-                          "value":"{{$global.textfield22 || ''}}",
-                          "class":"header_textfield",
+                          "value": "{{$global.textfield22 || ''}}",
+                          "class": "header_textfield",
                           "style": {
                             "width": "13%"
                           }
@@ -1834,11 +1841,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"textfield",
-                          "name":"textfield23",
+                          "type": "textfield",
+                          "name": "textfield23",
                           "contentDescription": "twenty-three",
-                          "value":"{{$global.textfield23 || ''}}",
-                          "class":"header_textfield",
+                          "value": "{{$global.textfield23 || ''}}",
+                          "class": "header_textfield",
                           "style": {
                             "width": "13%"
                           }
@@ -1850,11 +1857,11 @@
                       "class": "no_padding",
                       "components": [
                         {
-                          "type":"textfield",
-                          "name":"textfield24",
+                          "type": "textfield",
+                          "name": "textfield24",
                           "contentDescription": "twenty-four",
-                          "value":"{{$global.textfield24 || ''}}",
-                          "class":"header_textfield",
+                          "value": "{{$global.textfield24 || ''}}",
+                          "class": "header_textfield",
                           "style": {
                             "width": "13%"
                           }
@@ -1862,8 +1869,8 @@
                       ]
                     }
                   ],
-                  "style":{
-                    "width":"50%",
+                  "style": {
+                    "width": "50%",
                     "background": "rgb(239,240,242)"
                   }
                 }
@@ -1928,7 +1935,7 @@
                       "action": {
                         "type": "$href",
                         "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/12_ReagentsLog/screen_2.json",
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/14_ReagentsLog/screen_2.json",
                           "preload": {
                             "style": {
                               "background": "#ff0000"
