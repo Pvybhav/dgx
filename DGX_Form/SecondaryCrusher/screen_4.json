@@ -250,7 +250,7 @@
       "data": {
         "Page_Heading": "Primary Crusher Operator Shift Report",
         "redirect_url": "https://pvybhav.github.io/DGX_Form/SecondaryCrusher/screen_1.jsonl",
-        "Table1_Headers": [{
+        "Screen4_Table1_Headers": [{
             "type": "label",
             "value": "Dust Collectors",
             "col_type": "col_name",
@@ -287,7 +287,7 @@
             "styles": "table_header_styles  table_header_value_styles"
           }
         ],
-        "Table1_Rows": [{
+        "Screen4_Table1_Rows": [{
             "row_name": "Line 1",
             "row_styles": "content_style_odd column_label_style",
             "row_values": [{
@@ -358,7 +358,7 @@
             ]
           }
         ],
-        "Table2_Headers": [{
+        "Screen4_Table2_Headers": [{
             "type": "label",
             "value": "Dust Collectors",
             "col_type": "col_name",
@@ -395,7 +395,7 @@
             "styles": "table_header_styles  table_header_value_styles"
           }
         ],
-        "Table3_Rows": [{
+        "Screen4_Table3_Rows": [{
             "row_name": "Line 1",
             "row_styles": "content_style_odd column_label_style",
             "row_values": [{
@@ -795,7 +795,7 @@
                   "type": "horizontal",
                   "class": "no_padding table_row",
                   "components": {
-                    "{{#each Table1_Headers}}": {
+                    "{{#each Screen4_Table1_Headers}}": {
                       "type": "horizontal",
                       "components": [{
                         "type": "label",
@@ -929,7 +929,7 @@
                   {
                     "type": "vertical",
                     "components": {
-                      "{{#each Table1_Rows}}": {
+                      "{{#each Screen4_Table1_Rows}}": {
                         "{{#let}}": [{
                             "row_index": "{{$index}}"
                           },
@@ -972,7 +972,7 @@
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
-                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen4_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
                                         "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
@@ -1012,7 +1012,7 @@
                   "type": "horizontal",
                   "class": "no_padding table_row",
                   "components": {
-                    "{{#each Table2_Headers}}": {
+                    "{{#each Screen4_Table2_Headers}}": {
                       "type": "horizontal",
                       "components": [{
                         "type": "label",
@@ -1037,7 +1037,7 @@
                   {
                     "type": "vertical",
                     "components": {
-                      "{{#each Table3_Rows}}": {
+                      "{{#each Screen4_Table3_Rows}}": {
                         "{{#let}}": [{
                             "row_index": "{{$index}}"
                           },
@@ -1080,7 +1080,7 @@
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
-                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen4_Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
                                         "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",

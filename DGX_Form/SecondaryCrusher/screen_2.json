@@ -244,7 +244,8 @@
       "data": {
         "Page_Heading": "Primary Crusher Operator Shift Report",
         "redirect_url": "https://pvybhav.github.io/DGX_Form/PrimaryCrusherOperator/screen_1.json",
-        "Table1_Headers": [{
+        "Screen2_Table1_Headers": [
+          {
             "type": "label",
             "value": "Feeders",
             "col_type": "col_name",
@@ -275,7 +276,7 @@
             "styles": "table_header_styles  table_header_value_styles"
           }
         ],
-        "Table1_Rows": [{
+        "Screen2_Table1_Rows": [{
             "row_name": "001",
             "row_styles": "content_style_odd column_label_style",
             "row_values": [{
@@ -346,7 +347,7 @@
             ]
           }
         ],
-        "Table2_Headers": [{
+        "Screen2_Table2_Headers": [{
             "type": "label",
             "value": "Feeders",
             "col_type": "col_name",
@@ -383,7 +384,7 @@
             "styles": "table_header_styles  table_header_value_styles"
           }
         ],
-        "Table2_Rows": [{
+        "Screen2_Table2_Rows": [{
             "row_name": "021",
             "row_styles": "content_style_even column_label_style",
             "row_values": [{
@@ -455,7 +456,7 @@
           }
 
         ],
-        "Table3_Rows": [{
+        "Screen2_Table3_Rows": [{
             "row_name": "001",
             "row_styles": "content_style_odd column_label_style",
             "row_values": [{
@@ -526,7 +527,7 @@
             ]
           }
         ],
-        "Table4_Rows": [{
+        "Screen2_Table4_Rows": [{
             "row_name": "021",
             "row_styles": "content_style_even column_label_style",
             "row_values": [{
@@ -773,7 +774,7 @@
                   "type": "horizontal",
                   "class": "no_padding table_row",
                   "components": {
-                    "{{#each Table1_Headers}}": {
+                    "{{#each Screen2_Table1_Headers}}": {
                       "type": "vertical",
                       "components": [{
                         "type": "label",
@@ -912,7 +913,7 @@
                   {
                     "type": "vertical",
                     "components": {
-                      "{{#each Table1_Rows}}": {
+                      "{{#each Screen2_Table1_Rows}}": {
                         "{{#let}}": [{
                             "row_index": "{{$index}}"
                           },
@@ -955,7 +956,7 @@
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
-                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
                                         "class": "{{styles}} switch_legend_styles_screen2_table",
                                         "style": {
                                           "width": "17%",
@@ -998,7 +999,7 @@
                   {
                     "type": "vertical",
                     "components": {
-                      "{{#each Table2_Rows}}": {
+                      "{{#each Screen2_Table2_Rows}}": {
                         "{{#let}}": [{
                             "row_index": "{{$index}}"
                           },
@@ -1041,7 +1042,7 @@
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
-                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
                                         "class": "{{styles}} switch_legend_styles_screen2_table",
                                         "style": {
                                           "width": "17%",
@@ -1081,7 +1082,7 @@
                   "type": "horizontal",
                   "class": "no_padding table_row",
                   "components": {
-                    "{{#each Table2_Headers}}": {
+                    "{{#each Screen2_Table2_Headers}}": {
                       "type": "vertical",
                       "components": [{
                         "type": "label",
@@ -1109,7 +1110,7 @@
                   {
                     "type": "vertical",
                     "components": {
-                      "{{#each Table3_Rows}}": {
+                      "{{#each Screen2_Table3_Rows}}": {
                         "{{#let}}": [{
                             "row_index": "{{$index}}"
                           },
@@ -1152,7 +1153,7 @@
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
-                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
                                         "class": "{{styles}} switch_legend_styles_screen2_table",
                                         "style": {
                                           "width": "17%",
@@ -1195,7 +1196,7 @@
                   {
                     "type": "vertical",
                     "components": {
-                      "{{#each Table4_Rows}}": {
+                      "{{#each Screen2_Table4_Rows}}": {
                         "{{#let}}": [{
                             "row_index": "{{$index}}"
                           },
@@ -1238,7 +1239,7 @@
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
-                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                        "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
                                         "class": "{{styles}} switch_legend_styles_screen2_table",
                                         "style": {
                                           "width": "17%",
