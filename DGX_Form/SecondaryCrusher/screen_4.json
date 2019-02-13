@@ -169,7 +169,7 @@
         "table_header_name_styles": {
           "width": "15%",
           "border": "rgb(255, 255, 255)",
-          "height": "40%"
+          "height": "30%"
         },
         "line_style": {
           "width": "100%",
@@ -179,12 +179,12 @@
         "table_header_value_styles_two_rows": {
           "width": "34%",
           "border": "rgb(255, 255, 255)",
-          "height": "40%"
+          "height": "30%"
         },
         "table_header_value_styles": {
           "width": "17%",
           "border": "rgb(255, 255, 255)",
-          "height": "40%"
+          "height": "30%"
         },
         "table_header_value_styles2": {
           "width": "18%",
@@ -197,7 +197,7 @@
           "height": "10%"
         },
         "table_row": {
-          "height": "40%"
+          "height": "30%"
         },
         "table_row5": {
           "height": "10%"
@@ -536,7 +536,7 @@
         "handleSwitchValues": {
           "type": "$global.set",
           "options": {
-            "section_id": "form13_page1",
+            "section_id": "form15_page4",
             "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}",
             "currentFieldValue": "{{$get[$jason.fieldName]}}"
           }
@@ -848,11 +848,14 @@
                       },
                       {
                         "type": "horizontal",
-                        "class": "table_header_styles center_align",
+                        "class": "center_align",
                         "style": {
                           "height": "6%",
                           "width": "51%",
-                          "border": "#ffffff"
+                          "size": 15,
+                          "font": "HelveticaHeader",
+                          "background": "rgb(14, 53, 112)",
+                          "color": "rgb(255, 255, 255)"
 
                         },
                         "components": [{
@@ -962,10 +965,10 @@
                                     "type": "horizontal",
                                     "components": [{
                                       "type": "vertical",
-                                      "style":{
-                                        "height":"6%"
+                                      "style": {
+                                        "height": "6%"
                                       },
-                                      "class":"{{styles}}",
+                                      "class": "{{styles}}",
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
@@ -973,7 +976,9 @@
                                         "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
-                                          "padding_bottom": "1%"
+                                          "padding_bottom": "1%",
+                                          "border": "#ffffff",
+                                          "height": "6%"
                                         },
                                         "action": {
                                           "trigger": "{{#? trigger}}",
@@ -1068,10 +1073,10 @@
                                     "type": "horizontal",
                                     "components": [{
                                       "type": "vertical",
-                                      "style":{
-                                        "height":"6%"
+                                      "style": {
+                                        "height": "6%"
                                       },
-                                      "class":"{{styles}}",
+                                      "class": "{{styles}}",
                                       "components": [{
                                         "type": "switch",
                                         "name": "{{name}}",
@@ -1079,7 +1084,9 @@
                                         "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
-                                          "padding_bottom": "1%"
+                                          "padding_bottom": "1%",
+                                          "border": "#ffffff",
+                                          "height": "6%"
                                         },
                                         "action": {
                                           "trigger": "{{#? trigger}}",
