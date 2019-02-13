@@ -1,0 +1,54 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Global Test 1",
+      "offline": "true",
+      "actions": {
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "button",
+                  "text": "{{$global.something || 'Set Global'}}",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://s3.amazonaws.com/enu-digital-ips/test/saveOfflineData/2.json",
+                      "transition": "modal"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "button",
+                  "text": "Next",
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://s3.amazonaws.com/enu-digital-ips/test/saveOfflineData/3.json",
+                      "transition": "modal"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

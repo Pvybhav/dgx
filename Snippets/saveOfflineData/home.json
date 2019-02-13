@@ -1,0 +1,258 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Local Variables",
+      "offline": "true",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "section_id": "offline_values",
+            "tfvalue1": "?",
+            "tfvalue2": "??"
+          },
+          "success": {
+            "type": "$render",
+            "options": {
+              "template": "body"
+            },
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Load",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "$pull": {
+          "type": "$render",
+          "options": {
+            "template": "body"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "pull",
+              "type": "warning"
+            }
+          }
+        },
+        "$foreground": {
+          "type": "$util.toast",
+          "options": {
+            "text": "foreground",
+            "type": "warning"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "Local Variables"
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "label",
+                  "text": "tf1: {{$get.tfvalue1}} tf2: {{$get.tfvalue2}}",
+                  "style": {
+                    "font": "HelveticaNeue-Bold",
+                    "size": "30",
+                    "padding": "20",
+                    "align": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "header": {
+                "type": "label",
+                "text": "textfield",
+                "style": {
+                  "background": "#f5f5f5"
+                }
+              },
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textfield",
+                      "text": "{{$get.tfvalue2}} 123",
+                      "name": "tfvalue1"
+                    },
+                    {
+                      "type": "button",
+                      "text": "Done",
+                      "style": {
+                        "width": "60",
+                        "color": "#ff0000"
+                      },
+                      "action": {
+                        "type": "$render"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "header": {
+                "type": "label",
+                "text": "textarea",
+                "style": {
+                  "background": "#f5f5f5"
+                }
+              },
+              "items": [
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "align": "top"
+                  },
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "placeholder": "Enter text and press Done",
+                      "name": "tfvalue2",
+                      "text": "{{$get.tfvalue2}} 234",
+                      "style": {
+                        "height": "100"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "text": "Done",
+                      "style": {
+                        "width": "60",
+                        "height": "30",
+                        "color": "#ff0000"
+                      },
+                      "action": {
+                        "type": "$render"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "components": [
+                    {
+                      "type": "button",
+                      "text": "home2",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/test/saveOfflineData/home2.json"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "body2": {
+          "header": {
+            "title": "Local Variables22"
+          },
+          "sections": [
+            {
+              "items": [
+                {
+                  "type": "label",
+                  "text": "tf1: {{$get.tfvalue1}} tf2: {{$get.tfvalue2}}",
+                  "style": {
+                    "font": "HelveticaNeue-Bold",
+                    "size": "30",
+                    "padding": "20",
+                    "align": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "header": {
+                "type": "label",
+                "text": "textfield",
+                "style": {
+                  "background": "#f5f5f5"
+                }
+              },
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textfield",
+                      "text": "{{$get.tfvalue2}} 123",
+                      "name": "tfvalue1"
+                    },
+                    {
+                      "type": "button",
+                      "text": "Done",
+                      "style": {
+                        "width": "60",
+                        "color": "#ff0000"
+                      },
+                      "action": {
+                        "type": "$render"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "header": {
+                "type": "label",
+                "text": "textarea",
+                "style": {
+                  "background": "#f5f5f5"
+                }
+              },
+              "items": [
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "align": "top"
+                  },
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "placeholder": "Enter text and press Done",
+                      "name": "tfvalue2",
+                      "text": "{{$get.tfvalue2}} 234",
+                      "style": {
+                        "height": "100"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "text": "Done",
+                      "style": {
+                        "width": "60",
+                        "height": "30",
+                        "color": "#ff0000"
+                      },
+                      "action": {
+                        "type": "$render"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
