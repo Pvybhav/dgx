@@ -1044,7 +1044,9 @@
                                         "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
-                                          "padding_bottom": "1%"
+                                          "padding_bottom": "1%",
+                                          "border":"#ffffff",
+                                          "height":"6%"
                                         },
                                         "action": {
                                           "trigger": "{{#? trigger}}",
@@ -1125,10 +1127,12 @@
                                         "type": "switch",
                                         "name": "{{name}}",
                                         "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                        "class": "{{styles}} switch_legend_styles_table",
+                                       "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
-                                          "padding_bottom": "1%"
+                                          "padding_bottom": "1%",
+                                          "border":"#ffffff",
+                                          "height":"6%"
                                         },
                                         "action": {
                                           "trigger": "{{#? trigger}}",
@@ -1225,8 +1229,7 @@
                                   "{{#each row_values}}": {
                                     "type": "horizontal",
                                     "components": [{
-                                      "type": "vertical",
-                                      "style":{
+                                    "style":{
                                         "height":"6%"
                                       },
                                       "class":"{{styles}}",
@@ -1234,10 +1237,12 @@
                                         "type": "switch",
                                         "name": "{{name}}",
                                         "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                        "class": "{{styles}} switch_legend_styles_table",
+                                      "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
-                                          "padding_bottom": "1%"
+                                          "padding_bottom": "1%",
+                                          "border":"#ffffff",
+                                          "height":"6%"
                                         },
                                         "action": {
                                           "trigger": "{{#? trigger}}",
@@ -1310,7 +1315,7 @@
                                     "type": "horizontal",
                                     "components": [{
                                       "type": "vertical",
-                                      "style":{
+                                     "style":{
                                         "height":"6%"
                                       },
                                       "class":"{{styles}}",
@@ -1318,10 +1323,12 @@
                                         "type": "switch",
                                         "name": "{{name}}",
                                         "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                        "class": "{{styles}} switch_legend_styles_table",
+                                      "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
-                                          "padding_bottom": "1%"
+                                          "padding_bottom": "1%",
+                                          "border":"#ffffff",
+                                          "height":"6%"
                                         },
                                         "action": {
                                           "trigger": "{{#? trigger}}",
