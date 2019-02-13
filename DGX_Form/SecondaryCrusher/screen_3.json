@@ -1229,7 +1229,8 @@
                                   "{{#each row_values}}": {
                                     "type": "horizontal",
                                     "components": [{
-                                    "style":{
+                                      "type": "vertical",
+                                      "style":{
                                         "height":"6%"
                                       },
                                       "class":"{{styles}}",
@@ -1237,7 +1238,7 @@
                                         "type": "switch",
                                         "name": "{{name}}",
                                         "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                      "class": "{{styles}} switch_legend_styles_table",
+                                        "class": "{{styles}} switch_legend_styles_table",
                                         "style": {
                                           "width": "17%",
                                           "padding_bottom": "1%",
