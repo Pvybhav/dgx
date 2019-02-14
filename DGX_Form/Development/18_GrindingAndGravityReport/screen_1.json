@@ -1,0 +1,1052 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Grinding And Gravity Reprort Sheet",
+      "description": "Form-18",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "dropdown_day_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "15"
+        },
+        "table_header_name_styles": {
+          "width": "40%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_header_value_styles": {
+          "width": "15%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_c_header_value_styles": {
+          "width": "30%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "switch_styles": {
+          "color": "#00ff00",
+          "color:disabled": "#ff0000"
+        },
+        "table_body_name_styles": {
+          "width": "40%"
+        },
+        "table_body_value_styles": {
+          "width": "15%"
+        },
+        "table_fields_size": {
+          "size": "16"
+        },
+        "table_main_header_styles": {
+          "width": "100%",
+          "background": "rgb(0, 112, 192)"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "7%",
+          "padding_top": "1%",
+          "padding_bottom": "1%"
+        },
+        "table_odd_row_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "table_even_row_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_height": {
+          "height": "6%"
+        },
+        "table_body_textfield_styles": {
+          "width": "18%",
+          "height": "4%",
+          "size": "13"
+        },
+        "loading_image_styles": {
+          "top": "50%-25",
+          "left": "50%-25",
+          "width": "50",
+          "height": "50"
+        },
+        "preload_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "template_button_styles": {
+          "size": "18",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "layer_styles": {
+          "width": "5%",
+          "height": "8%",
+          "bottom": "1%"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$script.include",
+          "options": {
+            "items": [
+              {
+                "text": "var getCurrentFieldValue = function(root, id, globalValues) {  for (var key in globalValues) { if(globalValues.hasOwnProperty(id)) return globalValues[id]; };}"
+              }
+            ]
+          },
+          "success": {
+            "type": "$global.set",
+            "options": {
+              "section_id": "form18",
+              "feed_chute_bolts_leaking_line1": "{{ $global.feed_chute_bolts_leaking_line1 == null ? false : $global.feed_chute_bolts_leaking_line1 }}",
+              "feed_chute_bolts_leaking_line2": "{{ $global.feed_chute_bolts_leaking_line2 == null ? false : $global.feed_chute_bolts_leaking_line2 }}",
+              "feed_chute_feed_seal_leaking_line1": "{{ $global.feed_chute_feed_seal_leaking_line1 == null ? false : $global.feed_chute_feed_seal_leaking_line1 }}",
+              "feed_chute_feed_seal_leaking_line2": "{{ $global.feed_chute_feed_seal_leaking_line2 == null ? false : $global.feed_chute_feed_seal_leaking_line2 }}"
+            },
+            "success": {
+              "type": "$render",
+              "options": {
+                "template": "screen1"
+              },
+              "success": {
+                "trigger": "displayToaster",
+                "options": {
+                  "message": "Page loaded successfully"
+                }
+              }
+            }
+          }
+        },
+        "$pull": {
+          "type": "$reload",
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
+          }
+        },
+        "handleSwitchValues": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form18",
+            "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "updated {{JSON.stringify($get)}}"
+            }
+          }
+        },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
+        },
+        "handleTemplateChange": {
+          "type": "$render",
+          "options": {
+            "template": "{{$jason.templateName}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
+          }
+        },
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "class": "loading_image_styles"
+                }
+              ]
+            }
+          }
+        },
+        "handleSave_screen1": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form18",
+            "form18_sign": "{{ $get.sign || '' }}",
+            "form18_day": "{{ $get.day }}",
+            "form18_month": "{{ $get.month }}",
+            "form18_year": "{{ $get.year }}",
+            "form18_shift": "{{ $get.shift }}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen1 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form18"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen2 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen3": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form18"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen3 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen4": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form18"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen4 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen5": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form18"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen5 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen6": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form18"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen6 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen7": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form18"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen7 data Successfully"
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "filename": "GrindingAndGravityReport"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id"
+              ]
+            },
+            "success": {
+              "type": "$reload",
+              "options": {
+                "template": "screen1"
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "Page_Heading": "Grinding And Gravity Report",
+        "loading_image_url": "file://infinit.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
+        "Days": [
+          {
+            "day": "Day",
+            "defaultSelected": "true"
+          },
+          {
+            "day": 1,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 2,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 3,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 4,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 5,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 6,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 7,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 8,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 9,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 10,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 11,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 12,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 13,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 14,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 15,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 16,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 17,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 18,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 19,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 20,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 21,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 22,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 23,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 24,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 25,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 26,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 27,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 28,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 29,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 30,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 31,
+            "defaultSelected": "false"
+          }
+        ],
+        "Months": [
+          {
+            "month": "Month",
+            "defaultSelected": "true"
+          },
+          {
+            "month": 1,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 2,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 3,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 4,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 5,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 6,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 7,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 8,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 9,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 10,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 11,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 12,
+            "defaultSelected": "false"
+          }
+        ],
+        "Years": [
+          {
+            "year": "Year",
+            "defaultSelected": "true"
+          },
+          {
+            "year": 2019,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2020,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2021,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2022,
+            "defaultSelected": "false"
+          }
+        ],
+        "Shifts": [
+          {
+            "shift": "Shift",
+            "defaultSelected": "true"
+          },
+          {
+            "shift": "Night Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Day Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Regular Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Rotating Shift",
+            "defaultSelected": "false"
+          }
+        ],
+        "Operators": [
+          {
+            "operator": "Operator",
+            "defaultSelected": "true"
+          },
+          {
+            "operator": "John",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Smith",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Michael",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Federer",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "David",
+            "defaultSelected": "false"
+          }
+        ],
+        "Table1_Headers": [
+          {
+            "type": "label",
+            "value": "Feed Chute",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "horizontal",
+            "class": "table_header_styles center_align",
+            "components": [
+              {
+                "type": "vertical",
+                "components": [
+                  {
+                    "type": "horizontal",
+                    "components": [
+                      {
+                        "type": "label",
+                        "text": "Line 1"
+                      },
+                      {
+                        "type": "label",
+                        "text": "Line 1"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "horizontal",
+                    "components": [
+                      {
+                        "type": "switch",
+                        "name": "table1_line1_yes",
+                        "value": "true",
+                        "class": "switch_styles",
+                        "isClickable": "false"
+                      },
+                      {
+                        "type": "switch",
+                        "name": "table1_line1_no",
+                        "value": "false",
+                        "class": "switch_styles",
+                        "isClickable": "false"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Table1_Rows": [
+          {
+            "row_name": "Bolts Leaking",
+            "row_values": [
+              {
+                "type": "switch",
+                "name": "feed_chute_bolts_leaking_line1"
+              },
+              {
+                "type": "switch",
+                "name": "feed_chute_bolts_leaking_line2"
+              }
+            ]
+          },
+          {
+            "row_name": "Feed Seal leaking",
+            "row_values": [
+              {
+                "type": "switch",
+                "name": "feed_chute_feed_seal_leaking_line1"
+              },
+              {
+                "type": "switch",
+                "name": "feed_chute_feed_seal_leaking_line2"
+              }
+            ]
+          }
+        ]
+      },
+      "templates": {
+        "screen1": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (1/*)"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "background": "rgb(0, 112, 192)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "day",
+                      "value": "{{$global.form18_day}}",
+                      "contentDescription": "day",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Days}}": {
+                          "value": "{{day}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.form18_month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Months}}": {
+                          "value": "{{month}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.form18_year}}",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Years}}": {
+                          "value": "{{year}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.form18_shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": {
+                        "{{#each Shifts}}": {
+                          "value": "{{shift}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.form18_operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": {
+                        "{{#each Operators}}": {
+                          "value": "{{operator}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.form18_sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table1_Headers}}": {
+                          "type": "{{type}}",
+                          "text": "{{value}}",
+                          "class": "{{styles}}",
+                          "components": "{{#? components}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table1_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "label",
+                                          "text": "{{this.row_name}}",
+                                          "class": "black_color table_body_name_styles table_fields_size center_align table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}",
+                                            "width": "37%"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "class": "{{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || false;}}",
+                                              "class": "table_row_height center_align black_color table_body_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles table_body_value_styles' : 'switch_styles table_odd_row_styles table_body_value_styles' : ''}}",
+                                              "action": {
+                                                "trigger": "handleSwitchValues",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "height": "10%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
+              "style": {
+                "left": "10%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "1",
+              "class": "layer_styles template_button_styles active_template_button_styles",
+              "style": {
+                "left": "18%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "2",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "26%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "3",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "34%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "4",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "42%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "5",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "50%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen5"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "6",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "58%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen6"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "7",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "66%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen7"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "class": "layer_styles",
+              "style": {
+                "left": "74%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
+              "style": {
+                "left": "82%"
+              },
+              "action": {
+                "trigger": "handleSave_screen1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

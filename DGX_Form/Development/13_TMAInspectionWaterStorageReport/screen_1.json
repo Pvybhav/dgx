@@ -5359,21 +5359,11 @@
             }
           }
         },
-        "$pull": {
-          "type": "$reload",
-          "success": {
-            "trigger": "displayToaster",
-            "options": {
-              "message": "Page loaded successfully"
-            }
-          }
-        },
         "handleSwitchValues": {
           "type": "$global.set",
           "options": {
             "section_id": "form13",
-            "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}",
-            "currentFieldValue": "{{$get[$jason.fieldName]}}"
+            "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
           }
         },
         "displayToaster": {
@@ -5812,7 +5802,8 @@
             "K_row1_1st_round": "{{ $get.K_row1_1st_round || '' }}",
             "K_row1_2nd_round": "{{ $get.K_row1_2nd_round || '' }}",
             "K_row1_3rd_round": "{{ $get.K_row1_3rd_round || '' }}",
-            "K_row1_4th_round": "{{ $get.K_row1_4th_round || '' }}"
+            "K_row1_4th_round": "{{ $get.K_row1_4th_round || '' }}",
+            "form13_comments": "{{ $get.comments || '' }}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -6485,7 +6476,8 @@
                 "K_row1_1st_round",
                 "K_row1_2nd_round",
                 "K_row1_3rd_round",
-                "K_row1_4th_round"
+                "K_row1_4th_round",
+                "form13_comments"
               ]
             },
             "success": {
@@ -10416,6 +10408,17 @@
                           ]
                         }
                       }
+                    },
+                    {
+                      "type": "label",
+                      "text": " COMMENTS.",
+                      "class": "table_header_styles table_main_header_styles"
+                    },
+                    {
+                      "type": "textarea",
+                      "name": "comments",
+                      "value": "{{$global.form13_comments || ''}}",
+                      "placeholder": "Enter Comments"
                     },
                     {
                       "type": "space",
