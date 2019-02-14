@@ -1808,7 +1808,16 @@
           "$pull": {
             "type": "$reload",
             "success": {
-              "type": "$render"
+              "type": "$render",
+              "options": {
+                "template": "screen1"
+              },
+              "success": {
+                "trigger": "displayToaster",
+                "options": {
+                  "message": "Page loaded successfully"
+                }
+              }
             }
           },
           "handleTemplateChange": {
