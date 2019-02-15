@@ -36,7 +36,8 @@
           {
             "form_name": "Leach Area Shift Report",
             "voicetag_name": "Form1",
-            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/1_LeachAreaShiftReport/screen_1.json"
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/1_LeachAreaShiftReport/screen_1.json",
+            "defaultSelected": "true"
           },
           {
             "form_name": "Safety Screen Shift Report",
@@ -71,7 +72,7 @@
           {
             "form_name": "SO2 Offload Checklist",
             "voicetag_name": "Form8",
-            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/8_OffloadChecklist/screen_1.json"
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/8_SO2OffloadChecklist/screen_1.json"
           },
           {
             "form_name": "CIP Checklist",
@@ -92,6 +93,16 @@
             "form_name": "Primary Crusher Operator Shift Report",
             "voicetag_name": "Form12",
             "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/12_PrimaryCrusherOperatorShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "Process Plant TMA Inspection Water Storage Report",
+            "voicetag_name": "Form13",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/13_ProcessPlantTMAInspectionWaterStorageReport/screen_1.json"
+          },
+          {
+            "form_name": "Reagents Log",
+            "voicetag_name": "Form14",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/14_ReagentsLog/screen_1.json"
           }
         ]
       },
@@ -129,6 +140,35 @@
             }
           },
           "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "dropdown",
+                          "name": "home_forms_dropdown",
+                          "value": "",
+                          "contentDescription": "forms",
+                          "class": "center_align",
+                          "options": {
+                            "{{#each forms}}": {
+                              "value": "{{form_name}}",
+                              "defaultSelected": "{{#? defaultSelected}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "type": "vertical",
               "items": [
