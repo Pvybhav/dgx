@@ -6884,6 +6884,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_A_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_A_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_A_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -7018,6 +7021,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -7303,6 +7309,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C1_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -7407,6 +7416,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_C2_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -7516,6 +7528,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_D_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_D_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_D_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -7816,6 +7831,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -7914,6 +7932,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E1_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -8028,6 +8049,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E2_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -8138,6 +8162,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E3_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -8252,6 +8279,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E4_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E4_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E4_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -8362,6 +8392,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E5_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E5_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E5_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -8661,6 +8694,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E6_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E6_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E6_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -8771,6 +8807,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E7_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E7_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_E7_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -8892,6 +8931,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -8996,6 +9038,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F1_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -9108,6 +9153,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F2_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -9407,6 +9455,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F3_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -9519,6 +9570,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F4_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F4_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F4_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -9629,6 +9683,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F5_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F5_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_F5_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -9925,6 +9982,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_G_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_G_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_G_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -10052,6 +10112,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_H1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_H1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_H1_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -10162,6 +10225,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_H2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_H2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_H2_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
@@ -10458,6 +10524,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_I_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_I_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_I_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -10567,6 +10636,9 @@
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_J_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_J_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_J_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
@@ -10668,6 +10740,9 @@
                                               "value": [
                                                 {
                                                   "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_K_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_K_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
                                                 },
                                                 {
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_K_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
