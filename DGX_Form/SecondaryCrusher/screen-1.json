@@ -172,6 +172,15 @@
               "border": "rgb(255, 255, 255)",
               "height": "25%"
             },
+            "table_header_name_styles_units": {
+              "width": "15%",
+              "border": "rgb(255, 255, 255)",
+              "height": "5%",
+              "size": 15,
+              "font": "HelveticaHeader",
+              "background": "rgb(14, 53, 112)",
+              "color": "rgb(255, 255, 255)"
+            },
             "line_style": {
               "width": "100%",
               "height": "6%",
@@ -190,6 +199,11 @@
               "width": "17%",
               "border": "rgb(255, 255, 255)",
               "height": "15%"
+            },
+            "table_header_value_styles_units": {
+              "width": "17%",
+              "border": "rgb(255, 255, 255)",
+              "height": "5%"
             },
             "table_header_value_styles_2": {
               "width": "17%",
@@ -300,6 +314,44 @@
                 "value": "Lube Oil Press at Crusher",
                 "col_type": "col_value",
                 "styles": "table_header_styles  table_header_value_styles"
+              }
+            ],
+            "Screen1_Table1_Units": [
+              {
+                "type": "label",
+                "value": "",
+                "col_type": "col_name",
+                "styles": "table_header_name_styles_units"
+              },
+              {
+                "type": "label",
+                "value": "%",
+                "col_type": "col_value",
+                "styles": "table_header_styles  table_header_value_styles_units"
+              },
+              {
+                "type": "label",
+                "value": "%",
+                "col_type": "col_value",
+                "styles": "table_header_styles  table_header_value_styles_units"
+              },
+              {
+                "type": "label",
+                "value": "Psig",
+                "col_type": "col_value",
+                "styles": "table_header_styles  table_header_value_styles_units"
+              },
+              {
+                "type": "label",
+                "value": "Psig",
+                "col_type": "col_value",
+                "styles": "table_header_styles  table_header_value_styles_units"
+              },
+              {
+                "type": "label",
+                "value": "Psig",
+                "col_type": "col_value",
+                "styles": "table_header_styles  table_header_value_styles_units"
               }
             ],
             "Screen1_Table1_Rows": [
@@ -2709,6 +2761,37 @@
                   }
                 ]
               },
+              {
+                "type": "horizontal",
+                "class": "no_padding",
+                "items": [
+                  {
+                    "type": "horizontal",
+                    "class": "no_padding",
+                    "components": [
+                      {
+                        "type": "horizontal",
+                        "class": "no_padding",
+                        "components": {
+                          "{{#each Screen1_Table1_Units}}": {
+                            "type": "vertical",
+                            "components": [
+                              {
+                                "type": "label",
+                                "text": "{{value}}",
+                                "class": "{{styles}} center_align"
+                              }
+                            ]
+                          }
+                        },
+                        "style": {
+                          "height":"5%"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
              
               {
                 "type": "vertical",
@@ -2904,6 +2987,38 @@
                         },
                         "style": {
                           "padding_top": "1%"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "horizontal",
+                "class": "no_padding",
+                "items": [
+                  {
+                    "type": "horizontal",
+                    "class": "no_padding",
+                    "components": [
+                      {
+                        "type": "horizontal",
+                        "class": "no_padding",
+                       
+                        "components": {
+                          "{{#each Screen1_Table1_Units}}": {
+                            "type": "vertical",
+                            "components": [
+                              {
+                                "type": "label",
+                                "text": "{{value}}",
+                                "class": "{{styles}} center_align"
+                              }
+                            ]
+                          }
+                        },
+                        "style": {
+                          "height":"5%"
                         }
                       }
                     ]
