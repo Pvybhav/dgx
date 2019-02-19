@@ -1,0 +1,3122 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Form-13",
+      "json_id": "field",
+      "description": "Carbon Count Integration to PI",
+      "offline": "true",
+      "styles": {
+        "center_align": {
+          "align": "center"
+        },
+        "no_padding": {
+          "padding": "0"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": "50",
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "dropdown_date_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "dropdown_date_style1": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "15"
+        },
+        "table_header_styles": {
+          "size": "15",
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "height": "9%"
+        },
+        "table_header_name_styles": {
+          "width": "50%"
+        },
+        "header_style": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "background": "rgb(27,142,197)",
+          "height": "12%",
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "header_style1": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "background": "rgb(14, 53, 112)",
+          "height": "5%",
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "header_style2": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "background": "rgb(14, 53, 112)",
+          "height": "5%",
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "header_textfield": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "height": "5%",
+          "color": "rgb(0,0,0)",
+          "padding": 0,
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(204,206,213)"
+        },
+        "cip_style": {
+          "background": "rgb(197,231,183)",
+          "color": "#000000",
+          "border": "#FFFFFF",
+          "border_width": "1",
+          "align": "center",
+          "height": "5%",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "cip2_style": {
+          "background": "rgb(141,223,255)",
+          "color": "#000000",
+          "border": "#FFFFFF",
+          "border_width": "1",
+          "align": "center",
+          "height": "5%",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "ciptext_style": {
+          "background": "rgb(226,243,219)",
+          "color": "#000000",
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "align": "center",
+          "padding": 1,
+          "size": 15,
+          "height": "5%",
+          "width": "13%",
+          "font": "HelveticaHeader"
+        },
+        "cip2text_style": {
+          "background": "rgb(198,239,255)",
+          "color": "#000000",
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "align": "center",
+          "padding": 1,
+          "size": 15,
+          "height": "5%",
+          "width": "13%",
+          "font": "HelveticaHeader"
+        },
+        "submit_button_styles": {
+          "width": "15%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form13_page1"
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form13_page1",
+            "f13_s1_sign": "{{$get.sign || ''}}",
+            "f13_s1_day": "{{$get.day}}",
+            "f13_s1_month": "{{$get.month}}",
+            "f13_s1_year": "{{$get.year}}",
+            "f13_s1_shift": "{{$get.shift}}",
+            "f13_s1_operator": "{{$get.operator}}",
+            "textfield1": "{{$get.textfield1 || ''}}",
+            "textfield2": "{{$get.textfield2 || ''}}",
+            "textfield3": "{{$get.textfield3 || ''}}",
+            "textfield4": "{{$get.textfield4 || ''}}",
+            "textfield5": "{{$get.textfield5 || ''}}",
+            "textfield6": "{{$get.textfield6 || ''}}",
+            "textfield7": "{{$get.textfield7 || ''}}",
+            "textfield8": "{{$get.textfield8 || ''}}",
+            "textfield9": "{{$get.textfield9 || ''}}",
+            "textfield10": "{{$get.textfield10 || ''}}",
+            "textfield11": "{{$get.textfield11 || ''}}",
+            "textfield12": "{{$get.textfield12 || ''}}",
+            "textfield13": "{{$get.textfield13 || ''}}",
+            "textfield14": "{{$get.textfield14 || ''}}",
+            "textfield15": "{{$get.textfield15 || ''}}",
+            "textfield16": "{{$get.textfield16 || ''}}",
+            "textfield17": "{{$get.textfield17 || ''}}",
+            "textfield18": "{{$get.textfield18 || ''}}",
+            "textfield19": "{{$get.textfield19 || ''}}",
+            "textfield20": "{{$get.textfield20 || ''}}",
+            "textfield21": "{{$get.textfield21 || ''}}",
+            "textfield22": "{{$get.textfield22 || ''}}",
+            "textfield23": "{{$get.textfield23 || ''}}",
+            "textfield24": "{{$get.textfield24 || ''}}",
+            "textfield25": "{{$get.textfield25 || ''}}",
+            "textfield26": "{{$get.textfield26 || ''}}",
+            "textfield27": "{{$get.textfield27 || ''}}",
+            "textfield28": "{{$get.textfield28 || ''}}",
+            "textfield29": "{{$get.textfield29 || ''}}",
+            "textfield30": "{{$get.textfield30 || ''}}",
+            "textfield31": "{{$get.textfield31 || ''}}",
+            "textfield32": "{{$get.textfield32 || ''}}",
+            "textfield33": "{{$get.textfield33 || ''}}",
+            "textfield34": "{{$get.textfield34 || ''}}",
+            "textfield35": "{{$get.textfield35 || ''}}",
+            "textfield36": "{{$get.textfield36 || ''}}",
+            "textfield37": "{{$get.textfield37 || ''}}",
+            "textfield38": "{{$get.textfield38 || ''}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved Successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "data": {
+        "Page_Heading": "Carbon Count Integration to PI",
+        "Table1_Headers": [
+          {
+            "type": "label",
+            "name": "consumed",
+            "value": "Consumed",
+            "col_type": "col_name",
+            "styles": "table_header_stylestable_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "name": "received",
+            "value": "Received",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}}",
+              "align": "left"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 15,
+              "background": "rgb(154,205,50)",
+              "color": "rgb(255,255,255)",
+              "height": "0%",
+              "padding": "0",
+              "align": "left"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "day",
+                      "value": "{{$global.f13_s1_day}}",
+                      "contentDescription": "Day",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Day",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "13",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "14",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "15",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "16",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "17",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "18",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "19",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "20",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "21",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "22",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "23",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "24",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "25",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "26",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "27",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "28",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "29",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "30",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "31",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.f13_s1_month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Month",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.f13_s1_year}}",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Year",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2019",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2020",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2021",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2022",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.f13_s1_shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": [
+                        {
+                          "value": "Shift",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Night Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Day Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Regular Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Rotating Shift",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.f13_s1_operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": [
+                        {
+                          "value": "Operator",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "John",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Smith",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Michael",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Federer",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "David",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.f13_s1_sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ],
+              "class": "no_padding"
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Day Shift",
+                      "style": {
+                        "border": "#FFFFFF",
+                        "border_width": "2",
+                        "color": "#FFFFFF",
+                        "align": "center",
+                        "background": "rgb(14,53,112)",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Previous Shift",
+                      "style": {
+                        "border": "#FFFFFF",
+                        "border_width": "2",
+                        "color": "#FFFFFF",
+                        "align": "center",
+                        "background": "rgb(14,53,112)",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Carbon Count (g/L)",
+                      "style": {
+                        "background": "rgb(204,206,213)",
+                        "color": "#000000",
+                        "border": "#FFFFFF",
+                        "border_width": "2",
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Carbon Count (g/L)",
+                      "style": {
+                        "background": "rgb(204,206,213)",
+                        "color": "#000000",
+                        "border": "#FFFFFF",
+                        "border_width": "2",
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line1",
+                      "style": {
+                        "background": "rgb(167,218,147)",
+                        "color": "#000000",
+                        "border": "#FFFFFF",
+                        "border_width": "2",
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "25%"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line2",
+                      "style": {
+                        "background": "rgb(83,208,255)",
+                        "color": "#000000",
+                        "border": "#FFFFFF",
+                        "border_width": "2",
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "25%"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line1",
+                      "style": {
+                        "background": "rgb(167,218,147)",
+                        "color": "#000000",
+                        "border": "#FFFFFF",
+                        "border_width": "2",
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "25%"
+                  }
+                },
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line2",
+                      "style": {
+                        "background": "rgb(83,208,255)",
+                        "color": "#000000",
+                        "border": "#FFFFFF",
+                        "border_width": "2",
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "25%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 101",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield1",
+                          "value": "{{$global.textfield1 || ''}}",
+                          "contentDescription": "one",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 201",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "10",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield10 || ''}}",
+                          "name": "textfield10",
+                          "contentDescription": "ten",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 101",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "19",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield19 || ''}}",
+                          "name": "textfield19",
+                          "contentDescription": "nineteen",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 201",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "28",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield28",
+                          "contentDescription": "twenty-eight",
+                          "value": "{{$global.textfield28 || ''}}",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ],
+              "style": {
+                "width": "100%"
+              }
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 102",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "2",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield2",
+                          "value": "{{$global.textfield2 || ''}}",
+                          "contentDescription": "two",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 202",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "11",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield11 || ''}}",
+                          "name": "textfield11",
+                          "contentDescription": "eleven",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 102",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "20",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield20",
+                          "contentDescription": "twenty",
+                          "value": "{{$global.textfield20 || ''}}",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 202",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "29",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield29 || ''}}",
+                          "name": "textfield29",
+                          "contentDescription": "twenty-nine",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 103",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "3",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield3 || ''}}",
+                          "name": "textfield3",
+                          "contentDescription": "three",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 203",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "12",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield12 || ''}}",
+                          "name": "textfield12",
+                          "contentDescription": "twelve",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 103",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "21",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield21 || ''}}",
+                          "name": "textfield21",
+                          "contentDescription": "twenty-one",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 203",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "30",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield30 || ''}}",
+                          "name": "textfield30",
+                          "contentDescription": "thirty",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ],
+              "style": {
+                "width": "100%"
+              }
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 104",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "4",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield4 || ''}}",
+                          "name": "textfield4",
+                          "contentDescription": "four",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 204",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "13",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield13 || ''}}",
+                          "name": "textfield13",
+                          "contentDescription": "thirteen",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 104",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "22",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield22 || ''}}",
+                          "name": "textfield22",
+                          "contentDescription": "twenty-two",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 204",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "31",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield31 || ''}}",
+                          "name": "textfield31",
+                          "contentDescription": "thirty-one",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ],
+              "style": {
+                "width": "100%"
+              }
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 105",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "5",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield5 || ''}}",
+                          "name": "textfield5",
+                          "contentDescription": "five",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 205",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "14",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield14 || ''}}",
+                          "name": "textfield14",
+                          "contentDescription": "fourteen",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 105",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "23",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield23 || ''}}",
+                          "name": "textfield23",
+                          "contentDescription": "twenty-three",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 205",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "32",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield32 || ''}}",
+                          "name": "textfield32",
+                          "contentDescription": "thirty-two",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ],
+              "style": {
+                "width": "100%"
+              }
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 106",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "6",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield6 || ''}}",
+                          "name": "textfield6",
+                          "contentDescription": "six",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 206",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "15",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield15 || ''}}",
+                          "name": "textfield15",
+                          "contentDescription": "fifteen",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 106",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "24",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield24 || ''}}",
+                          "name": "textfield24",
+                          "contentDescription": "twenty-four",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 206",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "33",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield33 || ''}}",
+                          "name": "textfield33",
+                          "contentDescription": "thirty-three",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ],
+              "style": {
+                "width": "100%"
+              }
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 107",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "7",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield7 || ''}}",
+                          "name": "textfield7",
+                          "contentDescription": "seven",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 207",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "16",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield16 || ''}}",
+                          "name": "textfield16",
+                          "contentDescription": "sixteen",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 107",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "25",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield25 || ''}}",
+                          "name": "textfield25",
+                          "contentDescription": "twenty-five",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP 207",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "34",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield34 || ''}}",
+                          "name": "textfield34",
+                          "contentDescription": "thirty-four",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ],
+              "style": {
+                "width": "100%"
+              }
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Density %",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "8",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield8 || ''}}",
+                          "name": "textfield8",
+                          "contentDescription": "Eight",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Density %",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "17",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield17 || ''}}",
+                          "name": "textfield17",
+                          "contentDescription": "seventeen",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Density %",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "26",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield26 || ''}}",
+                          "name": "textfield26",
+                          "contentDescription": "twenty-six",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Density %",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "35",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield35 || ''}}",
+                          "name": "textfield35",
+                          "contentDescription": "thirty-five",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ],
+              "style": {
+                "width": "100%"
+              }
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Lead Tank",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "9",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield9 || ''}}",
+                          "name": "textfield9",
+                          "contentDescription": "Nine",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Lead Tank",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "18",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield18 || ''}}",
+                          "name": "textfield18",
+                          "contentDescription": "eighteen",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Lead Tank",
+                          "class": "cip_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "27",
+                          "class": "cip_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield27 || ''}}",
+                          "name": "textfield27",
+                          "contentDescription": "twenty-seven",
+                          "class": "ciptext_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Lead Tank",
+                          "class": "cip2_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "36",
+                          "class": "cip2_style",
+                          "style": {
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "value": "{{$global.textfield36 || ''}}",
+                          "name": "textfield36",
+                          "contentDescription": "thirty-six",
+                          "class": "cip2text_style"
+                        }
+                      ],
+                      "style": {
+                        "width": "13%",
+                        "height": "5%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ],
+              "style": {
+                "width": "100%"
+              }
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP Fine Carbon Bags(Full, Removed from stand)",
+                          "class": "cip_style",
+                          "style": {
+                            "height": "9%"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "22%",
+                        "height": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "37",
+                          "class": "cip_style",
+                          "style": {
+                            "height": "9%",
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%",
+                        "height": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textarea",
+                          "name": "textfield37",
+                          "value": "{{$global.textfield37 || ''}}",
+                          "contentDescription": "thirty-seven",
+                          "class": "ciptext_style",
+                          "style": {
+                            "height": "9%",
+                            "width": "12%",
+                            "border_color": "#FFFFFF"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "12%",
+                        "height": "9%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "CIP Fine Carbon Bags(Full, Removed from stand)",
+                          "class": "cip_style",
+                          "style": {
+                            "height": "9%"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "22%",
+                        "height": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "38",
+                          "class": "cip_style",
+                          "style": {
+                            "height": "9%",
+                            "background": "rgb(244, 247, 246)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "3%",
+                        "height": "9%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textarea",
+                          "name": "textfield38",
+                          "value": "{{$global.textfield38 || ''}}",
+                          "contentDescription": "thirty-eight",
+                          "class": "ciptext_style",
+                          "style": {
+                            "height": "9%",
+                            "width": "12%",
+                            "border_color": "#FFFFFF"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "width": "12%",
+                        "height": "9%"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "1%",
+                    "padding_bottom": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "20%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "submit",
+                      "text": "submit",
+                      "class": "center_align submit_button_styles",
+                      "contentDescription": "submit",
+                      "action": {
+                        "type": "$global.reset",
+                        "options": {
+                          "save": "true",
+                          "filename": "Carbon_count_Intergration"
+                        },
+                        "success": {
+                          "type": "$global.reset",
+                          "options": {
+                            "items": [
+                              "section_id",
+                              "f13_s1_sign",
+                              "f13_s1_day",
+                              "f13_s1_month",
+                              "f13_s1_year",
+                              "f13_s1_shift",
+                              "f13_s1_operator",
+                              "textfield1",
+                              "textfield2",
+                              "textfield3",
+                              "textfield4",
+                              "textfield5",
+                              "textfield6",
+                              "textfield7",
+                              "textfield8",
+                              "textfield9",
+                              "textfield10",
+                              "textfield11",
+                              "textfield12",
+                              "textfield13",
+                              "textfield14",
+                              "textfield15",
+                              "textfield16",
+                              "textfield17",
+                              "textfield18",
+                              "textfield19",
+                              "textfield20",
+                              "textfield21",
+                              "textfield22",
+                              "textfield23",
+                              "textfield24",
+                              "textfield25",
+                              "textfield26",
+                              "textfield27",
+                              "textfield28",
+                              "textfield29",
+                              "textfield30",
+                              "textfield31",
+                              "textfield32",
+                              "textfield33",
+                              "textfield34",
+                              "textfield35",
+                              "textfield36",
+                              "textfield37",
+                              "textfield38"
+                            ]
+                          },
+                          "success": {
+                            "type": "$util.toast",
+                            "options": {
+                              "text": "Data Submitted successfully",
+                              "type": "warning"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
