@@ -4902,6 +4902,115 @@
                 "items": [{
                   "type": "vertical",
                   "class": "no_padding",
+                  "components": [{
+                    "type": "vertical",
+                    "components": [{
+                      "type": "horizontal",
+                      "components": [{
+                          "type": "label",
+                          "text": "",
+                          "class": "table_header_styles",
+                          "style": {
+                            "height": "6%",
+                            "width": "15%"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "text": "20-80 psig",
+                          "class": "table_header_styles center_align",
+                          "style": {
+                            "height": "6%",
+                            "width": "17%"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "text": "Min. 20 psig",
+                          "class": "table_header_styles center_align",
+                          "style": {
+                            "height": "6%",
+                            "width": "17%"
+                          }
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "style": {
+                            "height": "6%",
+                            "width": "51%",
+                            "size": 15,
+                            "font": "HelveticaHeader",
+                            "background": "rgb(14, 53, 112)",
+                            "color": "rgb(255, 255, 255)"
+  
+                          },
+                          "components": [{
+                              "type": "horizontal",
+                              "style": {
+                                "background": "rgb(14, 53, 112)",
+                                "color": "rgb(255, 255, 255)"
+  
+                              },
+                              "class": "center_align",
+                              "components": [{
+                                  "type": "switch",
+                                  "name": "shift",
+                                  "value": "true",
+                                  "class": "switch_legend_styles",
+                                  "isClickable": "false"
+  
+                                },
+                                {
+                                  "type": "label",
+                                  "name": "AgitatorShaft_true",
+                                  "text": "= OK",
+                                  "style": {
+                                    "background": "rgb(14, 53, 112)",
+                                    "color": "rgb(255, 255, 255)"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "background": "rgb(14, 53, 112)",
+                                "color": "rgb(255, 255, 255)"
+                              },
+                              "class": "center_align",
+                              "components": [{
+                                  "type": "switch",
+                                  "name": "shift",
+                                  "value": "false",
+                                  "class": "switch_legend_styles",
+                                  "isClickable": "false"
+                                },
+                                {
+                                  "type": "label",
+                                  "name": "AgitatorShaft_false",
+                                  "text": "= Issue",
+                                  "style": {
+                                    "background": "rgb(14, 53, 112)",
+                                    "color": "rgb(255, 255, 255)"
+                                  }
+                                }
+                              ]
+  
+  
+                            }
+                          ]
+                        }
+                      ]
+                    }]
+                  }]
+                }]
+              },
+              {
+                "type": "vertical",
+                "items": [{
+                  "type": "vertical",
+                  "class": "no_padding",
                   "components": [
   
                     {
