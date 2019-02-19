@@ -87,7 +87,11 @@
         },
         "table_row_name_styles": {
           "width": "8%",
+          "size": "18",
           "font": "HelveticaHeader-Bold"
+        },
+        "table_row_name_size": {
+          "size": "18"
         },
         "table_row_value_styles": {
           "width": "17%",
@@ -874,7 +878,7 @@
                                               "type": "{{type}}",
                                               "name": "{{#? name}}",
                                               "text": "{{#? text}}",
-                                              "class": "center_align black_color {{type=='label'? 'label_styles table_row_height': 'table_body_textfield_styles'}}"
+                                              "class": "center_align black_color {{type=='label'? 'label_styles table_row_height table_row_name_size': 'table_body_textfield_styles'}}"
                                             }
                                           ]
                                         }
