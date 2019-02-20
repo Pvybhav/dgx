@@ -114,14 +114,14 @@
             },
             "table_header_styles": {
               "size": 17,
-              "font": "HelveticaHeader",
+              "font": "HelveticaHeader-Bold",
               "background": "rgb(14, 53, 112)",
               "color": "rgb(255, 255, 255)",
               "border": "rgb(255, 255, 255)"
             },
             "roller_header_style": {
               "size": 17,
-              "font": "HelveticaHeader",
+              "font": "HelveticaHeader-Bold",
               "background": "rgb(14, 53, 112)",
               "color": "rgb(255, 255, 255)",
               "border": "rgb(255, 255, 255)",
@@ -198,21 +198,26 @@
             "table_header_value_styles": {
               "width": "17%",
               "border": "rgb(255, 255, 255)",
-              "height": "10%"
+              "height": "10%",
+              "font": "HelveticaHeader-Bold"
+
             },
             "table_header_value_styles_units": {
               "width": "17%",
               "border": "rgb(255, 255, 255)",
+              "font": "HelveticaHeader-Bold",
               "height": "5%"
             },
             "table_header_value_styles_2": {
               "width": "17%",
               "border": "rgb(255, 255, 255)",
+              "font": "HelveticaHeader-Bold",
               "height": "15%"
             },
             "table_header_value_styles2": {
               "width": "18%",
               "border": "rgb(255, 255, 255)",
+              "font": "HelveticaHeader-Bold",
               "height": "10%"
             },
             "table_header_value_styles3": {
@@ -1909,21 +1914,7 @@
                   }
               }
           },
-          "$pull": {
-            "type": "$reload",
-            "success": {
-              "type": "$render",
-              "options": {
-                "template": "screen1"
-              },
-              "success": {
-                "trigger": "displayToaster",
-                "options": {
-                  "message": "Page loaded successfully"
-                }
-              }
-            }
-          },
+          
           "displayToaster": {
             "type": "$util.toast",
             "options": {
@@ -3562,7 +3553,7 @@
                                 {
                                   "type": "label",
                                   "name": "AgitatorShaft_true",
-                                  "text": "= Issssue",
+                                  "text": "= Issue",
                                   "style": {
                                     "background": "rgb(14, 53, 112)",
                                     "color": "rgb(255, 255, 255)",
@@ -4876,7 +4867,7 @@
                                 {
                                   "type": "label",
                                   "name": "AgitatorShaft_true",
-                                  "text": "= Issssue",
+                                  "text": "= Issue",
                                   "style": {
                                     "background": "rgb(14, 53, 112)",
                                     "color": "rgb(255, 255, 255)",
@@ -4956,7 +4947,7 @@
                                           "class": "{{styles}} switch_legend_styles_table",
                                           "style": {
                                             "width": "17%",
-                                            "padding_bottom": "1%",
+                                            "padding_right":"6%",
                                             "border": "#ffffff",
                                             "height": "6%"
                                           },
@@ -5128,7 +5119,7 @@
                                 {
                                   "type": "label",
                                   "name": "AgitatorShaft_true",
-                                  "text": "= Issssue",
+                                  "text": "= Issue",
                                   "style": {
                                     "background": "rgb(14, 53, 112)",
                                     "color": "rgb(255, 255, 255)",
@@ -5201,7 +5192,7 @@
                                           "class": "{{styles}} switch_legend_styles_table",
                                           "style": {
                                             "width": "17%",
-                                            "padding_bottom": "1%",
+                                            "padding_right":"6%",
                                             "border": "#ffffff",
                                             "height": "6%"
                                           },
