@@ -44,8 +44,10 @@
           "width": "20%",
           "size": "15"
         },
-        "table_name_background_styles": {
-          "background": "rgb(51, 204, 51)",
+        "table_name_background": {
+          "background": "rgb(51, 204, 51)"
+        },
+        "table_name_height": {
           "height": "12%"
         },
         "table_name_styles": {
@@ -65,6 +67,9 @@
         },
         "table_body_name_styles": {
           "width": "40%"
+        },
+        "table4_body_name_styles": {
+          "width": "20%"
         },
         "table_body_value_styles": {
           "width": "15%"
@@ -100,9 +105,12 @@
           "background": "rgb(14, 53, 112)",
           "color": "rgb(255, 255, 255)",
           "border": "rgb(255, 255, 255)",
-          "height": "7%",
+          "height": "6%",
           "padding_top": "1%",
           "padding_bottom": "1%"
+        },
+        "table_header2_styles": {
+          "background": "rgb(201, 235, 255)"
         },
         "table_odd_row_styles": {
           "background": "rgb(231,232,235)"
@@ -119,7 +127,13 @@
         "table_body_textfield_styles": {
           "width": "18%",
           "height": "4%",
-          "size": "13"
+          "size": "15"
+        },
+        "table2_textfield_styles": {
+          "width": "34%",
+          "height": "4%",
+          "size": "13",
+          "border": "rgb(255, 255, 255)"
         },
         "loading_image_styles": {
           "top": "50%-25",
@@ -146,6 +160,11 @@
         },
         "table_body_description_styles": {
           "width": "55%"
+        },
+        "table_separation_space_styles": {
+          "background": "rgb(0,0,0)",
+          "width": "100%",
+          "height": "1%"
         }
       },
       "actions": {
@@ -162,14 +181,22 @@
             "type": "$global.set",
             "options": {
               "section_id": "form18",
-              "feed_chute_bolts_leaking_line1": "{{ $global.feed_chute_bolts_leaking_line1 == null ? false : $global.feed_chute_bolts_leaking_line1 }}",
-              "feed_chute_bolts_leaking_line2": "{{ $global.feed_chute_bolts_leaking_line2 == null ? false : $global.feed_chute_bolts_leaking_line2 }}",
-              "feed_chute_feed_seal_leaking_line1": "{{ $global.feed_chute_feed_seal_leaking_line1 == null ? false : $global.feed_chute_feed_seal_leaking_line1 }}",
-              "feed_chute_feed_seal_leaking_line2": "{{ $global.feed_chute_feed_seal_leaking_line2 == null ? false : $global.feed_chute_feed_seal_leaking_line2 }}",
-              "linear_bolts_broken_bolts_line1": "{{ $global.linear_bolts_broken_bolts_line1 == null ? false : $global.linear_bolts_broken_bolts_line1 }}",
-              "linear_bolts_broken_bolts_line2": "{{ $global.linear_bolts_broken_bolts_line2 == null ? false : $global.linear_bolts_broken_bolts_line2 }}",
-              "linear_bolts_leaking_bolts_line1": "{{ $global.linear_bolts_leaking_bolts_line1 == null ? false : $global.linear_bolts_leaking_bolts_line1 }}",
-              "linear_bolts_leaking_bolts_line2": "{{ $global.linear_bolts_leaking_bolts_line2 == null ? false : $global.linear_bolts_leaking_bolts_line2 }}",
+              "feed_chute_bolts_leaking_line1": "{{ $global.feed_chute_bolts_leaking_line1 == null ? true : $global.feed_chute_bolts_leaking_line1 }}",
+              "feed_chute_bolts_leaking_line2": "{{ $global.feed_chute_bolts_leaking_line2 == null ? true : $global.feed_chute_bolts_leaking_line2 }}",
+              "feed_chute_feed_seal_leaking_line1": "{{ $global.feed_chute_feed_seal_leaking_line1 == null ? true : $global.feed_chute_feed_seal_leaking_line1 }}",
+              "feed_chute_feed_seal_leaking_line2": "{{ $global.feed_chute_feed_seal_leaking_line2 == null ? true : $global.feed_chute_feed_seal_leaking_line2 }}",
+              "liner_bolts_broken_bolts_line1": "{{ $global.liner_bolts_broken_bolts_line1 == null ? true : $global.liner_bolts_broken_bolts_line1 }}",
+              "liner_bolts_broken_bolts_line2": "{{ $global.liner_bolts_broken_bolts_line2 == null ? true : $global.liner_bolts_broken_bolts_line2 }}",
+              "liner_bolts_leaking_bolts_line1": "{{ $global.liner_bolts_leaking_bolts_line1 == null ? true : $global.liner_bolts_leaking_bolts_line1 }}",
+              "liner_bolts_leaking_bolts_line2": "{{ $global.linea_bolts_leaking_bolts_line2 == null ? true : $global.liner_bolts_leaking_bolts_line2 }}",
+              "gear_lube_line1_faults": "{{ $global.gear_lube_line1_faults == null ? true : $global.gear_lube_line1_faults }}",
+              "gear_lube_line1_leaks": "{{ $global.gear_lube_line1_leaks == null ? true : $global.gear_lube_line1_leaks }}",
+              "gear_lube_line2_faults": "{{ $global.gear_lube_line2_faults == null ? true : $global.gear_lube_line2_faults }}",
+              "gear_lube_line2_leaks": "{{ $global.gear_lube_line2_leaks == null ? true : $global.gear_lube_line2_leaks }}",
+              "drive_motors_cooling_fans_running_line1_m1": "{{ $global.drive_motors_cooling_fans_running_line1_m1 == null ? true : $global.drive_motors_cooling_fans_running_line1_m1 }}",
+              "drive_motors_cooling_fans_running_line1_m2": "{{ $global.drive_motors_cooling_fans_running_line1_m2 == null ? true : $global.drive_motors_cooling_fans_running_line1_m2 }}",
+              "drive_motors_cooling_fans_running_line2_m1": "{{ $global.drive_motors_cooling_fans_running_line2_m1 == null ? true : $global.drive_motors_cooling_fans_running_line2_m1 }}",
+              "drive_motors_cooling_fans_running_line2_m2": "{{ $global.drive_motors_cooling_fans_running_line2_m2 == null ? true : $global.drive_motors_cooling_fans_running_line2_m2 }}",
               "falcons_1_running": "{{ $get.falcons_1_running == null ? true : $global.falcons_1_running }}",
               "falcons_1_spare": "{{ $get.falcons_1_spare == null ? true : $global.falcons_1_spare }}",
               "falcons_1_maint": "{{ $get.falcons_1_maint == null ? true : $global.falcons_1_maint }}",
@@ -394,7 +421,23 @@
             "form18_day": "{{ $get.day }}",
             "form18_month": "{{ $get.month }}",
             "form18_year": "{{ $get.year }}",
-            "form18_shift": "{{ $get.shift }}"
+            "form18_shift": "{{ $get.shift }}",
+            "ball_buckets_added_line1": "{{ $get.ball_buckets_added_line1 || '' }}",
+            "ball_buckets_added_line2": "{{ $get.ball_buckets_added_line2 || '' }}",
+            "gear_lube_line2_drum_level": "{{ $get.gear_lube_line2_drum_level || '' }}",
+            "gear_lube_line2_heater_on": "{{ $get.gear_lube_line2_heater_on || '' }}",
+            "drive_motors_oil_level_site_glass_line1_m1": "{{ $get.drive_motors_oil_level_site_glass_line1_m1 || '' }}",
+            "drive_motors_oil_level_site_glass_line1_m2": "{{ $get.drive_motors_oil_level_site_glass_line1_m2 || '' }}",
+            "drive_motors_oil_level_site_glass_line2_m1": "{{ $get.drive_motors_oil_level_site_glass_line2_m1 || '' }}",
+            "drive_motors_oil_level_site_glass_line2_m2": "{{ $get.drive_motors_oil_level_site_glass_line2_m2 || '' }}",
+            "drive_motors_hx_inlet_temp_line1_m1": "{{ $get.drive_motors_hx_inlet_temp_line1_m1 || '' }}",
+            "drive_motors_hx_inlet_temp_line1_m2": "{{ $get.drive_motors_hx_inlet_temp_line1_m2 || '' }}",
+            "drive_motors_hx_inlet_temp_line2_m1": "{{ $get.drive_motors_hx_inlet_temp_line2_m1 || '' }}",
+            "drive_motors_hx_inlet_temp_line2_m2": "{{ $get.drive_motors_hx_inlet_temp_line2_m2 || '' }}",
+            "drive_motors_hx_outlet_temp_line1_m1": "{{ $get.drive_motors_hx_outlet_temp_line1_m1 || '' }}",
+            "drive_motors_hx_outlet_temp_line1_m2": "{{ $get.drive_motors_hx_outlet_temp_line1_m2 || '' }}",
+            "drive_motors_hx_outlet_temp_line2_m1": "{{ $get.drive_motors_hx_outlet_temp_line2_m1 || '' }}",
+            "drive_motors_hx_outlet_temp_line2_m2": "{{ $get.drive_motors_hx_outlet_temp_line2_m2 || '' }}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -485,7 +528,46 @@
             "type": "$global.reset",
             "options": {
               "items": [
-                "section_id"
+                "section_id",
+                "form18_sign",
+                "form18_day",
+                "form18_month",
+                "form18_year",
+                "form18_shift",
+                "feed_chute_bolts_leaking_line1",
+                "feed_chute_bolts_leaking_line2",
+                "feed_chute_feed_seal_leaking_line1",
+                "feed_chute_feed_seal_leaking_line2",
+                "ball_buckets_added_line1",
+                "ball_buckets_added_line2",
+                "liner_bolts_broken_bolts_line1",
+                "liner_bolts_broken_bolts_line2",
+                "liner_bolts_leaking_bolts_line1",
+                "liner_bolts_leaking_bolts_line2",
+                "gear_lube_line1_drum_level",
+                "gear_lube_line1_heater_on",
+                "gear_lube_line1_faults",
+                "gear_lube_line1_leaks",
+                "gear_lube_line2_drum_level",
+                "gear_lube_line2_heater_on",
+                "gear_lube_line2_faults",
+                "gear_lube_line2_leaks",
+                "drive_motors_oil_level_site_glass_line1_m1",
+                "drive_motors_oil_level_site_glass_line1_m2",
+                "drive_motors_oil_level_site_glass_line2_m1",
+                "drive_motors_oil_level_site_glass_line2_m2",
+                "drive_motors_cooling_fans_running_line1_m1",
+                "drive_motors_cooling_fans_running_line1_m2",
+                "drive_motors_cooling_fans_running_line2_m1",
+                "drive_motors_cooling_fans_running_line2_m2",
+                "drive_motors_hx_inlet_temp_line1_m1",
+                "drive_motors_hx_inlet_temp_line1_m2",
+                "drive_motors_hx_inlet_temp_line2_m1",
+                "drive_motors_hx_inlet_temp_line2_m2",
+                "drive_motors_hx_outlet_temp_line1_m1",
+                "drive_motors_hx_outlet_temp_line1_m2",
+                "drive_motors_hx_outlet_temp_line2_m1",
+                "drive_motors_hx_outlet_temp_line2_m2"
               ]
             },
             "success": {
@@ -759,7 +841,6 @@
             "defaultSelected": "false"
           }
         ],
-        "Table1_Headers": [],
         "Table1_Rows": [
           {
             "row_name": "Bolts Leaking",
@@ -797,11 +878,11 @@
             "row_values": [
               {
                 "type": "switch",
-                "name": "linear_bolts_broken_bolts_line1"
+                "name": "liner_bolts_broken_bolts_line1"
               },
               {
                 "type": "switch",
-                "name": "linear_bolts_broken_bolts_line2"
+                "name": "liner_bolts_broken_bolts_line2"
               }
             ]
           },
@@ -811,11 +892,147 @@
             "row_values": [
               {
                 "type": "switch",
-                "name": "linear_bolts_leaking_bolts_line1"
+                "name": "liner_bolts_leaking_bolts_line1"
               },
               {
                 "type": "switch",
-                "name": "linear_bolts_leaking_bolts_line2"
+                "name": "liner_bolts_leaking_bolts_line2"
+              }
+            ]
+          }
+        ],
+        "Table4_Rows": [
+          {
+            "row_name": "Line 1",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "gear_lube_line1_drum_level"
+              },
+              {
+                "type": "textfield",
+                "name": "gear_lube_line1_heater_on"
+              },
+              {
+                "type": "switch",
+                "name": "gear_lube_line1_faults"
+              },
+              {
+                "type": "switch",
+                "name": "gear_lube_line1_leaks"
+              }
+            ]
+          },
+          {
+            "row_name": "Line 2",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "gear_lube_line2_drum_level"
+              },
+              {
+                "type": "textfield",
+                "name": "gear_lube_line2_heater_on"
+              },
+              {
+                "type": "switch",
+                "name": "gear_lube_line2_faults"
+              },
+              {
+                "type": "switch",
+                "name": "gear_lube_line2_leaks"
+              }
+            ]
+          }
+        ],
+        "Table5_Rows": [
+          {
+            "row_name": "Oil Level Site Glass",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "drive_motors_oil_level_site_glass_line1_m1"
+              },
+              {
+                "type": "textfield",
+                "name": "drive_motors_oil_level_site_glass_line1_m2"
+              },
+              {
+                "type": "textfield",
+                "name": "drive_motors_oil_level_site_glass_line2_m1"
+              },
+              {
+                "type": "textfield",
+                "name": "drive_motors_oil_level_site_glass_line2_m2"
+              }
+            ]
+          },
+          {
+            "row_name": "Cooling Fans Running (Y/N)",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "switch",
+                "name": "drive_motors_cooling_fans_running_line1_m1"
+              },
+              {
+                "type": "switch",
+                "name": "drive_motors_cooling_fans_running_line1_m2"
+              },
+              {
+                "type": "switch",
+                "name": "drive_motors_cooling_fans_running_line2_m1"
+              },
+              {
+                "type": "switch",
+                "name": "drive_motors_cooling_fans_running_line2_m2"
+              }
+            ]
+          },
+          {
+            "row_name": "Hx Inlet Temp (°C)",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "drive_motors_hx_inlet_temp_line1_m1"
+              },
+              {
+                "type": "textfield",
+                "name": "drive_motors_hx_inlet_temp_line1_m2"
+              },
+              {
+                "type": "textfield",
+                "name": "drive_motors_hx_inlet_temp_line2_m1"
+              },
+              {
+                "type": "textfield",
+                "name": "drive_motors_hx_inlet_temp_line2_m2"
+              }
+            ]
+          },
+          {
+            "row_name": "Hx Outlet Temp (°C)",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "drive_motors_hx_outlet_temp_line1_m1"
+              },
+              {
+                "type": "textfield",
+                "name": "drive_motors_hx_outlet_temp_line1_m2"
+              },
+              {
+                "type": "textfield",
+                "name": "drive_motors_hx_outlet_temp_line2_m1"
+              },
+              {
+                "type": "textfield",
+                "name": "drive_motors_hx_outlet_temp_line2_m2"
               }
             ]
           }
@@ -1658,17 +1875,21 @@
                       }
                     },
                     {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
                       "type": "horizontal",
                       "class": "no_padding center_align table_header_height",
                       "components": [
                         {
                           "type": "vertical",
-                          "class": "table_name_background_styles center_align",
+                          "class": "table_name_background table_name_height center_align",
                           "components": [
                             {
                               "type": "label",
                               "text": "Feed Chute",
-                              "class": "center_align black_color table_name_styles"
+                              "class": "center_align black_color table_name_styles bold"
                             }
                           ]
                         },
@@ -1678,11 +1899,11 @@
                             {
                               "type": "label",
                               "text": "Line 1",
-                              "class": "center_align black_color table_even_row_styles table_row_height"
+                              "class": "center_align black_color table_row_height table_header_styles"
                             },
                             {
                               "type": "horizontal",
-                              "class": "table_odd_row_styles table_row_height",
+                              "class": "table_header2_styles table_row_height",
                               "components": [
                                 {
                                   "type": "horizontal",
@@ -1691,7 +1912,7 @@
                                       "type": "switch",
                                       "value": "true",
                                       "name": "table1_header_Line1_true",
-                                      "class": "center_align switch_styles table_odd_row_styles",
+                                      "class": "center_align switch_styles table_header2_styles",
                                       "isClickable": "false"
                                     },
                                     {
@@ -1703,13 +1924,13 @@
                                 },
                                 {
                                   "type": "horizontal",
-                                  "class": "table_odd_row_styles",
+                                  "class": "table_header2_styles",
                                   "components": [
                                     {
                                       "type": "switch",
                                       "value": "false",
                                       "name": "table1_header_Line1_false",
-                                      "class": "center_align switch_styles table_odd_row_styles",
+                                      "class": "center_align switch_styles table_header2_styles",
                                       "isClickable": "false"
                                     },
                                     {
@@ -1729,11 +1950,11 @@
                             {
                               "type": "label",
                               "text": "Line 2",
-                              "class": "center_align black_color table_even_row_styles table_row_height"
+                              "class": "center_align black_color table_row_height table_header_styles"
                             },
                             {
                               "type": "horizontal",
-                              "class": "table_odd_row_styles table_row_height",
+                              "class": "table_header2_styles table_row_height",
                               "components": [
                                 {
                                   "type": "horizontal",
@@ -1742,7 +1963,7 @@
                                       "type": "switch",
                                       "value": "true",
                                       "name": "table1_header_Line2_true",
-                                      "class": "center_align switch_styles table_odd_row_styles",
+                                      "class": "center_align switch_styles table_header2_styles",
                                       "isClickable": "false"
                                     },
                                     {
@@ -1754,13 +1975,13 @@
                                 },
                                 {
                                   "type": "horizontal",
-                                  "class": "table_odd_row_styles",
+                                  "class": "table_header2_styles",
                                   "components": [
                                     {
                                       "type": "switch",
                                       "value": "false",
                                       "name": "table1_header_Line2_false",
-                                      "class": "center_align switch_styles table_odd_row_styles",
+                                      "class": "center_align switch_styles table_header2_styles",
                                       "isClickable": "false"
                                     },
                                     {
@@ -1849,20 +2070,181 @@
                       }
                     },
                     {
-                      "type": "label",
-                      "text": " # Ball Buckets Added",
-                      "class": "center_align table_header_styles table_sub_header_styles",
-                      "style": {
-                        "width": "100%"
-                      }
+                      "type": "space",
+                      "class": "table_separation_space_styles"
                     },
                     {
-                      "type": "label",
-                      "text": " Liner Bolts",
-                      "class": "center_align table_header_styles table_sub_header_styles",
-                      "style": {
-                        "width": "100%"
-                      }
+                      "type": "horizontal",
+                      "class": "no_padding center_align table_header_height",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "# Ball Buckets Added",
+                              "class": "center_align table_header_height black_color table_name_styles bold table_name_background table_name_height"
+                            },
+                            {
+                              "type": "vertical",
+                              "class": "table_header_height",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Line 1",
+                                  "class": "center_align table_row_height black_color table_header_styles"
+                                },
+                                {
+                                  "type": "textfield",
+                                  "name": "ball_buckets_added_line1",
+                                  "value": "{{ $global.ball_buckets_added_line1 || ''}}",
+                                  "class": "center_align black_color table_even_row_styles table2_textfield_styles"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "class": "table_header_height",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Line 2",
+                                  "class": "center_align table_row_height black_color table_header_styles"
+                                },
+                                {
+                                  "type": "textfield",
+                                  "name": "ball_buckets_added_line2",
+                                  "value": "{{ $global.ball_buckets_added_line2 || ''}}",
+                                  "class": "center_align black_color table_even_row_styles table2_textfield_styles"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding center_align table_header_height",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "class": "table_name_background table_name_height center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Liner Bolts",
+                              "class": "center_align black_color table_name_styles bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Line 1",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "true",
+                                      "name": "table3_header_Line1_true",
+                                      "class": "center_align switch_styles table_header2_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- Yes",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "false",
+                                      "name": "table3_header_Line1_false",
+                                      "class": "center_align switch_styles table_header2_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- No",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Line 2",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "true",
+                                      "name": "table3_header_Line2_true",
+                                      "class": "center_align switch_styles table_header2_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- Yes",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "false",
+                                      "name": "table3_header_Line2_false",
+                                      "class": "center_align switch_styles table_header2_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- No",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
                       "type": "vertical",
@@ -1915,7 +2297,17 @@
                                             {
                                               "type": "{{type}}",
                                               "name": "{{name}}",
-                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || false;}}",
+                                              "value": [
+                                                {
+                                                  "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
+                                                }
+                                              ],
                                               "class": "table_row_height center_align black_color table_body_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles table_body_value_styles' : 'switch_styles table_odd_row_styles table_body_value_styles' : ''}}",
                                               "action": {
                                                 "trigger": "handleSwitchValues",
@@ -1937,19 +2329,406 @@
                       }
                     },
                     {
-                      "type": "label",
-                      "text": " Gear Lube",
-                      "class": "center_align table_header_styles table_sub_header_styles",
-                      "style": {
-                        "width": "100%"
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding center_align table_header_height",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "class": "table_name_background table_name_height center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Gear Lube",
+                              "class": "center_align black_color table_name_styles bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Drum Level",
+                              "class": "table_name_height center_align black_color table_header_styles table_name_height"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Heater On",
+                              "class": "center_align black_color table_header_styles table_name_height"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Faults",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "true",
+                                      "name": "table4_header_faults_true",
+                                      "class": "center_align switch_styles table_header2_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- Yes",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "false",
+                                      "name": "table4_header_faults_false",
+                                      "class": "center_align switch_styles table_header2_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- No",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Line 2",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "true",
+                                      "name": "table4_header_leaks_true",
+                                      "class": "center_align switch_styles table_header2_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- Yes",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "false",
+                                      "name": "table4_header_leaks_false",
+                                      "class": "center_align switch_styles table_header2_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- No",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table4_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table4_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "label",
+                                          "text": "{{this.row_name}}",
+                                          "class": "black_color table4_body_name_styles table_fields_size center_align table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "class": "{{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": [
+                                                {
+                                                  "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
+                                                }
+                                              ],
+                                              "class": "table_row_height center_align black_color table_body_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles table_body_value_styles' : 'switch_styles table_odd_row_styles table_body_value_styles' : ''}}",
+                                              "action": {
+                                                "trigger": "handleSwitchValues",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
                       }
                     },
                     {
-                      "type": "label",
-                      "text": " Drive Motors",
-                      "class": "center_align table_header_styles table_sub_header_styles",
-                      "style": {
-                        "width": "100%"
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding center_align table_header_height",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "class": "table_name_background table_name_height center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Drive Motors",
+                              "class": "center_align black_color table_name_styles bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Line 1",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "M-1",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "M-2",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Line 2",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "M-1",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "M-2",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table5_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "label",
+                                          "text": "{{this.row_name}}",
+                                          "class": "black_color table_body_name_styles table_fields_size center_align table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}",
+                                            "width": "37%"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "class": "{{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": [
+                                                {
+                                                  "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table5_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table5_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table5_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
+                                                }
+                                              ],
+                                              "class": "table_row_height center_align black_color table_body_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles table_body_value_styles' : 'switch_styles table_odd_row_styles table_body_value_styles' : ''}}",
+                                              "action": {
+                                                "trigger": "handleSwitchValues",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
                       }
                     },
                     {
@@ -2067,7 +2846,17 @@
                                             {
                                               "type": "{{type}}",
                                               "name": "{{name}}",
-                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || false;}}",
+                                              "value": [
+                                                {
+                                                  "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
+                                                }
+                                              ],
                                               "class": "table_row_height center_align black_color table_body_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles table24_body_value_styles' : 'switch_styles table_odd_row_styles table24_body_value_styles' : ''}}",
                                               "action": {
                                                 "trigger": "handleSwitchValues",
