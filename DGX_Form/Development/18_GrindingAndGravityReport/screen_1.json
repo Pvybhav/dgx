@@ -11,6 +11,9 @@
         "center_align": {
           "align": "center"
         },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
+        },
         "right_padding": {
           "padding_left": "-2",
           "padding_right": "2"
@@ -40,6 +43,13 @@
           "height": "4%",
           "width": "20%",
           "size": "15"
+        },
+        "table_name_background_styles": {
+          "background": "rgb(51, 204, 51)",
+          "height": "12%"
+        },
+        "table_name_styles": {
+          "size": "18"
         },
         "table_header_name_styles": {
           "width": "40%",
@@ -101,7 +111,10 @@
           "background": "rgb(204,206,213)"
         },
         "table_row_height": {
-          "height": "10%"
+          "height": "6%"
+        },
+        "table_header_height": {
+          "height": "12%"
         },
         "table_body_textfield_styles": {
           "width": "18%",
@@ -746,56 +759,7 @@
             "defaultSelected": "false"
           }
         ],
-        "Table1_Headers": [
-          {
-            "type": "label",
-            "value": "Feed Chute",
-            "styles": "table_header_styles center_align table_header_name_styles"
-          },
-          {
-            "type": "horizontal",
-            "class": "table_header_styles center_align",
-            "components": [
-              {
-                "type": "vertical",
-                "components": [
-                  {
-                    "type": "horizontal",
-                    "components": [
-                      {
-                        "type": "label",
-                        "text": "Line 1"
-                      },
-                      {
-                        "type": "label",
-                        "text": "Line 1"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "horizontal",
-                    "components": [
-                      {
-                        "type": "switch",
-                        "name": "table1_line1_yes",
-                        "value": "true",
-                        "class": "switch_styles",
-                        "isClickable": "false"
-                      },
-                      {
-                        "type": "switch",
-                        "name": "table1_line1_no",
-                        "value": "false",
-                        "class": "switch_styles",
-                        "isClickable": "false"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
+        "Table1_Headers": [],
         "Table1_Rows": [
           {
             "row_name": "Bolts Leaking",
@@ -1695,14 +1659,122 @@
                     },
                     {
                       "type": "horizontal",
-                      "components": {
-                        "{{#each Table1_Headers}}": {
-                          "type": "{{type}}",
-                          "text": "{{value}}",
-                          "class": "{{styles}}",
-                          "components": "{{#? components}}"
+                      "class": "no_padding center_align table_header_height",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "class": "table_name_background_styles center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Feed Chute",
+                              "class": "center_align black_color table_name_styles"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Line 1",
+                              "class": "center_align black_color table_even_row_styles table_row_height"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_odd_row_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "true",
+                                      "name": "table1_header_Line1_true",
+                                      "class": "center_align switch_styles table_odd_row_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- Yes",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_odd_row_styles",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "false",
+                                      "name": "table1_header_Line1_false",
+                                      "class": "center_align switch_styles table_odd_row_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- No",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Line 2",
+                              "class": "center_align black_color table_even_row_styles table_row_height"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_odd_row_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "true",
+                                      "name": "table1_header_Line2_true",
+                                      "class": "center_align switch_styles table_odd_row_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- Yes",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_odd_row_styles",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "value": "false",
+                                      "name": "table1_header_Line2_false",
+                                      "class": "center_align switch_styles table_odd_row_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "text": "- No",
+                                      "class": "black_color"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
                         }
-                      }
+                      ]
                     },
                     {
                       "type": "vertical",
