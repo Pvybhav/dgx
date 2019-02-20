@@ -71,10 +71,31 @@
         "table4_body_name_styles": {
           "width": "20%"
         },
+        "table5_body_name_styles": {
+          "width": "20%"
+        },
+        "table5_body_value_styles": {
+          "width": "20%"
+        },
+        "table6_body_name_styles": {
+          "width": "16%"
+        },
+        "table7_body_name_styles": {
+          "width": "10%"
+        },
+        "table8_body_name_styles": {
+          "width": "16%"
+        },
+        "table7_body_value_styles": {
+          "width": "10%"
+        },
         "table_body_value_styles": {
           "width": "15%"
         },
         "table24_body_name_styles": {
+          "width": "10%"
+        },
+        "table6_body_value_styles": {
           "width": "10%"
         },
         "table24_body_value_styles": {
@@ -134,6 +155,26 @@
           "height": "4%",
           "size": "13",
           "border": "rgb(255, 255, 255)"
+        },
+        "table5_textfield_styles": {
+          "width": "20%",
+          "height": "4%",
+          "size": "13"
+        },
+        "table6_textfield_styles": {
+          "width": "12%",
+          "height": "4%",
+          "size": "13"
+        },
+        "table7_textfield_styles": {
+          "width": "10%",
+          "height": "4%",
+          "size": "13"
+        },
+        "table8_textfield_styles": {
+          "width": "14%",
+          "height": "4%",
+          "size": "13"
         },
         "loading_image_styles": {
           "top": "50%-25",
@@ -197,6 +238,10 @@
               "drive_motors_cooling_fans_running_line1_m2": "{{ $global.drive_motors_cooling_fans_running_line1_m2 == null ? true : $global.drive_motors_cooling_fans_running_line1_m2 }}",
               "drive_motors_cooling_fans_running_line2_m1": "{{ $global.drive_motors_cooling_fans_running_line2_m1 == null ? true : $global.drive_motors_cooling_fans_running_line2_m1 }}",
               "drive_motors_cooling_fans_running_line2_m2": "{{ $global.drive_motors_cooling_fans_running_line2_m2 == null ? true : $global.drive_motors_cooling_fans_running_line2_m2 }}",
+              "lube_room_skid_line1_filter_pods_1_online": "{{ $global.lube_room_skid_line1_filter_pods_1_online == null ? true : $global.lube_room_skid_line1_filter_pods_1_online }}",
+              "lube_room_skid_line1_filter_pods_2_online": "{{ $global.lube_room_skid_line1_filter_pods_2_online == null ? true : $global.lube_room_skid_line1_filter_pods_2_online }}",
+              "lube_room_skid_line2_filter_pods_1_online": "{{ $global.lube_room_skid_line2_filter_pods_1_online == null ? true : $global.lube_room_skid_line2_filter_pods_1_online }}",
+              "lube_room_skid_line2_filter_pods_2_online": "{{ $global.lube_room_skid_line2_filter_pods_2_online == null ? true : $global.lube_room_skid_line2_filter_pods_2_online }}",
               "falcons_1_running": "{{ $get.falcons_1_running == null ? true : $global.falcons_1_running }}",
               "falcons_1_spare": "{{ $get.falcons_1_spare == null ? true : $global.falcons_1_spare }}",
               "falcons_1_maint": "{{ $get.falcons_1_maint == null ? true : $global.falcons_1_maint }}",
@@ -437,7 +482,47 @@
             "drive_motors_hx_outlet_temp_line1_m1": "{{ $get.drive_motors_hx_outlet_temp_line1_m1 || '' }}",
             "drive_motors_hx_outlet_temp_line1_m2": "{{ $get.drive_motors_hx_outlet_temp_line1_m2 || '' }}",
             "drive_motors_hx_outlet_temp_line2_m1": "{{ $get.drive_motors_hx_outlet_temp_line2_m1 || '' }}",
-            "drive_motors_hx_outlet_temp_line2_m2": "{{ $get.drive_motors_hx_outlet_temp_line2_m2 || '' }}"
+            "drive_motors_hx_outlet_temp_line2_m2": "{{ $get.drive_motors_hx_outlet_temp_line2_m2 || '' }}",
+            "lube_pumps_running_line1_LP_1": "{{ $get.lube_pumps_running_line1_LP_1 || '' }}",
+            "lube_pumps_running_line1_LP_2": "{{ $get.lube_pumps_running_line1_LP_2 || '' }}",
+            "lube_pumps_running_line1_charge_3": "{{ $get.lube_pumps_running_line1_charge_3 || '' }}",
+            "lube_pumps_running_line1_charge_4": "{{ $get.lube_pumps_running_line1_charge_4 || '' }}",
+            "lube_pumps_running_line1_HP_5": "{{ $get.lube_pumps_running_line1_HP_5 || '' }}",
+            "lube_pumps_running_line1_HP_6": "{{ $get.lube_pumps_running_line1_HP_6 || '' }}",
+            "lube_pumps_running_line1_HP_7": "{{ $get.lube_pumps_running_line1_HP_7 || '' }}",
+            "lube_pumps_running_line2_LP_1": "{{ $get.lube_pumps_running_line2_LP_1 || '' }}",
+            "lube_pumps_running_line2_LP_2": "{{ $get.lube_pumps_running_line2_LP_2 || '' }}",
+            "lube_pumps_running_line2_charge_3": "{{ $get.lube_pumps_running_line2_charge_3 || '' }}",
+            "lube_pumps_running_line2_charge_4": "{{ $get.lube_pumps_running_line2_charge_4 || '' }}",
+            "lube_pumps_running_line2_HP_5": "{{ $get.lube_pumps_running_line2_HP_5 || '' }}",
+            "lube_pumps_running_line2_HP_6": "{{ $get.lube_pumps_running_line2_HP_6 || '' }}",
+            "lube_pumps_running_line2_HP_7": "{{ $get.lube_pumps_running_line2_HP_7 || '' }}",
+            "lube_room_skid_line1_filter_pods_Filter_ΔP": "{{ $get.lube_room_skid_line1_filter_pods_Filter_ΔP || '' }}",
+            "lube_room_skid_line1_plate_hxs_cooling_h2o_in": "{{ $get.lube_room_skid_line1_plate_hxs_cooling_h2o_in || '' }}",
+            "lube_room_skid_line1_plate_hxs_cooling_h2o_out": "{{ $get.lube_room_skid_line1_plate_hxs_cooling_h2o_out || '' }}",
+            "lube_room_skid_line1_plate_hxs_oil_in": "{{ $get.lube_room_skid_line1_plate_hxs_oil_in || '' }}",
+            "lube_room_skid_line1_plate_hxs_oil_out": "{{ $get.lube_room_skid_line1_plate_hxs_oil_out || '' }}",
+            "lube_room_skid_line1_site_glass_levels_LP_side": "{{ $get.lube_room_skid_line1_site_glass_levels_LP_side || '' }}",
+            "lube_room_skid_line1_site_glass_levels_HP_side": "{{ $get.lube_room_skid_line1_site_glass_levels_HP_side || '' }}",
+            "lube_room_skid_line2_filter_pods_Filter_ΔP": "{{ $get.lube_room_skid_line2_filter_pods_Filter_ΔP || '' }}",
+            "lube_room_skid_line2_plate_hxs_cooling_h2o_in": "{{ $get.lube_room_skid_line2_plate_hxs_cooling_h2o_in || '' }}",
+            "lube_room_skid_line2_plate_hxs_cooling_h2o_out": "{{ $get.lube_room_skid_line2_plate_hxs_cooling_h2o_out || '' }}",
+            "lube_room_skid_line2_plate_hxs_oil_in": "{{ $get.lube_room_skid_line2_plate_hxs_oil_in || '' }}",
+            "lube_room_skid_line2_plate_hxs_oil_out": "{{ $get.lube_room_skid_line2_plate_hxs_oil_out || '' }}",
+            "lube_room_skid_line2_site_glass_levels_LP_side": "{{ $get.lube_room_skid_line2_site_glass_levels_LP_side || '' }}",
+            "lube_room_skid_line2_site_glass_levels_HP_side": "{{ $get.lube_room_skid_line2_site_glass_levels_HP_side || '' }}",
+            "scalping_screens_line1_oil_level": "{{ $get.scalping_screens_line1_oil_level || '' }}",
+            "scalping_screens_line1_oil_leaks": "{{ $get.scalping_screens_line1_oil_leaks || '' }}",
+            "scalping_screens_line1_guards_intact": "{{ $get.scalping_screens_line1_guards_intact || '' }}",
+            "scalping_screens_line1_feed_skirt": "{{ $get.scalping_screens_line1_feed_skirt || '' }}",
+            "scalping_screens_line1_skirt_boards": "{{ $get.scalping_screens_line1_skirt_boards || '' }}",
+            "scalping_screens_line1_panels_change": "{{ $get.scalping_screens_line1_panels_change || '' }}",
+            "scalping_screens_line2_oil_level": "{{ $get.scalping_screens_line2_oil_level || '' }}",
+            "scalping_screens_line2_oil_leaks": "{{ $get.scalping_screens_line2_oil_leaks || '' }}",
+            "scalping_screens_line2_guards_intact": "{{ $get.scalping_screens_line2_guards_intact || '' }}",
+            "scalping_screens_line2_feed_skirt": "{{ $get.scalping_screens_line2_feed_skirt || '' }}",
+            "scalping_screens_line2_skirt_boards": "{{ $get.scalping_screens_line2_skirt_boards || '' }}",
+            "scalping_screens_line2_panels_change": "{{ $get.scalping_screens_line2_panels_change || '' }}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -567,11 +652,55 @@
                 "drive_motors_hx_outlet_temp_line1_m1",
                 "drive_motors_hx_outlet_temp_line1_m2",
                 "drive_motors_hx_outlet_temp_line2_m1",
-                "drive_motors_hx_outlet_temp_line2_m2"
+                "drive_motors_hx_outlet_temp_line2_m2",
+                "lube_pumps_running_line1_LP_1",
+                "lube_pumps_running_line1_LP_2",
+                "lube_pumps_running_line1_charge_3",
+                "lube_pumps_running_line1_charge_4",
+                "lube_pumps_running_line1_HP_5",
+                "lube_pumps_running_line1_HP_6",
+                "lube_pumps_running_line1_HP_7",
+                "lube_pumps_running_line2_LP_1",
+                "lube_pumps_running_line2_LP_2",
+                "lube_pumps_running_line2_charge_3",
+                "lube_pumps_running_line2_charge_4",
+                "lube_pumps_running_line2_HP_5",
+                "lube_pumps_running_line2_HP_6",
+                "lube_pumps_running_line2_HP_7",
+                "lube_room_skid_line1_filter_pods_1_online",
+                "lube_room_skid_line1_filter_pods_2_online",
+                "lube_room_skid_line1_filter_pods_Filter_ΔP",
+                "lube_room_skid_line1_plate_hxs_cooling_h2o_in",
+                "lube_room_skid_line1_plate_hxs_cooling_h2o_out",
+                "lube_room_skid_line1_plate_hxs_oil_in",
+                "lube_room_skid_line1_plate_hxs_oil_out",
+                "lube_room_skid_line1_site_glass_levels_LP_side",
+                "lube_room_skid_line1_site_glass_levels_HP_side",
+                "lube_room_skid_line2_filter_pods_1_online",
+                "lube_room_skid_line2_filter_pods_2_online",
+                "lube_room_skid_line2_filter_pods_Filter_ΔP",
+                "lube_room_skid_line2_plate_hxs_cooling_h2o_in",
+                "lube_room_skid_line2_plate_hxs_cooling_h2o_out",
+                "lube_room_skid_line2_plate_hxs_oil_in",
+                "lube_room_skid_line2_plate_hxs_oil_out",
+                "lube_room_skid_line2_site_glass_levels_LP_side",
+                "lube_room_skid_line2_site_glass_levels_HP_side",
+                "scalping_screens_line1_oil_level",
+                "scalping_screens_line1_oil_leaks",
+                "scalping_screens_line1_guards_intact",
+                "scalping_screens_line1_feed_skirt",
+                "scalping_screens_line1_skirt_boards",
+                "scalping_screens_line1_panels_change",
+                "scalping_screens_line2_oil_level",
+                "scalping_screens_line2_oil_leaks",
+                "scalping_screens_line2_guards_intact",
+                "scalping_screens_line2_feed_skirt",
+                "scalping_screens_line2_skirt_boards",
+                "scalping_screens_line2_panels_change"
               ]
             },
             "success": {
-              "type": "$reload",
+              "trigger": "handleTemplateChange",
               "options": {
                 "template": "screen1"
               }
@@ -971,7 +1100,7 @@
             ]
           },
           {
-            "row_name": "Cooling Fans Running (Y/N)",
+            "row_name": "Cooling Fans Running",
             "row_styles": "center_align black_color table_body_name_styles table_fields_size",
             "row_values": [
               {
@@ -1033,6 +1162,224 @@
               {
                 "type": "textfield",
                 "name": "drive_motors_hx_outlet_temp_line2_m2"
+              }
+            ]
+          }
+        ],
+        "Table6_Rows": [
+          {
+            "row_name": "Line 1",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line1_LP_1"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line1_LP_2"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line1_charge_3"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line1_charge_4"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line1_HP_5"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line1_HP_6"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line1_HP_7"
+              }
+            ]
+          },
+          {
+            "row_name": "Line 2",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line2_LP_1"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line2_LP_2"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line2_charge_3"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line2_charge_4"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line2_HP_5"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line2_HP_6"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_pumps_running_line2_HP_7"
+              }
+            ]
+          }
+        ],
+        "Table7_Rows": [
+          {
+            "row_name": "Line 1",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "switch",
+                "name": "lube_room_skid_line1_filter_pods_1_online"
+              },
+              {
+                "type": "switch",
+                "name": "lube_room_skid_line1_filter_pods_2_online"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line1_filter_pods_Filter_ΔP"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line1_plate_hxs_cooling_h2o_in"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line1_plate_hxs_cooling_h2o_out"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line1_plate_hxs_oil_in"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line1_plate_hxs_oil_out"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line1_site_glass_levels_LP_side"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line1_site_glass_levels_HP_side"
+              }
+            ]
+          },
+          {
+            "row_name": "Line 2",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "switch",
+                "name": "lube_room_skid_line2_filter_pods_1_online"
+              },
+              {
+                "type": "switch",
+                "name": "lube_room_skid_line2_filter_pods_2_online"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line2_filter_pods_Filter_ΔP"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line2_plate_hxs_cooling_h2o_in"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line2_plate_hxs_cooling_h2o_out"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line2_plate_hxs_oil_in"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line2_plate_hxs_oil_out"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line2_site_glass_levels_LP_side"
+              },
+              {
+                "type": "textfield",
+                "name": "lube_room_skid_line2_site_glass_levels_HP_side"
+              }
+            ]
+          }
+        ],
+        "Table8_Rows": [
+          {
+            "row_name": "Line 1",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line1_oil_level"
+              },
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line1_oil_leaks"
+              },
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line1_guards_intact"
+              },
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line1_feed_skirt"
+              },
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line1_skirt_boards"
+              },
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line1_panels_change"
+              }
+            ]
+          },
+          {
+            "row_name": "Line 2",
+            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line2_oil_level"
+              },
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line2_oil_leaks"
+              },
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line2_guards_intact"
+              },
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line2_feed_skirt"
+              },
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line2_skirt_boards"
+              },
+              {
+                "type": "textfield",
+                "name": "scalping_screens_line2_panels_change"
               }
             ]
           }
@@ -2564,6 +2911,9 @@
                       "components": [
                         {
                           "type": "vertical",
+                          "style": {
+                            "width": "20%"
+                          },
                           "class": "table_name_background table_name_height center_align",
                           "components": [
                             {
@@ -2575,6 +2925,9 @@
                         },
                         {
                           "type": "vertical",
+                          "style": {
+                            "width": "40%"
+                          },
                           "components": [
                             {
                               "type": "label",
@@ -2591,7 +2944,7 @@
                                     {
                                       "type": "label",
                                       "text": "M-1",
-                                      "class": "black_color"
+                                      "class": "black_color center_align"
                                     }
                                   ]
                                 },
@@ -2602,7 +2955,7 @@
                                     {
                                       "type": "label",
                                       "text": "M-2",
-                                      "class": "black_color"
+                                      "class": "black_color center_align"
                                     }
                                   ]
                                 }
@@ -2612,6 +2965,9 @@
                         },
                         {
                           "type": "vertical",
+                          "style": {
+                            "width": "40%"
+                          },
                           "components": [
                             {
                               "type": "label",
@@ -2628,7 +2984,7 @@
                                     {
                                       "type": "label",
                                       "text": "M-1",
-                                      "class": "black_color"
+                                      "class": "black_color center_align"
                                     }
                                   ]
                                 },
@@ -2639,7 +2995,7 @@
                                     {
                                       "type": "label",
                                       "text": "M-2",
-                                      "class": "black_color"
+                                      "class": "black_color center_align"
                                     }
                                   ]
                                 }
@@ -2666,7 +3022,7 @@
                               "components": [
                                 {
                                   "type": "horizontal",
-                                  "class": "table_body_name_styles table_row_height",
+                                  "class": "table5_body_name_styles table_row_height",
                                   "style": {
                                     "height": "{{#? this.height}}"
                                   },
@@ -2677,10 +3033,9 @@
                                         {
                                           "type": "label",
                                           "text": "{{this.row_name}}",
-                                          "class": "black_color table_body_name_styles table_fields_size center_align table_row_height",
+                                          "class": "black_color table5_body_name_styles table_fields_size center_align table_row_height",
                                           "style": {
-                                            "height": "{{#? this.height}}",
-                                            "width": "37%"
+                                            "height": "{{#? this.height}}"
                                           }
                                         }
                                       ]
@@ -2711,7 +3066,683 @@
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table5_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
-                                              "class": "table_row_height center_align black_color table_body_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles table_body_value_styles' : 'switch_styles table_odd_row_styles table_body_value_styles' : ''}}",
+                                              "class": "table_row_height center_align black_color table5_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles' : 'switch_styles table_odd_row_styles' : ''}}",
+                                              "action": {
+                                                "trigger": "handleSwitchValues",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding center_align table_header_height",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "16%"
+                          },
+                          "class": "table_name_background table_name_height center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Lube Pumps Running",
+                              "class": "center_align black_color table_name_styles bold table6_body_name_styles"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "24%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "LP",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "1",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "2",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "24%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Charge",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "3",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "4",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "36%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "HP",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "5",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "6",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "7",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table6_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table6_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "label",
+                                          "text": "{{this.row_name}}",
+                                          "class": "black_color table6_body_name_styles center_align table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "class": "{{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": [
+                                                {
+                                                  "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table6_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table6_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table6_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
+                                                }
+                                              ],
+                                              "class": "center_align black_color table6_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles' : 'switch_styles table_odd_row_styles' : ''}}",
+                                              "action": {
+                                                "trigger": "handleSwitchValues",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding center_align table_header_height",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "10%"
+                          },
+                          "class": "table_name_background table_name_height center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Lube Room \nSkid",
+                              "class": "center_align black_color table_name_styles bold table6_body_name_styles"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "30%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Filter Pods",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "#1 Online",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "#2 Online",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "Filter ΔP",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "40%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Plate Hx's",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "Cooling H20 In",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "Cooling H20 Out",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "Oil In",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "Oil Out",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "20%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Site Glass Levels",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_header2_styles table_row_height",
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "LP Side",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_header2_styles",
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "HP Side",
+                                      "class": "black_color center_align"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table7_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table7_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "label",
+                                          "text": "{{this.row_name}}",
+                                          "class": "black_color table7_body_name_styles table_fields_size center_align table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "class": "{{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": [
+                                                {
+                                                  "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table7_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table7_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table7_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
+                                                }
+                                              ],
+                                              "class": "center_align black_color table7_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles' : 'switch_styles table_odd_row_styles' : ''}}",
+                                              "action": {
+                                                "trigger": "handleSwitchValues",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding center_align table_row_height",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "16%"
+                          },
+                          "class": "table_name_background table_row_height center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Scalping Screens",
+                              "class": "center_align black_color table_name_styles bold table6_body_name_styles"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Oil Level",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Oil Leaks",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Guards Intact",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Feed Skirt",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Skirt Boards",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "14%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "# Panels Change",
+                              "class": "center_align black_color table_row_height table_header_styles"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table8_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table8_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "label",
+                                          "text": "{{this.row_name}}",
+                                          "class": "black_color table8_body_name_styles table_fields_size center_align table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "class": "{{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": [
+                                                {
+                                                  "{{#if type=='textfield'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table8_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='dropdown'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table8_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}"
+                                                },
+                                                {
+                                                  "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table8_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
+                                                }
+                                              ],
+                                              "class": "center_align black_color table8_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles' : 'switch_styles table_odd_row_styles' : ''}}",
                                               "action": {
                                                 "trigger": "handleSwitchValues",
                                                 "options": {
@@ -2733,35 +3764,15 @@
                     },
                     {
                       "type": "label",
-                      "text": " Lube Pumps Running",
-                      "class": "center_align table_header_styles table_sub_header_styles",
-                      "style": {
-                        "width": "100%"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": " Lube Room Skid",
-                      "class": "center_align table_header_styles table_sub_header_styles",
-                      "style": {
-                        "width": "100%"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": " Scalping Screens",
-                      "class": "center_align table_header_styles table_sub_header_styles",
-                      "style": {
-                        "width": "100%"
-                      }
-                    },
-                    {
-                      "type": "label",
                       "text": " Sumps",
                       "class": "center_align table_header_styles table_sub_header_styles",
                       "style": {
                         "width": "100%"
                       }
+                    },
+                    {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
                     },
                     {
                       "type": "label",
@@ -2772,12 +3783,20 @@
                       }
                     },
                     {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
                       "type": "label",
                       "text": " Belt Magnets Status",
                       "class": "center_align table_header_styles table_sub_header_styles",
                       "style": {
                         "width": "100%"
                       }
+                    },
+                    {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
                     },
                     {
                       "type": "label",
@@ -2788,12 +3807,20 @@
                       }
                     },
                     {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
                       "type": "label",
                       "text": " Falcons",
                       "class": "center_align table_header_styles table_main_header_styles",
                       "style": {
                         "width": "100%"
                       }
+                    },
+                    {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
                     },
                     {
                       "type": "vertical",
