@@ -1431,7 +1431,7 @@
           "type": "$global.set",
           "options": {
             "section_id": "form1",
-            "f1_s2_description": "{{$get.description || ''}}"
+            "f1_s2_description": "{{$get.description || $global.description || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
