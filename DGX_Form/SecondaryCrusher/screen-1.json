@@ -1923,6 +1923,13 @@
               "type": "warning"
             }
           },
+          "handleSwitchValues": {
+            "type": "$global.set",
+            "options": {
+              "section_id": "form18",
+              "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
+            }
+          },
           "handleTemplateChange": {
             "type": "$render",
             "options": {
