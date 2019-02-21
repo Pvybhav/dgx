@@ -40,7 +40,8 @@
         "column_label_style": {
           "width": "15%",
           "height": "6%",
-          "size": "16"
+          "size": "16",
+          "align": "center"
         },
         "textarea_style": {
           "height": "8%"
@@ -110,15 +111,15 @@
           "color": "rgb(0,162,224)"
         },
         "table_header_styles": {
-          "size": 15,
-          "font": "HelveticaHeader",
+          "size": 17,
+          "font": "HelveticaHeader-Bold",
           "background": "rgb(14, 53, 112)",
           "color": "rgb(255, 255, 255)",
           "border": "rgb(255, 255, 255)"
         },
         "roller_header_style": {
-          "size": 15,
-          "font": "HelveticaHeader",
+          "size": 17,
+          "font": "HelveticaHeader-Bold",
           "background": "rgb(14, 53, 112)",
           "color": "rgb(255, 255, 255)",
           "border": "rgb(255, 255, 255)",
@@ -163,17 +164,17 @@
         "table_header_name_styles": {
           "width": "15%",
           "border": "rgb(255, 255, 255)",
-          "height": "15%"
+          "height": "10%"
         },
         "table_header_name_styles_2": {
           "width": "15%",
           "border": "rgb(255, 255, 255)",
-          "height": "25%"
+          "height": "18%"
         },
         "table_header_name_styles_units": {
           "width": "15%",
           "height": "5%",
-          "size": 15,
+          "size": 17,
           "font": "HelveticaHeader",
           "background": "rgb(14, 53, 112)",
           "color": "rgb(255, 255, 255)"
@@ -186,7 +187,7 @@
         "table_header_value_styles_two_rows": {
           "width": "34%",
           "border": "rgb(255, 255, 255)",
-          "height": "30%"
+          "height": "10%"
         },
         "content_style_odd_switch": {
           "background": "rgb(204, 216, 213)",
@@ -195,22 +196,26 @@
         "table_header_value_styles": {
           "width": "17%",
           "border": "rgb(255, 255, 255)",
-          "height": "15%"
+          "height": "10%",
+          "font": "HelveticaHeader-Bold"
         },
         "table_header_value_styles_units": {
           "width": "17%",
           "border": "rgb(255, 255, 255)",
+          "font": "HelveticaHeader-Bold",
           "height": "5%"
         },
         "table_header_value_styles_2": {
           "width": "17%",
           "border": "rgb(255, 255, 255)",
-          "height": "25%"
+          "font": "HelveticaHeader-Bold",
+          "height": "18%"
         },
         "table_header_value_styles2": {
           "width": "18%",
           "border": "rgb(255, 255, 255)",
-          "height": "15%"
+          "font": "HelveticaHeader-Bold",
+          "height": "10%"
         },
         "table_header_value_styles3": {
           "width": "50%",
@@ -218,10 +223,10 @@
           "height": "10%"
         },
         "table_row": {
-          "height": "15%"
+          "height": "10%"
         },
         "table_row_2": {
-          "height": "25%"
+          "height": "18%"
         },
         "table_row5": {
           "height": "10%"
@@ -1938,21 +1943,6 @@
             }
           }
         },
-        "$pull": {
-          "type": "$reload",
-          "success": {
-            "type": "$render",
-            "options": {
-              "template": "screen1"
-            },
-            "success": {
-              "trigger": "displayToaster",
-              "options": {
-                "message": "Page loaded successfully"
-              }
-            }
-          }
-        },
         "displayToaster": {
           "type": "$util.toast",
           "options": {
@@ -2414,9 +2404,9 @@
               ]
             },
             "success": {
-              "type": "$href",
+              "type": "$reload",
               "options": {
-                "url": "{{redirect_url}}"
+                "template": "screen1"
               }
             }
           }
@@ -3268,6 +3258,19 @@
                   }
                 }
               ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "height": "10%",
+                    "width": "100%"
+                  }
+                }
+              ]
             }
           ],
           "class": "no_padding",
@@ -3486,11 +3489,41 @@
                               }
                             },
                             {
+                              "type": "label",
+                              "text": "",
+                              "class": "table_header_styles",
+                              "style": {
+                                "height": "6%",
+                                "width": "51%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                              "type": "horizontal",
+                          "components": [
+                            {
                               "type": "horizontal",
                               "class": "table_header_styles center_align",
                               "style": {
                                 "height": "6%",
-                                "width": "51%",
+                                "width": "100%",
                                 "border": "#ffffff"
                               },
                               "components": [
@@ -3505,14 +3538,14 @@
                                   "components": [
                                     {
                                       "type": "switch",
-                                      "name": "ok",
+                                      "name": "shift",
                                       "value": "true",
                                       "class": "switch_legend_styles",
                                       "isClickable": "false"
                                     },
                                     {
                                       "type": "label",
-                                      "name": "ok",
+                                      "name": "AgitatorShaft_true",
                                       "text": "= OK",
                                       "style": {
                                         "background": "rgb(14, 53, 112)",
@@ -3533,15 +3566,15 @@
                                   "components": [
                                     {
                                       "type": "switch",
-                                      "name": "issue",
+                                      "name": "shift",
                                       "value": "false",
                                       "class": "switch_legend_styles",
                                       "isClickable": "false"
                                     },
                                     {
                                       "type": "label",
-                                      "name": "issue",
-                                      "text": "= Issssue",
+                                      "name": "AgitatorShaft_true",
+                                      "text": "= Issue",
                                       "style": {
                                         "background": "rgb(14, 53, 112)",
                                         "color": "rgb(255, 255, 255)",
@@ -3628,7 +3661,7 @@
                                               "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
                                                 "width": "17%",
-                                                "padding_bottom": "1%",
+                                                "padding_right": "6%",
                                                 "border": "#ffffff",
                                                 "height": "6%"
                                               },
@@ -3723,7 +3756,7 @@
                                               "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
                                                 "width": "17%",
-                                                "padding_bottom": "1%",
+                                                "padding_right": "6%",
                                                 "border": "#ffffff",
                                                 "height": "6%"
                                               },
@@ -3849,7 +3882,7 @@
                                               "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
                                                 "width": "17%",
-                                                "padding_bottom": "1%",
+                                                "padding_right": "6%",
                                                 "border": "#ffffff",
                                                 "height": "6%"
                                               },
@@ -3944,7 +3977,7 @@
                                               "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
                                                 "width": "17%",
-                                                "padding_bottom": "1%",
+                                                "padding_right": "6%",
                                                 "border": "#ffffff",
                                                 "height": "6%"
                                               },
@@ -3985,6 +4018,19 @@
                     "height": "15%",
                     "size": "15",
                     "border": "#000000"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "height": "10%",
+                    "width": "100%"
                   }
                 }
               ]
@@ -4249,7 +4295,7 @@
                                               "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
                                                 "width": "17%",
-                                                "padding_bottom": "1%",
+                                                "padding_right": "6%",
                                                 "border": "#ffffff",
                                                 "height": "6%"
                                               },
@@ -4344,7 +4390,7 @@
                                               "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
                                                 "width": "17%",
-                                                "padding_bottom": "1%",
+                                                "padding_right": "6%",
                                                 "border": "#ffffff",
                                                 "height": "6%"
                                               },
@@ -4470,7 +4516,7 @@
                                               "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
                                                 "width": "17%",
-                                                "padding_bottom": "1%",
+                                                "padding_right": "6%",
                                                 "border": "#ffffff",
                                                 "height": "6%"
                                               },
@@ -4565,9 +4611,9 @@
                                               "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
                                                 "width": "17%",
-                                                "padding_bottom": "1%",
                                                 "border": "#ffffff",
-                                                "height": "6%"
+                                                "height": "6%",
+                                                "padding_right": "6%"
                                               },
                                               "action": {
                                                 "trigger": "{{#? trigger}}",
@@ -4607,6 +4653,19 @@
                     "size": "15",
                     "border": "#000000"
                   }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "height": "10%",
+                    "width": "100%"
+            }
                 }
               ]
             }
@@ -4843,39 +4902,68 @@
                               }
                             },
                             {
-                              "type": "horizontal",
-                              "class": "center_align",
+                              "type": "label",
+                              "text": "",
+                              "class": "table_header_styles",
                               "style": {
                                 "height": "6%",
-                                "width": "51%",
-                                "size": 15,
-                                "font": "HelveticaHeader",
-                                "background": "rgb(14, 53, 112)",
-                                "color": "rgb(255, 255, 255)"
+                                "width": "51%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "100%",
+                                "border": "#ffffff"
                               },
                               "components": [
                                 {
                                   "type": "horizontal",
                                   "style": {
                                     "background": "rgb(14, 53, 112)",
-                                    "color": "rgb(255, 255, 255)"
+                                    "color": "rgb(255, 255, 255)",
+                                    "height": "6%"
                                   },
                                   "class": "center_align",
                                   "components": [
                                     {
                                       "type": "switch",
-                                      "name": "ok_2",
+                                      "name": "shift",
                                       "value": "true",
                                       "class": "switch_legend_styles",
                                       "isClickable": "false"
                                     },
                                     {
                                       "type": "label",
-                                      "name": "ok_2",
+                                      "name": "AgitatorShaft_true",
                                       "text": "= OK",
                                       "style": {
                                         "background": "rgb(14, 53, 112)",
-                                        "color": "rgb(255, 255, 255)"
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
                                       }
                                     }
                                   ]
@@ -4884,24 +4972,26 @@
                                   "type": "horizontal",
                                   "style": {
                                     "background": "rgb(14, 53, 112)",
-                                    "color": "rgb(255, 255, 255)"
+                                    "color": "rgb(255, 255, 255)",
+                                    "height": "6%"
                                   },
                                   "class": "center_align",
                                   "components": [
                                     {
                                       "type": "switch",
-                                      "name": "issue_2",
+                                      "name": "shift",
                                       "value": "false",
                                       "class": "switch_legend_styles",
                                       "isClickable": "false"
                                     },
                                     {
                                       "type": "label",
-                                      "name": "issue_2",
+                                      "name": "AgitatorShaft_true",
                                       "text": "= Issue",
                                       "style": {
                                         "background": "rgb(14, 53, 112)",
-                                        "color": "rgb(255, 255, 255)"
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
                                       }
                                     }
                                   ]
@@ -4979,7 +5069,7 @@
                                               "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
                                                 "width": "17%",
-                                                "padding_bottom": "1%",
+                                                "padding_right": "6%",
                                                 "border": "#ffffff",
                                                 "height": "6%"
                                               },
@@ -5078,39 +5168,68 @@
                               }
                             },
                             {
-                              "type": "horizontal",
-                              "class": "center_align",
+                              "type": "label",
+                              "text": "",
+                              "class": "table_header_styles",
                               "style": {
                                 "height": "6%",
-                                "width": "51%",
-                                "size": 15,
-                                "font": "HelveticaHeader",
-                                "background": "rgb(14, 53, 112)",
-                                "color": "rgb(255, 255, 255)"
+                                "width": "51%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                              "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "100%",
+                                "border": "#ffffff"
                               },
                               "components": [
                                 {
                                   "type": "horizontal",
                                   "style": {
                                     "background": "rgb(14, 53, 112)",
-                                    "color": "rgb(255, 255, 255)"
+                                    "color": "rgb(255, 255, 255)",
+                                    "height": "6%"
                                   },
                                   "class": "center_align",
                                   "components": [
                                     {
                                       "type": "switch",
-                                      "name": "ok_3",
+                                      "name": "shift",
                                       "value": "true",
                                       "class": "switch_legend_styles",
                                       "isClickable": "false"
                                     },
                                     {
                                       "type": "label",
-                                      "name": "ok_3",
+                                      "name": "AgitatorShaft_true",
                                       "text": "= OK",
                                       "style": {
                                         "background": "rgb(14, 53, 112)",
-                                        "color": "rgb(255, 255, 255)"
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
                                       }
                                     }
                                   ]
@@ -5119,24 +5238,26 @@
                                   "type": "horizontal",
                                   "style": {
                                     "background": "rgb(14, 53, 112)",
-                                    "color": "rgb(255, 255, 255)"
+                                    "color": "rgb(255, 255, 255)",
+                                    "height": "6%"
                                   },
                                   "class": "center_align",
                                   "components": [
                                     {
                                       "type": "switch",
-                                      "name": "issue_3",
+                                      "name": "shift",
                                       "value": "false",
                                       "class": "switch_legend_styles",
                                       "isClickable": "false"
                                     },
                                     {
                                       "type": "label",
-                                      "name": "issue_3",
+                                      "name": "AgitatorShaft_true",
                                       "text": "= Issue",
                                       "style": {
                                         "background": "rgb(14, 53, 112)",
-                                        "color": "rgb(255, 255, 255)"
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
                                       }
                                     }
                                   ]
@@ -5214,7 +5335,7 @@
                                               "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
                                                 "width": "17%",
-                                                "padding_bottom": "1%",
+                                                "padding_right": "6%",
                                                 "border": "#ffffff",
                                                 "height": "6%"
                                               },
@@ -5254,7 +5375,21 @@
                     "width": "100%",
                     "height": "15%",
                     "size": "15",
-                    "border": "#000000"
+                    "border": "#000000",
+                    "padding_bottom": "3%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "height": "10%",
+                    "width": "100%"
                   }
                 }
               ]

@@ -1,15 +1,11 @@
 {
   "$jason": {
     "head": {
-      "title": "Form-16",
-      "json_id": "form16",
-      "description": "Carbon Count Integration to PI",
+      "title": "Form-17",
+      "json_id": "form17",
+      "description": "CIP/Leach Operator Log Sheet - Carbon Count",
       "offline": "true",
       "styles": {
-        "carbon_bags": {
-          "padding": "0",
-          "align": "left"
-        },
         "center_align": {
           "align": "center"
         },
@@ -23,7 +19,11 @@
           "font": "HelveticaNeue-Bold"
         },
         "body_row_label_styles": {
-          "size": "16"
+          "size": "16",
+          "width": "3%"
+        },
+        "hide_field": {
+          "width": "0%"
         },
         "right_padding": {
           "padding_left": "-2",
@@ -72,16 +72,6 @@
         "table_header3_value_styles": {
           "width": "25%"
         },
-        "header_style": {
-          "border": "#FFFFFF",
-          "border_width": "2",
-          "background": "rgb(27,142,197)",
-          "height": "12%",
-          "align": "center",
-          "color": "rgb(255,255,255)",
-          "size": 15,
-          "font": "HelveticaHeader"
-        },
         "table_odd_row_styles": {
           "background": "rgb(231,232,235)"
         },
@@ -89,21 +79,22 @@
           "background": "rgb(204,206,213)"
         },
         "table_body_textfield_styles": {
-          "width": "16%",
-          "height": "4%",
-          "size": "13",
-          "align": "left"
-        },
-        "table_body_textfield_styles_1": {
-          "width": "16%",
-          "size": "13",
-          "align": "left"
+          "width": "13%",
+          "size": "13"
         },
         "table_row_height": {
           "height": "6%"
         },
         "table_row_name_styles": {
-          "width": "4%",
+          "width": "8%",
+          "size": "18",
+          "font": "HelveticaHeader-Bold"
+        },
+        "table_row_name_size": {
+          "size": "18"
+        },
+        "table_row_value_styles": {
+          "width": "17%",
           "font": "HelveticaHeader-Bold"
         },
         "loading_image_styles": {
@@ -181,41 +172,41 @@
         "handleSave_screen1": {
           "type": "$global.set",
           "options": {
-            "section_id": "form16",
-            "form16_sign": "{{$get.sign || ''}}",
-            "form16_day": "{{$get.day}}",
-            "form16_month": "{{$get.month}}",
-            "form16_year": "{{$get.year}}",
-            "form16_shift": "{{$get.shift}}",
-            "form16_operator": "{{$get.operator}}",
-            "DS_carbon_count_L1_CIP101": "{{$get.DS_carbon_count_L1_CIP101 || '' }}",
-            "DS_carbon_count_L2_CIP201": "{{$get.DS_carbon_count_L2_CIP201 || '' }}",
-            "PS_carbon_count_L1_CIP101": "{{$get.PS_carbon_count_L1_CIP101 || '' }}",
-            "PS_carbon_count_L2_CIP201": "{{$get.PS_carbon_count_L2_CIP201 || '' }}",
-            "DS_carbon_count_L1_CIP102": "{{$get.DS_carbon_count_L1_CIP102 || '' }}",
-            "DS_carbon_count_L2_CIP202": "{{$get.DS_carbon_count_L2_CIP202 || '' }}",
-            "PS_carbon_count_L1_CIP102": "{{$get.PS_carbon_count_L1_CIP102 || '' }}",
-            "PS_carbon_count_L2_CIP202": "{{$get.PS_carbon_count_L2_CIP202 || '' }}",
-            "DS_carbon_count_L1_CIP103": "{{$get.DS_carbon_count_L1_CIP103 || '' }}",
-            "DS_carbon_count_L2_CIP203": "{{$get.DS_carbon_count_L2_CIP203 || '' }}",
-            "PS_carbon_count_L1_CIP103": "{{$get.PS_carbon_count_L1_CIP103 || '' }}",
-            "PS_carbon_count_L2_CIP203": "{{$get.PS_carbon_count_L2_CIP203 || '' }}",
-            "DS_carbon_count_L1_CIP104": "{{$get.DS_carbon_count_L1_CIP104 || '' }}",
-            "DS_carbon_count_L2_CIP204": "{{$get.DS_carbon_count_L2_CIP204 || '' }}",
-            "PS_carbon_count_L1_CIP104": "{{$get.PS_carbon_count_L1_CIP104 || '' }}",
-            "PS_carbon_count_L2_CIP204": "{{$get.PS_carbon_count_L2_CIP204 || '' }}",
-            "DS_carbon_count_L1_CIP105": "{{$get.DS_carbon_count_L1_CIP105 || '' }}",
-            "DS_carbon_count_L2_CIP205": "{{$get.DS_carbon_count_L2_CIP205 || '' }}",
-            "PS_carbon_count_L1_CIP105": "{{$get.PS_carbon_count_L1_CIP105 || '' }}",
-            "PS_carbon_count_L2_CIP205": "{{$get.PS_carbon_count_L2_CIP205 || '' }}",
-            "DS_carbon_count_L1_CIP106": "{{$get.DS_carbon_count_L1_CIP106 || '' }}",
-            "DS_carbon_count_L2_CIP206": "{{$get.DS_carbon_count_L2_CIP206 || '' }}",
-            "PS_carbon_count_L1_CIP106": "{{$get.PS_carbon_count_L1_CIP106 || '' }}",
-            "PS_carbon_count_L2_CIP206": "{{$get.PS_carbon_count_L2_CIP206 || '' }}",
-            "DS_carbon_count_L1_CIP107": "{{$get.DS_carbon_count_L1_CIP107 || '' }}",
-            "DS_carbon_count_L2_CIP207": "{{$get.DS_carbon_count_L2_CIP207 || '' }}",
-            "PS_carbon_count_L1_CIP107": "{{$get.PS_carbon_count_L1_CIP107 || '' }}",
-            "PS_carbon_count_L2_CIP207": "{{$get.PS_carbon_count_L2_CIP207 || '' }}"
+            "section_id": "form17",
+            "form17_sign": "{{$get.sign || ''}}",
+            "form17_day": "{{$get.day}}",
+            "form17_month": "{{$get.month}}",
+            "form17_year": "{{$get.year}}",
+            "form17_shift": "{{$get.shift}}",
+            "form17_operator": "{{$get.operator}}",
+            "Line1_101_lead_tank": "{{$get.Line1_101_lead_tank || '' }}",
+            "Line1_101_volume": "{{$get.Line1_101_volume || '' }}",
+            "Line2_201_lead_tank": "{{$get.Line2_201_lead_tank || '' }}",
+            "Line2_201_volume": "{{$get.Line2_201_volume || '' }}",
+            "Line1_102_lead_tank": "{{$get.Line1_102_lead_tank || '' }}",
+            "Line1_102_volume": "{{$get.Line1_102_volume || '' }}",
+            "Line2_202_lead_tank": "{{$get.Line2_202_lead_tank || '' }}",
+            "Line2_202_volume": "{{$get.Line2_202_volume || '' }}",
+            "Line1_103_lead_tank": "{{$get.Line1_103_lead_tank || '' }}",
+            "Line1_103_volume": "{{$get.Line1_103_volume || '' }}",
+            "Line2_203_lead_tank": "{{$get.Line2_203_lead_tank || '' }}",
+            "Line2_203_volume": "{{$get.Line2_203_volume || '' }}",
+            "Line1_104_lead_tank": "{{$get.Line1_104_lead_tank || '' }}",
+            "Line1_104_volume": "{{$get.Line1_104_volume || '' }}",
+            "Line2_204_lead_tank": "{{$get.Line2_204_lead_tank || '' }}",
+            "Line2_204_volume": "{{$get.Line2_204_volume || '' }}",
+            "Line1_105_lead_tank": "{{$get.Line1_105_lead_tank || '' }}",
+            "Line1_105_volume": "{{$get.Line1_105_volume || '' }}",
+            "Line2_205_lead_tank": "{{$get.Line2_205_lead_tank || '' }}",
+            "Line2_205_volume": "{{$get.Line2_205_volume || '' }}",
+            "Line1_106_lead_tank": "{{$get.Line1_106_lead_tank || '' }}",
+            "Line1_106_volume": "{{$get.Line1_106_volume || '' }}",
+            "Line2_206_lead_tank": "{{$get.Line2_206_lead_tank || '' }}",
+            "Line2_206_volume": "{{$get.Line2_206_volume || '' }}",
+            "Line1_107_lead_tank": "{{$get.Line1_107_lead_tank || '' }}",
+            "Line1_107_volume": "{{$get.Line1_107_volume || '' }}",
+            "Line2_207_lead_tank": "{{$get.Line2_207_lead_tank || '' }}",
+            "Line2_207_volume": "{{$get.Line2_207_volume || '' }}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -227,17 +218,8 @@
         "handleSave_screen2": {
           "type": "$global.set",
           "options": {
-            "section_id": "form16",
-            "DS_carbon_count_L1_Density": "{{$get.DS_carbon_count_L1_Density || '' }}",
-            "DS_carbon_count_L2_Density": "{{$get.DS_carbon_count_L2_Density || '' }}",
-            "PS_carbon_count_L1_Density": "{{$get.PS_carbon_count_L1_Density || '' }}",
-            "PS_carbon_count_L2_Density": "{{$get.PS_carbon_count_L2_Density || '' }}",
-            "DS_carbon_count_L1_Leadtank": "{{$get.DS_carbon_count_L1_Leadtank || '' }}",
-            "DS_carbon_count_L2_Leadtank": "{{$get.DS_carbon_count_L2_Leadtank || '' }}",
-            "PS_carbon_count_L1_Leadtank": "{{$get.PS_carbon_count_L1_Leadtank || '' }}",
-            "PS_carbon_count_L2_Leadtank": "{{$get.PS_carbon_count_L2_Leadtank || '' }}",
-            "DS_carbon_count_L1L2_Carbonbags": "{{$get.DS_carbon_count_L1L2_Carbonbags || '' }}",
-            "PS_carbon_count_L1L2_Carbonbags": "{{$get.PS_carbon_count_L1L2_Carbonbags || '' }}"
+            "section_id": "form17",
+            "form17_comments": "{{$get.comments || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -266,57 +248,48 @@
           "type": "$global.reset",
           "options": {
             "save": "true",
-            "filename": "CIP_CarbonCount"
+            "filename": "CIPLeachOperatorLogSheet_CarbonCount"
           },
           "success": {
             "type": "$global.reset",
             "options": {
               "items": [
                 "section_id",
-                "form16_sign",
-                "form16_day",
-                "form16_month",
-                "form16_year",
-                "form16_shift",
-                "form16_operator",
-                "DS_carbon_count_L1_CIP101",
-                "DS_carbon_count_L2_CIP201",
-                "PS_carbon_count_L1_CIP101",
-                "PS_carbon_count_L2_CIP201",
-                "DS_carbon_count_L1_CIP102",
-                "DS_carbon_count_L2_CIP202",
-                "PS_carbon_count_L1_CIP102",
-                "PS_carbon_count_L2_CIP202",
-                "DS_carbon_count_L1_CIP103",
-                "DS_carbon_count_L2_CIP203",
-                "PS_carbon_count_L1_CIP103",
-                "PS_carbon_count_L2_CIP203",
-                "DS_carbon_count_L1_CIP104",
-                "DS_carbon_count_L2_CIP204",
-                "PS_carbon_count_L1_CIP104",
-                "PS_carbon_count_L2_CIP204",
-                "DS_carbon_count_L1_CIP105",
-                "DS_carbon_count_L2_CIP205",
-                "PS_carbon_count_L1_CIP105",
-                "PS_carbon_count_L2_CIP205",
-                "DS_carbon_count_L1_CIP106",
-                "DS_carbon_count_L2_CIP206",
-                "PS_carbon_count_L1_CIP106",
-                "PS_carbon_count_L2_CIP206",
-                "DS_carbon_count_L1_CIP107",
-                "DS_carbon_count_L2_CIP207",
-                "PS_carbon_count_L1_CIP107",
-                "PS_carbon_count_L2_CIP207",
-                "DS_carbon_count_L1_Density",
-                "DS_carbon_count_L2_Density",
-                "PS_carbon_count_L1_Density",
-                "PS_carbon_count_L2_Density",
-                "DS_carbon_count_L1_Leadtank",
-                "DS_carbon_count_L2_Leadtank",
-                "PS_carbon_count_L1_Leadtank",
-                "PS_carbon_count_L2_Leadtank",
-                "DS_carbon_count_L1L2_Carbonbags",
-                "PS_carbon_count_L1L2_Carbonbags"
+                "form17_sign",
+                "form17_day",
+                "form17_month",
+                "form17_year",
+                "form17_shift",
+                "form17_operator",
+                "Line1_101_lead_tank",
+                "Line1_101_volume",
+                "Line2_201_lead_tank",
+                "Line2_201_volume",
+                "Line1_102_lead_tank",
+                "Line1_102_volume",
+                "Line2_202_lead_tank",
+                "Line2_202_volume",
+                "Line1_103_lead_tank",
+                "Line1_103_volume",
+                "Line2_203_lead_tank",
+                "Line2_203_volume",
+                "Line1_104_lead_tank",
+                "Line1_104_volume",
+                "Line2_204_lead_tank",
+                "Line2_204_volume",
+                "Line1_105_lead_tank",
+                "Line1_105_volume",
+                "Line2_205_lead_tank",
+                "Line2_205_volume",
+                "Line1_106_lead_tank",
+                "Line1_106_volume",
+                "Line2_206_lead_tank",
+                "Line2_206_volume",
+                "Line1_107_lead_tank",
+                "Line1_107_volume",
+                "Line2_207_lead_tank",
+                "Line2_207_volume",
+                "form17_comments"
               ]
             },
             "success": {
@@ -326,7 +299,7 @@
         }
       },
       "data": {
-        "Page_Heading": "Carbon Count Integration to PI",
+        "Page_Heading": "CIP/Leach Operator Log Sheet - Carbon Count",
         "loading_image_url": "file://infinit.gif",
         "home_icon": "file://icons/home.png",
         "submit_icon": "file://icons/submit.png",
@@ -589,39 +562,39 @@
         ],
         "Table_Headers1": [
           {
-            "value": "Day Shift",
+            "value": "Line 1",
             "styles": "table_header1_name_styles center_align table_header_styles"
           },
           {
-            "value": "Previous shift",
+            "value": "Line 2",
             "styles": "table_header1_name_styles center_align table_header_styles"
           }
         ],
         "Table_Headers2": [
           {
-            "value": "Carbon Count (g/L)",
+            "value": "Line 1",
             "styles": "table_header2_name_styles center_align table_header_styles"
           },
           {
-            "value": "Carbon Count (g/L)",
+            "value": "Line 2",
             "styles": "table_header2_name_styles center_align table_header_styles"
           }
         ],
         "Table_Headers3": [
           {
-            "value": "Line 1",
+            "value": "Tank",
             "styles": "table_header3_name_styles center_align table_header_styles"
           },
           {
-            "value": "Line 2",
+            "value": "Lead Tank",
             "styles": "table_header3_value_styles center_align table_header_styles"
           },
           {
-            "value": "Line 1",
+            "value": "Volume (mL/L)",
             "styles": "table_header3_value_styles center_align table_header_styles"
           },
           {
-            "value": "Line 2",
+            "value": "Tank",
             "styles": "table_header3_name_styles center_align table_header_styles"
           }
         ],
@@ -630,7 +603,7 @@
             "row_values": [
               {
                 "type": "label",
-                "text": "CIP 101"
+                "text": "101"
               },
               {
                 "type": "textfield",
@@ -640,7 +613,7 @@
               },
               {
                 "type": "label",
-                "text": "CIP 201"
+                "text": "102"
               },
               {
                 "type": "textfield",
@@ -650,7 +623,7 @@
               },
               {
                 "type": "label",
-                "text": "CIP 101"
+                "text": "201"
               },
               {
                 "type": "textfield",
@@ -660,411 +633,13 @@
               },
               {
                 "type": "label",
-                "text": "CIP 201"
+                "text": "202"
               },
               {
                 "type": "textfield",
                 "name": "PS_carbon_count_L2_CIP201",
                 "label": "4",
                 "contentDescription": "four"
-              }
-            ]
-          },
-          {
-            "row_values": [
-              {
-                "type": "label",
-                "text": "CIP 102"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L1_CIP102",
-                "label": "5",
-                "contentDescription": "five"
-              },
-              {
-                "type": "label",
-                "text": "CIP 202"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L2_CIP202",
-                "label": "6",
-                "contentDescription": "six"
-              },
-              {
-                "type": "label",
-                "text": "CIP 102"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L1_CIP102",
-                "label": "7",
-                "contentDescription": "seven"
-              },
-              {
-                "type": "label",
-                "text": "CIP 202"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L2_CIP202",
-                "label": "8",
-                "contentDescription": "eight"
-              }
-            ]
-          },
-          {
-            "row_values": [
-              {
-                "type": "label",
-                "text": "CIP 103"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L1_CIP103",
-                "label": "9",
-                "contentDescription": "nine"
-              },
-              {
-                "type": "label",
-                "text": "CIP 203"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L2_CIP203",
-                "label": "10",
-                "contentDescription": "ten"
-              },
-              {
-                "type": "label",
-                "text": "CIP 103"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L1_CIP103",
-                "label": "11",
-                "contentDescription": "eleven"
-              },
-              {
-                "type": "label",
-                "text": "CIP 203"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L2_CIP203",
-                "label": "12",
-                "contentDescription": "twelve"
-              }
-            ]
-          },
-          {
-            "row_values": [
-              {
-                "type": "label",
-                "text": "CIP 104"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L1_CIP104",
-                "label": "13",
-                "contentDescription": "thirteen"
-              },
-              {
-                "type": "label",
-                "text": "CIP 204"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L2_CIP204",
-                "label": "14",
-                "contentDescription": "fourteen"
-              },
-              {
-                "type": "label",
-                "text": "CIP 104"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L1_CIP104",
-                "label": "15",
-                "contentDescription": "fifteen"
-              },
-              {
-                "type": "label",
-                "text": "CIP 204"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L2_CIP204",
-                "label": "16",
-                "contentDescription": "sixteen"
-              }
-            ]
-          },
-          {
-            "row_values": [
-              {
-                "type": "label",
-                "text": "CIP 105"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L1_CIP105",
-                "label": "17",
-                "contentDescription": "seventeen"
-              },
-              {
-                "type": "label",
-                "text": "CIP 205"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L2_CIP205",
-                "label": "18",
-                "contentDescription": "eighteen"
-              },
-              {
-                "type": "label",
-                "text": "CIP 105"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L1_CIP105",
-                "label": "19",
-                "contentDescription": "nineteen"
-              },
-              {
-                "type": "label",
-                "text": "CIP 205"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L2_CIP205",
-                "label": "20",
-                "contentDescription": "twenty"
-              }
-            ]
-          },
-          {
-            "row_values": [
-              {
-                "type": "label",
-                "text": "CIP 106"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L1_CIP106",
-                "label": "21",
-                "contentDescription": "twenty-one"
-              },
-              {
-                "type": "label",
-                "text": "CIP 206"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L2_CIP206",
-                "label": "22",
-                "contentDescription": "twenty-two"
-              },
-              {
-                "type": "label",
-                "text": "CIP 106"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L1_CIP106",
-                "label": "23",
-                "contentDescription": "twenty-three"
-              },
-              {
-                "type": "label",
-                "text": "CIP 206"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L2_CIP206",
-                "label": "24",
-                "contentDescription": "twenty-four"
-              }
-            ]
-          },
-          {
-            "row_values": [
-              {
-                "type": "label",
-                "text": "CIP 107"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L1_CIP107",
-                "label": "25",
-                "contentDescription": "twenty-five"
-              },
-              {
-                "type": "label",
-                "text": "CIP 207"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L2_CIP207",
-                "label": "26",
-                "contentDescription": "twenty-six"
-              },
-              {
-                "type": "label",
-                "text": "CIP 107"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L1_CIP107",
-                "label": "27",
-                "contentDescription": "twenty-seven"
-              },
-              {
-                "type": "label",
-                "text": "CIP 207"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L2_CIP207",
-                "label": "28",
-                "contentDescription": "twenty-eight"
-              }
-            ]
-          }
-        ],
-        "Table2_Rows": [
-          {
-            "row_values": [
-              {
-                "type": "label",
-                "text": "Density %",
-                "styles": "label_styles body_row_label_styles"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L1_Density",
-                "label": "29",
-                "contentDescription": "twenty-nine",
-                "styles": "table_body_textfield_styles"
-              },
-              {
-                "type": "label",
-                "text": "Density %",
-                "styles": "label_styles table_row_height body_row_label_styles"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L2_Density",
-                "label": "30",
-                "contentDescription": "thirty",
-                "styles": "table_body_textfield_styles"
-              },
-              {
-                "type": "label",
-                "text": "Density %",
-                "styles": "label_styles table_row_height body_row_label_styles"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L1_Density",
-                "label": "31",
-                "contentDescription": "thirty-one",
-                "styles": "table_body_textfield_styles"
-              },
-              {
-                "type": "label",
-                "text": "Density %",
-                "styles": "label_styles table_row_height body_row_label_styles"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L2_Density",
-                "label": "32",
-                "contentDescription": "thirty-two",
-                "styles": "table_body_textfield_styles"
-              }
-            ]
-          },
-          {
-            "row_values": [
-              {
-                "type": "label",
-                "text": "Lead Tank",
-                "styles": "label_styles table_row_height body_row_label_styles"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L1_Leadtank",
-                "label": "33",
-                "contentDescription": "thirty-three",
-                "styles": "table_body_textfield_styles"
-              },
-              {
-                "type": "label",
-                "text": "Lead Tank",
-                "styles": "label_styles table_row_height body_row_label_styles"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L2_Leadtank",
-                "label": "34",
-                "contentDescription": "thirty-four",
-                "styles": "table_body_textfield_styles"
-              },
-              {
-                "type": "label",
-                "text": "Lead Tank",
-                "styles": "label_styles table_row_height body_row_label_styles"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L1_Leadtank",
-                "label": "35",
-                "contentDescription": "thirty-five",
-                "styles": "table_body_textfield_styles"
-              },
-              {
-                "type": "label",
-                "text": "Lead Tank",
-                "styles": "label_styles table_row_height body_row_label_styles"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L2_Leadtank",
-                "label": "36",
-                "contentDescription": "thirty-six",
-                "styles": "table_body_textfield_styles"
-              }
-            ]
-          },
-          {
-            "row_values": [
-              {
-                "type": "label",
-                "text": "CIP Fine Carbon Bags (Full, Removed from Stand)",
-                "styles": "label_styles body_row_label_styles carbon_bags"
-              },
-              {
-                "type": "textfield",
-                "name": "DS_carbon_count_L1L2_Carbonbags",
-                "label": "37",
-                "contentDescription": "thirty-seven",
-                "styles": "table_body_textfield_styles_1"
-              },
-              {
-                "type": "label",
-                "text": "CIP Fine Carbon Bags (Full, Removed from Stand)",
-                "styles": "label_styles body_row_label_styles carbon_bags"
-              },
-              {
-                "type": "textfield",
-                "name": "PS_carbon_count_L1L2_Carbonbags",
-                "label": "38",
-                "contentDescription": "thirty-eight",
-                "styles": "table_body_textfield_styles_1"
               }
             ]
           }
@@ -1075,7 +650,7 @@
           "header": {
             "title": {
               "type": "label",
-              "text": "{{Page_Heading}}",
+              "text": "{{Page_Heading}} (1/2)",
               "align": "left"
             },
             "style": {
@@ -1103,7 +678,7 @@
                     {
                       "type": "dropdown",
                       "name": "day",
-                      "value": "{{$global.form16_day}}",
+                      "value": "{{$global.form17_day}}",
                       "contentDescription": "day",
                       "class": "dropdown_day_style center_align",
                       "options": {
@@ -1121,7 +696,7 @@
                     {
                       "type": "dropdown",
                       "name": "month",
-                      "value": "{{$global.form16_month}}",
+                      "value": "{{$global.form17_month}}",
                       "contentDescription": "month",
                       "class": "dropdown_day_style center_align",
                       "options": {
@@ -1140,7 +715,7 @@
                       "type": "dropdown",
                       "name": "year",
                       "contentDescription": "year",
-                      "value": "{{$global.form16_year}}",
+                      "value": "{{$global.form17_year}}",
                       "class": "dropdown_day_style center_align",
                       "options": {
                         "{{#each Years}}": {
@@ -1163,7 +738,7 @@
                     {
                       "type": "dropdown",
                       "name": "shift",
-                      "value": "{{$global.form16_shift}}",
+                      "value": "{{$global.form17_shift}}",
                       "contentDescription": "shift",
                       "class": "center_align black_color dropdown_shift_style",
                       "options": {
@@ -1187,7 +762,7 @@
                     {
                       "type": "dropdown",
                       "name": "operator",
-                      "value": "{{$global.form16_operator}}",
+                      "value": "{{$global.form17_operator}}",
                       "contentDescription": "operator",
                       "class": "center_align black_color dropdown_operator_style",
                       "options": {
@@ -1210,7 +785,7 @@
                     },
                     {
                       "type": "textfield",
-                      "value": "{{$global.form16_sign || ''}}",
+                      "value": "{{$global.form17_sign || ''}}",
                       "name": "sign",
                       "placeholder": "Sign",
                       "class": "sign_style center_align black_color",
@@ -1288,20 +863,12 @@
                                   "components": {
                                     "{{#each row_values}}": {
                                       "type": "horizontal",
+                                      "class": "{{ type=='label' ? 'table_row_name_styles' : 'table_row_value_styles'}}",
                                       "components": [
                                         {
-                                          "type": "vertical",
-                                          "class": "table_body_label_width",
-                                          "components": [
-                                            {
-                                              "type": "label",
-                                              "text": "{{#? label}}",
-                                              "class": "table_row_name_styles black_color center_align table_row_height",
-                                              "style": {
-                                                "height": "{{#? this.height}}"
-                                              }
-                                            }
-                                          ]
+                                          "type": "label",
+                                          "text": "{{type == 'textfield' ? label : ''}}",
+                                          "class": "center_align table_row_height black_color label_styles {{type == 'textfield' ? 'body_row_label_styles' : 'hide_field'}}"
                                         },
                                         {
                                           "type": "vertical",
@@ -1309,11 +876,9 @@
                                           "components": [
                                             {
                                               "type": "{{type}}",
-                                              "name": "{{name}}",
+                                              "name": "{{#? name}}",
                                               "text": "{{#? text}}",
-                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                              "class": "center_align black_color {{type=='textfield' ? 'table_body_textfield_styles' : ''}} {{type=='label'? 'label_styles table_row_height body_row_label_styles': ''}}",
-                                              "contentDescription": "{{contentDescription}}"
+                                              "class": "center_align black_color {{type=='label'? 'label_styles table_row_height table_row_name_size': 'table_body_textfield_styles'}}"
                                             }
                                           ]
                                         }
@@ -1411,7 +976,7 @@
           "header": {
             "title": {
               "type": "label",
-              "text": "{{Page_Heading}}",
+              "text": "{{Page_Heading}} (2/2)",
               "align": "left"
             },
             "style": {
@@ -1429,109 +994,43 @@
               "type": "horizontal",
               "items": [
                 {
-                  "type": "vertical",
+                  "type": "horizontal",
                   "class": "no_padding",
                   "components": [
                     {
                       "type": "horizontal",
-                      "components": {
-                        "{{#each Table_Headers1}}": {
+                      "class": "no_padding",
+                      "components": [
+                        {
                           "type": "label",
-                          "text": "{{value}}",
-                          "class": "{{styles}}"
+                          "text": "Comments.",
+                          "class": "table_header_styles",
+                          "style": {
+                            "width": "100%"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": {
-                        "{{#each Table_Headers2}}": {
-                          "type": "label",
-                          "text": "{{value}}",
-                          "class": "{{styles}}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "horizontal",
-                      "components": {
-                        "{{#each Table_Headers3}}": {
-                          "type": "label",
-                          "text": "{{value}}",
-                          "class": "{{styles}}"
-                        }
-                      }
+                      ]
                     }
                   ]
                 }
               ]
             },
             {
-              "type": "vertical",
+              "type": "horizontal",
               "items": [
                 {
-                  "type": "vertical",
-                  "class": "no_padding",
+                  "type": "horizontal",
                   "components": [
                     {
-                      "type": "vertical",
-                      "components": {
-                        "{{#each Table2_Rows}}": {
-                          "{{#let}}": [
-                            {
-                              "row_index": "{{$index}}"
-                            },
-                            {
-                              "type": "horizontal",
-                              "class": "center_align {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
-                              "style": {
-                                "height": "{{#? this.height}}"
-                              },
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "components": {
-                                    "{{#each row_values}}": {
-                                      "type": "horizontal",
-                                      "components": [
-                                        {
-                                          "type": "vertical",
-                                          "class": "table_body_label_width",
-                                          "components": [
-                                            {
-                                              "type": "label",
-                                              "text": "{{#? label}}",
-                                              "class": "table_row_name_styles black_color center_align table_row_height",
-                                              "style": {
-                                                "height": "{{#? this.height}}"
-                                              }
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "type": "vertical",
-                                          "components": [
-                                            {
-                                              "type": "{{type}}",
-                                              "name": "{{name}}",
-                                              "text": "{{#? text}}",
-                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                              "class": "center_align black_color {{styles}}",
-                                              "contentDescription": "{{contentDescription}}"
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      }
+                      "type": "textarea",
+                      "value": "{{$global.form17_comments || ''}}",
+                      "name": "comments",
+                      "placeholder": "Enter comments",
+                      "contentDescription": "comments",
+                      "class": "comments_styles"
                     }
-                  ]
+                  ],
+                  "class": "no_padding"
                 }
               ]
             }
