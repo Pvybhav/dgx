@@ -3,6 +3,7 @@
     "head": {
       "title": "Form-14",
       "json_id": "form14",
+      "form_id": "form14",
       "description": "Reagent Log Sheet",
       "offline": "true",
       "styles": {
@@ -122,15 +123,9 @@
       },
       "actions": {
         "$load": {
-          "type": "$global.set",
+          "trigger": "handleTemplateChange",
           "options": {
-            "section_id": "form14"
-          },
-          "success": {
-            "trigger": "handleTemplateChange",
-            "options": {
-              "templateName": "screen1"
-            }
+            "templateName": "screen1"
           }
         },
         "$pull": {
@@ -230,6 +225,7 @@
           "type": "$global.reset",
           "options": {
             "save": "true",
+            "form_id": "form14",
             "filename": "Reagent_log_sheet"
           },
           "success": {
@@ -866,7 +862,7 @@
                   }
                 }
               ],
-              "width":"100%"
+              "width": "100%"
             },
             {
               "type": "horizontal",
