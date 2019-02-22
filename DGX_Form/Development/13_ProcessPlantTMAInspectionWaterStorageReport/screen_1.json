@@ -3,6 +3,7 @@
     "head": {
       "title": "Process Plant TMA Inspection Water Storage Report",
       "description": "Form-13",
+      "form_id": "form13",
       "offline": "true",
       "icon": "https://s3.amazonaws.com/enu-digital-ips/development/DG_Logo.png",
       "styles": {
@@ -127,7 +128,7 @@
           "background": "rgb(255, 0, 0)"
         },
         "template_button_styles": {
-          "size": "18",
+          "size": "16",
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0,147,215)",
           "corner_radius": "1%"
@@ -136,6 +137,11 @@
           "background": "rgb(255, 0, 0)"
         },
         "layer_styles": {
+          "width": "10%",
+          "height": "11%",
+          "bottom": "1%"
+        },
+        "layer_icon_styles": {
           "width": "5%",
           "height": "8%",
           "bottom": "1%"
@@ -5969,6 +5975,7 @@
           "type": "$global.reset",
           "options": {
             "save": "true",
+            "form_id": "form13",
             "filename": "ProcessPlantTMAInspectionWaterStorageReport"
           },
           "success": {
@@ -7058,7 +7065,7 @@
                     {
                       "type": "space",
                       "style": {
-                        "height": "10%"
+                        "height": "15%"
                       }
                     }
                   ]
@@ -7070,9 +7077,9 @@
             {
               "type": "image",
               "url": "{{home_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
-                "left": "10%"
+                "left": "8%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -7083,10 +7090,10 @@
             },
             {
               "type": "button",
-              "text": "1",
+              "text": "Page 1",
               "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
-                "left": "18%"
+                "left": "15%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7097,10 +7104,10 @@
             },
             {
               "type": "button",
-              "text": "2",
+              "text": "Page 2",
               "class": "layer_styles template_button_styles",
               "style": {
-                "left": "26%"
+                "left": "25%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7111,10 +7118,10 @@
             },
             {
               "type": "button",
-              "text": "3",
+              "text": "Page 3",
               "class": "layer_styles template_button_styles",
               "style": {
-                "left": "34%"
+                "left": "35%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7125,10 +7132,10 @@
             },
             {
               "type": "button",
-              "text": "4",
+              "text": "Page 4",
               "class": "layer_styles template_button_styles",
               "style": {
-                "left": "42%"
+                "left": "45%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7139,10 +7146,10 @@
             },
             {
               "type": "button",
-              "text": "5",
+              "text": "Page 5",
               "class": "layer_styles template_button_styles",
               "style": {
-                "left": "50%"
+                "left": "55%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7153,10 +7160,10 @@
             },
             {
               "type": "button",
-              "text": "6",
+              "text": "Page 6",
               "class": "layer_styles template_button_styles",
               "style": {
-                "left": "58%"
+                "left": "65%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7167,10 +7174,10 @@
             },
             {
               "type": "button",
-              "text": "7",
+              "text": "Page 7",
               "class": "layer_styles template_button_styles",
               "style": {
-                "left": "66%"
+                "left": "75%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7182,9 +7189,9 @@
             {
               "type": "image",
               "url": "{{next_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
-                "left": "74%"
+                "left": "85%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -7196,9 +7203,9 @@
             {
               "type": "image",
               "url": "{{save_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
-                "left": "82%"
+                "left": "93%"
               },
               "action": {
                 "trigger": "handleSave_screen1"
@@ -7571,7 +7578,7 @@
             {
               "type": "image",
               "url": "{{home_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "10%"
               },
@@ -7697,7 +7704,7 @@
             {
               "type": "image",
               "url": "{{next_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "82%"
               },
@@ -7711,7 +7718,7 @@
             {
               "type": "image",
               "url": "{{save_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "90%"
               },
@@ -8441,7 +8448,7 @@
             {
               "type": "image",
               "url": "{{home_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "10%"
               },
@@ -8567,7 +8574,7 @@
             {
               "type": "image",
               "url": "{{next_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "82%"
               },
@@ -8581,7 +8588,7 @@
             {
               "type": "image",
               "url": "{{save_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "90%"
               },
@@ -9202,7 +9209,7 @@
             {
               "type": "image",
               "url": "{{home_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "10%"
               },
@@ -9328,7 +9335,7 @@
             {
               "type": "image",
               "url": "{{next_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "82%"
               },
@@ -9342,7 +9349,7 @@
             {
               "type": "image",
               "url": "{{save_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "90%"
               },
@@ -9732,7 +9739,7 @@
             {
               "type": "image",
               "url": "{{home_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "10%"
               },
@@ -9858,7 +9865,7 @@
             {
               "type": "image",
               "url": "{{next_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "82%"
               },
@@ -9872,7 +9879,7 @@
             {
               "type": "image",
               "url": "{{save_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "90%"
               },
@@ -10274,7 +10281,7 @@
             {
               "type": "image",
               "url": "{{home_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "10%"
               },
@@ -10400,7 +10407,7 @@
             {
               "type": "image",
               "url": "{{next_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "82%"
               },
@@ -10414,7 +10421,7 @@
             {
               "type": "image",
               "url": "{{save_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "90%"
               },
@@ -10794,7 +10801,7 @@
             {
               "type": "image",
               "url": "{{home_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "10%"
               },
@@ -10920,7 +10927,7 @@
             {
               "type": "image",
               "url": "{{save_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "82%"
               },
