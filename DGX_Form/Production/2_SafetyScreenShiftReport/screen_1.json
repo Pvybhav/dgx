@@ -1,28 +1,19 @@
 {
   "$jason": {
     "head": {
-      "title": "Line-1",
-      "description": "Line-2 by using Loops",
+      "title": "Safety Screen Shift Report",
+      "form_id": "form2",
+      "description": "Safety Screen Shift Report",
       "offline": "true",
       "styles": {
         "no_padding": {
           "padding": "0"
-        },
-        "no_border": {
-          "border": "none"
         },
         "center_align": {
           "align": "center"
         },
         "black_color": {
           "color": "rgb(0, 0, 0)"
-        },
-        "title_styles": {
-          "font": "HelveticaHeader",
-          "size": 20,
-          "align": "center",
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 162, 224)"
         },
         "dropdown_day_style": {
           "color": "rgb(0, 0, 0)",
@@ -42,29 +33,14 @@
           "width": "20%",
           "height": "3%"
         },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
         "sign_style": {
           "height": "4%",
           "width": "20%",
           "size": "15"
-        },
-        "header_2_styles": {
-          "size": 13,
-          "width": "24%",
-          "height": "8%",
-          "color": "rgb(0, 0, 0)",
-          "border": "rgb(0, 0, 0)"
-        },
-        "header_2_label": {
-          "size": 13,
-          "width": "19%",
-          "color": "rgb(0,162,224)",
-          "align": "right"
-        },
-        "header_2_labels_styles": {
-          "size": 13,
-          "width": "25%",
-          "height": "7%",
-          "color": "rgb(0,162,224)"
         },
         "table_header_styles": {
           "size": 15,
@@ -117,37 +93,30 @@
         "table_fields_size": {
           "size": "16"
         },
-        "previous_button_styles": {
+        "template_button_styles": {
+          "size": "18",
           "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "15%",
-          "height": "7%",
+          "background": "rgb(0,147,215)",
           "corner_radius": "1%"
         },
-        "home_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
         },
-        "next_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
-        },
-        "save_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
+        "layer_styles": {
+          "width": "8%",
+          "height": "11%",
+          "bottom": "1%"
         }
       },
       "data": {
         "Page_Heading": "Safety Screen Shift Report",
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
+        "loading_image_url": "file://infinit.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
         "Table1_Headers": [
           {
             "type": "label",
@@ -236,13 +205,102 @@
             "styles": "table_header_styles center_align",
             "width": "20%"
           }
+        ],
+        "Table3_Headers": [
+          {
+            "type": "label",
+            "value": "Safety Screen-2 Rollers",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "1",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "2",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "3",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "4",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "5",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "6",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "7",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "8",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "9",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
+        ],
+        "Table4_Headers": [
+          {
+            "type": "label",
+            "value": "",
+            "styles": "table_header_styles center_align",
+            "width": "30%"
+          },
+          {
+            "type": "label",
+            "value": "Turning/Stopped",
+            "styles": "table_header_styles center_align",
+            "width": "25%"
+          },
+          {
+            "type": "label",
+            "value": "Action Required",
+            "styles": "table_header_styles center_align",
+            "width": "25%"
+          },
+          {
+            "type": "label",
+            "value": "Completed",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align",
+            "width": "20%"
+          }
         ]
       },
       "actions": {
         "$load": {
           "type": "$global.set",
           "options": {
-            "section_id": "form2_page1",
+            "section_id": "form2",
             "safety_screen1_rollers_1": "{{$global.safety_screen1_rollers_1 == null ? true : $global.safety_screen1_rollers_1}}",
             "safety_screen1_rollers_2": "{{$global.safety_screen1_rollers_2 == null ? true : $global.safety_screen1_rollers_2}}",
             "safety_screen1_rollers_3": "{{$global.safety_screen1_rollers_3 == null ? true : $global.safety_screen1_rollers_3}}",
@@ -259,10 +317,30 @@
             "trough_north_screen1": "{{$global.trough_north_screen1 == null ? true : $global.trough_north_screen1}}",
             "clean_trough_build_up_1_screen1": "{{$global.clean_trough_build_up_1_screen1 == null ? true : $global.clean_trough_build_up_1_screen1}}",
             "trough_south_screen1": "{{$global.trough_south_screen1 == null ? true : $global.trough_south_screen1}}",
-            "clean_trough_build_up_2_screen1": "{{$global.clean_trough_build_up_2_screen1 == null ? true : $global.clean_trough_build_up_2_screen1}}"
+            "clean_trough_build_up_2_screen1": "{{$global.clean_trough_build_up_2_screen1 == null ? true : $global.clean_trough_build_up_2_screen1}}",
+            "safety_screen2_rollers_1": "{{$global.safety_screen2_rollers_1 == null ? true : $global.safety_screen2_rollers_1}}",
+            "safety_screen2_rollers_2": "{{$global.safety_screen2_rollers_2 == null ? true : $global.safety_screen2_rollers_2}}",
+            "safety_screen2_rollers_3": "{{$global.safety_screen2_rollers_3 == null ? true : $global.safety_screen2_rollers_3}}",
+            "safety_screen2_rollers_4": "{{$global.safety_screen2_rollers_4 == null ? true : $global.safety_screen2_rollers_4}}",
+            "safety_screen2_rollers_5": "{{$global.safety_screen2_rollers_5 == null ? true : $global.safety_screen2_rollers_5}}",
+            "safety_screen2_rollers_6": "{{$global.safety_screen2_rollers_6 == null ? true : $global.safety_screen2_rollers_6}}",
+            "safety_screen2_rollers_7": "{{$global.safety_screen2_rollers_7 == null ? true : $global.safety_screen2_rollers_7}}",
+            "safety_screen2_rollers_8": "{{$global.safety_screen2_rollers_8 == null ? true : $global.safety_screen2_rollers_8}}",
+            "safety_screen2_rollers_9": "{{$global.safety_screen2_rollers_9 == null ? true : $global.safety_screen2_rollers_9}}",
+            "spray_bars_screen2": "{{$global.spray_bars_screen2 == null ? true : $global.spray_bars_screen2}}",
+            "cloths_screen2": "{{$global.cloths_screen2 == null ? true : $global.cloths_screen2}}",
+            "under_pan_screen2": "{{$global.under_pan_screen2 == null ? true : $global.under_pan_screen2}}",
+            "clean_under_pan_build_up_screen2": "{{$global.clean_under_pan_build_up_screen2 == null ? true : $global.clean_under_pan_build_up_screen2}}",
+            "trough_north_screen2": "{{$global.trough_north_screen2 == null ? true : $global.trough_north_screen2}}",
+            "clean_trough_build_up_1_screen2": "{{$global.clean_trough_build_up_1_screen2 == null ? true : $global.clean_trough_build_up_1_screen2}}",
+            "trough_south_screen2": "{{$global.trough_south_screen2 == null ? true : $global.trough_south_screen2}}",
+            "clean_trough_build_up_2_screen2": "{{$global.clean_trough_build_up_2_screen2 == null ? true : $global.clean_trough_build_up_2_screen2}}"
           },
           "success": {
             "type": "$render",
+            "options": {
+              "template": "screen1"
+            },
             "success": {
               "type": "$util.toast",
               "options": {
@@ -272,16 +350,45 @@
             }
           }
         },
-        "$pull": {
-          "type": "$reload",
+        "handleTemplateChange": {
+          "type": "$render",
+          "options": {
+            "template": "{{$jason.templateName}}"
+          },
           "success": {
-            "type": "$render"
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
           }
         },
-        "handleSave": {
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
+        },
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "class": "loading_image_styles"
+                }
+              ]
+            }
+          }
+        },
+        "handleSave_screen1": {
           "type": "$global.set",
           "options": {
-            "section_id": "form2_page1",
+            "section_id": "form2",
             "f2_s1_sign": "{{$get.sign || ''}}",
             "f2_s1_day": "{{$get.day}}",
             "f2_s1_month": "{{$get.month}}",
@@ -296,14 +403,93 @@
               "type": "warning"
             }
           }
+        },
+        "handleSave_screen3": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form2",
+            "description_of_deficiency": "{{$get.description_of_deficiency}}",
+            "comments_operator_description": "{{$get.comments_operator_description}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved Successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "form_id": "form2",
+            "filename": "SafetyScreenShiftReport"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id",
+                "safety_screen1_rollers_1",
+                "safety_screen1_rollers_2",
+                "safety_screen1_rollers_3",
+                "safety_screen1_rollers_4",
+                "safety_screen1_rollers_5",
+                "safety_screen1_rollers_6",
+                "safety_screen1_rollers_7",
+                "safety_screen1_rollers_8",
+                "safety_screen1_rollers_9",
+                "spray_bars_screen1",
+                "cloths_screen1",
+                "under_pan_screen1",
+                "clean_under_pan_build_up_screen1",
+                "trough_north_screen1",
+                "clean_trough_build_up_1_screen1",
+                "trough_south_screen1",
+                "clean_trough_build_up_2_screen1",
+                "f2_s1_sign",
+                "f2_s1_day",
+                "f2_s1_month",
+                "f2_s1_year",
+                "f2_s1_shift",
+                "f2_s1_operator",
+                "safety_screen2_rollers_1",
+                "safety_screen2_rollers_2",
+                "safety_screen2_rollers_3",
+                "safety_screen2_rollers_4",
+                "safety_screen2_rollers_5",
+                "safety_screen2_rollers_6",
+                "safety_screen2_rollers_7",
+                "safety_screen2_rollers_8",
+                "safety_screen2_rollers_9",
+                "spray_bars_screen2",
+                "cloths_screen2",
+                "under_pan_screen2",
+                "clean_under_pan_build_up_screen2",
+                "trough_north_screen2",
+                "clean_trough_build_up_1_screen2",
+                "trough_south_screen2",
+                "clean_trough_build_up_2_screen2",
+                "description_of_deficiency",
+                "comments_operator_description"
+              ]
+            },
+            "success": {
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
+            }
+          }
         }
       },
       "templates": {
-        "body": {
+        "screen1": {
           "header": {
             "title": {
               "type": "label",
-              "text": "{{Page_Heading}}"
+              "text": "{{Page_Heading}} (1/3)"
             },
             "style": {
               "font": "HelveticaHeader-Bold",
@@ -759,7 +945,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "safety_screen1_rollers_1": "{{$get.safety_screen1_rollers_1}}"
                             }
                           }
@@ -783,7 +969,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "safety_screen1_rollers_2": "{{$get.safety_screen1_rollers_2}}"
                             }
                           }
@@ -807,7 +993,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "safety_screen1_rollers_3": "{{$get.safety_screen1_rollers_3}}"
                             }
                           }
@@ -831,7 +1017,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "safety_screen1_rollers_4": "{{$get.safety_screen1_rollers_4}}"
                             }
                           }
@@ -855,7 +1041,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "safety_screen1_rollers_5": "{{$get.safety_screen1_rollers_5}}"
                             }
                           }
@@ -879,7 +1065,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "safety_screen1_rollers_6": "{{$get.safety_screen1_rollers_6}}"
                             }
                           }
@@ -903,7 +1089,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "safety_screen1_rollers_7": "{{$get.safety_screen1_rollers_7}}"
                             }
                           }
@@ -927,7 +1113,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "safety_screen1_rollers_8": "{{$get.safety_screen1_rollers_8}}"
                             }
                           }
@@ -951,7 +1137,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "safety_screen1_rollers_9": "{{$get.safety_screen1_rollers_9}}"
                             }
                           }
@@ -1029,7 +1215,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "spray_bars_screen1": "{{$get.spray_bars_screen1}}"
                             }
                           }
@@ -1105,7 +1291,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "cloths_screen1": "{{$get.cloths_screen1}}"
                             }
                           }
@@ -1181,7 +1367,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "under_pan_screen1": "{{$get.under_pan_screen1}}"
                             }
                           }
@@ -1217,7 +1403,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "clean_under_pan_build_up_screen1": "{{$get.clean_under_pan_build_up_screen1}}"
                             }
                           }
@@ -1271,7 +1457,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "trough_north_screen1": "{{$get.trough_north_screen1}}"
                             }
                           }
@@ -1307,7 +1493,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "clean_trough_build_up_1_screen1": "{{$get.clean_trough_build_up_1_screen1}}"
                             }
                           }
@@ -1361,7 +1547,7 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "trough_south_screen1": "{{$get.trough_south_screen1}}"
                             }
                           }
@@ -1397,8 +1583,696 @@
                           "action": {
                             "type": "$global.set",
                             "options": {
-                              "section_id": "form2_page1",
+                              "section_id": "form2",
                               "clean_trough_build_up_2_screen1": "{{$get.clean_trough_build_up_2_screen1}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles center_align"
+                }
+              ],
+              "class": "center_align"
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "home",
+              "style": {
+                "left": "30%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "1",
+              "contentDescription": "page-one",
+              "class": "layer_styles template_button_styles active_template_button_styles",
+              "style": {
+                "left": "40%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "2",
+              "contentDescription": "page-two",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "50%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "3",
+              "contentDescription": "page-three",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "contentDescription": "next",
+              "class": "layer_styles",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "contentDescription": "save",
+              "class": "layer_styles",
+              "style": {
+                "left": "80%"
+              },
+              "action": {
+                "trigger": "handleSave_screen1"
+              }
+            }
+          ]
+        },
+        "screen2": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (2/3)"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)",
+              "height": "3%"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": ""
+                    }
+                  ],
+                  "style": {
+                    "padding_top": "0",
+                    "height": "2%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table3_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "safety_screen2_rollers_turning",
+                              "value": "true",
+                              "class": "switch_legend_styles table_row_odd_styles",
+                              "isClickable": "false"
+                            },
+                            {
+                              "type": "label",
+                              "name": "safety_screen2_rollers_turning_label",
+                              "text": "= Turning",
+                              "class": "black_color table_fields_size"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "switch",
+                              "name": "safety_screen1_rollers_stopped",
+                              "value": "false",
+                              "class": "switch_legend_styles table_row_odd_styles",
+                              "isClickable": "false"
+                            },
+                            {
+                              "type": "label",
+                              "name": "safety_screen1_rollers_stopped_label",
+                              "text": "= Stopped",
+                              "class": "black_color table_fields_size"
+                            }
+                          ]
+                        }
+                      ],
+                      "style": {
+                        "width": "37%"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "safety_screen2_rollers_1",
+                          "value": "{{$global.safety_screen2_rollers_1}}",
+                          "class": "table1_col_value_styles switch_styles table_row_odd_styles",
+                          "contentDescription": "one",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "safety_screen2_rollers_1": "{{$get.safety_screen2_rollers_1}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "2",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "safety_screen2_rollers_2",
+                          "value": "{{$global.safety_screen2_rollers_2}}",
+                          "class": "table1_col_value_styles switch_styles table_row_odd_styles",
+                          "contentDescription": "two",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "safety_screen2_rollers_2": "{{$get.safety_screen2_rollers_2}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "3",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "safety_screen2_rollers_3",
+                          "value": "{{$global.safety_screen2_rollers_3}}",
+                          "class": "table1_col_value_styles switch_styles table_row_odd_styles",
+                          "contentDescription": "three",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "safety_screen2_rollers_3": "{{$get.safety_screen2_rollers_3}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "4",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "safety_screen2_rollers_4",
+                          "value": "{{$global.safety_screen2_rollers_4}}",
+                          "class": "table1_col_value_styles switch_styles table_row_odd_styles",
+                          "contentDescription": "four",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "safety_screen2_rollers_4": "{{$get.safety_screen2_rollers_4}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "5",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "safety_screen2_rollers_5",
+                          "value": "{{$global.safety_screen2_rollers_5}}",
+                          "class": "table1_col_value_styles switch_styles table_row_odd_styles",
+                          "contentDescription": "five",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "safety_screen2_rollers_5": "{{$get.safety_screen2_rollers_5}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "6",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "safety_screen2_rollers_6",
+                          "value": "{{$global.safety_screen2_rollers_6}}",
+                          "class": "table1_col_value_styles switch_styles table_row_odd_styles",
+                          "contentDescription": "six",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "safety_screen2_rollers_6": "{{$get.safety_screen2_rollers_6}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "7",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "safety_screen2_rollers_7",
+                          "value": "{{$global.safety_screen2_rollers_7}}",
+                          "class": "table1_col_value_styles switch_styles table_row_odd_styles",
+                          "contentDescription": "seven",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "safety_screen2_rollers_7": "{{$get.safety_screen2_rollers_7}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "8",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "safety_screen2_rollers_8",
+                          "value": "{{$global.safety_screen2_rollers_8}}",
+                          "class": "table1_col_value_styles switch_styles table_row_odd_styles",
+                          "contentDescription": "eight",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "safety_screen2_rollers_8": "{{$get.safety_screen2_rollers_8}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "9",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "safety_screen2_rollers_9",
+                          "value": "{{$global.safety_screen2_rollers_9}}",
+                          "class": "table1_col_value_styles switch_styles table_row_odd_styles",
+                          "contentDescription": "nine",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "safety_screen2_rollers_9": "{{$get.safety_screen2_rollers_9}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table4_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}",
+                          "style": {
+                            "width": "{{width}}"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_even_styles center_align",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Spray Bars",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "10",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "spray_bars_screen2",
+                          "value": "{{$global.spray_bars_screen2}}",
+                          "class": "switch_styles table_row_even_styles",
+                          "contentDescription": "ten",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "spray_bars_screen2": "{{$get.spray_bars_screen2}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table2_col_name_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "center_align black_color"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table2_col_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "center_align black_color"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Cloths",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "11",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "cloths_screen2",
+                          "value": "{{$global.cloths_screen2}}",
+                          "class": "switch_styles table_row_odd_styles",
+                          "contentDescription": "eleven",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "cloths_screen2": "{{$get.cloths_screen2}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table2_col_name_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "center_align black_color"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table2_col_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "center_align black_color"
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Under-pan",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "12",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "under_pan_screen2",
+                          "value": "{{$global.under_pan_screen2}}",
+                          "class": "switch_styles table_row_even_styles",
+                          "contentDescription": "twelve",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "under_pan_screen2": "{{$get.under_pan_screen2}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table2_col_name_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Clean under-pan build up",
+                          "class": "black_color center_align table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "13",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "clean_under_pan_build_up_screen2",
+                          "value": "{{$global.clean_under_pan_build_up_screen2}}",
+                          "class": "switch_styles table_row_even_styles",
+                          "contentDescription": "thirteen",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "clean_under_pan_build_up_screen2": "{{$get.clean_under_pan_build_up_screen2}}"
                             }
                           }
                         }
@@ -1415,114 +2289,485 @@
               "items": [
                 {
                   "type": "horizontal",
-                  "class": "no_padding center_align",
-                  "style": {
-                    "padding_top": "1%",
-                    "padding_bottom": "1%"
-                  },
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Trough, North",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "14",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "trough_north_screen2",
+                          "value": "{{$global.trough_north_screen2}}",
+                          "class": "switch_styles table_row_odd_styles",
+                          "contentDescription": "fourteen",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "trough_north_screen2": "{{$get.trough_north_screen2}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table2_col_name_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Clean trough build up",
+                          "class": "black_color center_align table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "15",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "clean_trough_build_up_1_screen2",
+                          "value": "{{$global.clean_trough_build_up_1_screen2}}",
+                          "class": "switch_styles table_row_odd_styles",
+                          "contentDescription": "fifteen",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "clean_trough_build_up_1_screen2": "{{$get.clean_trough_build_up_1_screen2}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles center_align"
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Trough, South",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "16",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "under_pan_screen2",
+                          "value": "{{$global.under_pan_screen2}}",
+                          "class": "switch_styles table_row_even_styles",
+                          "contentDescription": "sixteen",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "under_pan_screen2": "{{$get.under_pan_screen2}}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table2_col_name_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Clean trough build up",
+                          "class": "black_color center_align table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table2_col_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "17",
+                          "class": "center_align black_color label_styles"
+                        },
+                        {
+                          "type": "switch",
+                          "name": "clean_trough_build_up_2_screen2",
+                          "value": "{{$global.clean_trough_build_up_2_screen2}}",
+                          "class": "switch_styles table_row_even_styles",
+                          "contentDescription": "seventeen",
+                          "action": {
+                            "type": "$global.set",
+                            "options": {
+                              "section_id": "form2",
+                              "clean_trough_build_up_2_screen2": "{{$get.clean_trough_build_up_2_screen2}}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles center_align"
+                }
+              ],
+              "class": "center_align"
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "home",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "contentDescription": "previous",
+              "class": "layer_styles",
+              "style": {
+                "left": "30%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "1",
+              "contentDescription": "page-one",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "40%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "2",
+              "contentDescription": "page-two",
+              "class": "layer_styles template_button_styles active_template_button_styles",
+              "style": {
+                "left": "50%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "3",
+              "contentDescription": "page-three",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "contentDescription": "next",
+              "class": "layer_styles",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "contentDescription": "save",
+              "class": "layer_styles",
+              "style": {
+                "left": "80%"
+              },
+              "action": {
+                "trigger": "handleSave_screen2"
+              }
+            }
+          ]
+        },
+        "screen3": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (3/3)"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
                   "components": [
                     {
                       "type": "label",
-                      "text": "",
-                      "class": "black_color",
+                      "text": "Description of Deficiency",
+                      "class": "table_header_styles",
                       "style": {
-                        "width": "40%"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "home",
-                      "text": "Home",
-                      "class": "home_button_styles center_align",
-                      "action": {
-                        "type": "$href",
-                        "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
-                          "preload": {
-                            "style": {
-                              "background": "#ff0000"
-                            },
-                            "layers": [
-                              {
-                                "type": "image",
-                                "url": "file://infinit.gif",
-                                "style": {
-                                  "top": "50%-25",
-                                  "left": "50%-25",
-                                  "width": "50",
-                                  "height": "50"
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "",
-                      "class": "black_color",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "next",
-                      "text": "Next",
-                      "class": "next_button_styles center_align",
-                      "action": {
-                        "type": "$href",
-                        "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/2_SafetyScreenShiftReport/screen_2.json",
-                          "preload": {
-                            "style": {
-                              "background": "#ff0000"
-                            },
-                            "layers": [
-                              {
-                                "type": "image",
-                                "url": "file://infinit.gif",
-                                "style": {
-                                  "top": "50%-25",
-                                  "left": "50%-25",
-                                  "width": "50",
-                                  "height": "50"
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "",
-                      "class": "black_color",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "save",
-                      "text": "Save",
-                      "class": "save_button_styles center_align",
-                      "action": {
-                        "trigger": "handleSave"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "",
-                      "class": "black_color",
-                      "style": {
-                        "width": "5%"
+                        "width": "100%"
                       }
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "description_of_deficiency",
+                      "value": "{{$global.description_of_deficiency || ''}}",
+                      "placeholder": "Enter Description of Deficiency",
+                      "contentDescription": "descriptionOfDeficiency",
+                      "style": {
+                        "width": "100%",
+                        "height": "25%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Description",
+                      "class": "table_header_styles",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "comments_operator_description",
+                      "value": "{{$global.comments_operator_description || ''}}",
+                      "placeholder": "Enter description",
+                      "contentDescription": "Enter Description",
+                      "style": {
+                        "width": "100%",
+                        "height": "25%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "home",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "contentDescription": "previous",
+              "class": "layer_styles",
+              "style": {
+                "left": "30%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "1",
+              "contentDescription": "page-one",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "40%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "2",
+              "contentDescription": "page-two",
+              "class": "layer_styles template_button_styles",
+              "style": {
+                "left": "50%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "3",
+              "contentDescription": "page-three",
+              "class": "layer_styles template_button_styles active_template_button_styles",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "contentDescription": "save",
+              "class": "layer_styles",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleSave_screen3"
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{submit_icon}}",
+              "contentDescription": "submit",
+              "class": "layer_styles",
+              "style": {
+                "left": "80%"
+              },
+              "action": {
+                "trigger": "handleSubmit"
+              }
             }
           ]
         }
