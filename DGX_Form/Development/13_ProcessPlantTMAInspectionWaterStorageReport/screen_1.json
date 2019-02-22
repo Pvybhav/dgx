@@ -149,6 +149,7 @@
       },
       "data": {
         "Page_Heading": "Process Plant TMA Inspection Water Storage Report",
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
         "loading_image_url": "file://infinit.gif",
         "home_icon": "file://icons/home.png",
         "submit_icon": "file://icons/submit.png",
@@ -6641,9 +6642,9 @@
               ]
             },
             "success": {
-              "type": "$reload",
+              "trigger": "handleNavigation",
               "options": {
-                "template": "screen1"
+                "url": "{{redirect_url}}"
               }
             }
           }
@@ -7084,7 +7085,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
@@ -7585,14 +7586,14 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "image",
               "url": "{{previous_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "18%"
               },
@@ -7605,7 +7606,7 @@
             },
             {
               "type": "button",
-              "text": "1",
+              "text": "Page 1",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "26%"
@@ -7619,7 +7620,7 @@
             },
             {
               "type": "button",
-              "text": "2",
+              "text": "Page 2",
               "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
                 "left": "34%"
@@ -7633,7 +7634,7 @@
             },
             {
               "type": "button",
-              "text": "3",
+              "text": "Page 3",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "42%"
@@ -7647,7 +7648,7 @@
             },
             {
               "type": "button",
-              "text": "4",
+              "text": "Page 4",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "50%"
@@ -7661,7 +7662,7 @@
             },
             {
               "type": "button",
-              "text": "5",
+              "text": "Page 5",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "58%"
@@ -7675,7 +7676,7 @@
             },
             {
               "type": "button",
-              "text": "6",
+              "text": "Page 6",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "66%"
@@ -7689,7 +7690,7 @@
             },
             {
               "type": "button",
-              "text": "7",
+              "text": "Page 7",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "74%"
@@ -8455,14 +8456,14 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "image",
               "url": "{{previous_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "18%"
               },
@@ -8475,7 +8476,7 @@
             },
             {
               "type": "button",
-              "text": "1",
+              "text": "Page 1",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "26%"
@@ -8489,7 +8490,7 @@
             },
             {
               "type": "button",
-              "text": "2",
+              "text": "Page 2",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "34%"
@@ -8503,7 +8504,7 @@
             },
             {
               "type": "button",
-              "text": "3",
+              "text": "Page 3",
               "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
                 "left": "42%"
@@ -8517,7 +8518,7 @@
             },
             {
               "type": "button",
-              "text": "4",
+              "text": "Page 4",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "50%"
@@ -8531,7 +8532,7 @@
             },
             {
               "type": "button",
-              "text": "5",
+              "text": "Page 5",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "58%"
@@ -8545,7 +8546,7 @@
             },
             {
               "type": "button",
-              "text": "6",
+              "text": "Page 6",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "66%"
@@ -8559,7 +8560,7 @@
             },
             {
               "type": "button",
-              "text": "7",
+              "text": "Page 7",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "74%"
@@ -9216,14 +9217,14 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "image",
               "url": "{{previous_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "18%"
               },
@@ -9236,7 +9237,7 @@
             },
             {
               "type": "button",
-              "text": "1",
+              "text": "Page 1",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "26%"
@@ -9250,7 +9251,7 @@
             },
             {
               "type": "button",
-              "text": "2",
+              "text": "Page 2",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "34%"
@@ -9264,7 +9265,7 @@
             },
             {
               "type": "button",
-              "text": "3",
+              "text": "Page 3",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "42%"
@@ -9278,7 +9279,7 @@
             },
             {
               "type": "button",
-              "text": "4",
+              "text": "Page 4",
               "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
                 "left": "50%"
@@ -9292,7 +9293,7 @@
             },
             {
               "type": "button",
-              "text": "5",
+              "text": "Page 5",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "58%"
@@ -9306,7 +9307,7 @@
             },
             {
               "type": "button",
-              "text": "6",
+              "text": "Page 6",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "66%"
@@ -9320,7 +9321,7 @@
             },
             {
               "type": "button",
-              "text": "7",
+              "text": "Page 7",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "74%"
@@ -9746,14 +9747,14 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "image",
               "url": "{{previous_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "18%"
               },
@@ -9766,7 +9767,7 @@
             },
             {
               "type": "button",
-              "text": "1",
+              "text": "Page 1",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "26%"
@@ -9780,7 +9781,7 @@
             },
             {
               "type": "button",
-              "text": "2",
+              "text": "Page 2",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "34%"
@@ -9794,7 +9795,7 @@
             },
             {
               "type": "button",
-              "text": "3",
+              "text": "Page 3",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "42%"
@@ -9808,7 +9809,7 @@
             },
             {
               "type": "button",
-              "text": "4",
+              "text": "Page 4",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "50%"
@@ -9822,7 +9823,7 @@
             },
             {
               "type": "button",
-              "text": "5",
+              "text": "Page 5",
               "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
                 "left": "58%"
@@ -9836,7 +9837,7 @@
             },
             {
               "type": "button",
-              "text": "6",
+              "text": "Page 6",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "66%"
@@ -9850,7 +9851,7 @@
             },
             {
               "type": "button",
-              "text": "7",
+              "text": "Page 7",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "74%"
@@ -10288,14 +10289,14 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "image",
               "url": "{{previous_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "18%"
               },
@@ -10308,7 +10309,7 @@
             },
             {
               "type": "button",
-              "text": "1",
+              "text": "Page 1",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "26%"
@@ -10322,7 +10323,7 @@
             },
             {
               "type": "button",
-              "text": "2",
+              "text": "Page 2",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "34%"
@@ -10336,7 +10337,7 @@
             },
             {
               "type": "button",
-              "text": "3",
+              "text": "Page 3",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "42%"
@@ -10350,7 +10351,7 @@
             },
             {
               "type": "button",
-              "text": "4",
+              "text": "Page 4",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "50%"
@@ -10364,7 +10365,7 @@
             },
             {
               "type": "button",
-              "text": "5",
+              "text": "Page 5",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "58%"
@@ -10378,7 +10379,7 @@
             },
             {
               "type": "button",
-              "text": "6",
+              "text": "Page 6",
               "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
                 "left": "66%"
@@ -10392,7 +10393,7 @@
             },
             {
               "type": "button",
-              "text": "7",
+              "text": "Page 7",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "74%"
@@ -10808,14 +10809,14 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "image",
               "url": "{{previous_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "18%"
               },
@@ -10828,7 +10829,7 @@
             },
             {
               "type": "button",
-              "text": "1",
+              "text": "Page 1",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "26%"
@@ -10842,7 +10843,7 @@
             },
             {
               "type": "button",
-              "text": "2",
+              "text": "Page 2",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "34%"
@@ -10856,7 +10857,7 @@
             },
             {
               "type": "button",
-              "text": "3",
+              "text": "Page 3",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "42%"
@@ -10870,7 +10871,7 @@
             },
             {
               "type": "button",
-              "text": "4",
+              "text": "Page 4",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "50%"
@@ -10884,7 +10885,7 @@
             },
             {
               "type": "button",
-              "text": "5",
+              "text": "Page 5",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "58%"
@@ -10898,7 +10899,7 @@
             },
             {
               "type": "button",
-              "text": "6",
+              "text": "Page 6",
               "class": "layer_styles template_button_styles",
               "style": {
                 "left": "66%"
@@ -10912,7 +10913,7 @@
             },
             {
               "type": "button",
-              "text": "7",
+              "text": "Page 7",
               "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
                 "left": "74%"
@@ -10938,7 +10939,7 @@
             {
               "type": "image",
               "url": "{{submit_icon}}",
-              "class": "layer_styles",
+              "class": "layer_icon_styles",
               "style": {
                 "left": "90%"
               },

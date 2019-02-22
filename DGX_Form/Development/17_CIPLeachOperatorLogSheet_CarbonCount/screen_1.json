@@ -288,14 +288,17 @@
               ]
             },
             "success": {
-              "type": "$reload"
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
             }
           }
         }
       },
       "data": {
-        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
         "Page_Heading": "CIP/Leach Operator Log Sheet - Carbon Count",
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
         "loading_image_url": "file://infinit.gif",
         "home_icon": "file://icons/home.png",
         "submit_icon": "file://icons/submit.png",
