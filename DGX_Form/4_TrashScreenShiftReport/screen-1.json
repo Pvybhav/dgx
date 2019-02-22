@@ -409,7 +409,7 @@
                 "handleSave_screen2": {
                     "type": "$global.set",
                     "options": {
-                       
+
                         "f4_s1_comments": "{{$get.comments}}"
                     },
                     "success": {
@@ -426,7 +426,7 @@
                         "strainer_press_upstream_s2": "{{$get.strainer_press_upstream_s2}}",
                         "under_pan_s2": "{{$get.under_pan_s2}}",
                         "strainer_press_downstream_s2": "{{$get.strainer_press_downstream_s2}}"
-                        
+
                     },
                     "success": {
                         "trigger": "displayToaster",
@@ -435,7 +435,7 @@
                         }
                     }
                 },
-                
+
                 "handleSave_screen4": {
                     "type": "$global.set",
                     "options": {
@@ -545,8 +545,7 @@
                             "height": "3%"
                         }
                     },
-                    "sections": [
-                        {
+                    "sections": [{
                             "type": "horizontal",
                             "items": [{
                                 "type": "horizontal",
@@ -905,9 +904,13 @@
                                         "name": "trash_screen_001",
                                         "text": "Trash Screen 001",
                                         "style": {
-                                            "background": "rgb(204,206,213)",
                                             "height": "9%",
-                                            "width": "100%"
+                                            "width": "100%",
+                                            "size": 15,
+                                            "font": "HelveticaHeader-Bold",
+                                            "background": "rgb(14, 53, 112)",
+                                            "color": "rgb(255, 255, 255)",
+                                            "border": "rgb(255, 255, 255)"
                                         }
                                     }]
                                 }]
@@ -2192,8 +2195,7 @@
                             }]
                         }
                     ],
-                    "layers": [
-                        {
+                    "layers": [{
                             "type": "image",
                             "url": "file://icons/home.png",
                             "style": {
@@ -2334,25 +2336,27 @@
                             "height": "3%"
                         }
                     },
-                    "sections": [
-                        {
+                    "sections": [{
                         "type": "horizontal",
-                        "items": [
-                            {
-                                "type": "horizontal",
+                        "items": [{
+                            "type": "horizontal",
+                            "components": [{
+                                "type": "vertical",
+                                "class": "no_padding",
                                 "components": [{
                                     "type": "vertical",
-                                    "class": "no_padding",
                                     "components": [{
-                                        "type": "vertical",
-                                        "components": [{
                                             "type": "label",
                                             "name": "trash_screen_001_comments",
                                             "text": " Trash Screen 001 Comments",
                                             "style": {
-                                                "background": "rgb(204,206,213)",
                                                 "height": "9%",
-                                                "width": "100%"
+                                                "width": "100%",
+                                                "size": 15,
+                                                "font": "HelveticaHeader-Bold",
+                                                "background": "rgb(14, 53, 112)",
+                                                "color": "rgb(255, 255, 255)",
+                                                "border": "rgb(255, 255, 255)"
                                             }
                                         },
                                         {
@@ -2371,17 +2375,16 @@
                                     ],
                                     "class": "no_padding"
 
-                                    }]
-                                }],
-                                "class": "no_padding"
-
+                                }]
                             }],
                             "class": "no_padding"
 
-                            
+                        }],
+                        "class": "no_padding"
+
+
                     }],
-                    "layers": [
-                        {
+                    "layers": [{
                             "type": "image",
                             "url": "file://icons/home.png",
                             "style": {
@@ -2523,6 +2526,30 @@
                         }
                     },
                     "sections": [{
+                            "type": "horizontal",
+                            "items": [{
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [{
+                                    "type": "horizontal",
+                                    "components": [{
+                                        "type": "label",
+                                        "name": "trash_screen_001",
+                                        "text": "Trash Screen 001",
+                                        "style": {
+                                            "height": "9%",
+                                            "width": "100%",
+                                            "size": 15,
+                                            "font": "HelveticaHeader-Bold",
+                                            "background": "rgb(14, 53, 112)",
+                                            "color": "rgb(255, 255, 255)",
+                                            "border": "rgb(255, 255, 255)"
+                                        }
+                                    }]
+                                }]
+                            }]
+                        },
+                        {
                             "type": "horizontal",
                             "items": [{
                                 "type": "vertical",
@@ -3800,11 +3827,10 @@
                                 }]
                             }]
                         }
-                       
+
 
                     ],
-                    "layers": [
-                        {
+                    "layers": [{
                             "type": "image",
                             "url": "file://icons/home.png",
                             "style": {
@@ -3945,26 +3971,28 @@
                             "height": "3%"
                         }
                     },
-                    "sections": [
-                        {
+                    "sections": [{
                         "type": "horizontal",
-                        "items": [
-                            {
+                        "items": [{
+                            "type": "vertical",
+                            "components": [{
                                 "type": "vertical",
+                                "class": "no_padding",
                                 "components": [{
                                     "type": "vertical",
                                     "class": "no_padding",
                                     "components": [{
-                                        "type": "vertical",
-                                        "class": "no_padding",
-                                        "components": [{
                                             "type": "label",
                                             "name": "trash_screen_002_comments",
                                             "text": " Trash Screen 002 Comments",
                                             "style": {
-                                                "background": "rgb(204,206,213)",
                                                 "height": "9%",
-                                                "width": "100%"
+                                                "width": "100%",
+                                                "size": 15,
+                                                "font": "HelveticaHeader-Bold",
+                                                "background": "rgb(14, 53, 112)",
+                                                "color": "rgb(255, 255, 255)",
+                                                "border": "rgb(255, 255, 255)"
                                             }
                                         },
                                         {
@@ -3981,18 +4009,17 @@
                                             }
                                         }
                                     ]
-                                    }]
-
-                                }],
-                                "class": "no_padding"
+                                }]
 
                             }],
                             "class": "no_padding"
 
-                            
+                        }],
+                        "class": "no_padding"
+
+
                     }],
-                    "layers": [
-                        {
+                    "layers": [{
                             "type": "image",
                             "url": "file://icons/home.png",
                             "style": {
