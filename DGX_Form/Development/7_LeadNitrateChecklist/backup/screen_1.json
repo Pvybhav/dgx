@@ -164,19 +164,6 @@
         "$show": {
           "type": "$render"
         },
-        "$pull": {
-          "type": "$flush",
-          "success": {
-            "type": "$reload",
-            "success": {
-              "type": "$util.toast",
-              "options": {
-                "text": "Page loaded successfully",
-                "type": "warning"
-              }
-            }
-          }
-        },
         "handleSave": {
           "type": "$global.set",
           "options": {
