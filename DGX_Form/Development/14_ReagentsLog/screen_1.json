@@ -106,7 +106,7 @@
           "background": "rgb(255, 0, 0)"
         },
         "template_button_styles": {
-          "size": "20",
+          "size": "16",
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0,147,215)",
           "corner_radius": "1%",
@@ -116,7 +116,7 @@
           "background": "rgb(255, 0, 0)"
         },
         "layer_styles": {
-          "width": "8%",
+          "width": "10%",
           "height": "11%",
           "bottom": "1%"
         }
@@ -270,6 +270,7 @@
         }
       },
       "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
         "Page_Heading": "Reagents Log Sheet",
         "loading_image_url": "file://infinit.gif",
         "home_icon": "file://icons/home.png",
@@ -553,7 +554,7 @@
           "header": {
             "title": {
               "type": "label",
-              "text": "{{Page_Heading}}",
+              "text": "{{Page_Heading}} (1/2)",
               "align": "left"
             },
             "style": {
@@ -1987,15 +1988,14 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "button",
-              "text": "1",
+              "text": "Page 1",
               "class": "layer_styles template_button_styles active_template_button_styles no_padding",
-              "contentDescription": "page-one",
               "style": {
                 "left": "30%"
               },
@@ -2008,9 +2008,8 @@
             },
             {
               "type": "button",
-              "text": "2",
+              "text": "Page 2",
               "class": "layer_styles template_button_styles no_padding",
-              "contentDescription": "page-two",
               "style": {
                 "left": "40%"
               },
@@ -2054,7 +2053,7 @@
           "header": {
             "title": {
               "type": "label",
-              "text": "{{Page_Heading}}",
+              "text": "{{Page_Heading}} (2/2)",
               "align": "left"
             },
             "style": {
@@ -2130,7 +2129,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
@@ -2151,9 +2150,8 @@
             },
             {
               "type": "button",
-              "text": "1",
+              "text": "Page 1",
               "class": "layer_styles template_button_styles",
-              "contentDescription": "page-one",
               "style": {
                 "left": "40%"
               },
@@ -2166,8 +2164,7 @@
             },
             {
               "type": "button",
-              "text": "2",
-              "contentDescription": "page-two",
+              "text": "Page 2",
               "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
                 "left": "50%"
