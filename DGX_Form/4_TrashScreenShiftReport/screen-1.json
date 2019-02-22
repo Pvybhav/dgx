@@ -300,21 +300,21 @@
                             "clean_south_trough_buildup_s1": "{{$global.clean_south_trough_buildup_s1 == null ? true : $global.clean_south_trough_buildup_s1}}",
                             "f4_s1_comments": "{{$global.f4_s1_comments || ''}}",
                             "f4_s1_sign": "{{$global.f4_s1_sign || ''}}",
-                            "trash_screen2_rollers_1": "{{$global.trash_screen2_rollers_1 == null ? true : $global.trash_screen2_rollers_1}}",
-                            "trash_screen2_rollers_2": "{{$global.trash_screen2_rollers_2 == null ? true : $global.trash_screen2_rollers_2}}",
-                            "trash_screen2_rollers_3": "{{$global.trash_screen2_rollers_3 == null ? true : $global.trash_screen2_rollers_3}}",
-                            "trash_screen2_rollers_4": "{{$global.trash_screen2_rollers_4 == null ? true : $global.trash_screen2_rollers_4}}",
-                            "trash_screen2_rollers_5": "{{$global.trash_screen2_rollers_5 == null ? true : $global.trash_screen2_rollers_5}}",
-                            "trash_screen2_rollers_6": "{{$global.trash_screen2_rollers_6 == null ? true : $global.trash_screen2_rollers_6}}",
-                            "trash_screen2_rollers_7": "{{$global.trash_screen2_rollers_7 == null ? true : $global.trash_screen2_rollers_7}}",
-                            "trash_screen2_rollers_8": "{{$global.trash_screen2_rollers_8 == null ? true : $global.trash_screen2_rollers_8}}",
-                            "trash_screen2_rollers_9": "{{$global.trash_screen2_rollers_9 == null ? true : $global.trash_screen2_rollers_9}}",
-                            "trash_screen2_rollers_10": "{{$global.trash_screen2_rollers_10 == null ? true : $global.trash_screen2_rollers_10}}",
-                            "trash_screen2_rollers_11": "{{$global.trash_screen2_rollers_11 == null ? true : $global.trash_screen2_rollers_11}}",
-                            "trash_screen2_rollers_12": "{{$global.trash_screen2_rollers_12 == null ? true : $global.trash_screen2_rollers_12}}",
-                            "trash_screen2_rollers_13": "{{$global.trash_screen2_rollers_13 == null ? true : $global.trash_screen2_rollers_13}}",
-                            "trash_screen2_rollers_14": "{{$global.trash_screen2_rollers_14 == null ? true : $global.trash_screen2_rollers_14}}",
-                            "trash_screen2_rollers_15": "{{$global.trash_screen2_rollers_15 == null ? true : $global.trash_screen2_rollers_15}}",
+                            "trash_screen3_rollers_1": "{{$global.trash_screen3_rollers_1 == null ? true : $global.trash_screen3_rollers_1}}",
+                            "trash_screen3_rollers_2": "{{$global.trash_screen3_rollers_2 == null ? true : $global.trash_screen3_rollers_2}}",
+                            "trash_screen3_rollers_3": "{{$global.trash_screen3_rollers_3 == null ? true : $global.trash_screen3_rollers_3}}",
+                            "trash_screen3_rollers_4": "{{$global.trash_screen3_rollers_4 == null ? true : $global.trash_screen3_rollers_4}}",
+                            "trash_screen3_rollers_5": "{{$global.trash_screen3_rollers_5 == null ? true : $global.trash_screen3_rollers_5}}",
+                            "trash_screen3_rollers_6": "{{$global.trash_screen3_rollers_6 == null ? true : $global.trash_screen3_rollers_6}}",
+                            "trash_screen3_rollers_7": "{{$global.trash_screen3_rollers_7 == null ? true : $global.trash_screen3_rollers_7}}",
+                            "trash_screen3_rollers_8": "{{$global.trash_screen3_rollers_8 == null ? true : $global.trash_screen3_rollers_8}}",
+                            "trash_screen3_rollers_9": "{{$global.trash_screen3_rollers_9 == null ? true : $global.trash_screen3_rollers_9}}",
+                            "trash_screen3_rollers_10": "{{$global.trash_screen3_rollers_10 == null ? true : $global.trash_screen3_rollers_10}}",
+                            "trash_screen3_rollers_11": "{{$global.trash_screen3_rollers_11 == null ? true : $global.trash_screen3_rollers_11}}",
+                            "trash_screen3_rollers_12": "{{$global.trash_screen3_rollers_12 == null ? true : $global.trash_screen3_rollers_12}}",
+                            "trash_screen3_rollers_13": "{{$global.trash_screen3_rollers_13 == null ? true : $global.trash_screen3_rollers_13}}",
+                            "trash_screen3_rollers_14": "{{$global.trash_screen3_rollers_14 == null ? true : $global.trash_screen3_rollers_14}}",
+                            "trash_screen3_rollers_15": "{{$global.trash_screen3_rollers_15 == null ? true : $global.trash_screen3_rollers_15}}",
                             "strainer_press_upstream_s2": "{{$global.strainer_press_upstream_s2 || ''}}",
                             "under_pan_s2": "{{$global.under_pan_s2 || ''}}",
                             "strainer_press_downstream_s2": "{{$global.strainer_press_downstream_s2 || ''}}",
@@ -407,7 +407,7 @@
                         }
                     }
                 },
-                "handleSave_screen2": {
+                "handleSave_screen3": {
                     "type": "$global.set",
                     "options": {
                         "section_id": "form4",
@@ -419,22 +419,11 @@
                     "success": {
                         "trigger": "displayToaster",
                         "options": {
-                            "message": "Saved screen2 data Successfully"
-                        }
-                    }
-                },
-                "handleSave_screen3": {
-                    "type": "$global.set",
-                    "options": {
-                        "section_id": "form4"
-                    },
-                    "success": {
-                        "trigger": "displayToaster",
-                        "options": {
                             "message": "Saved screen3 data Successfully"
                         }
                     }
                 },
+                
                 "handleSave_screen4": {
                     "type": "$global.set",
                     "options": {
@@ -491,21 +480,21 @@
                                 "under_pan_s1",
                                 "strainer_press_downstream_s1",
                                 "f4_s1_comments",
-                                "trash_screen2_rollers_1",
-                                "trash_screen2_rollers_2",
-                                "trash_screen2_rollers_3",
-                                "trash_screen2_rollers_4",
-                                "trash_screen2_rollers_5",
-                                "trash_screen2_rollers_6",
-                                "trash_screen2_rollers_7",
-                                "trash_screen2_rollers_8",
-                                "trash_screen2_rollers_9",
-                                "trash_screen2_rollers_10",
-                                "trash_screen2_rollers_11",
-                                "trash_screen2_rollers_12",
-                                "trash_screen2_rollers_13",
-                                "trash_screen2_rollers_14",
-                                "trash_screen2_rollers_15",
+                                "trash_screen3_rollers_1",
+                                "trash_screen3_rollers_2",
+                                "trash_screen3_rollers_3",
+                                "trash_screen3_rollers_4",
+                                "trash_screen3_rollers_5",
+                                "trash_screen3_rollers_6",
+                                "trash_screen3_rollers_7",
+                                "trash_screen3_rollers_8",
+                                "trash_screen3_rollers_9",
+                                "trash_screen3_rollers_10",
+                                "trash_screen3_rollers_11",
+                                "trash_screen3_rollers_12",
+                                "trash_screen3_rollers_13",
+                                "trash_screen3_rollers_14",
+                                "trash_screen3_rollers_15",
                                 "clean_south_trough_buildup_s2",
                                 "trough_south_s2",
                                 "clean_underpan_build_up_s2",
@@ -897,18 +886,16 @@
                                 "class": "no_padding",
                                 "components": [{
                                     "type": "horizontal",
-                                    "components": [
-                                        {
-                                            "type": "label",
-                                            "name": "trash_screen_001",
-                                            "text": "= Trash Screen 001",
-                                            "style": {
-                                                "background": "rgb(204,206,213)",
-                                                "height":"9%",
-                                                "width":"100%"
-                                            }
+                                    "components": [{
+                                        "type": "label",
+                                        "name": "trash_screen_001",
+                                        "text": "Trash Screen 001",
+                                        "style": {
+                                            "background": "rgb(204,206,213)",
+                                            "height": "9%",
+                                            "width": "100%"
                                         }
-                                    ]
+                                    }]
                                 }]
                             }]
                         },
@@ -965,7 +952,7 @@
                                                         "class": "black_color table_fields_size",
                                                         "style": {
                                                             "background": "rgb(204,206,213)",
-                                                            "height":"9%"
+                                                            "height": "9%"
                                                         }
                                                     }
                                                 ]
@@ -994,7 +981,7 @@
                                                         "class": "black_color table_fields_size",
                                                         "style": {
                                                             "background": "rgb(204,206,213)",
-                                                            "height":"9%"
+                                                            "height": "9%"
                                                         }
                                                     }
                                                 ]
@@ -2189,32 +2176,10 @@
                                     ]
                                 }]
                             }]
-                        },
-                        {
-                            "type": "horizontal",
-                            "style": {
-                                "padding": "1%"
-                            },
-                            "items": [{
-                                "type": "vertical",
-                                "components": [{
-                                    "type": "textarea",
-                                    "value": "{{$global.f4_s1_comments}}",
-                                    "name": "comments",
-                                    "placeholder": "Comments",
-                                    "contentDescription": "comments",
-                                    "style": {
-                                        "width": "100%",
-                                        "height": "15%",
-                                        "size": "15",
-                                        "border": "#000000"
-                                    }
-                                }],
-                                "class": "no_padding"
-                            }]
                         }
                     ],
-                    "layers": [{
+                    "layers": [
+                        {
                             "type": "image",
                             "url": "file://icons/home.png",
                             "style": {
@@ -2266,7 +2231,7 @@
                             "action": {
                                 "trigger": "handleTemplateChange",
                                 "options": {
-                                    "templateName": "screen2"
+                                    "templateName": "screen3"
                                 }
                             }
                         },
@@ -2282,7 +2247,7 @@
                             "action": {
                                 "trigger": "handleTemplateChange",
                                 "options": {
-                                    "templateName": "screen2"
+                                    "templateName": "screen3"
                                 }
                             }
                         },
@@ -2302,6 +2267,68 @@
                     ]
                 },
                 "screen2": {
+                    "header": {
+                        "title": {
+                            "type": "label",
+                            "text": "{{Page_Heading}}"
+                        },
+                        "style": {
+                            "font": "HelveticaHeader-Bold",
+                            "size": 20,
+                            "background": "rgb(0,162,224)",
+                            "color": "rgb(255,255,255)",
+                            "height": "3%"
+                        }
+                    },
+                    "sections": [{
+                        "type": "horizontal",
+                        "items": [
+                            {
+                                "type": "horizontal",
+                                "items": [{
+                                    "type": "vertical",
+                                    "class": "no_padding",
+                                    "components": [{
+                                        "type": "horizontal",
+                                        "components": [{
+                                            "type": "label",
+                                            "name": "trash_screen_001_comments",
+                                            "text": " Trash Screen 001 Comments",
+                                            "style": {
+                                                "background": "rgb(204,206,213)",
+                                                "height": "9%",
+                                                "width": "100%"
+                                            }
+                                        }]
+                                    }]
+                                }]
+                            },
+                            {
+                                "type": "horizontal",
+                                "style": {
+                                    "padding": "1%"
+                                },
+                                "items": [{
+                                    "type": "vertical",
+                                    "components": [{
+                                        "type": "textarea",
+                                        "value": "{{$global.f4_s1_comments}}",
+                                        "name": "comments",
+                                        "placeholder": "Comments",
+                                        "contentDescription": "comments",
+                                        "style": {
+                                            "width": "100%",
+                                            "height": "15%",
+                                            "size": "15",
+                                            "border": "#000000"
+                                        }
+                                    }],
+                                    "class": "no_padding"
+                                }]
+                            }]
+                    }]
+                },
+                "screen3": {
                     "header": {
                         "title": {
                             "type": "label",
@@ -2368,7 +2395,7 @@
                                                         "class": "black_color table_fields_size",
                                                         "style": {
                                                             "background": "rgb(204,206,213)",
-                                                            "height":"9%"
+                                                            "height": "9%"
                                                         }
                                                     }
                                                 ]
@@ -2397,7 +2424,7 @@
                                                         "class": "black_color table_fields_size",
                                                         "style": {
                                                             "background": "rgb(204,206,213)",
-                                                            "height":"9%"
+                                                            "height": "9%"
                                                         }
                                                     }
                                                 ]
@@ -2413,8 +2440,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_1",
-                                                "value": "{{$global.trash_screen2_rollers_1}}",
+                                                "name": "trash_screen3_rollers_1",
+                                                "value": "{{$global.trash_screen3_rollers_1}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "one",
                                                 "style": {
@@ -2424,7 +2451,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_1": "{{$get.trash_screen2_rollers_1}}"
+                                                        "trash_screen3_rollers_1": "{{$get.trash_screen3_rollers_1}}"
                                                     }
                                                 }
                                             }
@@ -2439,8 +2466,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_2",
-                                                "value": "{{$global.trash_screen2_rollers_2}}",
+                                                "name": "trash_screen3_rollers_2",
+                                                "value": "{{$global.trash_screen3_rollers_2}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "two",
                                                 "style": {
@@ -2450,7 +2477,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_2": "{{$get.trash_screen2_rollers_2}}"
+                                                        "trash_screen3_rollers_2": "{{$get.trash_screen3_rollers_2}}"
                                                     }
                                                 }
                                             }
@@ -2465,8 +2492,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_3",
-                                                "value": "{{$global.trash_screen2_rollers_3}}",
+                                                "name": "trash_screen3_rollers_3",
+                                                "value": "{{$global.trash_screen3_rollers_3}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "three",
                                                 "style": {
@@ -2476,7 +2503,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_3": "{{$get.trash_screen2_rollers_3}}"
+                                                        "trash_screen3_rollers_3": "{{$get.trash_screen3_rollers_3}}"
                                                     }
                                                 }
                                             }
@@ -2491,8 +2518,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_4",
-                                                "value": "{{$global.trash_screen2_rollers_4}}",
+                                                "name": "trash_screen3_rollers_4",
+                                                "value": "{{$global.trash_screen3_rollers_4}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "four",
                                                 "style": {
@@ -2502,7 +2529,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_4": "{{$get.trash_screen2_rollers_4}}"
+                                                        "trash_screen3_rollers_4": "{{$get.trash_screen3_rollers_4}}"
                                                     }
                                                 }
                                             }
@@ -2517,8 +2544,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_5",
-                                                "value": "{{$global.trash_screen2_rollers_5}}",
+                                                "name": "trash_screen3_rollers_5",
+                                                "value": "{{$global.trash_screen3_rollers_5}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "five",
                                                 "style": {
@@ -2528,7 +2555,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_5": "{{$get.trash_screen2_rollers_5}}"
+                                                        "trash_screen3_rollers_5": "{{$get.trash_screen3_rollers_5}}"
                                                     }
                                                 }
                                             }
@@ -2543,8 +2570,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_6",
-                                                "value": "{{$global.trash_screen2_rollers_6}}",
+                                                "name": "trash_screen3_rollers_6",
+                                                "value": "{{$global.trash_screen3_rollers_6}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "six",
                                                 "style": {
@@ -2554,7 +2581,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_6": "{{$get.trash_screen2_rollers_6}}"
+                                                        "trash_screen3_rollers_6": "{{$get.trash_screen3_rollers_6}}"
                                                     }
                                                 }
                                             }
@@ -2569,8 +2596,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_7",
-                                                "value": "{{$global.trash_screen2_rollers_7}}",
+                                                "name": "trash_screen3_rollers_7",
+                                                "value": "{{$global.trash_screen3_rollers_7}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "seven",
                                                 "style": {
@@ -2580,7 +2607,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_7": "{{$get.trash_screen2_rollers_7}}"
+                                                        "trash_screen3_rollers_7": "{{$get.trash_screen3_rollers_7}}"
                                                     }
                                                 }
                                             }
@@ -2595,8 +2622,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_8",
-                                                "value": "{{$global.trash_screen2_rollers_8}}",
+                                                "name": "trash_screen3_rollers_8",
+                                                "value": "{{$global.trash_screen3_rollers_8}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "eight",
                                                 "style": {
@@ -2606,7 +2633,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_8": "{{$get.trash_screen2_rollers_8}}"
+                                                        "trash_screen3_rollers_8": "{{$get.trash_screen3_rollers_8}}"
                                                     }
                                                 }
                                             }
@@ -2621,8 +2648,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_9",
-                                                "value": "{{$global.trash_screen2_rollers_9}}",
+                                                "name": "trash_screen3_rollers_9",
+                                                "value": "{{$global.trash_screen3_rollers_9}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "nine",
                                                 "style": {
@@ -2632,7 +2659,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_9": "{{$get.trash_screen2_rollers_9}}"
+                                                        "trash_screen3_rollers_9": "{{$get.trash_screen3_rollers_9}}"
                                                     }
                                                 }
                                             }
@@ -2647,8 +2674,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_10",
-                                                "value": "{{$global.trash_screen2_rollers_10}}",
+                                                "name": "trash_screen3_rollers_10",
+                                                "value": "{{$global.trash_screen3_rollers_10}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "ten",
                                                 "style": {
@@ -2658,7 +2685,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_10": "{{$get.trash_screen2_rollers_10}}"
+                                                        "trash_screen3_rollers_10": "{{$get.trash_screen3_rollers_10}}"
                                                     }
                                                 }
                                             }
@@ -2673,8 +2700,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_11",
-                                                "value": "{{$global.trash_screen2_rollers_11}}",
+                                                "name": "trash_screen3_rollers_11",
+                                                "value": "{{$global.trash_screen3_rollers_11}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "eleven",
                                                 "style": {
@@ -2684,7 +2711,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_11": "{{$get.trash_screen2_rollers_11}}"
+                                                        "trash_screen3_rollers_11": "{{$get.trash_screen3_rollers_11}}"
                                                     }
                                                 }
                                             }
@@ -2699,8 +2726,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_12",
-                                                "value": "{{$global.trash_screen2_rollers_12}}",
+                                                "name": "trash_screen3_rollers_12",
+                                                "value": "{{$global.trash_screen3_rollers_12}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "twelve",
                                                 "style": {
@@ -2710,7 +2737,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_12": "{{$get.trash_screen2_rollers_12}}"
+                                                        "trash_screen3_rollers_12": "{{$get.trash_screen3_rollers_12}}"
                                                     }
                                                 }
                                             }
@@ -2725,8 +2752,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_13",
-                                                "value": "{{$global.trash_screen2_rollers_13}}",
+                                                "name": "trash_screen3_rollers_13",
+                                                "value": "{{$global.trash_screen3_rollers_13}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "thirteen",
                                                 "style": {
@@ -2736,7 +2763,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_13": "{{$get.trash_screen2_rollers_13}}"
+                                                        "trash_screen3_rollers_13": "{{$get.trash_screen3_rollers_13}}"
                                                     }
                                                 }
                                             }
@@ -2751,8 +2778,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_14",
-                                                "value": "{{$global.trash_screen2_rollers_14}}",
+                                                "name": "trash_screen3_rollers_14",
+                                                "value": "{{$global.trash_screen3_rollers_14}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "fourteen",
                                                 "style": {
@@ -2762,7 +2789,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_14": "{{$get.trash_screen2_rollers_14}}"
+                                                        "trash_screen3_rollers_14": "{{$get.trash_screen3_rollers_14}}"
                                                     }
                                                 }
                                             }
@@ -2777,8 +2804,8 @@
                                             },
                                             {
                                                 "type": "switch",
-                                                "name": "trash_screen2_rollers_15",
-                                                "value": "{{$global.trash_screen2_rollers_15}}",
+                                                "name": "trash_screen3_rollers_15",
+                                                "value": "{{$global.trash_screen3_rollers_15}}",
                                                 "class": "table1_col_value_styles switch_styles",
                                                 "contentDescription": "fifteen",
                                                 "style": {
@@ -2788,7 +2815,7 @@
                                                     "type": "$global.set",
                                                     "options": {
                                                         "section_id": "form4",
-                                                        "trash_screen2_rollers_15": "{{$get.trash_screen2_rollers_15}}"
+                                                        "trash_screen3_rollers_15": "{{$get.trash_screen3_rollers_15}}"
                                                     }
                                                 }
                                             }
@@ -3592,30 +3619,8 @@
                                     ]
                                 }]
                             }]
-                        },
-                        {
-                            "type": "horizontal",
-                            "style": {
-                                "padding": "1%"
-                            },
-                            "items": [{
-                                "type": "vertical",
-                                "components": [{
-                                    "type": "textarea",
-                                    "value": "{{$global.f4_s2_comments}}",
-                                    "name": "f4_s2_comments",
-                                    "placeholder": "Comments",
-                                    "contentDescription": "Comments",
-                                    "style": {
-                                        "width": "100%",
-                                        "height": "15%",
-                                        "size": "15",
-                                        "border": "#000000"
-                                    }
-                                }],
-                                "class": "no_padding"
-                            }]
                         }
+                       
 
                     ],
                     "layers": [{
@@ -3670,7 +3675,7 @@
                             "action": {
                                 "trigger": "handleTemplateChange",
                                 "options": {
-                                    "templateName": "screen2"
+                                    "templateName": "screen3"
                                 }
                             }
                         },
@@ -3702,6 +3707,68 @@
                             }
                         }
                     ]
+                },
+                "screen4": {
+                    "header": {
+                        "title": {
+                            "type": "label",
+                            "text": "{{Page_Heading}}"
+                        },
+                        "style": {
+                            "font": "HelveticaHeader-Bold",
+                            "size": 20,
+                            "background": "rgb(0,162,224)",
+                            "color": "rgb(255,255,255)",
+                            "height": "3%"
+                        }
+                    },
+                    "sections": [{
+                        "type": "horizontal",
+                        "items": [
+                            {
+                                "type": "horizontal",
+                                "items": [{
+                                    "type": "vertical",
+                                    "class": "no_padding",
+                                    "components": [{
+                                        "type": "horizontal",
+                                        "components": [{
+                                            "type": "label",
+                                            "name": "trash_screen_001_comments",
+                                            "text": " Trash Screen 001 Comments",
+                                            "style": {
+                                                "background": "rgb(204,206,213)",
+                                                "height": "9%",
+                                                "width": "100%"
+                                            }
+                                        }]
+                                    }]
+                                }]
+                            },
+                            {
+                                "type": "horizontal",
+                                "style": {
+                                    "padding": "1%"
+                                },
+                                "items": [{
+                                    "type": "vertical",
+                                    "components": [{
+                                        "type": "textarea",
+                                        "value": "{{$global.f4_s2_comments}}",
+                                        "name": "f4_s2_comments",
+                                        "placeholder": "Comments",
+                                        "contentDescription": "Comments",
+                                        "style": {
+                                            "width": "100%",
+                                            "height": "15%",
+                                            "size": "15",
+                                            "border": "#000000"
+                                        }
+                                    }],
+                                    "class": "no_padding"
+                                }]
+                            }]
+                    }]
                 }
             }
         }
