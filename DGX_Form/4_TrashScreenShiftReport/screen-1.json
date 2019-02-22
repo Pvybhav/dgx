@@ -1401,7 +1401,7 @@
                             "class": "center_align"
                         },
                         {
-                            "type": "horizontal",
+                            "type": "vertical",
                             "items": [{
                                 "type": "horizontal",
                                 "style": {
@@ -1409,7 +1409,8 @@
                                 },
                                 "components": [{
                                     "type": "horizontal",
-                                    "components": [{
+                                    "components": [
+                                        {
                                             "type": "vertical",
                                             "style": {
                                                 "border": "#ffffff"
@@ -2189,21 +2190,22 @@
                                                     "class": "table_row_odd_styles center_align"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "type": "horizontal",
-                                            "components": [{
-                                              "type": "label",
-                                              "text": "",
-                                              "style": {
-                                                "height": "10%",
-                                                "width": "100%"
-                                              }
-                                            }]
-                                          }
+                                        }
+                                        
                                     ]
                                 }]
-                            }]
+                            },
+                            {
+                                "type": "horizontal",
+                                "components": [{
+                                  "type": "label",
+                                  "text": "",
+                                  "style": {
+                                    "height": "10%",
+                                    "width": "100%"
+                                  }
+                                }]
+                              }]
                         }
                     ],
                     "layers": [
