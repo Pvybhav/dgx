@@ -1,0 +1,796 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Line-1",
+      "description": "Line-2 by using Loops",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "no_border": {
+          "border": "none"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "black_color": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "title_styles": {
+          "font": "HelveticaHeader",
+          "size": 20,
+          "align": "center",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 162, 224)"
+        },
+        "dropdown_date_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "16"
+        },
+        "label_description_style": {
+          "font": "HelveticaNeue-Bold",
+          "size": "15"
+        },
+        "previous_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        }
+      },
+      "data": {
+        "Page_Heading": "Reagent Operator - SO2 Offload Checklist"
+      },
+      "actions": {
+        "$load": {
+          "type": "$global.set",
+          "options": {}
+        },
+        "$pull": {
+          "type": "$reload"
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form8_page1",
+            "sign": "{{$get.sign || ''}}",
+            "date": "{{$get.date}}",
+            "month": "{{$get.month}}",
+            "year": "{{$get.year}}",
+            "shift": "{{$get.shift}}",
+            "operator": "{{$get.operator}}",
+            "company": "{{$get.company || ''}}",
+            "truck_driver_name": "{{$get.truck_driver_name || ''}}",
+            "BOL": "{{$get.BOL || ''}}",
+            "Safety_concerns": "{{$get.Safety_concerns || ''}}",
+            "warehouse_tech_name": "{{$get.warehouse_tech_name || ''}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved Successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}}"
+            },
+            "style": {
+              "font": "HelveticaHeader",
+              "size": 20,
+              "background": "rgb(146,208,80)",
+              "color": "rgb(255,255,255)",
+              "height": "3%"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "date",
+                      "value": "{{$global.date}}",
+                      "contentDescription": "date",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Date",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "13",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "14",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "15",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "16",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "17",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "18",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "19",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "20",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "21",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "22",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "23",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "24",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "25",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "26",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "27",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "28",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "29",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "30",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "31",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Month",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.year}}",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Year",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2019",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2020",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2021",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2022",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": [
+                        {
+                          "value": "Shift",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Night Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Day Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Regular Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Rotating Shift",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": [
+                        {
+                          "value": "Operator",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "John",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Smith",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Michael",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Federer",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "David",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "style": {
+                    "color": "rgb(255, 255, 255)",
+                    "padding_bottom": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Safety Concerns (1)",
+                      "style": {
+                        "background": "rgb(14, 53, 112)",
+                        "color": "rgb(255, 255, 255)",
+                        "height": "6%"
+                      },
+                      "class": "label_description_style"
+                    },
+                    {
+                      "type": "textarea",
+                      "value": "{{$global.Safety_concerns || ''}}",
+                      "name": "Safety_concerns",
+                      "contentDescription": "one",
+                      "style": {
+                        "height": "20%",
+                        "size": "16",
+                        "width": "100%",
+                        "background": "rgb(204,206,213)",
+                        "border": "rgb(255, 255, 255)"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                },
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "background": "rgb(14, 53, 112)",
+                    "color": "rgb(255, 255, 255)",
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Warehouse Tech Name (2)",
+                      "style": {
+                        "background": "rgb(14, 53, 112)",
+                        "color": "rgb(255, 255, 255)",
+                        "width": "50%",
+                        "align": "center",
+                        "border": "rgb(255, 255, 255)",
+                        "height": "6%"
+                      },
+                      "class": "label_description_style"
+                    },
+                    {
+                      "type": "label",
+                      "text": "BOL# (3)",
+                      "style": {
+                        "background": "rgb(14, 53, 112)",
+                        "color": "rgb(255, 255, 255)",
+                        "width": "50%",
+                        "align": "center",
+                        "border": "rgb(255, 255, 255)",
+                        "height": "6%"
+                      },
+                      "class": "label_description_style"
+                    }
+                  ],
+                  "class": "no_padding"
+                },
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "background": "rgb(14, 53, 112)",
+                    "color": "rgb(255, 255, 255)",
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "value": "{{$global.warehouse_tech_name || ''}}",
+                      "name": "warehouse_tech_name",
+                      "contentDescription": "two",
+                      "style": {
+                        "height": "8%",
+                        "size": "16",
+                        "width": "50%",
+                        "background": "rgb(204,206,213)",
+                        "border": "rgb(255, 255, 255)"
+                      }
+                    },
+                    {
+                      "type": "textarea",
+                      "value": "{{$global.BOL || ''}}",
+                      "name": "BOL",
+                      "contentDescription": "three",
+                      "style": {
+                        "height": "8%",
+                        "size": "16",
+                        "width": "50%",
+                        "background": "rgb(204,206,213)",
+                        "border": "rgb(255, 255, 255)"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                },
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "background": "rgb(14, 53, 112)",
+                    "color": "rgb(255, 255, 255)",
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Truck Driver Name (4)",
+                      "style": {
+                        "background": "rgb(14, 53, 112)",
+                        "color": "rgb(255, 255, 255)",
+                        "width": "50%",
+                        "align": "center",
+                        "border": "rgb(255, 255, 255)",
+                        "height": "6%"
+                      },
+                      "class": "label_description_style"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Company (5)",
+                      "style": {
+                        "background": "rgb(14, 53, 112)",
+                        "color": "rgb(255, 255, 255)",
+                        "width": "50%",
+                        "align": "center",
+                        "border": "rgb(255, 255, 255)",
+                        "height": "6%"
+                      },
+                      "class": "label_description_style"
+                    }
+                  ],
+                  "class": "no_padding"
+                },
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "background": "rgb(14, 53, 112)",
+                    "color": "rgb(255, 255, 255)",
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "value": "{{$global.truck_driver_name || ''}}",
+                      "name": "truck_driver_name",
+                      "contentDescription": "four",
+                      "style": {
+                        "height": "8%",
+                        "size": "16",
+                        "width": "50%",
+                        "background": "rgb(204,206,213)",
+                        "border": "rgb(255, 255, 255)"
+                      }
+                    },
+                    {
+                      "type": "textarea",
+                      "value": "{{$global.company || ''}}",
+                      "name": "company",
+                      "contentDescription": "five",
+                      "style": {
+                        "height": "8%",
+                        "size": "16",
+                        "width": "50%",
+                        "background": "rgb(204,206,213)",
+                        "border": "rgb(255, 255, 255)"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ],
+              "class": "no_padding"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "1%",
+                    "padding_bottom": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "next",
+                      "text": "Next",
+                      "class": "next_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/8_SO2OffloadChecklist/screen_2.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "",
+                      "class": "black_color",
+                      "style": {
+                        "width": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1989 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Form-14",
+      "json_id": "field",
+      "description": "Reagent Log Sheet",
+      "offline": "true",
+      "styles": {
+        "center_align": {
+          "align": "center"
+        },
+        "no_padding": {
+          "padding": "0"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "button_styles": {
+          "width": "40%",
+          "height": "50",
+          "space": "15",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(239,240,242)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "home_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "next_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 255)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "save_button_styles": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(51, 102, 153)",
+          "width": "15%",
+          "height": "7%",
+          "corner_radius": "1%"
+        },
+        "dropdown_date_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "15"
+        },
+        "table_header_styles": {
+          "size": "15",
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "height": "8%"
+        },
+        "table_header_name_styles": {
+          "width": "50%"
+        },
+        "header_style": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "background": "rgb(27,142,197)",
+          "height": "12%",
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "header_style1": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "background": "rgb(14, 53, 112)",
+          "height": "5%",
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "header_textfield": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "color": "rgb(0,0,0)",
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(239,240,242)"
+        },
+        "header_style3": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "background": "rgb(204,206,213)",
+          "height": "5%",
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "size": 15,
+          "font": "HelveticaHeader"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form14_page1"
+          },
+          "success": {
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "$show": {
+          "type": "$render"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
+            }
+          }
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form14_page1",
+            "f12_s1_sign": "{{$get.sign || ''}}",
+            "f12_s1_day": "{{$get.day}}",
+            "f12_s1_month": "{{$get.month}}",
+            "f12_s1_year": "{{$get.year}}",
+            "f12_s1_shift": "{{$get.shift}}",
+            "f12_s1_operator": "{{$get.operator}}",
+            "textfield1": "{{$get.textfield1 || ''}}",
+            "textfield2": "{{$get.textfield2 || ''}}",
+            "textfield3": "{{$get.textfield3 || ''}}",
+            "textfield4": "{{$get.textfield4 || ''}}",
+            "textfield5": "{{$get.textfield5 || ''}}",
+            "textfield6": "{{$get.textfield6 || ''}}",
+            "textfield7": "{{$get.textfield7 || ''}}",
+            "textfield8": "{{$get.textfield8 || ''}}",
+            "textfield9": "{{$get.textfield9 || ''}}",
+            "textfield10": "{{$get.textfield10 || ''}}",
+            "textfield11": "{{$get.textfield11 || ''}}",
+            "textfield12": "{{$get.textfield12 || ''}}",
+            "textfield13": "{{$get.textfield13 || ''}}",
+            "textfield14": "{{$get.textfield14 || ''}}",
+            "textfield15": "{{$get.textfield15 || ''}}",
+            "textfield16": "{{$get.textfield16 || ''}}",
+            "textfield17": "{{$get.textfield17 || ''}}",
+            "textfield18": "{{$get.textfield18 || ''}}",
+            "textfield19": "{{$get.textfield19 || ''}}",
+            "textfield20": "{{$get.textfield20 || ''}}",
+            "textfield21": "{{$get.textfield21 || ''}}",
+            "textfield22": "{{$get.textfield22 || ''}}",
+            "textfield23": "{{$get.textfield23 || ''}}",
+            "textfield24": "{{$get.textfield24 || ''}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved Successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "data": {
+        "Page_Heading": "Reagents Log Sheet",
+        "Table1_Headers": [
+          {
+            "type": "label",
+            "name": "consumed",
+            "value": "Consumed",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "name": "received",
+            "value": "Received",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}}",
+              "align": "left"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 15,
+              "background": "rgb(154,205,50)",
+              "color": "rgb(255,255,255)",
+              "height": "0%",
+              "padding": "0",
+              "align": "left"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "day",
+                      "value": "{{$global.f12_s1_day}}",
+                      "contentDescription": "Day",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Day",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "13",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "14",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "15",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "16",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "17",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "18",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "19",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "20",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "21",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "22",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "23",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "24",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "25",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "26",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "27",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "28",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "29",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "30",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "31",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.f12_s1_month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Month",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.f12_s1_year}}",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Year",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2019",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2020",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2021",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2022",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.f12_s1_shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": [
+                        {
+                          "value": "Shift",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Night Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Day Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Regular Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Rotating Shift",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.f12_s1_operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": [
+                        {
+                          "value": "Operator",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "John",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Smith",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Michael",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Federer",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "David",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.f12_s1_sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ],
+              "class": "no_padding"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": {
+                    "{{#each Table1_Headers}}": {
+                      "type": "label",
+                      "text": "{{value}}",
+                      "class": "{{styles}}"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Cyanide - Isotainers",
+                          "class": "header_style",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Carbon",
+                          "class": "header_style",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Copper Sulphate",
+                          "class": "header_style",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "SMBS",
+                          "class": "header_style",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Floc",
+                          "class": "header_style",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Cyanide - Trucks",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "SO2 - Trucks",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "SMBS",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Floc",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "#",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "tonnes",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "tonnes",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "2",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "3",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "4",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "5",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "6",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "7",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "8",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "1",
+                      "style": {
+                        "width": "12%",
+                        "align": "center",
+                        "height": "7%",
+                        "color": "#FFFFFF",
+                        "background": "rgb(14, 53, 112)"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "textfield1",
+                              "contentDescription": "one",
+                              "value": "{{$global.textfield1 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "10%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "textfield2",
+                              "contentDescription": "two",
+                              "value": "{{$global.textfield2 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "12%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "textfield3",
+                              "contentDescription": "three",
+                              "value": "{{$global.textfield3 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "8%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "textfield4",
+                              "contentDescription": "four",
+                              "value": "{{$global.textfield4 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "8%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "background": "rgb(14, 53, 112)"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "textfield5",
+                              "contentDescription": "five",
+                              "value": "{{$global.textfield5 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "13%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "textfield6",
+                              "contentDescription": "six",
+                              "value": "{{$global.textfield6 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "13%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "textfield7",
+                              "contentDescription": "seven",
+                              "value": "{{$global.textfield7 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "13%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "textfield8",
+                              "contentDescription": "eight",
+                              "value": "{{$global.textfield8 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "13%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%",
+                    "background": "rgb(239,240,242)"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "9",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "10",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "11",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "12",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "13",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "14",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "15",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "16",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "2",
+                      "style": {
+                        "width": "12%",
+                        "align": "center",
+                        "height": "7%",
+                        "color": "#FFFFFF",
+                        "background": "rgb(14, 53, 112)"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield9",
+                          "contentDescription": "nine",
+                          "value": "{{$global.textfield9 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield10",
+                          "contentDescription": "ten",
+                          "value": "{{$global.textfield10 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield11",
+                          "contentDescription": "eleven",
+                          "value": "{{$global.textfield11 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield12",
+                          "contentDescription": "twelve",
+                          "value": "{{$global.textfield12 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "background": "rgb(14, 53, 112)"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield13",
+                          "contentDescription": "thirteen",
+                          "value": "{{$global.textfield13 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield14",
+                          "contentDescription": "fourteen",
+                          "value": "{{$global.textfield14 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield15",
+                          "contentDescription": "fifteen",
+                          "value": "{{$global.textfield15 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield16",
+                          "contentDescription": "sixteen",
+                          "value": "{{$global.textfield16 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%",
+                    "background": "rgb(239,240,242)"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "17",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "18",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "19",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "20",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "21",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "22",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "23",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "24",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "3",
+                      "style": {
+                        "width": "12%",
+                        "align": "center",
+                        "height": "7%",
+                        "color": "#FFFFFF",
+                        "background": "rgb(14, 53, 112)"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield17",
+                          "contentDescription": "seventeen",
+                          "value": "{{$global.textfield17 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield18",
+                          "contentDescription": "eighteen",
+                          "value": "{{$global.textfield18 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield19",
+                          "contentDescription": "nineteen",
+                          "value": "{{$global.textfield19 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield20",
+                          "contentDescription": "twenty",
+                          "value": "{{$global.textfield20 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "background": "rgb(14, 53, 112)"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield21",
+                          "contentDescription": "twenty-one",
+                          "value": "{{$global.textfield21 || ''}}",
+                          "class": "header_textfield ",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield22",
+                          "contentDescription": "twenty-two",
+                          "value": "{{$global.textfield22 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield23",
+                          "contentDescription": "twenty-three",
+                          "value": "{{$global.textfield23 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "textfield24",
+                          "contentDescription": "twenty-four",
+                          "value": "{{$global.textfield24 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%",
+                    "background": "rgb(239,240,242)"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_top": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "40%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "home",
+                      "text": "Home",
+                      "class": "home_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "next",
+                      "text": "Next",
+                      "class": "next_button_styles center_align",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/14_ReagentsLog/screen_2.json",
+                          "preload": {
+                            "style": {
+                              "background": "#ff0000"
+                            },
+                            "layers": [
+                              {
+                                "type": "image",
+                                "url": "file://infinit.gif",
+                                "style": {
+                                  "top": "50%-25",
+                                  "left": "50%-25",
+                                  "width": "50",
+                                  "height": "50"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "5%"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "save",
+                      "text": "Save",
+                      "class": "save_button_styles center_align",
+                      "action": {
+                        "trigger": "handleSave"
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "10%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
