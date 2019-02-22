@@ -2195,132 +2195,137 @@
                             }]
                         }
                     ],
-                    "layers": [{
-                            "type": "image",
-                            "url": "file://icons/home.png",
-                            "style": {
-                                "left": "20%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "8%"
-                            },
-                            "action": {
-                                "trigger": "handleNavigation",
-                                "options": {
-                                    "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
-                                }
+                    "layers": [
+                        {
+                          "type": "image",
+                          "url": "file://icons/home.png",
+                          "contentDescription": "home",
+                          "style": {
+                            "left": "15%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleNavigation",
+                            "options": {
+                              "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "1",
-                            "style": {
-                                "left": "30%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255, 255, 255)",
-                                "background": "rgb(255, 0, 0)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen1"
-                                }
+                          "type": "button",
+                          "text": "Page 1",
+                          "style": {
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "left": "25%",
+            
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "background": "rgb(255, 0, 0)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen1"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "2",
-                            "style": {
-                                "left": "40%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255, 255, 255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen2"
-                                }
+                          "type": "button",
+                          "text": "Page 2",
+                          "style": {
+                            "left": "35%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen2"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "3",
-                            "style": {
-                                "left": "50%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255,255,255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen3"
-                                }
+                          "type": "button",
+                          "text": "Page 3",
+                          "style": {
+                            "left": "45%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen3"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "4",
-                            "style": {
-                                "left": "60%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255,255,255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen4"
-                                }
+                          "type": "button",
+                          "text": "Page 4",
+                          "style": {
+                            "left": "55%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen4"
                             }
+                          }
                         },
                         {
-                            "type": "image",
-                            "url": "file://icons/next.png",
-                            "style": {
-                                "left": "70%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "7%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen2"
-                                }
+                          "type": "image",
+                          "url": "file://icons/next.png",
+                          "contentDescription": "next",
+                          "style": {
+                            "left": "65%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen2"
                             }
+                          }
                         },
                         {
-                            "type": "image",
-                            "url": "file://icons/save.png",
-                            "style": {
-                                "left": "80%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "7%"
-                            },
-                            "action": {
-                                "trigger": "handleSave_screen1"
-                            }
+                          "type": "image",
+                          "url": "file://icons/save.png",
+                          "contentDescription": "save",
+                          "style": {
+                            "left": "75%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleSave_screen1"
+                          }
                         }
-                    ]
+                      ]
                 },
                 "screen2": {
                     "header": {
@@ -2384,132 +2389,155 @@
 
 
                     }],
-                    "layers": [{
-                            "type": "image",
-                            "url": "file://icons/home.png",
-                            "style": {
-                                "left": "20%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "8%"
-                            },
-                            "action": {
-                                "trigger": "handleNavigation",
-                                "options": {
-                                    "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
-                                }
+                    "layers": [
+                        {
+                          "type": "image",
+                          "url": "file://icons/home.png",
+                          "contentDescription": "home",
+                          "style": {
+                            "left": "10%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleNavigation",
+                            "options": {
+                              "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "1",
-                            "style": {
-                                "left": "30%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255, 255, 255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen1"
-                                }
+                          "type": "image",
+                          "url": "file://icons/previous.png",
+                          "contentDescription": "previous",
+                          "style": {
+                            "left": "15%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen1"
                             }
+                          }
+                        },
+            
+                        {
+                          "type": "button",
+                          "text": "Page 1",
+                          "style": {
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "left": "25%",
+            
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen1"
+                            }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "2",
-                            "style": {
-                                "left": "40%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255, 255, 255)",
-                                "background": "rgb(255, 0, 0)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen2"
-                                }
+                          "type": "button",
+                          "text": "Page 2",
+                          "style": {
+                            "left": "35%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(255, 0, 0)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen2"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "3",
-                            "style": {
-                                "left": "50%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255,255,255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen3"
-                                }
+                          "type": "button",
+                          "text": "Page 3",
+                          "style": {
+                            "left": "45%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen3"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "4",
-                            "style": {
-                                "left": "60%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255,255,255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen4"
-                                }
+                          "type": "button",
+                          "text": "Page 4",
+                          "style": {
+                            "left": "55%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen4"
                             }
+                          }
                         },
                         {
-                            "type": "image",
-                            "url": "file://icons/next.png",
-                            "style": {
-                                "left": "70%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "7%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen3"
-                                }
+                          "type": "image",
+                          "url": "file://icons/next.png",
+                          "contentDescription": "next",
+                          "style": {
+                            "left": "65%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen3"
                             }
+                          }
                         },
                         {
-                            "type": "image",
-                            "url": "file://icons/save.png",
-                            "style": {
-                                "left": "80%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "7%"
-                            },
-                            "action": {
-                                "trigger": "handleSave_screen2"
-                            }
+                          "type": "image",
+                          "url": "file://icons/save.png",
+                          "contentDescription": "save",
+                          "style": {
+                            "left": "75%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleSave_screen2"
+                          }
                         }
-                    ]
+                      ]
                 },
                 "screen3": {
                     "header": {
@@ -3830,132 +3858,155 @@
 
 
                     ],
-                    "layers": [{
-                            "type": "image",
-                            "url": "file://icons/home.png",
-                            "style": {
-                                "left": "20%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "8%"
-                            },
-                            "action": {
-                                "trigger": "handleNavigation",
-                                "options": {
-                                    "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
-                                }
+                    "layers": [
+                        {
+                          "type": "image",
+                          "url": "file://icons/home.png",
+                          "contentDescription": "home",
+                          "style": {
+                            "left": "10%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleNavigation",
+                            "options": {
+                              "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "1",
-                            "style": {
-                                "left": "30%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255, 255, 255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen1"
-                                }
+                          "type": "image",
+                          "url": "file://icons/previous.png",
+                          "contentDescription": "previous",
+                          "style": {
+                            "left": "15%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen2"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "2",
-                            "style": {
-                                "left": "40%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255, 255, 255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen2"
-                                }
+                          "type": "button",
+                          "text": "Page 1",
+                          "style": {
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "left": "25%",
+            
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen1"
                             }
+                          }
+                        },
+            
+                        {
+                          "type": "button",
+                          "text": "Page 2",
+                          "style": {
+                            "left": "35%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen2"
+                            }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "3",
-                            "style": {
-                                "left": "50%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255,255,255)",
-                                "background": "rgb(255, 0, 0)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen3"
-                                }
+                          "type": "button",
+                          "text": "Page 3",
+                          "style": {
+                            "left": "45%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(255, 0, 0)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen3"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "4",
-                            "style": {
-                                "left": "60%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255,255,255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen4"
-                                }
+                          "type": "button",
+                          "text": "Page 4",
+                          "style": {
+                            "left": "55%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen4"
                             }
+                          }
                         },
                         {
-                            "type": "image",
-                            "url": "file://icons/next.png",
-                            "style": {
-                                "left": "70%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "7%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen4"
-                                }
+                          "type": "image",
+                          "url": "file://icons/next.png",
+                          "contentDescription": "next",
+                          "style": {
+                            "left": "65%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen4"
                             }
+                          }
                         },
                         {
-                            "type": "image",
-                            "url": "file://icons/save.png",
-                            "style": {
-                                "left": "80%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "7%"
-                            },
-                            "action": {
-                                "trigger": "handleSave_screen3"
-                            }
+                          "type": "image",
+                          "url": "file://icons/save.png",
+                          "contentDescription": "save",
+                          "style": {
+                            "left": "75%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleSave_screen3"
+                          }
                         }
-                    ]
+                      ]
                 },
                 "screen4": {
                     "header": {
@@ -4019,130 +4070,152 @@
 
 
                     }],
-                    "layers": [{
-                            "type": "image",
-                            "url": "file://icons/home.png",
-                            "style": {
-                                "left": "20%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "8%"
-                            },
-                            "action": {
-                                "trigger": "handleNavigation",
-                                "options": {
-                                    "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
-                                }
+                    "layers": [
+                        {
+                          "type": "image",
+                          "url": "file://icons/home.png",
+                          "contentDescription": "home",
+                          "style": {
+                            "left": "10%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleNavigation",
+                            "options": {
+                              "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "1",
-                            "style": {
-                                "left": "30%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255, 255, 255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen1"
-                                }
+                          "type": "image",
+                          "url": "file://icons/previous.png",
+                          "contentDescription": "previous",
+                          "style": {
+                            "left": "15%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen3"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "2",
-                            "style": {
-                                "left": "40%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255, 255, 255)",
-                                "background": "rgb(255, 0, 0)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen2"
-                                }
+                          "type": "button",
+                          "text": "Page 1",
+                          "style": {
+            
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "left": "25%",
+            
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen1"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "3",
-                            "style": {
-                                "left": "50%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255,255,255)",
-                                "background": "rgb(255, 0, 0)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen3"
-                                }
+                          "type": "button",
+                          "text": "Page 2",
+                          "style": {
+                            "left": "35%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen2"
                             }
+                          }
                         },
                         {
-                            "type": "button",
-                            "text": "4",
-                            "style": {
-                                "left": "60%",
-                                "bottom": "1%",
-                                "width": "7%",
-                                "size": "18",
-                                "height": "8%",
-                                "color": "rgb(255,255,255)",
-                                "background": "rgb(0,147,215)",
-                                "corner_radius": "1%"
-                            },
-                            "action": {
-                                "trigger": "handleTemplateChange",
-                                "options": {
-                                    "templateName": "screen4"
-                                }
+                          "type": "button",
+                          "text": "Page 3",
+                          "style": {
+                            "left": "45%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(0,147,215)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen3"
                             }
-                        },
-
-                        {
-                            "type": "image",
-                            "url": "file://icons/save.png",
-                            "style": {
-                                "left": "70%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "7%"
-                            },
-                            "action": {
-                                "trigger": "handleSave_screen4"
-                            }
+                          }
                         },
                         {
-                            "type": "image",
-                            "url": "file://icons/submit.png",
-                            "style": {
-                                "left": "80%",
-                                "width": "5%",
-                                "bottom": "1%",
-                                "height": "7%"
-                            },
-                            "action": {
-                                "trigger": "handleSubmit"
+                          "type": "button",
+                          "text": "Page 4",
+                          "style": {
+                            "left": "55%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%",
+                            "size": "16",
+                            "color": "rgb(255, 255, 255)",
+                            "background": "rgb(255, 0, 0)",
+                            "corner_radius": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleTemplateChange",
+                            "options": {
+                              "templateName": "screen4"
                             }
+                          }
+                        },
+                        {
+                          "type": "image",
+                          "url": "file://icons/save.png",
+                          "contentDescription": "save",
+                          "style": {
+                            "left": "65%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleSave_screen4"
+                          }
+                        },
+                        {
+                          "type": "image",
+                          "url": "file://icons/submit.png",
+                          "contentDescription": "submit",
+                          "style": {
+                            "left": "75%",
+                            "width": "10%",
+                            "height": "11%",
+                            "bottom": "1%"
+                          },
+                          "action": {
+                            "trigger": "handleSubmit"
+                          }
                         }
-                    ]
+                      ]
                 }
             }
         }
