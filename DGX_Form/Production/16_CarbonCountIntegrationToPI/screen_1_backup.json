@@ -10,11 +10,7 @@
           "align": "center"
         },
         "no_padding": {
-          "padding": "0",
-          "padding_top": "0",
-          "padding_bottom": "0",
-          "padding_left": "0",
-          "padding_right": "0"
+          "padding": "0"
         },
         "black_color": {
           "color": "rgb(0,0,0)"
@@ -23,7 +19,11 @@
           "font": "HelveticaNeue-Bold"
         },
         "body_row_label_styles": {
-          "size": "16"
+          "size": "16",
+          "width": "3%"
+        },
+        "hide_field": {
+          "width": "0%"
         },
         "right_padding": {
           "padding_left": "-2",
@@ -64,20 +64,13 @@
           "width": "50%"
         },
         "table_header2_name_styles": {
-          "width": "16%"
+          "width": "50%"
         },
-        "table_header2_value_styles": {
-          "width": "17%"
+        "table_header3_name_styles": {
+          "width": "25%"
         },
-        "header_style": {
-          "border": "#FFFFFF",
-          "border_width": "2",
-          "background": "rgb(27,142,197)",
-          "height": "12%",
-          "align": "center",
-          "color": "rgb(255,255,255)",
-          "size": 15,
-          "font": "HelveticaHeader"
+        "table_header3_value_styles": {
+          "width": "25%"
         },
         "table_odd_row_styles": {
           "background": "rgb(231,232,235)"
@@ -86,12 +79,23 @@
           "background": "rgb(204,206,213)"
         },
         "table_body_textfield_styles": {
-          "width": "12%",
-          "height": "4%",
+          "width": "13%",
           "size": "13"
         },
         "table_row_height": {
-          "height": "7%"
+          "height": "6%"
+        },
+        "table_row_name_styles": {
+          "width": "8%",
+          "size": "18",
+          "font": "HelveticaHeader-Bold"
+        },
+        "table_row_name_size": {
+          "size": "18"
+        },
+        "table_row_value_styles": {
+          "width": "17%",
+          "font": "HelveticaHeader-Bold"
         },
         "loading_image_styles": {
           "top": "50%-25",
@@ -292,7 +296,6 @@
         }
       },
       "data": {
-        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
         "Page_Heading": "CIP/Leach Operator Log Sheet - Carbon Count",
         "loading_image_url": "file://infinit.gif",
         "home_icon": "file://icons/home.png",
@@ -566,33 +569,34 @@
         ],
         "Table_Headers2": [
           {
-            "value": "Tank",
+            "value": "Line 1",
             "styles": "table_header2_name_styles center_align table_header_styles"
           },
           {
+            "value": "Line 2",
+            "styles": "table_header2_name_styles center_align table_header_styles"
+          }
+        ],
+        "Table_Headers3": [
+          {
+            "value": "Tank",
+            "styles": "table_header3_name_styles center_align table_header_styles"
+          },
+          {
             "value": "Lead Tank",
-            "styles": "table_header2_value_styles center_align table_header_styles"
+            "styles": "table_header3_value_styles center_align table_header_styles"
           },
           {
             "value": "Volume (mL/L)",
-            "styles": "table_header2_value_styles center_align table_header_styles"
+            "styles": "table_header3_value_styles center_align table_header_styles"
           },
           {
             "value": "Tank",
-            "styles": "table_header2_name_styles center_align table_header_styles"
-          },
-          {
-            "value": "Lead Tank",
-            "styles": "table_header2_value_styles center_align table_header_styles"
-          },
-          {
-            "value": "Volume (mL/L)",
-            "styles": "table_header2_value_styles center_align table_header_styles"
+            "styles": "table_header3_name_styles center_align table_header_styles"
           }
         ],
         "Table1_Rows": [
           {
-            "row_styles": "center_align black_color table_body_name_styles",
             "row_values": [
               {
                 "type": "label",
@@ -600,13 +604,17 @@
               },
               {
                 "type": "textfield",
-                "name": "Line1_101_lead_tank",
+                "name": "DS_carbon_count_L1_CIP101",
                 "label": "1",
                 "contentDescription": "one"
               },
               {
+                "type": "label",
+                "text": "102"
+              },
+              {
                 "type": "textfield",
-                "name": "Line1_101_volume",
+                "name": "DS_carbon_count_L2_CIP201",
                 "label": "2",
                 "contentDescription": "two"
               },
@@ -616,36 +624,9 @@
               },
               {
                 "type": "textfield",
-                "name": "Line2_201_lead_tank",
+                "name": "PS_carbon_count_L1_CIP101",
                 "label": "3",
                 "contentDescription": "three"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_201_volume",
-                "label": "4",
-                "contentDescription": "four"
-              }
-            ]
-          },
-          {
-            "row_styles": "center_align black_color table_body_name_styles",
-            "row_values": [
-              {
-                "type": "label",
-                "text": "102"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_102_lead_tank",
-                "label": "5",
-                "contentDescription": "five"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_102_volume",
-                "label": "6",
-                "contentDescription": "six"
               },
               {
                 "type": "label",
@@ -653,200 +634,9 @@
               },
               {
                 "type": "textfield",
-                "name": "Line2_202_lead_tank",
-                "label": "7",
-                "contentDescription": "seven"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_202_volume",
-                "label": "8",
-                "contentDescription": "eight"
-              }
-            ]
-          },
-          {
-            "row_styles": "center_align black_color table_body_name_styles",
-            "row_values": [
-              {
-                "type": "label",
-                "text": "103"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_103_lead_tank",
-                "label": "9",
-                "contentDescription": "nine"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_103_volume",
-                "label": "10",
-                "contentDescription": "ten"
-              },
-              {
-                "type": "label",
-                "text": "203"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_203_lead_tank",
-                "label": "11",
-                "contentDescription": "eleven"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_203_volume",
-                "label": "12",
-                "contentDescription": "twelve"
-              }
-            ]
-          },
-          {
-            "row_styles": "center_align black_color table_body_name_styles",
-            "row_values": [
-              {
-                "type": "label",
-                "text": "104"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_104_lead_tank",
-                "label": "13",
-                "contentDescription": "thirteen"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_104_volume",
-                "label": "14",
-                "contentDescription": "fourteen"
-              },
-              {
-                "type": "label",
-                "text": "204"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_204_lead_tank",
-                "label": "15",
-                "contentDescription": "fifteen"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_204_volume",
-                "label": "16",
-                "contentDescription": "sixteen"
-              }
-            ]
-          },
-          {
-            "row_styles": "center_align black_color table_body_name_styles",
-            "row_values": [
-              {
-                "type": "label",
-                "text": "105"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_105_lead_tank",
-                "label": "17",
-                "contentDescription": "seventeen"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_105_volume",
-                "label": "18",
-                "contentDescription": "eighteen"
-              },
-              {
-                "type": "label",
-                "text": "205"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_205_lead_tank",
-                "label": "19",
-                "contentDescription": "nineteen"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_205_volume",
-                "label": "20",
-                "contentDescription": "twenty"
-              }
-            ]
-          },
-          {
-            "row_styles": "center_align black_color table_body_name_styles",
-            "row_values": [
-              {
-                "type": "label",
-                "text": "106"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_106_lead_tank",
-                "label": "21",
-                "contentDescription": "twenty-one"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_106_volume",
-                "label": "22",
-                "contentDescription": "twenty-two"
-              },
-              {
-                "type": "label",
-                "text": "206"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_206_lead_tank",
-                "label": "23",
-                "contentDescription": "twenty-three"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_206_volume",
-                "label": "24",
-                "contentDescription": "twenty-four"
-              }
-            ]
-          },
-          {
-            "row_styles": "center_align black_color table_body_name_styles",
-            "row_values": [
-              {
-                "type": "label",
-                "text": "107"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_107_lead_tank",
-                "label": "25",
-                "contentDescription": "twenty-five"
-              },
-              {
-                "type": "textfield",
-                "name": "Line1_107_volume",
-                "label": "26",
-                "contentDescription": "twenty-six"
-              },
-              {
-                "type": "label",
-                "text": "207"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_207_lead_tank",
-                "label": "27",
-                "contentDescription": "twenty-seven"
-              },
-              {
-                "type": "textfield",
-                "name": "Line2_207_volume",
-                "label": "28",
-                "contentDescription": "twenty-eight"
+                "name": "PS_carbon_count_L2_CIP201",
+                "label": "4",
+                "contentDescription": "four"
               }
             ]
           }
@@ -1018,22 +808,21 @@
                           "class": "{{styles}}"
                         }
                       }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "horizontal",
-              "items": [
-                {
-                  "type": "vertical",
-                  "class": "no_padding",
-                  "components": [
+                    },
                     {
                       "type": "horizontal",
                       "components": {
                         "{{#each Table_Headers2}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers3}}": {
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"
@@ -1071,20 +860,12 @@
                                   "components": {
                                     "{{#each row_values}}": {
                                       "type": "horizontal",
+                                      "class": "{{ type=='label' ? 'table_row_name_styles' : 'table_row_value_styles'}}",
                                       "components": [
                                         {
-                                          "type": "vertical",
-                                          "class": "table_body_label_width",
-                                          "components": [
-                                            {
-                                              "type": "label",
-                                              "text": "{{#? label}}",
-                                              "class": "label_styles black_color center_align table_row_height",
-                                              "style": {
-                                                "height": "{{#? this.height}}"
-                                              }
-                                            }
-                                          ]
+                                          "type": "label",
+                                          "text": "{{type == 'textfield' ? label : ''}}",
+                                          "class": "center_align table_row_height black_color label_styles {{type == 'textfield' ? 'body_row_label_styles' : 'hide_field'}}"
                                         },
                                         {
                                           "type": "vertical",
@@ -1092,11 +873,9 @@
                                           "components": [
                                             {
                                               "type": "{{type}}",
-                                              "name": "{{name}}",
+                                              "name": "{{#? name}}",
                                               "text": "{{#? text}}",
-                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                              "class": "center_align black_color table_body_textfield_styles {{type=='label'? 'label_styles table_row_height body_row_label_styles': ''}}",
-                                              "contentDescription": "{{contentDescription}}"
+                                              "class": "center_align black_color {{type=='label'? 'label_styles table_row_height table_row_name_size': 'table_body_textfield_styles'}}"
                                             }
                                           ]
                                         }
@@ -1127,7 +906,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "{{redirect_url}}"
+                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
                 }
               }
             },
@@ -1265,7 +1044,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "{{redirect_url}}"
+                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
                 }
               }
             },
