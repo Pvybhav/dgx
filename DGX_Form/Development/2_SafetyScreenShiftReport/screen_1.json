@@ -110,6 +110,13 @@
       },
       "data": {
         "Page_Heading": "Safety Screen Shift Report",
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+        "loading_image_url": "file://infinit.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
         "Table1_Headers": [
           {
             "type": "label",
@@ -346,6 +353,41 @@
         "$pull": {
           "type": "$reload"
         },
+        "handleTemplateChange": {
+          "type": "$render",
+          "options": {
+            "template": "{{$jason.templateName}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
+          }
+        },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
+        },
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "class": "loading_image_styles"
+                }
+              ]
+            }
+          }
+        },
         "handleSave_screen1": {
           "type": "$global.set",
           "options": {
@@ -385,7 +427,7 @@
           "options": {
             "save": "true",
             "form_id": "form2",
-            "filename": "LeachAreaShiftReport"
+            "filename": "SafetyScreenShiftReport"
           },
           "success": {
             "type": "$global.reset",
@@ -1570,7 +1612,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
@@ -2438,7 +2480,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
@@ -2461,7 +2503,7 @@
               "type": "button",
               "text": "1",
               "contentDescription": "page-one",
-              "class": "layer_styles template_button_styles active_template_button_styles",
+              "class": "layer_styles template_button_styles",
               "style": {
                 "left": "40%"
               },
@@ -2476,14 +2518,14 @@
               "type": "button",
               "text": "2",
               "contentDescription": "page-two",
-              "class": "layer_styles template_button_styles",
+              "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
                 "left": "50%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
                 "options": {
-                  "templateName": "screen2"
+                  "templateName": "screen3"
                 }
               }
             },
@@ -2513,7 +2555,7 @@
               "action": {
                 "trigger": "handleTemplateChange",
                 "options": {
-                  "templateName": "screen2"
+                  "templateName": "screen3"
                 }
               }
             },
@@ -2578,7 +2620,7 @@
                       "contentDescription": "descriptionOfDeficiency",
                       "style": {
                         "width": "100%",
-                        "height": "30%",
+                        "height": "25%",
                         "size": "15"
                       }
                     }
@@ -2620,7 +2662,7 @@
                       "contentDescription": "Enter Description",
                       "style": {
                         "width": "100%",
-                        "height": "30%",
+                        "height": "25%",
                         "size": "15"
                       }
                     }
@@ -2642,7 +2684,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
@@ -2657,7 +2699,7 @@
               "action": {
                 "trigger": "handleTemplateChange",
                 "options": {
-                  "templateName": "screen1"
+                  "templateName": "screen2"
                 }
               }
             },
@@ -2665,7 +2707,7 @@
               "type": "button",
               "text": "1",
               "contentDescription": "page-one",
-              "class": "layer_styles template_button_styles active_template_button_styles",
+              "class": "layer_styles template_button_styles",
               "style": {
                 "left": "40%"
               },
@@ -2695,7 +2737,7 @@
               "type": "button",
               "text": "3",
               "contentDescription": "page-three",
-              "class": "layer_styles template_button_styles",
+              "class": "layer_styles template_button_styles active_template_button_styles",
               "style": {
                 "left": "60%"
               },
