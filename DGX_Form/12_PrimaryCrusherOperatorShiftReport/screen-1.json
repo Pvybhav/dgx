@@ -2720,7 +2720,8 @@
                         }
                     ],
                     "class": "no_padding",
-                    "layers": [{
+                    "layers": [
+                        {
                             "type": "image",
                             "url": "file://icons/home.png",
                             "contentDescription": "home",
@@ -2871,38 +2872,40 @@
                             "height": "3%"
                         }
                     },
-                    "sections": [{
-                            "type": "horizontal",
-                            "class": "no_padding",
-                            "items": [{
-                                "type": "horizontal",
-                                "class": "no_padding",
-                                "components": [{
-                                    "type": "horizontal",
-                                    "class": "no_padding table_row",
-                                    "components": {
-                                        "{{#each Table2_Headers}}": {
-                                            "type": "vertical",
-                                            "components": [{
-                                                "type": "label",
-                                                "text": "{{value}}",
-                                                "class": "{{styles}} center_align"
-                                            }]
-                                        }
-                                    },
-                                    "style": {
-                                        "padding_top": "1%"
-                                    }
-                                }]
-                            }]
-                        },
+                    "sections": [
                         {
                             "type": "vertical",
                             "items": [
-
                                 {
                                     "type": "vertical",
-                                    "components": [{
+                                    "class": "no_padding",
+                                    "items": [{
+                                        "type": "vertical",
+                                        "class": "no_padding",
+                                        "components": [{
+                                            "type": "horizontal",
+                                            "class": "no_padding table_row",
+                                            "components": {
+                                                "{{#each Table2_Headers}}": {
+                                                    "type": "horizontal",
+                                                    "components": [{
+                                                        "type": "label",
+                                                        "text": "{{value}}",
+                                                        "class": "{{styles}} center_align"
+                                                    }]
+                                                }
+                                            },
+                                            "style": {
+                                                "padding_top": "1%"
+                                            }
+                                        }]
+                                    }]
+                                },
+                                {
+                                    "type": "vertical",
+                                    "components": [
+
+                                        {
                                             "type": "vertical",
                                             "class": "no_padding",
                                             "components": [{
@@ -2951,15 +2954,12 @@
                                                                             }
                                                                         }
                                                                     }
-                                                                ],
-                                                                "class": "no_padding"
+                                                                ]
                                                             }
-                                                        ],
-                                                        "class": "no_padding"
+                                                        ]
                                                     }
                                                 }
-                                            }],
-                                            "class": "no_padding"
+                                            }]
                                         },
                                         {
                                             "type": "space",
@@ -2967,10 +2967,15 @@
                                                 "height": "10%"
                                             }
                                         }
-                                    ]
+                                    ],
+                                    "class": "no_padding"
                                 }
                             ],
+
+
+
                             "class": "no_padding"
+
                         }
                     ],
                     "class": "no_padding",
