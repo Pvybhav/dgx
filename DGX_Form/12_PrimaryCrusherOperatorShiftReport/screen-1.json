@@ -176,6 +176,11 @@
                     "border": "rgb(255, 255, 255)",
                     "height": "10%"
                 },
+                "table_header_name_styles2": {
+                    "width": "10%",
+                    "border": "rgb(255, 255, 255)",
+                    "height": "13%"
+                },
                 "table_header_value_styles": {
                     "width": "15%",
                     "border": "rgb(255, 255, 255)",
@@ -184,7 +189,7 @@
                 "table_header_value_styles2": {
                     "width": "18%",
                     "border": "rgb(255, 255, 255)",
-                    "height": "10%"
+                    "height": "13%"
                 },
                 "table_header_value_styles3": {
                     "width": "50%",
@@ -195,7 +200,7 @@
                     "height": "10%"
                 },
                 "table_row5": {
-                    "height": "10%"
+                    "height": "13%"
                 },
                 "table_header_width_styles": {
                     "width": "15%"
@@ -1191,7 +1196,7 @@
                         "type": "label",
                         "value": "Time",
                         "col_type": "col_name",
-                        "styles": "table_header_styles center_align table_header_name_styles"
+                        "styles": "table_header_styles center_align table_header_name_styles2"
                     },
                     {
                         "type": "label",
@@ -2883,7 +2888,7 @@
                                 "class": "no_padding",
                                 "components": [{
                                     "type": "horizontal",
-                                    "class": "no_padding table_row",
+                                    "class": "no_padding table_row5",
                                     "components": {
                                         "{{#each Table2_Headers}}": {
                                             "type": "horizontal",
@@ -3161,7 +3166,7 @@
                                 "class": "no_padding",
                                 "components": [{
                                     "type": "horizontal",
-                                    "class": "no_padding table_row",
+                                    "class": "no_padding table_row5",
                                     "components": {
                                         "{{#each Table3_Headers}}": {
                                             "type": "vertical",
