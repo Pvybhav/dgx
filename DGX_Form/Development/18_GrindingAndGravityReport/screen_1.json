@@ -154,8 +154,19 @@
           "height": "4%",
           "size": "15"
         },
+        "table24_textfield_styles": {
+          "width": "7%",
+          "height": "4%",
+          "size": "13"
+        },
         "table2_textfield_styles": {
           "width": "34%",
+          "height": "4%",
+          "size": "13",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table13_textfield_styles": {
+          "width": "17%",
           "height": "4%",
           "size": "13",
           "border": "rgb(255, 255, 255)"
@@ -503,6 +514,9 @@
             }
           }
         },
+        "$pull": {
+          "type": "$reload"
+        },
         "handleSave_screen1": {
           "type": "$global.set",
           "options": {
@@ -543,51 +557,7 @@
             "SAG_Mills_lube_pumps_running_line2_charge_4": "{{ $get.SAG_Mills_lube_pumps_running_line2_charge_4 || '' }}",
             "SAG_Mills_lube_pumps_running_line2_HP_5": "{{ $get.SAG_Mills_lube_pumps_running_line2_HP_5 || '' }}",
             "SAG_Mills_lube_pumps_running_line2_HP_6": "{{ $get.SAG_Mills_lube_pumps_running_line2_HP_6 || '' }}",
-            "SAG_Mills_lube_pumps_running_line2_HP_7": "{{ $get.SAG_Mills_lube_pumps_running_line2_HP_7 || '' }}",
-            "Ball_Mills_gear_lube_line1_drum_level": "{{ $get.Ball_Mills_gear_lube_line1_drum_level || '' }}",
-            "Ball_Mills_gear_lube_line1_heater_on": "{{ $get.Ball_Mills_gear_lube_line1_heater_on || '' }}",
-            "Ball_Mills_gear_lube_line2_drum_level": "{{ $get.Ball_Mills_gear_lube_line2_drum_level || '' }}",
-            "Ball_Mills_gear_lube_line2_heater_on": "{{ $get.Ball_Mills_gear_lube_line2_heater_on || '' }}",
-            "Ball_Mills_drive_motors_oil_level_site_glass_line1_m1": "{{ $get.Ball_Mills_drive_motors_oil_level_site_glass_line1_m1 || '' }}",
-            "Ball_Mills_drive_motors_oil_level_site_glass_line1_m2": "{{ $get.Ball_Mills_drive_motors_oil_level_site_glass_line1_m2 || '' }}",
-            "Ball_Mills_drive_motors_oil_level_site_glass_line2_m1": "{{ $get.Ball_Mills_drive_motors_oil_level_site_glass_line2_m1 || '' }}",
-            "Ball_Mills_drive_motors_oil_level_site_glass_line2_m2": "{{ $get.Ball_Mills_drive_motors_oil_level_site_glass_line2_m2 || '' }}",
-            "Ball_Mills_drive_motors_hx_inlet_temp_line1_m1": "{{ $get.Ball_Mills_drive_motors_hx_inlet_temp_line1_m1 || '' }}",
-            "Ball_Mills_drive_motors_hx_inlet_temp_line1_m2": "{{ $get.Ball_Mills_drive_motors_hx_inlet_temp_line1_m2 || '' }}",
-            "Ball_Mills_drive_motors_hx_inlet_temp_line2_m1": "{{ $get.Ball_Mills_drive_motors_hx_inlet_temp_line2_m1 || '' }}",
-            "Ball_Mills_drive_motors_hx_inlet_temp_line2_m2": "{{ $get.Ball_Mills_drive_motors_hx_inlet_temp_line2_m2 || '' }}",
-            "Ball_Mills_drive_motors_hx_outlet_temp_line1_m1": "{{ $get.Ball_Mills_drive_motors_hx_outlet_temp_line1_m1 || '' }}",
-            "Ball_Mills_drive_motors_hx_outlet_temp_line1_m2": "{{ $get.Ball_Mills_drive_motors_hx_outlet_temp_line1_m2 || '' }}",
-            "Ball_Mills_drive_motors_hx_outlet_temp_line2_m1": "{{ $get.Ball_Mills_drive_motors_hx_outlet_temp_line2_m1 || '' }}",
-            "Ball_Mills_drive_motors_hx_outlet_temp_line2_m2": "{{ $get.Ball_Mills_drive_motors_hx_outlet_temp_line2_m2 || '' }}",
-            "Ball_Mills_lube_pumps_running_line1_LP_1": "{{ $get.Ball_Mills_lube_pumps_running_line1_LP_1 || '' }}",
-            "Ball_Mills_lube_pumps_running_line1_LP_2": "{{ $get.Ball_Mills_lube_pumps_running_line1_LP_2 || '' }}",
-            "Ball_Mills_lube_pumps_running_line1_charge_3": "{{ $get.Ball_Mills_lube_pumps_running_line1_charge_3 || '' }}",
-            "Ball_Mills_lube_pumps_running_line1_charge_4": "{{ $get.Ball_Mills_lube_pumps_running_line1_charge_4 || '' }}",
-            "Ball_Mills_lube_pumps_running_line1_HP_5": "{{ $get.Ball_Mills_lube_pumps_running_line1_HP_5 || '' }}",
-            "Ball_Mills_lube_pumps_running_line1_HP_6": "{{ $get.Ball_Mills_lube_pumps_running_line1_HP_6 || '' }}",
-            "Ball_Mills_lube_pumps_running_line1_HP_7": "{{ $get.Ball_Mills_lube_pumps_running_line1_HP_7 || '' }}",
-            "Ball_Mills_lube_pumps_running_line2_LP_1": "{{ $get.Ball_Mills_lube_pumps_running_line2_LP_1 || '' }}",
-            "Ball_Mills_lube_pumps_running_line2_LP_2": "{{ $get.Ball_Mills_lube_pumps_running_line2_LP_2 || '' }}",
-            "Ball_Mills_lube_pumps_running_line2_charge_3": "{{ $get.Ball_Mills_lube_pumps_running_line2_charge_3 || '' }}",
-            "Ball_Mills_lube_pumps_running_line2_charge_4": "{{ $get.Ball_Mills_lube_pumps_running_line2_charge_4 || '' }}",
-            "Ball_Mills_lube_pumps_running_line2_HP_5": "{{ $get.Ball_Mills_lube_pumps_running_line2_HP_5 || '' }}",
-            "Ball_Mills_lube_pumps_running_line2_HP_6": "{{ $get.Ball_Mills_lube_pumps_running_line2_HP_6 || '' }}",
-            "Ball_Mills_lube_pumps_running_line2_HP_7": "{{ $get.Ball_Mills_lube_pumps_running_line2_HP_7 || '' }}",
-            "Ball_Mills_lube_room_skid_line1_filter_pods_Filter_ΔP": "{{ $get.Ball_Mills_lube_room_skid_line1_filter_pods_Filter_ΔP || '' }}",
-            "Ball_Mills_lube_room_skid_line1_plate_hxs_cooling_h2o_in": "{{ $get.Ball_Mills_lube_room_skid_line1_plate_hxs_cooling_h2o_in || '' }}",
-            "Ball_Mills_lube_room_skid_line1_plate_hxs_cooling_h2o_out": "{{ $get.Ball_Mills_lube_room_skid_line1_plate_hxs_cooling_h2o_out || '' }}",
-            "Ball_Mills_lube_room_skid_line1_plate_hxs_oil_in": "{{ $get.Ball_Mills_lube_room_skid_line1_plate_hxs_oil_in || '' }}",
-            "Ball_Mills_lube_room_skid_line1_plate_hxs_oil_out": "{{ $get.Ball_Mills_lube_room_skid_line1_plate_hxs_oil_out || '' }}",
-            "Ball_Mills_lube_room_skid_line1_site_glass_levels_LP_side": "{{ $get.Ball_Mills_lube_room_skid_line1_site_glass_levels_LP_side || '' }}",
-            "Ball_Mills_lube_room_skid_line1_site_glass_levels_HP_side": "{{ $get.Ball_Mills_lube_room_skid_line1_site_glass_levels_HP_side || '' }}",
-            "Ball_Mills_lube_room_skid_line2_filter_pods_Filter_ΔP": "{{ $get.Ball_Mills_lube_room_skid_line2_filter_pods_Filter_ΔP || '' }}",
-            "Ball_Mills_lube_room_skid_line2_plate_hxs_cooling_h2o_in": "{{ $get.Ball_Mills_lube_room_skid_line2_plate_hxs_cooling_h2o_in || '' }}",
-            "Ball_Mills_lube_room_skid_line2_plate_hxs_cooling_h2o_out": "{{ $get.Ball_Mills_lube_room_skid_line2_plate_hxs_cooling_h2o_out || '' }}",
-            "Ball_Mills_lube_room_skid_line2_plate_hxs_oil_in": "{{ $get.Ball_Mills_lube_room_skid_line2_plate_hxs_oil_in || '' }}",
-            "Ball_Mills_lube_room_skid_line2_plate_hxs_oil_out": "{{ $get.Ball_Mills_lube_room_skid_line2_plate_hxs_oil_out || '' }}",
-            "Ball_Mills_lube_room_skid_line2_site_glass_levels_LP_side": "{{ $get.Ball_Mills_lube_room_skid_line2_site_glass_levels_LP_side || '' }}",
-            "Ball_Mills_lube_room_skid_line2_site_glass_levels_HP_side": "{{ $get.Ball_Mills_lube_room_skid_line2_site_glass_levels_HP_side || '' }}"
+            "SAG_Mills_lube_pumps_running_line2_HP_7": "{{ $get.SAG_Mills_lube_pumps_running_line2_HP_7 || '' }}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -625,7 +595,11 @@
             "SAG_Mills_scalping_screens_line2_guards_intact": "{{ $get.SAG_Mills_scalping_screens_line2_guards_intact || '' }}",
             "SAG_Mills_scalping_screens_line2_feed_skirt": "{{ $get.SAG_Mills_scalping_screens_line2_feed_skirt || '' }}",
             "SAG_Mills_scalping_screens_line2_skirt_boards": "{{ $get.SAG_Mills_scalping_screens_line2_skirt_boards || '' }}",
-            "SAG_Mills_scalping_screens_line2_panels_change": "{{ $get.SAG_Mills_scalping_screens_line2_panels_change || '' }}"
+            "SAG_Mills_scalping_screens_line2_panels_change": "{{ $get.SAG_Mills_scalping_screens_line2_panels_change || '' }}",
+            "SAG_Mills_belt_magnets_status_001": "{{ $get.SAG_Mills_belt_magnets_status_001 }}",
+            "SAG_Mills_belt_magnets_status_021": "{{ $get.SAG_Mills_belt_magnets_status_021 }}",
+            "SAG_Mills_belt_magnets_status_002": "{{ $get.SAG_Mills_belt_magnets_status_002 }}",
+            "SAG_Mills_belt_magnets_status_022": "{{ $get.SAG_Mills_belt_magnets_status_022 }}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -637,7 +611,41 @@
         "handleSave_screen3": {
           "type": "$global.set",
           "options": {
-            "section_id": "form18"
+            "section_id": "form18",
+            "Ball_Mills_ball_buckets_added_line1_new": "{{ $get.Ball_Mills_ball_buckets_added_line1_new || '' }}",
+            "Ball_Mills_ball_buckets_added_line1_recycle": "{{ $get.Ball_Mills_ball_buckets_added_line1_recycle || '' }}",
+            "Ball_Mills_ball_buckets_added_line2_new": "{{ $get.Ball_Mills_ball_buckets_added_line2_new || '' }}",
+            "Ball_Mills_ball_buckets_added_line2_recycle": "{{ $get.Ball_Mills_ball_buckets_added_line2_recycle || '' }}",
+            "Ball_Mills_gear_lube_line1_drum_level": "{{ $get.Ball_Mills_gear_lube_line1_drum_level || '' }}",
+            "Ball_Mills_gear_lube_line1_heater_on": "{{ $get.Ball_Mills_gear_lube_line1_heater_on || '' }}",
+            "Ball_Mills_gear_lube_line2_drum_level": "{{ $get.Ball_Mills_gear_lube_line2_drum_level || '' }}",
+            "Ball_Mills_gear_lube_line2_heater_on": "{{ $get.Ball_Mills_gear_lube_line2_heater_on || '' }}",
+            "Ball_Mills_drive_motors_oil_level_site_glass_line1_m1": "{{ $get.Ball_Mills_drive_motors_oil_level_site_glass_line1_m1 || '' }}",
+            "Ball_Mills_drive_motors_oil_level_site_glass_line1_m2": "{{ $get.Ball_Mills_drive_motors_oil_level_site_glass_line1_m2 || '' }}",
+            "Ball_Mills_drive_motors_oil_level_site_glass_line2_m1": "{{ $get.Ball_Mills_drive_motors_oil_level_site_glass_line2_m1 || '' }}",
+            "Ball_Mills_drive_motors_oil_level_site_glass_line2_m2": "{{ $get.Ball_Mills_drive_motors_oil_level_site_glass_line2_m2 || '' }}",
+            "Ball_Mills_drive_motors_hx_inlet_temp_line1_m1": "{{ $get.Ball_Mills_drive_motors_hx_inlet_temp_line1_m1 || '' }}",
+            "Ball_Mills_drive_motors_hx_inlet_temp_line1_m2": "{{ $get.Ball_Mills_drive_motors_hx_inlet_temp_line1_m2 || '' }}",
+            "Ball_Mills_drive_motors_hx_inlet_temp_line2_m1": "{{ $get.Ball_Mills_drive_motors_hx_inlet_temp_line2_m1 || '' }}",
+            "Ball_Mills_drive_motors_hx_inlet_temp_line2_m2": "{{ $get.Ball_Mills_drive_motors_hx_inlet_temp_line2_m2 || '' }}",
+            "Ball_Mills_drive_motors_hx_outlet_temp_line1_m1": "{{ $get.Ball_Mills_drive_motors_hx_outlet_temp_line1_m1 || '' }}",
+            "Ball_Mills_drive_motors_hx_outlet_temp_line1_m2": "{{ $get.Ball_Mills_drive_motors_hx_outlet_temp_line1_m2 || '' }}",
+            "Ball_Mills_drive_motors_hx_outlet_temp_line2_m1": "{{ $get.Ball_Mills_drive_motors_hx_outlet_temp_line2_m1 || '' }}",
+            "Ball_Mills_drive_motors_hx_outlet_temp_line2_m2": "{{ $get.Ball_Mills_drive_motors_hx_outlet_temp_line2_m2 || '' }}",
+            "Ball_Mills_lube_pumps_running_line1_LP_1": "{{ $get.Ball_Mills_lube_pumps_running_line1_LP_1 || '' }}",
+            "Ball_Mills_lube_pumps_running_line1_LP_2": "{{ $get.Ball_Mills_lube_pumps_running_line1_LP_2 || '' }}",
+            "Ball_Mills_lube_pumps_running_line1_charge_3": "{{ $get.Ball_Mills_lube_pumps_running_line1_charge_3 || '' }}",
+            "Ball_Mills_lube_pumps_running_line1_charge_4": "{{ $get.Ball_Mills_lube_pumps_running_line1_charge_4 || '' }}",
+            "Ball_Mills_lube_pumps_running_line1_HP_5": "{{ $get.Ball_Mills_lube_pumps_running_line1_HP_5 || '' }}",
+            "Ball_Mills_lube_pumps_running_line1_HP_6": "{{ $get.Ball_Mills_lube_pumps_running_line1_HP_6 || '' }}",
+            "Ball_Mills_lube_pumps_running_line1_HP_7": "{{ $get.Ball_Mills_lube_pumps_running_line1_HP_7 || '' }}",
+            "Ball_Mills_lube_pumps_running_line2_LP_1": "{{ $get.Ball_Mills_lube_pumps_running_line2_LP_1 || '' }}",
+            "Ball_Mills_lube_pumps_running_line2_LP_2": "{{ $get.Ball_Mills_lube_pumps_running_line2_LP_2 || '' }}",
+            "Ball_Mills_lube_pumps_running_line2_charge_3": "{{ $get.Ball_Mills_lube_pumps_running_line2_charge_3 || '' }}",
+            "Ball_Mills_lube_pumps_running_line2_charge_4": "{{ $get.Ball_Mills_lube_pumps_running_line2_charge_4 || '' }}",
+            "Ball_Mills_lube_pumps_running_line2_HP_5": "{{ $get.Ball_Mills_lube_pumps_running_line2_HP_5 || '' }}",
+            "Ball_Mills_lube_pumps_running_line2_HP_6": "{{ $get.Ball_Mills_lube_pumps_running_line2_HP_6 || '' }}",
+            "Ball_Mills_lube_pumps_running_line2_HP_7": "{{ $get.Ball_Mills_lube_pumps_running_line2_HP_7 || '' }}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -649,7 +657,21 @@
         "handleSave_screen4": {
           "type": "$global.set",
           "options": {
-            "section_id": "form18"
+            "section_id": "form18",
+            "Ball_Mills_lube_room_skid_line1_filter_pods_Filter_ΔP": "{{ $get.Ball_Mills_lube_room_skid_line1_filter_pods_Filter_ΔP || '' }}",
+            "Ball_Mills_lube_room_skid_line1_plate_hxs_cooling_h2o_in": "{{ $get.Ball_Mills_lube_room_skid_line1_plate_hxs_cooling_h2o_in || '' }}",
+            "Ball_Mills_lube_room_skid_line1_plate_hxs_cooling_h2o_out": "{{ $get.Ball_Mills_lube_room_skid_line1_plate_hxs_cooling_h2o_out || '' }}",
+            "Ball_Mills_lube_room_skid_line1_plate_hxs_oil_in": "{{ $get.Ball_Mills_lube_room_skid_line1_plate_hxs_oil_in || '' }}",
+            "Ball_Mills_lube_room_skid_line1_plate_hxs_oil_out": "{{ $get.Ball_Mills_lube_room_skid_line1_plate_hxs_oil_out || '' }}",
+            "Ball_Mills_lube_room_skid_line1_site_glass_levels_LP_side": "{{ $get.Ball_Mills_lube_room_skid_line1_site_glass_levels_LP_side || '' }}",
+            "Ball_Mills_lube_room_skid_line1_site_glass_levels_HP_side": "{{ $get.Ball_Mills_lube_room_skid_line1_site_glass_levels_HP_side || '' }}",
+            "Ball_Mills_lube_room_skid_line2_filter_pods_Filter_ΔP": "{{ $get.Ball_Mills_lube_room_skid_line2_filter_pods_Filter_ΔP || '' }}",
+            "Ball_Mills_lube_room_skid_line2_plate_hxs_cooling_h2o_in": "{{ $get.Ball_Mills_lube_room_skid_line2_plate_hxs_cooling_h2o_in || '' }}",
+            "Ball_Mills_lube_room_skid_line2_plate_hxs_cooling_h2o_out": "{{ $get.Ball_Mills_lube_room_skid_line2_plate_hxs_cooling_h2o_out || '' }}",
+            "Ball_Mills_lube_room_skid_line2_plate_hxs_oil_in": "{{ $get.Ball_Mills_lube_room_skid_line2_plate_hxs_oil_in || '' }}",
+            "Ball_Mills_lube_room_skid_line2_plate_hxs_oil_out": "{{ $get.Ball_Mills_lube_room_skid_line2_plate_hxs_oil_out || '' }}",
+            "Ball_Mills_lube_room_skid_line2_site_glass_levels_LP_side": "{{ $get.Ball_Mills_lube_room_skid_line2_site_glass_levels_LP_side || '' }}",
+            "Ball_Mills_lube_room_skid_line2_site_glass_levels_HP_side": "{{ $get.Ball_Mills_lube_room_skid_line2_site_glass_levels_HP_side || '' }}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -855,10 +877,18 @@
                 "SAG_Mills_conveyors_601_023_chutes",
                 "SAG_Mills_conveyors_601_023_guards_pull_chord",
                 "SAG_Mills_conveyors_601_023_skirting",
+                "SAG_Mills_belt_magnets_status_001",
+                "SAG_Mills_belt_magnets_status_021",
+                "SAG_Mills_belt_magnets_status_002",
+                "SAG_Mills_belt_magnets_status_022",
                 "Ball_Mills_feed_chute_bolts_leaking_line1",
                 "Ball_Mills_feed_chute_bolts_leaking_line2",
                 "Ball_Mills_feed_chute_feed_seal_leaking_line1",
                 "Ball_Mills_feed_chute_feed_seal_leaking_line2",
+                "Ball_Mills_ball_buckets_added_line1_new",
+                "Ball_Mills_ball_buckets_added_line1_recycle",
+                "Ball_Mills_ball_buckets_added_line2_new",
+                "Ball_Mills_ball_buckets_added_line2_recycle",
                 "Ball_Mills_liner_bolts_broken_bolts_line1",
                 "Ball_Mills_liner_bolts_broken_bolts_line2",
                 "Ball_Mills_liner_bolts_leaking_bolts_line1",
@@ -4142,11 +4172,15 @@
                     {
                       "type": "horizontal",
                       "class": "no_padding center_align table_header_height",
+                      "style": {
+                        "height": "18%"
+                      },
                       "components": [
                         {
                           "type": "vertical",
                           "style": {
-                            "width": "16%"
+                            "width": "16%",
+                            "height": "18%"
                           },
                           "class": "table_name_background table_name_height center_align",
                           "components": [
@@ -4160,7 +4194,8 @@
                         {
                           "type": "vertical",
                           "style": {
-                            "width": "24%"
+                            "width": "24%",
+                            "height": "18%"
                           },
                           "components": [
                             {
@@ -4178,7 +4213,7 @@
                                     {
                                       "type": "label",
                                       "text": "1",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 },
@@ -4189,7 +4224,7 @@
                                     {
                                       "type": "label",
                                       "text": "2",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 }
@@ -4200,7 +4235,8 @@
                         {
                           "type": "vertical",
                           "style": {
-                            "width": "24%"
+                            "width": "24%",
+                            "height": "18%"
                           },
                           "components": [
                             {
@@ -4218,7 +4254,7 @@
                                     {
                                       "type": "label",
                                       "text": "3",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 },
@@ -4229,7 +4265,7 @@
                                     {
                                       "type": "label",
                                       "text": "4",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 }
@@ -4240,7 +4276,8 @@
                         {
                           "type": "vertical",
                           "style": {
-                            "width": "36%"
+                            "width": "36%",
+                            "height": "18%"
                           },
                           "components": [
                             {
@@ -4258,7 +4295,7 @@
                                     {
                                       "type": "label",
                                       "text": "5",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 },
@@ -4269,7 +4306,7 @@
                                     {
                                       "type": "label",
                                       "text": "6",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 },
@@ -4280,7 +4317,7 @@
                                     {
                                       "type": "label",
                                       "text": "7",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 }
@@ -5399,6 +5436,129 @@
                       "class": "table_separation_space_styles"
                     },
                     {
+                      "type": "horizontal",
+                      "class": "no_padding center_align table_header_height",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "class": "table_name_background table_name_height center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Belt Magnets Status",
+                              "class": "center_align black_color table_name_styles bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "class": "center_align no_padding",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "class": "table_row_height table_even_row_styles",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "001",
+                                  "class": "center_align black_color"
+                                },
+                                {
+                                  "type": "dropdown",
+                                  "name": "SAG_Mills_belt_magnets_status_001",
+                                  "value": "{{$global.SAG_Mills_belt_magnets_status_001}}",
+                                  "class": "center_align black_color table_even_row_styles",
+                                  "options": [
+                                    {
+                                      "value": "Running",
+                                      "defaultSelected": "true"
+                                    },
+                                    {
+                                      "value": "Down",
+                                      "defaultSelected": "false"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "label",
+                                  "text": "021",
+                                  "class": "center_align black_color"
+                                },
+                                {
+                                  "type": "dropdown",
+                                  "name": "SAG_Mills_belt_magnets_status_021",
+                                  "value": "{{$global.SAG_Mills_belt_magnets_status_021}}",
+                                  "class": "center_align black_color table_even_row_styles",
+                                  "options": [
+                                    {
+                                      "value": "Running",
+                                      "defaultSelected": "true"
+                                    },
+                                    {
+                                      "value": "Down",
+                                      "defaultSelected": "false"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "table_row_height table_odd_row_styles",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "002",
+                                  "class": "center_align black_color"
+                                },
+                                {
+                                  "type": "dropdown",
+                                  "name": "SAG_Mills_belt_magnets_status_002",
+                                  "value": "{{$global.SAG_Mills_belt_magnets_status_002}}",
+                                  "class": "center_align black_color table_odd_row_styles",
+                                  "options": [
+                                    {
+                                      "value": "Running",
+                                      "defaultSelected": "true"
+                                    },
+                                    {
+                                      "value": "Down",
+                                      "defaultSelected": "false"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "label",
+                                  "text": "022",
+                                  "class": "center_align black_color"
+                                },
+                                {
+                                  "type": "dropdown",
+                                  "name": "SAG_Mills_belt_magnets_status_022",
+                                  "value": "{{$global.SAG_Mills_belt_magnets_status_022}}",
+                                  "class": "center_align black_color table_odd_row_styles",
+                                  "options": [
+                                    {
+                                      "value": "Running",
+                                      "defaultSelected": "true"
+                                    },
+                                    {
+                                      "value": "Down",
+                                      "defaultSelected": "false"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
                       "type": "space",
                       "style": {
                         "height": "10%"
@@ -5548,6 +5708,10 @@
                       "style": {
                         "width": "100%"
                       }
+                    },
+                    {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
                     },
                     {
                       "type": "horizontal",
@@ -5739,6 +5903,85 @@
                           ]
                         }
                       }
+                    },
+                    {
+                      "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding center_align table_header_height",
+                      "style": {
+                        "height": "18%"
+                      },
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "# Ball Buckets Added",
+                              "class": "center_align table_header_height black_color table_name_styles bold table_name_background table_name_height"
+                            },
+                            {
+                              "type": "vertical",
+                              "class": "table_header_height",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Line 1",
+                                  "class": "center_align table_row_height black_color table_header_styles"
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "textfield",
+                                      "name": "Ball_Mills_ball_buckets_added_line1_new",
+                                      "value": "{{ $global.Ball_Mills_ball_buckets_added_line1_new || ''}}",
+                                      "class": "center_align black_color table_even_row_styles table13_textfield_styles"
+                                    },
+                                    {
+                                      "type": "textfield",
+                                      "name": "Ball_Mills_ball_buckets_added_line1_recycle",
+                                      "value": "{{ $global.Ball_Mills_ball_buckets_added_line1_recycle || ''}}",
+                                      "class": "center_align black_color table_even_row_styles table13_textfield_styles"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "class": "table_header_height",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Line 2",
+                                  "class": "center_align table_row_height black_color table_header_styles"
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": [
+                                    {
+                                      "type": "textfield",
+                                      "name": "Ball_Mills_ball_buckets_added_line2_new",
+                                      "value": "{{ $global.Ball_Mills_ball_buckets_added_line2_new || ''}}",
+                                      "class": "center_align black_color table_even_row_styles table13_textfield_styles"
+                                    },
+                                    {
+                                      "type": "textfield",
+                                      "name": "Ball_Mills_ball_buckets_added_line2_recycle",
+                                      "value": "{{ $global.Ball_Mills_ball_buckets_added_line2_recycle || ''}}",
+                                      "class": "center_align black_color table_even_row_styles table13_textfield_styles"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
                       "type": "space",
@@ -6214,7 +6457,7 @@
                                     {
                                       "type": "label",
                                       "text": "M-1",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 },
@@ -6225,7 +6468,7 @@
                                     {
                                       "type": "label",
                                       "text": "M-2",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 }
@@ -6254,7 +6497,7 @@
                                     {
                                       "type": "label",
                                       "text": "M-1",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 },
@@ -6265,7 +6508,7 @@
                                     {
                                       "type": "label",
                                       "text": "M-2",
-                                      "class": "black_color center_align"
+                                      "class": "black_color center_align table_row_height"
                                     }
                                   ]
                                 }
@@ -6594,6 +6837,10 @@
                     },
                     {
                       "type": "space",
+                      "class": "table_separation_space_styles"
+                    },
+                    {
+                      "type": "space",
                       "style": {
                         "height": "10%"
                       }
@@ -6735,14 +6982,6 @@
                   "type": "vertical",
                   "class": "no_padding",
                   "components": [
-                    {
-                      "type": "label",
-                      "text": " Belt Magnets Status",
-                      "class": "center_align table_header_styles table_sub_header_styles",
-                      "style": {
-                        "width": "100%"
-                      }
-                    },
                     {
                       "type": "space",
                       "class": "table_separation_space_styles"
@@ -7221,7 +7460,7 @@
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table24_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
-                                              "class": "table_row_height center_align black_color table_body_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles table24_body_value_styles' : 'switch_styles table_odd_row_styles table24_body_value_styles' : ''}}",
+                                              "class": "table_row_height center_align black_color table24_textfield_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles table24_body_value_styles' : 'switch_styles table_odd_row_styles table24_body_value_styles' : ''}}",
                                               "action": {
                                                 "trigger": "handleSwitchValues",
                                                 "options": {

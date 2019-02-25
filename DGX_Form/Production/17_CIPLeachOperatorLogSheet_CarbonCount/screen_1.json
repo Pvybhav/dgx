@@ -4,6 +4,7 @@
       "title": "Form-17",
       "json_id": "form17",
       "description": "CIP/Leach Operator Log Sheet - Carbon Count",
+      "form_id": "form17",
       "offline": "true",
       "styles": {
         "center_align": {
@@ -241,6 +242,7 @@
           "type": "$global.reset",
           "options": {
             "save": "true",
+            "form_id": "form17",
             "filename": "CIPLeachOperatorLogSheet_CarbonCount"
           },
           "success": {
@@ -286,14 +288,17 @@
               ]
             },
             "success": {
-              "type": "$reload"
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
             }
           }
         }
       },
       "data": {
-        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
         "Page_Heading": "CIP/Leach Operator Log Sheet - Carbon Count",
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
         "loading_image_url": "file://infinit.gif",
         "home_icon": "file://icons/home.png",
         "submit_icon": "file://icons/submit.png",

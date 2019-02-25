@@ -3,6 +3,7 @@
     "head": {
       "title": "Primary Crusher Operator Shift Report",
       "description": "",
+      "form_id": "form12",
       "offline": "true",
       "styles": {
         "no_padding": {
@@ -765,12 +766,6 @@
                 }
               }
             }
-          }
-        },
-        "$pull": {
-          "type": "$reload",
-          "success": {
-            "type": "$render"
           }
         },
         "handleNavigation": {

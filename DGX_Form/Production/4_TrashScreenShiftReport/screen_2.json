@@ -308,12 +308,6 @@
             }
           }
         },
-        "$pull": {
-          "type": "$reload",
-          "success": {
-            "type": "$render"
-          }
-        },
         "handleSave": {
           "type": "$global.set",
           "options": {

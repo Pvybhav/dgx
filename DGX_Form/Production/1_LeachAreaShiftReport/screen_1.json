@@ -385,8 +385,7 @@
             "cyanide_lines_l2_112": "{{$global.cyanide_lines_l2_112 == null ? true : $global.cyanide_lines_l2_112}}",
             "cyanide_lines_l2_113": "{{$global.cyanide_lines_l2_113 == null ? true : $global.cyanide_lines_l2_113}}",
             "cyanide_lines_l2_114": "{{$global.cyanide_lines_l2_114 == null ? true : $global.cyanide_lines_l2_114}}",
-            "cyanide_lines_l2_115": "{{$global.cyanide_lines_l2_115 == null ? true : $global.cyanide_lines_l2_115}}",
-            "f1_s2_description": "{{$global.f1_s2_description || ''}}"
+            "cyanide_lines_l2_115": "{{$global.cyanide_lines_l2_115 == null ? true : $global.cyanide_lines_l2_115}}"
           },
           "success": {
             "type": "$render",
@@ -459,7 +458,7 @@
           "type": "$global.set",
           "options": {
             "section_id": "form1",
-            "f1_s2_description": "{{$get.description || $global.description || ''}}"
+            "f1_s2_description": "{{$get.description || $global.f1_s2_description || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -4187,7 +4186,7 @@
                   "components": [
                     {
                       "type": "textarea",
-                      "value": "{{$global.description || ''}}",
+                      "value": "{{$global.f1_s2_description || ''}}",
                       "name": "description",
                       "placeholder": "Enter description",
                       "contentDescription": "Enter Description",
