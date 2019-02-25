@@ -2617,32 +2617,33 @@
                         },
                         {
                             "type": "vertical",
-                            "items": [
-                                {
-                                    "type": "vertical",
-                                    "class": "no_padding",
-                                    "components": [{
-                                        "type": "vertical",
-                                        "class": "no_padding",
-                                        "components": [{
+                            "class": "no_padding",
+                            "items": [{
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [{
+                                    "type": "horizontal",
+                                    "class": "no_padding table_row",
+                                    "components": {
+                                        "{{#each Table1_Headers}}": {
                                             "type": "horizontal",
-                                            "class": "no_padding table_row",
-                                            "components": {
-                                                "{{#each Table1_Headers}}": {
-                                                    "type": "horizontal",
-                                                    "components": [{
-                                                        "type": "label",
-                                                        "text": "{{value}}",
-                                                        "class": "{{styles}} center_align"
-                                                    }]
-                                                }
-                                            },
-                                            "style": {
-                                                "padding_top": "1%"
-                                            }
-                                        }]
-                                    }]
-                                },
+                                            "components": [{
+                                                "type": "label",
+                                                "text": "{{value}}",
+                                                "class": "{{styles}} center_align"
+                                            }]
+                                        }
+                                    },
+                                    "style": {
+                                        "padding_top": "1%"
+                                    }
+                                }]
+                            }]
+                        },
+                        {
+                            "type": "vertical",
+                            "items": [
+                               
                                 {
                                     "type": "vertical",
                                     "components": [
@@ -2876,32 +2877,33 @@
                     "sections": [
                         {
                             "type": "vertical",
-                            "items": [
-                                {
-                                    "type": "vertical",
-                                    "class": "no_padding",
-                                    "components": [{
-                                        "type": "vertical",
-                                        "class": "no_padding",
-                                        "components": [{
+                            "class": "no_padding",
+                            "items": [{
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [{
+                                    "type": "horizontal",
+                                    "class": "no_padding table_row",
+                                    "components": {
+                                        "{{#each Table2_Headers}}": {
                                             "type": "horizontal",
-                                            "class": "no_padding table_row",
-                                            "components": {
-                                                "{{#each Table2_Headers}}": {
-                                                    "type": "horizontal",
-                                                    "components": [{
-                                                        "type": "label",
-                                                        "text": "{{value}}",
-                                                        "class": "{{styles}} center_align"
-                                                    }]
-                                                }
-                                            },
-                                            "style": {
-                                                "padding_top": "1%"
-                                            }
-                                        }]
-                                    }]
-                                },
+                                            "components": [{
+                                                "type": "label",
+                                                "text": "{{value}}",
+                                                "class": "{{styles}} center_align"
+                                            }]
+                                        }
+                                    },
+                                    "style": {
+                                        "padding_top": "1%"
+                                    }
+                                }]
+                            }]
+                        },
+                        {
+                            "type": "vertical",
+                            "items": [
+                                
                                 {
                                     "type": "vertical",
                                     "components": [
