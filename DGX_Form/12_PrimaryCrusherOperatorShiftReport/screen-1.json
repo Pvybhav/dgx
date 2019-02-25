@@ -2618,30 +2618,26 @@
                             "type": "vertical",
                             "items": [
                                 {
-                                    "type": "vertical",
-                                    "class": "no_padding",
-                                    "items": [{
+                                    "type": "horizontal",
+                                    "items": [
+                                      {
                                         "type": "vertical",
-                                        "class": "no_padding",
-                                        "components": [{
-                                            "type": "horizontal",
                                             "class": "no_padding table_row",
+                                        "components": [
+                                          {
+                                            "type": "horizontal",
                                             "components": {
-                                                "{{#each Table1_Headers}}": {
-                                                    "type": "horizontal",
-                                                    "components": [{
-                                                        "type": "label",
-                                                        "text": "{{value}}",
-                                                        "class": "{{styles}} center_align"
-                                                    }]
-                                                }
-                                            },
-                                            "style": {
-                                                "padding_top": "1%"
+                                              "{{#each Table1_Headers}}": {
+                                                "type": "label",
+                                                "text": "{{value}}",
+                                                 "class": "{{styles}} center_align"
+                                              }
                                             }
-                                        }]
-                                    }]
-                                },
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
                                 {
                                     "type": "vertical",
                                     "components": [
