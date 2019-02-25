@@ -3388,928 +3388,939 @@
                             "height": "3%"
                         }
                     },
-                    "sections":  [
+                    "sections":
+                    [
                         {
-                          "type": "horizontal",
-                          "class": "no_padding",
-                          "items": [
-                            {
-                              "type": "horizontal",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding table_row",
-                                  "components": {
-                                    "{{#each Table1_Headers}}": {
-                                      "type": "vertical",
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{value}}",
-                                          "class": "{{styles}} center_align"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "style": {
-                                    "padding_top": "1%"
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        },
+                            "type":"vertical",
+                            "items":[
+                                
                         {
-                          "type": "vertical",
-                          "items": [
-                            {
-                              "type": "vertical",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "vertical",
-                                  "components": {
-                                    "{{#each Table1_Rows}}": {
-                                      "{{#let}}": [
-                                        {
-                                          "row_index": "{{$index}}"
-                                        },
-                                        {
-                                          "type": "horizontal",
-                                          "class": "center_align",
-                                          "style": {
-                                            "height": "6%"
-                                          },
-                                          "components": [
-                                            {
-                                              "type": "horizontal",
-                                              "class": "table_body_name_styles",
-                                              "components": [
-                                                {
-                                                  "type": "label",
-                                                  "text": "{{this.row_name}}",
-                                                  "class": "{{this.row_styles}} table_row_height"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "type": "horizontal",
-                                              "style": {
-                                                "width": "90%"
-                                              },
-                                              "components": {
-                                                "{{#each row_values}}": {
-                                                  "type": "horizontal",
-                                                  "components": [
-                                                    {
-                                                      "type": "vertical",
-                                                      "components": [
-                                                        {
-                                                          "type": "{{type}}",
-                                                          "name": "{{name}}",
-                                                          "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                          "class": "{{styles}}",
-                                                          "style": {
-                                                            "width": "15%",
-                                                            "padding_bottom": "1%"
-                                                          }
-                                                        }
-                                                      ]
-                                                    }
-                                                  ]
-                                                }
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding",
-                          "items": [
-                            {
-                              "type": "horizontal",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding table_row",
-                                  "components": {
-                                    "{{#each Table2_Headers}}": {
-                                      "type": "vertical",
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{value}}",
-                                          "class": "{{styles}} center_align"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "style": {
-                                    "padding_top": "1%"
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "items": [
-                            {
-                              "type": "vertical",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "vertical",
-                                  "components": {
-                                    "{{#each Table2_Rows}}": {
-                                      "{{#let}}": [
-                                        {
-                                          "row_index": "{{$index}}"
-                                        },
-                                        {
-                                          "type": "horizontal",
-                                          "class": "center_align",
-                                          "style": {
-                                            "height": "6%"
-                                          },
-                                          "components": [
-                                            {
-                                              "type": "horizontal",
-                                              "class": "table_body_name_styles",
-                                              "components": [
-                                                {
-                                                  "type": "label",
-                                                  "text": "{{this.row_name}}",
-                                                  "class": "{{this.row_styles}} table_row_height"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "type": "horizontal",
-                                              "style": {
-                                                "width": "90%"
-                                              },
-                                              "components": {
-                                                "{{#each row_values}}": {
-                                                  "type": "horizontal",
-                                                  "components": [
-                                                    {
-                                                      "type": "vertical",
-                                                      "components": [
-                                                        {
-                                                          "type": "{{type}}",
-                                                          "name": "{{name}}",
-                                                          "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                          "class": "{{styles}}",
-                                                          "style": {
-                                                            "width": "15%",
-                                                            "padding_bottom": "1%"
-                                                          }
-                                                        }
-                                                      ]
-                                                    }
-                                                  ]
-                                                }
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding",
-                          "items": [
-                            {
-                              "type": "horizontal",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding table_row",
-                                  "components": {
-                                    "{{#each Table3_Headers}}": {
-                                      "type": "vertical",
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{value}}",
-                                          "class": "{{styles}} center_align"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "style": {
-                                    "padding_top": "1%"
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "vertical",
-                          "items": [
-                            {
-                              "type": "vertical",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "vertical",
-                                  "components": {
-                                    "{{#each Table3_Rows}}": {
-                                      "{{#let}}": [
-                                        {
-                                          "row_index": "{{$index}}"
-                                        },
-                                        {
-                                          "type": "horizontal",
-                                          "class": "center_align",
-                                          "style": {
-                                            "height": "6%"
-                                          },
-                                          "components": [
-                                            {
-                                              "type": "horizontal",
-                                              "class": "table_body_name_styles",
-                                              "components": [
-                                                {
-                                                  "type": "label",
-                                                  "text": "{{this.row_name}}",
-                                                  "class": "{{this.row_styles}} table_row_height"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "type": "horizontal",
-                                              "style": {
-                                                "width": "90%"
-                                              },
-                                              "components": {
-                                                "{{#each row_values}}": {
-                                                  "type": "horizontal",
-                                                  "components": [
-                                                    {
-                                                      "type": "vertical",
-                                                      "components": [
-                                                        {
-                                                          "type": "{{type}}",
-                                                          "name": "{{name}}",
-                                                          "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                          "class": "{{styles}}",
-                                                          "style": {
-                                                            "width": "18%",
-                                                            "padding_bottom": "1%"
-                                                          }
-                                                        }
-                                                      ]
-                                                    }
-                                                  ]
-                                                }
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding",
-                          "items": [
-                            {
-                              "type": "horizontal",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding table_row",
-                                  "components": {
-                                    "{{#each Table4_Headers}}": {
-                                      "type": "vertical",
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{value}}",
-                                          "class": "{{styles}} center_align"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "style": {
-                                    "padding_top": "1%"
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding row_style",
-                          "items": [
-                            {
-                              "type": "vertical",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding row_style",
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "10%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_loop_text1",
-                                          "value": "{{$global.primary_crusher_screen4_loop_text1 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "10%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_description_text1",
-                                          "value": "{{$global.primary_crusher_screen4_description_text1 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_reason_text1",
-                                          "value": "{{$global.primary_crusher_screen4_reason_text1 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "switch",
-                                      "name": "authorized_by_supervisor_switch1",
-                                      "value": "{{$global.authorized_by_supervisor_switch1}}",
-                                      "class": "switch_styles content_style_even_switch center_align",
-                                      "action": {
-                                        "type": "$global.set",
-                                        "options": {
-                                          "section_id": "form12_page4",
-                                          "authorized_by_supervisor_switch1": "{{$get.authorized_by_supervisor_switch1}}"
-                                        }
+                            "type": "horizontal",
+                            "class": "no_padding",
+                            "components": [
+                              {
+                                "type": "horizontal",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding table_row",
+                                    "components": {
+                                      "{{#each Table1_Headers}}": {
+                                        "type": "vertical",
+                                        "components": [
+                                          {
+                                            "type": "label",
+                                            "text": "{{value}}",
+                                            "class": "{{styles}} center_align"
+                                          }
+                                        ]
                                       }
                                     },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_timein_text1",
-                                          "value": "{{$global.primary_crusher_screen4_timein_text1 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_timeout_text1",
-                                          "value": "{{$global.primary_crusher_screen4_timeout_text1 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
+                                    "style": {
+                                      "padding_top": "1%"
                                     }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding row_style",
-                          "items": [
-                            {
-                              "type": "vertical",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding row_style",
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "10%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_loop_text2",
-                                          "value": "{{$global.primary_crusher_screen4_loop_text2 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "10%"
-                                          },
-                                          "class": "content_style_odd"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_description_text2",
-                                          "value": "{{$global.primary_crusher_screen4_description_text2 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_odd"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_reason_text2",
-                                          "value": "{{$global.primary_crusher_screen4_reason_text2 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_odd"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "switch",
-                                      "name": "authorized_by_supervisor_switch2",
-                                      "value": "{{$global.authorized_by_supervisor_switch2}}",
-                                      "class": "switch_styles content_style_odd_switch center_align",
-                                      "action": {
-                                        "type": "$global.set",
-                                        "options": {
-                                          "section_id": "form12_page4",
-                                          "authorized_by_supervisor_switch2": "{{$get.authorized_by_supervisor_switch2}}"
-                                        }
-                                      }
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_timein_text2",
-                                          "value": "{{$global.primary_crusher_screen4_timein_text2 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_odd"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_timeout_text2",
-                                          "value": "{{$global.primary_crusher_screen4_timeout_text2 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_odd"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding row_style",
-                          "items": [
-                            {
-                              "type": "vertical",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding row_style",
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "10%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_loop_text3",
-                                          "value": "{{$global.primary_crusher_screen4_loop_text3 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "10%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_description_text3",
-                                          "value": "{{$global.primary_crusher_screen4_description_text3 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_reason_text3",
-                                          "value": "{{$global.primary_crusher_screen4_reason_text3 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "switch",
-                                      "name": "authorized_by_supervisor_switch3",
-                                      "value": "{{$global.authorized_by_supervisor_switch3}}",
-                                      "class": "switch_styles content_style_even_switch center_align",
-                                      "action": {
-                                        "type": "$global.set",
-                                        "options": {
-                                          "section_id": "form12_page4",
-                                          "authorized_by_supervisor_switch3": "{{$get.authorized_by_supervisor_switch3}}"
-                                        }
-                                      }
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_timein_text3",
-                                          "value": "{{$global.primary_crusher_screen4_timein_text3 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "18%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_timeout_text3",
-                                          "value": "{{$global.primary_crusher_screen4_timeout_text3 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "18%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding",
-                          "items": [
-                            {
-                              "type": "horizontal",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding table_row5",
-                                  "components": {
-                                    "{{#each Table5_Headers}}": {
-                                      "type": "vertical",
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{value}}",
-                                          "class": "{{styles}} center_align"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "style": {
-                                    "padding_top": "1%"
                                   }
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding row_style",
-                          "items": [
-                            {
-                              "type": "vertical",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding row_style",
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "50%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_notification_text1",
-                                          "value": "{{$global.primary_crusher_screen4_notification_text1 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "50%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "50%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_deficiency_description_text1",
-                                          "value": "{{$global.primary_crusher_screen4_deficiency_description_text1 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "50%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding row_style",
-                          "items": [
-                            {
-                              "type": "vertical",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding row_style",
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "50%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_notification_text2",
-                                          "value": "{{$global.primary_crusher_screen4_notification_text2 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "50%"
-                                          },
-                                          "class": "content_style_odd"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "50%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_deficiency_description_text2",
-                                          "value": "{{$global.primary_crusher_screen4_deficiency_description_text2 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "50%"
-                                          },
-                                          "class": "content_style_odd"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding row_style",
-                          "items": [
-                            {
-                              "type": "vertical",
-                              "class": "no_padding",
-                              "components": [
-                                {
-                                  "type": "horizontal",
-                                  "class": "no_padding row_style",
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "50%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_notification_text3",
-                                          "value": "{{$global.primary_crusher_screen4_notification_text3 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "50%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "50%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "textfield",
-                                          "name": "primary_crusher_screen4_deficiency_description_text3",
-                                          "value": "{{$global.primary_crusher_screen4_deficiency_description_text3 || ''}}",
-                                          "style": {
-                                            "padding_bottom": "5%",
-                                            "height": "6%",
-                                            "width": "50%"
-                                          },
-                                          "class": "content_style_even"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "space",
-                              "style": {
-                                "height": "10%"
+                                ]
                               }
-                            }
-                          ]
+                            ]
+                          },
+                          {
+                            "type": "vertical",
+                            "components": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "vertical",
+                                    "components": {
+                                      "{{#each Table1_Rows}}": {
+                                        "{{#let}}": [
+                                          {
+                                            "row_index": "{{$index}}"
+                                          },
+                                          {
+                                            "type": "horizontal",
+                                            "class": "center_align",
+                                            "style": {
+                                              "height": "6%"
+                                            },
+                                            "components": [
+                                              {
+                                                "type": "horizontal",
+                                                "class": "table_body_name_styles",
+                                                "components": [
+                                                  {
+                                                    "type": "label",
+                                                    "text": "{{this.row_name}}",
+                                                    "class": "{{this.row_styles}} table_row_height"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "type": "horizontal",
+                                                "style": {
+                                                  "width": "90%"
+                                                },
+                                                "components": {
+                                                  "{{#each row_values}}": {
+                                                    "type": "horizontal",
+                                                    "components": [
+                                                      {
+                                                        "type": "vertical",
+                                                        "components": [
+                                                          {
+                                                            "type": "{{type}}",
+                                                            "name": "{{name}}",
+                                                            "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                            "class": "{{styles}}",
+                                                            "style": {
+                                                              "width": "15%",
+                                                              "padding_bottom": "1%"
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "no_padding",
+                            "components": [
+                              {
+                                "type": "horizontal",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding table_row",
+                                    "components": {
+                                      "{{#each Table2_Headers}}": {
+                                        "type": "vertical",
+                                        "components": [
+                                          {
+                                            "type": "label",
+                                            "text": "{{value}}",
+                                            "class": "{{styles}} center_align"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "style": {
+                                      "padding_top": "1%"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "vertical",
+                            "components": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "vertical",
+                                    "components": {
+                                      "{{#each Table2_Rows}}": {
+                                        "{{#let}}": [
+                                          {
+                                            "row_index": "{{$index}}"
+                                          },
+                                          {
+                                            "type": "horizontal",
+                                            "class": "center_align",
+                                            "style": {
+                                              "height": "6%"
+                                            },
+                                            "components": [
+                                              {
+                                                "type": "horizontal",
+                                                "class": "table_body_name_styles",
+                                                "components": [
+                                                  {
+                                                    "type": "label",
+                                                    "text": "{{this.row_name}}",
+                                                    "class": "{{this.row_styles}} table_row_height"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "type": "horizontal",
+                                                "style": {
+                                                  "width": "90%"
+                                                },
+                                                "components": {
+                                                  "{{#each row_values}}": {
+                                                    "type": "horizontal",
+                                                    "components": [
+                                                      {
+                                                        "type": "vertical",
+                                                        "components": [
+                                                          {
+                                                            "type": "{{type}}",
+                                                            "name": "{{name}}",
+                                                            "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                            "class": "{{styles}}",
+                                                            "style": {
+                                                              "width": "15%",
+                                                              "padding_bottom": "1%"
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "no_padding",
+                            "components": [
+                              {
+                                "type": "horizontal",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding table_row",
+                                    "components": {
+                                      "{{#each Table3_Headers}}": {
+                                        "type": "vertical",
+                                        "components": [
+                                          {
+                                            "type": "label",
+                                            "text": "{{value}}",
+                                            "class": "{{styles}} center_align"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "style": {
+                                      "padding_top": "1%"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "vertical",
+                            "components": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "vertical",
+                                    "components": {
+                                      "{{#each Table3_Rows}}": {
+                                        "{{#let}}": [
+                                          {
+                                            "row_index": "{{$index}}"
+                                          },
+                                          {
+                                            "type": "horizontal",
+                                            "class": "center_align",
+                                            "style": {
+                                              "height": "6%"
+                                            },
+                                            "components": [
+                                              {
+                                                "type": "horizontal",
+                                                "class": "table_body_name_styles",
+                                                "components": [
+                                                  {
+                                                    "type": "label",
+                                                    "text": "{{this.row_name}}",
+                                                    "class": "{{this.row_styles}} table_row_height"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "type": "horizontal",
+                                                "style": {
+                                                  "width": "90%"
+                                                },
+                                                "components": {
+                                                  "{{#each row_values}}": {
+                                                    "type": "horizontal",
+                                                    "components": [
+                                                      {
+                                                        "type": "vertical",
+                                                        "components": [
+                                                          {
+                                                            "type": "{{type}}",
+                                                            "name": "{{name}}",
+                                                            "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                            "class": "{{styles}}",
+                                                            "style": {
+                                                              "width": "18%",
+                                                              "padding_bottom": "1%"
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "no_padding",
+                            "components": [
+                              {
+                                "type": "horizontal",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding table_row",
+                                    "components": {
+                                      "{{#each Table4_Headers}}": {
+                                        "type": "vertical",
+                                        "components": [
+                                          {
+                                            "type": "label",
+                                            "text": "{{value}}",
+                                            "class": "{{styles}} center_align"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "style": {
+                                      "padding_top": "1%"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "no_padding row_style",
+                            "components": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding row_style",
+                                    "components": [
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "10%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_loop_text1",
+                                            "value": "{{$global.primary_crusher_screen4_loop_text1 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "10%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_description_text1",
+                                            "value": "{{$global.primary_crusher_screen4_description_text1 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_reason_text1",
+                                            "value": "{{$global.primary_crusher_screen4_reason_text1 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "switch",
+                                        "name": "authorized_by_supervisor_switch1",
+                                        "value": "{{$global.authorized_by_supervisor_switch1}}",
+                                        "class": "switch_styles content_style_even_switch center_align",
+                                        "action": {
+                                          "type": "$global.set",
+                                          "options": {
+                                            "section_id": "form12_page4",
+                                            "authorized_by_supervisor_switch1": "{{$get.authorized_by_supervisor_switch1}}"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_timein_text1",
+                                            "value": "{{$global.primary_crusher_screen4_timein_text1 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_timeout_text1",
+                                            "value": "{{$global.primary_crusher_screen4_timeout_text1 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "no_padding row_style",
+                            "components": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding row_style",
+                                    "components": [
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "10%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_loop_text2",
+                                            "value": "{{$global.primary_crusher_screen4_loop_text2 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "10%"
+                                            },
+                                            "class": "content_style_odd"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_description_text2",
+                                            "value": "{{$global.primary_crusher_screen4_description_text2 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_odd"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_reason_text2",
+                                            "value": "{{$global.primary_crusher_screen4_reason_text2 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_odd"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "switch",
+                                        "name": "authorized_by_supervisor_switch2",
+                                        "value": "{{$global.authorized_by_supervisor_switch2}}",
+                                        "class": "switch_styles content_style_odd_switch center_align",
+                                        "action": {
+                                          "type": "$global.set",
+                                          "options": {
+                                            "section_id": "form12_page4",
+                                            "authorized_by_supervisor_switch2": "{{$get.authorized_by_supervisor_switch2}}"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_timein_text2",
+                                            "value": "{{$global.primary_crusher_screen4_timein_text2 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_odd"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_timeout_text2",
+                                            "value": "{{$global.primary_crusher_screen4_timeout_text2 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_odd"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "no_padding row_style",
+                            "components": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding row_style",
+                                    "components": [
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "10%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_loop_text3",
+                                            "value": "{{$global.primary_crusher_screen4_loop_text3 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "10%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_description_text3",
+                                            "value": "{{$global.primary_crusher_screen4_description_text3 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_reason_text3",
+                                            "value": "{{$global.primary_crusher_screen4_reason_text3 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "switch",
+                                        "name": "authorized_by_supervisor_switch3",
+                                        "value": "{{$global.authorized_by_supervisor_switch3}}",
+                                        "class": "switch_styles content_style_even_switch center_align",
+                                        "action": {
+                                          "type": "$global.set",
+                                          "options": {
+                                            "section_id": "form12_page4",
+                                            "authorized_by_supervisor_switch3": "{{$get.authorized_by_supervisor_switch3}}"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_timein_text3",
+                                            "value": "{{$global.primary_crusher_screen4_timein_text3 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "18%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_timeout_text3",
+                                            "value": "{{$global.primary_crusher_screen4_timeout_text3 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "18%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "no_padding",
+                            "components": [
+                              {
+                                "type": "horizontal",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding table_row5",
+                                    "components": {
+                                      "{{#each Table5_Headers}}": {
+                                        "type": "vertical",
+                                        "components": [
+                                          {
+                                            "type": "label",
+                                            "text": "{{value}}",
+                                            "class": "{{styles}} center_align"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "style": {
+                                      "padding_top": "1%"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "no_padding row_style",
+                            "components": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding row_style",
+                                    "components": [
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "50%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_notification_text1",
+                                            "value": "{{$global.primary_crusher_screen4_notification_text1 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "50%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "50%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_deficiency_description_text1",
+                                            "value": "{{$global.primary_crusher_screen4_deficiency_description_text1 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "50%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "no_padding row_style",
+                            "components": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding row_style",
+                                    "components": [
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "50%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_notification_text2",
+                                            "value": "{{$global.primary_crusher_screen4_notification_text2 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "50%"
+                                            },
+                                            "class": "content_style_odd"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "50%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_deficiency_description_text2",
+                                            "value": "{{$global.primary_crusher_screen4_deficiency_description_text2 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "50%"
+                                            },
+                                            "class": "content_style_odd"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "horizontal",
+                            "class": "no_padding row_style",
+                            "components": [
+                              {
+                                "type": "vertical",
+                                "class": "no_padding",
+                                "components": [
+                                  {
+                                    "type": "horizontal",
+                                    "class": "no_padding row_style",
+                                    "components": [
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "50%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_notification_text3",
+                                            "value": "{{$global.primary_crusher_screen4_notification_text3 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "50%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "type": "horizontal",
+                                        "style": {
+                                          "width": "50%"
+                                        },
+                                        "components": [
+                                          {
+                                            "type": "textfield",
+                                            "name": "primary_crusher_screen4_deficiency_description_text3",
+                                            "value": "{{$global.primary_crusher_screen4_deficiency_description_text3 || ''}}",
+                                            "style": {
+                                              "padding_bottom": "5%",
+                                              "height": "6%",
+                                              "width": "50%"
+                                            },
+                                            "class": "content_style_even"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "space",
+                                "style": {
+                                  "height": "10%"
+                                }
+                              }
+                            ]
+                          }
+                        
+                            ]
                         }
-                      ],
+                    ],
+                    
+                    
+                    
                     "class": "no_padding",
                     "layers": [
                         {
