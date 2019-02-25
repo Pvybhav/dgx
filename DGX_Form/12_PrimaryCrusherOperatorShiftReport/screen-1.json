@@ -2618,26 +2618,30 @@
                             "type": "vertical",
                             "items": [
                                 {
-                                    "type": "horizontal",
-                                    "components": [
-                                      {
+                                    "type": "vertical",
+                                    "class": "no_padding",
+                                    "components": [{
                                         "type": "vertical",
-                                        "class": "no_padding table_row",
-                                        "components": [
-                                          {
+                                        "class": "no_padding",
+                                        "components": [{
                                             "type": "horizontal",
+                                            "class": "no_padding table_row",
                                             "components": {
-                                              "{{#each Table1_Headers}}": {
-                                                "type": "label",
-                                                "text": "{{value}}",
-                                                 "class": "{{styles}} center_align"
-                                              }
+                                                "{{#each Table1_Headers}}": {
+                                                    "type": "horizontal",
+                                                    "components": [{
+                                                        "type": "label",
+                                                        "text": "{{value}}",
+                                                        "class": "{{styles}} center_align"
+                                                    }]
+                                                }
+                                            },
+                                            "style": {
+                                                "padding_top": "1%"
                                             }
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  },
+                                        }]
+                                    }]
+                                },
                                 {
                                     "type": "vertical",
                                     "components": [
