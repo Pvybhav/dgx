@@ -2615,35 +2615,35 @@
                             }],
                             "class": "no_padding"
                         },
-                        {
-                            "type": "horizontal",
-                            "class": "no_padding",
-                            "items": [{
-                                "type": "horizontal",
-                                "class": "no_padding",
-                                "components": [{
-                                    "type": "horizontal",
-                                    "class": "no_padding table_row",
-                                    "components": {
-                                        "{{#each Table1_Headers}}": {
-                                            "type": "vertical",
-                                            "components": [{
-                                                "type": "label",
-                                                "text": "{{value}}",
-                                                "class": "{{styles}} center_align"
-                                            }]
-                                        }
-                                    },
-                                    "style": {
-                                        "padding_top": "1%"
-                                    }
-                                }]
-                            }]
-                        }, 
+                        
                         {
                             "type":"vertical",
                             "items":[
-                               
+                                {
+                                    "type": "vertical",
+                                    "class": "no_padding",
+                                    "components": [{
+                                        "type": "vertical",
+                                        "class": "no_padding",
+                                        "components": [{
+                                            "type": "horizontal",
+                                            "class": "no_padding table_row",
+                                            "components": {
+                                                "{{#each Table1_Headers}}": {
+                                                    "type": "vertical",
+                                                    "components": [{
+                                                        "type": "label",
+                                                        "text": "{{value}}",
+                                                        "class": "{{styles}} center_align"
+                                                    }]
+                                                }
+                                            },
+                                            "style": {
+                                                "padding_top": "1%"
+                                            }
+                                        }]
+                                    }]
+                                }, 
                                 {
                                     "type": "vertical",
                                     "components": [
