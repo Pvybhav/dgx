@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Screen-1",
+      "title": "Kemix Screen Inspection",
       "description": "Kemix Screen Inspection",
       "form_id": "form6",
       "offline": "true",
@@ -80,7 +80,13 @@
           "size": "16"
         },
         "label_styles": {
-          "font": "HelveticaNeue-Bold"
+          "font": "HelveticaNeue-Bold",
+          "width": "3%"
+        },
+        "switch_styles": {
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "align": "center"
         },
         "table_dropdown_fields_styles": {
           "height": "3%",
@@ -115,7 +121,9 @@
           "background": "rgb(14, 53, 112)",
           "color": "rgb(255, 255, 255)",
           "border": "rgb(255, 255, 255)",
-          "height": "7%"
+          "height": "6%",
+          "padding_top": "1%",
+          "padding_bottom": "1%"
         },
         "table_row_odd_styles": {
           "background": "rgb(204,206,213)"
@@ -147,7 +155,8 @@
       },
       "data": {
         "Page_Heading": "Kemix Screen Inspection",
-        "Table_Headers": [
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+        "Table1_Headers": [
           {
             "type": "label",
             "value": "Inspection Point",
@@ -166,16 +175,70 @@
             "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           }
+        ],
+        "Table2_Headers": [
+          {
+            "type": "label",
+            "value": "Inspection Point",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "Specific",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "Comments",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
+        ],
+        "Table3_Headers": [
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "Yes / No",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "Record",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
         ]
       },
       "actions": {
         "$load": {
-          "type": "$render",
+          "type": "$global.set",
+          "options": {
+            "section_id": "form6_page2",
+            "f6_s2_comments": "{{$global.f6_s2_comments || ''}}",
+            "wn": "{{$global.wn || ''}}",
+            "tank": "{{$global.tank || ''}}",
+            "is_a_work_notification_required": "{{$global.is_a_work_notification_required == null ? true : $global.is_a_work_notification_required}}",
+            "will_the_pumpcell_be_reinstalled": "{{$global.will_the_pumpcell_be_reinstalled == null ? true : $global.will_the_pumpcell_be_reinstalled}}"
+          },
           "success": {
-            "type": "$util.toast",
+            "type": "$render",
             "options": {
-              "text": "Page loaded successfully",
-              "type": "warning"
+              "template": "screen1"
+            },
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Page loaded successfully",
+                "type": "warning"
+              }
             }
           }
         },
@@ -208,11 +271,11 @@
         }
       },
       "templates": {
-        "body": {
+        "screen1": {
           "header": {
             "title": {
               "type": "label",
-              "text": "{{Page_Heading}}"
+              "text": "{{Page_Heading}} (1/2)"
             },
             "style": {
               "font": "HelveticaHeader-Bold",
@@ -601,7 +664,7 @@
                     {
                       "type": "horizontal",
                       "components": {
-                        "{{#each Table_Headers}}": {
+                        "{{#each Table1_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"

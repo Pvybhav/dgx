@@ -6,24 +6,8 @@
       "form_id": "form6",
       "offline": "true",
       "styles": {
-        "no_padding": {
-          "padding": "0"
-        },
-        "no_border": {
-          "border": "none"
-        },
-        "center_align": {
-          "align": "center"
-        },
-        "black_color": {
-          "color": "rgb(0,0,0)"
-        },
-        "note_styles": {
-          "background": "rgb(255, 0, 0)",
-          "color": "rgb(255, 255, 255)",
-          "align": "left",
-          "size": "15"
-        },
+       
+        
         "table_header_name_styles": {
           "width": "35%",
           "border": "rgb(255, 255, 255)"
@@ -36,9 +20,7 @@
           "width": "40%",
           "border": "rgb(255, 255, 255)"
         },
-        "table_row": {
-          "height": "6%"
-        },
+        
         "table_body_name_styles": {
           "width": "35%"
         },
@@ -47,107 +29,12 @@
         },
         "table_body_value_styles": {
           "width": "40%"
-        },
-        "label_styles": {
-          "font": "HelveticaNeue-Bold",
-          "width": "3%"
-        },
-        "table_header_styles": {
-          "size": 15,
-          "font": "HelveticaHeader-Bold",
-          "background": "rgb(14, 53, 112)",
-          "color": "rgb(255, 255, 255)",
-          "border": "rgb(255, 255, 255)",
-          "height": "6%",
-          "padding_top": "1%",
-          "padding_bottom": "1%"
-        },
-        "table_row_odd_styles": {
-          "background": "rgb(204,206,213)"
-        },
-        "table_row_even_styles": {
-          "background": "rgb(231,232,235)"
-        },
-        "table_fields_size": {
-          "size": "16"
-        },
-        "home_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
-        },
-        "previous_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
-        },
-        "save_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
-        },
-        "submit_button_styles": {
-          "width": "15%",
-          "height": "7%",
-          "color": "rgb(255,255,255)",
-          "background": "rgb(0,147,215)",
-          "corner_radius": "1%"
-        },
-        "switch_styles": {
-          "color": "rgb(0,255,0)",
-          "color:disabled": "rgb(255,0,0)",
-          "align": "center"
         }
       },
       "data": {
         "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/6_KemixScreenInspection/screen_1.json",
-        "Page_Heading": "Kemix Screen Inspection",
-        "Table1_Headers": [
-          {
-            "type": "label",
-            "value": "Inspection Point",
-            "col_type": "col_name",
-            "styles": "table_header_styles center_align table_header_name_styles"
-          },
-          {
-            "type": "label",
-            "value": "Specific",
-            "col_type": "col_value",
-            "styles": "table_header_styles center_align table_header_description_styles"
-          },
-          {
-            "type": "label",
-            "value": "Comments",
-            "col_type": "col_value",
-            "styles": "table_header_styles center_align table_header_value_styles"
-          }
-        ],
-        "Table2_Headers": [
-          {
-            "type": "label",
-            "value": "",
-            "col_type": "col_name",
-            "styles": "table_header_styles center_align table_header_name_styles"
-          },
-          {
-            "type": "label",
-            "value": "Yes / No",
-            "col_type": "col_value",
-            "styles": "table_header_styles center_align table_header_description_styles"
-          },
-          {
-            "type": "label",
-            "value": "Record",
-            "col_type": "col_value",
-            "styles": "table_header_styles center_align table_header_value_styles"
-          }
-        ]
+        "Page_Heading": "Kemix Screen Inspection"
+        
       },
       "actions": {
         "$load": {
@@ -193,11 +80,11 @@
         }
       },
       "templates": {
-        "body": {
+        "screen2": {
           "header": {
             "title": {
               "type": "label",
-              "text": "{{Page_Heading}}"
+              "text": "{{Page_Heading}} (2/2)"
             },
             "style": {
               "align": "center",
@@ -218,7 +105,7 @@
                     {
                       "type": "horizontal",
                       "components": {
-                        "{{#each Table1_Headers}}": {
+                        "{{#each Table2_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"
@@ -506,7 +393,7 @@
                     {
                       "type": "horizontal",
                       "components": {
-                        "{{#each Table2_Headers}}": {
+                        "{{#each Table3_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"
