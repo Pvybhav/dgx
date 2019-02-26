@@ -9,21 +9,14 @@
         "no_padding": {
           "padding": "0"
         },
-        "no_border": {
-          "border": "none"
-        },
         "center_align": {
           "align": "center"
         },
         "black_color": {
           "color": "rgb(0, 0, 0)"
         },
-        "title_styles": {
-          "font": "HelveticaHeader",
-          "size": 20,
-          "align": "center",
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 162, 224)"
+        "bold": {
+          "font": "HelveticaHeader-Bold"
         },
         "dropdown_day_style": {
           "color": "rgb(0, 0, 0)",
@@ -48,25 +41,6 @@
           "width": "20%",
           "size": "15"
         },
-        "header_2_styles": {
-          "size": 13,
-          "width": "24%",
-          "height": "8%",
-          "color": "rgb(0, 0, 0)",
-          "border": "rgb(0, 0, 0)"
-        },
-        "header_2_label": {
-          "size": 13,
-          "width": "19%",
-          "color": "rgb(0,162,224)",
-          "align": "right"
-        },
-        "header_2_labels_styles": {
-          "size": 13,
-          "width": "25%",
-          "height": "7%",
-          "color": "rgb(0,162,224)"
-        },
         "table_header_styles": {
           "size": 15,
           "font": "HelveticaHeader-Bold",
@@ -74,14 +48,6 @@
           "color": "rgb(255, 255, 255)",
           "border": "rgb(255, 255, 255)",
           "height": "6%"
-        },
-        "roller_header_style": {
-          "size": 15,
-          "font": "HelveticaHeader",
-          "background": "rgb(14, 53, 112)",
-          "color": "rgb(255, 255, 255)",
-          "border": "rgb(255, 255, 255)",
-          "height": "12%"
         },
         "switch_styles": {
           "color": "rgb(0,255,0)",
@@ -103,17 +69,8 @@
           "height": "2%",
           "width": "5%"
         },
-        "table1_col_name_styles": {
-          "width": "37%"
-        },
         "table1_col_value_styles": {
           "width": "5%"
-        },
-        "table2_col_name_styles": {
-          "width": "20%"
-        },
-        "table2_col_value_styles": {
-          "width": "30%"
         },
         "table_header_name_styles": {
           "width": "25%",
@@ -132,37 +89,30 @@
         "table_fields_size": {
           "size": "16"
         },
-        "previous_button_styles": {
+        "template_button_styles": {
+          "size": "16",
           "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "15%",
-          "height": "7%",
+          "background": "rgb(0,147,215)",
           "corner_radius": "1%"
         },
-        "home_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
         },
-        "next_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "15%",
+        "layer_styles": {
+          "width": "10%",
           "height": "7%",
-          "corner_radius": "1%"
-        },
-        "save_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
+          "bottom": "1%"
         }
       },
       "data": {
         "Page_Heading": "Trash Screens Shift Report",
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+        "loading_image_url": "file://infinit.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
         "Table1_Headers": [
           {
             "type": "label",
@@ -521,9 +471,9 @@
               ]
             },
             "success": {
-              "type": "$reload",
+              "trigger": "handleNavigation",
               "options": {
-                "template": "screen1"
+                "url": "{{redirect_url}}"
               }
             }
           }
@@ -2316,35 +2266,26 @@
           "layers": [
             {
               "type": "image",
-              "url": "file://icons/home.png",
+              "url": "{{home_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "home",
               "style": {
-                "left": "15%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "15%"
               },
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "button",
               "text": "Page 1",
+              "class": "layer_styles no_padding template_button_styles active_template_button_styles bold",
               "style": {
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
                 "left": "25%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2356,16 +2297,10 @@
             {
               "type": "button",
               "text": "Page 2",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
                 "left": "35%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2377,16 +2312,10 @@
             {
               "type": "button",
               "text": "Page 3",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
                 "left": "45%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2398,16 +2327,10 @@
             {
               "type": "button",
               "text": "Page 4",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
                 "left": "55%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2418,14 +2341,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/next.png",
+              "url": "{{next_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "next",
               "style": {
-                "left": "65%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "65%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2436,14 +2356,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/save.png",
+              "url": "{{save_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "save",
               "style": {
-                "left": "75%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "75%"
               },
               "action": {
                 "trigger": "handleSave_screen1"
@@ -2521,32 +2438,26 @@
           "layers": [
             {
               "type": "image",
-              "url": "file://icons/home.png",
+              "url": "{{home_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "home",
               "style": {
-                "left": "10%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "image",
-              "url": "file://icons/previous.png",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "previous",
               "style": {
-                "left": "20%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "20%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2558,16 +2469,10 @@
             {
               "type": "button",
               "text": "Page 1",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
                 "left": "30%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2579,16 +2484,10 @@
             {
               "type": "button",
               "text": "Page 2",
+              "class": "layer_styles no_padding template_button_styles active_template_button_styles bold",
               "style": {
                 "left": "40%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2600,16 +2499,10 @@
             {
               "type": "button",
               "text": "Page 3",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
                 "left": "50%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2621,16 +2514,10 @@
             {
               "type": "button",
               "text": "Page 4",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
                 "left": "60%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2641,14 +2528,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/next.png",
+              "url": "{{next_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "next",
               "style": {
-                "left": "70%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "70%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2659,14 +2543,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/save.png",
+              "url": "{{save_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "save",
               "style": {
-                "left": "80%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "80%"
               },
               "action": {
                 "trigger": "handleSave_screen2"
@@ -4092,32 +3973,26 @@
           "layers": [
             {
               "type": "image",
-              "url": "file://icons/home.png",
+              "url": "{{home_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "home",
               "style": {
-                "left": "10%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "image",
-              "url": "file://icons/previous.png",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "previous",
               "style": {
-                "left": "20%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "20%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4129,16 +4004,10 @@
             {
               "type": "button",
               "text": "Page 1",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
                 "left": "30%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4150,16 +4019,10 @@
             {
               "type": "button",
               "text": "Page 2",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
                 "left": "40%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4171,16 +4034,10 @@
             {
               "type": "button",
               "text": "Page 3",
+              "class": "layer_styles no_padding template_button_styles active_template_button_styles bold",
               "style": {
                 "left": "50%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4192,16 +4049,10 @@
             {
               "type": "button",
               "text": "Page 4",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
                 "left": "60%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4212,14 +4063,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/next.png",
+              "url": "{{next_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "next",
               "style": {
-                "left": "70%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "70%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4230,14 +4078,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/save.png",
+              "url": "{{save_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "save",
               "style": {
-                "left": "80%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "80%"
               },
               "action": {
                 "trigger": "handleSave_screen3"
@@ -4315,32 +4160,26 @@
           "layers": [
             {
               "type": "image",
-              "url": "file://icons/home.png",
+              "url": "{{home_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "home",
               "style": {
-                "left": "10%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
             {
               "type": "image",
-              "url": "file://icons/previous.png",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "previous",
               "style": {
-                "left": "20%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "20%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4352,16 +4191,10 @@
             {
               "type": "button",
               "text": "Page 1",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
                 "left": "30%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4373,16 +4206,10 @@
             {
               "type": "button",
               "text": "Page 2",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
                 "left": "40%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4394,16 +4221,10 @@
             {
               "type": "button",
               "text": "Page 3",
+              "class": "layer_styles no_padding template_button_styles bold",
               "style": {
                 "left": "50%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4415,16 +4236,10 @@
             {
               "type": "button",
               "text": "Page 4",
+              "class": "layer_styles no_padding template_button_styles active_template_button_styles bold",
               "style": {
                 "left": "60%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4435,14 +4250,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/save.png",
+              "url": "{{save_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "save",
               "style": {
-                "left": "70%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "70%"
               },
               "action": {
                 "trigger": "handleSave_screen4"
@@ -4450,14 +4262,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/submit.png",
+              "url": "{{submit_icon}}",
+              "class": "layer_styles no_padding",
               "contentDescription": "submit",
               "style": {
-                "left": "80%",
-                "width": "10%",
-                "height": "7%",
-                "padding": "0",
-                "bottom": "1%"
+                "left": "80%"
               },
               "action": {
                 "trigger": "handleSubmit"
