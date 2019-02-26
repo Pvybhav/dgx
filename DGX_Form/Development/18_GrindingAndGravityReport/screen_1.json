@@ -792,7 +792,8 @@
             "falcons_23_flush_time": "{{ $get.falcons_23_flush_time || '' }}",
             "falcons_23_bowl_pressure": "{{ $get.falcons_23_bowl_pressure || '' }}",
             "falcons_23_gland_pressure": "{{ $get.falcons_23_gland_pressure || '' }}",
-            "falcons_23_water_flow": "{{ $get.falcons_23_water_flow || '' }}"
+            "falcons_23_water_flow": "{{ $get.falcons_23_water_flow || '' }}",
+            "form18_comments": "{{ $get.comments || '' }}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -9764,7 +9765,7 @@
                     {
                       "type": "textarea",
                       "name": "comments",
-                      "value": "{{$global.form14_comments || ''}}",
+                      "value": "{{$global.form18_comments || ''}}",
                       "placeholder": "Enter Comments"
                     },
                     {
