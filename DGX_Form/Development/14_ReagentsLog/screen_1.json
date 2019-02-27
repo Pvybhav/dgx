@@ -1,10 +1,10 @@
 {
   "$jason": {
     "head": {
-      "title": "Form-14",
+      "title": "Reagents Log Sheet",
       "json_id": "form14",
       "form_id": "form14",
-      "description": "Reagent Log Sheet",
+      "description": "Reagents Log Sheet",
       "offline": "true",
       "styles": {
         "center_align": {
@@ -187,7 +187,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen1 data successfully"
             }
           }
         },
@@ -200,7 +200,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen2 data successfully"
             }
           }
         },
@@ -225,7 +225,7 @@
           "options": {
             "save": "true",
             "form_id": "form14",
-            "filename": "Reagent_log_sheet"
+            "filename": "ReagentsLogSheet"
           },
           "success": {
             "type": "$global.reset",
@@ -266,7 +266,10 @@
               ]
             },
             "success": {
-              "type": "$reload"
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
             }
           }
         }
