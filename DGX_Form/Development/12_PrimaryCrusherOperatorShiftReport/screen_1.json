@@ -1,9 +1,9 @@
 {
   "$jason": {
     "head": {
-      "title": "Line-1",
+      "title": "Primary Crusher Operator Shift Report",
       "form_id": "form12",
-      "description": "Line-2 by using Loops",
+      "description": "Primary Crusher Operator Shift Report",
       "offline": "true",
       "styles": {
         "no_padding": {
@@ -1620,15 +1620,9 @@
               "primary_crusher_screen3_0700_text1": "{{$global.primary_crusher_screen3_0700_text1 || ''}}"
             },
             "success": {
-              "type": "$render",
+              "trigger": "handleTemplateChange",
               "options": {
-                "template": "screen1"
-              },
-              "success": {
-                "trigger": "displayToaster",
-                "options": {
-                  "message": "Page loaded successfully"
-                }
+                "templateName": "screen1"
               }
             }
           }
@@ -2206,9 +2200,9 @@
               ]
             },
             "success": {
-              "type": "$reload",
+              "trigger": "handleNavigation",
               "options": {
-                "template": "screen1"
+                "url": "{{redirect_url}}"
               }
             }
           }
@@ -3447,7 +3441,7 @@
                               "action": {
                                 "type": "$global.set",
                                 "options": {
-                                  "section_id": "form12_page4",
+                                  "section_id": "form12",
                                   "authorized_by_supervisor_switch1": "{{$get.authorized_by_supervisor_switch1}}"
                                 }
                               }
@@ -3573,7 +3567,7 @@
                               "action": {
                                 "type": "$global.set",
                                 "options": {
-                                  "section_id": "form12_page4",
+                                  "section_id": "form12",
                                   "authorized_by_supervisor_switch2": "{{$get.authorized_by_supervisor_switch2}}"
                                 }
                               }
@@ -3699,7 +3693,7 @@
                               "action": {
                                 "type": "$global.set",
                                 "options": {
-                                  "section_id": "form12_page4",
+                                  "section_id": "form12",
                                   "authorized_by_supervisor_switch3": "{{$get.authorized_by_supervisor_switch3}}"
                                 }
                               }
