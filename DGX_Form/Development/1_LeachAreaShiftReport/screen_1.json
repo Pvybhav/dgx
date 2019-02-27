@@ -1,9 +1,9 @@
 {
   "$jason": {
     "head": {
-      "title": "Leach Area Shift Report Line-1",
+      "title": "Leach Area Shift Report",
       "form_id": "form1",
-      "description": "Leach Area Shift Report Line-1",
+      "description": "Leach Area Shift Report",
       "offline": "true",
       "styles": {
         "no_padding": {
@@ -279,7 +279,7 @@
         ]
       },
       "actions": {
-        "$show": {
+        "$load": {
           "type": "$global.set",
           "options": {
             "section_id": "form1",
@@ -388,20 +388,12 @@
             "cyanide_lines_l2_112": "{{$global.cyanide_lines_l2_112 == null ? true : $global.cyanide_lines_l2_112}}",
             "cyanide_lines_l2_113": "{{$global.cyanide_lines_l2_113 == null ? true : $global.cyanide_lines_l2_113}}",
             "cyanide_lines_l2_114": "{{$global.cyanide_lines_l2_114 == null ? true : $global.cyanide_lines_l2_114}}",
-            "cyanide_lines_l2_115": "{{$global.cyanide_lines_l2_115 == null ? true : $global.cyanide_lines_l2_115}}",
-            "f1_s2_description": "{{$global.f1_s2_description || ''}}"
+            "cyanide_lines_l2_115": "{{$global.cyanide_lines_l2_115 == null ? true : $global.cyanide_lines_l2_115}}"
           },
           "success": {
-            "type": "$render",
+            "trigger": "handleTemplateChange",
             "options": {
-              "template": "screen1"
-            },
-            "success": {
-              "type": "$util.toast",
-              "options": {
-                "text": "Page loaded successfully",
-                "type": "warning"
-              }
+              "templateName": "screen1"
             }
           }
         },
@@ -462,7 +454,7 @@
           "type": "$global.set",
           "options": {
             "section_id": "form1",
-            "f1_s2_description": "{{$get.description || $global.description || ''}}"
+            "form1_description": "{{$get.form1_description || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -589,7 +581,7 @@
                 "cyanide_lines_l2_113",
                 "cyanide_lines_l2_114",
                 "cyanide_lines_l2_115",
-                "f1_s2_description"
+                "form1_description"
               ]
             },
             "success": {
@@ -4174,7 +4166,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "Description",
+                      "text": "Description.",
                       "class": "table_header_styles",
                       "style": {
                         "width": "100%"
@@ -4192,10 +4184,10 @@
                   "components": [
                     {
                       "type": "textarea",
-                      "value": "{{$global.description || ''}}",
-                      "name": "description",
+                      "value": "{{$global.form1_description || ''}}",
+                      "name": "form1_description",
                       "placeholder": "Enter description",
-                      "contentDescription": "Enter Description",
+                      "contentDescription": "description",
                       "style": {
                         "width": "100%",
                         "height": "8%",
