@@ -340,16 +340,9 @@
             "clean_trough_build_up_2_screen2": "{{$global.clean_trough_build_up_2_screen2 == null ? true : $global.clean_trough_build_up_2_screen2}}"
           },
           "success": {
-            "type": "$render",
+            "trigger": "handleTemplateChange",
             "options": {
-              "template": "screen1"
-            },
-            "success": {
-              "type": "$util.toast",
-              "options": {
-                "text": "Page loaded successfully",
-                "type": "warning"
-              }
+              "templateName": "screen1"
             }
           }
         },
@@ -402,7 +395,20 @@
           "success": {
             "type": "$util.toast",
             "options": {
-              "text": "Saved Successfully",
+              "text": "Saved screen1 data successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "handleSave_screen2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form2"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved screen2 data successfully",
               "type": "warning"
             }
           }
@@ -417,7 +423,7 @@
           "success": {
             "type": "$util.toast",
             "options": {
-              "text": "Saved Successfully",
+              "text": "Saved screen3 data successfully",
               "type": "warning"
             }
           }
