@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Form-5",
+      "title": "Group SOP Sign-off",
       "json_id": "form5",
       "form_id": "form5",
       "description": "Group SOP Sign-off",
@@ -15,6 +15,9 @@
         },
         "black_color": {
           "color": "rgb(0,0,0)"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
         },
         "table_header_name_styles": {
           "width": "75%"
@@ -166,7 +169,7 @@
         },
         "layer_styles": {
           "width": "10%",
-          "height": "11%",
+          "height": "7%",
           "bottom": "1%"
         },
         "dropdown_date_stylesop": {
@@ -320,7 +323,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen1 data successfully"
             }
           }
         },
@@ -416,7 +419,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen2 data successfully"
             }
           }
         },
@@ -432,7 +435,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen3 data successfully"
             }
           }
         },
@@ -457,7 +460,7 @@
           "options": {
             "save": "true",
             "form_id": "form5",
-            "filename": "SOPReview"
+            "filename": "GroupSOPSignoff"
           },
           "success": {
             "type": "$global.reset",
@@ -619,7 +622,10 @@
               ]
             },
             "success": {
-              "type": "$reload"
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
             }
           }
         }
@@ -2330,9 +2336,10 @@
             {
               "type": "button",
               "text": "Page 1",
-              "class": "layer_styles template_button_styles active_template_button_styles no_padding",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
-                "left": "30%"
+                "left": "30%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2344,9 +2351,10 @@
             {
               "type": "button",
               "text": "Page 2",
-              "class": "layer_styles template_button_styles no_padding",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "left": "40%"
+                "left": "40%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2358,9 +2366,10 @@
             {
               "type": "button",
               "text": "Page 3",
-              "class": "layer_styles template_button_styles no_padding",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "left": "50%"
+                "left": "50%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4078,9 +4087,10 @@
             {
               "type": "button",
               "text": "Page 1",
-              "class": "layer_styles template_button_styles",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "left": "40%"
+                "left": "40%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4092,9 +4102,10 @@
             {
               "type": "button",
               "text": "Page 2",
-              "class": "layer_styles template_button_styles active_template_button_styles",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
-                "left": "50%"
+                "left": "50%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4106,9 +4117,10 @@
             {
               "type": "button",
               "text": "Page 3",
-              "class": "layer_styles template_button_styles",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "left": "60%"
+                "left": "60%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4327,9 +4339,10 @@
             {
               "type": "button",
               "text": "Page 1",
-              "class": "layer_styles template_button_styles",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "left": "40%"
+                "left": "40%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4341,9 +4354,10 @@
             {
               "type": "button",
               "text": "Page 2",
-              "class": "layer_styles template_button_styles",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "left": "50%"
+                "left": "50%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4355,9 +4369,10 @@
             {
               "type": "button",
               "text": "Page 3",
-              "class": "layer_styles template_button_styles active_template_button_styles",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
-                "left": "60%"
+                "left": "60%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",

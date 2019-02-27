@@ -1,9 +1,9 @@
 {
   "$jason": {
     "head": {
-      "title": "Leach Area Shift Report Line-1",
+      "title": "Leach Area Shift Report",
       "form_id": "form1",
-      "description": "Leach Area Shift Report Line-1",
+      "description": "Leach Area Shift Report",
       "offline": "true",
       "styles": {
         "no_padding": {
@@ -11,6 +11,9 @@
         },
         "center_align": {
           "align": "center"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
         },
         "right_padding": {
           "padding_left": "-2",
@@ -113,7 +116,7 @@
         },
         "layer_styles": {
           "width": "10%",
-          "height": "11%",
+          "height": "7%",
           "bottom": "1%"
         }
       },
@@ -388,16 +391,9 @@
             "cyanide_lines_l2_115": "{{$global.cyanide_lines_l2_115 == null ? true : $global.cyanide_lines_l2_115}}"
           },
           "success": {
-            "type": "$render",
+            "trigger": "handleTemplateChange",
             "options": {
-              "template": "screen1"
-            },
-            "success": {
-              "type": "$util.toast",
-              "options": {
-                "text": "Page loaded successfully",
-                "type": "warning"
-              }
+              "templateName": "screen1"
             }
           }
         },
@@ -458,7 +454,7 @@
           "type": "$global.set",
           "options": {
             "section_id": "form1",
-            "f1_s2_description": "{{$get.description || $global.f1_s2_description || ''}}"
+            "form1_description": "{{$get.form1_description || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -585,7 +581,7 @@
                 "cyanide_lines_l2_113",
                 "cyanide_lines_l2_114",
                 "cyanide_lines_l2_115",
-                "f1_s2_description"
+                "form1_description"
               ]
             },
             "success": {
@@ -2540,9 +2536,10 @@
               "type": "button",
               "text": "Page 1",
               "contentDescription": "screen-1",
-              "class": "layer_styles template_button_styles active_template_button_styles",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
-                "left": "40%"
+                "left": "40%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -2554,9 +2551,10 @@
             {
               "type": "button",
               "text": "Page 2",
-              "class": "layer_styles template_button_styles",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "left": "50%"
+                "left": "50%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4168,7 +4166,7 @@
                   "components": [
                     {
                       "type": "label",
-                      "text": "Description",
+                      "text": "Description.",
                       "class": "table_header_styles",
                       "style": {
                         "width": "100%"
@@ -4186,10 +4184,10 @@
                   "components": [
                     {
                       "type": "textarea",
-                      "value": "{{$global.f1_s2_description || ''}}",
-                      "name": "description",
+                      "value": "{{$global.form1_description || ''}}",
+                      "name": "form1_description",
                       "placeholder": "Enter description",
-                      "contentDescription": "Enter Description",
+                      "contentDescription": "description",
                       "style": {
                         "width": "100%",
                         "height": "8%",
@@ -4236,9 +4234,10 @@
             {
               "type": "button",
               "text": "Page 1",
-              "class": "layer_styles template_button_styles",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "left": "45%"
+                "left": "45%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4250,9 +4249,10 @@
             {
               "type": "button",
               "text": "Page 2",
-              "class": "layer_styles template_button_styles active_template_button_styles",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
-                "left": "55%"
+                "left": "55%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
