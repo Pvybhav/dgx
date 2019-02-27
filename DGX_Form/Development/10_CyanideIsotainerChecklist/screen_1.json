@@ -1,9 +1,9 @@
 {
   "$jason": {
     "head": {
-      "title": "Line-1",
+      "title": "Cyanide Isotainer Checklist",
       "form_id": "form10",
-      "description": "Line-2 by using Loops",
+      "description": "Cyanide Isotainer Checklist",
       "offline": "true",
       "styles": {
         "no_padding": {
@@ -17,6 +17,10 @@
         },
         "bold": {
           "font": "HelveticaHeader-Bold"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
         },
         "title_styles": {
           "font": "HelveticaNeue",
@@ -111,19 +115,9 @@
             ]
           },
           "success": {
-            "type": "$global.set",
-            "options": {},
-            "success": {
-              "type": "$render",
-              "options": {
-                "template": "screen1"
-              },
-              "success": {
-                "trigger": "displayToaster",
-                "options": {
-                  "message": "Page loaded successfully"
-                }
-              }
+            "trigger": "handleTemplateChange",
+            "options": {
+              "templateName": "screen1"
             }
           }
         },
@@ -333,9 +327,9 @@
               ]
             },
             "success": {
-              "type": "$reload",
+              "trigger": "handleNavigation",
               "options": {
-                "template": "screen1"
+                "url": "{{redirect_url}}"
               }
             }
           }
