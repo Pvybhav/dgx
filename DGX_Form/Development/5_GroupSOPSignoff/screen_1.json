@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Form-5",
+      "title": "Group SOP Sign-off",
       "json_id": "form5",
       "form_id": "form5",
       "description": "Group SOP Sign-off",
@@ -323,7 +323,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen1 data successfully"
             }
           }
         },
@@ -419,7 +419,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen2 data successfully"
             }
           }
         },
@@ -435,7 +435,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen3 data successfully"
             }
           }
         },
@@ -460,7 +460,7 @@
           "options": {
             "save": "true",
             "form_id": "form5",
-            "filename": "SOPReview"
+            "filename": "GroupSOPSignoff"
           },
           "success": {
             "type": "$global.reset",
@@ -622,7 +622,10 @@
               ]
             },
             "success": {
-              "type": "$reload"
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
             }
           }
         }
