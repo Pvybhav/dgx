@@ -2,7 +2,7 @@
   "$jason": {
     "head": {
       "title": "Grinding And Gravity Reprort Sheet",
-      "description": "Form-18",
+      "description": "Grinding And Gravity Reprort Sheet",
       "form_id": "form18",
       "offline": "true",
       "styles": {
@@ -510,15 +510,9 @@
               "gravity_screens_23_house_keeping": "{{ $global.gravity_screens_23_house_keeping == null ? true: $global.gravity_screens_23_house_keeping}}"
             },
             "success": {
-              "type": "$render",
+              "trigger": "handleTemplateChange",
               "options": {
-                "template": "screen1"
-              },
-              "success": {
-                "trigger": "displayToaster",
-                "options": {
-                  "message": "Page loaded successfully"
-                }
+                "templateName": "screen1"
               }
             }
           }
@@ -806,7 +800,7 @@
           "options": {
             "save": "true",
             "form_id": "form18",
-            "filename": "GrindingAndGravityReport"
+            "filename": "GrindingAndGravityReportSheet"
           },
           "success": {
             "type": "$global.reset",
@@ -4635,7 +4629,7 @@
                                           "components": [
                                             {
                                               "type": "label",
-                                              "text": "Page 1",
+                                              "text": "1",
                                               "class": "black_color center_align table_row_height"
                                             }
                                           ]
@@ -7634,7 +7628,7 @@
               "action": {
                 "trigger": "handleTemplateChange",
                 "options": {
-                  "templateName": "screen1"
+                  "templateName": "screen2"
                 }
               }
             },
@@ -9114,7 +9108,7 @@
               "action": {
                 "trigger": "handleTemplateChange",
                 "options": {
-                  "templateName": "screen1"
+                  "templateName": "screen3"
                 }
               }
             },
@@ -9203,7 +9197,7 @@
               "action": {
                 "trigger": "handleTemplateChange",
                 "options": {
-                  "templateName": "screen2"
+                  "templateName": "screen5"
                 }
               }
             },
@@ -9824,7 +9818,7 @@
               "action": {
                 "trigger": "handleTemplateChange",
                 "options": {
-                  "templateName": "screen1"
+                  "templateName": "screen4"
                 }
               }
             },
