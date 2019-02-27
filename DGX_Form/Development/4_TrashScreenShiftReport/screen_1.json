@@ -1,9 +1,9 @@
 {
   "$jason": {
     "head": {
-      "title": "Line-1",
+      "title": "Trash Screen Shift Report",
       "form_id": "form4",
-      "description": "Line-2 by using Loops",
+      "description": "Trash Screen Shift Report",
       "offline": "true",
       "styles": {
         "no_padding": {
@@ -17,6 +17,10 @@
         },
         "bold": {
           "font": "HelveticaHeader-Bold"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
         },
         "dropdown_day_style": {
           "color": "rgb(0, 0, 0)",
@@ -281,15 +285,9 @@
               "f4_s2_comments": "{{$global.f4_s2_comments || ''}}"
             },
             "success": {
-              "type": "$render",
+              "trigger": "handleTemplateChange",
               "options": {
-                "template": "screen1"
-              },
-              "success": {
-                "trigger": "displayToaster",
-                "options": {
-                  "message": "Page loaded successfully"
-                }
+                "templateName": "screen1"
               }
             }
           }
