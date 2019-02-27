@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Form-7",
+      "title": "Lead Nitrate Check List",
       "json_id": "form7",
       "form_id": "form7",
       "description": "Lead Nitrate Check List",
@@ -231,7 +231,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen1 data successfully"
             }
           }
         },
@@ -250,7 +250,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen2 data successfully"
             }
           }
         },
@@ -275,7 +275,7 @@
           "options": {
             "save": "true",
             "form_id": "form7",
-            "filename": "Lead_Nitrate_Checklist"
+            "filename": "LeadNitrateChecklist"
           },
           "success": {
             "type": "$global.reset",
@@ -319,7 +319,10 @@
               ]
             },
             "success": {
-              "type": "$reload"
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
             }
           }
         }
