@@ -270,15 +270,9 @@
             "will_the_pumpcell_be_reinstalled": "{{$global.will_the_pumpcell_be_reinstalled == null ? true : $global.will_the_pumpcell_be_reinstalled}}"
           },
           "success": {
-            "type": "$render",
+            "trigger": "handleTemplateChange",
             "options": {
-              "template": "screen1"
-            },
-            "success": {
-              "trigger": "displayToaster",
-              "options": {
-                "message": "Page loaded successfully"
-              }
+              "templateName": "screen1"
             }
           }
         },
