@@ -297,16 +297,9 @@
       },
       "actions": {
         "$load": {
-          "type": "$render",
+          "trigger": "handleTemplateChange",
           "options": {
-            "template": "screen1"
-          },
-          "success": {
-            "type": "$util.toast",
-            "options": {
-              "text": "Page loaded successfully",
-              "type": "warning"
-            }
+            "templateName": "screen1"
           }
         },
         "handleTemplateChange": {
@@ -347,7 +340,7 @@
         "handleSave_screen1": {
           "type": "$global.set",
           "options": {
-            "section_id": "form3_page1",
+            "section_id": "form3",
             "f3_s1_sign": "{{$get.sign || ''}}",
             "f3_s1_day": "{{$get.day}}",
             "f3_s1_month": "{{$get.month}}",
