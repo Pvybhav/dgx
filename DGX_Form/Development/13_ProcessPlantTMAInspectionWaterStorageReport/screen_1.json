@@ -2,10 +2,9 @@
   "$jason": {
     "head": {
       "title": "Process Plant TMA Inspection Water Storage Report",
-      "description": "Form-13",
+      "description": "Process Plant TMA Inspection Water Storage Report",
       "form_id": "form13",
       "offline": "true",
-      "icon": "https://s3.amazonaws.com/enu-digital-ips/development/DG_Logo.png",
       "styles": {
         "no_padding": {
           "padding": "0"
@@ -5509,15 +5508,9 @@
               "K_row6_4th_round": "{{ $global.K_row6_4th_round == null ? true : K_row6_4th_round }}"
             },
             "success": {
-              "type": "$render",
+              "trigger": "handleTemplateChange",
               "options": {
-                "template": "screen1"
-              },
-              "success": {
-                "trigger": "displayToaster",
-                "options": {
-                  "message": "Page loaded successfully"
-                }
+                "templateName": "screen1"
               }
             }
           }
