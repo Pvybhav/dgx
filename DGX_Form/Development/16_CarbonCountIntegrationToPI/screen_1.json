@@ -1,10 +1,10 @@
 {
   "$jason": {
     "head": {
-      "title": "Form-16",
+      "title": "Carbon Count Integration to PI",
       "json_id": "form16",
       "description": "Carbon Count Integration to PI",
-      "form_id": "form17",
+      "form_id": "form16",
       "offline": "true",
       "styles": {
         "carbon_bags": {
@@ -220,7 +220,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen1 data successfully"
             }
           }
         },
@@ -242,7 +242,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen2 data successfully"
             }
           }
         },
@@ -266,8 +266,8 @@
           "type": "$global.reset",
           "options": {
             "save": "true",
-            "form_id": "form17",
-            "filename": "CIP_CarbonCount"
+            "form_id": "form16",
+            "filename": "CIPCarbonCount"
           },
           "success": {
             "type": "$global.reset",
@@ -321,7 +321,10 @@
               ]
             },
             "success": {
-              "type": "$reload"
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
             }
           }
         }
