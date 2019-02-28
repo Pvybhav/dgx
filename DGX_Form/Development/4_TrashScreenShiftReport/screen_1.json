@@ -329,16 +329,15 @@
           "type": "$global.set",
           "options": {
             "section_id": "form4",
-            "f4_s1_sign": "{{$get.sign}}",
+            "f4_s1_sign": "{{$get.sign || ''}}",
             "f4_s1_day": "{{$get.day}}",
             "f4_s1_month": "{{$get.month}}",
             "f4_s1_year": "{{$get.year}}",
             "f4_s1_shift": "{{$get.shift}}",
             "f4_s1_operator": "{{$get.operator}}",
-            "strainer_press_upstream_s1": "{{$get.strainer_press_upstream_s1}}",
-            "under_pan_s1": "{{$get.under_pan_s1}}",
-            "strainer_press_downstream_s1": "{{$get.strainer_press_downstream_s1}}",
-            "f4_s1_comments": "{{$get.comments}}"
+            "strainer_press_upstream_s1": "{{$get.strainer_press_upstream_s1 || ''}}",
+            "under_pan_s1": "{{$get.under_pan_s1 || ''}}",
+            "strainer_press_downstream_s1": "{{$get.strainer_press_downstream_s1 || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -350,7 +349,7 @@
         "handleSave_screen2": {
           "type": "$global.set",
           "options": {
-            "f4_s1_comments": "{{$get.comments}}"
+            "f4_s1_comments": "{{$get.f4_s1_comments || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -363,9 +362,9 @@
           "type": "$global.set",
           "options": {
             "section_id": "form4",
-            "strainer_press_upstream_s2": "{{$get.strainer_press_upstream_s2}}",
-            "under_pan_s2": "{{$get.under_pan_s2}}",
-            "strainer_press_downstream_s2": "{{$get.strainer_press_downstream_s2}}"
+            "strainer_press_upstream_s2": "{{$get.strainer_press_upstream_s2 || ''}}",
+            "under_pan_s2": "{{$get.under_pan_s2 || ''}}",
+            "strainer_press_downstream_s2": "{{$get.strainer_press_downstream_s2 || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -378,7 +377,7 @@
           "type": "$global.set",
           "options": {
             "section_id": "form4",
-            "f4_s2_comments": "{{$get.f4_s2_comments}}"
+            "f4_s2_comments": "{{$get.f4_s2_comments || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -2401,8 +2400,8 @@
                             },
                             {
                               "type": "textarea",
-                              "value": "{{$global.f4_s1_comments}}",
-                              "name": "comments",
+                              "value": "{{$global.f4_s1_comments || ''}}",
+                              "name": "f4_s1_comments",
                               "placeholder": "Comments",
                               "contentDescription": "comments",
                               "style": {
@@ -4124,7 +4123,7 @@
                             },
                             {
                               "type": "textarea",
-                              "value": "{{$global.f4_s2_comments}}",
+                              "value": "{{$global.f4_s2_comments || ''}}",
                               "name": "f4_s2_comments",
                               "placeholder": "Comments",
                               "contentDescription": "Comments",
