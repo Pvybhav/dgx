@@ -161,12 +161,15 @@
               "items": [
                 {
                   "type": "horizontal",
-                  "class": "no_padding",
+                  "style": {
+                    "padding": "1%"
+                  },
                   "components": [
                     {
                       "type": "vertical",
                       "style": {
-                        "padding": "1%"
+                        "padding_right": "1%",
+                        "padding_left": "1%"
                       },
                       "components": {
                         "{{#each grid1_forms}}": {
@@ -232,7 +235,8 @@
                     {
                       "type": "vertical",
                       "style": {
-                        "padding": "1%"
+                        "padding_right": "1%",
+                        "padding_left": "1%"
                       },
                       "components": {
                         "{{#each grid2_forms}}": {
