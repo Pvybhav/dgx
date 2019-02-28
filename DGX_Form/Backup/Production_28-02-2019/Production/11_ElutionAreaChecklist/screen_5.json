@@ -1,0 +1,406 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Elution Area Checklist",
+      "description": "Elution Area Checklist",
+      "form_id": "form11",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "black_color": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "6%"
+        },
+        "button_styles": {
+          "width": "15%",
+          "height": "7%",
+          "color": "rgb(255,255,255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "footer_styles": {
+          "padding_top": "1%",
+          "padding_bottom": "1%"
+        },
+        "footer_buttons_spacing": {
+          "spacing": "5%"
+        }
+      },
+      "data": {
+        "Page_Heading": "Elution Area Checklist (5/5)",
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/11_ElutionAreaChecklist/screen_1.json",
+        "Footer_Buttons": [
+          {
+            "displayName": "Previous",
+            "contentDescription": "previous",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/11_ElutionAreaChecklist/screen_4.json",
+            "trigger": "handleNavigation"
+          },
+          {
+            "displayName": "Home",
+            "contentDescription": "home",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
+            "trigger": "handleNavigation"
+          },
+          {
+            "displayName": "Save",
+            "contentDescription": "save",
+            "trigger": "handleSave"
+          },
+          {
+            "displayName": "Submit",
+            "contentDescription": "submit",
+            "trigger": "handleSubmit"
+          }
+        ]
+      },
+      "actions": {
+        "$load": {
+          "type": "$render"
+        },
+        "$show": {
+          "type": "$render"
+        },
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "class": "loading_image_styles"
+                }
+              ]
+            }
+          }
+        },
+        "handleSave": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form11_page5",
+            "f11_s5_notifications": "{{$get.notifications}}",
+            "f11_s5_comments": "{{$get.comments}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved Successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "form_id": "form11",
+            "filename": "ElutionAreaChecklist"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id",
+                "f11_s1_sign",
+                "f11_s1_day",
+                "f11_s1_month",
+                "f11_s1_year",
+                "f11_s1_shift",
+                "f11_s1_operator",
+                "f11_s5_notifications",
+                "f11_s5_comments",
+                "fine_carbon_has_the_fine_carbon_tank_been_drained_yes",
+                "fine_carbon_has_the_fine_carbon_tank_been_drained_no",
+                "fine_carbon_has_the_fine_carbon_tank_been_drained_clean",
+                "fine_carbon_has_the_fine_carbon_tank_been_drained_good",
+                "fine_carbon_derrick_screen_0645_M221_021_holed",
+                "fine_carbon_derrick_screen_0645_M221_021_blinded",
+                "fine_carbon_derrick_screen_0645_M221_021_clean",
+                "fine_carbon_derrick_screen_0645_M221_021_good",
+                "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_holed",
+                "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_blinded",
+                "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_cleaned",
+                "fine_carbon_secondary_loaded_carbon_screen_0645_M221_011_good",
+                "fine_carbon_carbon_dewatering_screen_0650_M221_001_holed",
+                "fine_carbon_carbon_dewatering_screen_0650_M221_001_blinded",
+                "fine_carbon_carbon_dewatering_screen_0650_M221_001_cleaned",
+                "fine_carbon_carbon_dewatering_screen_0650_M221_001_good",
+                "fine_carbon_carbon_dewatering_screen_0650_M221_002_holed",
+                "fine_carbon_carbon_dewatering_screen_0650_M221_002_blinded",
+                "fine_carbon_carbon_dewatering_screen_0650_M221_002_cleaned",
+                "fine_carbon_carbon_dewatering_screen_0650_M221_002_good",
+                "heaters_immersed_heater_0645_M400_001_plugged",
+                "heaters_immersed_heater_0645_M400_001_leaks",
+                "heaters_immersed_heater_0645_M400_001_good",
+                "heaters_immersed_heater_0645_M400_002_plugged",
+                "heaters_immersed_heater_0645_M400_002_leaks",
+                "heaters_immersed_heater_0645_M400_002_good",
+                "heaters_immersed_heater_0645_M400_003_plugged",
+                "heaters_immersed_heater_0645_M400_003_leaks",
+                "heaters_immersed_heater_0645_M400_003_good",
+                "heaters_immersed_heater_0645_M400_004_plugged",
+                "heaters_immersed_heater_0645_M400_004_leaks",
+                "heaters_immersed_heater_0645_M400_004_good",
+                "plate_hx_loaded_trim_exchanger_0645_M405_001_plugged",
+                "plate_hx_loaded_trim_exchanger_0645_M405_001_leaks",
+                "plate_hx_loaded_trim_exchanger_0645_M405_001_good",
+                "plate_hx_cooling_exchanger_0645_M405_003_plugged",
+                "plate_hx_cooling_exchanger_0645_M405_003_leaks",
+                "plate_hx_cooling_exchanger_0645_M405_003_good",
+                "strip_solution_strip_solution_strainer_001_plugged",
+                "strip_solution_strip_solution_strainer_001_leaks",
+                "strip_solution_strip_solution_strainer_001_cleaned",
+                "strip_solution_strip_solution_strainer_002_plugged",
+                "strip_solution_strip_solution_strainer_002_leaks",
+                "strip_solution_strip_solution_strainer_002_cleaned",
+                "fresh_water_pumps_pump001_running",
+                "fresh_water_pumps_pump001_valves",
+                "fresh_water_pumps_pump001_gland_m3hr",
+                "fresh_water_pumps_pump001_packing",
+                "fresh_water_pumps_pump001_oil_level",
+                "fresh_water_pumps_pump002_running",
+                "fresh_water_pumps_pump002_valves",
+                "fresh_water_pumps_pump002_gland_m3hr",
+                "fresh_water_pumps_pump002_packing",
+                "fresh_water_pumps_pump002_oil_level",
+                "gland_water_pump001_running",
+                "gland_water_pump001_valves",
+                "gland_water_pump001_gland_m3hr",
+                "gland_water_pump001_packing",
+                "gland_water_pump001_oil_level",
+                "gland_water_pump002_running",
+                "gland_water_pump002_valves",
+                "gland_water_pump002_gland_m3hr",
+                "gland_water_pump002_packing",
+                "gland_water_pump002_oil_level",
+                "gland_water_pump003_running",
+                "gland_water_pump003_valves",
+                "gland_water_pump003_gland_m3hr",
+                "gland_water_pump003_packing",
+                "gland_water_pump003_oil_level",
+                "gland_water_pump004_running",
+                "gland_water_pump004_valves",
+                "gland_water_pump004_gland_m3hr",
+                "gland_water_pump004_packing",
+                "gland_water_pump004_oil_level",
+                "gland_water_pump005_running",
+                "gland_water_pump005_valves",
+                "gland_water_pump005_gland_m3hr",
+                "gland_water_pump005_packing",
+                "gland_water_pump005_oil_level",
+                "gland_water_pump006_running",
+                "gland_water_pump006_valves",
+                "gland_water_pump006_gland_m3hr",
+                "gland_water_pump006_packing",
+                "gland_water_pump006_oil_level",
+                "circuit_pumps_aw_pump_004_running",
+                "circuit_pumps_aw_pump_004_valves",
+                "circuit_pumps_aw_pump_004_gland_m3hr",
+                "circuit_pumps_aw_pump_004_packing",
+                "circuit_pumps_aw_pump_004_oil_level",
+                "circuit_pumps_quench_pump_001_running",
+                "circuit_pumps_quench_pump_001_valves",
+                "circuit_pumps_quench_pump_001_gland_m3hr",
+                "circuit_pumps_quench_pump_001_packing",
+                "circuit_pumps_quench_pump_001_oil_level",
+                "circuit_pumps_quench_pump_002_running",
+                "circuit_pumps_quench_pump_002_valves",
+                "circuit_pumps_quench_pump_002_gland_m3hr",
+                "circuit_pumps_quench_pump_002_packing",
+                "circuit_pumps_quench_pump_002_oil_level",
+                "circuit_pumps_carbon_water_transfer_004_running",
+                "circuit_pumps_carbon_water_transfer_004_valves",
+                "circuit_pumps_carbon_water_transfer_004_gland_m3hr",
+                "circuit_pumps_carbon_water_transfer_004_packing",
+                "circuit_pumps_carbon_water_transfer_004_oil_level",
+                "circuit_pumps_carbon_water_transfer_005_running",
+                "circuit_pumps_carbon_water_transfer_005_valves",
+                "circuit_pumps_carbon_water_transfer_005_gland_m3hr",
+                "circuit_pumps_carbon_water_transfer_005_packing",
+                "circuit_pumps_carbon_water_transfer_005_oil_level",
+                "circuit_pumps_barren_007_running",
+                "circuit_pumps_barren_007_valves",
+                "circuit_pumps_barren_007_gland_m3hr",
+                "circuit_pumps_barren_007_packing",
+                "circuit_pumps_barren_007_oil_level",
+                "circuit_pumps_barren_008_running",
+                "circuit_pumps_barren_008_valves",
+                "circuit_pumps_barren_008_gland_m3hr",
+                "circuit_pumps_barren_008_packing",
+                "circuit_pumps_barren_008_oil_level",
+                "circuit_pumps_loaded_carbon_101_running",
+                "circuit_pumps_loaded_carbon_101_valves",
+                "circuit_pumps_loaded_carbon_101_gland_m3hr",
+                "circuit_pumps_loaded_carbon_101_packing",
+                "circuit_pumps_loaded_carbon_101_oil_level",
+                "circuit_pumps_loaded_carbon_201_running",
+                "circuit_pumps_loaded_carbon_201_valves",
+                "circuit_pumps_loaded_carbon_201_gland_m3hr",
+                "circuit_pumps_loaded_carbon_201_packing",
+                "circuit_pumps_loaded_carbon_201_oil_level"
+              ]
+            },
+            "success": {
+              "type": "$href",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}}"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "background": "rgb(146, 208, 80)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Notifications.",
+                      "class": "table_header_styles",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "notifications",
+                      "value": "{{$global.f11_s5_notifications || ''}}",
+                      "placeholder": "Enter notifications",
+                      "contentDescription": "notifications",
+                      "style": {
+                        "width": "100%",
+                        "height": "30%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Comments.",
+                      "class": "table_header_styles",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "comments",
+                      "value": "{{$global.f11_s5_comments || ''}}",
+                      "placeholder": "Enter Comments",
+                      "contentDescription": "comments",
+                      "style": {
+                        "width": "100%",
+                        "height": "30%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align footer_styles",
+                  "components": [
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "{{(100 % (Object.keys(Footer_Buttons).length*20))-5}}%"
+                      }
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "footer_buttons_spacing",
+                      "components": {
+                        "{{#each Footer_Buttons}}": {
+                          "type": "button",
+                          "name": "{{this.contentDescription}}",
+                          "text": "{{this.displayName}}",
+                          "class": "button_styles center_align",
+                          "contentDescription": "{{this.contentDescription}}",
+                          "action": {
+                            "trigger": "{{#? this.trigger}}",
+                            "options": {
+                              "url": "{{#? this.url}}"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
