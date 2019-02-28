@@ -111,7 +111,7 @@
       "data": {
         "Page_Heading": "Trash Screens Shift Report",
         "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
-        "loading_image_url": "file://infinit.gif",
+        "loading_image_url": "file://loading.gif",
         "home_icon": "file://icons/home.png",
         "submit_icon": "file://icons/submit.png",
         "save_icon": "file://icons/save.png",
@@ -245,9 +245,6 @@
               "trash_screen1_rollers_13": "{{$global.trash_screen1_rollers_13 == null ? true : $global.trash_screen1_rollers_13}}",
               "trash_screen1_rollers_14": "{{$global.trash_screen1_rollers_14 == null ? true : $global.trash_screen1_rollers_14}}",
               "trash_screen1_rollers_15": "{{$global.trash_screen1_rollers_15 == null ? true : $global.trash_screen1_rollers_15}}",
-              "strainer_press_upstream_s1": "{{$global.strainer_press_upstream_s1 || ''}}",
-              "under_pan_s1": "{{$global.under_pan_s1 || ''}}",
-              "strainer_press_downstream_s1": "{{$global.strainer_press_downstream_s1 || ''}}",
               "clean_underpan_build_up_s1": "{{$global.clean_underpan_build_up_s1 == null ? true : $global.clean_underpan_build_up_s1}}",
               "trough_north_s1": "{{$global.trough_north_s1 == null ? true : $global.trough_north_s1}}",
               "spray_bars_s1": "{{$global.spray_bars_s1 == null ? true : $global.spray_bars_s1}}",
@@ -255,8 +252,6 @@
               "cloth_s1": "{{$global.cloth_s1 == null ? true : $global.cloth_s1}}",
               "trough_south_s1": "{{$global.trough_south_s1 == null ? true : $global.trough_south_s1}}",
               "clean_south_trough_buildup_s1": "{{$global.clean_south_trough_buildup_s1 == null ? true : $global.clean_south_trough_buildup_s1}}",
-              "f4_s1_comments": "{{$global.f4_s1_comments || ''}}",
-              "f4_s1_sign": "{{$global.f4_s1_sign || ''}}",
               "trash_screen3_rollers_1": "{{$global.trash_screen3_rollers_1 == null ? true : $global.trash_screen3_rollers_1}}",
               "trash_screen3_rollers_2": "{{$global.trash_screen3_rollers_2 == null ? true : $global.trash_screen3_rollers_2}}",
               "trash_screen3_rollers_3": "{{$global.trash_screen3_rollers_3 == null ? true : $global.trash_screen3_rollers_3}}",
@@ -272,17 +267,13 @@
               "trash_screen3_rollers_13": "{{$global.trash_screen3_rollers_13 == null ? true : $global.trash_screen3_rollers_13}}",
               "trash_screen3_rollers_14": "{{$global.trash_screen3_rollers_14 == null ? true : $global.trash_screen3_rollers_14}}",
               "trash_screen3_rollers_15": "{{$global.trash_screen3_rollers_15 == null ? true : $global.trash_screen3_rollers_15}}",
-              "strainer_press_upstream_s2": "{{$global.strainer_press_upstream_s2 || ''}}",
-              "under_pan_s2": "{{$global.under_pan_s2 || ''}}",
-              "strainer_press_downstream_s2": "{{$global.strainer_press_downstream_s2 || ''}}",
               "clean_underpan_build_up_s2": "{{$global.clean_underpan_build_up_s2 == null ? true : $global.clean_underpan_build_up_s2}}",
               "trough_north_s2": "{{$global.trough_north_s2 == null ? true : $global.trough_north_s2}}",
               "spray_bars_s2": "{{$global.spray_bars_s2 == null ? true : $global.spray_bars_s2}}",
               "clean_north_trough_buildup_s2": "{{$global.clean_north_trough_buildup_s2 == null ? true : $global.clean_north_trough_buildup_s2}}",
               "cloth_s2": "{{$global.cloth_s2 == null ? true : $global.cloth_s2}}",
               "trough_south_s2": "{{$global.trough_south_s2 == null ? true : $global.trough_south_s2}}",
-              "clean_south_trough_buildup_s2": "{{$global.clean_south_trough_buildup_s2 == null ? true : $global.clean_south_trough_buildup_s2}}",
-              "f4_s2_comments": "{{$global.f4_s2_comments || ''}}"
+              "clean_south_trough_buildup_s2": "{{$global.clean_south_trough_buildup_s2 == null ? true : $global.clean_south_trough_buildup_s2}}"
             },
             "success": {
               "trigger": "handleTemplateChange",
@@ -328,7 +319,13 @@
                 {
                   "type": "image",
                   "url": "{{loading_image_url}}",
-                  "class": "loading_image_styles"
+                  "style": {
+                    "width": "30%",
+                    "height": "30%",
+                    "align": "center",
+                    "top": "30%",
+                    "left": "35%"
+                  }
                 }
               ]
             }
@@ -338,16 +335,15 @@
           "type": "$global.set",
           "options": {
             "section_id": "form4",
-            "f4_s1_sign": "{{$get.sign}}",
+            "f4_s1_sign": "{{$get.sign || ''}}",
             "f4_s1_day": "{{$get.day}}",
             "f4_s1_month": "{{$get.month}}",
             "f4_s1_year": "{{$get.year}}",
             "f4_s1_shift": "{{$get.shift}}",
             "f4_s1_operator": "{{$get.operator}}",
-            "strainer_press_upstream_s1": "{{$get.strainer_press_upstream_s1}}",
-            "under_pan_s1": "{{$get.under_pan_s1}}",
-            "strainer_press_downstream_s1": "{{$get.strainer_press_downstream_s1}}",
-            "f4_s1_comments": "{{$get.comments}}"
+            "strainer_press_upstream_s1": "{{$get.strainer_press_upstream_s1 || ''}}",
+            "under_pan_s1": "{{$get.under_pan_s1 || ''}}",
+            "strainer_press_downstream_s1": "{{$get.strainer_press_downstream_s1 || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -359,7 +355,7 @@
         "handleSave_screen2": {
           "type": "$global.set",
           "options": {
-            "f4_s1_comments": "{{$get.comments}}"
+            "f4_s1_comments": "{{$get.f4_s1_comments || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -372,9 +368,9 @@
           "type": "$global.set",
           "options": {
             "section_id": "form4",
-            "strainer_press_upstream_s2": "{{$get.strainer_press_upstream_s2}}",
-            "under_pan_s2": "{{$get.under_pan_s2}}",
-            "strainer_press_downstream_s2": "{{$get.strainer_press_downstream_s2}}"
+            "strainer_press_upstream_s2": "{{$get.strainer_press_upstream_s2 || ''}}",
+            "under_pan_s2": "{{$get.under_pan_s2 || ''}}",
+            "strainer_press_downstream_s2": "{{$get.strainer_press_downstream_s2 || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -387,7 +383,7 @@
           "type": "$global.set",
           "options": {
             "section_id": "form4",
-            "f4_s2_comments": "{{$get.f4_s2_comments}}"
+            "f4_s2_comments": "{{$get.f4_s2_comments || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -838,7 +834,7 @@
                     },
                     {
                       "type": "textfield",
-                      "value": "{{$global.f4_s1_sign}}",
+                      "value": "{{$global.f4_s1_sign || ''}}",
                       "name": "sign",
                       "placeholder": "Sign",
                       "class": "sign_style center_align black_color",
@@ -1447,7 +1443,7 @@
                                     {
                                       "type": "textfield",
                                       "name": "strainer_press_upstream_s1",
-                                      "value": "{{$global.strainer_press_upstream_s1}}",
+                                      "value": "{{$global.strainer_press_upstream_s1 || ''}}",
                                       "class": "center_align black_color",
                                       "contentDescription": "sixteen",
                                       "style": {
@@ -1508,7 +1504,7 @@
                                     {
                                       "type": "textfield",
                                       "name": "strainer_press_downstream_s1",
-                                      "value": "{{$global.strainer_press_downstream_s1}}",
+                                      "value": "{{$global.strainer_press_downstream_s1 || ''}}",
                                       "class": "center_align black_color",
                                       "contentDescription": "eighteen",
                                       "style": {
@@ -1821,7 +1817,7 @@
                                     {
                                       "type": "textfield",
                                       "name": "under_pan_s1",
-                                      "value": "{{$global.under_pan_s1}}",
+                                      "value": "{{$global.under_pan_s1 || ''}}",
                                       "class": "center_align black_color",
                                       "contentDescription": "seventeen",
                                       "style": {
@@ -2410,8 +2406,8 @@
                             },
                             {
                               "type": "textarea",
-                              "value": "{{$global.f4_s1_comments}}",
-                              "name": "comments",
+                              "value": "{{$global.f4_s1_comments || ''}}",
+                              "name": "f4_s1_comments",
                               "placeholder": "Comments",
                               "contentDescription": "comments",
                               "style": {
@@ -3167,7 +3163,7 @@
                                     {
                                       "type": "textfield",
                                       "name": "strainer_press_upstream_s2",
-                                      "value": "{{$global.strainer_press_upstream_s2}}",
+                                      "value": "{{$global.strainer_press_upstream_s2 || ''}}",
                                       "class": "center_align black_color",
                                       "contentDescription": "sixteen",
                                       "style": {
@@ -3228,7 +3224,7 @@
                                     {
                                       "type": "textfield",
                                       "name": "strainer_press_downstream_s2",
-                                      "value": "{{$global.strainer_press_downstream_s2}}",
+                                      "value": "{{$global.strainer_press_downstream_s2 || ''}}",
                                       "class": "center_align black_color",
                                       "contentDescription": "eighteen",
                                       "style": {
@@ -3541,7 +3537,7 @@
                                     {
                                       "type": "textfield",
                                       "name": "under_pan_s2",
-                                      "value": "{{$global.under_pan_s2}}",
+                                      "value": "{{$global.under_pan_s2 || ''}}",
                                       "class": "center_align black_color",
                                       "contentDescription": "seventeen",
                                       "style": {
@@ -4133,7 +4129,7 @@
                             },
                             {
                               "type": "textarea",
-                              "value": "{{$global.f4_s2_comments}}",
+                              "value": "{{$global.f4_s2_comments || ''}}",
                               "name": "f4_s2_comments",
                               "placeholder": "Comments",
                               "contentDescription": "Comments",

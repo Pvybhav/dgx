@@ -189,14 +189,18 @@
           "height": "4%",
           "size": "13"
         },
+        "table22_textfield_styles": {
+          "width": "14%",
+          "height": "4%",
+          "size": "13"
+        },
+        "table23_textfield_styles": {
+          "width": "14%",
+          "height": "4%",
+          "size": "13"
+        },
         "table19_switch_styles": {
           "width": "12%"
-        },
-        "loading_image_styles": {
-          "top": "50%-25",
-          "left": "50%-25",
-          "width": "50",
-          "height": "50"
         },
         "preload_styles": {
           "background": "rgb(255, 0, 0)"
@@ -339,6 +343,10 @@
               "Ball_Mills_lube_room_skid_line1_filter_pods_2_online": "{{ $global.Ball_Mills_lube_room_skid_line1_filter_pods_2_online == null ? true : $global.Ball_Mills_lube_room_skid_line1_filter_pods_2_online }}",
               "Ball_Mills_lube_room_skid_line2_filter_pods_1_online": "{{ $global.Ball_Mills_lube_room_skid_line2_filter_pods_1_online == null ? true : $global.Ball_Mills_lube_room_skid_line2_filter_pods_1_online }}",
               "Ball_Mills_lube_room_skid_line2_filter_pods_2_online": "{{ $global.Ball_Mills_lube_room_skid_line2_filter_pods_2_online == null ? true : $global.Ball_Mills_lube_room_skid_line2_filter_pods_2_online }}",
+              "Ball_Mills_cyclone_feed_pumps_line1_noises": "{{ $global.Ball_Mills_cyclone_feed_pumps_line1_noises == null ? true : $global.Ball_Mills_cyclone_feed_pumps_line1_noises }}",
+              "Ball_Mills_cyclone_feed_pumps_line1_vibration": "{{ $global.Ball_Mills_cyclone_feed_pumps_line1_vibration == null ? true : $global.Ball_Mills_cyclone_feed_pumps_line1_vibration }}",
+              "Ball_Mills_cyclone_feed_pumps_line2_noises": "{{ $global.Ball_Mills_cyclone_feed_pumps_line2_noises == null ? true : $global.Ball_Mills_cyclone_feed_pumps_line2_noises }}",
+              "Ball_Mills_cyclone_feed_pumps_line2_vibration": "{{ $global.Ball_Mills_cyclone_feed_pumps_line2_vibration == null ? true : $global.Ball_Mills_cyclone_feed_pumps_line2_vibration }}",
               "Ball_Mills_ball_mill_sump_running": "{{ $global.Ball_Mills_ball_mill_sump_running == null ? true : $global.Ball_Mills_ball_mill_sump_running }}",
               "Ball_Mills_cyclones_running_line1_1A": "{{ $global.Ball_Mills_cyclones_running_line1_1A == null ? true : $global.Ball_Mills_cyclones_running_line1_1A }}",
               "Ball_Mills_cyclones_running_line1_1B": "{{ $global.Ball_Mills_cyclones_running_line1_1B == null ? true : $global.Ball_Mills_cyclones_running_line1_1B }}",
@@ -525,7 +533,13 @@
                 {
                   "type": "image",
                   "url": "{{loading_image_url}}",
-                  "class": "loading_image_styles"
+                  "style": {
+                    "width": "30%",
+                    "height": "30%",
+                    "align": "center",
+                    "top": "30%",
+                    "left": "35%"
+                  }
                 }
               ]
             }
@@ -540,6 +554,7 @@
             "form18_month": "{{ $get.month }}",
             "form18_year": "{{ $get.year }}",
             "form18_shift": "{{ $get.shift }}",
+            "form18_operator": "{{ $get.form18_operator }}",
             "SAG_Mills_ball_buckets_added_line1": "{{ $get.SAG_Mills_ball_buckets_added_line1 || '' }}",
             "SAG_Mills_ball_buckets_added_line2": "{{ $get.SAG_Mills_ball_buckets_added_line2 || '' }}",
             "SAG_Mills_gear_lube_line1_drum_level": "{{ $get.SAG_Mills_gear_lube_line1_drum_level || '' }}",
@@ -686,6 +701,15 @@
             "Ball_Mills_lube_room_skid_line2_plate_hxs_oil_out": "{{ $get.Ball_Mills_lube_room_skid_line2_plate_hxs_oil_out || '' }}",
             "Ball_Mills_lube_room_skid_line2_site_glass_levels_LP_side": "{{ $get.Ball_Mills_lube_room_skid_line2_site_glass_levels_LP_side || '' }}",
             "Ball_Mills_lube_room_skid_line2_site_glass_levels_HP_side": "{{ $get.Ball_Mills_lube_room_skid_line2_site_glass_levels_HP_side || '' }}",
+            "Ball_Mills_cyclone_feed_pumps_line1_gland_h2o": "{{ $get.Ball_Mills_cyclone_feed_pumps_line1_gland_h2o || ''}}",
+            "Ball_Mills_cyclone_feed_pumps_line1_packing": "{{ $get.Ball_Mills_cyclone_feed_pumps_line1_packing || ''}}",
+            "Ball_Mills_cyclone_feed_pumps_line1_gearbox_oil_level": "{{ $get.Ball_Mills_cyclone_feed_pumps_line1_gearbox_oil_level || ''}}",
+            "Ball_Mills_cyclone_feed_pumps_line1_gearbox_oil_temp": "{{ $get.Ball_Mills_cyclone_feed_pumps_line1_gearbox_oil_temp || ''}}",
+            "Ball_Mills_cyclone_feed_pumps_line2_gland_h2o": "{{ $get.Ball_Mills_cyclone_feed_pumps_line2_gland_h2o || ''}}",
+            "Ball_Mills_cyclone_feed_pumps_line2_packing": "{{ $get.Ball_Mills_cyclone_feed_pumps_line2_packing || ''}}",
+            "Ball_Mills_cyclone_feed_pumps_line2_gearbox_oil_level": "{{ $get.Ball_Mills_cyclone_feed_pumps_line2_gearbox_oil_level || ''}}",
+            "Ball_Mills_cyclone_feed_pumps_line2_gearbox_oil_temp": "{{ $get.Ball_Mills_cyclone_feed_pumps_line2_gearbox_oil_temp || ''}}",
+            "Ball_Mills_cyclone_feed_pumps_line2_vibration": "{{ $get.Ball_Mills_cyclone_feed_pumps_line2_vibration || ''}}",
             "Ball_Mills_cyclone_checks1_700_line1_OF_PF_HM1": "{{ $get.Ball_Mills_cyclone_checks1_700_line1_OF_PF_HM1 || ''}}",
             "Ball_Mills_cyclone_checks1_700_line1_OF_PF_manual": "{{ $get.Ball_Mills_cyclone_checks1_700_line1_OF_PF_manual || ''}}",
             "Ball_Mills_cyclone_checks1_700_line1_OF_density": "{{ $get.Ball_Mills_cyclone_checks1_700_line1_OF_density || ''}}",
@@ -784,6 +808,7 @@
                 "form18_month",
                 "form18_year",
                 "form18_shift",
+                "form18_operator",
                 "SAG_Mills_feed_chute_bolts_leaking_line1",
                 "SAG_Mills_feed_chute_bolts_leaking_line2",
                 "SAG_Mills_feed_chute_feed_seal_leaking_line1",
@@ -998,6 +1023,18 @@
                 "Ball_Mills_lube_room_skid_line2_plate_hxs_oil_out",
                 "Ball_Mills_lube_room_skid_line2_site_glass_levels_LP_side",
                 "Ball_Mills_lube_room_skid_line2_site_glass_levels_HP_side",
+                "Ball_Mills_cyclone_feed_pumps_line1_gland_h2o",
+                "Ball_Mills_cyclone_feed_pumps_line1_packing",
+                "Ball_Mills_cyclone_feed_pumps_line1_gearbox_oil_level",
+                "Ball_Mills_cyclone_feed_pumps_line1_gearbox_oil_temp",
+                "Ball_Mills_cyclone_feed_pumps_line1_noises",
+                "Ball_Mills_cyclone_feed_pumps_line1_vibration",
+                "Ball_Mills_cyclone_feed_pumps_line2_gland_h2o",
+                "Ball_Mills_cyclone_feed_pumps_line2_packing",
+                "Ball_Mills_cyclone_feed_pumps_line2_gearbox_oil_level",
+                "Ball_Mills_cyclone_feed_pumps_line2_gearbox_oil_temp",
+                "Ball_Mills_cyclone_feed_pumps_line2_noises",
+                "Ball_Mills_cyclone_feed_pumps_line2_vibration",
                 "Ball_Mills_ball_mill_sump_running",
                 "Ball_Mills_cyclones_running_line1_1A",
                 "Ball_Mills_cyclones_running_line1_1B",
@@ -1214,7 +1251,7 @@
       "data": {
         "Page_Heading": "Grinding And Gravity Report",
         "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
-        "loading_image_url": "file://infinit.gif",
+        "loading_image_url": "file://loading.gif",
         "home_icon": "file://icons/home.png",
         "submit_icon": "file://icons/submit.png",
         "save_icon": "file://icons/save.png",
@@ -3627,7 +3664,7 @@
                     },
                     {
                       "type": "dropdown",
-                      "name": "operator",
+                      "name": "form18_operator",
                       "value": "{{$global.form18_operator}}",
                       "contentDescription": "operator",
                       "class": "center_align black_color dropdown_operator_style",
@@ -8146,7 +8183,7 @@
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table19_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
-                                              "class": "center_align black_color {{type == 'textfield' ? 'table19_textfield_styles': '' }} {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles table19_switch_styles' : 'switch_styles table_odd_row_styles table19_switch_styles' : ''}}",
+                                              "class": "center_align black_color {{type == 'textfield' ? 'table19_textfield_styles' : '' }} {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles table19_switch_styles' : 'switch_styles table_odd_row_styles table19_switch_styles' : ''}}",
                                               "action": {
                                                 "trigger": "handleSwitchValues",
                                                 "options": {
@@ -8245,11 +8282,13 @@
                               "components": [
                                 {
                                   "type": "switch",
-                                  "value": "{{$global.Ball_Mills_ball_mill_sump_running}}",
+                                  "name": "Ball_Mills_ball_mill_sump_running",
+                                  "value": "{{$global.Ball_Mills_ball_mill_sump_running || true}}",
                                   "class": "center_align switch_styles table_even_row_styles table_row_height",
                                   "action": {
                                     "trigger": "handleSwitchValues",
                                     "options": {
+                                      "section_id": "form18",
                                       "fieldName": "Ball_Mills_ball_mill_sump_running"
                                     }
                                   }
@@ -8791,7 +8830,7 @@
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table22_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
-                                              "class": "center_align black_color table22_body_value_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles' : 'switch_styles table_odd_row_styles' : ''}}",
+                                              "class": "center_align black_color {{type == 'textfield' ? 'table19_textfield_styles' : '' }} {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles' : 'switch_styles table_odd_row_styles' : ''}}",
                                               "action": {
                                                 "trigger": "handleSwitchValues",
                                                 "options": {
@@ -9020,7 +9059,7 @@
                                                   "{{#elseif type=='switch'}}": "{{var index = $index; return getCurrentFieldValue(index, $root.Table23_Rows[row_index].row_values[$index].name, $root['$global']) || true;}}"
                                                 }
                                               ],
-                                              "class": "center_align black_color table22_body_value_styles {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles' : 'switch_styles table_odd_row_styles' : ''}}",
+                                              "class": "center_align black_color table_row_height table22_body_value_styles {{type == 'textfield' ? 'table19_textfield_styles' : '' }} {{ type == 'switch' ? row_index % 2 == 0 ? 'switch_styles table_even_row_styles' : 'switch_styles table_odd_row_styles' : ''}}",
                                               "action": {
                                                 "trigger": "handleSwitchValues",
                                                 "options": {

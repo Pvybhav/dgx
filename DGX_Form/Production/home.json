@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "DG Forms",
+      "title": "Detour Gold E-Forms",
       "description": "Detour Gold E-Forms",
       "offline": "true",
       "styles": {
@@ -10,9 +10,6 @@
         },
         "center_align": {
           "align": "center"
-        },
-        "left_align": {
-          "align": "left"
         },
         "buttons_height": {
           "height": "6%"
@@ -32,6 +29,7 @@
         }
       },
       "data": {
+        "loading_image_url": "file://loading.gif",
         "forms": [
           {
             "form_name": "Leach Area Shift Report",
@@ -115,7 +113,7 @@
             "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/16_CarbonCountIntegrationToPI/screen_1.json"
           },
           {
-            "form_name": "CIP/Leach Operator Log Sheet-Carbon Count",
+            "form_name": "CIP/Leach Operator Log Sheet - Carbon Count",
             "voicetag_name": "Form17",
             "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/17_CIPLeachOperatorLogSheet_CarbonCount/screen_1.json"
           },
@@ -147,10 +145,8 @@
             },
             "style": {
               "font": "HelveticaHeader-Bold",
-              "size": 20,
-              "background": "rgb(0,162,224)",
-              "color": "rgb(255,255,255)",
-              "height": "3%"
+              "background": "rgb(0, 162, 224)",
+              "color": "rgb(255, 255, 255)"
             }
           },
           "sections": [
@@ -182,12 +178,13 @@
                                     "layers": [
                                       {
                                         "type": "image",
-                                        "url": "file://infinit.gif",
+                                        "url": "{{loading_image_url}}",
                                         "style": {
-                                          "top": "50%-25",
-                                          "left": "50%-25",
-                                          "width": "50",
-                                          "height": "50"
+                                          "width": "30%",
+                                          "height": "30%",
+                                          "align": "center",
+                                          "top": "30%",
+                                          "left": "35%"
                                         }
                                       }
                                     ]
@@ -198,7 +195,7 @@
                             {
                               "type": "button",
                               "text": "  {{form_name}}",
-                              "class": "left_align buttons_height eform_button_styles",
+                              "class": "buttons_height eform_button_styles",
                               "contentDescription": "{{voicetag_name}}",
                               "action": {
                                 "type": "$href",
@@ -208,12 +205,13 @@
                                     "layers": [
                                       {
                                         "type": "image",
-                                        "url": "file://infinit.gif",
+                                        "url": "{{loading_image_url}}",
                                         "style": {
-                                          "top": "50%-25",
-                                          "left": "50%-25",
-                                          "width": "50",
-                                          "height": "50"
+                                          "width": "30%",
+                                          "height": "30%",
+                                          "align": "center",
+                                          "top": "30%",
+                                          "left": "35%"
                                         }
                                       }
                                     ]

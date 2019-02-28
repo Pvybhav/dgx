@@ -109,12 +109,6 @@
           "width": "20%",
           "size": "15"
         },
-        "loading_image_styles": {
-          "top": "50%-25",
-          "left": "50%-25",
-          "width": "50",
-          "height": "50"
-        },
         "preload_styles": {
           "background": "rgb(255, 0, 0)"
         },
@@ -233,7 +227,13 @@
                 {
                   "type": "image",
                   "url": "{{loading_image_url}}",
-                  "class": "loading_image_styles"
+                  "style": {
+                    "width": "30%",
+                    "height": "30%",
+                    "align": "center",
+                    "top": "30%",
+                    "left": "35%"
+                  }
                 }
               ]
             }
@@ -299,7 +299,7 @@
       "data": {
         "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
         "Page_Heading": "Reagent Operator - Lead Nitrate Checklist",
-        "loading_image_url": "file://infinit.gif",
+        "loading_image_url": "file://loading.gif",
         "home_icon": "file://icons/home.png",
         "submit_icon": "file://icons/submit.png",
         "save_icon": "file://icons/save.png",
