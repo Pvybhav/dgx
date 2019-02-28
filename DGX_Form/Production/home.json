@@ -5,9 +5,6 @@
       "description": "Detour Gold E-Forms",
       "offline": "true",
       "styles": {
-        "no_padding": {
-          "padding": "0"
-        },
         "center_align": {
           "align": "center"
         },
@@ -18,18 +15,20 @@
           "font": "HelveticaHeader-Bold"
         },
         "eform_button_styles": {
+          "size": 16,
           "width": "40%",
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0, 102, 204)",
-          "size": 16
+          "border": "rgb(255, 255, 255)",
+          "border_width": "2"
         },
         "eform_voicetag_styles": {
+          "size": 18,
           "width": "10%",
-          "font": "HelveticaNeue-Bold",
           "color": "rgb(0, 0, 0)",
           "background": "rgb(102, 255, 204)",
           "border": "rgb(255, 255, 255)",
-          "size": 18
+          "border_width": "2"
         }
       },
       "data": {
@@ -38,8 +37,7 @@
           {
             "form_name": "Leach Area Shift Report",
             "voicetag_name": "Form1",
-            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/1_LeachAreaShiftReport/screen_1.json",
-            "defaultSelected": "true"
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/1_LeachAreaShiftReport/screen_1.json"
           },
           {
             "form_name": "Safety Screen Shift Report",
@@ -178,7 +176,7 @@
                             {
                               "type": "button",
                               "text": "{{voicetag_name}}",
-                              "class": "center_align buttons_height eform_voicetag_styles",
+                              "class": "center_align buttons_height eform_voicetag_styles bold",
                               "action": {
                                 "type": "$href",
                                 "options": {
@@ -245,7 +243,7 @@
                             {
                               "type": "button",
                               "text": "{{voicetag_name}}",
-                              "class": "center_align buttons_height eform_voicetag_styles",
+                              "class": "center_align buttons_height eform_voicetag_styles bold",
                               "action": {
                                 "type": "$href",
                                 "options": {
