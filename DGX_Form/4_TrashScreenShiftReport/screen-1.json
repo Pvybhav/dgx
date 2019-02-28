@@ -883,7 +883,7 @@
                                     },
                                     {
                                         "type": "textfield",
-                                        "value": "{{$global.f4_s1_sign}}",
+                                        "value": "{{$global.f4_s1_sign || ''}}",
                                         "name": "sign",
                                         "placeholder": "Sign",
                                         "class": "sign_style center_align black_color",
@@ -1453,7 +1453,7 @@
                                                                 {
                                                                     "type": "textfield",
                                                                     "name": "strainer_press_upstream_s1",
-                                                                    "value": "{{$global.strainer_press_upstream_s1}}",
+                                                                    "value": "{{$global.strainer_press_upstream_s1 || ''}}",
                                                                     "class": "center_align black_color",
                                                                     "contentDescription": "sixteen",
                                                                     "style": {
@@ -1510,7 +1510,7 @@
                                                                 {
                                                                     "type": "textfield",
                                                                     "name": "strainer_press_downstream_s1",
-                                                                    "value": "{{$global.strainer_press_downstream_s1}}",
+                                                                    "value": "{{$global.strainer_press_downstream_s1 || ''}}",
                                                                     "class": "center_align black_color",
                                                                     "contentDescription": "eighteen",
                                                                     "style": {
@@ -1800,7 +1800,7 @@
                                                                 {
                                                                     "type": "textfield",
                                                                     "name": "under_pan_s1",
-                                                                    "value": "{{$global.under_pan_s1}}",
+                                                                    "value": "{{$global.under_pan_s1 || ''}}",
                                                                     "class": "center_align black_color",
                                                                     "contentDescription": "seventeen",
                                                                     "style": {
@@ -2385,7 +2385,7 @@
                                         },
                                         {
                                             "type": "textarea",
-                                            "value": "{{$global.f4_s1_comments}}",
+                                            "value": "{{$global.f4_s1_comments || ''}}",
                                             "name": "f4_s1_comments",
                                             "placeholder": "Comments",
                                             "contentDescription": "comments",
@@ -3140,7 +3140,7 @@
                                                                 {
                                                                     "type": "textfield",
                                                                     "name": "strainer_press_upstream_s2",
-                                                                    "value": "{{$global.strainer_press_upstream_s2}}",
+                                                                    "value": "{{$global.strainer_press_upstream_s2 || ''}}",
                                                                     "class": "center_align black_color",
                                                                     "contentDescription": "sixteen",
                                                                     "style": {
@@ -3197,7 +3197,7 @@
                                                                 {
                                                                     "type": "textfield",
                                                                     "name": "strainer_press_downstream_s2",
-                                                                    "value": "{{$global.strainer_press_downstream_s2}}",
+                                                                    "value": "{{$global.strainer_press_downstream_s2 || ''}}",
                                                                     "class": "center_align black_color",
                                                                     "contentDescription": "eighteen",
                                                                     "style": {
@@ -3487,7 +3487,7 @@
                                                                 {
                                                                     "type": "textfield",
                                                                     "name": "under_pan_s2",
-                                                                    "value": "{{$global.under_pan_s2}}",
+                                                                    "value": "{{$global.under_pan_s2 || ''}}",
                                                                     "class": "center_align black_color",
                                                                     "contentDescription": "seventeen",
                                                                     "style": {
@@ -4083,7 +4083,7 @@
                                         },
                                         {
                                             "type": "textarea",
-                                            "value": "{{$global.f4_s2_comments}}",
+                                            "value": "{{$global.f4_s2_comments || ''}}",
                                             "name": "f4_s2_comments",
                                             "placeholder": "Comments",
                                             "contentDescription": "Comments",
