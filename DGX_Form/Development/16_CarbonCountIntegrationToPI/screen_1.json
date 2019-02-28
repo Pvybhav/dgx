@@ -110,12 +110,6 @@
           "width": "4%",
           "font": "HelveticaHeader-Bold"
         },
-        "loading_image_styles": {
-          "top": "50%-25",
-          "left": "50%-25",
-          "width": "50",
-          "height": "50"
-        },
         "preload_styles": {
           "background": "rgb(255, 0, 0)"
         },
@@ -251,7 +245,13 @@
                 {
                   "type": "image",
                   "url": "{{loading_image_url}}",
-                  "class": "loading_image_styles"
+                  "style": {
+                    "width": "30%",
+                    "height": "30%",
+                    "align": "center",
+                    "top": "30%",
+                    "left": "35%"
+                  }
                 }
               ]
             }

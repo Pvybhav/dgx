@@ -26,16 +26,10 @@
           "color": "rgb(0, 0, 0)",
           "background": "rgb(102, 255, 204)",
           "size": 18
-        },
-        "preload_layers_styles": {
-          "top": "50%-25",
-          "left": "50%-25",
-          "width": "50",
-          "height": "50"
         }
       },
       "data": {
-        "loading_gif": "file://infinit.gif",
+        "loading_gif": "https://s3.amazonaws.com/enu-digital-ips/development/loading.gif",
         "forms": [
           {
             "form_name": "Leach Area Shift Report",
@@ -219,7 +213,13 @@
                                       {
                                         "type": "image",
                                         "url": "{{loading_gif}}",
-                                        "class": "preload_layers_styles"
+                                        "style": {
+                                          "width": "30%",
+                                          "height": "30%",
+                                          "align": "center",
+                                          "top": "30%",
+                                          "left": "35%"
+                                        }
                                       }
                                     ]
                                   }
@@ -240,7 +240,13 @@
                                       {
                                         "type": "image",
                                         "url": "{{loading_gif}}",
-                                        "class": "preload_layers_styles"
+                                        "style": {
+                                          "width": "30%",
+                                          "height": "30%",
+                                          "align": "center",
+                                          "top": "30%",
+                                          "left": "35%"
+                                        }
                                       }
                                     ]
                                   }
