@@ -397,7 +397,7 @@
                         "strainer_press_upstream_s1": "{{$get.strainer_press_upstream_s1}}",
                         "under_pan_s1": "{{$get.under_pan_s1}}",
                         "strainer_press_downstream_s1": "{{$get.strainer_press_downstream_s1}}",
-                        "f4_s1_comments": "{{$get.comments}}"
+                        "f4_s1_comments": "{{$get.f4_s1_comments}}"
                     },
                     "success": {
                         "trigger": "displayToaster",
@@ -410,7 +410,7 @@
                     "type": "$global.set",
                     "options": {
 
-                        "f4_s1_comments": "{{$get.comments}}"
+                        "f4_s1_comments": "{{$get.f4_s1_comments}}"
                     },
                     "success": {
                         "trigger": "displayToaster",
@@ -2386,7 +2386,7 @@
                                         {
                                             "type": "textarea",
                                             "value": "{{$global.f4_s1_comments}}",
-                                            "name": "comments",
+                                            "name": "f4_s1_comments",
                                             "placeholder": "Comments",
                                             "contentDescription": "comments",
                                             "style": {
