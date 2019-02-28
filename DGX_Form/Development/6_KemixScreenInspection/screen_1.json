@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Screen-1",
+      "title": "Kemix Screen Inspection",
       "description": "Kemix Screen Inspection",
       "form_id": "form6",
       "offline": "true",
@@ -15,6 +15,9 @@
         },
         "center_align": {
           "align": "center"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
         },
         "right_padding": {
           "padding_left": "-2",
@@ -56,6 +59,14 @@
           "width": "30%",
           "border": "rgb(255, 255, 255)"
         },
+        "table23_header_name_styles": {
+          "width": "35%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table23_header_description_styles": {
+          "width": "25%",
+          "border": "rgb(255, 255, 255)"
+        },
         "table_header_description_styles": {
           "width": "35%",
           "border": "rgb(255, 255, 255)"
@@ -64,50 +75,42 @@
           "width": "35%",
           "border": "rgb(255, 255, 255)"
         },
+        "table23_header_value_styles": {
+          "width": "40%",
+          "border": "rgb(255, 255, 255)"
+        },
         "table_row": {
           "height": "6%"
         },
         "table_body_name_styles": {
           "width": "30%"
         },
+        "table23_body_name_styles": {
+          "width": "35%"
+        },
         "table_body_description_styles": {
           "width": "35%"
         },
+        "table23_body_description_styles": {
+          "width": "25%"
+        },
         "table_body_value_styles": {
           "width": "35%"
+        },
+        "table23_body_value_styles": {
+          "width": "40%"
         },
         "table_fields_size": {
           "size": "16"
         },
         "label_styles": {
-          "font": "HelveticaNeue-Bold"
+          "font": "HelveticaNeue-Bold",
+          "width": "3%"
         },
-        "table_dropdown_fields_styles": {
-          "height": "3%",
-          "width": "8%",
-          "border": "rgb(0, 0, 0)"
-        },
-        "table_dropdown_odd_fields_styles": {
-          "background": "rgb(204,206,213)"
-        },
-        "table_dropdown_even_fields_styles": {
-          "background": "rgb(231,232,235)"
-        },
-        "button_styles": {
-          "width": "40%",
-          "height": 50,
-          "space": "15",
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 204)"
-        },
-        "col_name_styles": {
-          "width": "22%"
-        },
-        "col_legend_styles": {
-          "width": "18%"
-        },
-        "col_value_styles": {
-          "width": "6%"
+        "switch_styles": {
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "align": "center"
         },
         "table_header_styles": {
           "size": 15,
@@ -115,7 +118,9 @@
           "background": "rgb(14, 53, 112)",
           "color": "rgb(255, 255, 255)",
           "border": "rgb(255, 255, 255)",
-          "height": "7%"
+          "height": "6%",
+          "padding_top": "1%",
+          "padding_bottom": "1%"
         },
         "table_row_odd_styles": {
           "background": "rgb(204,206,213)"
@@ -123,31 +128,31 @@
         "table_row_even_styles": {
           "background": "rgb(231,232,235)"
         },
-        "home_button_styles": {
+        "template_button_styles": {
+          "size": "16",
           "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
-          "height": "7%",
+          "background": "rgb(0,147,215)",
           "corner_radius": "1%"
         },
-        "next_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
         },
-        "save_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
+        "layer_styles": {
+          "width": "10%",
           "height": "7%",
-          "corner_radius": "1%"
+          "bottom": "1%"
         }
       },
       "data": {
         "Page_Heading": "Kemix Screen Inspection",
-        "Table_Headers": [
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+        "loading_image_url": "file://infinit.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
+        "Table1_Headers": [
           {
             "type": "label",
             "value": "Inspection Point",
@@ -166,23 +171,102 @@
             "col_type": "col_value",
             "styles": "table_header_styles center_align table_header_value_styles"
           }
+        ],
+        "Table2_Headers": [
+          {
+            "type": "label",
+            "value": "Inspection Point",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table23_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "Specific",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table23_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "Comments",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          }
+        ],
+        "Table3_Headers": [
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table23_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "Yes / No",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table23_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "Record",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          }
         ]
       },
       "actions": {
         "$load": {
-          "type": "$render",
+          "type": "$global.set",
+          "options": {
+            "section_id": "form6",
+            "is_a_work_notification_required": "{{$global.is_a_work_notification_required == null ? true : $global.is_a_work_notification_required}}",
+            "will_the_pumpcell_be_reinstalled": "{{$global.will_the_pumpcell_be_reinstalled == null ? true : $global.will_the_pumpcell_be_reinstalled}}"
+          },
           "success": {
-            "type": "$util.toast",
+            "trigger": "handleTemplateChange",
             "options": {
-              "text": "Page loaded successfully",
-              "type": "warning"
+              "templateName": "screen1"
             }
           }
         },
-        "handleSave": {
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "class": "loading_image_styles"
+                }
+              ]
+            }
+          }
+        },
+        "handleTemplateChange": {
+          "type": "$render",
+          "options": {
+            "template": "{{$jason.templateName}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
+          }
+        },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
+        },
+        "handleSave_screen1": {
           "type": "$global.set",
           "options": {
-            "section_id": "form6_page1",
+            "section_id": "form6",
             "f6_s1_sign": "{{$get.sign || ''}}",
             "f6_s1_day": "{{$get.day}}",
             "f6_s1_month": "{{$get.month}}",
@@ -199,20 +283,83 @@
             "screen_measurement_bottom_section_2": "{{$get.screen_measurement_bottom_section_2 || ''}}"
           },
           "success": {
-            "type": "$util.toast",
+            "trigger": "displayToaster",
             "options": {
-              "text": "Saved Successfully",
-              "type": "warning"
+              "message": "Saved screen1 data successfully"
+            }
+          }
+        },
+        "handleSave_screen2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form6",
+            "screen_damage": "{{$get.screen_damage || ''}}",
+            "screen_wire_wave": "{{$get.screen_wire_wave || ''}}",
+            "screen_no_carbon": "{{$get.screen_no_carbon || ''}}",
+            "lips_damage": "{{$get.lips_damage || ''}}",
+            "wn": "{{$get.wn || ''}}",
+            "tank": "{{$get.tank || ''}}",
+            "form16_comments": "{{$get.comments || ''}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen2 data successfully"
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "form_id": "form6",
+            "filename": "KemixScreenInspection"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id",
+                "form16_comments",
+                "wn",
+                "tank",
+                "is_a_work_notification_required",
+                "will_the_pumpcell_be_reinstalled",
+                "f6_s1_sign",
+                "f6_s1_day",
+                "f6_s1_month",
+                "f6_s1_year",
+                "f6_s1_shift",
+                "f6_s1_operator",
+                "bolt_at_the_top",
+                "bolt_at_the_bottom",
+                "impeller",
+                "cage",
+                "screen_measurement_top_section_1",
+                "screen_measurement_top_section_2",
+                "screen_measurement_bottom_section_1",
+                "screen_measurement_bottom_section_2",
+                "screen_damage",
+                "screen_wire_wave",
+                "screen_no_carbon",
+                "lips_damage"
+              ]
+            },
+            "success": {
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
             }
           }
         }
       },
       "templates": {
-        "body": {
+        "screen1": {
           "header": {
             "title": {
               "type": "label",
-              "text": "{{Page_Heading}}"
+              "text": "{{Page_Heading}} (1/2)"
             },
             "style": {
               "font": "HelveticaHeader-Bold",
@@ -601,7 +748,7 @@
                     {
                       "type": "horizontal",
                       "components": {
-                        "{{#each Table_Headers}}": {
+                        "{{#each Table1_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"
@@ -1063,112 +1210,786 @@
                   ]
                 }
               ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "home",
+              "style": {
+                "left": "30%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "contentDescription": "screen-1",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "contentDescription": "next",
+              "class": "layer_styles no_padding",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "contentDescription": "save",
+              "class": "layer_styles no_padding",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleSave_screen1"
+              }
+            }
+          ]
+        },
+        "screen2": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (2/2)"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaNeue-Bold",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table2_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row_odd_styles",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Screen",
+                      "class": "center_align black_color table_row table23_body_name_styles table_fields_size"
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table23_body_description_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Damage",
+                                  "class": "center_align black_color table_row table_fields_size"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_even_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Wire wave",
+                                  "class": "center_align black_color table_row table_fields_size"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "No carbon",
+                                  "class": "center_align black_color table_row table_fields_size"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "table23_body_value_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles table_row table23_body_value_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "1",
+                                  "class": "no_padding label_styles black_color center_align table_row"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "screen_damage",
+                                  "value": "{{$global.screen_damage || ''}}",
+                                  "class": "center_align black_color table_row",
+                                  "contentDescription": "one",
+                                  "style": {
+                                    "height": "4%",
+                                    "width": "35%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_even_styles table_row table23_body_value_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "2",
+                                  "class": "no_padding label_styles black_color center_align"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "screen_wire_wave",
+                                  "value": "{{$global.screen_wire_wave || ''}}",
+                                  "class": "center_align black_color table_row",
+                                  "contentDescription": "two",
+                                  "style": {
+                                    "height": "4%",
+                                    "width": "35%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row_odd_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "3",
+                                  "class": "no_padding label_styles black_color center_align table_row"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "screen_no_carbon",
+                                  "value": "{{$global.screen_no_carbon || ''}}",
+                                  "class": "center_align black_color table_row",
+                                  "contentDescription": "three",
+                                  "style": {
+                                    "height": "4%",
+                                    "width": "35%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align table_row table_row_odd_styles",
+                  "style": {
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Lips",
+                      "class": "center_align black_color table23_body_name_styles table_fields_size"
+                    },
+                    {
+                      "type": "label",
+                      "text": "Damage",
+                      "class": "center_align black_color table23_body_description_styles table_fields_size"
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "style": {
+                            "width": "3%"
+                          },
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "4",
+                              "class": "no_padding label_styles black_color center_align",
+                              "style": {
+                                "height": "6%"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "lips_damage",
+                              "value": "{{$global.lips_damage || ''}}",
+                              "class": "center_align black_color",
+                              "contentDescription": "four",
+                              "style": {
+                                "width": "35%",
+                                "height": "4%",
+                                "size": "14"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "note_styles",
+                      "text": "P.S. If measurements are between 1.1 mm & 1.2 mm, a WN is require to rebuilt the screen next time the pumpcell is available (usually 17 days)"
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "note_styles",
+                      "text": "P.S. If at least 2 measurements are 1.2 mm or greater, the screen need to be change immediately"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table3_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding center_align table_row_odd_styles",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "table_row table_row_odd_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Is a work notification required?",
+                          "class": "center_align black_color table23_body_name_styles table_row_odd_styles table_row table_fields_size"
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row table23_header_description_styles",
+                          "components": [
+                            {
+                              "type": "space",
+                              "class": "table_row_odd_styles",
+                              "style": {
+                                "width": "7%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "5",
+                              "class": "label_styles black_color center_align table_row_odd_styles table_row"
+                            },
+                            {
+                              "type": "switch",
+                              "name": "is_a_work_notification_required",
+                              "value": "{{$global.is_a_work_notification_required}}",
+                              "class": "switch_styles table_row_odd_styles table_row",
+                              "contentDescription": "five",
+                              "action": {
+                                "type": "$global.set",
+                                "options": {
+                                  "section_id": "form6",
+                                  "is_a_work_notification_required": "{{$get.is_a_work_notification_required}}"
+                                }
+                              }
+                            },
+                            {
+                              "type": "space",
+                              "class": "table_row_odd_styles",
+                              "style": {
+                                "width": "7%"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table23_body_value_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "7%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "WN#",
+                                  "class": "center_align black_color table_fields_size",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "6",
+                                  "class": "label_styles black_color center_align",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "wn",
+                                  "value": "{{$global.wn || ''}}",
+                                  "class": "center_align black_color",
+                                  "contentDescription": "six",
+                                  "style": {
+                                    "width": "28%",
+                                    "height": "4%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "vertical",
+                  "class": "no_padding center_align table_row_even_styles",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "table_row",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Will the pumpcell be re-installed?",
+                          "class": "center_align black_color table23_body_name_styles table_row_even_styles table_row table_fields_size"
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table_row table23_header_description_styles table_row_even_styles",
+                          "components": [
+                            {
+                              "type": "space",
+                              "class": "table_row_even_styles",
+                              "style": {
+                                "width": "7%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "7",
+                              "class": "label_styles black_color center_align table_row_even_styles table_row"
+                            },
+                            {
+                              "type": "switch",
+                              "name": "will_the_pumpcell_be_reinstalled",
+                              "value": "{{$global.will_the_pumpcell_be_reinstalled}}",
+                              "class": "switch_styles table_row_even_styles table_row",
+                              "contentDescription": "seven",
+                              "action": {
+                                "type": "$global.set",
+                                "options": {
+                                  "section_id": "form6",
+                                  "will_the_pumpcell_be_reinstalled": "{{$get.will_the_pumpcell_be_reinstalled}}"
+                                }
+                              }
+                            },
+                            {
+                              "type": "space",
+                              "class": "table_row_even_styles",
+                              "style": {
+                                "width": "7%"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "horizontal",
+                          "class": "table23_body_value_styles",
+                          "components": [
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "7%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "Tank #",
+                                  "class": "center_align black_color table_fields_size",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "style": {
+                                "width": "3%"
+                              },
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "8",
+                                  "class": "label_styles black_color center_align",
+                                  "style": {
+                                    "height": "6%"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "tank",
+                                  "value": "{{$global.tank || ''}}",
+                                  "class": "center_align black_color",
+                                  "contentDescription": "eight",
+                                  "style": {
+                                    "width": "28%",
+                                    "height": "4%",
+                                    "size": "14"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             },
             {
               "type": "horizontal",
               "items": [
                 {
                   "type": "horizontal",
-                  "class": "no_padding center_align",
-                  "style": {
-                    "padding_top": "1%",
-                    "padding_bottom": "1%"
-                  },
+                  "class": "no_padding",
                   "components": [
                     {
-                      "type": "space",
+                      "type": "label",
+                      "text": "Comments.",
+                      "class": "table_header_styles",
                       "style": {
-                        "width": "40%"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "home",
-                      "text": "Home",
-                      "class": "home_button_styles center_align",
-                      "action": {
-                        "type": "$href",
-                        "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
-                          "preload": {
-                            "style": {
-                              "background": "#ff0000"
-                            },
-                            "layers": [
-                              {
-                                "type": "image",
-                                "url": "file://infinit.gif",
-                                "style": {
-                                  "top": "50%-25",
-                                  "left": "50%-25",
-                                  "width": "50",
-                                  "height": "50"
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "next",
-                      "text": "Next",
-                      "class": "next_button_styles center_align",
-                      "action": {
-                        "type": "$href",
-                        "options": {
-                          "url": "https://s3.amazonaws.com/enu-digital-ips/development/6_KemixScreenInspection/screen_2.json",
-                          "preload": {
-                            "style": {
-                              "background": "#ff0000"
-                            },
-                            "layers": [
-                              {
-                                "type": "image",
-                                "url": "file://infinit.gif",
-                                "style": {
-                                  "top": "50%-25",
-                                  "left": "50%-25",
-                                  "width": "50",
-                                  "height": "50"
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "save",
-                      "text": "Save",
-                      "class": "save_button_styles center_align",
-                      "action": {
-                        "trigger": "handleSave"
-                      }
-                    },
-                    {
-                      "type": "space",
-                      "style": {
-                        "width": "5%"
+                        "width": "100%"
                       }
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "comments",
+                      "value": "{{$global.form16_comments || ''}}",
+                      "placeholder": "Enter Comments",
+                      "contentDescription": "comments",
+                      "style": {
+                        "width": "100%",
+                        "height": "10%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "label",
+              "text": "Reference Image.",
+              "class": "layer_styles no_padding black_color bold",
+              "style": {
+                "left": "4%"
+              }
+            },
+            {
+              "type": "image",
+              "url": "https://s3.amazonaws.com/enu-digital-ips/development/6_KemixScreenInspection/KemixScreen_ref_img.jpg",
+              "contentDescription": "reference image",
+              "class": "layer_styles no_padding",
+              "style": {
+                "left": "10%"
+              },
+              "action": {
+                "type": "$href",
+                "options": {
+                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/6_KemixScreenInspection/kemix_screen_ref_image.json",
+                  "transition": "modal"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "contentDescription": "home",
+              "class": "layer_styles no_padding",
+              "style": {
+                "left": "25%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "contentDescription": "previous",
+              "class": "layer_styles no_padding",
+              "style": {
+                "left": "35%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "45%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "55%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "contentDescription": "save",
+              "class": "layer_styles no_padding",
+              "style": {
+                "left": "65%"
+              },
+              "action": {
+                "trigger": "handleSave_screen2"
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{submit_icon}}",
+              "contentDescription": "submit",
+              "class": "layer_styles no_padding",
+              "style": {
+                "left": "75%"
+              },
+              "action": {
+                "trigger": "handleSubmit"
+              }
             }
           ]
         }

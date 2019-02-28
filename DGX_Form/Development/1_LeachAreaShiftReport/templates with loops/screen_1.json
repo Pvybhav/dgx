@@ -116,7 +116,7 @@
         },
         "layer_styles": {
           "width": "10%",
-          "height": "11%",
+          "height": "7%",
           "bottom": "1%"
         }
       },
@@ -1351,15 +1351,9 @@
               "f1_s2_description": "{{$global.f1_s2_description || ''}}"
             },
             "success": {
-              "type": "$render",
+              "trigger": "handleTemplateChange",
               "options": {
-                "template": "screen1"
-              },
-              "success": {
-                "trigger": "displayToaster",
-                "options": {
-                  "message": "Page loaded successfully"
-                }
+                "templateName": "screen1"
               }
             }
           }

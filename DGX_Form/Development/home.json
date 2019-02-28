@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "DG Forms",
+      "title": "Detour Gold E-Forms",
       "description": "Detour Gold E-Forms",
       "offline": "true",
       "styles": {
@@ -10,9 +10,6 @@
         },
         "center_align": {
           "align": "center"
-        },
-        "left_align": {
-          "align": "left"
         },
         "buttons_height": {
           "height": "6%"
@@ -29,9 +26,16 @@
           "color": "rgb(0, 0, 0)",
           "background": "rgb(102, 255, 204)",
           "size": 18
+        },
+        "preload_layers_styles": {
+          "top": "50%-25",
+          "left": "50%-25",
+          "width": "50",
+          "height": "50"
         }
       },
       "data": {
+        "loading_gif": "file://infinit.gif",
         "forms": [
           {
             "form_name": "Leach Area Shift Report",
@@ -115,7 +119,7 @@
             "url": "https://s3.amazonaws.com/enu-digital-ips/development/16_CarbonCountIntegrationToPI/screen_1.json"
           },
           {
-            "form_name": "CIP/Leach Operator Log Sheet-Carbon Count",
+            "form_name": "CIP/Leach Operator Log Sheet - Carbon Count",
             "voicetag_name": "Form17",
             "url": "https://s3.amazonaws.com/enu-digital-ips/development/17_CIPLeachOperatorLogSheet_CarbonCount/screen_1.json"
           },
@@ -125,19 +129,9 @@
             "url": "https://s3.amazonaws.com/enu-digital-ips/development/18_GrindingAndGravityReport/screen_1.json"
           },
           {
-            "form_name": "LOOPS",
-            "voicetag_name": "loops",
-            "url": "https://s3.amazonaws.com/enu-digital-ips/development/LOOPS/home.json"
-          },
-          {
             "form_name": "Production Forms",
             "voicetag_name": "PROD",
             "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json"
-          },
-          {
-            "form_name": "Tutorial",
-            "voicetag_name": "TUT",
-            "url": "https://raw.githubusercontent.com/Jasonette/Jasonpedia/gh-pages/hello.json"
           }
         ]
       },
@@ -162,14 +156,9 @@
             },
             "style": {
               "font": "HelveticaHeader-Bold",
-              "size": 20,
-              "background": "rgb(0,162,224)",
-              "color": "rgb(255,255,255)",
-              "height": "3%"
+              "background": "rgb(0, 162, 224)",
+              "color": "rgb(255, 255, 255)"
             }
-          },
-          "style": {
-            "border": "none"
           },
           "sections": [
             {
@@ -229,13 +218,8 @@
                                     "layers": [
                                       {
                                         "type": "image",
-                                        "url": "file://infinit.gif",
-                                        "style": {
-                                          "top": "50%-25",
-                                          "left": "50%-25",
-                                          "width": "50",
-                                          "height": "50"
-                                        }
+                                        "url": "{{loading_gif}}",
+                                        "class": "preload_layers_styles"
                                       }
                                     ]
                                   }
@@ -245,7 +229,7 @@
                             {
                               "type": "button",
                               "text": "  {{form_name}}",
-                              "class": "left_align buttons_height eform_button_styles",
+                              "class": "buttons_height eform_button_styles",
                               "contentDescription": "{{voicetag_name}}",
                               "action": {
                                 "type": "$href",
@@ -255,13 +239,8 @@
                                     "layers": [
                                       {
                                         "type": "image",
-                                        "url": "file://infinit.gif",
-                                        "style": {
-                                          "top": "50%-25",
-                                          "left": "50%-25",
-                                          "width": "50",
-                                          "height": "50"
-                                        }
+                                        "url": "{{loading_gif}}",
+                                        "class": "preload_layers_styles"
                                       }
                                     ]
                                   }

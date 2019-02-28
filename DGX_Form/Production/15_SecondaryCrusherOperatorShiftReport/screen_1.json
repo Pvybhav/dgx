@@ -1,9 +1,9 @@
 {
   "$jason": {
     "head": {
-      "title": "Line-1",
+      "title": "Secondary Crusher Operator Shift Report",
       "form_id": "form15",
-      "description": "",
+      "description": "Secondary Crusher Operator Shift Report",
       "offline": "true",
       "styles": {
         "no_padding": {
@@ -18,13 +18,12 @@
         "black_color": {
           "color": "rgb(0, 0, 0)"
         },
-        "title_styles": {
-          "font": "HelveticaNeue",
-          "width": "55%",
-          "padding": "5",
-          "disable": "true",
-          "size": "13",
-          "padding_left": "2%"
+        "bold": {
+          "font": "HelveticaHeader-Bold"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
         },
         "header_style": {
           "background": "rgb(14, 53, 112)",
@@ -44,9 +43,6 @@
           "size": "16",
           "align": "center"
         },
-        "textarea_style": {
-          "height": "8%"
-        },
         "table_name_background": {
           "background": "rgb(255, 255, 0)",
           "color": "rgb(0, 0, 0)"
@@ -64,14 +60,6 @@
           "background": "rgb(231, 232, 235)",
           "color": "rgb(0, 0, 0)",
           "border": "#ffffff"
-        },
-        "label_description_style": {
-          "font": "HelveticaNeue-Bold",
-          "size": "16"
-        },
-        "content_style_evenswitch": {
-          "background": "rgb(231, 232, 235)",
-          "color": "rgb(0, 0, 0)"
         },
         "dropdown_date_style": {
           "color": "rgb(0, 0, 0)",
@@ -96,46 +84,12 @@
           "width": "20%",
           "size": "16"
         },
-        "header_2_styles": {
-          "size": 13,
-          "width": "24%",
-          "height": "8%",
-          "color": "rgb(0, 0, 0)",
-          "border": "rgb(0, 0, 0)"
-        },
-        "header_2_label": {
-          "size": 13,
-          "width": "19%",
-          "color": "rgb(0,162,224)",
-          "align": "right"
-        },
-        "header_2_labels_styles": {
-          "size": 13,
-          "width": "25%",
-          "height": "7%",
-          "color": "rgb(0,162,224)"
-        },
         "table_header_styles": {
           "size": 17,
           "font": "HelveticaHeader-Bold",
           "background": "rgb(14, 53, 112)",
           "color": "rgb(255, 255, 255)",
           "border": "rgb(255, 255, 255)"
-        },
-        "roller_header_style": {
-          "size": 17,
-          "font": "HelveticaHeader-Bold",
-          "background": "rgb(14, 53, 112)",
-          "color": "rgb(255, 255, 255)",
-          "border": "rgb(255, 255, 255)",
-          "height": "12%"
-        },
-        "switch_styles": {
-          "color": "rgb(0,255,0)",
-          "color:disabled": "rgb(255,0,0)",
-          "align": "center",
-          "height": "6%",
-          "width": "18%"
         },
         "switch_legend_styles": {
           "color": "rgb(0,255,0)",
@@ -147,24 +101,6 @@
           "color": "rgb(0,255,0)",
           "color:disabled": "rgb(255,0,0)",
           "width": "7%"
-        },
-        "switch_table_styles": {
-          "color": "rgb(0,255,0)",
-          "color:disabled": "rgb(255,0,0)",
-          "height": "2%",
-          "width": "5%"
-        },
-        "table1_col_name_styles": {
-          "width": "37%"
-        },
-        "table1_col_value_styles": {
-          "width": "5%"
-        },
-        "table2_col_name_styles": {
-          "width": "20%"
-        },
-        "table2_col_value_styles": {
-          "width": "30%"
         },
         "table_header_name_styles": {
           "width": "15%",
@@ -216,74 +152,36 @@
           "font": "HelveticaHeader-Bold",
           "height": "18%"
         },
-        "table_header_value_styles2": {
-          "width": "18%",
-          "border": "rgb(255, 255, 255)",
-          "font": "HelveticaHeader-Bold",
-          "height": "10%"
-        },
-        "table_header_value_styles3": {
-          "width": "50%",
-          "border": "rgb(255, 255, 255)",
-          "height": "10%"
-        },
         "table_row": {
           "height": "10%"
         },
         "table_row_2": {
           "height": "18%"
         },
-        "table_row5": {
-          "height": "10%"
-        },
-        "table_header_width_styles": {
-          "width": "15%"
-        },
-        "table_row_odd_styles": {
-          "background": "rgb(204,206,213)"
-        },
-        "table_row_even_styles": {
-          "background": "rgb(231,232,235)"
-        },
-        "previous_button_styles": {
+        "template_button_styles": {
+          "size": "16",
           "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
-        },
-        "home_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
-        },
-        "submit_button_styles": {
-          "width": "15%",
-          "height": "7%",
-          "color": "rgb(255,255,255)",
           "background": "rgb(0,147,215)",
           "corner_radius": "1%"
         },
-        "next_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(0, 102, 255)",
-          "width": "15%",
-          "height": "7%",
-          "corner_radius": "1%"
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
         },
-        "save_button_styles": {
-          "color": "rgb(255, 255, 255)",
-          "background": "rgb(51, 102, 153)",
-          "width": "15%",
+        "layer_styles": {
+          "width": "10%",
           "height": "7%",
-          "corner_radius": "1%"
+          "bottom": "1%"
         }
       },
       "data": {
         "Page_Heading": "Secondary Crusher Operator Shift Report",
         "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
+        "loading_image_url": "file://infinit.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
         "Screen1_Table1_Headers": [
           {
             "type": "label",
@@ -1935,15 +1833,9 @@
               "secondary_crusher_screen4_line2_all_doors_inspection": "{{$global.secondary_crusher_screen4_line2_all_doors_inspection  == null ? true : $global.secondary_crusher_screen4_line2_all_doors_inspection}}"
             },
             "success": {
-              "type": "$render",
+              "trigger": "handleTemplateChange",
               "options": {
-                "template": "screen1"
-              },
-              "success": {
-                "trigger": "displayToaster",
-                "options": {
-                  "message": "Page loaded successfully"
-                }
+                "templateName": "screen1"
               }
             }
           }
@@ -2045,7 +1937,7 @@
           "success": {
             "type": "$util.toast",
             "options": {
-              "text": "Saved Successfully",
+              "text": "Saved screen1 data successfully",
               "type": "warning"
             }
           }
@@ -2058,7 +1950,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved screen2 data Successfully"
+              "message": "Saved screen2 data successfully"
             }
           }
         },
@@ -2070,7 +1962,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved screen3 data Successfully"
+              "message": "Saved screen3 data successfully"
             }
           }
         },
@@ -2082,7 +1974,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved screen4 data Successfully"
+              "message": "Saved screen4 data successfully"
             }
           }
         },
@@ -2291,9 +2183,9 @@
               ]
             },
             "success": {
-              "type": "$reload",
+              "trigger": "handleNavigation",
               "options": {
-                "template": "screen1"
+                "url": "{{redirect_url}}"
               }
             }
           }
@@ -3170,13 +3062,11 @@
           "layers": [
             {
               "type": "image",
-              "url": "file://icons/home.png",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
               "contentDescription": "home",
               "style": {
-                "left": "15%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "15%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -3188,15 +3078,10 @@
             {
               "type": "button",
               "text": "Page 1",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
                 "left": "25%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -3208,15 +3093,10 @@
             {
               "type": "button",
               "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
               "style": {
                 "left": "35%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -3228,15 +3108,10 @@
             {
               "type": "button",
               "text": "Page 3",
+              "class": "layer_styles template_button_styles bold",
               "style": {
                 "left": "45%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -3248,15 +3123,10 @@
             {
               "type": "button",
               "text": "Page 4",
+              "class": "layer_styles template_button_styles bold",
               "style": {
                 "left": "55%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -3267,13 +3137,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/next.png",
+              "url": "{{next_icon}}",
+              "class": "layer_styles",
               "contentDescription": "next",
               "style": {
-                "left": "65%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "65%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -3284,13 +3152,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/save.png",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
               "contentDescription": "save",
               "style": {
-                "left": "75%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "75%"
               },
               "action": {
                 "trigger": "handleSave_screen1"
@@ -3942,13 +3808,11 @@
           "layers": [
             {
               "type": "image",
-              "url": "file://icons/home.png",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
               "contentDescription": "home",
               "style": {
-                "left": "10%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -3959,13 +3823,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/previous.png",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles",
               "contentDescription": "previous",
               "style": {
-                "left": "15%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "15%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -3977,15 +3839,10 @@
             {
               "type": "button",
               "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
                 "left": "25%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -3997,15 +3854,10 @@
             {
               "type": "button",
               "text": "Page 2",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
                 "left": "35%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4017,15 +3869,10 @@
             {
               "type": "button",
               "text": "Page 3",
+              "class": "layer_styles template_button_styles bold",
               "style": {
                 "left": "45%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4037,15 +3884,10 @@
             {
               "type": "button",
               "text": "Page 4",
+              "class": "layer_styles template_button_styles bold",
               "style": {
                 "left": "55%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4056,13 +3898,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/next.png",
+              "url": "{{next_icon}}",
+              "class": "layer_styles",
               "contentDescription": "next",
               "style": {
-                "left": "65%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "65%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4073,13 +3913,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/save.png",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
               "contentDescription": "save",
               "style": {
-                "left": "75%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "75%"
               },
               "action": {
                 "trigger": "handleSave_screen2"
@@ -4586,13 +4424,11 @@
           "layers": [
             {
               "type": "image",
-              "url": "file://icons/home.png",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
               "contentDescription": "home",
               "style": {
-                "left": "10%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -4603,13 +4439,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/previous.png",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles",
               "contentDescription": "previous",
               "style": {
-                "left": "15%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "15%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4621,15 +4455,10 @@
             {
               "type": "button",
               "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
                 "left": "25%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4641,15 +4470,10 @@
             {
               "type": "button",
               "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
               "style": {
                 "left": "35%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4661,15 +4485,10 @@
             {
               "type": "button",
               "text": "Page 3",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
                 "left": "45%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4681,15 +4500,10 @@
             {
               "type": "button",
               "text": "Page 4",
+              "class": "layer_styles template_button_styles bold",
               "style": {
                 "left": "55%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4700,13 +4514,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/next.png",
+              "url": "{{next_icon}}",
+              "class": "layer_styles",
               "contentDescription": "next",
               "style": {
-                "left": "65%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "65%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -4717,13 +4529,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/save.png",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
               "contentDescription": "save",
               "style": {
-                "left": "75%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "75%"
               },
               "action": {
                 "trigger": "handleSave_screen3"
@@ -5321,13 +5131,11 @@
           "layers": [
             {
               "type": "image",
-              "url": "file://icons/home.png",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
               "contentDescription": "home",
               "style": {
-                "left": "10%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "10%"
               },
               "action": {
                 "trigger": "handleNavigation",
@@ -5338,13 +5146,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/previous.png",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles",
               "contentDescription": "previous",
               "style": {
-                "left": "15%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "15%"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -5356,15 +5162,10 @@
             {
               "type": "button",
               "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
                 "left": "25%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -5376,15 +5177,10 @@
             {
               "type": "button",
               "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
               "style": {
                 "left": "35%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -5396,15 +5192,10 @@
             {
               "type": "button",
               "text": "Page 3",
+              "class": "layer_styles template_button_styles bold",
               "style": {
                 "left": "45%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(0,147,215)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -5416,15 +5207,10 @@
             {
               "type": "button",
               "text": "Page 4",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
                 "left": "55%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%",
-                "size": "16",
-                "color": "rgb(255, 255, 255)",
-                "background": "rgb(255, 0, 0)",
-                "corner_radius": "1%"
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -5435,13 +5221,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/save.png",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
               "contentDescription": "save",
               "style": {
-                "left": "65%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "65%"
               },
               "action": {
                 "trigger": "handleSave_screen4"
@@ -5449,13 +5233,11 @@
             },
             {
               "type": "image",
-              "url": "file://icons/submit.png",
+              "url": "{{submit_icon}}",
+              "class": "layer_styles",
               "contentDescription": "submit",
               "style": {
-                "left": "75%",
-                "width": "10%",
-                "height": "11%",
-                "bottom": "1%"
+                "left": "75%"
               },
               "action": {
                 "trigger": "handleSubmit"

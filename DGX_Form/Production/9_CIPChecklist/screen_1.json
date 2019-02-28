@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Screen-1",
+      "title": "CIP Checklist",
       "description": "CIP Checklist",
       "form_id": "form9",
       "offline": "true",
@@ -19,6 +19,9 @@
         },
         "black_color": {
           "color": "rgb(0,0,0)"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
         },
         "dropdown_day_style": {
           "color": "rgb(0, 0, 0)",
@@ -43,18 +46,49 @@
           "width": "20%",
           "size": "15"
         },
-        "table_header_name_styles": {
+        "table1_header_name_styles": {
           "width": "28%",
           "border": "rgb(255, 255, 255)"
         },
-        "table_header_value_styles": {
+        "table1_header_value_styles": {
           "width": "18%",
           "border": "rgb(255, 255, 255)"
         },
-        "table_body_name_styles": {
+        "table1_body_name_styles": {
           "width": "28%"
         },
-        
+        "table23_header_name_styles": {
+          "width": "20%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table23_header_value_styles": {
+          "width": "16%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table23_body_name_styles": {
+          "width": "20%"
+        },
+        "table23_body_textfield_styles": {
+          "width": "13%",
+          "height": "4%",
+          "size": "12"
+        },
+        "table45_header_name_styles": {
+          "width": "20%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table45_header_value_styles": {
+          "width": "16%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table45_body_name_styles": {
+          "width": "20%"
+        },
+        "table45_body_textfield_styles": {
+          "width": "13%",
+          "height": "4%",
+          "size": "12"
+        },
         "table_fields_size": {
           "size": "16"
         },
@@ -74,13 +108,6 @@
         "table_even_row_styles": {
           "background": "rgb(204,206,213)"
         },
-        "button_styles": {
-          "width": "15%",
-          "height": "7%",
-          "color": "rgb(255,255,255)",
-          "background": "rgb(0,147,215)",
-          "corner_radius": "1%"
-        },
         "table_row_height": {
           "height": "6%"
         },
@@ -96,9 +123,21 @@
           "font": "HelveticaNeue-Bold",
           "width": "3%"
         },
-        "footer_styles": {
-          "padding_top": "1%",
-          "padding_bottom": "1%"
+        "table6_header_name_styles": {
+          "width": "20%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table6_header_value_styles": {
+          "width": "16%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table6_body_name_styles": {
+          "width": "20%"
+        },
+        "table6_body_textfield_styles": {
+          "width": "13%",
+          "height": "4%",
+          "size": "12"
         },
         "loading_image_styles": {
           "top": "50%-25",
@@ -109,13 +148,38 @@
         "preload_styles": {
           "background": "rgb(255, 0, 0)"
         },
-        "footer_buttons_spacing": {
-          "spacing": "5%"
+        "template_button_styles": {
+          "size": "16",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "layer_styles": {
+          "width": "10%",
+          "height": "7%",
+          "bottom": "1%"
+        },
+        "comments_title_styles": {
+          "width": "100%"
+        },
+        "comments_styles": {
+          "width": "100%",
+          "height": "15%",
+          "size": "15"
         }
       },
       "data": {
         "Page_Heading": "CIP Report",
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
         "loading_image_url": "file://infinit.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
         "Days": [
           {
             "day": "Day",
@@ -370,32 +434,32 @@
             "defaultSelected": "false"
           }
         ],
-        "Table_Headers": [
+        "Table1_Headers": [
           {
             "value": "Screens",
-            "styles": "table_header_styles center_align table_header_name_styles"
+            "styles": "table_header_styles center_align table1_header_name_styles"
           },
           {
             "value": "Holed",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles center_align table1_header_value_styles"
           },
           {
             "value": "Blinded",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles center_align table1_header_value_styles"
           },
           {
             "value": "Clean",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles center_align table1_header_value_styles"
           },
           {
             "value": "Good",
-            "styles": "table_header_styles center_align table_header_value_styles"
+            "styles": "table_header_styles center_align table1_header_value_styles"
           }
         ],
-        "Table_Rows": [
+        "Table1_Rows": [
           {
             "row_name": "0640-M221-001 Safety Screen",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table1_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -425,7 +489,7 @@
           },
           {
             "row_name": "0640-M221-002 Safety Screen",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table1_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -455,7 +519,7 @@
           },
           {
             "row_name": "0640-M221-101 Derrick Screen",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table1_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -485,7 +549,7 @@
           },
           {
             "row_name": "0640-M221-102 Derrick Screen",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table1_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -515,7 +579,7 @@
           },
           {
             "row_name": "0640-M221-201 Derrick Screen",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table1_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -545,7 +609,7 @@
           },
           {
             "row_name": "0640-M221-202 Derrick Screen",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table1_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -576,7 +640,7 @@
           {
             "row_name": "0640-M221-011 Secondary Safety Screen",
             "height": "8%",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table1_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -607,7 +671,7 @@
           {
             "row_name": "0640-M221-012 Secondary Safety Screen",
             "height": "8%",
-            "row_styles": "center_align black_color table_body_name_styles table_fields_size",
+            "row_styles": "center_align black_color table1_body_name_styles table_fields_size",
             "row_values": [
               {
                 "type": "textfield",
@@ -636,23 +700,902 @@
             ]
           }
         ],
-        "Footer_Buttons": [
+        "Table2_Headers": [
           {
-            "displayName": "Home",
-            "contentDescription": "home",
-            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
-            "trigger": "handleNavigation"
+            "value": "Detox U/F Pumps",
+            "styles": "table_header_styles center_align table23_header_name_styles"
           },
           {
-            "displayName": "Next",
-            "contentDescription": "next",
-            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/9_CIPChecklist/screen_2.json",
-            "trigger": "handleNavigation"
+            "value": "Running",
+            "styles": "table_header_styles center_align table23_header_value_styles"
           },
           {
-            "displayName": "Save",
-            "contentDescription": "save",
-            "trigger": "handleSave"
+            "value": "Valves",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          },
+          {
+            "value": "Gland m3/hr",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          },
+          {
+            "value": "Packing",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          },
+          {
+            "value": "Oil Level",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          }
+        ],
+        "Table2_Rows": [
+          {
+            "row_name": "Pump 001",
+            "row_styles": "center_align black_color table23_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump001_running",
+                "label": "1",
+                "contentDescription": "one"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump001_valves",
+                "label": "2",
+                "contentDescription": "two"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump001_gland_m3hr",
+                "label": "3",
+                "contentDescription": "three"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump001_packing",
+                "label": "4",
+                "contentDescription": "four"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump001_oil_level",
+                "label": "5",
+                "contentDescription": "five"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 021",
+            "row_styles": "center_align black_color table23_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump021_running",
+                "label": "6",
+                "contentDescription": "six"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump021_valves",
+                "label": "7",
+                "contentDescription": "seven"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump021_gland_m3hr",
+                "label": "8",
+                "contentDescription": "eight"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump021_packing",
+                "label": "9",
+                "contentDescription": "nine"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump021_oil_level",
+                "label": "10",
+                "contentDescription": "ten"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 041",
+            "row_styles": "center_align black_color table23_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump041_running",
+                "label": "11",
+                "contentDescription": "eleven"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump041_valves",
+                "label": "12",
+                "contentDescription": "twelve"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump041_gland_m3hr",
+                "label": "13",
+                "contentDescription": "thirteen"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump041_packing",
+                "label": "14",
+                "contentDescription": "fourteen"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_pump041_oil_level",
+                "label": "15",
+                "contentDescription": "fifteen"
+              }
+            ]
+          },
+          {
+            "row_name": "Sump pump 001",
+            "row_styles": "center_align black_color table23_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_sump_pump001_running",
+                "label": "16",
+                "contentDescription": "sixteen"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_sump_pump001_valves",
+                "label": "17",
+                "contentDescription": "seventeen"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_sump_pump001_gland_m3hr",
+                "label": "18",
+                "contentDescription": "eighteen"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_sump_pump001_packing",
+                "label": "19",
+                "contentDescription": "nineteen"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_sump_pump001_oil_level",
+                "label": "20",
+                "contentDescription": "twenty"
+              }
+            ]
+          },
+          {
+            "row_name": "Sump pump 002",
+            "row_styles": "center_align black_color table23_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_sump_pump002_running",
+                "label": "21",
+                "contentDescription": "twenty-one"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_sump_pump002_valves",
+                "label": "22",
+                "contentDescription": "twenty-two"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_sump_pump002_gland_m3hr",
+                "label": "23",
+                "contentDescription": "twenty-three"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_sump_pump002_packing",
+                "label": "24",
+                "contentDescription": "twenty-four"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_UF_pumps_sump_pump002_oil_level",
+                "label": "25",
+                "contentDescription": "twenty-five"
+              }
+            ]
+          }
+        ],
+        "Table3_Headers": [
+          {
+            "value": "CIP Tails",
+            "styles": "table_header_styles center_align table23_header_name_styles"
+          },
+          {
+            "value": "Running",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          },
+          {
+            "value": "Valves",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          },
+          {
+            "value": "Gland m3/hr",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          },
+          {
+            "value": "Packing",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          },
+          {
+            "value": "Oil Level",
+            "styles": "table_header_styles center_align table23_header_value_styles"
+          }
+        ],
+        "Table3_Rows": [
+          {
+            "row_name": "Pump 001",
+            "row_styles": "center_align black_color table23_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_001_running",
+                "label": "26",
+                "contentDescription": "twenty-six"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_001_valves",
+                "label": "27",
+                "contentDescription": "twenty-seven"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_001_gland_m3hr",
+                "label": "28",
+                "contentDescription": "twenty-eight"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_001_packing",
+                "label": "29",
+                "contentDescription": "twenty-nine"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_001_oil_level",
+                "label": "30",
+                "contentDescription": "thirty"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 021",
+            "row_styles": "center_align black_color table23_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_021_running",
+                "label": "31",
+                "contentDescription": "thirty-one"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_021_valves",
+                "label": "32",
+                "contentDescription": "thirty-two"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_021_gland_m3hr",
+                "label": "33",
+                "contentDescription": "thirty-three"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_021_packing",
+                "label": "34",
+                "contentDescription": "thirty-four"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_021_oil_level",
+                "label": "35",
+                "contentDescription": "thirty-five"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 041",
+            "row_styles": "center_align black_color table23_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_041_running",
+                "label": "36",
+                "contentDescription": "thirty-six"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_041_valves",
+                "label": "37",
+                "contentDescription": "thirty-seven"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_041_gland_m3hr",
+                "label": "38",
+                "contentDescription": "thirty-eight"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_041_packing",
+                "label": "39",
+                "contentDescription": "thirty-nine"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_pump_041_oil_level",
+                "label": "40",
+                "contentDescription": "forty"
+              }
+            ]
+          },
+          {
+            "row_name": "Clean Pump Box Level Probe",
+            "height": "8%",
+            "row_styles": "center_align black_color table23_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "CIP_tails_clean_pump_box_level_probe_running",
+                "label": "41",
+                "contentDescription": "forty-one"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_clean_pump_box_level_probe_valves",
+                "label": "42",
+                "contentDescription": "forty-two"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_clean_pump_box_level_probe_gland_m3hr",
+                "label": "43",
+                "contentDescription": "forty-three"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_clean_pump_box_level_probe_packing",
+                "label": "44",
+                "contentDescription": "forty-four"
+              },
+              {
+                "type": "textfield",
+                "name": "CIP_tails_clean_pump_box_level_probe_oil_level",
+                "label": "45",
+                "contentDescription": "forty-five"
+              }
+            ]
+          }
+        ],
+        "Table4_Headers": [
+          {
+            "value": "Final Tails",
+            "styles": "table_header_styles center_align table45_header_name_styles"
+          },
+          {
+            "value": "Running",
+            "styles": "table_header_styles center_align table45_header_value_styles"
+          },
+          {
+            "value": "Valves",
+            "styles": "table_header_styles center_align table45_header_value_styles"
+          },
+          {
+            "value": "Gland m3/hr",
+            "styles": "table_header_styles center_align table45_header_value_styles"
+          },
+          {
+            "value": "Packing",
+            "styles": "table_header_styles center_align table45_header_value_styles"
+          },
+          {
+            "value": "Oil Level",
+            "styles": "table_header_styles center_align table45_header_value_styles"
+          }
+        ],
+        "Table4_Rows": [
+          {
+            "row_name": "Pump 001",
+            "row_styles": "center_align black_color table45_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "final_tails_pump001_running",
+                "label": "1",
+                "contentDescription": "one"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump001_valves",
+                "label": "2",
+                "contentDescription": "two"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump001_gland_m3hr",
+                "label": "3",
+                "contentDescription": "three"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump001_packing",
+                "label": "4",
+                "contentDescription": "four"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump001_oil_level",
+                "label": "5",
+                "contentDescription": "five"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 002",
+            "row_styles": "center_align black_color table45_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "final_tails_pump002_running",
+                "label": "6",
+                "contentDescription": "six"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump002_valves",
+                "label": "7",
+                "contentDescription": "seven"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump002_gland_m3hr",
+                "label": "8",
+                "contentDescription": "eight"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump002_packing",
+                "label": "9",
+                "contentDescription": "nine"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump002_oil_level",
+                "label": "10",
+                "contentDescription": "ten"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 021",
+            "row_styles": "center_align black_color table45_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "final_tails_pump021_running",
+                "label": "11",
+                "contentDescription": "eleven"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump021_valves",
+                "label": "12",
+                "contentDescription": "twelve"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump021_gland_m3hr",
+                "label": "13",
+                "contentDescription": "thirteen"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump021_packing",
+                "label": "14",
+                "contentDescription": "fourteen"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump021_oil_level",
+                "label": "15",
+                "contentDescription": "fifteen"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 022",
+            "row_styles": "center_align black_color table45_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "final_tails_pump022_running",
+                "label": "16",
+                "contentDescription": "sixteen"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump022_valves",
+                "label": "17",
+                "contentDescription": "seventeen"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump022_gland_m3hr",
+                "label": "18",
+                "contentDescription": "eighteen"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump022_packing",
+                "label": "19",
+                "contentDescription": "nineteen"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump022_oil_level",
+                "label": "20",
+                "contentDescription": "twenty"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 041",
+            "row_styles": "center_align black_color table45_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "final_tails_pump041_running",
+                "label": "21",
+                "contentDescription": "twenty-one"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump041_valves",
+                "label": "22",
+                "contentDescription": "twenty-two"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump041_gland_m3hr",
+                "label": "23",
+                "contentDescription": "twenty-three"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump041_packing",
+                "label": "24",
+                "contentDescription": "twenty-four"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump041_oil_level",
+                "label": "25",
+                "contentDescription": "twenty-five"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 042",
+            "row_styles": "center_align black_color table45_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "final_tails_pump042_running",
+                "label": "26",
+                "contentDescription": "twenty-six"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump042_valves",
+                "label": "27",
+                "contentDescription": "twenty-seven"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump042_gland_m3hr",
+                "label": "28",
+                "contentDescription": "twenty-eight"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump042_packing",
+                "label": "29",
+                "contentDescription": "twenty-nine"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_pump042_oil_level",
+                "label": "30",
+                "contentDescription": "thirty"
+              }
+            ]
+          },
+          {
+            "row_name": "Clean Pump Box Level Probe",
+            "height": "8%",
+            "row_styles": "center_align black_color table45_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "final_tails_clean_pump_box_level_probe_running",
+                "label": "31",
+                "contentDescription": "thirty-one"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_clean_pump_box_level_probe_valves",
+                "label": "32",
+                "contentDescription": "thirty-two"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_clean_pump_box_level_probe_gland_m3hr",
+                "label": "33",
+                "contentDescription": "thirty-three"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_clean_pump_box_level_probe_packing",
+                "label": "34",
+                "contentDescription": "thirty-four"
+              },
+              {
+                "type": "textfield",
+                "name": "final_tails_clean_pump_box_level_probe_oil_level",
+                "label": "35",
+                "contentDescription": "thirty-five"
+              }
+            ]
+          }
+        ],
+        "Table5_Headers": [
+          {
+            "value": "Reclaim Pumps",
+            "styles": "table_header_styles center_align table45_header_name_styles"
+          },
+          {
+            "value": "Running",
+            "styles": "table_header_styles center_align table45_header_value_styles"
+          },
+          {
+            "value": "Valves",
+            "styles": "table_header_styles center_align table45_header_value_styles"
+          },
+          {
+            "value": "Gland m3/hr",
+            "styles": "table_header_styles center_align table45_header_value_styles"
+          },
+          {
+            "value": "Packing",
+            "styles": "table_header_styles center_align table45_header_value_styles"
+          },
+          {
+            "value": "Oil Level",
+            "styles": "table_header_styles center_align table45_header_value_styles"
+          }
+        ],
+        "Table5_Rows": [
+          {
+            "row_name": "Pump 010",
+            "row_styles": "center_align black_color table45_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_010_running",
+                "label": "36",
+                "contentDescription": "thirty-six"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_010_valves",
+                "label": "37",
+                "contentDescription": "thirty-seven"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_010_gland_m3hr",
+                "label": "38",
+                "contentDescription": "thirty-eight"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_010_packing",
+                "label": "39",
+                "contentDescription": "thirty-nine"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_010_oil_level",
+                "label": "40",
+                "contentDescription": "forty"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 011",
+            "row_styles": "center_align black_color table45_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_011_running",
+                "label": "41",
+                "contentDescription": "forty-one"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_011_valves",
+                "label": "42",
+                "contentDescription": "forty-two"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_011_gland_m3hr",
+                "label": "43",
+                "contentDescription": "forty-three"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_011_packing",
+                "label": "44",
+                "contentDescription": "forty-four"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_011_oil_level",
+                "label": "45",
+                "contentDescription": "forty-five"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 012",
+            "row_styles": "center_align black_color table45_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_012_running",
+                "label": "41",
+                "contentDescription": "forty-six"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_012_valves",
+                "label": "42",
+                "contentDescription": "forty-seven"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_012_gland_m3hr",
+                "label": "43",
+                "contentDescription": "forty-eight"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_012_packing",
+                "label": "44",
+                "contentDescription": "forty-nine"
+              },
+              {
+                "type": "textfield",
+                "name": "reclaim_pumps_pump_012_oil_level",
+                "label": "45",
+                "contentDescription": "fifty"
+              }
+            ]
+          }
+        ],
+        "Table6_Headers": [
+          {
+            "value": "Detox O/F",
+            "styles": "table_header_styles table6_header_name_styles"
+          },
+          {
+            "value": "Running",
+            "styles": "table_header_styles table6_header_value_styles"
+          },
+          {
+            "value": "Valves",
+            "styles": "table_header_styles table6_header_value_styles"
+          },
+          {
+            "value": "Gland m3/hr",
+            "styles": "table_header_styles table6_header_value_styles"
+          },
+          {
+            "value": "Packing",
+            "styles": "table_header_styles table6_header_value_styles"
+          },
+          {
+            "value": "Oil Level",
+            "styles": "table_header_styles table6_header_value_styles"
+          }
+        ],
+        "Table6_Rows": [
+          {
+            "row_name": "Pump 002",
+            "row_styles": "center_align black_color table6_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump002_running",
+                "label": "1",
+                "contentDescription": "one"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump002_valves",
+                "label": "2",
+                "contentDescription": "two"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump002_gland_m3hr",
+                "label": "3",
+                "contentDescription": "three"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump002_packing",
+                "label": "4",
+                "contentDescription": "four"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump002_oil_level",
+                "label": "5",
+                "contentDescription": "five"
+              }
+            ]
+          },
+          {
+            "row_name": "Pump 003",
+            "row_styles": "center_align black_color table6_body_name_styles table_fields_size",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump003_running",
+                "label": "6",
+                "contentDescription": "six"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump003_valves",
+                "label": "7",
+                "contentDescription": "seven"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump003_gland_m3hr",
+                "label": "8",
+                "contentDescription": "eight"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump003_packing",
+                "label": "9",
+                "contentDescription": "nine"
+              },
+              {
+                "type": "textfield",
+                "name": "detox_OF_pump003_oil_level",
+                "label": "10",
+                "contentDescription": "ten"
+              }
+            ]
           }
         ]
       },
@@ -667,12 +1610,21 @@
             ]
           },
           "success": {
-            "type": "$render",
-            "success": {
-              "trigger": "displayToaster",
-              "options": {
-                "message": "Page loaded successfully"
-              }
+            "trigger": "handleTemplateChange",
+            "options": {
+              "templateName": "screen1"
+            }
+          }
+        },
+        "handleTemplateChange": {
+          "type": "$render",
+          "options": {
+            "template": "{{$jason.templateName}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
             }
           }
         },
@@ -699,10 +1651,10 @@
             }
           }
         },
-        "handleSave": {
+        "handleSave_screen1": {
           "type": "$global.set",
           "options": {
-            "section_id": "form9_page1",
+            "section_id": "form9",
             "f9_s1_sign": "{{ $get.sign || '' }}",
             "f9_s1_day": "{{ $get.day }}",
             "f9_s1_month": "{{ $get.month }}",
@@ -745,17 +1697,327 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen1 data successfully"
+            }
+          }
+        },
+        "handleSave_screen2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form9",
+            "detox_UF_pumps_pump001_running": "{{ $get.detox_UF_pumps_pump001_running || '' }}",
+            "detox_UF_pumps_pump001_valves": "{{ $get.detox_UF_pumps_pump001_valves || '' }}",
+            "detox_UF_pumps_pump001_gland_m3hr": "{{ $get.detox_UF_pumps_pump001_gland_m3hr || '' }}",
+            "detox_UF_pumps_pump001_packing": "{{ $get.detox_UF_pumps_pump001_packing || '' }}",
+            "detox_UF_pumps_pump001_oil_level": "{{ $get.detox_UF_pumps_pump001_oil_level || '' }}",
+            "detox_UF_pumps_pump021_running": "{{ $get.detox_UF_pumps_pump021_running || '' }}",
+            "detox_UF_pumps_pump021_valves": "{{ $get.detox_UF_pumps_pump021_valves || '' }}",
+            "detox_UF_pumps_pump021_gland_m3hr": "{{ $get.detox_UF_pumps_pump021_gland_m3hr || '' }}",
+            "detox_UF_pumps_pump021_packing": "{{ $get.detox_UF_pumps_pump021_packing || '' }}",
+            "detox_UF_pumps_pump021_oil_level": "{{ $get.detox_UF_pumps_pump021_oil_level || '' }}",
+            "detox_UF_pumps_pump041_running": "{{ $get.detox_UF_pumps_pump041_running || '' }}",
+            "detox_UF_pumps_pump041_valves": "{{ $get.detox_UF_pumps_pump041_valves || '' }}",
+            "detox_UF_pumps_pump041_gland_m3hr": "{{ $get.detox_UF_pumps_pump041_gland_m3hr || '' }}",
+            "detox_UF_pumps_pump041_packing": "{{ $get.detox_UF_pumps_pump041_packing || '' }}",
+            "detox_UF_pumps_pump041_oil_level": "{{ $get.detox_UF_pumps_pump041_oil_level || '' }}",
+            "detox_UF_pumps_sump_pump001_running": "{{ $get.detox_UF_pumps_sump_pump001_running || '' }}",
+            "detox_UF_pumps_sump_pump001_valves": "{{ $get.detox_UF_pumps_sump_pump001_valves || '' }}",
+            "detox_UF_pumps_sump_pump001_gland_m3hr": "{{ $get.detox_UF_pumps_sump_pump001_gland_m3hr || '' }}",
+            "detox_UF_pumps_sump_pump001_packing": "{{ $get.detox_UF_pumps_sump_pump001_packing || '' }}",
+            "detox_UF_pumps_sump_pump001_oil_level": "{{ $get.detox_UF_pumps_sump_pump001_oil_level || '' }}",
+            "detox_UF_pumps_sump_pump002_running": "{{ $get.detox_UF_pumps_sump_pump002_running || '' }}",
+            "detox_UF_pumps_sump_pump002_valves": "{{ $get.detox_UF_pumps_sump_pump002_valves || '' }}",
+            "detox_UF_pumps_sump_pump002_gland_m3hr": "{{ $get.detox_UF_pumps_sump_pump002_gland_m3hr || '' }}",
+            "detox_UF_pumps_sump_pump002_packing": "{{ $get.detox_UF_pumps_sump_pump002_packing || '' }}",
+            "detox_UF_pumps_sump_pump002_oil_level": "{{ $get.detox_UF_pumps_sump_pump002_oil_level || '' }}",
+            "CIP_tails_pump_001_running": "{{ $get.CIP_tails_pump_001_running || ''}}",
+            "CIP_tails_pump_001_valves": "{{ $get.CIP_tails_pump_001_valves || ''}}",
+            "CIP_tails_pump_001_gland_m3hr": "{{ $get.CIP_tails_pump_001_gland_m3hr || ''}}",
+            "CIP_tails_pump_001_packing": "{{ $get.CIP_tails_pump_001_packing || ''}}",
+            "CIP_tails_pump_001_oil_level": "{{ $get.CIP_tails_pump_001_oil_level || ''}}",
+            "CIP_tails_pump_021_running": "{{ $get.CIP_tails_pump_021_running || ''}}",
+            "CIP_tails_pump_021_valves": "{{ $get.CIP_tails_pump_021_valves || ''}}",
+            "CIP_tails_pump_021_gland_m3hr": "{{ $get.CIP_tails_pump_021_gland_m3hr || ''}}",
+            "CIP_tails_pump_021_packing": "{{ $get.CIP_tails_pump_021_packing || ''}}",
+            "CIP_tails_pump_021_oil_level": "{{ $get.CIP_tails_pump_021_oil_level || ''}}",
+            "CIP_tails_pump_041_running": "{{ $get.CIP_tails_pump_041_running || ''}}",
+            "CIP_tails_pump_041_valves": "{{ $get.CIP_tails_pump_041_valves || ''}}",
+            "CIP_tails_pump_041_gland_m3hr": "{{ $get.CIP_tails_pump_041_gland_m3hr || ''}}",
+            "CIP_tails_pump_041_packing": "{{ $get.CIP_tails_pump_041_packing || ''}}",
+            "CIP_tails_pump_041_oil_level": "{{ $get.CIP_tails_pump_041_oil_level || ''}}",
+            "CIP_tails_clean_pump_box_level_probe_running": "{{ $get.CIP_tails_clean_pump_box_level_probe_running || ''}}",
+            "CIP_tails_clean_pump_box_level_probe_valves": "{{ $get.CIP_tails_clean_pump_box_level_probe_valves || ''}}",
+            "CIP_tails_clean_pump_box_level_probe_gland_m3hr": "{{ $get.CIP_tails_clean_pump_box_level_probe_gland_m3hr || ''}}",
+            "CIP_tails_clean_pump_box_level_probe_packing": "{{ $get.CIP_tails_clean_pump_box_level_probe_packing || ''}}",
+            "CIP_tails_clean_pump_box_level_probe_oil_level": "{{ $get.CIP_tails_clean_pump_box_level_probe_oil_level || ''}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen2 data successfully"
+            }
+          }
+        },
+        "handleSave_screen3": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form9",
+            "final_tails_pump001_running": "{{ $get.final_tails_pump001_running || '' }}",
+            "final_tails_pump001_valves": "{{ $get.final_tails_pump001_valves || '' }}",
+            "final_tails_pump001_gland_m3hr": "{{ $get.final_tails_pump001_gland_m3hr || '' }}",
+            "final_tails_pump001_packing": "{{ $get.final_tails_pump001_packing || '' }}",
+            "final_tails_pump001_oil_level": "{{ $get.final_tails_pump001_oil_level || '' }}",
+            "final_tails_pump002_running": "{{ $get.final_tails_pump002_running || '' }}",
+            "final_tails_pump002_valves": "{{ $get.final_tails_pump002_valves || '' }}",
+            "final_tails_pump002_gland_m3hr": "{{ $get.final_tails_pump002_gland_m3hr || '' }}",
+            "final_tails_pump002_packing": "{{ $get.final_tails_pump002_packing || '' }}",
+            "final_tails_pump002_oil_level": "{{ $get.final_tails_pump002_oil_level || '' }}",
+            "final_tails_pump021_running": "{{ $get.final_tails_pump021_running || '' }}",
+            "final_tails_pump021_valves": "{{ $get.final_tails_pump021_valves || '' }}",
+            "final_tails_pump021_gland_m3hr": "{{ $get.final_tails_pump021_gland_m3hr || '' }}",
+            "final_tails_pump021_packing": "{{ $get.final_tails_pump021_packing || '' }}",
+            "final_tails_pump021_oil_level": "{{ $get.final_tails_pump021_oil_level || '' }}",
+            "final_tails_pump022_running": "{{ $get.final_tails_pump022_running || '' }}",
+            "final_tails_pump022_valves": "{{ $get.final_tails_pump022_valves || '' }}",
+            "final_tails_pump022_gland_m3hr": "{{ $get.final_tails_pump022_gland_m3hr || '' }}",
+            "final_tails_pump022_packing": "{{ $get.final_tails_pump022_packing || '' }}",
+            "final_tails_pump022_oil_level": "{{ $get.final_tails_pump022_oil_level || '' }}",
+            "final_tails_pump041_running": "{{ $get.final_tails_pump041_running || '' }}",
+            "final_tails_pump041_valves": "{{ $get.final_tails_pump041_valves || '' }}",
+            "final_tails_pump041_gland_m3hr": "{{ $get.final_tails_pump041_gland_m3hr || '' }}",
+            "final_tails_pump041_packing": "{{ $get.final_tails_pump041_packing || '' }}",
+            "final_tails_pump041_oil_level": "{{ $get.final_tails_pump041_oil_level || '' }}",
+            "final_tails_pump042_running": "{{ $get.final_tails_pump042_running || '' }}",
+            "final_tails_pump042_valves": "{{ $get.final_tails_pump042_valves || '' }}",
+            "final_tails_pump042_gland_m3hr": "{{ $get.final_tails_pump042_gland_m3hr || '' }}",
+            "final_tails_pump042_packing": "{{ $get.final_tails_pump042_packing || '' }}",
+            "final_tails_pump042_oil_level": "{{ $get.final_tails_pump042_oil_level || '' }}",
+            "final_tails_clean_pump_box_level_probe_running": "{{ $get.final_tails_clean_pump_box_level_probe_running || '' }}",
+            "final_tails_clean_pump_box_level_probe_valves": "{{ $get.final_tails_clean_pump_box_level_probe_valves || '' }}",
+            "final_tails_clean_pump_box_level_probe_gland_m3hr": "{{ $get.final_tails_clean_pump_box_level_probe_gland_m3hr || '' }}",
+            "final_tails_clean_pump_box_level_probe_packing": "{{ $get.final_tails_clean_pump_box_level_probe_packing || '' }}",
+            "final_tails_clean_pump_box_level_probe_oil_level": "{{ $get.final_tails_clean_pump_box_level_probe_oil_level || '' }}",
+            "reclaim_pumps_pump_010_running": "{{ $get.reclaim_pumps_pump_010_running || ''}}",
+            "reclaim_pumps_pump_010_valves": "{{ $get.reclaim_pumps_pump_010_valves || ''}}",
+            "reclaim_pumps_pump_010_gland_m3hr": "{{ $get.reclaim_pumps_pump_010_gland_m3hr || ''}}",
+            "reclaim_pumps_pump_010_packing": "{{ $get.reclaim_pumps_pump_010_packing || ''}}",
+            "reclaim_pumps_pump_010_oil_level": "{{ $get.reclaim_pumps_pump_010_oil_level || ''}}",
+            "reclaim_pumps_pump_011_running": "{{ $get.reclaim_pumps_pump_011_running || ''}}",
+            "reclaim_pumps_pump_011_valves": "{{ $get.reclaim_pumps_pump_011_valves || ''}}",
+            "reclaim_pumps_pump_011_gland_m3hr": "{{ $get.reclaim_pumps_pump_011_gland_m3hr || ''}}",
+            "reclaim_pumps_pump_011_packing": "{{ $get.reclaim_pumps_pump_011_packing || ''}}",
+            "reclaim_pumps_pump_011_oil_level": "{{ $get.reclaim_pumps_pump_011_oil_level || ''}}",
+            "reclaim_pumps_pump_012_running": "{{ $get.reclaim_pumps_pump_012_running || ''}}",
+            "reclaim_pumps_pump_012_valves": "{{ $get.reclaim_pumps_pump_012_valves || ''}}",
+            "reclaim_pumps_pump_012_gland_m3hr": "{{ $get.reclaim_pumps_pump_012_gland_m3hr || ''}}",
+            "reclaim_pumps_pump_012_packing": "{{ $get.reclaim_pumps_pump_012_packing || ''}}",
+            "reclaim_pumps_pump_012_oil_level": "{{ $get.reclaim_pumps_pump_012_oil_level || ''}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen3 data successfully"
+            }
+          }
+        },
+        "handleSave_screen4": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form9",
+            "detox_OF_pump002_running": "{{ $get.detox_OF_pump002_running }}",
+            "detox_OF_pump002_valves": "{{ $get.detox_OF_pump002_valves }}",
+            "detox_OF_pump002_gland_m3hr": "{{ $get.detox_OF_pump002_gland_m3hr }}",
+            "detox_OF_pump002_packing": "{{ $get.detox_OF_pump002_packing }}",
+            "detox_OF_pump002_oil_level": "{{ $get.detox_OF_pump002_oil_level }}",
+            "detox_OF_pump003_running": "{{ $get.detox_OF_pump003_running }}",
+            "detox_OF_pump003_valves": "{{ $get.detox_OF_pump003_valves }}",
+            "detox_OF_pump003_gland_m3hr": "{{ $get.detox_OF_pump003_gland_m3hr }}",
+            "detox_OF_pump003_packing": "{{ $get.detox_OF_pump003_packing }}",
+            "detox_OF_pump003_oil_level": "{{ $get.detox_OF_pump003_oil_level }}",
+            "f9_s4_notifications": "{{ $get.notifications || '' }}",
+            "f9_s4_comments": "{{ $get.comments || '' }}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen4 data successfully"
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "form_id": "form9",
+            "filename": "CIPChecklist"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id",
+                "f9_s1_sign",
+                "f9_s1_day",
+                "f9_s1_month",
+                "f9_s1_year",
+                "f9_s1_shift",
+                "f9_s1_operator",
+                "safety_screen_holed_0640_M221_001",
+                "safety_screen_blinded_0640_M221_001",
+                "safety_screen_clean_0640_M221_001",
+                "safety_screen_good_0640_M221_001",
+                "safety_screen_holed_0640_M221_002",
+                "safety_screen_blinded_0640_M221_002",
+                "safety_screen_clean_0640_M221_002",
+                "safety_screen_good_0640_M221_002",
+                "derrrick_screen_holed_0640_M221_101",
+                "derrrick_screen_blinded_0640_M221_101",
+                "derrrick_screen_clean_0640_M221_101",
+                "derrrick_screen_good_0640_M221_101",
+                "derrick_screen_holed_0640_M221_102",
+                "derrick_screen_blinded_0640_M221_102",
+                "derrick_screen_clean_0640_M221_102",
+                "derrick_screen_good_0640_M221_102",
+                "derrick_screen_holed_0640_M221_201",
+                "derrick_screen_blinded_0640_M221_201",
+                "derrick_screen_clean_0640_M221_201",
+                "derrick_screen_good_0640_M221_201",
+                "derrick_screen_holed_0640_M221_202",
+                "derrick_screen_blinded_0640_M221_202",
+                "derrick_screen_clean_0640_M221_202",
+                "derrick_screen_good_0640_M221_202",
+                "secondary_safety_screen_holed_0640_M221_011",
+                "secondary_safety_screen_blinded_0640_M221_011",
+                "secondary_safety_screen_clean_0640_M221_011",
+                "secondary_safety_screen_good_0640_M221_011",
+                "secondary_safety_screen_holed_0640_M221_012",
+                "secondary_safety_screen_blinded_0640_M221_012",
+                "secondary_safety_screen_clean_0640_M221_012",
+                "secondary_safety_screen_good_0640_M221_012",
+                "detox_UF_pumps_pump001_running",
+                "detox_UF_pumps_pump001_valves",
+                "detox_UF_pumps_pump001_gland_m3hr",
+                "detox_UF_pumps_pump001_packing",
+                "detox_UF_pumps_pump001_oil_level",
+                "detox_UF_pumps_pump021_running",
+                "detox_UF_pumps_pump021_valves",
+                "detox_UF_pumps_pump021_gland_m3hr",
+                "detox_UF_pumps_pump021_packing",
+                "detox_UF_pumps_pump021_oil_level",
+                "detox_UF_pumps_pump041_running",
+                "detox_UF_pumps_pump041_valves",
+                "detox_UF_pumps_pump041_gland_m3hr",
+                "detox_UF_pumps_pump041_packing",
+                "detox_UF_pumps_pump041_oil_level",
+                "detox_UF_pumps_sump_pump001_running",
+                "detox_UF_pumps_sump_pump001_valves",
+                "detox_UF_pumps_sump_pump001_gland_m3hr",
+                "detox_UF_pumps_sump_pump001_packing",
+                "detox_UF_pumps_sump_pump001_oil_level",
+                "detox_UF_pumps_sump_pump002_running",
+                "detox_UF_pumps_sump_pump002_valves",
+                "detox_UF_pumps_sump_pump002_gland_m3hr",
+                "detox_UF_pumps_sump_pump002_packing",
+                "detox_UF_pumps_sump_pump002_oil_level",
+                "CIP_tails_pump_001_running",
+                "CIP_tails_pump_001_valves",
+                "CIP_tails_pump_001_gland_m3hr",
+                "CIP_tails_pump_001_packing",
+                "CIP_tails_pump_001_oil_level",
+                "CIP_tails_pump_021_running",
+                "CIP_tails_pump_021_valves",
+                "CIP_tails_pump_021_gland_m3hr",
+                "CIP_tails_pump_021_packing",
+                "CIP_tails_pump_021_oil_level",
+                "CIP_tails_pump_041_running",
+                "CIP_tails_pump_041_valves",
+                "CIP_tails_pump_041_gland_m3hr",
+                "CIP_tails_pump_041_packing",
+                "CIP_tails_pump_041_oil_level",
+                "CIP_tails_clean_pump_box_level_probe_running",
+                "CIP_tails_clean_pump_box_level_probe_valves",
+                "CIP_tails_clean_pump_box_level_probe_gland_m3hr",
+                "CIP_tails_clean_pump_box_level_probe_packing",
+                "CIP_tails_clean_pump_box_level_probe_oil_level",
+                "final_tails_pump001_running",
+                "final_tails_pump001_valves",
+                "final_tails_pump001_gland_m3hr",
+                "final_tails_pump001_packing",
+                "final_tails_pump001_oil_level",
+                "final_tails_pump002_running",
+                "final_tails_pump002_valves",
+                "final_tails_pump002_gland_m3hr",
+                "final_tails_pump002_packing",
+                "final_tails_pump002_oil_level",
+                "final_tails_pump021_running",
+                "final_tails_pump021_valves",
+                "final_tails_pump021_gland_m3hr",
+                "final_tails_pump021_packing",
+                "final_tails_pump021_oil_level",
+                "final_tails_pump022_running",
+                "final_tails_pump022_valves",
+                "final_tails_pump022_gland_m3hr",
+                "final_tails_pump022_packing",
+                "final_tails_pump022_oil_level",
+                "final_tails_pump041_running",
+                "final_tails_pump041_valves",
+                "final_tails_pump041_gland_m3hr",
+                "final_tails_pump041_packing",
+                "final_tails_pump041_oil_level",
+                "final_tails_pump042_running",
+                "final_tails_pump042_valves",
+                "final_tails_pump042_gland_m3hr",
+                "final_tails_pump042_packing",
+                "final_tails_pump042_oil_level",
+                "final_tails_clean_pump_box_level_probe_running",
+                "final_tails_clean_pump_box_level_probe_valves",
+                "final_tails_clean_pump_box_level_probe_gland_m3hr",
+                "final_tails_clean_pump_box_level_probe_packing",
+                "final_tails_clean_pump_box_level_probe_oil_level",
+                "reclaim_pumps_pump_010_running",
+                "reclaim_pumps_pump_010_valves",
+                "reclaim_pumps_pump_010_gland_m3hr",
+                "reclaim_pumps_pump_010_packing",
+                "reclaim_pumps_pump_010_oil_level",
+                "reclaim_pumps_pump_011_running",
+                "reclaim_pumps_pump_011_valves",
+                "reclaim_pumps_pump_011_gland_m3hr",
+                "reclaim_pumps_pump_011_packing",
+                "reclaim_pumps_pump_011_oil_level",
+                "reclaim_pumps_pump_012_running",
+                "reclaim_pumps_pump_012_valves",
+                "reclaim_pumps_pump_012_gland_m3hr",
+                "reclaim_pumps_pump_012_packing",
+                "reclaim_pumps_pump_012_oil_level",
+                "detox_OF_pump002_running",
+                "detox_OF_pump002_valves",
+                "detox_OF_pump002_gland_m3hr",
+                "detox_OF_pump002_packing",
+                "detox_OF_pump002_oil_level",
+                "detox_OF_pump003_running",
+                "detox_OF_pump003_valves",
+                "detox_OF_pump003_gland_m3hr",
+                "detox_OF_pump003_packing",
+                "detox_OF_pump003_oil_level",
+                "f9_s4_notifications",
+                "f9_s4_comments"
+              ]
+            },
+            "success": {
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
             }
           }
         }
       },
       "templates": {
-        "body": {
+        "screen1": {
           "header": {
             "title": {
               "type": "label",
-              "text": "{{Page_Heading}}"
+              "text": "{{Page_Heading}} (1/4)"
             },
             "style": {
               "font": "HelveticaHeader-Bold",
@@ -905,7 +2167,7 @@
                     {
                       "type": "horizontal",
                       "components": {
-                        "{{#each Table_Headers}}": {
+                        "{{#each Table1_Headers}}": {
                           "type": "label",
                           "text": "{{value}}",
                           "class": "{{styles}}"
@@ -926,7 +2188,7 @@
                     {
                       "type": "vertical",
                       "components": {
-                        "{{#each Table_Rows}}": {
+                        "{{#each Table1_Rows}}": {
                           "{{#let}}": [
                             {
                               "row_index": "{{$index}}"
@@ -940,7 +2202,7 @@
                               "components": [
                                 {
                                   "type": "horizontal",
-                                  "class": "table_body_name_styles table_row_height",
+                                  "class": "table1_body_name_styles table_row_height",
                                   "style": {
                                     "height": "{{#? this.height}}"
                                   },
@@ -982,8 +2244,239 @@
                                             {
                                               "type": "{{type}}",
                                               "name": "{{name}}",
-                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
                                               "class": "center_align black_color table_body_textfield_styles",
+                                              "contentDescription": "{{contentDescription}}"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "home",
+              "style": {
+                "left": "15%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles no_padding template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "25%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "35%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "45%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 4",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "55%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "next",
+              "style": {
+                "left": "65%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "save",
+              "style": {
+                "left": "75%"
+              },
+              "action": {
+                "trigger": "handleSave_screen1"
+              }
+            }
+          ]
+        },
+        "screen2": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (2/4)"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaNeue-Bold",
+              "size": 20,
+              "background": "rgb(146, 208, 80)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table2_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table2_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table23_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "{{#? this.height}}"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_body_label_width",
+                                          "components": [
+                                            {
+                                              "type": "label",
+                                              "text": "{{label}}",
+                                              "class": "label_styles black_color center_align table_row_height",
+                                              "style": {
+                                                "height": "{{#? this.height}}"
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || ' ';}}",
+                                              "class": "center_align black_color table23_body_textfield_styles",
                                               "contentDescription": "{{contentDescription}}"
                                             }
                                           ]
@@ -1006,37 +2499,902 @@
               "type": "horizontal",
               "items": [
                 {
-                  "type": "horizontal",
-                  "class": "no_padding center_align footer_styles",
+                  "type": "vertical",
+                  "class": "no_padding",
                   "components": [
                     {
-                      "type": "space",
-                      "style": {
-                        "width": "{{(100 % (Object.keys(Footer_Buttons).length*20))-5}}%"
-                      }
-                    },
-                    {
                       "type": "horizontal",
-                      "class": "footer_buttons_spacing",
                       "components": {
-                        "{{#each Footer_Buttons}}": {
-                          "type": "button",
-                          "name": "{{this.contentDescription}}",
-                          "text": "{{this.displayName}}",
-                          "class": "button_styles center_align",
-                          "contentDescription": "{{this.contentDescription}}",
-                          "action": {
-                            "trigger": "{{#? this.trigger}}",
-                            "options": {
-                              "url": "{{#? this.url}}"
-                            }
-                          }
+                        "{{#each Table3_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
                         }
                       }
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table3_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table23_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "{{#? this.height}}"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_body_label_width",
+                                          "components": [
+                                            {
+                                              "type": "label",
+                                              "text": "{{label}}",
+                                              "class": "label_styles black_color center_align table_row_height",
+                                              "style": {
+                                                "height": "{{#? this.height}}"
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "class": "center_align black_color table23_body_textfield_styles",
+                                              "contentDescription": "{{contentDescription}}"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "home",
+              "style": {
+                "left": "10%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "previous",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "30%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles no_padding template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 4",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "60%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "next",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "save",
+              "style": {
+                "left": "80%"
+              },
+              "action": {
+                "trigger": "handleSave_screen2"
+              }
+            }
+          ]
+        },
+        "screen3": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (3/4)"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaNeue-Bold",
+              "size": 20,
+              "background": "rgb(146, 208, 80)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table4_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table4_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table45_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "{{#? this.height}}"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_body_label_width",
+                                          "components": [
+                                            {
+                                              "type": "label",
+                                              "text": "{{label}}",
+                                              "class": "label_styles black_color center_align table_row_height",
+                                              "style": {
+                                                "height": "{{#? this.height}}"
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table4_Rows[row_index].row_values[$index].name, $root['$global']) || ' ';}}",
+                                              "class": "center_align black_color table45_body_textfield_styles",
+                                              "contentDescription": "{{contentDescription}}"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table5_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table5_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table45_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "{{#? this.height}}"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_body_label_width table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "label",
+                                              "text": "{{label}}",
+                                              "class": "label_styles black_color center_align table_row_height",
+                                              "style": {
+                                                "height": "{{#? this.height}}"
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_row_height",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table5_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "class": "center_align black_color table45_body_textfield_styles",
+                                              "contentDescription": "{{contentDescription}}"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "home",
+              "style": {
+                "left": "10%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "previous",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "30%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles no_padding template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 4",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "60%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "next",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "save",
+              "style": {
+                "left": "80%"
+              },
+              "action": {
+                "trigger": "handleSave_screen3"
+              }
+            }
+          ]
+        },
+        "screen4": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (4/4)"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaNeue-Bold",
+              "size": 20,
+              "background": "rgb(146, 208, 80)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table6_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}} center_align"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table6_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table6_body_name_styles table_row_height",
+                                  "style": {
+                                    "height": "{{#? this.height}}"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "{{#? this.height}}"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_body_label_width",
+                                          "components": [
+                                            {
+                                              "type": "label",
+                                              "text": "{{label}}",
+                                              "class": "label_styles black_color center_align table_row_height",
+                                              "style": {
+                                                "height": "{{#? this.height}}"
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_row_height",
+                                          "style": {
+                                            "height": "{{#? this.height}}"
+                                          },
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table6_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "class": "center_align black_color table6_body_textfield_styles",
+                                              "contentDescription": "{{contentDescription}}",
+                                              "style": {
+                                                "height": "{{#? this.height}}"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Notifications.",
+                      "class": "table_header_styles comments_title_styles"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "notifications",
+                      "class": "comments_styles",
+                      "value": "{{$global.f9_s4_notifications || ''}}",
+                      "placeholder": "Enter Notifications",
+                      "contentDescription": "notifications"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Comments.",
+                      "class": "table_header_styles comments_title_styles"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "comments",
+                      "class": "comments_styles",
+                      "value": "{{$global.f9_s4_comments || ''}}",
+                      "placeholder": "Enter Comments",
+                      "contentDescription": "comments"
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "home",
+              "style": {
+                "left": "10%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "previous",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "30%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles no_padding template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 4",
+              "class": "layer_styles no_padding template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "60%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "save",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleSave_screen4"
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{submit_icon}}",
+              "class": "layer_styles no_padding",
+              "contentDescription": "submit",
+              "style": {
+                "left": "80%"
+              },
+              "action": {
+                "trigger": "handleSubmit"
+              }
             }
           ]
         }

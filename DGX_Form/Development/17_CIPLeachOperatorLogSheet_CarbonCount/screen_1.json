@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Form-17",
+      "title": "CIP/Leach Operator Log Sheet - Carbon Count",
       "json_id": "form17",
       "description": "CIP/Leach Operator Log Sheet - Carbon Count",
       "form_id": "form17",
@@ -19,6 +19,9 @@
         },
         "black_color": {
           "color": "rgb(0,0,0)"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
         },
         "label_styles": {
           "font": "HelveticaNeue-Bold"
@@ -107,15 +110,14 @@
           "size": "16",
           "color": "rgb(255, 255, 255)",
           "background": "rgb(0,147,215)",
-          "corner_radius": "1%",
-          "font": "HelveticaHeader-Bold"
+          "corner_radius": "1%"
         },
         "active_template_button_styles": {
           "background": "rgb(255, 0, 0)"
         },
         "layer_styles": {
           "width": "10%",
-          "height": "11%",
+          "height": "7%",
           "bottom": "1%"
         },
         "table_body_label_width": {
@@ -205,7 +207,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen1 data successfully"
             }
           }
         },
@@ -218,7 +220,7 @@
           "success": {
             "trigger": "displayToaster",
             "options": {
-              "message": "Saved Successfully"
+              "message": "Saved screen2 data successfully"
             }
           }
         },
@@ -243,7 +245,7 @@
           "options": {
             "save": "true",
             "form_id": "form17",
-            "filename": "CIPLeachOperatorLogSheet_CarbonCount"
+            "filename": "CIPLeachOperatorLogSheetCarbonCount"
           },
           "success": {
             "type": "$global.reset",
@@ -1139,9 +1141,10 @@
             {
               "type": "button",
               "text": "Page 1",
-              "class": "layer_styles template_button_styles active_template_button_styles no_padding",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
-                "left": "40%"
+                "left": "40%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -1153,9 +1156,10 @@
             {
               "type": "button",
               "text": "Page 2",
-              "class": "layer_styles template_button_styles no_padding",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "left": "50%"
+                "left": "50%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -1290,9 +1294,10 @@
             {
               "type": "button",
               "text": "Page 1",
-              "class": "layer_styles template_button_styles",
+              "class": "layer_styles template_button_styles bold",
               "style": {
-                "left": "40%"
+                "left": "40%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
@@ -1304,9 +1309,10 @@
             {
               "type": "button",
               "text": "Page 2",
-              "class": "layer_styles template_button_styles active_template_button_styles",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
               "style": {
-                "left": "50%"
+                "left": "50%",
+                "padding": "0"
               },
               "action": {
                 "trigger": "handleTemplateChange",
