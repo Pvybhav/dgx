@@ -420,8 +420,8 @@
           "type": "$global.set",
           "options": {
             "section_id": "form2",
-            "description_of_deficiency": "{{$get.description_of_deficiency}}",
-            "comments_operator_description": "{{$get.comments_operator_description}}"
+            "description_of_deficiency": "{{$get.description_of_deficiency || ''}}",
+            "comments_operator_description": "{{$get.comments_operator_description || ''}}"
           },
           "success": {
             "type": "$util.toast",
