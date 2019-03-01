@@ -414,8 +414,8 @@
           "type": "$global.set",
           "options": {
             "section_id": "form3",
-            "description_of_deficiency": "{{$get.description_of_deficiency}}",
-            "comments_operator_description": "{{$get.comments_operator_description}}"
+            "description_of_deficiency": "{{$get.description_of_deficiency || ''}}",
+            "comments_operator_description": "{{$get.comments_operator_description || ''}}"
           },
           "success": {
             "type": "$util.toast",
@@ -3084,7 +3084,7 @@
               "items": [
                 {
                   "type": "horizontal",
-                  "class": "no_padding table_row_even_styles center_align table_row",
+                  "class": "no_padding table_row_odd_styles center_align table_row",
                   "components": [
                     {
                       "type": "horizontal",
