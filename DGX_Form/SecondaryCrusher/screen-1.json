@@ -3923,34 +3923,36 @@
               "height": "3%"
             }
           },
-          "sections": [{
-              "type": "vertical",
+          "sections": [
+            {
+              "type": "horizontal",
               "class": "no_padding",
               "items": [{
+                "type": "horizontal",
+                "class": "no_padding",
+                "components": [{
                   "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [{
-                    "type": "horizontal",
-                    "class": "no_padding",
-                    "components": [{
-                      "type": "horizontal",
-                      "class": "no_padding table_row",
-                      "components": {
-                        "{{#each Screen3_Table1_Headers}}": {
-                          "type": "vertical",
-                          "components": [{
-                            "type": "label",
-                            "text": "{{value}}",
-                            "class": "{{styles}} center_align"
-                          }]
-                        }
-                      },
-                      "style": {
-                        "padding_top": "1%"
-                      }
-                    }]
-                  }]
-                },
+                  "class": "no_padding table_row",
+                  "components": {
+                    "{{#each Screen3_Table1_Headers}}": {
+                      "type": "vertical",
+                      "components": [{
+                        "type": "label",
+                        "text": "{{value}}",
+                        "class": "{{styles}} center_align"
+                      }]
+                    }
+                  },
+                  "style": {
+                    "padding_top": "1%"
+                  }
+                }]
+              }]
+            },{
+              "type": "vertical",
+              "class": "no_padding",
+              "items": [
+                
                 {
                   "type": "vertical",
                   "components": [{
@@ -4122,11 +4124,12 @@
 
                     ]
                   }]
-                },
+                }]
+              },
                 {
                   "type": "horizontal",
                   "class": "no_padding",
-                  "components": [{
+                  "items": [{
                     "type": "horizontal",
                     "class": "no_padding",
                     "components": [{
@@ -4150,7 +4153,7 @@
                 },
                 {
                   "type": "vertical",
-                  "components": [{
+                  "items": [{
                     "type": "vertical",
                     "class": "no_padding",
                     "components": [{
@@ -4232,7 +4235,6 @@
                       }
 
                     ]
-                  }]
                 },
                 {
                   "type": "vertical",
