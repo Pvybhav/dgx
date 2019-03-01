@@ -2262,7 +2262,8 @@
               "height": "3%"
             }
           },
-          "sections": [{
+          "sections": [
+            {
               "type": "vertical",
               "items": [{
                 "type": "horizontal",
@@ -2612,32 +2613,33 @@
               "class": "no_padding"
             },
             {
-              "type": "vertical",
+              "type": "horizontal",
+              "class": "no_padding",
               "items": [{
+                "type": "horizontal",
+                "class": "no_padding",
+                "components": [{
                   "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [{
-                    "type": "horizontal",
-                    "class": "no_padding",
-                    "components": [{
-                      "type": "horizontal",
-                      "class": "no_padding table_row",
-                      "components": {
-                        "{{#each Screen1_Table1_Headers}}": {
-                          "type": "vertical",
-                          "components": [{
-                            "type": "label",
-                            "text": "{{value}}",
-                            "class": "{{styles}} center_align"
-                          }]
-                        }
-                      },
-                      "style": {
-                        "padding_top": "1%"
-                      }
-                    }]
-                  }]
-                },
+                  "class": "no_padding table_row",
+                  "components": {
+                    "{{#each Screen1_Table1_Headers}}": {
+                      "type": "vertical",
+                      "components": [{
+                        "type": "label",
+                        "text": "{{value}}",
+                        "class": "{{styles}} center_align"
+                      }]
+                    }
+                  },
+                  "style": {
+                    "padding_top": "1%"
+                  }
+                }]
+              }]
+            },
+            {
+              "type": "vertical",
+              "items": [
                 {
                   "type": "horizontal",
                   "class": "no_padding",
