@@ -2574,7 +2574,39 @@
               "class": "no_padding"
             },
             {
-              "type": "vertical",
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding table_row",
+                      "components": {
+                        "{{#each Screen1_Table1_Headers}}": {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
               "items": [
                 {
                   "type": "horizontal",
@@ -2583,485 +2615,448 @@
                     {
                       "type": "horizontal",
                       "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding table_row",
-                          "components": {
-                            "{{#each Screen1_Table1_Headers}}": {
-                              "type": "vertical",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "{{value}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              ]
-                            }
-                          },
-                          "style": {
-                            "padding_top": "1%"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "horizontal",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding",
-                          "components": {
-                            "{{#each Screen1_Table1_Units}}": {
-                              "type": "vertical",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "{{value}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              ]
-                            }
-                          },
-                          "style": {
-                            "height": "5%"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 1",
-                          "class": "content_style_even center_align line_style"
-                        },
-                        {
+                      "components": {
+                        "{{#each Screen1_Table1_Units}}": {
                           "type": "vertical",
-                          "components": {
-                            "{{#each Screen1_Table1_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
-                                    "height": "6%"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "components": [
-                                                {
-                                                  "type": "{{type}}",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen1_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                  "class": "{{styles}}",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_bottom": "1%"
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
                             }
-                          }
+                          ]
                         }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 2",
-                          "class": "content_style_odd center_align line_style"
-                        },
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen1_Table2_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
-                                    "height": "6%"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "components": [
-                                                {
-                                                  "type": "{{type}}",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen1_Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                  "class": "{{styles}}",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_bottom": "1%"
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "horizontal",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding table_row",
-                          "components": {
-                            "{{#each Screen1_Table2_Headers}}": {
-                              "type": "vertical",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "{{value}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              ]
-                            }
-                          },
-                          "style": {
-                            "padding_top": "1%"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "class": "no_padding",
-                  "components": [
-                    {
-                      "type": "horizontal",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding",
-                          "components": {
-                            "{{#each Screen1_Table2_Units}}": {
-                              "type": "vertical",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "{{value}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              ]
-                            }
-                          },
-                          "style": {
-                            "height": "5%"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 1",
-                          "class": "content_style_even center_align line_style"
-                        },
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen1_Table3_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
-                                    "height": "6%"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "components": [
-                                                {
-                                                  "type": "{{type}}",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen1_Table3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                  "class": "{{styles}}",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_bottom": "1%"
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 2",
-                          "class": "content_style_odd center_align line_style"
-                        },
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen1_Table4_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
-                                    "height": "6%"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "components": [
-                                                {
-                                                  "type": "{{type}}",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen1_Table4_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
-                                                  "class": "{{styles}}",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_bottom": "1%"
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "components": [
-                    {
-                      "type": "textarea",
-                      "value": "{{$global.form15_screen1_comments || ''}}",
-                      "name": "form15_screen1_comments",
-                      "placeholder": "Comments",
-                      "contentDescription": "Comments",
+                      },
                       "style": {
-                        "width": "100%",
-                        "height": "15%",
-                        "size": "15",
-                        "border": "#000000"
+                        "height": "5%"
                       }
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
                 {
-                  "type": "horizontal",
+                  "type": "vertical",
+                  "class": "no_padding",
                   "components": [
                     {
                       "type": "label",
-                      "text": "",
-                      "style": {
-                        "height": "10%",
-                        "width": "100%"
+                      "text": "Line 1",
+                      "class": "content_style_even center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen1_Table1_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen1_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "class": "{{styles}}",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_bottom": "1%"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
                       }
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line 2",
+                      "class": "content_style_odd center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen1_Table2_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen1_Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "class": "{{styles}}",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_bottom": "1%"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding table_row",
+                      "components": {
+                        "{{#each Screen1_Table2_Headers}}": {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": {
+                        "{{#each Screen1_Table2_Units}}": {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "height": "5%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line 1",
+                      "class": "content_style_even center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen1_Table3_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen1_Table3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "class": "{{styles}}",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_bottom": "1%"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line 2",
+                      "class": "content_style_odd center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen1_Table4_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen1_Table4_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "class": "{{styles}}",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_bottom": "1%"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "textarea",
+                  "value": "{{$global.form15_screen1_comments || ''}}",
+                  "name": "form15_screen1_comments",
+                  "placeholder": "Comments",
+                  "contentDescription": "Comments",
+                  "style": {
+                    "width": "100%",
+                    "height": "15%",
+                    "size": "15",
+                    "border": "#000000"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "height": "10%",
+                    "width": "100%"
+                  }
                 }
               ],
               "class": "no_padding"
@@ -3080,7 +3075,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
@@ -3189,7 +3184,7 @@
           },
           "sections": [
             {
-              "type": "vertical",
+              "type": "horizontal",
               "class": "no_padding",
               "items": [
                 {
@@ -3198,617 +3193,611 @@
                   "components": [
                     {
                       "type": "horizontal",
-                      "class": "no_padding",
+                      "class": "no_padding table_row",
+                      "components": {
+                        "{{#each Screen2_Table1_Headers}}": {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
                       "components": [
                         {
                           "type": "horizontal",
-                          "class": "no_padding table_row",
-                          "components": {
-                            "{{#each Screen2_Table1_Headers}}": {
-                              "type": "vertical",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "{{value}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              ]
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "",
+                              "class": "table_header_styles",
+                              "style": {
+                                "height": "6%",
+                                "width": "15%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "Running",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "17%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "Plugged",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "17%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "",
+                              "class": "table_header_styles",
+                              "style": {
+                                "height": "6%",
+                                "width": "51%"
+                              }
                             }
-                          },
-                          "style": {
-                            "padding_top": "1%"
-                          }
+                          ]
                         }
                       ]
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
                 {
                   "type": "vertical",
+                  "class": "no_padding",
                   "components": [
                     {
                       "type": "vertical",
-                      "class": "no_padding",
                       "components": [
                         {
-                          "type": "vertical",
+                          "type": "horizontal",
                           "components": [
                             {
                               "type": "horizontal",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "100%",
+                                "border": "#ffffff"
+                              },
                               "components": [
                                 {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "table_header_styles",
+                                  "type": "horizontal",
+                                  "style": {
+                                    "background": "rgb(14, 53, 112)",
+                                    "color": "rgb(255, 255, 255)",
+                                    "height": "6%"
+                                  },
+                                  "class": "center_align",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "name": "shift",
+                                      "value": "true",
+                                      "class": "switch_legend_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "name": "AgitatorShaft_true",
+                                      "text": "= OK",
+                                      "style": {
+                                        "background": "rgb(14, 53, 112)",
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "background": "rgb(14, 53, 112)",
+                                    "color": "rgb(255, 255, 255)",
+                                    "height": "6%"
+                                  },
+                                  "class": "center_align",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "name": "shift",
+                                      "value": "false",
+                                      "class": "switch_legend_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "name": "AgitatorShaft_true",
+                                      "text": "= Issue",
+                                      "style": {
+                                        "background": "rgb(14, 53, 112)",
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line 1",
+                      "class": "content_style_even center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen2_Table1_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
                                   "style": {
                                     "height": "6%",
                                     "width": "15%"
-                                  }
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
                                 },
                                 {
-                                  "type": "label",
-                                  "text": "Running",
-                                  "class": "table_header_styles center_align",
+                                  "type": "horizontal",
                                   "style": {
-                                    "height": "6%",
-                                    "width": "17%"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "Plugged",
-                                  "class": "table_header_styles center_align",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "17%"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "table_header_styles",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "51%"
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "style": {
+                                            "height": "6%"
+                                          },
+                                          "class": "{{styles}}",
+                                          "components": [
+                                            {
+                                              "type": "switch",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                              "class": "{{styles}} switch_legend_styles_table",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_right": "6%",
+                                                "border": "#ffffff",
+                                                "height": "6%"
+                                              },
+                                              "action": {
+                                                "trigger": "{{#? trigger}}",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
                                   }
                                 }
                               ]
                             }
                           ]
                         }
-                      ]
+                      }
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
                 {
                   "type": "vertical",
+                  "class": "no_padding",
                   "components": [
                     {
+                      "type": "label",
+                      "text": "Line 2",
+                      "class": "content_style_odd center_align line_style"
+                    },
+                    {
                       "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "components": [
+                      "components": {
+                        "{{#each Screen2_Table2_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
                             {
                               "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
                               "components": [
                                 {
                                   "type": "horizontal",
-                                  "class": "table_header_styles center_align",
+                                  "class": "table_body_name_styles",
                                   "style": {
                                     "height": "6%",
-                                    "width": "100%",
-                                    "border": "#ffffff"
+                                    "width": "15%"
                                   },
                                   "components": [
                                     {
-                                      "type": "horizontal",
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
                                       "style": {
-                                        "background": "rgb(14, 53, 112)",
-                                        "color": "rgb(255, 255, 255)",
                                         "height": "6%"
-                                      },
-                                      "class": "center_align",
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
                                       "components": [
                                         {
-                                          "type": "switch",
-                                          "name": "shift",
-                                          "value": "true",
-                                          "class": "switch_legend_styles",
-                                          "isClickable": "false"
-                                        },
-                                        {
-                                          "type": "label",
-                                          "name": "AgitatorShaft_true",
-                                          "text": "= OK",
+                                          "type": "vertical",
                                           "style": {
-                                            "background": "rgb(14, 53, 112)",
-                                            "color": "rgb(255, 255, 255)",
                                             "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "background": "rgb(14, 53, 112)",
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "6%"
-                                      },
-                                      "class": "center_align",
-                                      "components": [
-                                        {
-                                          "type": "switch",
-                                          "name": "shift",
-                                          "value": "false",
-                                          "class": "switch_legend_styles",
-                                          "isClickable": "false"
-                                        },
-                                        {
-                                          "type": "label",
-                                          "name": "AgitatorShaft_true",
-                                          "text": "= Issue",
-                                          "style": {
-                                            "background": "rgb(14, 53, 112)",
-                                            "color": "rgb(255, 255, 255)",
-                                            "height": "6%"
-                                          }
+                                          },
+                                          "class": "{{styles}}",
+                                          "components": [
+                                            {
+                                              "type": "switch",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                              "class": "{{styles}} switch_legend_styles_table",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_right": "6%",
+                                                "border": "#ffffff",
+                                                "height": "6%"
+                                              },
+                                              "action": {
+                                                "trigger": "{{#? trigger}}",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
                                         }
                                       ]
                                     }
-                                  ]
+                                  }
                                 }
                               ]
                             }
                           ]
                         }
-                      ]
+                      }
                     }
                   ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 1",
-                          "class": "content_style_even center_align line_style"
-                        },
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen2_Table1_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
-                                    "height": "6%"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "style": {
-                                                "height": "6%"
-                                              },
-                                              "class": "{{styles}}",
-                                              "components": [
-                                                {
-                                                  "type": "switch",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                  "class": "{{styles}} switch_legend_styles_table",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_right": "6%",
-                                                    "border": "#ffffff",
-                                                    "height": "6%"
-                                                  },
-                                                  "action": {
-                                                    "trigger": "{{#? trigger}}",
-                                                    "options": {
-                                                      "fieldName": "{{name}}"
-                                                    }
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 2",
-                          "class": "content_style_odd center_align line_style"
-                        },
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen2_Table2_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
-                                    "height": "6%"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "style": {
-                                                "height": "6%"
-                                              },
-                                              "class": "{{styles}}",
-                                              "components": [
-                                                {
-                                                  "type": "switch",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                  "class": "{{styles}} switch_legend_styles_table",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_right": "6%",
-                                                    "border": "#ffffff",
-                                                    "height": "6%"
-                                                  },
-                                                  "action": {
-                                                    "trigger": "{{#? trigger}}",
-                                                    "options": {
-                                                      "fieldName": "{{name}}"
-                                                    }
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
                 {
                   "type": "horizontal",
                   "class": "no_padding",
                   "components": [
                     {
                       "type": "horizontal",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding table_row",
-                          "components": {
-                            "{{#each Screen2_Table2_Headers}}": {
-                              "type": "vertical",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "{{value}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              ]
-                            }
-                          },
-                          "style": {
-                            "padding_top": "1%"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 1",
-                          "class": "content_style_even center_align line_style"
-                        },
-                        {
+                      "class": "no_padding table_row",
+                      "components": {
+                        "{{#each Screen2_Table2_Headers}}": {
                           "type": "vertical",
-                          "components": {
-                            "{{#each Screen2_Table3_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
-                                    "height": "6%"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "style": {
-                                                "height": "6%"
-                                              },
-                                              "class": "{{styles}}",
-                                              "components": [
-                                                {
-                                                  "type": "switch",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                  "class": "{{styles}} switch_legend_styles_table",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_right": "6%",
-                                                    "border": "#ffffff",
-                                                    "height": "6%"
-                                                  },
-                                                  "action": {
-                                                    "trigger": "{{#? trigger}}",
-                                                    "options": {
-                                                      "fieldName": "{{name}}"
-                                                    }
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
                             }
-                          }
+                          ]
                         }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 2",
-                          "class": "content_style_odd center_align line_style"
-                        },
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen2_Table4_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
-                                    "height": "6%"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "style": {
-                                                "height": "6%"
-                                              },
-                                              "class": "{{styles}} center_align",
-                                              "components": [
-                                                {
-                                                  "type": "switch",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                  "class": "{{styles}} switch_legend_styles_table",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_right": "6%",
-                                                    "border": "#ffffff",
-                                                    "height": "6%"
-                                                  },
-                                                  "action": {
-                                                    "trigger": "{{#? trigger}}",
-                                                    "options": {
-                                                      "fieldName": "{{name}}"
-                                                    }
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "components": [
-                    {
-                      "type": "textarea",
-                      "value": "{{$global.form15_screen2_comments || ''}}",
-                      "name": "form15_screen2_comments",
-                      "placeholder": "Comments",
-                      "contentDescription": "Comments",
+                      },
                       "style": {
-                        "width": "100%",
-                        "height": "15%",
-                        "size": "15",
-                        "border": "#000000"
+                        "padding_top": "1%"
                       }
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
                 {
-                  "type": "horizontal",
+                  "type": "vertical",
+                  "class": "no_padding",
                   "components": [
                     {
                       "type": "label",
-                      "text": "",
-                      "style": {
-                        "height": "10%",
-                        "width": "100%"
+                      "text": "Line 1",
+                      "class": "content_style_even center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen2_Table3_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "style": {
+                                            "height": "6%"
+                                          },
+                                          "class": "{{styles}}",
+                                          "components": [
+                                            {
+                                              "type": "switch",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                              "class": "{{styles}} switch_legend_styles_table",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_right": "6%",
+                                                "border": "#ffffff",
+                                                "height": "6%"
+                                              },
+                                              "action": {
+                                                "trigger": "{{#? trigger}}",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
                       }
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line 2",
+                      "class": "content_style_odd center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen2_Table4_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "style": {
+                                            "height": "6%"
+                                          },
+                                          "class": "{{styles}} center_align",
+                                          "components": [
+                                            {
+                                              "type": "switch",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen2_Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                              "class": "{{styles}} switch_legend_styles_table",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_right": "6%",
+                                                "border": "#ffffff",
+                                                "height": "6%"
+                                              },
+                                              "action": {
+                                                "trigger": "{{#? trigger}}",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "textarea",
+                  "value": "{{$global.form15_screen2_comments || ''}}",
+                  "name": "form15_screen2_comments",
+                  "placeholder": "Comments",
+                  "contentDescription": "Comments",
+                  "style": {
+                    "width": "100%",
+                    "height": "15%",
+                    "size": "15",
+                    "border": "#000000"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "height": "10%",
+                    "width": "100%"
+                  }
                 }
               ]
             }
@@ -3826,7 +3815,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
@@ -3950,7 +3939,7 @@
           },
           "sections": [
             {
-              "type": "vertical",
+              "type": "horizontal",
               "class": "no_padding",
               "items": [
                 {
@@ -3959,472 +3948,466 @@
                   "components": [
                     {
                       "type": "horizontal",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding table_row",
-                          "components": {
-                            "{{#each Screen3_Table1_Headers}}": {
-                              "type": "vertical",
+                      "class": "no_padding table_row",
+                      "components": {
+                        "{{#each Screen3_Table1_Headers}}": {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line 1",
+                      "class": "content_style_odd center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen3_Table1_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
                               "components": [
                                 {
-                                  "type": "label",
-                                  "text": "{{value}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              ]
-                            }
-                          },
-                          "style": {
-                            "padding_top": "1%"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 1",
-                          "class": "content_style_odd center_align line_style"
-                        },
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen3_Table1_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
                                   "type": "horizontal",
-                                  "class": "center_align",
+                                  "class": "table_body_name_styles",
                                   "style": {
-                                    "height": "6%"
+                                    "height": "6%",
+                                    "width": "15%"
                                   },
                                   "components": [
                                     {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
                                       "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "style": {
-                                                "height": "6%"
-                                              },
-                                              "class": "{{styles}}",
-                                              "components": [
-                                                {
-                                                  "type": "switch",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen3_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                  "class": "{{styles}} switch_legend_styles_table",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_right": "6%",
-                                                    "border": "#ffffff",
-                                                    "height": "6%"
-                                                  },
-                                                  "action": {
-                                                    "trigger": "{{#? trigger}}",
-                                                    "options": {
-                                                      "fieldName": "{{name}}"
-                                                    }
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
+                                        "height": "6%"
                                       }
                                     }
                                   ]
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 2",
-                          "class": "content_style_odd center_align line_style"
-                        },
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen3_Table2_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
                                 },
                                 {
                                   "type": "horizontal",
-                                  "class": "center_align",
                                   "style": {
-                                    "height": "6%"
+                                    "width": "85%"
                                   },
-                                  "components": [
-                                    {
+                                  "components": {
+                                    "{{#each row_values}}": {
                                       "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
                                       "components": [
                                         {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
+                                          "type": "vertical",
                                           "style": {
                                             "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
+                                          },
+                                          "class": "{{styles}}",
                                           "components": [
                                             {
-                                              "type": "vertical",
+                                              "type": "switch",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen3_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                              "class": "{{styles}} switch_legend_styles_table",
                                               "style": {
+                                                "width": "17%",
+                                                "padding_right": "6%",
+                                                "border": "#ffffff",
                                                 "height": "6%"
                                               },
-                                              "class": "{{styles}}",
-                                              "components": [
-                                                {
-                                                  "type": "switch",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen3_Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                  "class": "{{styles}} switch_legend_styles_table",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_right": "6%",
-                                                    "border": "#ffffff",
-                                                    "height": "6%"
-                                                  },
-                                                  "action": {
-                                                    "trigger": "{{#? trigger}}",
-                                                    "options": {
-                                                      "fieldName": "{{name}}"
-                                                    }
-                                                  }
+                                              "action": {
+                                                "trigger": "{{#? trigger}}",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
                                                 }
-                                              ]
+                                              }
                                             }
                                           ]
                                         }
-                                      }
+                                      ]
                                     }
-                                  ]
+                                  }
                                 }
                               ]
                             }
-                          }
+                          ]
                         }
-                      ]
+                      }
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line 2",
+                      "class": "content_style_odd center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen3_Table2_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "style": {
+                                            "height": "6%"
+                                          },
+                                          "class": "{{styles}}",
+                                          "components": [
+                                            {
+                                              "type": "switch",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen3_Table2_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                              "class": "{{styles}} switch_legend_styles_table",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_right": "6%",
+                                                "border": "#ffffff",
+                                                "height": "6%"
+                                              },
+                                              "action": {
+                                                "trigger": "{{#? trigger}}",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
                 {
                   "type": "horizontal",
                   "class": "no_padding",
                   "components": [
                     {
                       "type": "horizontal",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "horizontal",
-                          "class": "no_padding table_row",
-                          "components": {
-                            "{{#each Screen3_Table2_Headers}}": {
-                              "type": "vertical",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "{{value}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              ]
-                            }
-                          },
-                          "style": {
-                            "padding_top": "1%"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 1",
-                          "class": "content_style_odd center_align line_style"
-                        },
-                        {
+                      "class": "no_padding table_row",
+                      "components": {
+                        "{{#each Screen3_Table2_Headers}}": {
                           "type": "vertical",
-                          "components": {
-                            "{{#each Screen3_Table3_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
-                                    "height": "6%"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "style": {
-                                                "height": "6%"
-                                              },
-                                              "class": "{{styles}}",
-                                              "components": [
-                                                {
-                                                  "type": "switch",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen3_Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                  "class": "{{styles}} switch_legend_styles_table",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_right": "6%",
-                                                    "border": "#ffffff",
-                                                    "height": "6%"
-                                                  },
-                                                  "action": {
-                                                    "trigger": "{{#? trigger}}",
-                                                    "options": {
-                                                      "fieldName": "{{name}}"
-                                                    }
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
                             }
-                          }
+                          ]
                         }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "label",
-                          "text": "Line 2",
-                          "class": "content_style_odd center_align line_style"
-                        },
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen3_Table4_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
-                                    "height": "6%"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "style": {
-                                                "height": "6%"
-                                              },
-                                              "class": "{{styles}}",
-                                              "components": [
-                                                {
-                                                  "type": "switch",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen3_Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                  "class": "{{styles}} switch_legend_styles_table",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "border": "#ffffff",
-                                                    "height": "6%",
-                                                    "padding_right": "6%"
-                                                  },
-                                                  "action": {
-                                                    "trigger": "{{#? trigger}}",
-                                                    "options": {
-                                                      "fieldName": "{{name}}"
-                                                    }
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal",
-                  "components": [
-                    {
-                      "type": "textarea",
-                      "value": "{{$global.form15_screen3_comments || ''}}",
-                      "name": "form15_screen3_comments",
-                      "placeholder": "Comments",
-                      "contentDescription": "Comments",
+                      },
                       "style": {
-                        "width": "100%",
-                        "height": "15%",
-                        "size": "15",
-                        "border": "#000000"
+                        "padding_top": "1%"
                       }
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
                 {
-                  "type": "horizontal",
+                  "type": "vertical",
+                  "class": "no_padding",
                   "components": [
                     {
                       "type": "label",
-                      "text": "",
-                      "style": {
-                        "height": "10%",
-                        "width": "100%"
+                      "text": "Line 1",
+                      "class": "content_style_odd center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen3_Table3_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "style": {
+                                            "height": "6%"
+                                          },
+                                          "class": "{{styles}}",
+                                          "components": [
+                                            {
+                                              "type": "switch",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen3_Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                              "class": "{{styles}} switch_legend_styles_table",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_right": "6%",
+                                                "border": "#ffffff",
+                                                "height": "6%"
+                                              },
+                                              "action": {
+                                                "trigger": "{{#? trigger}}",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
                       }
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Line 2",
+                      "class": "content_style_odd center_align line_style"
+                    },
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen3_Table4_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "style": {
+                                            "height": "6%"
+                                          },
+                                          "class": "{{styles}}",
+                                          "components": [
+                                            {
+                                              "type": "switch",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen3_Table4_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                              "class": "{{styles}} switch_legend_styles_table",
+                                              "style": {
+                                                "width": "17%",
+                                                "border": "#ffffff",
+                                                "height": "6%",
+                                                "padding_right": "6%"
+                                              },
+                                              "action": {
+                                                "trigger": "{{#? trigger}}",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "textarea",
+                  "value": "{{$global.form15_screen3_comments || ''}}",
+                  "name": "form15_screen3_comments",
+                  "placeholder": "Comments",
+                  "contentDescription": "Comments",
+                  "style": {
+                    "width": "100%",
+                    "height": "15%",
+                    "size": "15",
+                    "border": "#000000"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "height": "10%",
+                    "width": "100%"
+                  }
                 }
               ]
             }
@@ -4442,7 +4425,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
@@ -4566,7 +4549,7 @@
           },
           "sections": [
             {
-              "type": "vertical",
+              "type": "horizontal",
               "class": "no_padding",
               "items": [
                 {
@@ -4575,563 +4558,557 @@
                   "components": [
                     {
                       "type": "horizontal",
-                      "class": "no_padding",
+                      "class": "no_padding table_row_2",
+                      "components": {
+                        "{{#each Screen4_Table1_Headers}}": {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
                       "components": [
                         {
                           "type": "horizontal",
-                          "class": "no_padding table_row_2",
-                          "components": {
-                            "{{#each Screen4_Table1_Headers}}": {
-                              "type": "horizontal",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "{{value}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              ]
-                            }
-                          },
-                          "style": {
-                            "padding_top": "1%"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "vertical",
                           "components": [
                             {
-                              "type": "horizontal",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "table_header_styles",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "15%"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "20-80 psig",
-                                  "class": "table_header_styles center_align",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "17%"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "Min. 20 psig",
-                                  "class": "table_header_styles center_align",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "17%"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "table_header_styles",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "51%"
-                                  }
-                                }
-                              ]
+                              "type": "label",
+                              "text": "",
+                              "class": "table_header_styles",
+                              "style": {
+                                "height": "6%",
+                                "width": "15%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "20-80 psig",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "17%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "Min. 20 psig",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "17%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "",
+                              "class": "table_header_styles",
+                              "style": {
+                                "height": "6%",
+                                "width": "51%"
+                              }
                             }
                           ]
                         }
                       ]
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
                 {
                   "type": "vertical",
+                  "class": "no_padding",
                   "components": [
                     {
                       "type": "vertical",
-                      "class": "no_padding",
                       "components": [
                         {
-                          "type": "vertical",
+                          "type": "horizontal",
                           "components": [
                             {
                               "type": "horizontal",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "100%",
+                                "border": "#ffffff"
+                              },
                               "components": [
                                 {
                                   "type": "horizontal",
-                                  "class": "table_header_styles center_align",
                                   "style": {
-                                    "height": "6%",
-                                    "width": "100%",
-                                    "border": "#ffffff"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "background": "rgb(14, 53, 112)",
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "6%"
-                                      },
-                                      "class": "center_align",
-                                      "components": [
-                                        {
-                                          "type": "switch",
-                                          "name": "shift",
-                                          "value": "true",
-                                          "class": "switch_legend_styles",
-                                          "isClickable": "false"
-                                        },
-                                        {
-                                          "type": "label",
-                                          "name": "AgitatorShaft_true",
-                                          "text": "= OK",
-                                          "style": {
-                                            "background": "rgb(14, 53, 112)",
-                                            "color": "rgb(255, 255, 255)",
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "background": "rgb(14, 53, 112)",
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "6%"
-                                      },
-                                      "class": "center_align",
-                                      "components": [
-                                        {
-                                          "type": "switch",
-                                          "name": "shift",
-                                          "value": "false",
-                                          "class": "switch_legend_styles",
-                                          "isClickable": "false"
-                                        },
-                                        {
-                                          "type": "label",
-                                          "name": "AgitatorShaft_true",
-                                          "text": "= Issue",
-                                          "style": {
-                                            "background": "rgb(14, 53, 112)",
-                                            "color": "rgb(255, 255, 255)",
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen4_Table1_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
+                                    "background": "rgb(14, 53, 112)",
+                                    "color": "rgb(255, 255, 255)",
                                     "height": "6%"
                                   },
+                                  "class": "center_align",
                                   "components": [
                                     {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
+                                      "type": "switch",
+                                      "name": "shift",
+                                      "value": "true",
+                                      "class": "switch_legend_styles",
+                                      "isClickable": "false"
                                     },
                                     {
-                                      "type": "horizontal",
+                                      "type": "label",
+                                      "name": "AgitatorShaft_true",
+                                      "text": "= OK",
                                       "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "style": {
-                                                "height": "6%"
-                                              },
-                                              "class": "{{styles}}",
-                                              "components": [
-                                                {
-                                                  "type": "switch",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen4_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                  "class": "{{styles}} switch_legend_styles_table",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_right": "6%",
-                                                    "border": "#ffffff",
-                                                    "height": "6%"
-                                                  },
-                                                  "action": {
-                                                    "trigger": "{{#? trigger}}",
-                                                    "options": {
-                                                      "fieldName": "{{name}}"
-                                                    }
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
+                                        "background": "rgb(14, 53, 112)",
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "background": "rgb(14, 53, 112)",
+                                    "color": "rgb(255, 255, 255)",
+                                    "height": "6%"
+                                  },
+                                  "class": "center_align",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "name": "shift",
+                                      "value": "false",
+                                      "class": "switch_legend_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "name": "AgitatorShaft_true",
+                                      "text": "= Issue",
+                                      "style": {
+                                        "background": "rgb(14, 53, 112)",
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
                                       }
                                     }
                                   ]
                                 }
                               ]
                             }
-                          }
+                          ]
                         }
                       ]
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen4_Table1_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "style": {
+                                            "height": "6%"
+                                          },
+                                          "class": "{{styles}}",
+                                          "components": [
+                                            {
+                                              "type": "switch",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen4_Table1_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                              "class": "{{styles}} switch_legend_styles_table",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_right": "6%",
+                                                "border": "#ffffff",
+                                                "height": "6%"
+                                              },
+                                              "action": {
+                                                "trigger": "{{#? trigger}}",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
                 {
                   "type": "horizontal",
                   "class": "no_padding",
                   "components": [
                     {
                       "type": "horizontal",
-                      "class": "no_padding",
+                      "class": "no_padding table_row_2",
+                      "components": {
+                        "{{#each Screen4_Table2_Headers}}": {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
                       "components": [
                         {
                           "type": "horizontal",
-                          "class": "no_padding table_row_2",
-                          "components": {
-                            "{{#each Screen4_Table2_Headers}}": {
-                              "type": "horizontal",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "{{value}}",
-                                  "class": "{{styles}} center_align"
-                                }
-                              ]
-                            }
-                          },
-                          "style": {
-                            "padding_top": "1%"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "vertical",
                           "components": [
                             {
-                              "type": "horizontal",
-                              "components": [
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "table_header_styles",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "15%"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "20-80 psig",
-                                  "class": "table_header_styles center_align",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "17%"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "Min. 20 psig",
-                                  "class": "table_header_styles center_align",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "17%"
-                                  }
-                                },
-                                {
-                                  "type": "label",
-                                  "text": "",
-                                  "class": "table_header_styles",
-                                  "style": {
-                                    "height": "6%",
-                                    "width": "51%"
-                                  }
-                                }
-                              ]
+                              "type": "label",
+                              "text": "",
+                              "class": "table_header_styles",
+                              "style": {
+                                "height": "6%",
+                                "width": "15%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "20-80 psig",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "17%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "Min. 20 psig",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "17%"
+                              }
+                            },
+                            {
+                              "type": "label",
+                              "text": "",
+                              "class": "table_header_styles",
+                              "style": {
+                                "height": "6%",
+                                "width": "51%"
+                              }
                             }
                           ]
                         }
                       ]
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
                 {
                   "type": "vertical",
+                  "class": "no_padding",
                   "components": [
                     {
                       "type": "vertical",
-                      "class": "no_padding",
                       "components": [
                         {
-                          "type": "vertical",
+                          "type": "horizontal",
                           "components": [
                             {
                               "type": "horizontal",
+                              "class": "table_header_styles center_align",
+                              "style": {
+                                "height": "6%",
+                                "width": "100%",
+                                "border": "#ffffff"
+                              },
                               "components": [
                                 {
                                   "type": "horizontal",
-                                  "class": "table_header_styles center_align",
                                   "style": {
-                                    "height": "6%",
-                                    "width": "100%",
-                                    "border": "#ffffff"
-                                  },
-                                  "components": [
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "background": "rgb(14, 53, 112)",
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "6%"
-                                      },
-                                      "class": "center_align",
-                                      "components": [
-                                        {
-                                          "type": "switch",
-                                          "name": "shift",
-                                          "value": "true",
-                                          "class": "switch_legend_styles",
-                                          "isClickable": "false"
-                                        },
-                                        {
-                                          "type": "label",
-                                          "name": "AgitatorShaft_true",
-                                          "text": "= OK",
-                                          "style": {
-                                            "background": "rgb(14, 53, 112)",
-                                            "color": "rgb(255, 255, 255)",
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "horizontal",
-                                      "style": {
-                                        "background": "rgb(14, 53, 112)",
-                                        "color": "rgb(255, 255, 255)",
-                                        "height": "6%"
-                                      },
-                                      "class": "center_align",
-                                      "components": [
-                                        {
-                                          "type": "switch",
-                                          "name": "shift",
-                                          "value": "false",
-                                          "class": "switch_legend_styles",
-                                          "isClickable": "false"
-                                        },
-                                        {
-                                          "type": "label",
-                                          "name": "AgitatorShaft_true",
-                                          "text": "= Issue",
-                                          "style": {
-                                            "background": "rgb(14, 53, 112)",
-                                            "color": "rgb(255, 255, 255)",
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "vertical",
-                  "components": [
-                    {
-                      "type": "vertical",
-                      "class": "no_padding",
-                      "components": [
-                        {
-                          "type": "vertical",
-                          "components": {
-                            "{{#each Screen4_Table3_Rows}}": {
-                              "{{#let}}": [
-                                {
-                                  "row_index": "{{$index}}"
-                                },
-                                {
-                                  "type": "horizontal",
-                                  "class": "center_align",
-                                  "style": {
+                                    "background": "rgb(14, 53, 112)",
+                                    "color": "rgb(255, 255, 255)",
                                     "height": "6%"
                                   },
+                                  "class": "center_align",
                                   "components": [
                                     {
-                                      "type": "horizontal",
-                                      "class": "table_body_name_styles",
-                                      "style": {
-                                        "height": "6%",
-                                        "width": "15%"
-                                      },
-                                      "components": [
-                                        {
-                                          "type": "label",
-                                          "text": "{{this.row_name}}",
-                                          "class": "{{this.row_styles}} table_row_height",
-                                          "style": {
-                                            "height": "6%"
-                                          }
-                                        }
-                                      ]
+                                      "type": "switch",
+                                      "name": "shift",
+                                      "value": "true",
+                                      "class": "switch_legend_styles",
+                                      "isClickable": "false"
                                     },
                                     {
-                                      "type": "horizontal",
+                                      "type": "label",
+                                      "name": "AgitatorShaft_true",
+                                      "text": "= OK",
                                       "style": {
-                                        "width": "85%"
-                                      },
-                                      "components": {
-                                        "{{#each row_values}}": {
-                                          "type": "horizontal",
-                                          "components": [
-                                            {
-                                              "type": "vertical",
-                                              "style": {
-                                                "height": "6%"
-                                              },
-                                              "class": "{{styles}}",
-                                              "components": [
-                                                {
-                                                  "type": "switch",
-                                                  "name": "{{name}}",
-                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen4_Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
-                                                  "class": "{{styles}} switch_legend_styles_table",
-                                                  "style": {
-                                                    "width": "17%",
-                                                    "padding_right": "6%",
-                                                    "border": "#ffffff",
-                                                    "height": "6%"
-                                                  },
-                                                  "action": {
-                                                    "trigger": "{{#? trigger}}",
-                                                    "options": {
-                                                      "fieldName": "{{name}}"
-                                                    }
-                                                  }
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
+                                        "background": "rgb(14, 53, 112)",
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "background": "rgb(14, 53, 112)",
+                                    "color": "rgb(255, 255, 255)",
+                                    "height": "6%"
+                                  },
+                                  "class": "center_align",
+                                  "components": [
+                                    {
+                                      "type": "switch",
+                                      "name": "shift",
+                                      "value": "false",
+                                      "class": "switch_legend_styles",
+                                      "isClickable": "false"
+                                    },
+                                    {
+                                      "type": "label",
+                                      "name": "AgitatorShaft_true",
+                                      "text": "= Issue",
+                                      "style": {
+                                        "background": "rgb(14, 53, 112)",
+                                        "color": "rgb(255, 255, 255)",
+                                        "height": "6%"
                                       }
                                     }
                                   ]
                                 }
                               ]
                             }
-                          }
+                          ]
                         }
                       ]
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
                 {
-                  "type": "horizontal",
+                  "type": "vertical",
+                  "class": "no_padding",
                   "components": [
                     {
-                      "type": "textarea",
-                      "value": "{{$global.form15_screen4_comments || ''}}",
-                      "name": "form15_screen4_comments",
-                      "placeholder": "Comments",
-                      "contentDescription": "Comments",
-                      "style": {
-                        "width": "100%",
-                        "height": "15%",
-                        "size": "15",
-                        "border": "#000000",
-                        "padding_bottom": "3%"
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Screen4_Table3_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align",
+                              "style": {
+                                "height": "6%"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "class": "table_body_name_styles",
+                                  "style": {
+                                    "height": "6%",
+                                    "width": "15%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "label",
+                                      "text": "{{this.row_name}}",
+                                      "class": "{{this.row_styles}} table_row_height",
+                                      "style": {
+                                        "height": "6%"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "style": {
+                                    "width": "85%"
+                                  },
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "style": {
+                                            "height": "6%"
+                                          },
+                                          "class": "{{styles}}",
+                                          "components": [
+                                            {
+                                              "type": "switch",
+                                              "name": "{{name}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Screen4_Table3_Rows[row_index].row_values[$index].name, $root['$global']) || 'true';}}",
+                                              "class": "{{styles}} switch_legend_styles_table",
+                                              "style": {
+                                                "width": "17%",
+                                                "padding_right": "6%",
+                                                "border": "#ffffff",
+                                                "height": "6%"
+                                              },
+                                              "action": {
+                                                "trigger": "{{#? trigger}}",
+                                                "options": {
+                                                  "fieldName": "{{name}}"
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
                       }
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
                 {
-                  "type": "horizontal",
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "",
-                      "style": {
-                        "height": "10%",
-                        "width": "100%"
-                      }
-                    }
-                  ]
+                  "type": "textarea",
+                  "value": "{{$global.form15_screen4_comments || ''}}",
+                  "name": "form15_screen4_comments",
+                  "placeholder": "Comments",
+                  "contentDescription": "Comments",
+                  "style": {
+                    "width": "100%",
+                    "height": "15%",
+                    "size": "15",
+                    "border": "#000000",
+                    "padding_bottom": "3%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "label",
+                  "text": "",
+                  "style": {
+                    "height": "10%",
+                    "width": "100%"
+                  }
                 }
               ]
             }
@@ -5149,7 +5126,7 @@
               "action": {
                 "trigger": "handleNavigation",
                 "options": {
-                  "url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json"
+                  "url": "{{redirect_url}}"
                 }
               }
             },
