@@ -1,0 +1,1629 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Carbon Count Integration to PI",
+      "json_id": "form16",
+      "description": "Carbon Count Integration to PI",
+      "form_id": "form16",
+      "offline": "true",
+      "styles": {
+        "carbon_bags": {
+          "padding": "0",
+          "align": "left"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "no_padding": {
+          "padding": "0"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "body_row_label_styles": {
+          "size": "16"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "dropdown_day_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "15"
+        },
+        "table_header_styles": {
+          "size": 16,
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "7%"
+        },
+        "table_header1_name_styles": {
+          "width": "50%"
+        },
+        "table_header2_name_styles": {
+          "width": "50%"
+        },
+        "table_header3_name_styles": {
+          "width": "25%"
+        },
+        "table_header3_value_styles": {
+          "width": "25%"
+        },
+        "header_style": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "background": "rgb(27,142,197)",
+          "height": "12%",
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "table_odd_row_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "table_even_row_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_body_textfield_styles": {
+          "width": "16%",
+          "height": "4%",
+          "size": "13",
+          "align": "left"
+        },
+        "table_body_textfield_styles_1": {
+          "width": "16%",
+          "size": "13",
+          "align": "left"
+        },
+        "table_row_height": {
+          "height": "6%"
+        },
+        "table_row_name_styles": {
+          "width": "4%",
+          "font": "HelveticaHeader-Bold"
+        },
+        "preload_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "template_button_styles": {
+          "size": "16",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "layer_styles": {
+          "width": "10%",
+          "height": "7%",
+          "bottom": "1%"
+        },
+        "table_body_label_width": {
+          "width": "3%"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$script.include",
+          "options": {
+            "items": [
+              {
+                "text": "var getCurrentFieldValue = function(root, id, globalValues) {  for (var key in globalValues) { if(globalValues.hasOwnProperty(id)) return globalValues[id]; };}"
+              }
+            ]
+          },
+          "success": {
+            "trigger": "handleTemplateChange",
+            "options": {
+              "templateName": "screen1"
+            }
+          }
+        },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
+        },
+        "handleTemplateChange": {
+          "type": "$render",
+          "options": {
+            "template": "{{$jason.templateName}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
+          }
+        },
+        "handleSave_screen1": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form16",
+            "form16_sign": "{{$get.sign || ''}}",
+            "form16_day": "{{$get.day}}",
+            "form16_month": "{{$get.month}}",
+            "form16_year": "{{$get.year}}",
+            "form16_shift": "{{$get.shift}}",
+            "form16_operator": "{{$get.operator}}",
+            "DS_carbon_count_L1_CIP101": "{{$get.DS_carbon_count_L1_CIP101 || '' }}",
+            "DS_carbon_count_L2_CIP201": "{{$get.DS_carbon_count_L2_CIP201 || '' }}",
+            "PS_carbon_count_L1_CIP101": "{{$get.PS_carbon_count_L1_CIP101 || '' }}",
+            "PS_carbon_count_L2_CIP201": "{{$get.PS_carbon_count_L2_CIP201 || '' }}",
+            "DS_carbon_count_L1_CIP102": "{{$get.DS_carbon_count_L1_CIP102 || '' }}",
+            "DS_carbon_count_L2_CIP202": "{{$get.DS_carbon_count_L2_CIP202 || '' }}",
+            "PS_carbon_count_L1_CIP102": "{{$get.PS_carbon_count_L1_CIP102 || '' }}",
+            "PS_carbon_count_L2_CIP202": "{{$get.PS_carbon_count_L2_CIP202 || '' }}",
+            "DS_carbon_count_L1_CIP103": "{{$get.DS_carbon_count_L1_CIP103 || '' }}",
+            "DS_carbon_count_L2_CIP203": "{{$get.DS_carbon_count_L2_CIP203 || '' }}",
+            "PS_carbon_count_L1_CIP103": "{{$get.PS_carbon_count_L1_CIP103 || '' }}",
+            "PS_carbon_count_L2_CIP203": "{{$get.PS_carbon_count_L2_CIP203 || '' }}",
+            "DS_carbon_count_L1_CIP104": "{{$get.DS_carbon_count_L1_CIP104 || '' }}",
+            "DS_carbon_count_L2_CIP204": "{{$get.DS_carbon_count_L2_CIP204 || '' }}",
+            "PS_carbon_count_L1_CIP104": "{{$get.PS_carbon_count_L1_CIP104 || '' }}",
+            "PS_carbon_count_L2_CIP204": "{{$get.PS_carbon_count_L2_CIP204 || '' }}",
+            "DS_carbon_count_L1_CIP105": "{{$get.DS_carbon_count_L1_CIP105 || '' }}",
+            "DS_carbon_count_L2_CIP205": "{{$get.DS_carbon_count_L2_CIP205 || '' }}",
+            "PS_carbon_count_L1_CIP105": "{{$get.PS_carbon_count_L1_CIP105 || '' }}",
+            "PS_carbon_count_L2_CIP205": "{{$get.PS_carbon_count_L2_CIP205 || '' }}",
+            "DS_carbon_count_L1_CIP106": "{{$get.DS_carbon_count_L1_CIP106 || '' }}",
+            "DS_carbon_count_L2_CIP206": "{{$get.DS_carbon_count_L2_CIP206 || '' }}",
+            "PS_carbon_count_L1_CIP106": "{{$get.PS_carbon_count_L1_CIP106 || '' }}",
+            "PS_carbon_count_L2_CIP206": "{{$get.PS_carbon_count_L2_CIP206 || '' }}",
+            "DS_carbon_count_L1_CIP107": "{{$get.DS_carbon_count_L1_CIP107 || '' }}",
+            "DS_carbon_count_L2_CIP207": "{{$get.DS_carbon_count_L2_CIP207 || '' }}",
+            "PS_carbon_count_L1_CIP107": "{{$get.PS_carbon_count_L1_CIP107 || '' }}",
+            "PS_carbon_count_L2_CIP207": "{{$get.PS_carbon_count_L2_CIP207 || '' }}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen1 data successfully"
+            }
+          }
+        },
+        "handleSave_screen2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form16",
+            "DS_carbon_count_L1_Density": "{{$get.DS_carbon_count_L1_Density || '' }}",
+            "DS_carbon_count_L2_Density": "{{$get.DS_carbon_count_L2_Density || '' }}",
+            "PS_carbon_count_L1_Density": "{{$get.PS_carbon_count_L1_Density || '' }}",
+            "PS_carbon_count_L2_Density": "{{$get.PS_carbon_count_L2_Density || '' }}",
+            "DS_carbon_count_L1_Leadtank": "{{$get.DS_carbon_count_L1_Leadtank || '' }}",
+            "DS_carbon_count_L2_Leadtank": "{{$get.DS_carbon_count_L2_Leadtank || '' }}",
+            "PS_carbon_count_L1_Leadtank": "{{$get.PS_carbon_count_L1_Leadtank || '' }}",
+            "PS_carbon_count_L2_Leadtank": "{{$get.PS_carbon_count_L2_Leadtank || '' }}",
+            "DS_carbon_count_L1L2_Carbonbags": "{{$get.DS_carbon_count_L1L2_Carbonbags || '' }}",
+            "PS_carbon_count_L1L2_Carbonbags": "{{$get.PS_carbon_count_L1L2_Carbonbags || '' }}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen2 data successfully"
+            }
+          }
+        },
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "style": {
+                    "width": "30%",
+                    "height": "30%",
+                    "align": "center",
+                    "top": "30%",
+                    "left": "35%"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "form_id": "form16",
+            "filename": "CIPCarbonCount"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id",
+                "form16_sign",
+                "form16_day",
+                "form16_month",
+                "form16_year",
+                "form16_shift",
+                "form16_operator",
+                "DS_carbon_count_L1_CIP101",
+                "DS_carbon_count_L2_CIP201",
+                "PS_carbon_count_L1_CIP101",
+                "PS_carbon_count_L2_CIP201",
+                "DS_carbon_count_L1_CIP102",
+                "DS_carbon_count_L2_CIP202",
+                "PS_carbon_count_L1_CIP102",
+                "PS_carbon_count_L2_CIP202",
+                "DS_carbon_count_L1_CIP103",
+                "DS_carbon_count_L2_CIP203",
+                "PS_carbon_count_L1_CIP103",
+                "PS_carbon_count_L2_CIP203",
+                "DS_carbon_count_L1_CIP104",
+                "DS_carbon_count_L2_CIP204",
+                "PS_carbon_count_L1_CIP104",
+                "PS_carbon_count_L2_CIP204",
+                "DS_carbon_count_L1_CIP105",
+                "DS_carbon_count_L2_CIP205",
+                "PS_carbon_count_L1_CIP105",
+                "PS_carbon_count_L2_CIP205",
+                "DS_carbon_count_L1_CIP106",
+                "DS_carbon_count_L2_CIP206",
+                "PS_carbon_count_L1_CIP106",
+                "PS_carbon_count_L2_CIP206",
+                "DS_carbon_count_L1_CIP107",
+                "DS_carbon_count_L2_CIP207",
+                "PS_carbon_count_L1_CIP107",
+                "PS_carbon_count_L2_CIP207",
+                "DS_carbon_count_L1_Density",
+                "DS_carbon_count_L2_Density",
+                "PS_carbon_count_L1_Density",
+                "PS_carbon_count_L2_Density",
+                "DS_carbon_count_L1_Leadtank",
+                "DS_carbon_count_L2_Leadtank",
+                "PS_carbon_count_L1_Leadtank",
+                "PS_carbon_count_L2_Leadtank",
+                "DS_carbon_count_L1L2_Carbonbags",
+                "PS_carbon_count_L1L2_Carbonbags"
+              ]
+            },
+            "success": {
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+        "Page_Heading": "Carbon Count Integration to PI",
+        "loading_image_url": "file://loading.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
+        "Days": [
+          {
+            "day": "Day",
+            "defaultSelected": "true"
+          },
+          {
+            "day": 1,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 2,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 3,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 4,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 5,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 6,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 7,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 8,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 9,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 10,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 11,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 12,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 13,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 14,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 15,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 16,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 17,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 18,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 19,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 20,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 21,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 22,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 23,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 24,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 25,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 26,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 27,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 28,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 29,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 30,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 31,
+            "defaultSelected": "false"
+          }
+        ],
+        "Months": [
+          {
+            "month": "Month",
+            "defaultSelected": "true"
+          },
+          {
+            "month": 1,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 2,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 3,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 4,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 5,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 6,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 7,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 8,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 9,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 10,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 11,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 12,
+            "defaultSelected": "false"
+          }
+        ],
+        "Years": [
+          {
+            "year": "Year",
+            "defaultSelected": "true"
+          },
+          {
+            "year": 2019,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2020,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2021,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2022,
+            "defaultSelected": "false"
+          }
+        ],
+        "Shifts": [
+          {
+            "shift": "Shift",
+            "defaultSelected": "true"
+          },
+          {
+            "shift": "Night Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Day Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Regular Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Rotating Shift",
+            "defaultSelected": "false"
+          }
+        ],
+        "Operators": [
+          {
+            "operator": "Operator",
+            "defaultSelected": "true"
+          },
+          {
+            "operator": "John",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Smith",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Michael",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Federer",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "David",
+            "defaultSelected": "false"
+          }
+        ],
+        "Table_Headers1": [
+          {
+            "value": "Day Shift",
+            "styles": "table_header1_name_styles center_align table_header_styles"
+          },
+          {
+            "value": "Previous shift",
+            "styles": "table_header1_name_styles center_align table_header_styles"
+          }
+        ],
+        "Table_Headers2": [
+          {
+            "value": "Carbon Count (g/L)",
+            "styles": "table_header2_name_styles center_align table_header_styles"
+          },
+          {
+            "value": "Carbon Count (g/L)",
+            "styles": "table_header2_name_styles center_align table_header_styles"
+          }
+        ],
+        "Table_Headers3": [
+          {
+            "value": "Line 1",
+            "styles": "table_header3_name_styles center_align table_header_styles"
+          },
+          {
+            "value": "Line 2",
+            "styles": "table_header3_value_styles center_align table_header_styles"
+          },
+          {
+            "value": "Line 1",
+            "styles": "table_header3_value_styles center_align table_header_styles"
+          },
+          {
+            "value": "Line 2",
+            "styles": "table_header3_name_styles center_align table_header_styles"
+          }
+        ],
+        "Table1_Rows": [
+          {
+            "row_values": [
+              {
+                "type": "label",
+                "text": "CIP 101"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L1_CIP101",
+                "label": "1",
+                "contentDescription": "one"
+              },
+              {
+                "type": "label",
+                "text": "CIP 201"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L2_CIP201",
+                "label": "2",
+                "contentDescription": "two"
+              },
+              {
+                "type": "label",
+                "text": "CIP 101"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L1_CIP101",
+                "label": "3",
+                "contentDescription": "three"
+              },
+              {
+                "type": "label",
+                "text": "CIP 201"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L2_CIP201",
+                "label": "4",
+                "contentDescription": "four"
+              }
+            ]
+          },
+          {
+            "row_values": [
+              {
+                "type": "label",
+                "text": "CIP 102"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L1_CIP102",
+                "label": "5",
+                "contentDescription": "five"
+              },
+              {
+                "type": "label",
+                "text": "CIP 202"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L2_CIP202",
+                "label": "6",
+                "contentDescription": "six"
+              },
+              {
+                "type": "label",
+                "text": "CIP 102"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L1_CIP102",
+                "label": "7",
+                "contentDescription": "seven"
+              },
+              {
+                "type": "label",
+                "text": "CIP 202"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L2_CIP202",
+                "label": "8",
+                "contentDescription": "eight"
+              }
+            ]
+          },
+          {
+            "row_values": [
+              {
+                "type": "label",
+                "text": "CIP 103"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L1_CIP103",
+                "label": "9",
+                "contentDescription": "nine"
+              },
+              {
+                "type": "label",
+                "text": "CIP 203"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L2_CIP203",
+                "label": "10",
+                "contentDescription": "ten"
+              },
+              {
+                "type": "label",
+                "text": "CIP 103"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L1_CIP103",
+                "label": "11",
+                "contentDescription": "eleven"
+              },
+              {
+                "type": "label",
+                "text": "CIP 203"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L2_CIP203",
+                "label": "12",
+                "contentDescription": "twelve"
+              }
+            ]
+          },
+          {
+            "row_values": [
+              {
+                "type": "label",
+                "text": "CIP 104"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L1_CIP104",
+                "label": "13",
+                "contentDescription": "thirteen"
+              },
+              {
+                "type": "label",
+                "text": "CIP 204"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L2_CIP204",
+                "label": "14",
+                "contentDescription": "fourteen"
+              },
+              {
+                "type": "label",
+                "text": "CIP 104"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L1_CIP104",
+                "label": "15",
+                "contentDescription": "fifteen"
+              },
+              {
+                "type": "label",
+                "text": "CIP 204"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L2_CIP204",
+                "label": "16",
+                "contentDescription": "sixteen"
+              }
+            ]
+          },
+          {
+            "row_values": [
+              {
+                "type": "label",
+                "text": "CIP 105"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L1_CIP105",
+                "label": "17",
+                "contentDescription": "seventeen"
+              },
+              {
+                "type": "label",
+                "text": "CIP 205"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L2_CIP205",
+                "label": "18",
+                "contentDescription": "eighteen"
+              },
+              {
+                "type": "label",
+                "text": "CIP 105"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L1_CIP105",
+                "label": "19",
+                "contentDescription": "nineteen"
+              },
+              {
+                "type": "label",
+                "text": "CIP 205"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L2_CIP205",
+                "label": "20",
+                "contentDescription": "twenty"
+              }
+            ]
+          },
+          {
+            "row_values": [
+              {
+                "type": "label",
+                "text": "CIP 106"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L1_CIP106",
+                "label": "21",
+                "contentDescription": "twenty-one"
+              },
+              {
+                "type": "label",
+                "text": "CIP 206"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L2_CIP206",
+                "label": "22",
+                "contentDescription": "twenty-two"
+              },
+              {
+                "type": "label",
+                "text": "CIP 106"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L1_CIP106",
+                "label": "23",
+                "contentDescription": "twenty-three"
+              },
+              {
+                "type": "label",
+                "text": "CIP 206"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L2_CIP206",
+                "label": "24",
+                "contentDescription": "twenty-four"
+              }
+            ]
+          },
+          {
+            "row_values": [
+              {
+                "type": "label",
+                "text": "CIP 107"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L1_CIP107",
+                "label": "25",
+                "contentDescription": "twenty-five"
+              },
+              {
+                "type": "label",
+                "text": "CIP 207"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L2_CIP207",
+                "label": "26",
+                "contentDescription": "twenty-six"
+              },
+              {
+                "type": "label",
+                "text": "CIP 107"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L1_CIP107",
+                "label": "27",
+                "contentDescription": "twenty-seven"
+              },
+              {
+                "type": "label",
+                "text": "CIP 207"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L2_CIP207",
+                "label": "28",
+                "contentDescription": "twenty-eight"
+              }
+            ]
+          }
+        ],
+        "Table2_Rows": [
+          {
+            "row_values": [
+              {
+                "type": "label",
+                "text": "Density %",
+                "styles": "label_styles body_row_label_styles"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L1_Density",
+                "label": "29",
+                "contentDescription": "twenty-nine",
+                "styles": "table_body_textfield_styles"
+              },
+              {
+                "type": "label",
+                "text": "Density %",
+                "styles": "label_styles table_row_height body_row_label_styles"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L2_Density",
+                "label": "30",
+                "contentDescription": "thirty",
+                "styles": "table_body_textfield_styles"
+              },
+              {
+                "type": "label",
+                "text": "Density %",
+                "styles": "label_styles table_row_height body_row_label_styles"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L1_Density",
+                "label": "31",
+                "contentDescription": "thirty-one",
+                "styles": "table_body_textfield_styles"
+              },
+              {
+                "type": "label",
+                "text": "Density %",
+                "styles": "label_styles table_row_height body_row_label_styles"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L2_Density",
+                "label": "32",
+                "contentDescription": "thirty-two",
+                "styles": "table_body_textfield_styles"
+              }
+            ]
+          },
+          {
+            "row_values": [
+              {
+                "type": "label",
+                "text": "Lead Tank",
+                "styles": "label_styles table_row_height body_row_label_styles"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L1_Leadtank",
+                "label": "33",
+                "contentDescription": "thirty-three",
+                "styles": "table_body_textfield_styles"
+              },
+              {
+                "type": "label",
+                "text": "Lead Tank",
+                "styles": "label_styles table_row_height body_row_label_styles"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L2_Leadtank",
+                "label": "34",
+                "contentDescription": "thirty-four",
+                "styles": "table_body_textfield_styles"
+              },
+              {
+                "type": "label",
+                "text": "Lead Tank",
+                "styles": "label_styles table_row_height body_row_label_styles"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L1_Leadtank",
+                "label": "35",
+                "contentDescription": "thirty-five",
+                "styles": "table_body_textfield_styles"
+              },
+              {
+                "type": "label",
+                "text": "Lead Tank",
+                "styles": "label_styles table_row_height body_row_label_styles"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L2_Leadtank",
+                "label": "36",
+                "contentDescription": "thirty-six",
+                "styles": "table_body_textfield_styles"
+              }
+            ]
+          },
+          {
+            "row_values": [
+              {
+                "type": "label",
+                "text": "CIP Fine Carbon Bags (Full, Removed from Stand)",
+                "styles": "label_styles body_row_label_styles carbon_bags"
+              },
+              {
+                "type": "textfield",
+                "name": "DS_carbon_count_L1L2_Carbonbags",
+                "label": "37",
+                "contentDescription": "thirty-seven",
+                "styles": "table_body_textfield_styles_1"
+              },
+              {
+                "type": "label",
+                "text": "CIP Fine Carbon Bags (Full, Removed from Stand)",
+                "styles": "label_styles body_row_label_styles carbon_bags"
+              },
+              {
+                "type": "textfield",
+                "name": "PS_carbon_count_L1L2_Carbonbags",
+                "label": "38",
+                "contentDescription": "thirty-eight",
+                "styles": "table_body_textfield_styles_1"
+              }
+            ]
+          }
+        ]
+      },
+      "templates": {
+        "screen1": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (1/2)",
+              "align": "left"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 15,
+              "background": "rgb(154,205,50)",
+              "color": "rgb(255,255,255)",
+              "height": "0%",
+              "padding": "0",
+              "align": "left"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "day",
+                      "value": "{{$global.form16_day}}",
+                      "contentDescription": "day",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Days}}": {
+                          "value": "{{day}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.form16_month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Months}}": {
+                          "value": "{{month}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.form16_year}}",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Years}}": {
+                          "value": "{{year}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.form16_shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": {
+                        "{{#each Shifts}}": {
+                          "value": "{{shift}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.form16_operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": {
+                        "{{#each Operators}}": {
+                          "value": "{{operator}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.form16_sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers1}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers2}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers3}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table1_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align table_row_height {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_body_label_width",
+                                          "components": [
+                                            {
+                                              "type": "label",
+                                              "text": "{{#? label}}",
+                                              "class": "table_row_name_styles black_color center_align table_row_height",
+                                              "style": {
+                                                "height": "{{#? this.height}}"
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_row_height",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "text": "{{#? text}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "class": "center_align black_color {{type=='textfield' ? 'table_body_textfield_styles' : ''}} {{type=='label'? 'label_styles table_row_height body_row_label_styles': ''}}",
+                                              "contentDescription": "{{contentDescription}}"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "contentDescription": "home",
+              "class": "layer_styles",
+              "style": {
+                "left": "30%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "next",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "save",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleSave_screen1"
+              }
+            }
+          ]
+        },
+        "screen2": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (2/2)",
+              "align": "left"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 15,
+              "background": "rgb(154,205,50)",
+              "color": "rgb(255,255,255)",
+              "height": "0%",
+              "padding": "0",
+              "align": "left"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers1}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers2}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table_Headers3}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": {
+                        "{{#each Table2_Rows}}": {
+                          "{{#let}}": [
+                            {
+                              "row_index": "{{$index}}"
+                            },
+                            {
+                              "type": "horizontal",
+                              "class": "center_align {{ row_index % 2 == 0 ? 'table_even_row_styles' : 'table_odd_row_styles'}}",
+                              "style": {
+                                "height": "{{#? this.height}}"
+                              },
+                              "components": [
+                                {
+                                  "type": "horizontal",
+                                  "components": {
+                                    "{{#each row_values}}": {
+                                      "type": "horizontal",
+                                      "components": [
+                                        {
+                                          "type": "vertical",
+                                          "class": "table_body_label_width",
+                                          "components": [
+                                            {
+                                              "type": "label",
+                                              "text": "{{#? label}}",
+                                              "class": "table_row_name_styles black_color center_align table_row_height",
+                                              "style": {
+                                                "height": "{{#? this.height}}"
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "vertical",
+                                          "components": [
+                                            {
+                                              "type": "{{type}}",
+                                              "name": "{{name}}",
+                                              "text": "{{#? text}}",
+                                              "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                              "class": "center_align black_color {{styles}}",
+                                              "contentDescription": "{{contentDescription}}"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "contentDescription": "home",
+              "class": "layer_styles",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "previous",
+              "style": {
+                "left": "30%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "save",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleSave_screen2"
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{submit_icon}}",
+              "contentDescription": "submit",
+              "class": "layer_styles",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleSubmit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

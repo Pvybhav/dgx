@@ -1,0 +1,1835 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Lead Nitrate Check List",
+      "json_id": "form7",
+      "form_id": "form7",
+      "description": "Lead Nitrate Check List",
+      "offline": "true",
+      "styles": {
+        "center_align": {
+          "align": "center"
+        },
+        "no_padding": {
+          "padding": "0"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
+        },
+        "table_header_name_styles": {
+          "width": "50%"
+        },
+        "table_header_verify_styles": {
+          "width": "20%"
+        },
+        "table_header_comment_styles": {
+          "width": "30%"
+        },
+        "table_header_styles": {
+          "size": "15",
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "height": "7%",
+          "border": "#FFFFFF",
+          "border_width": "2"
+        },
+        "check_style": {
+          "size": "15",
+          "font": "HelveticaHeader",
+          "color": "rgb(0, 0, 0)",
+          "width": "50%"
+        },
+        "number_style": {
+          "size": "15",
+          "font": "HelveticaNeue-Bold",
+          "color": "rgb(0, 0, 0)",
+          "width": "8%",
+          "align": "center",
+          "padding": "0"
+        },
+        "number_style1": {
+          "size": "15",
+          "font": "HelveticaNeue-Bold",
+          "color": "rgb(0, 0, 0)",
+          "width": "5%",
+          "align": "center",
+          "padding": "0"
+        },
+        "switch_label": {
+          "width": "8%",
+          "align": "left",
+          "padding": "0"
+        },
+        "comments_label": {
+          "width": "25%",
+          "size": "15",
+          "font": "HelveticaHeader",
+          "color": "rgb(0, 0, 0)",
+          "padding": "0"
+        },
+        "switch_styles": {
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "align": "center"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "dropdown_day_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "15"
+        },
+        "preload_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "template_button_styles": {
+          "size": "16",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%",
+          "font": "HelveticaHeader-Bold"
+        },
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "layer_styles": {
+          "width": "10%",
+          "height": "7%",
+          "bottom": "1%"
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$global.set",
+          "options": {
+            "reagent_operator_switch1": "{{$global.reagent_operator_switch1 == null ? true : $global.reagent_operator_switch1}}",
+            "reagent_operator_switch2": "{{$global.reagent_operator_switch2 == null ? true : $global.reagent_operator_switch2}}",
+            "reagent_operator_switch3": "{{$global.reagent_operator_switch3 == null ? true : $global.reagent_operator_switch3}}",
+            "reagent_operator_switch4": "{{$global.reagent_operator_switch4 == null ? true : $global.reagent_operator_switch4}}",
+            "reagent_operator_switch5": "{{$global.reagent_operator_switch5 == null ? true : $global.reagent_operator_switch5}}",
+            "reagent_operator_switch6": "{{$global.reagent_operator_switch6 == null ? true : $global.reagent_operator_switch6}}",
+            "reagent_operator_switch7": "{{$global.reagent_operator_switch7 == null ? true : $global.reagent_operator_switch7}}",
+            "reagent_operator_switch8": "{{$global.reagent_operator_switch8 == null ? true : $global.reagent_operator_switch8}}",
+            "reagent_operator_switch9": "{{$global.reagent_operator_switch9 == null ? true : $global.reagent_operator_switch9}}",
+            "reagent_operator_switch10": "{{$global.reagent_operator_switch10 == null ? true : $global.reagent_operator_switch10}}",
+            "reagent_operator_switch11": "{{$global.reagent_operator_switch11 == null ? true : $global.reagent_operator_switch11}}",
+            "reagent_operator_switch12": "{{$global.reagent_operator_switch12 == null ? true : $global.reagent_operator_switch12}}",
+            "reagent_operator_switch13": "{{$global.reagent_operator_switch13 == null ? true : $global.reagent_operator_switch13}}",
+            "reagent_operator_switch14": "{{$global.reagent_operator_switch14 == null ? true : $global.reagent_operator_switch14}}"
+          },
+          "success": {
+            "trigger": "handleTemplateChange",
+            "options": {
+              "templateName": "screen1"
+            }
+          }
+        },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
+        },
+        "handleTemplateChange": {
+          "type": "$render",
+          "options": {
+            "template": "{{$jason.templateName}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
+          }
+        },
+        "handleSave_screen1": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form7",
+            "f7_s1_sign": "{{$get.sign || ''}}",
+            "f7_s1_day": "{{$get.day}}",
+            "f7_s1_month": "{{$get.month}}",
+            "f7_s1_year": "{{$get.year}}",
+            "f7_s1_shift": "{{$get.shift}}",
+            "f7_s1_operator": "{{$get.operator}}",
+            "comments_one": "{{$get.comments_one || ''}}",
+            "comments_two": "{{$get.comments_two || ''}}",
+            "comments_three": "{{$get.comments_three || ''}}",
+            "comments_four": "{{$get.comments_four || ''}}",
+            "comments_five": "{{$get.comments_five || ''}}",
+            "comments_six": "{{$get.comments_six || ''}}",
+            "comments_seven": "{{$get.comments_seven || ''}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen1 data successfully"
+            }
+          }
+        },
+        "handleSave_screen2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form7",
+            "comments_eight": "{{$get.comments_eight || ''}}",
+            "comments_nine": "{{$get.comments_nine || ''}}",
+            "comments_ten": "{{$get.comments_ten || ''}}",
+            "comments_eleven": "{{$get.comments_eleven || ''}}",
+            "comments_twelve": "{{$get.comments_twelve || ''}}",
+            "comments_thirteen": "{{$get.comments_thirteen || ''}}",
+            "comments_fourteen": "{{$get.comments_fourteen || ''}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen2 data successfully"
+            }
+          }
+        },
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "style": {
+                    "width": "30%",
+                    "height": "30%",
+                    "align": "center",
+                    "top": "30%",
+                    "left": "35%"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "form_id": "form7",
+            "filename": "LeadNitrateChecklist"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id",
+                "f7_s1_sign",
+                "f7_s1_day",
+                "f7_s1_month",
+                "f7_s1_year",
+                "f7_s1_shift",
+                "f7_s1_operator",
+                "comments_one",
+                "comments_two",
+                "comments_three",
+                "comments_four",
+                "comments_five",
+                "comments_six",
+                "comments_seven",
+                "comments_eight",
+                "comments_nine",
+                "comments_ten",
+                "comments_eleven",
+                "comments_twelve",
+                "comments_thirteen",
+                "comments_fourteen",
+                "reagent_operator_switch1",
+                "reagent_operator_switch2",
+                "reagent_operator_switch3",
+                "reagent_operator_switch4",
+                "reagent_operator_switch5",
+                "reagent_operator_switch6",
+                "reagent_operator_switch7",
+                "reagent_operator_switch8",
+                "reagent_operator_switch9",
+                "reagent_operator_switch10",
+                "reagent_operator_switch11",
+                "reagent_operator_switch12",
+                "reagent_operator_switch13",
+                "reagent_operator_switch14"
+              ]
+            },
+            "success": {
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+        "Page_Heading": "Reagent Operator - Lead Nitrate Checklist",
+        "loading_image_url": "file://loading.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
+        "Days": [
+          {
+            "day": "Day",
+            "defaultSelected": "true"
+          },
+          {
+            "day": 1,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 2,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 3,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 4,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 5,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 6,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 7,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 8,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 9,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 10,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 11,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 12,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 13,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 14,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 15,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 16,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 17,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 18,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 19,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 20,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 21,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 22,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 23,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 24,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 25,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 26,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 27,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 28,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 29,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 30,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 31,
+            "defaultSelected": "false"
+          }
+        ],
+        "Months": [
+          {
+            "month": "Month",
+            "defaultSelected": "true"
+          },
+          {
+            "month": 1,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 2,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 3,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 4,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 5,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 6,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 7,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 8,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 9,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 10,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 11,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 12,
+            "defaultSelected": "false"
+          }
+        ],
+        "Years": [
+          {
+            "year": "Year",
+            "defaultSelected": "true"
+          },
+          {
+            "year": 2019,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2020,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2021,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2022,
+            "defaultSelected": "false"
+          }
+        ],
+        "Shifts": [
+          {
+            "shift": "Shift",
+            "defaultSelected": "true"
+          },
+          {
+            "shift": "Night Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Day Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Regular Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Rotating Shift",
+            "defaultSelected": "false"
+          }
+        ],
+        "Operators": [
+          {
+            "operator": "Operator",
+            "defaultSelected": "true"
+          },
+          {
+            "operator": "John",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Smith",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Michael",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Federer",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "David",
+            "defaultSelected": "false"
+          }
+        ],
+        "Table1_Headers": [
+          {
+            "type": "label",
+            "name": "checks",
+            "value": "Checks",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "name": "verify",
+            "value": "Verified",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_verify_styles"
+          },
+          {
+            "type": "label",
+            "name": "comment",
+            "value": "Comments",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_comment_styles"
+          }
+        ]
+      },
+      "templates": {
+        "screen1": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (1/2)",
+              "align": "left"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 15,
+              "background": "rgb(154,205,50)",
+              "color": "rgb(255,255,255)",
+              "height": "0%",
+              "padding": "0",
+              "align": "left"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "day",
+                      "value": "{{$global.f7_s1_day}}",
+                      "contentDescription": "day",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Days}}": {
+                          "value": "{{day}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.f7_s1_month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Months}}": {
+                          "value": "{{month}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.f7_s1_year}}",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Years}}": {
+                          "value": "{{year}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.f7_s1_shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": {
+                        "{{#each Shifts}}": {
+                          "value": "{{shift}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.f7_s1_operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": {
+                        "{{#each Operators}}": {
+                          "value": "{{operator}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.f7_s1_sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table1_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_1",
+                      "text": "Sump Pump is operating in remote, and on",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "1",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch1",
+                      "value": "{{$global.reagent_operator_switch1}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "one",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch1": "{{$get.reagent_operator_switch1}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "8",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_one",
+                      "value": "{{$global.comments_one || ''}}",
+                      "contentDescription": "eight",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "7%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_2",
+                      "text": "Four metering pumps are operating",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "2",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch2",
+                      "value": "{{$global.reagent_operator_switch2}}",
+                      "class": "switch_label switch_styles table_row_even_styles",
+                      "contentDescription": "two",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch2": "{{$get.reagent_operator_switch2}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "9",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_two",
+                      "value": "{{$global.comments_two || ''}}",
+                      "contentDescription": "nine",
+                      "class": "comments_label table_row_even_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles",
+                  "style": {
+                    "height": "7%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_3",
+                      "text": "Scrubber fan is running efficiently",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "3",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch3",
+                      "value": "{{$global.reagent_operator_switch3}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "three",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch3": "{{$get.reagent_operator_switch3}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "10",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_three",
+                      "value": "{{$global.comments_three || ''}}",
+                      "contentDescription": "ten",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "7%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_4",
+                      "text": "Eye wash and safety shower checked",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "4",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch4",
+                      "value": "{{$global.reagent_operator_switch4}}",
+                      "class": "switch_label switch_styles table_row_even_styles",
+                      "contentDescription": "four",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch4": "{{$get.reagent_operator_switch4}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "11",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_four",
+                      "value": "{{$global.comments_four || ''}}",
+                      "contentDescription": "eleven",
+                      "class": "comments_label table_row_even_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles",
+                  "style": {
+                    "height": "7%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_5",
+                      "text": "No leaks",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "5",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch5",
+                      "value": "{{$global.reagent_operator_switch5}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "five",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch5": "{{$get.reagent_operator_switch5}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "12",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_five",
+                      "value": "{{$global.comments_five || ''}}",
+                      "contentDescription": "twelve",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "7%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_6",
+                      "text": "Confirm heat trace is operating (lights at back of the PP next to the door)",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "6",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch6",
+                      "value": "{{$global.reagent_operator_switch6}}",
+                      "class": "switch_label switch_styles table_row_even_styles",
+                      "contentDescription": "six",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch6": "{{$get.reagent_operator_switch6}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "13",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_six",
+                      "value": "{{$global.comments_six || ''}}",
+                      "contentDescription": "thirteen",
+                      "class": "comments_label table_row_even_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles",
+                  "style": {
+                    "height": "11%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_7",
+                      "text": "Strainer basket cleaned after every mix.No holes in basket",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "7",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch7",
+                      "value": "{{$global.reagent_operator_switch7}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "seven",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch7": "{{$get.reagent_operator_switch7}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "14",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_seven",
+                      "value": "{{$global.comments_seven || ''}}",
+                      "contentDescription": "fourteen",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "11%"
+                  }
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "contentDescription": "home",
+              "class": "layer_styles",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "30%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "next",
+              "style": {
+                "left": "50%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "save",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleSave_screen1"
+              }
+            }
+          ]
+        },
+        "screen2": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (2/2)",
+              "align": "left"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 15,
+              "background": "rgb(154,205,50)",
+              "color": "rgb(255,255,255)",
+              "height": "0%",
+              "padding": "0",
+              "align": "left"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table1_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "components": [
+                        {
+                          "type": "label",
+                          "name": "checks_description_8",
+                          "text": "Floor cleaned (including no ice).",
+                          "class": "check_style",
+                          "style": {
+                            "padding_left": "2%",
+                            "padding_right": "2%"
+                          }
+                        },
+                        {
+                          "type": "label",
+                          "name": "checks_description_8",
+                          "text": "Do not hose down metering pumps.",
+                          "class": "check_style",
+                          "style": {
+                            "padding_left": "2%",
+                            "padding_right": "2%",
+                            "font": "HelveticaNeue-Bold"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "15",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch8",
+                      "value": "{{$global.reagent_operator_switch8}}",
+                      "class": "switch_label switch_styles table_row_even_styles",
+                      "contentDescription": "fifteen",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch8": "{{$get.reagent_operator_switch8}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "22",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_eight",
+                      "value": "{{$global.comments_eight || ''}}",
+                      "contentDescription": "twenty-two",
+                      "class": "comments_label table_row_even_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles",
+                  "style": {
+                    "height": "10%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_9",
+                      "text": "Ensure gland seal water is flowing into the sumps (next to the recirculating pump and high shear mixer)",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "16",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch9",
+                      "value": "{{$global.reagent_operator_switch9}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "sixteen",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch9": "{{$get.reagent_operator_switch9}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "23",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_nine",
+                      "value": "{{$global.comments_nine || ''}}",
+                      "contentDescription": "twenty-three",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "11%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_10",
+                      "text": "Catch basin next to leach berm: check for presence of liquid",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%",
+                        "height": "6%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "17",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch10",
+                      "value": "{{$global.reagent_operator_switch10}}",
+                      "class": "switch_label switch_styles table_row_even_styles",
+                      "contentDescription": "seventeen",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch10": "{{$get.reagent_operator_switch10}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "24",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_ten",
+                      "value": "{{$global.comments_ten || ''}}",
+                      "contentDescription": "twenty-four",
+                      "class": "comments_label table_row_even_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles",
+                  "style": {
+                    "height": "6%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_11",
+                      "text": "Hazardous waste bags deposited on top of sea can in plant or dedicated sea can outside, when full",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "18",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch11",
+                      "value": "{{$global.reagent_operator_switch11}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "eighteen",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch11": "{{$get.reagent_operator_switch11}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "25",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_eleven",
+                      "value": "{{$global.comments_eleven || ''}}",
+                      "contentDescription": "twenty-five",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "11%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_12",
+                      "text": "PPE stocked in dry (Tychem and nitrile gloves)",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%",
+                        "height": "6%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "19",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch12",
+                      "value": "{{$global.reagent_operator_switch12}}",
+                      "class": "switch_label switch_styles table_row_even_styles",
+                      "contentDescription": "nineteen",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch12": "{{$get.reagent_operator_switch12}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "26",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_twelve",
+                      "value": "{{$global.comments_twelve || ''}}",
+                      "contentDescription": "twenty-six",
+                      "class": "comments_label table_row_even_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles",
+                  "style": {
+                    "height": "6%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_13",
+                      "text": "Dry is left clean, full garbage emptied",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "20",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch13",
+                      "value": "{{$global.reagent_operator_switch13}}",
+                      "class": "switch_label switch_styles table_row_odd_styles",
+                      "contentDescription": "twenty",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch13": "{{$get.reagent_operator_switch13}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "27",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_thirteen",
+                      "value": "{{$global.comments_thirteen || ''}}",
+                      "contentDescription": "twenty-seven",
+                      "class": "comments_label table_row_odd_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_odd_styles",
+                  "style": {
+                    "height": "8%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "label",
+                      "name": "checks_description_14",
+                      "text": "Mandatory cleaning of floors, sinks and table/shelves required on Sunday nightshift",
+                      "class": "check_style",
+                      "style": {
+                        "padding_left": "2%",
+                        "padding_right": "2%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "21",
+                      "class": "number_style"
+                    },
+                    {
+                      "type": "switch",
+                      "name": "reagent_operator_switch14",
+                      "value": "{{$global.reagent_operator_switch14}}",
+                      "class": "switch_label switch_styles table_row_even_styles",
+                      "contentDescription": "twenty-one",
+                      "action": {
+                        "type": "$global.set",
+                        "options": {
+                          "section_id": "form7",
+                          "reagent_operator_switch14": "{{$get.reagent_operator_switch14}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "4%"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "28",
+                      "class": "number_style1"
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "comments_fourteen",
+                      "value": "{{$global.comments_fourteen || ''}}",
+                      "contentDescription": "twenty-eight",
+                      "class": "comments_label table_row_even_styles"
+                    }
+                  ],
+                  "class": "no_padding table_row_even_styles",
+                  "style": {
+                    "height": "10%"
+                  }
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "contentDescription": "home",
+              "class": "layer_styles",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "previous",
+              "style": {
+                "left": "30%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "save",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleSave_screen2"
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{submit_icon}}",
+              "contentDescription": "submit",
+              "class": "layer_styles",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleSubmit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

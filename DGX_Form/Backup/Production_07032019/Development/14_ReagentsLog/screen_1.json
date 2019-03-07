@@ -1,0 +1,2217 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Reagents Log Sheet",
+      "json_id": "form14",
+      "form_id": "form14",
+      "description": "Reagents Log Sheet",
+      "offline": "true",
+      "styles": {
+        "center_align": {
+          "align": "center"
+        },
+        "no_padding": {
+          "padding": "0"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "dropdown_day_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "15"
+        },
+        "table_header_styles": {
+          "size": "15",
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "height": "8%"
+        },
+        "table_header_name_styles": {
+          "width": "50%"
+        },
+        "header_style": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "background": "rgb(27,142,197)",
+          "height": "12%",
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "header_style1": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "background": "rgb(14, 53, 112)",
+          "height": "5%",
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "header_textfield": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "color": "rgb(0,0,0)",
+          "size": 15,
+          "font": "HelveticaHeader",
+          "background": "rgb(239,240,242)"
+        },
+        "header_style3": {
+          "border": "#FFFFFF",
+          "border_width": "2",
+          "background": "rgb(204,206,213)",
+          "height": "5%",
+          "align": "center",
+          "color": "rgb(255,255,255)",
+          "size": 15,
+          "font": "HelveticaHeader"
+        },
+        "preload_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "template_button_styles": {
+          "size": "16",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "layer_styles": {
+          "width": "10%",
+          "height": "7%",
+          "bottom": "1%"
+        }
+      },
+      "actions": {
+        "$load": {
+          "trigger": "handleTemplateChange",
+          "options": {
+            "templateName": "screen1"
+          }
+        },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
+        },
+        "handleTemplateChange": {
+          "type": "$render",
+          "options": {
+            "template": "{{$jason.templateName}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
+          }
+        },
+        "handleSave_screen1": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form14",
+            "f14_s1_sign": "{{$get.sign || ''}}",
+            "f14_s1_day": "{{$get.day}}",
+            "f14_s1_month": "{{$get.month}}",
+            "f14_s1_year": "{{$get.year}}",
+            "f14_s1_shift": "{{$get.shift}}",
+            "f14_s1_operator": "{{$get.operator}}",
+            "Consumed_Carbon_Row1": "{{$get.Consumed_Carbon_Row1 || ''}}",
+            "Consumed_CopperSulphate_Row1": "{{$get.Consumed_CopperSulphate_Row1 || ''}}",
+            "Consumed_Smbs_Row1": "{{$get.Consumed_Smbs_Row1 || ''}}",
+            "Consumed_Floc_Row1": "{{$get.Consumed_Floc_Row1 || ''}}",
+            "Received_Cyanide_Row1": "{{$get.Received_Cyanide_Row1 || ''}}",
+            "Received_So2_Row1": "{{$get.Received_So2_Row1 || ''}}",
+            "Received_Smbs_Row1": "{{$get.Received_Smbs_Row1 || ''}}",
+            "Received_Floc_Row1": "{{$get.Received_Floc_Row1 || ''}}",
+            "Consumed_Carbon_Row2": "{{$get.Consumed_Carbon_Row2 || ''}}",
+            "Consumed_CopperSulphate_Row2": "{{$get.Consumed_CopperSulphate_Row2 || ''}}",
+            "Consumed_Smbs_Row2": "{{$get.Consumed_Smbs_Row2 || ''}}",
+            "Consumed_Floc_Row2": "{{$get.Consumed_Floc_Row2 || ''}}",
+            "Received_Cyanide_Row2": "{{$get.Received_Cyanide_Row2 || ''}}",
+            "Received_So2_Row2": "{{$get.Received_So2_Row2 || ''}}",
+            "Received_Smbs_Row2": "{{$get.Received_Smbs_Row2 || ''}}",
+            "Received_Floc_Row2": "{{$get.Received_Floc_Row2 || ''}}",
+            "Consumed_Carbon_Row3": "{{$get.Consumed_Carbon_Row3 || ''}}",
+            "Consumed_CopperSulphate_Row3": "{{$get.Consumed_CopperSulphate_Row3 || ''}}",
+            "Consumed_Smbs_Row3": "{{$get.Consumed_Smbs_Row3 || ''}}",
+            "Consumed_Floc_Row3": "{{$get.Consumed_Floc_Row3 || ''}}",
+            "Received_Cyanide_Row3": "{{$get.Received_Cyanide_Row3 || ''}}",
+            "Received_So2_Row3": "{{$get.Received_So2_Row3 || ''}}",
+            "Received_Smbs_Row3": "{{$get.Received_Smbs_Row3 || ''}}",
+            "Received_Floc_Row3": "{{$get.Received_Floc_Row3 || ''}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen1 data successfully"
+            }
+          }
+        },
+        "handleSave_screen2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form14",
+            "comments": "{{$get.comments || ''}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen2 data successfully"
+            }
+          }
+        },
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "style": {
+                    "width": "30%",
+                    "height": "30%",
+                    "align": "center",
+                    "top": "30%",
+                    "left": "35%"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "form_id": "form14",
+            "filename": "ReagentsLogSheet"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id",
+                "f14_s1_sign",
+                "f14_s1_day",
+                "f14_s1_month",
+                "f14_s1_year",
+                "f14_s1_shift",
+                "f14_s1_operator",
+                "Consumed_Carbon_Row1",
+                "Consumed_CopperSulphate_Row1",
+                "Consumed_Smbs_Row1",
+                "Consumed_Floc_Row1",
+                "Received_Cyanide_Row1",
+                "Received_So2_Row1",
+                "Received_Smbs_Row1",
+                "Received_Floc_Row1",
+                "Consumed_Carbon_Row2",
+                "Consumed_CopperSulphate_Row2",
+                "Consumed_Smbs_Row2",
+                "Consumed_Floc_Row2",
+                "Received_Cyanide_Row2",
+                "Received_So2_Row2",
+                "Received_Smbs_Row2",
+                "Received_Floc_Row2",
+                "Consumed_Carbon_Row3",
+                "Consumed_CopperSulphate_Row3",
+                "Consumed_Smbs_Row3",
+                "Consumed_Floc_Row3",
+                "Received_Cyanide_Row3",
+                "Received_So2_Row3",
+                "Received_Smbs_Row3",
+                "Received_Floc_Row3",
+                "comments"
+              ]
+            },
+            "success": {
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/development/home.json",
+        "Page_Heading": "Reagents Log Sheet",
+        "loading_image_url": "file://loading.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
+        "Days": [
+          {
+            "day": "Day",
+            "defaultSelected": "true"
+          },
+          {
+            "day": 1,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 2,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 3,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 4,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 5,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 6,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 7,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 8,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 9,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 10,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 11,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 12,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 13,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 14,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 15,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 16,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 17,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 18,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 19,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 20,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 21,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 22,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 23,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 24,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 25,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 26,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 27,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 28,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 29,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 30,
+            "defaultSelected": "false"
+          },
+          {
+            "day": 31,
+            "defaultSelected": "false"
+          }
+        ],
+        "Months": [
+          {
+            "month": "Month",
+            "defaultSelected": "true"
+          },
+          {
+            "month": 1,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 2,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 3,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 4,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 5,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 6,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 7,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 8,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 9,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 10,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 11,
+            "defaultSelected": "false"
+          },
+          {
+            "month": 12,
+            "defaultSelected": "false"
+          }
+        ],
+        "Years": [
+          {
+            "year": "Year",
+            "defaultSelected": "true"
+          },
+          {
+            "year": 2019,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2020,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2021,
+            "defaultSelected": "false"
+          },
+          {
+            "year": 2022,
+            "defaultSelected": "false"
+          }
+        ],
+        "Shifts": [
+          {
+            "shift": "Shift",
+            "defaultSelected": "true"
+          },
+          {
+            "shift": "Night Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Day Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Regular Shift",
+            "defaultSelected": "false"
+          },
+          {
+            "shift": "Rotating Shift",
+            "defaultSelected": "false"
+          }
+        ],
+        "Operators": [
+          {
+            "operator": "Operator",
+            "defaultSelected": "true"
+          },
+          {
+            "operator": "John",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Smith",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Michael",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "Federer",
+            "defaultSelected": "false"
+          },
+          {
+            "operator": "David",
+            "defaultSelected": "false"
+          }
+        ],
+        "Table1_Headers": [
+          {
+            "type": "label",
+            "name": "consumed",
+            "value": "Consumed",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "name": "received",
+            "value": "Received",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          }
+        ]
+      },
+      "templates": {
+        "screen1": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (1/2)",
+              "align": "left"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 15,
+              "background": "rgb(154,205,50)",
+              "color": "rgb(255,255,255)",
+              "height": "0%",
+              "padding": "0",
+              "align": "left"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "day",
+                      "value": "{{$global.f14_s1_day}}",
+                      "contentDescription": "day",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Days}}": {
+                          "value": "{{day}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.f14_s1_month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Months}}": {
+                          "value": "{{month}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.f14_s1_year}}",
+                      "class": "dropdown_day_style center_align",
+                      "options": {
+                        "{{#each Years}}": {
+                          "value": "{{year}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.f14_s1_shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": {
+                        "{{#each Shifts}}": {
+                          "value": "{{shift}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.f14_s1_operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": {
+                        "{{#each Operators}}": {
+                          "value": "{{operator}}",
+                          "defaultSelected": "{{defaultSelected}}"
+                        }
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.f14_s1_sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": {
+                    "{{#each Table1_Headers}}": {
+                      "type": "label",
+                      "text": "{{value}}",
+                      "class": "{{styles}}"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Cyanide - Isotainers",
+                          "class": "header_style",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Carbon",
+                          "class": "header_style",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Copper Sulphate",
+                          "class": "header_style",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "SMBS",
+                          "class": "header_style",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Floc",
+                          "class": "header_style",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Cyanide - Trucks",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "SO2 - Trucks",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "SMBS",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Floc",
+                          "class": "header_style",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ],
+              "width": "100%"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "#",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "tonnes",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "tonnes",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Bags",
+                          "class": "header_style1",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "2",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "3",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "4",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "5",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "6",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "7",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "8",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "1",
+                      "style": {
+                        "width": "12%",
+                        "align": "center",
+                        "height": "7%",
+                        "color": "#FFFFFF",
+                        "background": "rgb(14, 53, 112)"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "Consumed_Carbon_Row1",
+                              "contentDescription": "one",
+                              "value": "{{$global.Consumed_Carbon_Row1 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "10%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "Consumed_CopperSulphate_Row1",
+                              "contentDescription": "two",
+                              "value": "{{$global.Consumed_CopperSulphate_Row1 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "12%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "Consumed_Smbs_Row1",
+                              "contentDescription": "three",
+                              "value": "{{$global.Consumed_Smbs_Row1 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "8%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "Consumed_Floc_Row1",
+                              "contentDescription": "four",
+                              "value": "{{$global.Consumed_Floc_Row1 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "8%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "background": "rgb(14, 53, 112)"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "Received_Cyanide_Row1",
+                              "contentDescription": "five",
+                              "value": "{{$global.Received_Cyanide_Row1 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "13%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "Received_So2_Row1",
+                              "contentDescription": "six",
+                              "value": "{{$global.Received_So2_Row1 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "13%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "Received_Smbs_Row1",
+                              "contentDescription": "seven",
+                              "value": "{{$global.Received_Smbs_Row1 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "13%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "textfield",
+                              "name": "Received_Floc_Row1",
+                              "contentDescription": "eight",
+                              "value": "{{$global.Received_Floc_Row1 || ''}}",
+                              "class": "header_textfield",
+                              "style": {
+                                "width": "13%"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%",
+                    "background": "rgb(239,240,242)"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "9",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "10",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "11",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "12",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "13",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "14",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "15",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "16",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "2",
+                      "style": {
+                        "width": "12%",
+                        "align": "center",
+                        "height": "7%",
+                        "color": "#FFFFFF",
+                        "background": "rgb(14, 53, 112)"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Consumed_Carbon_Row2",
+                          "contentDescription": "nine",
+                          "value": "{{$global.Consumed_Carbon_Row2 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Consumed_CopperSulphate_Row2",
+                          "contentDescription": "ten",
+                          "value": "{{$global.Consumed_CopperSulphate_Row2 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Consumed_Smbs_Row2",
+                          "contentDescription": "eleven",
+                          "value": "{{$global.Consumed_Smbs_Row2 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Consumed_Floc_Row2",
+                          "contentDescription": "twelve",
+                          "value": "{{$global.Consumed_Floc_Row2 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "background": "rgb(14, 53, 112)"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Received_Cyanide_Row2",
+                          "contentDescription": "thirteen",
+                          "value": "{{$global.Received_Cyanide_Row2 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Received_So2_Row2",
+                          "contentDescription": "fourteen",
+                          "value": "{{$global.Received_So2_Row2 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Received_Smbs_Row2",
+                          "contentDescription": "fifteen",
+                          "value": "{{$global.Received_Smbs_Row2 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Received_Floc_Row2",
+                          "contentDescription": "sixteen",
+                          "value": "{{$global.Received_Floc_Row2 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%",
+                    "background": "rgb(239,240,242)"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "17",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "18",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "19",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "20",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "21",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "22",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "23",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "24",
+                          "class": "header_style3",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "3",
+                      "style": {
+                        "width": "12%",
+                        "align": "center",
+                        "height": "7%",
+                        "color": "#FFFFFF",
+                        "background": "rgb(14, 53, 112)"
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Consumed_Carbon_Row3",
+                          "contentDescription": "seventeen",
+                          "value": "{{$global.Consumed_Carbon_Row3 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "10%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Consumed_CopperSulphate_Row3",
+                          "contentDescription": "eighteen",
+                          "value": "{{$global.Consumed_CopperSulphate_Row3 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "12%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Consumed_Smbs_Row3",
+                          "contentDescription": "nineteen",
+                          "value": "{{$global.Consumed_Smbs_Row3 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Consumed_Floc_Row3",
+                          "contentDescription": "twenty",
+                          "value": "{{$global.Consumed_Floc_Row3 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "8%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "background": "rgb(14, 53, 112)"
+                  }
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Received_Cyanide_Row3",
+                          "contentDescription": "twenty-one",
+                          "value": "{{$global.Received_Cyanide_Row3 || ''}}",
+                          "class": "header_textfield ",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Received_So2_Row3",
+                          "contentDescription": "twenty-two",
+                          "value": "{{$global.Received_So2_Row3 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Received_Smbs_Row3",
+                          "contentDescription": "twenty-three",
+                          "value": "{{$global.Received_Smbs_Row3 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "textfield",
+                          "name": "Received_Floc_Row3",
+                          "contentDescription": "twenty-four",
+                          "value": "{{$global.Received_Floc_Row3 || ''}}",
+                          "class": "header_textfield",
+                          "style": {
+                            "width": "13%"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "style": {
+                    "width": "50%",
+                    "background": "rgb(239,240,242)"
+                  }
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "contentDescription": "home",
+              "class": "layer_styles",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles active_template_button_styles no_padding bold",
+              "style": {
+                "left": "30%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles no_padding bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "next",
+              "style": {
+                "left": "50%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "save",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleSave_screen1"
+              }
+            }
+          ]
+        },
+        "screen2": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (2/2)",
+              "align": "left"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 15,
+              "background": "rgb(154,205,50)",
+              "color": "rgb(255,255,255)",
+              "height": "0%",
+              "padding": "0",
+              "align": "left"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Comments(25)",
+                      "style": {
+                        "background": "rgb(14, 53, 112)",
+                        "width": "100%",
+                        "height": "8%",
+                        "color": "rgb(255,255,255)",
+                        "padding": "1",
+                        "font": "HelveticaNeue-Bold",
+                        "size": 15
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "comments",
+                      "contentDescription": "twenty-five",
+                      "value": "{{$global.comments || ''}}",
+                      "style": {
+                        "background": "rgb(204,206,213)",
+                        "width": "100%",
+                        "height": "50%",
+                        "color": "rgb(0,0,0)",
+                        "padding": "1",
+                        "font": "HelveticaNeue"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "contentDescription": "home",
+              "class": "layer_styles",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "previous",
+              "style": {
+                "left": "30%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "save",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleSave_screen2"
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{submit_icon}}",
+              "contentDescription": "submit",
+              "class": "layer_styles",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleSubmit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

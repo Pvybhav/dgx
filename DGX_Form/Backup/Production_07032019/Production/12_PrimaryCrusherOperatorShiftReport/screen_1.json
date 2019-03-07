@@ -1,0 +1,4059 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Primary Crusher Operator Shift Report",
+      "form_id": "form12",
+      "description": "Primary Crusher Operator Shift Report",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "black_color": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
+        },
+        "header_style": {
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "height": "8%",
+          "border": "#ffffff",
+          "padding_left": "2%",
+          "align": "center"
+        },
+        "table_body_name_styles": {
+          "height": "6%",
+          "width": "10%"
+        },
+        "row_style": {
+          "color": "rgb(255, 255, 255)",
+          "height": "6%"
+        },
+        "column_label_style": {
+          "width": "10%",
+          "border": "#ffffff",
+          "height": "5%",
+          "size": "16"
+        },
+        "content_style_odd": {
+          "background": "rgb(204, 216, 213)",
+          "color": "rgb(0, 0, 0)",
+          "border": "#ffffff"
+        },
+        "content_style_odd_switch": {
+          "background": "rgb(204, 216, 213)"
+        },
+        "content_style_even_switch": {
+          "background": "rgb(231, 232, 235)"
+        },
+        "content_style_even": {
+          "background": "rgb(231, 232, 235)",
+          "color": "rgb(0, 0, 0)",
+          "border": "#ffffff"
+        },
+        "dropdown_date_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "16"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)"
+        },
+        "switch_styles": {
+          "color": "rgb(0,255,0)",
+          "color:disabled": "rgb(255,0,0)",
+          "align": "center",
+          "height": "6%",
+          "width": "18%"
+        },
+        "table_header_name_styles": {
+          "width": "10%",
+          "border": "rgb(255, 255, 255)",
+          "height": "10%"
+        },
+        "table_header_name_styles2": {
+          "width": "10%",
+          "border": "rgb(255, 255, 255)",
+          "height": "10%"
+        },
+        "table_header_value_styles": {
+          "width": "15%",
+          "border": "rgb(255, 255, 255)",
+          "height": "10%"
+        },
+        "table_header_value_styles_4": {
+          "width": "15%",
+          "border": "rgb(255, 255, 255)",
+          "height": "13%"
+        },
+        "table_header_value_styles2": {
+          "width": "18%",
+          "border": "rgb(255, 255, 255)",
+          "height": "10%"
+        },
+        "table_header_value_styles3": {
+          "width": "50%",
+          "border": "rgb(255, 255, 255)",
+          "height": "10%"
+        },
+        "table_row": {
+          "height": "10%"
+        },
+        "table_row5": {
+          "height": "13%"
+        },
+        "table_row_height": {
+          "height": "6%"
+        },
+        "template_button_styles": {
+          "size": "16",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "layer_styles": {
+          "width": "10%",
+          "height": "7%",
+          "bottom": "1%"
+        }
+      },
+      "data": {
+        "Page_Heading": "Primary Crusher Operator Shift Report",
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
+        "loading_image_url": "file://loading.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
+        "Table1_Headers": [
+          {
+            "type": "label",
+            "value": "Time",
+            "col_type": "col_name",
+            "styles": "table_header_styles table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "Dome Level",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "Apron Feeder Speed",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "430 Conveyor Weightomeer",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "Mantle Position",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "Crusher Power",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "Lube Oil Flow (FIT-2005)",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles"
+          }
+        ],
+        "Table1_Rows": [
+          {
+            "row_name": "07:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0700_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0700_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0700_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0700_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0700_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0700_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "08:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0800_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0800_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0800_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0800_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0800_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0800_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "09:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0900_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0900_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0900_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0900_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0900_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_0900_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "10:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1000_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1000_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1000_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1000_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1000_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1000_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "11:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1100_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1100_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1100_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1100_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1100_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1100_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "12:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1200_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1200_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1200_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1200_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1200_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1200_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "13:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1300_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1300_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1300_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1300_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1300_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1300_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "14:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1400_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1400_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1400_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1400_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1400_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1400_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "15:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1500_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1500_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1500_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1500_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1500_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1500_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "16:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1600_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1600_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1600_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1600_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1600_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1600_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "17:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1700_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1700_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1700_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1700_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1700_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1700_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "18:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1800_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1800_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1800_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1800_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1800_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen1_1800_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          }
+        ],
+        "Table2_Headers": [
+          {
+            "type": "label",
+            "value": "Time",
+            "col_type": "col_name",
+            "styles": "table_header_styles table_header_name_styles2"
+          },
+          {
+            "type": "label",
+            "value": "Lube Oil Flow (FIT-2007)",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles_4"
+          },
+          {
+            "type": "label",
+            "value": "Lube Oil Flow (FIT-2008)",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles_4"
+          },
+          {
+            "type": "label",
+            "value": "Lube Oil Temp In (TIT-2047)",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles_4"
+          },
+          {
+            "type": "label",
+            "value": "Lube Oil Temp Return (TIT-2040A)",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles_4"
+          },
+          {
+            "type": "label",
+            "value": "Lube Oil Pressure (PIT-2014)",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles_4"
+          },
+          {
+            "type": "label",
+            "value": "Lube Oil Filter Diff.PSI (PDRT-2024)",
+            "col_type": "col_value",
+            "styles": "table_header_styles table_header_value_styles_4"
+          }
+        ],
+        "Table2_Rows": [
+          {
+            "row_name": "07:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0700_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0700_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0700_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0700_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0700_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0700_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "08:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0800_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0800_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0800_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0800_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0800_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0800_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "09:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0900_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0900_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0900_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0900_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0900_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_0900_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "10:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1000_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1000_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1000_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1000_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1000_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1000_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "11:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1100_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1100_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1100_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1100_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1100_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1100_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "12:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1200_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1200_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1200_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1200_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1200_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1200_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "13:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1300_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1300_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1300_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1300_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1300_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1300_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "14:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1400_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1400_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1400_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1400_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1400_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1400_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "15:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1500_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1500_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1500_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1500_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1500_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1500_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "16:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1600_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1600_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1600_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1600_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1600_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1600_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "17:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1700_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1700_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1700_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1700_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1700_text5",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1700_text6",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "18:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1800_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1800_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1800_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1800_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1800_text5",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen2_1800_text6",
+                "styles": "content_style_even"
+              }
+            ]
+          }
+        ],
+        "Table3_Headers": [
+          {
+            "type": "label",
+            "value": "Time",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles2"
+          },
+          {
+            "type": "label",
+            "value": "Hydraulic TnkOil Filtr PSI  (PDIT-2024)",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles2"
+          },
+          {
+            "type": "label",
+            "value": "Hydraulic TnkOil Filtr Diff. PSI (PDIT-2024)",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles2"
+          },
+          {
+            "type": "label",
+            "value": "Accum. Pressure(TIT-2025)",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles2"
+          },
+          {
+            "type": "label",
+            "value": "Inbound Bearing Temp.(TIT-2003)",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles2"
+          },
+          {
+            "type": "label",
+            "value": "Oubound Bearing Temp.(TIT-2004)",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles2"
+          }
+        ],
+        "Table3_Rows": [
+          {
+            "row_name": "07:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0700_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0700_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0700_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0700_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0700_text5",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "08:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0800_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0800_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0800_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0800_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0800_text5",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "09:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0900_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0900_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0900_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0900_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_0900_text5",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "10:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1000_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1000_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1000_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1000_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1000_text5",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "11:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1100_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1100_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1100_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1100_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1100_text5",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "12:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1200_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1200_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1200_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1200_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1200_text5",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "13:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1300_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1300_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1300_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1300_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1300_text5",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "14:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1400_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1400_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1400_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1400_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1400_text5",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "15:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1500_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1500_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1500_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1500_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1500_text5",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "16:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1600_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1600_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1600_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1600_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1600_text5",
+                "styles": "content_style_even"
+              }
+            ]
+          },
+          {
+            "row_name": "17:00",
+            "row_styles": "center_align content_style_odd column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1700_text1",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1700_text2",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1700_text3",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1700_text4",
+                "styles": "content_style_odd"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1700_text5",
+                "styles": "content_style_odd"
+              }
+            ]
+          },
+          {
+            "row_name": "18:00",
+            "row_styles": "center_align content_style_even column_label_style",
+            "row_values": [
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1800_text1",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1800_text2",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1800_text3",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1800_text4",
+                "styles": "content_style_even"
+              },
+              {
+                "type": "textfield",
+                "name": "primary_crusher_screen3_1800_text5",
+                "styles": "content_style_even"
+              }
+            ]
+          }
+        ],
+        "Table4_Headers": [
+          {
+            "type": "label",
+            "value": "Loop #",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "Description",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles2"
+          },
+          {
+            "type": "label",
+            "value": "Reason",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles2"
+          },
+          {
+            "type": "label",
+            "value": "Authorized by supervisor",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles2"
+          },
+          {
+            "type": "label",
+            "value": "Time in",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles2"
+          },
+          {
+            "type": "label",
+            "value": "Time out",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles2"
+          }
+        ],
+        "Table5_Headers": [
+          {
+            "type": "label",
+            "value": "Notifications Number",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table_header_value_styles3"
+          },
+          {
+            "type": "label",
+            "value": "Description of Deficiency",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles3"
+          }
+        ]
+      },
+      "actions": {
+        "$load": {
+          "type": "$script.include",
+          "options": {
+            "items": [
+              {
+                "text": "var getCurrentFieldValue = function(root, id, globalValues) {  for (var key in globalValues) { if(globalValues.hasOwnProperty(id)) return globalValues[id]; };}"
+              }
+            ]
+          },
+          "success": {
+            "type": "$global.set",
+            "options": {
+              "section_id": "form12",
+              "authorized_by_supervisor_switch1": "{{$global.authorized_by_supervisor_switch1 == null ? true : $global.authorized_by_supervisor_switch1}}",
+              "authorized_by_supervisor_switch2": "{{$global.authorized_by_supervisor_switch2 == null ? true : $global.authorized_by_supervisor_switch2}}",
+              "authorized_by_supervisor_switch3": "{{$global.authorized_by_supervisor_switch3 == null ? true : $global.authorized_by_supervisor_switch3}}",
+              "primary_crusher_screen3_0700_text1": "{{$global.primary_crusher_screen3_0700_text1 || ''}}"
+            },
+            "success": {
+              "trigger": "handleTemplateChange",
+              "options": {
+                "templateName": "screen1"
+              }
+            }
+          }
+        },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
+        },
+        "handleTemplateChange": {
+          "type": "$render",
+          "options": {
+            "template": "{{$jason.templateName}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
+          }
+        },
+        "handleSwitchValues": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form12",
+            "{{$jason.fieldName}}": "{{$get[$jason.fieldName]}}"
+          }
+        },
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "style": {
+                    "width": "30%",
+                    "height": "30%",
+                    "align": "center",
+                    "top": "30%",
+                    "left": "35%"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "handleSave_screen1": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form12",
+            "form12_sign": "{{$get.form12_sign || ''}}",
+            "form12_day": "{{$get.form12_day}}",
+            "form12_month": "{{$get.form12_month}}",
+            "form12_year": "{{$get.form12_year}}",
+            "form12_shift": "{{$get.form12_shift}}",
+            "form12_operator": "{{$get.form12_operator}}",
+            "primary_crusher_screen1_0700_text1": "{{$get.primary_crusher_screen1_0700_text1|| ''}}",
+            "primary_crusher_screen1_0700_text2": "{{$get.primary_crusher_screen1_0700_text2|| ''}}",
+            "primary_crusher_screen1_0700_text3": "{{$get.primary_crusher_screen1_0700_text3|| ''}}",
+            "primary_crusher_screen1_0700_text4": "{{$get.primary_crusher_screen1_0700_text4|| ''}}",
+            "primary_crusher_screen1_0700_text5": "{{$get.primary_crusher_screen1_0700_text5|| ''}}",
+            "primary_crusher_screen1_0700_text6": "{{$get.primary_crusher_screen1_0700_text6|| ''}}",
+            "primary_crusher_screen1_0800_text1": "{{$get.primary_crusher_screen1_0800_text1|| ''}}",
+            "primary_crusher_screen1_0800_text2": "{{$get.primary_crusher_screen1_0800_text2|| ''}}",
+            "primary_crusher_screen1_0800_text3": "{{$get.primary_crusher_screen1_0800_text3|| ''}}",
+            "primary_crusher_screen1_0800_text4": "{{$get.primary_crusher_screen1_0800_text4|| ''}}",
+            "primary_crusher_screen1_0800_text5": "{{$get.primary_crusher_screen1_0800_text5|| ''}}",
+            "primary_crusher_screen1_0800_text6": "{{$get.primary_crusher_screen1_0800_text6|| ''}}",
+            "primary_crusher_screen1_0900_text1": "{{$get.primary_crusher_screen1_0900_text1|| ''}}",
+            "primary_crusher_screen1_0900_text2": "{{$get.primary_crusher_screen1_0900_text2|| ''}}",
+            "primary_crusher_screen1_0900_text3": "{{$get.primary_crusher_screen1_0900_text3|| ''}}",
+            "primary_crusher_screen1_0900_text4": "{{$get.primary_crusher_screen1_0900_text4|| ''}}",
+            "primary_crusher_screen1_0900_text5": "{{$get.primary_crusher_screen1_0900_text5|| ''}}",
+            "primary_crusher_screen1_0900_text6": "{{$get.primary_crusher_screen1_0900_text6|| ''}}",
+            "primary_crusher_screen1_1000_text1": "{{$get.primary_crusher_screen1_1000_text1|| ''}}",
+            "primary_crusher_screen1_1000_text2": "{{$get.primary_crusher_screen1_1000_text2|| ''}}",
+            "primary_crusher_screen1_1000_text3": "{{$get.primary_crusher_screen1_1000_text3|| ''}}",
+            "primary_crusher_screen1_1000_text4": "{{$get.primary_crusher_screen1_1000_text4|| ''}}",
+            "primary_crusher_screen1_1000_text5": "{{$get.primary_crusher_screen1_1000_text5|| ''}}",
+            "primary_crusher_screen1_1000_text6": "{{$get.primary_crusher_screen1_1000_text6|| ''}}",
+            "primary_crusher_screen1_1100_text1": "{{$get.primary_crusher_screen1_1100_text1|| ''}}",
+            "primary_crusher_screen1_1100_text2": "{{$get.primary_crusher_screen1_1100_text2|| ''}}",
+            "primary_crusher_screen1_1100_text3": "{{$get.primary_crusher_screen1_1100_text3|| ''}}",
+            "primary_crusher_screen1_1100_text4": "{{$get.primary_crusher_screen1_1100_text4|| ''}}",
+            "primary_crusher_screen1_1100_text5": "{{$get.primary_crusher_screen1_1100_text5|| ''}}",
+            "primary_crusher_screen1_1100_text6": "{{$get.primary_crusher_screen1_1100_text6|| ''}}",
+            "primary_crusher_screen1_1200_text1": "{{$get.primary_crusher_screen1_1200_text1|| ''}}",
+            "primary_crusher_screen1_1200_text2": "{{$get.primary_crusher_screen1_1200_text2|| ''}}",
+            "primary_crusher_screen1_1200_text3": "{{$get.primary_crusher_screen1_1200_text3|| ''}}",
+            "primary_crusher_screen1_1200_text4": "{{$get.primary_crusher_screen1_1200_text4|| ''}}",
+            "primary_crusher_screen1_1200_text5": "{{$get.primary_crusher_screen1_1200_text5|| ''}}",
+            "primary_crusher_screen1_1200_text6": "{{$get.primary_crusher_screen1_1200_text6|| ''}}",
+            "primary_crusher_screen1_1300_text1": "{{$get.primary_crusher_screen1_1300_text1|| ''}}",
+            "primary_crusher_screen1_1300_text2": "{{$get.primary_crusher_screen1_1300_text2|| ''}}",
+            "primary_crusher_screen1_1300_text3": "{{$get.primary_crusher_screen1_1300_text3|| ''}}",
+            "primary_crusher_screen1_1300_text4": "{{$get.primary_crusher_screen1_1300_text4|| ''}}",
+            "primary_crusher_screen1_1300_text5": "{{$get.primary_crusher_screen1_1300_text5|| ''}}",
+            "primary_crusher_screen1_1300_text6": "{{$get.primary_crusher_screen1_1300_text6|| ''}}",
+            "primary_crusher_screen1_1400_text1": "{{$get.primary_crusher_screen1_1400_text1|| ''}}",
+            "primary_crusher_screen1_1400_text2": "{{$get.primary_crusher_screen1_1400_text2|| ''}}",
+            "primary_crusher_screen1_1400_text3": "{{$get.primary_crusher_screen1_1400_text3|| ''}}",
+            "primary_crusher_screen1_1400_text4": "{{$get.primary_crusher_screen1_1400_text4|| ''}}",
+            "primary_crusher_screen1_1400_text5": "{{$get.primary_crusher_screen1_1400_text5|| ''}}",
+            "primary_crusher_screen1_1400_text6": "{{$get.primary_crusher_screen1_1400_text6|| ''}}",
+            "primary_crusher_screen1_1500_text1": "{{$get.primary_crusher_screen1_1500_text1|| ''}}",
+            "primary_crusher_screen1_1500_text2": "{{$get.primary_crusher_screen1_1500_text2|| ''}}",
+            "primary_crusher_screen1_1500_text3": "{{$get.primary_crusher_screen1_1500_text3|| ''}}",
+            "primary_crusher_screen1_1500_text4": "{{$get.primary_crusher_screen1_1500_text4|| ''}}",
+            "primary_crusher_screen1_1500_text5": "{{$get.primary_crusher_screen1_1500_text5|| ''}}",
+            "primary_crusher_screen1_1500_text6": "{{$get.primary_crusher_screen1_1500_text6|| ''}}",
+            "primary_crusher_screen1_1600_text1": "{{$get.primary_crusher_screen1_1600_text1|| ''}}",
+            "primary_crusher_screen1_1600_text2": "{{$get.primary_crusher_screen1_1600_text2|| ''}}",
+            "primary_crusher_screen1_1600_text3": "{{$get.primary_crusher_screen1_1600_text3|| ''}}",
+            "primary_crusher_screen1_1600_text4": "{{$get.primary_crusher_screen1_1600_text4|| ''}}",
+            "primary_crusher_screen1_1600_text5": "{{$get.primary_crusher_screen1_1600_text5|| ''}}",
+            "primary_crusher_screen1_1600_text6": "{{$get.primary_crusher_screen1_1600_text6|| ''}}",
+            "primary_crusher_screen1_1700_text1": "{{$get.primary_crusher_screen1_1700_text1|| ''}}",
+            "primary_crusher_screen1_1700_text2": "{{$get.primary_crusher_screen1_1700_text2|| ''}}",
+            "primary_crusher_screen1_1700_text3": "{{$get.primary_crusher_screen1_1700_text3|| ''}}",
+            "primary_crusher_screen1_1700_text4": "{{$get.primary_crusher_screen1_1700_text4|| ''}}",
+            "primary_crusher_screen1_1700_text5": "{{$get.primary_crusher_screen1_1700_text5|| ''}}",
+            "primary_crusher_screen1_1700_text6": "{{$get.primary_crusher_screen1_1700_text6|| ''}}",
+            "primary_crusher_screen1_1800_text1": "{{$get.primary_crusher_screen1_1800_text1|| ''}}",
+            "primary_crusher_screen1_1800_text2": "{{$get.primary_crusher_screen1_1800_text2|| ''}}",
+            "primary_crusher_screen1_1800_text3": "{{$get.primary_crusher_screen1_1800_text3|| ''}}",
+            "primary_crusher_screen1_1800_text4": "{{$get.primary_crusher_screen1_1800_text4|| ''}}",
+            "primary_crusher_screen1_1800_text5": "{{$get.primary_crusher_screen1_1800_text5|| ''}}",
+            "primary_crusher_screen1_1800_text6": "{{$get.primary_crusher_screen1_1800_text6|| ''}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen1 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form12",
+            "primary_crusher_screen2_0700_text1": "{{$get.primary_crusher_screen2_0700_text1|| ''}}",
+            "primary_crusher_screen2_0700_text2": "{{$get.primary_crusher_screen2_0700_text2|| ''}}",
+            "primary_crusher_screen2_0700_text3": "{{$get.primary_crusher_screen2_0700_text3|| ''}}",
+            "primary_crusher_screen2_0700_text4": "{{$get.primary_crusher_screen2_0700_text4|| ''}}",
+            "primary_crusher_screen2_0700_text5": "{{$get.primary_crusher_screen2_0700_text5|| ''}}",
+            "primary_crusher_screen2_0700_text6": "{{$get.primary_crusher_screen2_0700_text6|| ''}}",
+            "primary_crusher_screen2_0800_text1": "{{$get.primary_crusher_screen2_0800_text1|| ''}}",
+            "primary_crusher_screen2_0800_text2": "{{$get.primary_crusher_screen2_0800_text2|| ''}}",
+            "primary_crusher_screen2_0800_text3": "{{$get.primary_crusher_screen2_0800_text3|| ''}}",
+            "primary_crusher_screen2_0800_text4": "{{$get.primary_crusher_screen2_0800_text4|| ''}}",
+            "primary_crusher_screen2_0800_text5": "{{$get.primary_crusher_screen2_0800_text5|| ''}}",
+            "primary_crusher_screen2_0800_text6": "{{$get.primary_crusher_screen2_0800_text6|| ''}}",
+            "primary_crusher_screen2_0900_text1": "{{$get.primary_crusher_screen2_0900_text1|| ''}}",
+            "primary_crusher_screen2_0900_text2": "{{$get.primary_crusher_screen2_0900_text2|| ''}}",
+            "primary_crusher_screen2_0900_text3": "{{$get.primary_crusher_screen2_0900_text3|| ''}}",
+            "primary_crusher_screen2_0900_text4": "{{$get.primary_crusher_screen2_0900_text4|| ''}}",
+            "primary_crusher_screen2_0900_text5": "{{$get.primary_crusher_screen2_0900_text5|| ''}}",
+            "primary_crusher_screen2_0900_text6": "{{$get.primary_crusher_screen2_0900_text6|| ''}}",
+            "primary_crusher_screen2_1000_text1": "{{$get.primary_crusher_screen2_1000_text1|| ''}}",
+            "primary_crusher_screen2_1000_text2": "{{$get.primary_crusher_screen2_1000_text2|| ''}}",
+            "primary_crusher_screen2_1000_text3": "{{$get.primary_crusher_screen2_1000_text3|| ''}}",
+            "primary_crusher_screen2_1000_text4": "{{$get.primary_crusher_screen2_1000_text4|| ''}}",
+            "primary_crusher_screen2_1000_text5": "{{$get.primary_crusher_screen2_1000_text5|| ''}}",
+            "primary_crusher_screen2_1000_text6": "{{$get.primary_crusher_screen2_1000_text6|| ''}}",
+            "primary_crusher_screen2_1100_text1": "{{$get.primary_crusher_screen2_1100_text1|| ''}}",
+            "primary_crusher_screen2_1100_text2": "{{$get.primary_crusher_screen2_1100_text2|| ''}}",
+            "primary_crusher_screen2_1100_text3": "{{$get.primary_crusher_screen2_1100_text3|| ''}}",
+            "primary_crusher_screen2_1100_text4": "{{$get.primary_crusher_screen2_1100_text4|| ''}}",
+            "primary_crusher_screen2_1100_text5": "{{$get.primary_crusher_screen2_1100_text5|| ''}}",
+            "primary_crusher_screen2_1100_text6": "{{$get.primary_crusher_screen2_1100_text6|| ''}}",
+            "primary_crusher_screen2_1200_text1": "{{$get.primary_crusher_screen2_1200_text1|| ''}}",
+            "primary_crusher_screen2_1200_text2": "{{$get.primary_crusher_screen2_1200_text2|| ''}}",
+            "primary_crusher_screen2_1200_text3": "{{$get.primary_crusher_screen2_1200_text3|| ''}}",
+            "primary_crusher_screen2_1200_text4": "{{$get.primary_crusher_screen2_1200_text4|| ''}}",
+            "primary_crusher_screen2_1200_text5": "{{$get.primary_crusher_screen2_1200_text5|| ''}}",
+            "primary_crusher_screen2_1200_text6": "{{$get.primary_crusher_screen2_1200_text6|| ''}}",
+            "primary_crusher_screen2_1300_text1": "{{$get.primary_crusher_screen2_1300_text1|| ''}}",
+            "primary_crusher_screen2_1300_text2": "{{$get.primary_crusher_screen2_1300_text2|| ''}}",
+            "primary_crusher_screen2_1300_text3": "{{$get.primary_crusher_screen2_1300_text3|| ''}}",
+            "primary_crusher_screen2_1300_text4": "{{$get.primary_crusher_screen2_1300_text4|| ''}}",
+            "primary_crusher_screen2_1300_text5": "{{$get.primary_crusher_screen2_1300_text5|| ''}}",
+            "primary_crusher_screen2_1300_text6": "{{$get.primary_crusher_screen2_1300_text6|| ''}}",
+            "primary_crusher_screen2_1400_text1": "{{$get.primary_crusher_screen2_1400_text1|| ''}}",
+            "primary_crusher_screen2_1400_text2": "{{$get.primary_crusher_screen2_1400_text2|| ''}}",
+            "primary_crusher_screen2_1400_text3": "{{$get.primary_crusher_screen2_1400_text3|| ''}}",
+            "primary_crusher_screen2_1400_text4": "{{$get.primary_crusher_screen2_1400_text4|| ''}}",
+            "primary_crusher_screen2_1400_text5": "{{$get.primary_crusher_screen2_1400_text5|| ''}}",
+            "primary_crusher_screen2_1400_text6": "{{$get.primary_crusher_screen2_1400_text6|| ''}}",
+            "primary_crusher_screen2_1500_text1": "{{$get.primary_crusher_screen2_1500_text1|| ''}}",
+            "primary_crusher_screen2_1500_text2": "{{$get.primary_crusher_screen2_1500_text2|| ''}}",
+            "primary_crusher_screen2_1500_text3": "{{$get.primary_crusher_screen2_1500_text3|| ''}}",
+            "primary_crusher_screen2_1500_text4": "{{$get.primary_crusher_screen2_1500_text4|| ''}}",
+            "primary_crusher_screen2_1500_text5": "{{$get.primary_crusher_screen2_1500_text5|| ''}}",
+            "primary_crusher_screen2_1500_text6": "{{$get.primary_crusher_screen2_1500_text6|| ''}}",
+            "primary_crusher_screen2_1600_text1": "{{$get.primary_crusher_screen2_1600_text1|| ''}}",
+            "primary_crusher_screen2_1600_text2": "{{$get.primary_crusher_screen2_1600_text2|| ''}}",
+            "primary_crusher_screen2_1600_text3": "{{$get.primary_crusher_screen2_1600_text3|| ''}}",
+            "primary_crusher_screen2_1600_text4": "{{$get.primary_crusher_screen2_1600_text4|| ''}}",
+            "primary_crusher_screen2_1600_text5": "{{$get.primary_crusher_screen2_1600_text5|| ''}}",
+            "primary_crusher_screen2_1600_text6": "{{$get.primary_crusher_screen2_1600_text6|| ''}}",
+            "primary_crusher_screen2_1700_text1": "{{$get.primary_crusher_screen2_1700_text1|| ''}}",
+            "primary_crusher_screen2_1700_text2": "{{$get.primary_crusher_screen2_1700_text2|| ''}}",
+            "primary_crusher_screen2_1700_text3": "{{$get.primary_crusher_screen2_1700_text3|| ''}}",
+            "primary_crusher_screen2_1700_text4": "{{$get.primary_crusher_screen2_1700_text4|| ''}}",
+            "primary_crusher_screen2_1700_text5": "{{$get.primary_crusher_screen2_1700_text5|| ''}}",
+            "primary_crusher_screen2_1700_text6": "{{$get.primary_crusher_screen2_1700_text6|| ''}}",
+            "primary_crusher_screen2_1800_text1": "{{$get.primary_crusher_screen2_1800_text1|| ''}}",
+            "primary_crusher_screen2_1800_text2": "{{$get.primary_crusher_screen2_1800_text2|| ''}}",
+            "primary_crusher_screen2_1800_text3": "{{$get.primary_crusher_screen2_1800_text3|| ''}}",
+            "primary_crusher_screen2_1800_text4": "{{$get.primary_crusher_screen2_1800_text4|| ''}}",
+            "primary_crusher_screen2_1800_text5": "{{$get.primary_crusher_screen2_1800_text5|| ''}}",
+            "primary_crusher_screen2_1800_text6": "{{$get.primary_crusher_screen2_1800_text6|| ''}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen2 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen3": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form12",
+            "primary_crusher_screen3_0700_text1": "{{$get.primary_crusher_screen3_0700_text1|| ''}}",
+            "primary_crusher_screen3_0700_text2": "{{$get.primary_crusher_screen3_0700_text2|| ''}}",
+            "primary_crusher_screen3_0700_text3": "{{$get.primary_crusher_screen3_0700_text3|| ''}}",
+            "primary_crusher_screen3_0700_text4": "{{$get.primary_crusher_screen3_0700_text4|| ''}}",
+            "primary_crusher_screen3_0700_text5": "{{$get.primary_crusher_screen3_0700_text5|| ''}}",
+            "primary_crusher_screen3_0800_text1": "{{$get.primary_crusher_screen3_0800_text1|| ''}}",
+            "primary_crusher_screen3_0800_text2": "{{$get.primary_crusher_screen3_0800_text2|| ''}}",
+            "primary_crusher_screen3_0800_text3": "{{$get.primary_crusher_screen3_0800_text3|| ''}}",
+            "primary_crusher_screen3_0800_text4": "{{$get.primary_crusher_screen3_0800_text4|| ''}}",
+            "primary_crusher_screen3_0800_text5": "{{$get.primary_crusher_screen3_0800_text5|| ''}}",
+            "primary_crusher_screen3_0900_text1": "{{$get.primary_crusher_screen3_0900_text1|| ''}}",
+            "primary_crusher_screen3_0900_text2": "{{$get.primary_crusher_screen3_0900_text2|| ''}}",
+            "primary_crusher_screen3_0900_text3": "{{$get.primary_crusher_screen3_0900_text3|| ''}}",
+            "primary_crusher_screen3_0900_text4": "{{$get.primary_crusher_screen3_0900_text4|| ''}}",
+            "primary_crusher_screen3_0900_text5": "{{$get.primary_crusher_screen3_0900_text5|| ''}}",
+            "primary_crusher_screen3_1000_text1": "{{$get.primary_crusher_screen3_1000_text1|| ''}}",
+            "primary_crusher_screen3_1000_text2": "{{$get.primary_crusher_screen3_1000_text2|| ''}}",
+            "primary_crusher_screen3_1000_text3": "{{$get.primary_crusher_screen3_1000_text3|| ''}}",
+            "primary_crusher_screen3_1000_text4": "{{$get.primary_crusher_screen3_1000_text4|| ''}}",
+            "primary_crusher_screen3_1000_text5": "{{$get.primary_crusher_screen3_1000_text5|| ''}}",
+            "primary_crusher_screen3_1100_text1": "{{$get.primary_crusher_screen3_1100_text1|| ''}}",
+            "primary_crusher_screen3_1100_text2": "{{$get.primary_crusher_screen3_1100_text2|| ''}}",
+            "primary_crusher_screen3_1100_text3": "{{$get.primary_crusher_screen3_1100_text3|| ''}}",
+            "primary_crusher_screen3_1100_text4": "{{$get.primary_crusher_screen3_1100_text4|| ''}}",
+            "primary_crusher_screen3_1100_text5": "{{$get.primary_crusher_screen3_1100_text5|| ''}}",
+            "primary_crusher_screen3_1200_text1": "{{$get.primary_crusher_screen3_1200_text1|| ''}}",
+            "primary_crusher_screen3_1200_text2": "{{$get.primary_crusher_screen3_1200_text2|| ''}}",
+            "primary_crusher_screen3_1200_text3": "{{$get.primary_crusher_screen3_1200_text3|| ''}}",
+            "primary_crusher_screen3_1200_text4": "{{$get.primary_crusher_screen3_1200_text4|| ''}}",
+            "primary_crusher_screen3_1200_text5": "{{$get.primary_crusher_screen3_1200_text5|| ''}}",
+            "primary_crusher_screen3_1300_text1": "{{$get.primary_crusher_screen3_1300_text1|| ''}}",
+            "primary_crusher_screen3_1300_text2": "{{$get.primary_crusher_screen3_1300_text2|| ''}}",
+            "primary_crusher_screen3_1300_text3": "{{$get.primary_crusher_screen3_1300_text3|| ''}}",
+            "primary_crusher_screen3_1300_text4": "{{$get.primary_crusher_screen3_1300_text4|| ''}}",
+            "primary_crusher_screen3_1300_text5": "{{$get.primary_crusher_screen3_1300_text5|| ''}}",
+            "primary_crusher_screen3_1400_text1": "{{$get.primary_crusher_screen3_1400_text1|| ''}}",
+            "primary_crusher_screen3_1400_text2": "{{$get.primary_crusher_screen3_1400_text2|| ''}}",
+            "primary_crusher_screen3_1400_text3": "{{$get.primary_crusher_screen3_1400_text3|| ''}}",
+            "primary_crusher_screen3_1400_text4": "{{$get.primary_crusher_screen3_1400_text4|| ''}}",
+            "primary_crusher_screen3_1400_text5": "{{$get.primary_crusher_screen3_1400_text5|| ''}}",
+            "primary_crusher_screen3_1500_text1": "{{$get.primary_crusher_screen3_1500_text1|| ''}}",
+            "primary_crusher_screen3_1500_text2": "{{$get.primary_crusher_screen3_1500_text2|| ''}}",
+            "primary_crusher_screen3_1500_text3": "{{$get.primary_crusher_screen3_1500_text3|| ''}}",
+            "primary_crusher_screen3_1500_text4": "{{$get.primary_crusher_screen3_1500_text4|| ''}}",
+            "primary_crusher_screen3_1500_text5": "{{$get.primary_crusher_screen3_1500_text5|| ''}}",
+            "primary_crusher_screen3_1600_text1": "{{$get.primary_crusher_screen3_1600_text1|| ''}}",
+            "primary_crusher_screen3_1600_text2": "{{$get.primary_crusher_screen3_1600_text2|| ''}}",
+            "primary_crusher_screen3_1600_text3": "{{$get.primary_crusher_screen3_1600_text3|| ''}}",
+            "primary_crusher_screen3_1600_text4": "{{$get.primary_crusher_screen3_1600_text4|| ''}}",
+            "primary_crusher_screen3_1600_text5": "{{$get.primary_crusher_screen3_1600_text5|| ''}}",
+            "primary_crusher_screen3_1700_text1": "{{$get.primary_crusher_screen3_1700_text1|| ''}}",
+            "primary_crusher_screen3_1700_text2": "{{$get.primary_crusher_screen3_1700_text2|| ''}}",
+            "primary_crusher_screen3_1700_text3": "{{$get.primary_crusher_screen3_1700_text3|| ''}}",
+            "primary_crusher_screen3_1700_text4": "{{$get.primary_crusher_screen3_1700_text4|| ''}}",
+            "primary_crusher_screen3_1700_text5": "{{$get.primary_crusher_screen3_1700_text5|| ''}}",
+            "primary_crusher_screen3_1800_text1": "{{$get.primary_crusher_screen3_1800_text1|| ''}}",
+            "primary_crusher_screen3_1800_text2": "{{$get.primary_crusher_screen3_1800_text2|| ''}}",
+            "primary_crusher_screen3_1800_text3": "{{$get.primary_crusher_screen3_1800_text3|| ''}}",
+            "primary_crusher_screen3_1800_text4": "{{$get.primary_crusher_screen3_1800_text4|| ''}}",
+            "primary_crusher_screen3_1800_text5": "{{$get.primary_crusher_screen3_1800_text5|| ''}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen3 data Successfully"
+            }
+          }
+        },
+        "handleSave_screen4": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form12",
+            "primary_crusher_screen4_loop_text2": "{{$get.primary_crusher_screen4_loop_text2|| ''}}",
+            "primary_crusher_screen4_description_text2": "{{$get.primary_crusher_screen4_description_text2|| ''}}",
+            "primary_crusher_screen4_reason_text2": "{{$get.primary_crusher_screen4_reason_text2|| ''}}",
+            "primary_crusher_screen4_timein_text2": "{{$get.primary_crusher_screen4_timein_text2|| ''}}",
+            "primary_crusher_screen4_timeout_text2": "{{$get.primary_crusher_screen4_timeout_text2|| ''}}",
+            "primary_crusher_screen4_loop_text1": "{{$get.primary_crusher_screen4_loop_text1|| ''}}",
+            "primary_crusher_screen4_description_text1": "{{$get.primary_crusher_screen4_description_text1|| ''}}",
+            "primary_crusher_screen4_reason_text1": "{{$get.primary_crusher_screen4_reason_text1|| ''}}",
+            "primary_crusher_screen4_timein_text1": "{{$get.primary_crusher_screen4_timein_text1|| ''}}",
+            "primary_crusher_screen4_timeout_text1": "{{$get.primary_crusher_screen4_timeout_text1|| ''}}",
+            "primary_crusher_screen4_loop_text3": "{{$get.primary_crusher_screen4_loop_text3|| ''}}",
+            "primary_crusher_screen4_description_text3": "{{$get.primary_crusher_screen4_description_text3|| ''}}",
+            "primary_crusher_screen4_reason_text3": "{{$get.primary_crusher_screen4_reason_text3|| ''}}",
+            "primary_crusher_screen4_timein_text3": "{{$get.primary_crusher_screen4_timein_text3|| ''}}",
+            "primary_crusher_screen4_timeout_text3": "{{$get.primary_crusher_screen4_timeout_text3|| ''}}",
+            "primary_crusher_screen4_notification_text1": "{{$get.primary_crusher_screen4_notification_text1|| ''}}",
+            "primary_crusher_screen4_deficiency_description_text1": "{{$get.primary_crusher_screen4_deficiency_description_text1|| ''}}",
+            "primary_crusher_screen4_notification_text2": "{{$get.primary_crusher_screen4_notification_text2|| ''}}",
+            "primary_crusher_screen4_deficiency_description_text2": "{{$get.primary_crusher_screen4_deficiency_description_text2|| ''}}",
+            "primary_crusher_screen4_notification_text3": "{{$get.primary_crusher_screen4_notification_text3|| ''}}",
+            "primary_crusher_screen4_deficiency_description_text3": "{{$get.primary_crusher_screen4_deficiency_description_text3|| ''}}",
+            "authorized_by_supervisor_switch1": "{{$global.authorized_by_supervisor_switch1 == null ? true : $global.authorized_by_supervisor_switch1}}",
+            "authorized_by_supervisor_switch2": "{{$global.authorized_by_supervisor_switch2 == null ? true : $global.authorized_by_supervisor_switch2}}",
+            "authorized_by_supervisor_switch3": "{{$global.authorized_by_supervisor_switch3 == null ? true : $global.authorized_by_supervisor_switch3}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Saved screen3 data Successfully"
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "form_id": "form12",
+            "filename": "PrimaryCrusherOperatorShiftReport"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id",
+                "form12_sign",
+                "form12_day",
+                "form12_month",
+                "form12_year",
+                "form12_shift",
+                "form12_operator",
+                "primary_crusher_screen1_0700_text1",
+                "primary_crusher_screen1_0700_text2",
+                "primary_crusher_screen1_0700_text3",
+                "primary_crusher_screen1_0700_text4",
+                "primary_crusher_screen1_0700_text5",
+                "primary_crusher_screen1_0700_text6",
+                "primary_crusher_screen1_0800_text1",
+                "primary_crusher_screen1_0800_text2",
+                "primary_crusher_screen1_0800_text3",
+                "primary_crusher_screen1_0800_text4",
+                "primary_crusher_screen1_0800_text5",
+                "primary_crusher_screen1_0800_text6",
+                "primary_crusher_screen1_0900_text1",
+                "primary_crusher_screen1_0900_text2",
+                "primary_crusher_screen1_0900_text3",
+                "primary_crusher_screen1_0900_text4",
+                "primary_crusher_screen1_0900_text5",
+                "primary_crusher_screen1_0900_text6",
+                "primary_crusher_screen1_1000_text1",
+                "primary_crusher_screen1_1000_text2",
+                "primary_crusher_screen1_1000_text3",
+                "primary_crusher_screen1_1000_text4",
+                "primary_crusher_screen1_1000_text5",
+                "primary_crusher_screen1_1000_text6",
+                "primary_crusher_screen1_1100_text1",
+                "primary_crusher_screen1_1100_text2",
+                "primary_crusher_screen1_1100_text3",
+                "primary_crusher_screen1_1100_text4",
+                "primary_crusher_screen1_1100_text5",
+                "primary_crusher_screen1_1100_text6",
+                "primary_crusher_screen1_1200_text1",
+                "primary_crusher_screen1_1200_text2",
+                "primary_crusher_screen1_1200_text3",
+                "primary_crusher_screen1_1200_text4",
+                "primary_crusher_screen1_1200_text5",
+                "primary_crusher_screen1_1200_text6",
+                "primary_crusher_screen1_1300_text1",
+                "primary_crusher_screen1_1300_text2",
+                "primary_crusher_screen1_1300_text3",
+                "primary_crusher_screen1_1300_text4",
+                "primary_crusher_screen1_1300_text5",
+                "primary_crusher_screen1_1300_text6",
+                "primary_crusher_screen1_1400_text1",
+                "primary_crusher_screen1_1400_text2",
+                "primary_crusher_screen1_1400_text3",
+                "primary_crusher_screen1_1400_text4",
+                "primary_crusher_screen1_1400_text5",
+                "primary_crusher_screen1_1400_text6",
+                "primary_crusher_screen1_1500_text1",
+                "primary_crusher_screen1_1500_text2",
+                "primary_crusher_screen1_1500_text3",
+                "primary_crusher_screen1_1500_text4",
+                "primary_crusher_screen1_1500_text5",
+                "primary_crusher_screen1_1500_text6",
+                "primary_crusher_screen1_1600_text1",
+                "primary_crusher_screen1_1600_text2",
+                "primary_crusher_screen1_1600_text3",
+                "primary_crusher_screen1_1600_text4",
+                "primary_crusher_screen1_1600_text5",
+                "primary_crusher_screen1_1600_text6",
+                "primary_crusher_screen1_1700_text1",
+                "primary_crusher_screen1_1700_text2",
+                "primary_crusher_screen1_1700_text3",
+                "primary_crusher_screen1_1700_text4",
+                "primary_crusher_screen1_1700_text5",
+                "primary_crusher_screen1_1700_text6",
+                "primary_crusher_screen1_1800_text1",
+                "primary_crusher_screen1_1800_text2",
+                "primary_crusher_screen1_1800_text3",
+                "primary_crusher_screen1_1800_text4",
+                "primary_crusher_screen1_1800_text5",
+                "primary_crusher_screen1_1800_text6",
+                "primary_crusher_screen2_0700_text1",
+                "primary_crusher_screen2_0700_text2",
+                "primary_crusher_screen2_0700_text3",
+                "primary_crusher_screen2_0700_text4",
+                "primary_crusher_screen2_0700_text5",
+                "primary_crusher_screen2_0700_text6",
+                "primary_crusher_screen2_0800_text1",
+                "primary_crusher_screen2_0800_text2",
+                "primary_crusher_screen2_0800_text3",
+                "primary_crusher_screen2_0800_text4",
+                "primary_crusher_screen2_0800_text5",
+                "primary_crusher_screen2_0800_text6",
+                "primary_crusher_screen2_0900_text1",
+                "primary_crusher_screen2_0900_text2",
+                "primary_crusher_screen2_0900_text3",
+                "primary_crusher_screen2_0900_text4",
+                "primary_crusher_screen2_0900_text5",
+                "primary_crusher_screen2_0900_text6",
+                "primary_crusher_screen2_1000_text1",
+                "primary_crusher_screen2_1000_text2",
+                "primary_crusher_screen2_1000_text3",
+                "primary_crusher_screen2_1000_text4",
+                "primary_crusher_screen2_1000_text5",
+                "primary_crusher_screen2_1000_text6",
+                "primary_crusher_screen2_1100_text1",
+                "primary_crusher_screen2_1100_text2",
+                "primary_crusher_screen2_1100_text3",
+                "primary_crusher_screen2_1100_text4",
+                "primary_crusher_screen2_1100_text5",
+                "primary_crusher_screen2_1100_text6",
+                "primary_crusher_screen2_1200_text1",
+                "primary_crusher_screen2_1200_text2",
+                "primary_crusher_screen2_1200_text3",
+                "primary_crusher_screen2_1200_text4",
+                "primary_crusher_screen2_1200_text5",
+                "primary_crusher_screen2_1200_text6",
+                "primary_crusher_screen2_1300_text1",
+                "primary_crusher_screen2_1300_text2",
+                "primary_crusher_screen2_1300_text3",
+                "primary_crusher_screen2_1300_text4",
+                "primary_crusher_screen2_1300_text5",
+                "primary_crusher_screen2_1300_text6",
+                "primary_crusher_screen2_1400_text1",
+                "primary_crusher_screen2_1400_text2",
+                "primary_crusher_screen2_1400_text3",
+                "primary_crusher_screen2_1400_text4",
+                "primary_crusher_screen2_1400_text5",
+                "primary_crusher_screen2_1400_text6",
+                "primary_crusher_screen2_1500_text1",
+                "primary_crusher_screen2_1500_text2",
+                "primary_crusher_screen2_1500_text3",
+                "primary_crusher_screen2_1500_text4",
+                "primary_crusher_screen2_1500_text5",
+                "primary_crusher_screen2_1500_text6",
+                "primary_crusher_screen2_1600_text1",
+                "primary_crusher_screen2_1600_text2",
+                "primary_crusher_screen2_1600_text3",
+                "primary_crusher_screen2_1600_text4",
+                "primary_crusher_screen2_1600_text5",
+                "primary_crusher_screen2_1600_text6",
+                "primary_crusher_screen2_1700_text1",
+                "primary_crusher_screen2_1700_text2",
+                "primary_crusher_screen2_1700_text3",
+                "primary_crusher_screen2_1700_text4",
+                "primary_crusher_screen2_1700_text5",
+                "primary_crusher_screen2_1700_text6",
+                "primary_crusher_screen2_1800_text1",
+                "primary_crusher_screen2_1800_text2",
+                "primary_crusher_screen2_1800_text3",
+                "primary_crusher_screen2_1800_text4",
+                "primary_crusher_screen2_1800_text5",
+                "primary_crusher_screen2_1800_text6",
+                "primary_crusher_screen3_0700_text1",
+                "primary_crusher_screen3_0700_text2",
+                "primary_crusher_screen3_0700_text3",
+                "primary_crusher_screen3_0700_text4",
+                "primary_crusher_screen3_0700_text5",
+                "primary_crusher_screen3_0800_text1",
+                "primary_crusher_screen3_0800_text2",
+                "primary_crusher_screen3_0800_text3",
+                "primary_crusher_screen3_0800_text4",
+                "primary_crusher_screen3_0800_text5",
+                "primary_crusher_screen3_0900_text1",
+                "primary_crusher_screen3_0900_text2",
+                "primary_crusher_screen3_0900_text3",
+                "primary_crusher_screen3_0900_text4",
+                "primary_crusher_screen3_0900_text5",
+                "primary_crusher_screen3_1000_text1",
+                "primary_crusher_screen3_1000_text2",
+                "primary_crusher_screen3_1000_text3",
+                "primary_crusher_screen3_1000_text4",
+                "primary_crusher_screen3_1000_text5",
+                "primary_crusher_screen3_1100_text1",
+                "primary_crusher_screen3_1100_text2",
+                "primary_crusher_screen3_1100_text3",
+                "primary_crusher_screen3_1100_text4",
+                "primary_crusher_screen3_1100_text5",
+                "primary_crusher_screen3_1200_text1",
+                "primary_crusher_screen3_1200_text2",
+                "primary_crusher_screen3_1200_text3",
+                "primary_crusher_screen3_1200_text4",
+                "primary_crusher_screen3_1200_text5",
+                "primary_crusher_screen3_1300_text1",
+                "primary_crusher_screen3_1300_text2",
+                "primary_crusher_screen3_1300_text3",
+                "primary_crusher_screen3_1300_text4",
+                "primary_crusher_screen3_1300_text5",
+                "primary_crusher_screen3_1400_text1",
+                "primary_crusher_screen3_1400_text2",
+                "primary_crusher_screen3_1400_text3",
+                "primary_crusher_screen3_1400_text4",
+                "primary_crusher_screen3_1400_text5",
+                "primary_crusher_screen3_1500_text1",
+                "primary_crusher_screen3_1500_text2",
+                "primary_crusher_screen3_1500_text3",
+                "primary_crusher_screen3_1500_text4",
+                "primary_crusher_screen3_1500_text5",
+                "primary_crusher_screen3_1600_text1",
+                "primary_crusher_screen3_1600_text2",
+                "primary_crusher_screen3_1600_text3",
+                "primary_crusher_screen3_1600_text4",
+                "primary_crusher_screen3_1600_text5",
+                "primary_crusher_screen3_1700_text1",
+                "primary_crusher_screen3_1700_text2",
+                "primary_crusher_screen3_1700_text3",
+                "primary_crusher_screen3_1700_text4",
+                "primary_crusher_screen3_1700_text5",
+                "primary_crusher_screen3_1800_text1",
+                "primary_crusher_screen3_1800_text2",
+                "primary_crusher_screen3_1800_text3",
+                "primary_crusher_screen3_1800_text4",
+                "primary_crusher_screen3_1800_text5",
+                "primary_crusher_screen4_loop_text2",
+                "primary_crusher_screen4_description_text2",
+                "primary_crusher_screen4_reason_text2",
+                "primary_crusher_screen4_timein_text2",
+                "primary_crusher_screen4_timeout_text2",
+                "primary_crusher_screen4_loop_text1",
+                "primary_crusher_screen4_description_text1",
+                "primary_crusher_screen4_reason_text1",
+                "primary_crusher_screen4_timein_text1",
+                "primary_crusher_screen4_timeout_text1",
+                "primary_crusher_screen4_loop_text3",
+                "primary_crusher_screen4_description_text3",
+                "primary_crusher_screen4_reason_text3",
+                "primary_crusher_screen4_timein_text3",
+                "primary_crusher_screen4_timeout_text3",
+                "primary_crusher_screen4_notification_text1",
+                "primary_crusher_screen4_deficiency_description_text1",
+                "primary_crusher_screen4_notification_text2",
+                "primary_crusher_screen4_deficiency_description_text2",
+                "primary_crusher_screen4_notification_text3",
+                "primary_crusher_screen4_deficiency_description_text3",
+                "authorized_by_supervisor_switch1",
+                "authorized_by_supervisor_switch2",
+                "authorized_by_supervisor_switch3"
+              ]
+            },
+            "success": {
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
+            }
+          }
+        }
+      },
+      "templates": {
+        "screen1": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (1/4)"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(146,208,80)",
+              "color": "rgb(255,255,255)",
+              "border": "none"
+            }
+          },
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%",
+                    "height": "6%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "form12_day",
+                      "value": "{{$global.form12_day}}",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Day",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "13",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "14",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "15",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "16",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "17",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "18",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "19",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "20",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "21",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "22",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "23",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "24",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "25",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "26",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "27",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "28",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "29",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "30",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "31",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "form12_month",
+                      "value": "{{$global.form12_month}}",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Month",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "form12_year",
+                      "value": "{{$global.form12_year}}",
+                      "class": "dropdown_date_style center_align",
+                      "options": [
+                        {
+                          "value": "Year",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2019",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2020",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2021",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2022",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "form12_shift",
+                      "value": "{{$global.form12_shift}}",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": [
+                        {
+                          "value": "Shift",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Night Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Day Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Regular Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Rotating Shift",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "form12_operator",
+                      "value": "{{$global.form12_operator}}",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": [
+                        {
+                          "value": "Operator",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "John",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Smith",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Michael",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Federer",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "David",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.form12_sign || ''}}",
+                      "name": "form12_sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color"
+                    }
+                  ]
+                }
+              ],
+              "class": "no_padding"
+            },
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding table_row",
+                      "components": {
+                        "{{#each Table1_Headers}}": {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "components": {
+                            "{{#each Table1_Rows}}": {
+                              "{{#let}}": [
+                                {
+                                  "row_index": "{{$index}}"
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "center_align",
+                                  "style": {
+                                    "height": "5%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "class": "table_body_name_styles",
+                                      "components": [
+                                        {
+                                          "type": "label",
+                                          "text": "{{this.row_name}}",
+                                          "class": "{{this.row_styles}} table_row_height"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "horizontal",
+                                      "style": {
+                                        "width": "90%"
+                                      },
+                                      "components": {
+                                        "{{#each row_values}}": {
+                                          "type": "horizontal",
+                                          "components": [
+                                            {
+                                              "type": "vertical",
+                                              "components": [
+                                                {
+                                                  "type": "{{type}}",
+                                                  "name": "{{name}}",
+                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table1_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                  "class": "{{styles}}",
+                                                  "style": {
+                                                    "width": "15%",
+                                                    "padding_bottom": "0%",
+                                                    "padding_top": "1%"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "height": "10%"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ],
+              "class": "no_padding"
+            }
+          ],
+          "class": "no_padding",
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "home",
+              "style": {
+                "left": "15%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "25%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "35%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "45%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 4",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "55%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "next",
+              "style": {
+                "left": "65%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "save",
+              "style": {
+                "left": "75%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleSave_screen1"
+              }
+            }
+          ]
+        },
+        "screen2": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (2/4)"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(146,208,80)",
+              "color": "rgb(255,255,255)",
+              "border": "none"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding table_row5",
+                      "components": {
+                        "{{#each Table2_Headers}}": {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "components": {
+                            "{{#each Table2_Rows}}": {
+                              "{{#let}}": [
+                                {
+                                  "row_index": "{{$index}}"
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "center_align",
+                                  "style": {
+                                    "height": "5%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "class": "table_body_name_styles",
+                                      "components": [
+                                        {
+                                          "type": "label",
+                                          "text": "{{this.row_name}}",
+                                          "class": "{{this.row_styles}} table_row_height"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "horizontal",
+                                      "style": {
+                                        "width": "90%"
+                                      },
+                                      "components": {
+                                        "{{#each row_values}}": {
+                                          "type": "horizontal",
+                                          "components": [
+                                            {
+                                              "type": "vertical",
+                                              "components": [
+                                                {
+                                                  "type": "{{type}}",
+                                                  "name": "{{name}}",
+                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table2_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                  "class": "{{styles}}",
+                                                  "style": {
+                                                    "width": "15%",
+                                                    "padding_bottom": "0%",
+                                                    "padding_top": "1%"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "height": "10%"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ],
+              "class": "no_padding"
+            }
+          ],
+          "class": "no_padding",
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "home",
+              "style": {
+                "left": "10%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "previous",
+              "style": {
+                "left": "20%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "30%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 4",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "60%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "contentDescription": "next",
+              "class": "layer_styles",
+              "style": {
+                "left": "70%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "contentDescription": "save",
+              "class": "layer_styles",
+              "style": {
+                "left": "80%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleSave_screen2"
+              }
+            }
+          ]
+        },
+        "screen3": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (3/4)"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(146,208,80)",
+              "color": "rgb(255,255,255)",
+              "border": "none"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding table_row5",
+                      "components": {
+                        "{{#each Table3_Headers}}": {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "vertical",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "vertical",
+                          "components": {
+                            "{{#each Table3_Rows}}": {
+                              "{{#let}}": [
+                                {
+                                  "row_index": "{{$index}}"
+                                },
+                                {
+                                  "type": "horizontal",
+                                  "class": "center_align",
+                                  "style": {
+                                    "height": "5%"
+                                  },
+                                  "components": [
+                                    {
+                                      "type": "horizontal",
+                                      "class": "table_body_name_styles",
+                                      "components": [
+                                        {
+                                          "type": "label",
+                                          "text": "{{this.row_name}}",
+                                          "class": "{{this.row_styles}} table_row_height"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "horizontal",
+                                      "style": {
+                                        "width": "90%"
+                                      },
+                                      "components": {
+                                        "{{#each row_values}}": {
+                                          "type": "horizontal",
+                                          "components": [
+                                            {
+                                              "type": "vertical",
+                                              "components": [
+                                                {
+                                                  "type": "{{type}}",
+                                                  "name": "{{name}}",
+                                                  "value": "{{var index = $index; return getCurrentFieldValue(index, $root.Table3_Rows[row_index].row_values[$index].name, $root['$global']) || '';}}",
+                                                  "class": "{{styles}}",
+                                                  "style": {
+                                                    "width": "18%",
+                                                    "padding_bottom": "0%",
+                                                    "padding_top": "1%"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "height": "10%"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ],
+              "class": "no_padding"
+            }
+          ],
+          "class": "no_padding",
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "contentDescription": "home",
+              "class": "layer_styles",
+              "style": {
+                "left": "10%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "previous",
+              "style": {
+                "left": "20%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "30%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 4",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "60%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "next",
+              "style": {
+                "left": "70%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "save",
+              "style": {
+                "left": "80%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleSave_screen3"
+              }
+            }
+          ]
+        },
+        "screen4": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (4/4)"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(146,208,80)",
+              "color": "rgb(255,255,255)",
+              "border": "none"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "class": "no_padding",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding table_row",
+                      "components": {
+                        "{{#each Table4_Headers}}": {
+                          "type": "vertical",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "{{value}}",
+                              "class": "{{styles}} center_align"
+                            }
+                          ]
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding row_style",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding row_style",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "10%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_loop_text1",
+                                  "value": "{{$global.primary_crusher_screen4_loop_text1 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "10%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_description_text1",
+                                  "value": "{{$global.primary_crusher_screen4_description_text1 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_reason_text1",
+                                  "value": "{{$global.primary_crusher_screen4_reason_text1 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "switch",
+                              "name": "authorized_by_supervisor_switch1",
+                              "value": "{{$global.authorized_by_supervisor_switch1}}",
+                              "class": "switch_styles content_style_even_switch center_align",
+                              "action": {
+                                "type": "$global.set",
+                                "options": {
+                                  "section_id": "form12",
+                                  "authorized_by_supervisor_switch1": "{{$get.authorized_by_supervisor_switch1}}"
+                                }
+                              }
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_timein_text1",
+                                  "value": "{{$global.primary_crusher_screen4_timein_text1 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_timeout_text1",
+                                  "value": "{{$global.primary_crusher_screen4_timeout_text1 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding row_style",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding row_style",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "10%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_loop_text2",
+                                  "value": "{{$global.primary_crusher_screen4_loop_text2 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "10%"
+                                  },
+                                  "class": "content_style_odd"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_description_text2",
+                                  "value": "{{$global.primary_crusher_screen4_description_text2 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_odd"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_reason_text2",
+                                  "value": "{{$global.primary_crusher_screen4_reason_text2 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_odd"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "switch",
+                              "name": "authorized_by_supervisor_switch2",
+                              "value": "{{$global.authorized_by_supervisor_switch2}}",
+                              "class": "switch_styles content_style_odd_switch center_align",
+                              "action": {
+                                "type": "$global.set",
+                                "options": {
+                                  "section_id": "form12",
+                                  "authorized_by_supervisor_switch2": "{{$get.authorized_by_supervisor_switch2}}"
+                                }
+                              }
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_timein_text2",
+                                  "value": "{{$global.primary_crusher_screen4_timein_text2 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_odd"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_timeout_text2",
+                                  "value": "{{$global.primary_crusher_screen4_timeout_text2 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_odd"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding row_style",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding row_style",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "10%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_loop_text3",
+                                  "value": "{{$global.primary_crusher_screen4_loop_text3 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "10%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_description_text3",
+                                  "value": "{{$global.primary_crusher_screen4_description_text3 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_reason_text3",
+                                  "value": "{{$global.primary_crusher_screen4_reason_text3 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "switch",
+                              "name": "authorized_by_supervisor_switch3",
+                              "value": "{{$global.authorized_by_supervisor_switch3}}",
+                              "class": "switch_styles content_style_even_switch center_align",
+                              "action": {
+                                "type": "$global.set",
+                                "options": {
+                                  "section_id": "form12",
+                                  "authorized_by_supervisor_switch3": "{{$get.authorized_by_supervisor_switch3}}"
+                                }
+                              }
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_timein_text3",
+                                  "value": "{{$global.primary_crusher_screen4_timein_text3 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "18%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_timeout_text3",
+                                  "value": "{{$global.primary_crusher_screen4_timeout_text3 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "18%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding table_row5",
+                          "components": {
+                            "{{#each Table5_Headers}}": {
+                              "type": "vertical",
+                              "components": [
+                                {
+                                  "type": "label",
+                                  "text": "{{value}}",
+                                  "class": "{{styles}} center_align"
+                                }
+                              ]
+                            }
+                          },
+                          "style": {
+                            "padding_top": "1%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding row_style",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding row_style",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "50%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_notification_text1",
+                                  "value": "{{$global.primary_crusher_screen4_notification_text1 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "50%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "50%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_deficiency_description_text1",
+                                  "value": "{{$global.primary_crusher_screen4_deficiency_description_text1 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "50%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding row_style",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding row_style",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "50%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_notification_text2",
+                                  "value": "{{$global.primary_crusher_screen4_notification_text2 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "50%"
+                                  },
+                                  "class": "content_style_odd"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "50%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_deficiency_description_text2",
+                                  "value": "{{$global.primary_crusher_screen4_deficiency_description_text2 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "50%"
+                                  },
+                                  "class": "content_style_odd"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding row_style",
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "class": "no_padding",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "no_padding row_style",
+                          "components": [
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "50%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_notification_text3",
+                                  "value": "{{$global.primary_crusher_screen4_notification_text3 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "50%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "horizontal",
+                              "style": {
+                                "width": "50%"
+                              },
+                              "components": [
+                                {
+                                  "type": "textfield",
+                                  "name": "primary_crusher_screen4_deficiency_description_text3",
+                                  "value": "{{$global.primary_crusher_screen4_deficiency_description_text3 || ''}}",
+                                  "style": {
+                                    "padding_bottom": "5%",
+                                    "height": "6%",
+                                    "width": "50%"
+                                  },
+                                  "class": "content_style_even"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "class": "no_padding",
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "home",
+              "style": {
+                "left": "10%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "previous",
+              "style": {
+                "left": "20%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "30%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 4",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "60%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen4"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "save",
+              "style": {
+                "left": "70%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleSave_screen4"
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{submit_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "submit",
+              "style": {
+                "left": "80%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleSubmit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

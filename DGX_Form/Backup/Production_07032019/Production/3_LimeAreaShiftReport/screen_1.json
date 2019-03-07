@@ -1,0 +1,3923 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Lime Area Shift Report",
+      "form_id": "form3",
+      "description": "Lime Area Shift Report",
+      "offline": "true",
+      "styles": {
+        "no_padding": {
+          "padding": "0"
+        },
+        "no_border": {
+          "border": "none"
+        },
+        "center_align": {
+          "align": "center"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
+        },
+        "right_padding": {
+          "padding_left": "-2",
+          "padding_right": "2"
+        },
+        "black_color": {
+          "color": "rgb(0,0,0)"
+        },
+        "dropdown_day_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "7%",
+          "height": "3%"
+        },
+        "dropdown_shift_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "dropdown_operator_style": {
+          "color": "rgb(0, 0, 0)",
+          "border": "rgb(0, 0, 0)",
+          "width": "20%",
+          "height": "3%"
+        },
+        "sign_style": {
+          "height": "4%",
+          "width": "20%",
+          "size": "15"
+        },
+        "note_styles": {
+          "background": "rgb(255, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "align": "left",
+          "size": 15
+        },
+        "table12_header_name_styles": {
+          "width": "20%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table34_header_name_styles": {
+          "width": "25%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table12_header_description_styles": {
+          "width": "47%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table34_header_description_styles": {
+          "width": "42%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_header_value_styles": {
+          "width": "11%",
+          "border": "rgb(255, 255, 255)"
+        },
+        "table_row": {
+          "padding_right": "1%",
+          "padding_left": "1%"
+        },
+        "screen1_table_body_name_styles": {
+          "width": "20%"
+        },
+        "screen2_table_body_name_styles": {
+          "width": "23%"
+        },
+        "screen1_table_body_description_styles": {
+          "width": "45%"
+        },
+        "screen2_table_body_description_styles": {
+          "width": "42%"
+        },
+        "table_body_value_styles": {
+          "width": "11%"
+        },
+        "label_styles": {
+          "font": "HelveticaNeue-Bold"
+        },
+        "table_dropdown_fields_styles": {
+          "height": "3%",
+          "width": "6%",
+          "border": "rgb(0, 0, 0)"
+        },
+        "table_dropdown_odd_fields_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_dropdown_even_fields_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "table_header_styles": {
+          "size": 15,
+          "font": "HelveticaHeader-Bold",
+          "background": "rgb(14, 53, 112)",
+          "color": "rgb(255, 255, 255)",
+          "border": "rgb(255, 255, 255)",
+          "height": "6%",
+          "padding_top": "1%",
+          "padding_bottom": "1%"
+        },
+        "table_row_odd_styles": {
+          "background": "rgb(204,206,213)"
+        },
+        "table_row_even_styles": {
+          "background": "rgb(231,232,235)"
+        },
+        "table_fields_size": {
+          "size": "16"
+        },
+        "template_button_styles": {
+          "size": "16",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0,147,215)",
+          "corner_radius": "1%"
+        },
+        "active_template_button_styles": {
+          "background": "rgb(255, 0, 0)"
+        },
+        "layer_styles": {
+          "width": "10%",
+          "height": "7%",
+          "bottom": "1%"
+        }
+      },
+      "data": {
+        "Page_Heading": "Lime Area Shift Report",
+        "redirect_url": "https://s3.amazonaws.com/enu-digital-ips/release/production/home.json",
+        "loading_image_url": "file://loading.gif",
+        "home_icon": "file://icons/home.png",
+        "submit_icon": "file://icons/submit.png",
+        "save_icon": "file://icons/save.png",
+        "previous_icon": "file://icons/previous.png",
+        "next_icon": "file://icons/next.png",
+        "Table1_Headers": [
+          {
+            "type": "label",
+            "value": "Safety Showers",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table12_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table12_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "07:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "11:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "15:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
+        ],
+        "Table2_Headers": [
+          {
+            "type": "label",
+            "value": "Slater Top Floor",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table12_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table12_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "07:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "11:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "15:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
+        ],
+        "Table3_Headers": [
+          {
+            "type": "label",
+            "value": "Slater Top Floor",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table34_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table34_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "07:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "11:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "15:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
+        ],
+        "Table4_Headers": [
+          {
+            "type": "label",
+            "value": "Slater Level",
+            "col_type": "col_name",
+            "styles": "table_header_styles center_align table34_header_name_styles"
+          },
+          {
+            "type": "label",
+            "value": "",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table34_header_description_styles"
+          },
+          {
+            "type": "label",
+            "value": "07:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "11:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          },
+          {
+            "type": "label",
+            "value": "15:00 OK",
+            "col_type": "col_value",
+            "styles": "table_header_styles center_align table_header_value_styles"
+          }
+        ]
+      },
+      "actions": {
+        "$load": {
+          "trigger": "handleTemplateChange",
+          "options": {
+            "templateName": "screen1"
+          }
+        },
+        "handleTemplateChange": {
+          "type": "$render",
+          "options": {
+            "template": "{{$jason.templateName}}"
+          },
+          "success": {
+            "trigger": "displayToaster",
+            "options": {
+              "message": "Page loaded successfully"
+            }
+          }
+        },
+        "displayToaster": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$jason.message}}",
+            "type": "warning"
+          }
+        },
+        "handleNavigation": {
+          "type": "$href",
+          "options": {
+            "url": "{{#? $jason.url}}",
+            "preload": {
+              "class": "preload_styles",
+              "layers": [
+                {
+                  "type": "image",
+                  "url": "{{loading_image_url}}",
+                  "style": {
+                    "width": "30%",
+                    "height": "30%",
+                    "align": "center",
+                    "top": "30%",
+                    "left": "35%"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "handleSave_screen1": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form3",
+            "f3_s1_sign": "{{$get.sign || ''}}",
+            "f3_s1_day": "{{$get.day}}",
+            "f3_s1_month": "{{$get.month}}",
+            "f3_s1_year": "{{$get.year}}",
+            "f3_s1_shift": "{{$get.shift}}",
+            "f3_s1_operator": "{{$get.operator}}",
+            "safety_showers_row1_0700": "{{$get.safety_showers_row1_0700}}",
+            "safety_showers_row1_1100": "{{$get.safety_showers_row1_1100}}",
+            "safety_showers_row1_1500": "{{$get.safety_showers_row1_1500}}",
+            "safety_showers_row2_0700": "{{$get.safety_showers_row2_0700}}",
+            "safety_showers_row2_1100": "{{$get.safety_showers_row2_1100}}",
+            "safety_showers_row2_1500": "{{$get.safety_showers_row2_1500}}",
+            "lime_silo_cone_0700": "{{$get.lime_silo_cone_0700}}",
+            "lime_silo_cone_1100": "{{$get.lime_silo_cone_1100}}",
+            "lime_silo_cone_1500": "{{$get.lime_silo_cone_1500}}",
+            "actuator_0700": "{{$get.actuator_0700}}",
+            "actuator_1100": "{{$get.actuator_1100}}",
+            "actuator_1500": "{{$get.actuator_1500}}",
+            "manual_valves_0700": "{{$get.manual_valves_0700}}",
+            "manual_valves_1100": "{{$get.manual_valves_1100}}",
+            "manual_valves_1500": "{{$get.manual_valves_1500}}",
+            "auto_valves_0700": "{{$get.auto_valves_0700}}",
+            "auto_valves_1100": "{{$get.auto_valves_1100}}",
+            "auto_valves_1500": "{{$get.auto_valves_1500}}",
+            "square_piping_0700": "{{$get.square_piping_0700}}",
+            "square_piping_1100": "{{$get.square_piping_1100}}",
+            "square_piping_1500": "{{$get.square_piping_1500}}",
+            "rotary_valves_0700": "{{$get.rotary_valves_0700}}",
+            "rotary_valves_1100": "{{$get.rotary_valves_1100}}",
+            "rotary_valves_1500": "{{$get.rotary_valves_1500}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved screen1 data successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "handleSave_screen2": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form3",
+            "screw_conveyers_0700": "{{$get.screw_conveyers_0700}}",
+            "screw_conveyers_1100": "{{$get.screw_conveyers_1100}}",
+            "screw_conveyers_1500": "{{$get.screw_conveyers_1500}}",
+            "ventary_conveyers_0700": "{{$get.ventary_conveyers_0700}}",
+            "ventary_conveyers_1100": "{{$get.ventary_conveyers_1100}}",
+            "ventary_conveyers_1500": "{{$get.ventary_conveyers_1500}}",
+            "blower_piping_0700": "{{$get.blower_piping_0700}}",
+            "blower_piping_1100": "{{$get.blower_piping_1100}}",
+            "blower_piping_1500": "{{$get.blower_piping_1500}}",
+            "slater_top_floor_row4_0700": "{{$get.slater_top_floor_row4_0700}}",
+            "slater_top_floor_row4_1100": "{{$get.slater_top_floor_row4_1100}}",
+            "slater_top_floor_row4_1500": "{{$get.slater_top_floor_row4_1500}}",
+            "slater_0700": "{{$get.slater_0700}}",
+            "slater_1100": "{{$get.slater_1100}}",
+            "slater_1500": "{{$get.slater_1500}}",
+            "slater_level_row2_0700": "{{$get.slater_level_row2_0700}}",
+            "slater_level_row2_1100": "{{$get.slater_level_row2_1100}}",
+            "slater_level_row2_1500": "{{$get.slater_level_row2_1500}}",
+            "agitator_0700": "{{$get.agitator_0700}}",
+            "agitator_1100": "{{$get.agitator_1100}}",
+            "agitator_1500": "{{$get.agitator_1500}}",
+            "pumps_0700": "{{$get.pumps_0700}}",
+            "pumps_1100": "{{$get.pumps_1100}}",
+            "pumps_1500": "{{$get.pumps_1500}}",
+            "slater_level_row5_0700": "{{$get.slater_level_row5_0700}}",
+            "slater_level_row5_1100": "{{$get.slater_level_row5_1100}}",
+            "slater_level_row5_1500": "{{$get.slater_level_row5_1500}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved screen2 data successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "handleSave_screen3": {
+          "type": "$global.set",
+          "options": {
+            "section_id": "form3",
+            "description_of_deficiency": "{{$get.description_of_deficiency || ''}}",
+            "comments_operator_description": "{{$get.comments_operator_description || ''}}"
+          },
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Saved screen3 data successfully",
+              "type": "warning"
+            }
+          }
+        },
+        "handleSubmit": {
+          "type": "$global.reset",
+          "options": {
+            "save": "true",
+            "form_id": "form3",
+            "filename": "LimeAreaShiftReport"
+          },
+          "success": {
+            "type": "$global.reset",
+            "options": {
+              "items": [
+                "section_id",
+                "f3_s1_sign",
+                "f3_s1_day",
+                "f3_s1_month",
+                "f3_s1_year",
+                "f3_s1_shift",
+                "f3_s1_operator",
+                "safety_showers_row1_0700",
+                "safety_showers_row1_1100",
+                "safety_showers_row1_1500",
+                "safety_showers_row2_0700",
+                "safety_showers_row2_1100",
+                "safety_showers_row2_1500",
+                "lime_silo_cone_0700",
+                "lime_silo_cone_1100",
+                "lime_silo_cone_1500",
+                "actuator_0700",
+                "actuator_1100",
+                "actuator_1500",
+                "manual_valves_0700",
+                "manual_valves_1100",
+                "manual_valves_1500",
+                "auto_valves_0700",
+                "auto_valves_1100",
+                "auto_valves_1500",
+                "square_piping_0700",
+                "square_piping_1100",
+                "square_piping_1500",
+                "rotary_valves_0700",
+                "rotary_valves_1100",
+                "rotary_valves_1500",
+                "screw_conveyers_0700",
+                "screw_conveyers_1100",
+                "screw_conveyers_1500",
+                "ventary_conveyers_0700",
+                "ventary_conveyers_1100",
+                "ventary_conveyers_1500",
+                "blower_piping_0700",
+                "blower_piping_1100",
+                "blower_piping_1500",
+                "slater_top_floor_row4_0700",
+                "slater_top_floor_row4_1100",
+                "slater_top_floor_row4_1500",
+                "slater_0700",
+                "slater_1100",
+                "slater_1500",
+                "slater_level_row2_0700",
+                "slater_level_row2_1100",
+                "slater_level_row2_1500",
+                "agitator_0700",
+                "agitator_1100",
+                "agitator_1500",
+                "pumps_0700",
+                "pumps_1100",
+                "pumps_1500",
+                "slater_level_row5_0700",
+                "slater_level_row5_1100",
+                "slater_level_row5_1500",
+                "description_of_deficiency",
+                "comments_operator_description"
+              ]
+            },
+            "success": {
+              "trigger": "handleNavigation",
+              "options": {
+                "url": "{{redirect_url}}"
+              }
+            }
+          }
+        }
+      },
+      "templates": {
+        "screen1": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (1/3)"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding center_align",
+                  "style": {
+                    "padding_left": "1%",
+                    "padding_right": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "dropdown",
+                      "name": "day",
+                      "value": "{{$global.f3_s1_day}}",
+                      "contentDescription": "day",
+                      "class": "dropdown_day_style center_align",
+                      "options": [
+                        {
+                          "value": "Day",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "13",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "14",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "15",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "16",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "17",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "18",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "19",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "20",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "21",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "22",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "23",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "24",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "25",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "26",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "27",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "28",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "29",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "30",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "31",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "month",
+                      "value": "{{$global.f3_s1_month}}",
+                      "contentDescription": "month",
+                      "class": "dropdown_day_style center_align",
+                      "options": [
+                        {
+                          "value": "Month",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "1",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "3",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "4",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "5",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "6",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "7",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "8",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "9",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "10",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "11",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "12",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "year",
+                      "contentDescription": "year",
+                      "value": "{{$global.f3_s1_year}}",
+                      "class": "dropdown_day_style center_align",
+                      "options": [
+                        {
+                          "value": "Year",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "2019",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2020",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2021",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "2022",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "shift",
+                      "value": "{{$global.f3_s1_shift}}",
+                      "contentDescription": "shift",
+                      "class": "center_align black_color dropdown_shift_style",
+                      "options": [
+                        {
+                          "value": "Shift",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "Night Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Day Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Regular Shift",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Rotating Shift",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "dropdown",
+                      "name": "operator",
+                      "value": "{{$global.f3_s1_operator}}",
+                      "contentDescription": "operator",
+                      "class": "center_align black_color dropdown_operator_style",
+                      "options": [
+                        {
+                          "value": "Operator",
+                          "defaultSelected": "true"
+                        },
+                        {
+                          "value": "John",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Smith",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Michael",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "Federer",
+                          "defaultSelected": "false"
+                        },
+                        {
+                          "value": "David",
+                          "defaultSelected": "false"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "label",
+                      "text": "▼",
+                      "class": "right_padding"
+                    },
+                    {
+                      "type": "space",
+                      "style": {
+                        "width": "2%"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "value": "{{$global.f3_s1_sign || ''}}",
+                      "name": "sign",
+                      "placeholder": "Sign",
+                      "class": "sign_style center_align black_color",
+                      "contentDescription": "Sign"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "note_styles",
+                      "text": "Ensure to wear all of the required PPE when working in the lime area as well as when performing inspections. Ensure to fill out TASC card and complete proper LOTO if necessary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table1_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "class": "center_align",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_odd_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "",
+                              "class": "black_color center_align"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Wear all appropriate PPE",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "safety_showers_row1_0700",
+                          "value": "{{$global.safety_showers_row1_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "one",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },{
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "2",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "safety_showers_row1_1100",
+                          "value": "{{$global.safety_showers_row1_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "two",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "3",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "safety_showers_row1_1500",
+                          "value": "{{$global.safety_showers_row1_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "three",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_even_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "",
+                              "class": "black_color center_align"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Inspect both safety showers before entering",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "4",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "safety_showers_row2_0700",
+                          "value": "{{$global.safety_showers_row2_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "four",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "5",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "safety_showers_row2_1100",
+                          "value": "{{$global.safety_showers_row2_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "five",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "6",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "safety_showers_row2_1500",
+                          "value": "{{$global.safety_showers_row2_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "six",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table2_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_odd_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Lime silo cone",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Check for cracks and leaks",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "7",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "lime_silo_cone_0700",
+                          "value": "{{$global.lime_silo_cone_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "seven",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "8",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "lime_silo_cone_1100",
+                          "value": "{{$global.lime_silo_cone_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "eight",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "9",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "lime_silo_cone_1500",
+                          "value": "{{$global.lime_silo_cone_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "nine",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_even_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Actuator",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Test operation, check for cracks, loose bolts",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "10",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "actuator_0700",
+                          "value": "{{$global.actuator_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "ten",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "11",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "actuator_1100",
+                          "value": "{{$global.actuator_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "eleven",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "12",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "actuator_1500",
+                          "value": "{{$global.actuator_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twelve",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_odd_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Manual Valve",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Inspect leaks",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "13",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "manual_valves_0700",
+                          "value": "{{$global.manual_valves_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "thirteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "14",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "manual_valves_1100",
+                          "value": "{{$global.manual_valves_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "fourteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "15",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "manual_valves_1500",
+                          "value": "{{$global.manual_valves_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "fifteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_even_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Auto Valves",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Inspect casing, check for cracks, leaks",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "16",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "auto_valves_0700",
+                          "value": "{{$global.auto_valves_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "sixteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "17",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "auto_valves_1100",
+                          "value": "{{$global.auto_valves_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "seventeen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "18",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "auto_valves_1500",
+                          "value": "{{$global.auto_valves_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "eighteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_odd_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Square piping",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Check for cracks, leaks & inspect vibrator",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "19",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "square_piping_0700",
+                          "value": "{{$global.square_piping_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "nineteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "20",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "square_piping_1100",
+                          "value": "{{$global.square_piping_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "twenty",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "21",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "square_piping_1500",
+                          "value": "{{$global.square_piping_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "twenty-one",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_even_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Rotary Valves",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen1_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Inspect chains, sprockets, rotary, zero speed",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "22",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "rotary_valves_0700",
+                          "value": "{{$global.rotary_valves_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twenty-two",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "23",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "rotary_valves_1100",
+                          "value": "{{$global.rotary_valves_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twenty-three",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "24",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "rotary_valves_1500",
+                          "value": "{{$global.rotary_valves_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twenty-four",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "home",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "30%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "contentDescription": "next",
+              "class": "layer_styles",
+              "style": {
+                "left": "60%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "contentDescription": "save",
+              "class": "layer_styles",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleSave_screen1"
+              }
+            }
+          ]
+        },
+        "screen2": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "{{Page_Heading}} (2/3)"
+            },
+            "style": {
+              "align": "center",
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table3_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_odd_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Screw Conveyers",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Inspect motor, gear box, trough, covers, piping",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "1",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "screw_conveyers_0700",
+                          "value": "{{$global.screw_conveyers_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "one",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "2",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "screw_conveyers_1100",
+                          "value": "{{$global.screw_conveyers_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "two",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "3",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "screw_conveyers_1500",
+                          "value": "{{$global.screw_conveyers_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "three",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_even_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Ventary Blowers",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Ensure proper operation, chain as required",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "4",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "ventary_conveyers_0700",
+                          "value": "{{$global.ventary_conveyers_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "four",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "5",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "ventary_conveyers_1100",
+                          "value": "{{$global.ventary_conveyers_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "five",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "6",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "ventary_conveyers_1500",
+                          "value": "{{$global.ventary_conveyers_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "six",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_odd_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Blower Piping",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Pipe secured, check for leaks",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "7",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "blower_piping_0700",
+                          "value": "{{$global.blower_piping_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "seven",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "8",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "blower_piping_1100",
+                          "value": "{{$global.blower_piping_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "eight",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "9",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "blower_piping_1500",
+                          "value": "{{$global.blower_piping_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "nine",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_even_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Inspect / Clean baffle plates as required",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "10",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_top_floor_row4_0700",
+                          "value": "{{$global.slater_top_floor_row4_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "ten",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "11",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_top_floor_row4_1100",
+                          "value": "{{$global.slater_top_floor_row4_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "eleven",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "12",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_top_floor_row4_1500",
+                          "value": "{{$global.slater_top_floor_row4_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twelve",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "vertical",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "components": {
+                        "{{#each Table4_Headers}}": {
+                          "type": "label",
+                          "text": "{{value}}",
+                          "class": "{{styles}}"
+                        }
+                      },
+                      "style": {
+                        "padding_top": "1%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_odd_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Slater",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Motor, belts, gearbox, seals, piping, water adition components, shaft, bearings, unusual noise, Lime build-up , electrical and instrumentation",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "13",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_0700",
+                          "value": "{{$global.slater_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "thirteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "14",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_1100",
+                          "value": "{{$global.slater_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "fourteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "15",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_1500",
+                          "value": "{{$global.slater_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "fifteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_even_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Clean any lime build up each round",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "16",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_level_row2_0700",
+                          "value": "{{$global.slater_level_row2_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "sixteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "17",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_level_row2_1100",
+                          "value": "{{$global.slater_level_row2_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "seventeen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "18",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_level_row2_1500",
+                          "value": "{{$global.slater_level_row2_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "eighteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_odd_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Agitator",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Inspect motor and gearbox",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "19",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "agitator_0700",
+                          "value": "{{$global.agitator_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "nineteen",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "20",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "agitator_1100",
+                          "value": "{{$global.agitator_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "twenty",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "21",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "agitator_1500",
+                          "value": "{{$global.agitator_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_odd_fields_styles",
+                          "contentDescription": "twenty-one",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_even_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "Pumps",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Inspect pump casing, belts, guards and valves",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "22",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "pumps_0700",
+                          "value": "{{$global.pumps_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twenty-two",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "23",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "pumps_1100",
+                          "value": "{{$global.pumps_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twenty-three",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "24",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "pumps_1500",
+                          "value": "{{$global.pumps_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twenty-four",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding table_row_odd_styles center_align table_row",
+                  "components": [
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_name_styles",
+                      "components": [
+                        {
+                          "type": "horizontal",
+                          "class": "center_align",
+                          "components": [
+                            {
+                              "type": "label",
+                              "text": "",
+                              "class": "black_color center_align table_fields_size"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "screen2_table_body_description_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "Inspect sump pump cage, motor, belts, and condition",
+                          "class": "center_align black_color table_fields_size"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "25",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_level_row5_0700",
+                          "value": "{{$global.slater_level_row5_0700}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twenty-five",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "26",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_level_row5_1100",
+                          "value": "{{$global.slater_level_row5_1100}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twenty-six",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal",
+                      "class": "table_body_value_styles",
+                      "components": [
+                        {
+                          "type": "label",
+                          "text": "27",
+                          "class": "black_color center_align label_styles"
+                        },
+                        {
+                          "type": "dropdown",
+                          "name": "slater_level_row5_1500",
+                          "value": "{{$global.slater_level_row5_1500}}",
+                          "class": "table_dropdown_fields_styles table_dropdown_even_fields_styles",
+                          "contentDescription": "twenty-seven",
+                          "options": [
+                            {
+                              "value": "YES",
+                              "defaultSelected": "false"
+                            },
+                            {
+                              "value": "NO",
+                              "defaultSelected": "true"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "label",
+                          "text": "▼",
+                          "class": "table_row_height",
+                          "style": {
+                            "width": "2%"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "class": "center_align"
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "home",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "contentDescription": "previous",
+              "class": "layer_styles",
+              "style": {
+                "left": "30%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "60%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{next_icon}}",
+              "contentDescription": "next",
+              "class": "layer_styles",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "contentDescription": "save",
+              "class": "layer_styles",
+              "style": {
+                "left": "80%"
+              },
+              "action": {
+                "trigger": "handleSave_screen2"
+              }
+            }
+          ]
+        },
+        "screen3": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "Lime Area Shift Report (3/3)"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "size": 20,
+              "background": "rgb(0,162,224)",
+              "color": "rgb(255,255,255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Description of Deficiency",
+                      "class": "table_header_styles",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "description_of_deficiency",
+                      "value": "{{$global.description_of_deficiency || ''}}",
+                      "placeholder": "Enter Description of Deficiency",
+                      "contentDescription": "descriptionOfDeficiency",
+                      "style": {
+                        "width": "100%",
+                        "height": "25%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Description",
+                      "class": "table_header_styles",
+                      "style": {
+                        "width": "100%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "horizontal",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "components": [
+                    {
+                      "type": "textarea",
+                      "name": "comments_operator_description",
+                      "value": "{{$global.comments_operator_description || ''}}",
+                      "placeholder": "Enter description",
+                      "contentDescription": "Enter Description",
+                      "style": {
+                        "width": "100%",
+                        "height": "25%",
+                        "size": "15"
+                      }
+                    }
+                  ],
+                  "class": "no_padding"
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "type": "image",
+              "url": "{{home_icon}}",
+              "class": "layer_styles",
+              "contentDescription": "home",
+              "style": {
+                "left": "20%"
+              },
+              "action": {
+                "trigger": "handleNavigation",
+                "options": {
+                  "url": "{{redirect_url}}"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{previous_icon}}",
+              "contentDescription": "previous",
+              "class": "layer_styles",
+              "style": {
+                "left": "30%"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 1",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "40%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen1"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 2",
+              "class": "layer_styles template_button_styles bold",
+              "style": {
+                "left": "50%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen2"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "text": "Page 3",
+              "class": "layer_styles template_button_styles active_template_button_styles bold",
+              "style": {
+                "left": "60%",
+                "padding": "0"
+              },
+              "action": {
+                "trigger": "handleTemplateChange",
+                "options": {
+                  "templateName": "screen3"
+                }
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{save_icon}}",
+              "contentDescription": "save",
+              "class": "layer_styles",
+              "style": {
+                "left": "70%"
+              },
+              "action": {
+                "trigger": "handleSave_screen3"
+              }
+            },
+            {
+              "type": "image",
+              "url": "{{submit_icon}}",
+              "contentDescription": "submit",
+              "class": "layer_styles",
+              "style": {
+                "left": "80%"
+              },
+              "action": {
+                "trigger": "handleSubmit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

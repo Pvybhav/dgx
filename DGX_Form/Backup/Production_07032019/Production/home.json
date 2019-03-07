@@ -1,0 +1,309 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Detour Gold E-Forms",
+      "description": "Detour Gold E-Forms",
+      "offline": "true",
+      "styles": {
+        "center_align": {
+          "align": "center"
+        },
+        "buttons_height": {
+          "height": "9%"
+        },
+        "bold": {
+          "font": "HelveticaHeader-Bold"
+        },
+        "eform_button_styles": {
+          "size": 16,
+          "width": "40%",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 102, 204)",
+          "border": "rgb(255, 255, 255)",
+          "border_width": "2"
+        },
+        "eform_voicetag_styles": {
+          "size": 18,
+          "width": "10%",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(102, 255, 204)",
+          "border": "rgb(255, 255, 255)",
+          "border_width": "2"
+        }
+      },
+      "data": {
+        "loading_image_url": "file://loading.gif",
+        "grid1_forms": [
+          {
+            "form_name": "Leach Area Shift Report",
+            "voicetag_name": "Form1",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/1_LeachAreaShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "Safety Screen Shift Report",
+            "voicetag_name": "Form2",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/2_SafetyScreenShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "Lime Area Shift Report",
+            "voicetag_name": "Form3",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/3_LimeAreaShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "Trash Screen Shift Report",
+            "voicetag_name": "Form4",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/4_TrashScreenShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "Group SOP Signoff",
+            "voicetag_name": "Form5",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/5_GroupSOPSignoff/screen_1.json"
+          },
+          {
+            "form_name": "Kemix Screen Inspection",
+            "voicetag_name": "Form6",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/6_KemixScreenInspection/screen_1.json"
+          },
+          {
+            "form_name": "Lead Nitrate Checklist",
+            "voicetag_name": "Form7",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/7_LeadNitrateChecklist/screen_1.json"
+          },
+          {
+            "form_name": "SO2 Offload Checklist",
+            "voicetag_name": "Form8",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/8_SO2OffloadChecklist/screen_1.json"
+          },
+          {
+            "form_name": "CIP Checklist",
+            "voicetag_name": "Form9",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/9_CIPChecklist/screen_1.json"
+          }
+        ],
+        "grid2_forms": [
+          {
+            "form_name": "Cyanide Isotainer Checklist",
+            "voicetag_name": "Form10",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/10_CyanideIsotainerChecklist/screen_1.json"
+          },
+          {
+            "form_name": "Elution Area Checklist",
+            "voicetag_name": "Form11",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/11_ElutionAreaChecklist/screen_1.json"
+          },
+          {
+            "form_name": "Primary Crusher Operator Shift Report",
+            "voicetag_name": "Form12",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/12_PrimaryCrusherOperatorShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "TMA Inspection Water Storage Report",
+            "voicetag_name": "Form13",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/13_ProcessPlantTMAInspectionWaterStorageReport/screen_1.json"
+          },
+          {
+            "form_name": "Reagents Log",
+            "voicetag_name": "Form14",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/14_ReagentsLog/screen_1.json"
+          },
+          {
+            "form_name": "Secondary Crusher Operator Shift Report",
+            "voicetag_name": "Form15",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/15_SecondaryCrusherOperatorShiftReport/screen_1.json"
+          },
+          {
+            "form_name": "Carbon CountIntegration To PI",
+            "voicetag_name": "Form16",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/16_CarbonCountIntegrationToPI/screen_1.json"
+          },
+          {
+            "form_name": "CIP/Leach Operator Log Sheet - Carbon Count",
+            "voicetag_name": "Form17",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/17_CIPLeachOperatorLogSheet_CarbonCount/screen_1.json"
+          },
+          {
+            "form_name": "Grinding And Gravity Report",
+            "voicetag_name": "Form18",
+            "url": "https://s3.amazonaws.com/enu-digital-ips/release/production/18_GrindingAndGravityReport/screen_1.json"
+          }
+        ]
+      },
+      "actions": {
+        "$load": {
+          "type": "$render",
+          "success": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Page loaded successfully",
+              "type": "warning"
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "label",
+              "text": "Detour Gold E-Forms"
+            },
+            "style": {
+              "font": "HelveticaHeader-Bold",
+              "background": "rgb(0, 162, 224)",
+              "color": "rgb(255, 255, 255)"
+            }
+          },
+          "sections": [
+            {
+              "type": "vertical",
+              "items": [
+                {
+                  "type": "horizontal",
+                  "style": {
+                    "padding": "1%"
+                  },
+                  "components": [
+                    {
+                      "type": "vertical",
+                      "style": {
+                        "padding_right": "1%",
+                        "padding_left": "1%"
+                      },
+                      "components": {
+                        "{{#each grid1_forms}}": {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "button",
+                              "text": "{{voicetag_name}}",
+                              "class": "center_align buttons_height eform_voicetag_styles bold",
+                              "action": {
+                                "type": "$href",
+                                "options": {
+                                  "url": "{{url}}",
+                                  "preload": {
+                                    "layers": [
+                                      {
+                                        "type": "image",
+                                        "url": "{{loading_image_url}}",
+                                        "style": {
+                                          "width": "30%",
+                                          "height": "30%",
+                                          "align": "center",
+                                          "top": "30%",
+                                          "left": "35%"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "button",
+                              "text": "  {{form_name}}",
+                              "class": "buttons_height eform_button_styles bold",
+                              "contentDescription": "{{voicetag_name}}",
+                              "action": {
+                                "type": "$href",
+                                "options": {
+                                  "url": "{{url}}",
+                                  "preload": {
+                                    "layers": [
+                                      {
+                                        "type": "image",
+                                        "url": "{{loading_image_url}}",
+                                        "style": {
+                                          "width": "30%",
+                                          "height": "30%",
+                                          "align": "center",
+                                          "top": "30%",
+                                          "left": "35%"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "type": "vertical",
+                      "style": {
+                        "padding_right": "1%",
+                        "padding_left": "1%"
+                      },
+                      "components": {
+                        "{{#each grid2_forms}}": {
+                          "type": "horizontal",
+                          "components": [
+                            {
+                              "type": "button",
+                              "text": "{{voicetag_name}}",
+                              "class": "center_align buttons_height eform_voicetag_styles bold",
+                              "action": {
+                                "type": "$href",
+                                "options": {
+                                  "url": "{{url}}",
+                                  "preload": {
+                                    "layers": [
+                                      {
+                                        "type": "image",
+                                        "url": "{{loading_image_url}}",
+                                        "style": {
+                                          "width": "30%",
+                                          "height": "30%",
+                                          "align": "center",
+                                          "top": "30%",
+                                          "left": "35%"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "button",
+                              "text": "  {{form_name}}",
+                              "class": "buttons_height eform_button_styles bold",
+                              "contentDescription": "{{voicetag_name}}",
+                              "action": {
+                                "type": "$href",
+                                "options": {
+                                  "url": "{{url}}",
+                                  "preload": {
+                                    "layers": [
+                                      {
+                                        "type": "image",
+                                        "url": "{{loading_image_url}}",
+                                        "style": {
+                                          "width": "30%",
+                                          "height": "30%",
+                                          "align": "center",
+                                          "top": "30%",
+                                          "left": "35%"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
