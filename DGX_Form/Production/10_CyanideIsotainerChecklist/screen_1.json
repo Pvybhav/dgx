@@ -73,7 +73,7 @@
         "sign_style": {
           "height": "4%",
           "width": "20%",
-          "size": "16"
+          "size": "14"
         },
         "template_button_styles": {
           "size": "16",
@@ -189,7 +189,8 @@
             "replace_gasket_on_hose_text1": "{{$get.replace_gasket_on_hose_text1|| ''}}",
             "replace_gasket_on_hose_text2": "{{$get.replace_gasket_on_hose_text2|| ''}}",
             "pressure_completed_time": "{{$get.pressure_completed_time|| ''}}",
-            "pressure_check_across_shifts": "{{$get.pressure_check_across_shifts|| ''}}"
+            "pressure_check_across_shifts": "{{$get.pressure_check_across_shifts|| ''}}",
+            "isotainer_number": "{{$get.isotainer_number || ''}}"
           },
           "success": {
             "trigger": "displayToaster",
@@ -269,6 +270,7 @@
             "type": "$global.reset",
             "options": {
               "items": [
+                "isotainer_number",
                 "distribution_pump_14_text1",
                 "distribution_pump_14_text2",
                 "distribution_pump_15_text1",
@@ -704,6 +706,45 @@
                       "placeholder": "Sign",
                       "class": "sign_style center_align black_color",
                       "contentDescription": "Sign"
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal",
+                  "class": "no_padding",
+                  "style": {
+                    "height": "7%"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "Isotainer Number: ",
+                      "class": "black_color bold",
+                      "style": {
+                        "padding_left": "2%",
+                        "width": "18%",
+                        "size": "15"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "(16)",
+                      "class": "black_color bold",
+                      "style": {
+                        "width": "5%",
+                        "size": "16"
+                      }
+                    },
+                    {
+                      "type": "textfield",
+                      "name": "isotainer_number",
+                      "contentDescription": "sixteen",
+                      "value": "{{$global.isotainer_number || ''}}",
+                      "style": {
+                        "width": "30%",
+                        "height": "4%",
+                        "size":"14"
+                      }
                     }
                   ]
                 },
